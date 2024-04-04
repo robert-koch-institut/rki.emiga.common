@@ -1,0 +1,11 @@
+locations:
+  - name: rki_emiga_common
+    type: FILESYSTEM
+    environment: PROD
+    fullPath: "$CI_PROJECT_DIR"
+# ------------------------------------------------------------------------ 
+  - name: common_napi_output_location
+    type: FILESYSTEM
+    environment: PROD
+    fullPath: "${CI_PROJECT_DIR}/target"
+# ------------------------------------------------------------------------ 
