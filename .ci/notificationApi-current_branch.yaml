@@ -1,0 +1,20 @@
+name: flow_napi
+type: NAPI_PROFILE_GENERATION
+description: Generates FHIR profiles for validator consumption
+keepTempFiles: false
+output: common_napi_output_location
+skipFhirSchemaValidation: false
+resourceParseMode: STRICT
+skipExampleValidation: false
+loadNpmDependencies: false
+snapshotDependenciesForSushi: false
+fhirSchemaValidationMaxSeverity: INFORMATION
+testFileDirectories: []
+profileSets:
+
+  - identifier: rki.emiga.common
+    artifactRepo: rki_emiga_common
+    reference: "$CI_COMMIT_REF_NAME"
+    ignoredSanityChecks:  
+      - name: MatchingNameAndIdCheck
+        reasoning: EMIGA uses different NamingConventions then DEMIS
