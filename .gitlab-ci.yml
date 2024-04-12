@@ -1,0 +1,37 @@
+stages:
+  - qa
+
+# Cache fhir package dependencies
+cache:
+  key: $CI_PROJECT_NAME
+  paths:
+    - ".fhir"
+
+# Needs variable FLOW to be defined in extending jobs
+# This variable must be the absolute path to the job to execute
+current_branch_flow:
+  stage: qa
+  image: 
+    name: $CI_REGISTRY/demis-light/demis-profile-loader:latest
+    entrypoint: [""]
+    pull_policy: always
+  # Since sushi has no configuration to put package cache in workspace,
+  # we link the local package cache workspace directory into the user directory.
+  # The fetched git repo only has a detached head. 
+  # We have to attach it to the branch name for which we execute the pipeline
+  script:
+    - |
+      mkdir -p $CI_PROJECT_DIR/.fhir
+      ln -s $CI_PROJECT_DIR/.fhir ~/.fhir 
+      git checkout -B "$CI_COMMIT_REF_NAME"
+      
+      java -jar /workspace/profile-loader.jar \
+          -f .ci/notificationApi-current_branch.yaml \
+          -l .ci/locations_ci.yaml
+  artifacts:
+    when: always
+    name: "$CI_COMMIT_REF_NAME"
+    expire_in: "7 days"
+    paths:
+      - target/
+    
