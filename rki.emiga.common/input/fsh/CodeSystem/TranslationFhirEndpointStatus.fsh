@@ -1,12 +1,12 @@
 CodeSystem: TranslationFhirEndpointStatus
 Id: TranslationFhirEndpointStatus
 Title: "Übersetzungen FHIR CodeSystem EndpointStatus"
-Description: "Beinhaltet die Übersetzungen für das FHIR CodeSystem EndpointStatus"
-* insert MetaTerminology
+Description: "Beinhaltet die Übersetzungen für das FHIR CodeSystem 'EndpointStatus'"
+* insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-28"
 * ^content = #supplement
-* ^supplements = "http://hl7.org/fhir/endpoint-status|4.0.1"
+* ^supplements = "http://hl7.org/fhir/endpoint-status"
 * #active
 * #active ^designation[0].language = #de-DE
 * #active ^designation[=].use = $ConceptDesignationUse#default
