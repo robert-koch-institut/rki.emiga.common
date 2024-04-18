@@ -1,7 +1,7 @@
 CodeSystem: ResourceResponsibility
 Id: ResourceResponsibility
 Title: "ResourceResponsibility"
-Description: "Responsible Organization"
+Description: "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, die für die Auszeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann."
 * insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-19"
@@ -12,8 +12,8 @@ Description: "Responsible Organization"
 
 ValueSet: ResourceResponsibility
 Id: ResourceResponsibility
-Title: "ResourceResponsibility Value Set"
-Description: "Responsible Organization"
+Title: "ResourceResponsibility (Werteliste)"
+Description: "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen."
 * insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-19"

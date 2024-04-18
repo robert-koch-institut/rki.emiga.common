@@ -1,7 +1,7 @@
 CodeSystem: ConceptDesignationUse
 Id: ConceptDesignationUse
 Title: "Nutzungszwecke für Anzeigetexte"
-Description: "Enthält Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'."
+Description: "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'."
 * insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-28"
@@ -15,8 +15,8 @@ Description: "Enthält Konzepte, welche genutzt werden können, um verschiedene 
 
 ValueSet: ConceptDesignationUse
 Id: ConceptDesignationUse
-Title: "Nutzungszwecke für Anzeigetexte (Value Set)"
-Description: "Nutzungszwecke für Anzeigetexte"
+Title: "Nutzungszwecke für Anzeigetexte (Werteliste)"
+Description: "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben."
 * insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-19"
