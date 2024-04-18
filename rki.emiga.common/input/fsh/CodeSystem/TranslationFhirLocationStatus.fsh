@@ -2,7 +2,7 @@ CodeSystem: TranslationFhirLocationStatus
 Id: TranslationFhirLocationStatus
 Title: "Übersetzungen FHIR CodeSystem LocationStatus"
 Description: "Beinhaltet die Übersetzungen für das FHIR CodeSystem LocationStatus"
-* insert MetaTerminology
+* insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-28"
 * ^content = #supplement

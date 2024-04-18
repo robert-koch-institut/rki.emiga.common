@@ -2,7 +2,7 @@ CodeSystem: TranslationFhirEndpointStatus
 Id: TranslationFhirEndpointStatus
 Title: "Übersetzungen FHIR CodeSystem EndpointStatus"
 Description: "Beinhaltet die Übersetzungen für das FHIR CodeSystem EndpointStatus"
-* insert MetaTerminology
+* insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-28"
 * ^content = #supplement

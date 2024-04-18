@@ -2,7 +2,7 @@ CodeSystem: ConceptDesignationUse
 Id: ConceptDesignationUse
 Title: "Nutzungszwecke für Anzeigetexte"
 Description: "Enthält Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'."
-* insert MetaTerminology
+* insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-28"
 * ^caseSensitive = true
@@ -17,7 +17,7 @@ ValueSet: ConceptDesignationUse
 Id: ConceptDesignationUse
 Title: "Nutzungszwecke für Anzeigetexte (Value Set)"
 Description: "Nutzungszwecke für Anzeigetexte"
-* insert MetaTerminology
+* insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2024-03-19"
 * include codes from system ConceptDesignationUse
