@@ -1,4 +1,3 @@
-
 // Metadaten-Elemente, die sich alle Profile teilen
 RuleSet: MetadataProfile
 * ^status = #active
