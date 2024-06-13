@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ResourceVisibilityType",
+  "id": "ResourceVisibilityType",
+  "title": "Ressourcensichtbarkeit",
+  "description": "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll, oder nicht.",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+  "concept": [
+    {
+      "code": "public",
+      "display": "öffentlich",
+      "definition": "Öffentliche Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Akteure (auch die Öffentlichkeit) zur Anzeige gepracht werden."
+    },
+    {
+      "code": "internal",
+      "display": "intern",
+      "definition": "ÖGD interne Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD eingesehen werden."
+    },
+    {
+      "code": "private",
+      "display": "privat",
+      "definition": "Private Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen lediglich im Kontext einer bestimmten Stelle des Öffentlichen Gesundheitsdienstes zur Anzeige gebracht werden."
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2024-03-19",
+  "caseSensitive": true,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType",
+  "count": 3
+}

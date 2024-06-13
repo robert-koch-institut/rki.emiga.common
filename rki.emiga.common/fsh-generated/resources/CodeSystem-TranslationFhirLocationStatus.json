@@ -1,0 +1,92 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "supplement",
+  "name": "TranslationFhirLocationStatus",
+  "id": "TranslationFhirLocationStatus",
+  "title": "Übersetzungen FHIR CodeSystem LocationStatus",
+  "description": "Beinhaltet die Übersetzungen für das FHIR CodeSystem 'LocationStatus'",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/TranslationFhirLocationStatus",
+  "concept": [
+    {
+      "code": "active",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "default",
+            "system": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+          },
+          "value": "aktiv"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "abbreviation",
+            "system": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+          },
+          "value": "A"
+        }
+      ]
+    },
+    {
+      "code": "suspended",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "default",
+            "system": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+          },
+          "value": "temporär inaktiv"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "abbreviation",
+            "system": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+          },
+          "value": "TI"
+        }
+      ]
+    },
+    {
+      "code": "inactive",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "default",
+            "system": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+          },
+          "value": "inaktiv"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "abbreviation",
+            "system": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+          },
+          "value": "I"
+        }
+      ]
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2024-03-28",
+  "supplements": "http://hl7.org/fhir/location-status"
+}

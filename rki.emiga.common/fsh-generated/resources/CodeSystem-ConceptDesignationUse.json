@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ConceptDesignationUse",
+  "id": "ConceptDesignationUse",
+  "title": "Nutzungszwecke für Anzeigetexte",
+  "description": "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'.",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse",
+  "concept": [
+    {
+      "code": "abbreviation",
+      "display": "Abkürzung",
+      "definition": "Abkürzung für den Anzeigetext - Diese Darstellung repräsentiert eine maximal verkürzte Form des Anzeigetextes und kann beispielsweise zur platzsparenden Anzeige in Tabellen genutzt werden."
+    },
+    {
+      "code": "short",
+      "display": "Kurzform",
+      "definition": "Kurzform des Anzeigetextes - Diese Form sollte üblicherweise weniger umfassend sein als die Normalform und wird immer dann genutzt, wenn ein weniger platzintensive Darstellung erforderlich ist."
+    },
+    {
+      "code": "default",
+      "display": "Normalform",
+      "definition": "Normalform des Anzeigetextes - entspricht üblicherweise dem 'display'-Wert des Konzeptes"
+    },
+    {
+      "code": "long",
+      "display": "Langform",
+      "definition": "Langform des Anzeigetextes - Diese Form der Darstellung kann genutzt werden, wenn viel Platz vorhanden ist und ggf. mehr Informationen als in der Normalform transortiert werden müssen."
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2024-03-28",
+  "caseSensitive": true,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse",
+  "count": 4
+}

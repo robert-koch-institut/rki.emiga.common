@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ResourceResponsibility",
+  "id": "ResourceResponsibility",
+  "title": "ResourceResponsibility",
+  "description": "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, die für die Auszeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann.",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+  "concept": [
+    {
+      "code": "1.12.99.99.",
+      "display": "A"
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2024-03-19",
+  "caseSensitive": true,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility",
+  "count": 1
+}

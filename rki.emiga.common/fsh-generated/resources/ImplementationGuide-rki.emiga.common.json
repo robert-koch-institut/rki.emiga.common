@@ -1,0 +1,122 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "rki.emiga.common",
+  "url": "https://emiga.rki.de/fhir/common/ImplementationGuide/rki.emiga.common",
+  "version": "1.0.0-alpha.1",
+  "name": "rkiemigacommon",
+  "status": "draft",
+  "publisher": "Robert Koch Institut",
+  "contact": [
+    {
+      "name": "Robert Koch Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.rki.de"
+        }
+      ]
+    }
+  ],
+  "packageId": "rki.emiga.common",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.4.0",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CodeSystem/ConceptDesignationUse"
+        },
+        "name": "Nutzungszwecke für Anzeigetexte",
+        "description": "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConceptDesignationUse"
+        },
+        "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ResourceResponsibility"
+        },
+        "name": "ResourceResponsibility",
+        "description": "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, die für die Auszeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ResourceResponsibility"
+        },
+        "name": "ResourceResponsibility (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ResourceVisibilityType"
+        },
+        "name": "Ressourcensichtbarkeit",
+        "description": "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll, oder nicht.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ResourceVisibilityType"
+        },
+        "name": "Ressourcensichtbarkeit (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/TranslationFhirEndpointStatus"
+        },
+        "name": "Übersetzungen FHIR CodeSystem EndpointStatus",
+        "description": "Beinhaltet die Übersetzungen für das FHIR CodeSystem 'EndpointStatus'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/TranslationFhirLocationStatus"
+        },
+        "name": "Übersetzungen FHIR CodeSystem LocationStatus",
+        "description": "Beinhaltet die Übersetzungen für das FHIR CodeSystem 'LocationStatus'",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
