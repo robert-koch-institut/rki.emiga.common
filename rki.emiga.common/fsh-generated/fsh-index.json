@@ -24,22 +24,6 @@
     "endLine": 13
   },
   {
-    "outputFile": "CodeSystem-TranslationFhirEndpointStatus.json",
-    "fshName": "TranslationFhirEndpointStatus",
-    "fshType": "CodeSystem",
-    "fshFile": "CodeSystem\\TranslationFhirEndpointStatus.fsh",
-    "startLine": 1,
-    "endLine": 51
-  },
-  {
-    "outputFile": "CodeSystem-TranslationFhirLocationStatus.json",
-    "fshName": "TranslationFhirLocationStatus",
-    "fshType": "CodeSystem",
-    "fshFile": "CodeSystem\\TranslationFhirLocationStatus.fsh",
-    "startLine": 1,
-    "endLine": 30
-  },
-  {
     "outputFile": "ValueSet-ConceptDesignationUse.json",
     "fshName": "ConceptDesignationUse",
     "fshType": "ValueSet",

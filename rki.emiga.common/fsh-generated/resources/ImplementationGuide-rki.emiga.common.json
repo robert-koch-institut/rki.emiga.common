@@ -78,22 +78,6 @@
         "name": "Ressourcensichtbarkeit (Werteliste)",
         "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/TranslationFhirEndpointStatus"
-        },
-        "name": "Übersetzungen FHIR CodeSystem EndpointStatus",
-        "description": "Beinhaltet die Übersetzungen für das FHIR CodeSystem 'EndpointStatus'",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/TranslationFhirLocationStatus"
-        },
-        "name": "Übersetzungen FHIR CodeSystem LocationStatus",
-        "description": "Beinhaltet die Übersetzungen für das FHIR CodeSystem 'LocationStatus'",
-        "exampleBoolean": false
       }
     ],
     "page": {
