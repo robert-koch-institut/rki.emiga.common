@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Relevance",
+  "id": "Relevance",
+  "title": "Relevanz",
+  "description": "Die Kodiersystematik Relevance definiert Konzepte, die die für verschiedene Emiga Use Cases relevanten Ressourcen kennzeichnen.",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/Relevance",
+  "concept": [
+    {
+      "code": "IfsgKoordVwV",
+      "display": "Paragraf 2 IfSG-Koordinierungs-VwV"
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2024-12-18",
+  "caseSensitive": true,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/Relevance",
+  "count": 1
+}

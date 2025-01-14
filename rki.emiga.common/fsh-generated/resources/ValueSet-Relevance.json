@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Relevance",
+  "id": "Relevance",
+  "title": "Relevanz (Werteliste)",
+  "description": "Werteliste mit Konzepten, die die Relevanz der Ressourcen für verschiedene Use Cases kennzeichnen.",
+  "url": "https://emiga.rki.de/fhir/common/ValueSet/Relevance",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2024-12-18",
+  "compose": {
+    "include": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/Relevance"
+      }
+    ]
+  }
+}
