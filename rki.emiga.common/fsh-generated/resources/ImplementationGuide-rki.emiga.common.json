@@ -27,10 +27,80 @@
       "version": "1.4.0",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "rki.emiga.vzd",
+      "version": "2.0.0-alpha.4-snapshots",
+      "uri": "http://fhir.org/packages/rki.emiga.vzd/ImplementationGuide/rki.emiga.vzd",
+      "id": "rki_emiga_vzd"
     }
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AttachmentDocumentReference"
+        },
+        "name": "Anhang",
+        "description": "ToDo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AnnotationCommunication"
+        },
+        "name": "Annotation",
+        "description": "ToDo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ProcessingStatus"
+        },
+        "name": "Bearbeitungsstatus",
+        "description": "Extension zur Abbildung der Bearbeitungsstatus eines Vorgangs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ProcessingStatusVS"
+        },
+        "name": "Bearbeitungsstatus",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ProcessingStatus"
+        },
+        "name": "Bearbeitungsstatus",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EmigaUserPractitioner"
+        },
+        "name": "Emiga Nutzende Person",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EmigaUserOrganization"
+        },
+        "name": "EmigaUserOrganization",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DateCreated"
+        },
+        "name": "Erstellungsdatum",
+        "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "CodeSystem/ConceptDesignationUse"
@@ -45,6 +115,22 @@
         },
         "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
         "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/PersonalInformation"
+        },
+        "name": "Personenbezug",
+        "description": "Die Kodiersystematik PersonalInformation definiert Konzepte, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PersonalInformationVS"
+        },
+        "name": "Personenbezug (Werteliste)",
+        "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
         "exampleBoolean": false
       },
       {
