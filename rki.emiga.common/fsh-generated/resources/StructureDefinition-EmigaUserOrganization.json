@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EmigaUserOrganization",
+  "url": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserOrganization",
+  "version": "0.1.0",
+  "name": "EmigaUserOrganization",
+  "title": "EmigaUserOrganization",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-03-25",
+  "publisher": "Robert Koch-Institut",
+  "description": "TODO",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.meta.profile",
+        "path": "Organization.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.meta.profile:emigaprofile",
+        "path": "Organization.meta.profile",
+        "sliceName": "emigaprofile",
+        "min": 0,
+        "max": "*",
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserOrganization"
+      },
+      {
+        "id": "Organization.implicitRules",
+        "path": "Organization.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Organization.text",
+        "path": "Organization.text",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contained",
+        "path": "Organization.contained",
+        "max": "0"
+      },
+      {
+        "id": "Organization.modifierExtension",
+        "path": "Organization.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/vzd/StructureDefinition/IdentifierCodeSiteId"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

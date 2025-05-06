@@ -1,0 +1,226 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EmigaUserPractitioner",
+  "url": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner",
+  "version": "0.2.0",
+  "name": "EmigaUserPractitioner",
+  "title": "Emiga Nutzende Person",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-03-03",
+  "publisher": "Robert Koch-Institut",
+  "description": "TODO",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.meta",
+        "path": "Practitioner.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.meta.profile",
+        "path": "Practitioner.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.meta.profile:emigaprofile",
+        "path": "Practitioner.meta.profile",
+        "sliceName": "emigaprofile",
+        "min": 0,
+        "max": "*",
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
+      },
+      {
+        "id": "Practitioner.meta.security",
+        "path": "Practitioner.meta.security",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slicing security attribute by coding system",
+          "ordered": false
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.meta.security:visibility",
+        "path": "Practitioner.meta.security",
+        "sliceName": "visibility",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
+        }
+      },
+      {
+        "id": "Practitioner.meta.security:visibility.system",
+        "path": "Practitioner.meta.security.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.meta.security:visibility.code",
+        "path": "Practitioner.meta.security.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.meta.security:responsibility",
+        "path": "Practitioner.meta.security",
+        "sliceName": "responsibility",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
+        }
+      },
+      {
+        "id": "Practitioner.meta.security:responsibility.system",
+        "path": "Practitioner.meta.security.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.meta.security:responsibility.code",
+        "path": "Practitioner.meta.security.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.implicitRules",
+        "path": "Practitioner.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.text",
+        "path": "Practitioner.text",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.contained",
+        "path": "Practitioner.contained",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.extension",
+        "path": "Practitioner.extension",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.modifierExtension",
+        "path": "Practitioner.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "comment": "Emailaddresse der Nutzende Person - email Regex?",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "comment": "Update 04.04.25: Optional weil im jetztigen Zeitpunkt nicht fachlich geklärt ist, ob das Feld immer gesetzt werden muss.\r\nDer entsprechende Eintrag muss gepflegt werden, um eindeutig feststellen zu können, ob ein Eintrag noch aktiv ist.",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "max": "0"
+      }
+    ]
+  }
+}
