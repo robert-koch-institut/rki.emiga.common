@@ -9,8 +9,1620 @@
   "url": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
   "concept": [
     {
-      "code": "1.12.99.99.",
-      "display": "A"
+      "code": "0.",
+      "display": "-kein-"
+    },
+    {
+      "code": "1.",
+      "display": "Robert Koch-Institut"
+    },
+    {
+      "code": "1.01.",
+      "display": "Universitätsklinikum Schleswig Holstein (Campus Kiel / Inst. f. Infektionsmedizin)"
+    },
+    {
+      "code": "1.01.0.01.",
+      "display": "Stadt Flensburg (Fachbereich 2 / Gesundheitsdienste)"
+    },
+    {
+      "code": "1.01.0.02.",
+      "display": "Landeshauptstadt Kiel (Amt für Gesundheit)"
+    },
+    {
+      "code": "1.01.0.03.",
+      "display": "Hansestadt Lübeck (Gesundheitsamt)"
+    },
+    {
+      "code": "1.01.0.04.",
+      "display": "Stadt Neumünster (Gesundheitsamt)"
+    },
+    {
+      "code": "1.01.0.51.",
+      "display": "Kreis Dithmarschen (Fachdienst Gesundheitsschutz)"
+    },
+    {
+      "code": "1.01.0.53.",
+      "display": "Kreis Herzogtum Lauenburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.01.0.54.",
+      "display": "Kreis Nordfriesland (Fachdienst Gesundheit(Gesundheitsamt))"
+    },
+    {
+      "code": "1.01.0.55.",
+      "display": "Kreis Ostholstein (Fachdienst Gesundheit(Gesundheitsamt))"
+    },
+    {
+      "code": "1.01.0.56.",
+      "display": "Kreisverwaltung Pinneberg (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.01.0.57.",
+      "display": "Kreis Plön (Amt für Gesundheit)"
+    },
+    {
+      "code": "1.01.0.58.",
+      "display": "Kreis Rendsburg-Eckernförde (Fachdienst 4.3 Gesundheitsdienste)"
+    },
+    {
+      "code": "1.01.0.59.",
+      "display": "Kreis Schleswig-Flensburg (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.01.0.60.",
+      "display": "Landkreis Segeberg (Fachbereich Gesundheit für Mensch und Tier)"
+    },
+    {
+      "code": "1.01.0.61.",
+      "display": "Landkreis Steinburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.01.0.62.",
+      "display": "Landkreis Stormarn (Fachdienst Gesundheit/ Gesundheitsamt)"
+    },
+    {
+      "code": "1.02.",
+      "display": "Zentrum für Infektionsepidemiologie (Institut für Hygiene und Umwelt)"
+    },
+    {
+      "code": "1.02.0.01.",
+      "display": "Bezirksamt Hamburg-Altona (Bezirksamt Altona)"
+    },
+    {
+      "code": "1.02.0.02.",
+      "display": "Bezirksamt Hamburg-Bergedorf (Fachamt Gesundheit)"
+    },
+    {
+      "code": "1.02.0.03.",
+      "display": "Bezirksamt Hamburg-Eimsbüttel (Gesundheits- und Umweltamt)"
+    },
+    {
+      "code": "1.02.0.04.",
+      "display": "Bezirksamt Hamburg-Mitte (Gesundheits- und Umweltamt)"
+    },
+    {
+      "code": "1.02.0.05.",
+      "display": "Bezirksamt Hamburg-Nord (Fachamt Gesundheit)"
+    },
+    {
+      "code": "1.02.0.06.",
+      "display": "Bezirksamt Hamburg-Harburg (Bezirksamt Harburg)"
+    },
+    {
+      "code": "1.02.0.07.",
+      "display": "Bezirksamt Hamburg-Wandsbek (Gesundheits- und Umweltamt)"
+    },
+    {
+      "code": "1.02.0.08.",
+      "display": "HPHC (Hafenärztlicher Dienst)"
+    },
+    {
+      "code": "1.03.",
+      "display": "Niedersächsisches Landesgesundheitsamt (Abt. Infektionsepidemiologie)"
+    },
+    {
+      "code": "1.03.1.01.",
+      "display": "Stadt Braunschweig (Fachbereich Soziales und Gesundheit)"
+    },
+    {
+      "code": "1.03.1.02.",
+      "display": "Stadt Salzgitter (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.1.03.",
+      "display": "Stadt Wolfsburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.1.51.",
+      "display": "Landkreis Gifhorn (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.03.1.53.",
+      "display": "Landkreis Goslar (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.1.54.",
+      "display": "Landkreis Helmstedt (Geschäftsbereich Gesundheit)"
+    },
+    {
+      "code": "1.03.1.55.03.",
+      "display": "Landkreis Northeim (Gesundheitswesen)"
+    },
+    {
+      "code": "1.03.1.57.",
+      "display": "Landkreis Peine (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.1.58.",
+      "display": "Landkreis Wolfenbüttel (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.1.59.",
+      "display": "Stadt und Landkreis Göttingen (Fachbereich 53 Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.2.41.",
+      "display": "Region Hannover (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.03.2.51.",
+      "display": "Landkreis Diepholz (Fachdienst 53 Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.2.52.",
+      "display": "Landkreis Hameln-Pyrmont (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.2.54.",
+      "display": "Landkreis Hildesheim (FD 409 Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.03.2.55.",
+      "display": "Landkreis Holzminden (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.2.56.",
+      "display": "Landkreis Nienburg (Weser) (FD 414 Sozialmedizin, Hygiene und Umwelt)"
+    },
+    {
+      "code": "1.03.2.57.01.",
+      "display": "Landkreis Schaumburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.51.",
+      "display": "Landkreis Celle (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.52.",
+      "display": "Landkreis Cuxhaven (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.53.",
+      "display": "Landkreis Harburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.54.",
+      "display": "Landkreis Lüchow-Dannenberg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.55.",
+      "display": "Landkreis Lüneburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.56.",
+      "display": "Landkreis Osterholz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.57.",
+      "display": "Landkreis Rotenburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.58.",
+      "display": "Landkreis Heidekreis (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.03.3.59.",
+      "display": "Landkreis Stade (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.60.",
+      "display": "Landkreis Uelzen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.3.61.02.",
+      "display": "Landkreis Verden (Fachdienst Gesundheit und Umweltmedizin)"
+    },
+    {
+      "code": "1.03.4.01.",
+      "display": "Stadt Delmenhorst (Städt. Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.02.",
+      "display": "Stadt Emden (Fachdienst 553 - Gesundheit)"
+    },
+    {
+      "code": "1.03.4.03.",
+      "display": "Stadt Oldenburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.05.",
+      "display": "Stadt Wilhelmshaven (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.51.",
+      "display": "Landkreis Ammerland (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.52.",
+      "display": "Landkreis Aurich (Amt für Gesundheitswesen)"
+    },
+    {
+      "code": "1.03.4.53.",
+      "display": "Landkreis Cloppenburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.54.",
+      "display": "Landkreis Emsland (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.55.",
+      "display": "Landkreis Friesland (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.56.",
+      "display": "Landkreis Grafschaft Bentheim (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.57.",
+      "display": "Landkreis Leer (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.58.",
+      "display": "Landkreis Oldenburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.59.",
+      "display": "Landkreis Osnabrück (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.03.4.60.",
+      "display": "Landkreis Vechta (Gesundheitsamt)"
+    },
+    {
+      "code": "1.03.4.61.",
+      "display": "Landkreis Wesermarsch (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.03.4.62.",
+      "display": "Landkreis Wittmund (Gesundheitsamt)"
+    },
+    {
+      "code": "1.04.",
+      "display": "GA Bremen, Abteilung 3"
+    },
+    {
+      "code": "1.04.0.11.",
+      "display": "Stadt Bremen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.04.0.12.",
+      "display": "Stadt Bremerhaven (Magistrat/Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.",
+      "display": "Landeszentrum Gesundheit NRW (Infektiologie und Hygiene)"
+    },
+    {
+      "code": "1.05.1.11.",
+      "display": "Stadt Düsseldorf (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.12.",
+      "display": "Stadt Duisburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.13.",
+      "display": "Stadt Essen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.14.",
+      "display": "Stadt Krefeld (Fachbereich 53 Gesundheit)"
+    },
+    {
+      "code": "1.05.1.16.",
+      "display": "Stadt Mönchengladbach (Fachbereich 53 Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.17.",
+      "display": "Stadt Mülheim (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.19.",
+      "display": "Stadt Oberhausen (städtischer Bereich Gesundheitswesen)"
+    },
+    {
+      "code": "1.05.1.20.",
+      "display": "Stadt Remscheid (Gesundheitswesen)"
+    },
+    {
+      "code": "1.05.1.22.",
+      "display": "Stadt Solingen (Stadtdienst Gesundheit)"
+    },
+    {
+      "code": "1.05.1.24.",
+      "display": "Stadt Wuppertal (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.54.",
+      "display": "Landkreis Kleve (Kreisgesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.58.",
+      "display": "Landkreis Mettmann (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.62.",
+      "display": "Landkreis Rheinkreis Neuss (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.66.",
+      "display": "Landkreis Viersen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.1.70.",
+      "display": "Landkreis Wesel (Fachbereich Gesundheitswesen)"
+    },
+    {
+      "code": "1.05.3.14.",
+      "display": "Stadt Bonn (Amt 53 Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.3.15.",
+      "display": "Stadt Köln (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.3.16.",
+      "display": "Stadt Leverkusen (Fachbereich 53 Medizinischer Dienst(MediLev))"
+    },
+    {
+      "code": "1.05.3.34.",
+      "display": "StädteRegion Aachen (Gesundheitsamt (A53))"
+    },
+    {
+      "code": "1.05.3.58.",
+      "display": "Kreis Düren (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.3.62.",
+      "display": "Kreisverwaltung Rhein-Erft-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.3.66.",
+      "display": "Kreis Euskirchen (Abteilung Gesundheit)"
+    },
+    {
+      "code": "1.05.3.70.",
+      "display": "Kreis Heinsberg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.3.74.",
+      "display": "Oberbergischer Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.3.78.",
+      "display": "Rheinisch-Bergischer Kreis (Der Landrat)"
+    },
+    {
+      "code": "1.05.3.82.",
+      "display": "Rhein-Sieg-Kreis (Der Landrat/Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.5.12.",
+      "display": "Stadt Bottrop (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.5.13.",
+      "display": "Stadt Gelsenkirchen (Referat Gesundheit)"
+    },
+    {
+      "code": "1.05.5.15.",
+      "display": "Stadt Münster (Amt für Gesundheit, Veterinär- und Lebensmittelangelegenheiten)"
+    },
+    {
+      "code": "1.05.5.54.",
+      "display": "Kreis Borken (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.05.5.58.",
+      "display": "Kreis Coesfeld (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.5.62.",
+      "display": "Kreis Recklinghausen (Fachdienst 53 Gesundheit)"
+    },
+    {
+      "code": "1.05.5.66.",
+      "display": "Kreis Steinfurt (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.5.70.",
+      "display": "Kreis-Warendorf (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.7.11.",
+      "display": "Stadt Bielefeld (Gesundheits-, Veterinär- u. Lebensmittelüberwachungsamt)"
+    },
+    {
+      "code": "1.05.7.54.",
+      "display": "Kreis Gütersloh (Abteilung Gesundheit)"
+    },
+    {
+      "code": "1.05.7.58.",
+      "display": "Kreis Herford (53.3 Abt. Gesundheit)"
+    },
+    {
+      "code": "1.05.7.62.",
+      "display": "Kreisverwaltung Höxter (Gesundheits- und Veterinärwesen)"
+    },
+    {
+      "code": "1.05.7.66.",
+      "display": "Gesundheitsamt Kreis Lippe (FG 530 Gesundheit)"
+    },
+    {
+      "code": "1.05.7.70.",
+      "display": "Kreis Minden-Lübbecke (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.7.74.",
+      "display": "Kreis Paderborn (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.9.11.",
+      "display": "Stadt Bochum (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.9.13.",
+      "display": "Stadt Dortmund (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.9.14.",
+      "display": "Stadt Hagen (Gesundheitsamt Rathaus II)"
+    },
+    {
+      "code": "1.05.9.15.",
+      "display": "Stadt Hamm (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.9.16.",
+      "display": "Stadt Herne (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.05.9.54.",
+      "display": "Landkreis Ennepe-Ruhr-Kreis (Fachbereich Soziales und Gesundheit)"
+    },
+    {
+      "code": "1.05.9.58.",
+      "display": "Hochsauerlandkreis (Gesundheitsamt Fachdienst 37)"
+    },
+    {
+      "code": "1.05.9.62.",
+      "display": "Märkischer Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.05.9.66.",
+      "display": "Kreis Olpe (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.05.9.70.",
+      "display": "Kreis Siegen-Wittgenstein (Gesundheit und Verbraucherschutz)"
+    },
+    {
+      "code": "1.05.9.74.",
+      "display": "Kreis Soest (Ordnung, Gesundheits- und Verbraucherschutz)"
+    },
+    {
+      "code": "1.05.9.78.",
+      "display": "Kreis Unna (Gesundheit und Verbraucherschutz)"
+    },
+    {
+      "code": "1.06.",
+      "display": "Hessisches Landesprüfungs- und Untersuchungsamt im Gesundheitswesen"
+    },
+    {
+      "code": "1.06.4.12.",
+      "display": "Stadt Frankfurt am Main (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.4.13.",
+      "display": "Stadt Offenbach (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.4.14.",
+      "display": "Landeshauptstadt Wiesbaden (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.4.31.",
+      "display": "Kreisausschuss Kreis Bergstraße (Fachdienst Gesundheitswesen)"
+    },
+    {
+      "code": "1.06.4.32.",
+      "display": "Landkreis Darmstadt-Dieburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.4.33.",
+      "display": "Kreis Groß-Gerau (Der Kreisausschuß)"
+    },
+    {
+      "code": "1.06.4.34.",
+      "display": "Kreisausschuss Hochtaunuskreis (Fachbereich Gesundheitsdienste)"
+    },
+    {
+      "code": "1.06.4.35.",
+      "display": "Kreis Main-Kinzig (Gesundheitsamt Hygiene u. Umwelzmedizin)"
+    },
+    {
+      "code": "1.06.4.36.",
+      "display": "Kreis Main-Taunus (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.4.37.",
+      "display": "Kreisausschuss Odenwaldkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.4.38.",
+      "display": "Kreis Offenbach (FD Gefahrenabwehr- und Gesundheitszentrum)"
+    },
+    {
+      "code": "1.06.4.39.",
+      "display": "Kreisausschuss Rheingau-Taunus (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.4.40.",
+      "display": "Wetteraukreis (Fachdienstes Gesundheit und Gefahrenabwehr)"
+    },
+    {
+      "code": "1.06.5.31.",
+      "display": "Landkreis Gießen (Gesundheit)"
+    },
+    {
+      "code": "1.06.5.32.",
+      "display": "Kreisausschuß des Lahn-Dill-Kreises (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.5.33.",
+      "display": "Kreisausschuss Limburg-Weilburg (Gesundheitsamt Dienststelle Limburg)"
+    },
+    {
+      "code": "1.06.5.33.01.",
+      "display": "Kreisausschuss Limburg-Weilburg (Gesundheitsamt Dienststelle Weilburg)"
+    },
+    {
+      "code": "1.06.5.34.",
+      "display": "Kreisausschuss Marburg-Biedenkopf (Fachbereich Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.5.35.",
+      "display": "Landkreis Vogelsbergkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.6.11.",
+      "display": "Region Kassel (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.6.31.",
+      "display": "Kreisausschuss Fulda (Gesundheitsamt)"
+    },
+    {
+      "code": "1.06.6.32.",
+      "display": "Kreisausschuss Hersfeld-Rotenburg (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.06.6.34.",
+      "display": "Kreisausschuss des Schwalm-Eder-Kreises (Fachbereich 53 - Gesundheit, Verbraucherschutz und Veterinärwesen)"
+    },
+    {
+      "code": "1.06.6.35.",
+      "display": "Kreisausschuss des Landkreises Waldeck-Frankenberg (Fachdienst 5.1 Gesundheit)"
+    },
+    {
+      "code": "1.06.6.36.",
+      "display": "Kreisausschuss Werra-Meißner (Fachbereich Gesundheit, Verbraucherschutz und Veterinärwesen)"
+    },
+    {
+      "code": "1.07.",
+      "display": "LUA-Rheinland-Pfalz (Institut für Hygiene und Infektionsschutz)"
+    },
+    {
+      "code": "1.07.0.52.",
+      "display": "Kreisverwaltung Mayen-Koblenz (Gesundheitsamt Nebenstelle)"
+    },
+    {
+      "code": "1.07.0.53.",
+      "display": "Kreisverwaltung Rhein-Lahn Kreis (Abt. 7 Gesundheitswesen)"
+    },
+    {
+      "code": "1.07.0.54.",
+      "display": "Kreisverwaltung Bad Kreuznach (Amt 7: Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.56.",
+      "display": "Kreisverwaltung Ahrweiler (Abt. 2.6 - Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.58.",
+      "display": "Kreisverwaltung  Eifelkreis Bitburg-Prüm (Amt 14 Gesundheitswesen)"
+    },
+    {
+      "code": "1.07.0.59.",
+      "display": "Kreisverwaltung Cochem-Zell (Abt. Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.60.",
+      "display": "Kreisverwaltung Vulkaneifel (Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.63.",
+      "display": "Kreisverwaltung Germersheim (FB 43 Gesundheit, Verbraucherschutz)"
+    },
+    {
+      "code": "1.07.0.64.",
+      "display": "Kreisverwaltung Birkenfeld (Gesundheitsamt - Abt. 5)"
+    },
+    {
+      "code": "1.07.0.65.",
+      "display": "Kreisverwaltung Kaiserslautern (Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.66.",
+      "display": "Kreisverwaltung Donnersbergkreis (Abt. 7 Umweltschutz, Gesundheit)"
+    },
+    {
+      "code": "1.07.0.67.",
+      "display": "Kreisverwaltung Mayen-Koblenz (Abt. Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.68.",
+      "display": "Kreisverwaltung Kusel (Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.69.",
+      "display": "Landkreis Südliche Weinstraße / Landau (Amt für Gesundheit und Soziales)"
+    },
+    {
+      "code": "1.07.0.70.",
+      "display": "Kreisverwaltung Rhein-Pfalz-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.71.",
+      "display": "Kreisverwaltung Mainz-Bingen (Amt für Veterinär- und Gesundheitswesen)"
+    },
+    {
+      "code": "1.07.0.72.",
+      "display": "Kreisverwaltung Mayen-Koblenz (Gesundheitsamt Nebenstelle)"
+    },
+    {
+      "code": "1.07.0.73.",
+      "display": "Kreisverwaltung Westerwaldkreises (Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.74.",
+      "display": "Kreisverwaltung Bad Dürkheim/Neustadt (Abteilung 7: Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.75.",
+      "display": "Kreisverwaltung Neuwied (Abt. 11 Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.76.",
+      "display": "Kreisverwaltung Südwestpfalz/Pirmasens (Abt. Gesundheitswesen)"
+    },
+    {
+      "code": "1.07.0.80.",
+      "display": "Kreisverwaltung Rhein-Hunsrück-Kreis/Simmern (Fachbereich Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.82.",
+      "display": "Kreisverwaltung Trier-Saarburg (Abt. Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.0.83.",
+      "display": "Kreisverwaltung Bernkastel-Wittlich (FB33 Gesundheit)"
+    },
+    {
+      "code": "1.07.0.84.",
+      "display": "Kreisverwaltung Alzey-Worms (Abt 7 - Referat Gesundheitsamt)"
+    },
+    {
+      "code": "1.07.1.32.",
+      "display": "Kreisverwaltung Altenkirchen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.",
+      "display": "Regierungspräsidium Stuttgart (Referat 95 - Epidemiologie und Gesundheitsberichterstattung)"
+    },
+    {
+      "code": "1.08.1.11.",
+      "display": "Landeshauptstadt Stuttgart (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.15.",
+      "display": "Landratsamt Böblingen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.16.",
+      "display": "Landratsamt Esslingen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.17.",
+      "display": "Landratsamt Göppingen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.18.",
+      "display": "Landratsamt Ludwigsburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.19.",
+      "display": "Landratsamt Rems-Murr-Kreis (Geschäftsbereich Gesundheit)"
+    },
+    {
+      "code": "1.08.1.21.",
+      "display": "Stadt Heilbronn (Städtisches Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.25.",
+      "display": "Landratsamt Heilbronn (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.26.",
+      "display": "Landratsamt Hohenlohekreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.27.",
+      "display": "Landratsamt Schwäbisch Hall (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.28.",
+      "display": "Landratsamt Main-Tauber-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.1.35.",
+      "display": "Landratsamt Heidenheim (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.08.1.36.",
+      "display": "Landratsamt Ostalbkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.2.15.",
+      "display": "Landratsamt Karlsruhe (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.2.16.",
+      "display": "Landratsamt Rastatt (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.2.22.",
+      "display": "Stadt Mannheim (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.08.2.25.",
+      "display": "Landratsamt Neckar-Odenwald-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.2.26.",
+      "display": "Landratsamt Rhein-Neckar-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.2.35.",
+      "display": "Landratsamt Calw (Abt. 42 Gesundheit und Versorgung)"
+    },
+    {
+      "code": "1.08.2.36.",
+      "display": "Landratsamt Enzkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.2.37.",
+      "display": "Landratsamt Freudenstadt (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.3.15.",
+      "display": "Landratsamt Breisgau-Hochschwarzwald (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.3.16.",
+      "display": "Landratsamt Emmendingen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.3.17.",
+      "display": "Landratsamt Ortenaukreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.3.25.",
+      "display": "Landratsamt Rottweil (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.3.26.",
+      "display": "Landratsamt Schwarzwald-Baar-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.3.27.",
+      "display": "Landratsamt Tuttlingen (Gesundheitsamt (Amt 42))"
+    },
+    {
+      "code": "1.08.3.35.",
+      "display": "Landratsamt Konstanz (Amt für Gesundheit und Versorgung)"
+    },
+    {
+      "code": "1.08.3.36.",
+      "display": "Landratsamt Lörrach (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.08.3.37.",
+      "display": "Landratsamt Waldshut (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.4.15.",
+      "display": "Landratsamt Reutlingen (Kreisgesundheitsamt)"
+    },
+    {
+      "code": "1.08.4.16.",
+      "display": "Landratsamt Tübingen (Abteilung 33 Gesundheit)"
+    },
+    {
+      "code": "1.08.4.17.",
+      "display": "Landratsamt Zollernalbkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.4.25.",
+      "display": "Landratsamt Alb-Donau-Kreis (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.08.4.26.",
+      "display": "Landratsamt Biberach (Kreisgesundheitsamt)"
+    },
+    {
+      "code": "1.08.4.35.",
+      "display": "Landratsamt Bodenseekreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.4.36.",
+      "display": "Landratsamt Ravensburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.08.4.37.",
+      "display": "Landratsamt Sigmaringen (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.09.",
+      "display": "Bayerisches Landesamt für Gesundheit und Lebensmittelsicherheit"
+    },
+    {
+      "code": "1.09.1.61.",
+      "display": "Stadt Ingolstadt (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.62.",
+      "display": "Landeshauptstadt München (Referat für Gesundheit und Umwelt)"
+    },
+    {
+      "code": "1.09.1.71.",
+      "display": "Landratsamt Altötting (Gesundheits- und Veterinärwesen)"
+    },
+    {
+      "code": "1.09.1.72.",
+      "display": "Landratsamt Berchtesgadener Land (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.73.02.",
+      "display": "Landkreis Bad Tölz - Wolfratshausen (Landratsamt)"
+    },
+    {
+      "code": "1.09.1.74.",
+      "display": "Landratsamt Dachau (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.75.",
+      "display": "Landratsamt Ebersberg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.76.",
+      "display": "Landratsamt Eichstätt (Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.1.77.",
+      "display": "Landratsamt Erding (Abteilung 5 - Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.78.",
+      "display": "Landratsamt Freising (Gesundheitsamt Freising)"
+    },
+    {
+      "code": "1.09.1.79.",
+      "display": "Landratsamt Fürstenfeldbruck (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.80.",
+      "display": "Landratsamt Garmisch-Partenkirchen (Gesundheitsamt Garmisch-Partenkirchen)"
+    },
+    {
+      "code": "1.09.1.81.",
+      "display": "Landkreis Landsberg a.Lech (Landratsamt Landsberg am Lech - Außenstelle 2)"
+    },
+    {
+      "code": "1.09.1.82.",
+      "display": "Landratsamt Miesbach (Fachbereich 43 Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.83.",
+      "display": "Landratsamt Mühldorf am Inn (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.84.",
+      "display": "Landratsamt München (Abteilung 4 - Öffentliches Gesundheits- und Veterinärwesen)"
+    },
+    {
+      "code": "1.09.1.85.01.",
+      "display": "Landratsamt Neuburg-Schrobenhausen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.86.",
+      "display": "Landratsamt Pfaffenhofen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.87.",
+      "display": "Landratsamt Rosenheim (Staatliches Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.88.",
+      "display": "Landratsamt Starnberg (Fachbereich 32 Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.1.89.",
+      "display": "Landratsamt Traunstein (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.1.90.",
+      "display": "Landratsamt Weilheim-Schongau (Abteilung 6 - Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.2.71.",
+      "display": "Landratsamt Deggendorf (Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.2.72.",
+      "display": "Landratsamt Freyung-Grafenau (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.2.73.",
+      "display": "Landratsamt Kelheim (Gesundheitsabteilung)"
+    },
+    {
+      "code": "1.09.2.74.",
+      "display": "Landratsamt Landshut (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.2.75.",
+      "display": "Landratsamt Passau (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.2.76.",
+      "display": "Landratsamt Regen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.2.77.",
+      "display": "Landratsamt Rottal-Inn (Abt. 4 Gesundheits-und Veterinärwesen)"
+    },
+    {
+      "code": "1.09.2.78.",
+      "display": "Landratsamt Straubing-Bogen (Abteilung Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.2.79.",
+      "display": "Landratsamt Dingolfing-Landau (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.3.61.01.",
+      "display": "Landratsamt Amberg-Sulzbach (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.3.72.",
+      "display": "Landratsamt Cham (Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.3.73.",
+      "display": "Landratsamt Neumarkt i.d.Oberpfalz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.3.74.",
+      "display": "Landratsamt Neustadt a. d. Waldnaab/ Weiden (Abteilung Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.3.75.",
+      "display": "Landratsamt Regensburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.3.76.01.",
+      "display": "Landratsamt Schwandorf (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.3.77.",
+      "display": "Landratsamt Tirschenreuth (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.4.71.",
+      "display": "Landratsamt Bamberg (Fachbereich 23 Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.4.72.",
+      "display": "Landratsamt Bayreuth (Abteilung Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.4.73.",
+      "display": "Landratsamt Coburg (FB 32 Gesundheit)"
+    },
+    {
+      "code": "1.09.4.74.",
+      "display": "Landratsamt Forchheim (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.4.75.",
+      "display": "Landratsamt Hof (Abt. 7 Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.4.76.",
+      "display": "Landratsamt Kronach (Sachgebiet 36 - Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.4.77.",
+      "display": "Landratsamt Kulmbach (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.4.78.",
+      "display": "Landratsamt Lichtenfels (Abt. Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.4.79.",
+      "display": "Landratsamt Wunsiedel i.Fichtelgeb. (Fachbereich Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.5.61.",
+      "display": "Landratsamt Ansbach (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.5.64.",
+      "display": "Stadt Nürnberg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.5.72.01.",
+      "display": "Landratsamt Erlangen-Höchstadt (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.5.73.",
+      "display": "Landratsamt Fürth (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.5.74.",
+      "display": "Landratsamt Nürnberger Land (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.5.75.",
+      "display": "Landratsamt Neustadt a.d.Aisch-Bad Windsheim (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.5.76.",
+      "display": "Landratsamt Roth (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.5.77.",
+      "display": "Landratsamt Weißenburg-Gunzenhausen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.6.71.",
+      "display": "Landratsamt Aschaffenburg (Abteilung 5 - Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.6.72.",
+      "display": "Landkreis Bad Kissingen (Staatliches Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.6.73.",
+      "display": "Landkreis Rhön-Grabfeld (3.4 Gesundheitswesen)"
+    },
+    {
+      "code": "1.09.6.74.",
+      "display": "Landratsamt Hassberge (Fachabteilung II/A)"
+    },
+    {
+      "code": "1.09.6.75.",
+      "display": "Landratsamt Kitzingen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.6.76.",
+      "display": "Landratsamt Miltenberg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.6.77.",
+      "display": "Landratsamt Main-Spessart (Staatliches Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.6.78.",
+      "display": "Landratsamt Schweinfurt (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.6.79.",
+      "display": "Landratsamt Würzburg (Fachbereich 34)"
+    },
+    {
+      "code": "1.09.7.61.",
+      "display": "Stadt Augsburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.64.",
+      "display": "Stadt Memmingen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.71.",
+      "display": "Landratsamt Aichach-Friedberg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.72.",
+      "display": "Landratsamt Augsburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.73.",
+      "display": "Landratsamt Dillingen (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.09.7.74.",
+      "display": "Landratsamt Günzburg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.75.",
+      "display": "Landratsamt Neu-Ulm (Öffentlicher Gesundheitsdienst)"
+    },
+    {
+      "code": "1.09.7.76.",
+      "display": "Landratsamt Lindau (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.09.7.77.",
+      "display": "Landkreis Ostallgäu (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.78.",
+      "display": "Landratsamt Unterallgäu (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.79.01.",
+      "display": "Landratsamt Donau-Ries (Gesundheitsamt)"
+    },
+    {
+      "code": "1.09.7.80.",
+      "display": "Landratsamt Oberallgäu (Gesundheitsamt)"
+    },
+    {
+      "code": "1.10.",
+      "display": "Ministerium für Soziales, (Abteilung E Gesundheit)"
+    },
+    {
+      "code": "1.10.0.41.",
+      "display": "Regionalverbandes Saarbrücken (Gesundheitsamt)"
+    },
+    {
+      "code": "1.10.0.42.",
+      "display": "Landkreis Merzig-Wadern (Gesundheitsamt)"
+    },
+    {
+      "code": "1.10.0.43.",
+      "display": "Landkreis Neunkirchen (Kreisgesundheitsamt)"
+    },
+    {
+      "code": "1.10.0.44.",
+      "display": "Landkreis Saarlouis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.10.0.45.",
+      "display": "Saarpfalz-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.10.0.46.",
+      "display": "Landkreis St. Wendel (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.",
+      "display": "Landesamt Berlin (Gesundheit und Soziales)"
+    },
+    {
+      "code": "1.11.0.01.01.",
+      "display": "Bezirksamt Mitte von Berlin , Abt. Gesundheit (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.02.01.",
+      "display": "Bezirksamt Friedrichshain-Kreuzberg von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.03.01.",
+      "display": "Bezirksamt Pankow von Berlin (Abt. Gesundheit und Soziales)"
+    },
+    {
+      "code": "1.11.0.04.01.",
+      "display": "Bezirksamt Charlottenburg-Wilmersdorf von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.05.01.",
+      "display": "Bezirksamt Spandau von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.06.01.",
+      "display": "Bezirksamt Steglitz-Zehlendorf von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.07.01.",
+      "display": "Bezirksamt Tempelhof-Schöneberg von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.08.01.",
+      "display": "Bezirksamt Neukölln von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.09.01.",
+      "display": "Bezirksamt Treptow-Köpenick von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.10.01.",
+      "display": "Bezirksamt Marzahn-Hellersdorf von Berlin (Abteilung Gesundheit und Soziales)"
+    },
+    {
+      "code": "1.11.0.11.01.",
+      "display": "Bezirksamt Lichtenberg von Berlin (Abt. Umwelt und Gesundheit)"
+    },
+    {
+      "code": "1.11.0.11.09.",
+      "display": "Bezirksamt Lichtenberg von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.11.0.12.01.",
+      "display": "Bezirksamt Reinickendorf von Berlin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.",
+      "display": "Landesamt für Umwelt, Gesundheit und Verbraucherschutz (Abteilung Gesundheit)"
+    },
+    {
+      "code": "1.12.0.51.",
+      "display": "Stadtverwaltung Brandenburg (Gesundheits-, Veterinär- und Lebensmittelüberwachungsamt)"
+    },
+    {
+      "code": "1.12.0.52.",
+      "display": "Stadt Cottbus/S (Fachbereich 53 Gesundheit)"
+    },
+    {
+      "code": "1.12.0.53.",
+      "display": "Stadt Frankfurt/Oder (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.54.",
+      "display": "Landeshauptstadt Potsdam (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.60.",
+      "display": "Landkreis Barnim (Dienstleistungs- und Verwaltungszentrum/ Paul Wunderlich Haus)"
+    },
+    {
+      "code": "1.12.0.61.",
+      "display": "Landkreis Dahme- Spreewald (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.62.",
+      "display": "Landkreis Elbe-Elster (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.63.",
+      "display": "Landkreis Havelland (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.64.",
+      "display": "Landkreis Märkisch- Oderland (Gesundheitsamt FB II)"
+    },
+    {
+      "code": "1.12.0.65.",
+      "display": "Landkreis Oberhavel (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.66.",
+      "display": "Landkreis Oberspreewald- Lausitz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.67.",
+      "display": "Landkreis Oder- Spree (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.68.",
+      "display": "Kreisverwaltung Ostprignitz- Ruppin (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.69.",
+      "display": "Landkreis Potsdam-Mittelmark (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.12.0.70.",
+      "display": "Landkreis Prignitz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.71.",
+      "display": "Landkreis Spree-Neiße (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.12.0.72.",
+      "display": "Landkreis Teltow-Fläming (Dezernat II Gesundheitsamt)"
+    },
+    {
+      "code": "1.12.0.73.",
+      "display": "Landkreis Uckermark (Gesundheits- und Veterinäramt)"
+    },
+    {
+      "code": "1.13.",
+      "display": "Landesamt für Gesundheit und Soziales M-V (Abteilung Gesundheit)"
+    },
+    {
+      "code": "1.13.0.03.",
+      "display": "Stadt Rostock (Gesundheitsamt)"
+    },
+    {
+      "code": "1.13.0.04.",
+      "display": "Landeshauptstadt Schwerin (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.13.0.71.",
+      "display": "Landkreis Mecklenburgische Seenplatte (Gesundheitsamt)"
+    },
+    {
+      "code": "1.13.0.72.",
+      "display": "Landkreis Rostock (Gesundheitsamt Güstrow)"
+    },
+    {
+      "code": "1.13.0.73.",
+      "display": "Landkreis Vorpommern-Rügen (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.13.0.74.",
+      "display": "Landkreis Nordwestmecklenburg (Fachdienst Öffentlicher Gesundheitsdienst)"
+    },
+    {
+      "code": "1.13.0.75.",
+      "display": "Landkreis Vorpommern–Greifswald (Gesundheitsamt)"
+    },
+    {
+      "code": "1.13.0.76.",
+      "display": "Landkreis Ludwigslust-Parchim (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.",
+      "display": "Landesuntersuchungsanstalt für das Gesundheits- und Veterinärwesen Sachsen"
+    },
+    {
+      "code": "1.14.5.11.",
+      "display": "Stadt Chemnitz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.5.21.02.",
+      "display": "Landkreis Erzgebirgskreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.5.22.01.",
+      "display": "Landkreis Mittelsachsen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.5.23.02.",
+      "display": "Landkreis Vogtlandkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.5.24.01.",
+      "display": "Landkreis Zwickau (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.6.12.",
+      "display": "Landeshauptstadt Dresden (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.6.25.03.",
+      "display": "Landratsamt Bautzen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.6.26.01.",
+      "display": "Landkreis Görlitz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.6.27.01.",
+      "display": "Landkreis Meißen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.6.28.01.",
+      "display": "Landkreis Sächsische Schweiz - Osterzgebirge (Abteilung Gesundheit)"
+    },
+    {
+      "code": "1.14.7.13.",
+      "display": "Stadt Leipzig (Gesundheitsamt)"
+    },
+    {
+      "code": "1.14.7.29.01.",
+      "display": "Landratsamt Leipzig (Gesundheitsamt (Hauptsitz))"
+    },
+    {
+      "code": "1.14.7.30.01.",
+      "display": "Landratsamt Nordsachsen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.15.",
+      "display": "Landesamt für Verbraucherschutz (Sachsen-Anhalt)"
+    },
+    {
+      "code": "1.15.0.01.",
+      "display": "Stadt Dessau-Roßlau (Gesundheitsamt/Veterinärwesen und Verbaucherschutz)"
+    },
+    {
+      "code": "1.15.0.02.",
+      "display": "Stadt Halle (Saale) (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.15.0.03.",
+      "display": "Landeshauptstadt Magdeburg (Gesundheits- und Veterinäramt)"
+    },
+    {
+      "code": "1.15.0.81.",
+      "display": "Altmarkkreis Salzwedel (Gesundheitsamt)"
+    },
+    {
+      "code": "1.15.0.82.02.",
+      "display": "Landkreis Anhalt- Bitterfeld (Gesundheitsamt - Köthen (Anhalt))"
+    },
+    {
+      "code": "1.15.0.83.01.",
+      "display": "Landkreis Börde (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.15.0.84.02.",
+      "display": "Burgenlandkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.15.0.85.03.",
+      "display": "Landkreis Harz (Gesundheitsamt - Wernigerode)"
+    },
+    {
+      "code": "1.15.0.86.",
+      "display": "Landkreis Jerichower Land (Gesundheitsamt)"
+    },
+    {
+      "code": "1.15.0.87.02.",
+      "display": "Landkreis Mansfeld-Südharz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.15.0.88.02.",
+      "display": "Landkreis Saalekreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.15.0.89.01.",
+      "display": "Salzlandkreis (34 Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.15.0.90.",
+      "display": "Landkreis Stendal (Gesundheitsamt)"
+    },
+    {
+      "code": "1.15.0.91.",
+      "display": "Landkreis Wittenberg (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.16.",
+      "display": "Thüringer Landesamt (Lebensmittelsicherheit und Verbraucherschutz (TLLV))"
+    },
+    {
+      "code": "1.16.0.51.",
+      "display": "Landeshauptstadt Erfurt (Amt für Soziales und Gesundheit)"
+    },
+    {
+      "code": "1.16.0.52.",
+      "display": "Stadt Gera (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.16.0.53.",
+      "display": "Stadtverwaltung Jena (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.16.0.54.",
+      "display": "Stadtverwaltung Suhl (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.55.",
+      "display": "Stadtverwaltung Weimar (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.61.",
+      "display": "Landkreis Eichsfeld (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.62.",
+      "display": "Landratsamt Nordhausen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.63.",
+      "display": "Landratsamt Wartburgkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.64.01.",
+      "display": "Landratsamt Unstrut-Hainich-Kreis (FD Gesundheit)"
+    },
+    {
+      "code": "1.16.0.65.01.",
+      "display": "Landratsamt Kyffhäuserkreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.66.",
+      "display": "Landratsamt Schmalkalden-Meiningen (Fachbereich Gesundheit)"
+    },
+    {
+      "code": "1.16.0.67.",
+      "display": "Landratsamt Gotha (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.68.",
+      "display": "Landratsamt Sömmerda (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.69.",
+      "display": "Landratsamt Hildburghausen (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.70.02.",
+      "display": "Landratsamt Ilm-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.71.",
+      "display": "Landratsamt Weimarer Land (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.72.",
+      "display": "Landratsamt Sonneberg (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.73.02.",
+      "display": "Landratsamt Saalfeld-Rudolstadt (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.74.",
+      "display": "Landratsamt Saale-Holzland-Kreis (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.75.03.",
+      "display": "Landratsamt Saale-Orla-Kreis (Fachdienst Amtsärztlicher Dienst)"
+    },
+    {
+      "code": "1.16.0.76.",
+      "display": "Landratsamt Greiz (Gesundheitsamt)"
+    },
+    {
+      "code": "1.16.0.77.",
+      "display": "Landratsamt Altenburger Land (Fachdienst Gesundheit)"
+    },
+    {
+      "code": "1.17.",
+      "display": "Kommando Sanitätsdienst der Bundeswehr"
+    },
+    {
+      "code": "1.17.0.01.",
+      "display": "ÜbwSt ÖRA Nord (für HB, HH, MV, NI, SH)"
+    },
+    {
+      "code": "1.17.0.02.",
+      "display": "ÜbwSt ÖRA Ost (für BB, BE, SN, ST, TH)"
+    },
+    {
+      "code": "1.17.0.03.",
+      "display": "ÜbwSt ÖRA Süd (für BW, BY)"
+    },
+    {
+      "code": "1.17.0.04.",
+      "display": "ÜbwSt ÖRA West (für HE, NW, RP, SL)"
     }
   ],
   "language": "de-DE",
@@ -27,9 +1639,9 @@
       ]
     }
   ],
-  "version": "1.0.0",
-  "date": "2024-03-19",
+  "version": "1.1.0",
+  "date": "2025-05-05",
   "caseSensitive": true,
   "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility",
-  "count": 1
+  "count": 404
 }
