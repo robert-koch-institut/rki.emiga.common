@@ -2,7 +2,7 @@ Extension: ProcessingStatus
 Id: ProcessingStatus
 Title: "Bearbeitungsstatus"
 Description: "Extension zur Abbildung der Bearbeitungsstatus eines Vorgangs."
-Context: Composition
+Context: Element
 * ^url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * ^version = "0.1.0"
 * insert MetadataProfile
