@@ -10,6 +10,6 @@ Alias: $RelevanceCS = https://emiga.rki.de/fhir/common/CodeSystem/Relevance
 Alias: $RelevanceVS = https://emiga.rki.de/fhir/common/ValueSet/Relevance
 Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
 Alias: $PersonalInformationVS = https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS
-
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ProcessingStatus = https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
 Alias: $DateCreated = https://emiga.rki.de/fhir/common/Extension/DateCreated
