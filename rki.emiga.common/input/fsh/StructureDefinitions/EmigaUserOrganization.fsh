@@ -1,7 +1,7 @@
 Profile: EmigaUserOrganization
 Parent: Organization
 Id: EmigaUserOrganization
-Title: "EmigaUserOrganization"
+Title: "Emiga Nutzende Organization"
 Description: "TODO"
 * insert MetadataProfile
 * ^version = "0.1.0"
@@ -35,4 +35,8 @@ Description: "TODO"
   * ^slicing.ordered = false
 */
 //* identifier contains codeSiteId 1..1 MS
-* identifier only IdentifierCodeSiteId
+* identifier 1..1 MS
+* identifier.type = $v2-0203#PRN
+//* identifier ^comment = "Emailaddresse der Nutzende Person - email Regex?"
+* identifier.system MS
+* identifier.value MS
