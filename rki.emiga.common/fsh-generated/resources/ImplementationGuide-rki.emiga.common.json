@@ -27,22 +27,30 @@
       "version": "1.4.0",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
-    },
-    {
-      "packageId": "rki.emiga.vzd",
-      "version": "2.0.0-alpha.4-snapshots",
-      "uri": "http://fhir.org/packages/rki.emiga.vzd/ImplementationGuide/rki.emiga.vzd",
-      "id": "rki_emiga_vzd"
     }
   ],
   "definition": {
     "resource": [
       {
         "reference": {
+          "reference": "Communication/441557618"
+        },
+        "name": "441557618",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/441557619"
+        },
+        "name": "441557619",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AttachmentDocumentReference"
         },
         "name": "Anhang",
-        "description": "ToDo",
+        "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
         "exampleBoolean": false
       },
       {
@@ -79,17 +87,17 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EmigaUserPractitioner"
+          "reference": "StructureDefinition/EmigaUserOrganization"
         },
-        "name": "Emiga Nutzende Person",
+        "name": "Emiga Nutzende Organization",
         "description": "TODO",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EmigaUserOrganization"
+          "reference": "StructureDefinition/EmigaUserPractitioner"
         },
-        "name": "EmigaUserOrganization",
+        "name": "Emiga Nutzende Person",
         "description": "TODO",
         "exampleBoolean": false
       },

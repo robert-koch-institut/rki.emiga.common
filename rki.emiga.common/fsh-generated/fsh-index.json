@@ -48,12 +48,28 @@
     "endLine": 13
   },
   {
+    "outputFile": "Communication-441557618.json",
+    "fshName": "441557618",
+    "fshType": "Instance",
+    "fshFile": "Examples\\Communication-441557618.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "DocumentReference-441557619.json",
+    "fshName": "441557619",
+    "fshType": "Instance",
+    "fshFile": "Examples\\DocumentReference-441557619.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
     "outputFile": "StructureDefinition-AnnotationCommunication.json",
     "fshName": "AnnotationCommunication",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 108
+    "endLine": 109
   },
   {
     "outputFile": "StructureDefinition-AttachmentDocumentReference.json",
@@ -61,7 +77,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
     "startLine": 1,
-    "endLine": 56
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",
@@ -77,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\EmigaUserOrganization.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-EmigaUserPractitioner.json",

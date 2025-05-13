@@ -26,7 +26,7 @@ publisher:
 #
 dependencies:
   de.basisprofil.r4: 1.4.0
-  rki.emiga.vzd: 2.0.0-alpha.4-snapshots
+  
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode

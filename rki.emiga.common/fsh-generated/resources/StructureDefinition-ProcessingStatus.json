@@ -21,7 +21,7 @@
   "abstract": false,
   "context": [
     {
-      "expression": "Composition",
+      "expression": "Element",
       "type": "element"
     }
   ],
