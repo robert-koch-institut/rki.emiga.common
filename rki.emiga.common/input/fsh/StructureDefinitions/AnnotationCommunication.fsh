@@ -7,6 +7,7 @@ Description: "ToDo"
 * ^date = "2025-04-29"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
+* insert MetadataProfile
 * insert ProfileSecurityTags
 * insert ProfileResourceCommon
 * insert ProfileDomainResourceCommon
