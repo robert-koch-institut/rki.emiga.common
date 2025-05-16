@@ -26,9 +26,9 @@ Description: "ToDo"
 * meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS (required)
 * meta.tag[personalInformation].system 1.. MS
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
-* meta.tag[personalInformation].version MS
+* meta.tag[personalInformation].version 
 * meta.tag[personalInformation].code 1.. MS
-* meta.tag[personalInformation].display MS
+* meta.tag[personalInformation].display 
 * meta.tag[personalInformation] ^definition = "Kennzeichnung von personenbezogenen Daten"
 * meta.tag[personalInformation] ^short = "Kennzeichnung von personenbezogenen Daten"
 
@@ -36,7 +36,9 @@ Description: "ToDo"
 * language 0..0
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
-* identifier 0.. MS
+* identifier 1.. MS
+* identifier only IdentifierEmigaAnnotationId
+//* identifier only IdentifierAnn
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
 //Derzeit für Emiga Anwendungsfälle nicht relevant
@@ -59,10 +61,10 @@ Description: "ToDo"
 * category 0..1 MS
 * category ^short = "Schlagwort"
 * category ^definition = "Schlagwort der Annotation"
-* category.coding 0..0
-* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
-* category.text 1..1 MS
-* category.text ^short = "Schlagwort-Inhalt"
+* category.coding 
+//* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
+* category.text MS
+//* category.text ^short = "Schlagwort-Inhalt"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * priority 0..0
 //Derzeit für Emiga Anwendungsfälle nicht relevant
