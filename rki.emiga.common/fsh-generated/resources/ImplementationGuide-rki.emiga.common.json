@@ -87,6 +87,14 @@
       },
       {
         "reference": {
+          "reference": "NamingSystem/EmigaAnnotationId"
+        },
+        "name": "Emiga Annotationen ID",
+        "description": "Emiga Annotationen ID to be used in Identifiers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/EmigaUserOrganization"
         },
         "name": "Emiga Nutzende Organization",
@@ -107,6 +115,14 @@
         },
         "name": "Erstellungsdatum",
         "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaAnnotationId"
+        },
+        "name": "Identifier-Profil EMIGA Annotation",
+        "description": "Identifier Profil für EMIGA Annotationen",
         "exampleBoolean": false
       },
       {

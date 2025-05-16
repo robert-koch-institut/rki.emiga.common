@@ -7,11 +7,13 @@ CodeSystem-ResourceResponsibility.json                ResourceResponsibility    
 CodeSystem-ResourceVisibilityType.json                ResourceVisibilityType       CodeSystem  CodeSystem\ResourceVisibilityType.fsh                 1 - 13
 Communication-441557618.json                          441557618                    Instance    Examples\Communication-441557618.fsh                  1 - 36
 DocumentReference-441557619.json                      441557619                    Instance    Examples\DocumentReference-441557619.fsh              1 - 15
-StructureDefinition-AnnotationCommunication.json      AnnotationCommunication      Profile     StructureDefinitions\AnnotationCommunication.fsh      1 - 109
-StructureDefinition-AttachmentDocumentReference.json  AttachmentDocumentReference  Profile     StructureDefinitions\AttachmentDocumentReference.fsh  1 - 53
+NamingSystem-EmigaAnnotationId.json                   EmigaAnnotationId            Instance    NamingSystem\EmigaAnnotationId.fsh                    1 - 12
+StructureDefinition-AnnotationCommunication.json      AnnotationCommunication      Profile     StructureDefinitions\AnnotationCommunication.fsh      1 - 111
+StructureDefinition-AttachmentDocumentReference.json  AttachmentDocumentReference  Profile     StructureDefinitions\AttachmentDocumentReference.fsh  1 - 77
 StructureDefinition-DateCreated.json                  DateCreated                  Extension   StructureDefinitions\ExtensionDateCreated.fsh         1 - 10
 StructureDefinition-EmigaUserOrganization.json        EmigaUserOrganization        Profile     StructureDefinitions\EmigaUserOrganization.fsh        1 - 42
 StructureDefinition-EmigaUserPractitioner.json        EmigaUserPractitioner        Profile     StructureDefinitions\EmigaUserPractitioner.fsh        1 - 98
+StructureDefinition-IdentifierEmigaAnnotationId.json  IdentifierEmigaAnnotationId  Profile     StructureDefinitions\IdentifierEmigaAnnotationId.fsh  1 - 12
 StructureDefinition-ProcessingStatus.json             ProcessingStatus             Extension   StructureDefinitions\ExtensionProcessingStatus.fsh    1 - 18
 ValueSet-ConceptDesignationUse.json                   ConceptDesignationUse        ValueSet    CodeSystem\ConceptDesignationUse.fsh                  16 - 23
 ValueSet-PersonalInformationVS.json                   PersonalInformationVS        ValueSet    CodeSystem\PersonalInformation.fsh                    16 - 24

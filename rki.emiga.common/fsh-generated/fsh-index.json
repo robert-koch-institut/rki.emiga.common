@@ -64,12 +64,20 @@
     "endLine": 15
   },
   {
+    "outputFile": "NamingSystem-EmigaAnnotationId.json",
+    "fshName": "EmigaAnnotationId",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\EmigaAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "StructureDefinition-AnnotationCommunication.json",
     "fshName": "AnnotationCommunication",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 109
+    "endLine": 111
   },
   {
     "outputFile": "StructureDefinition-AttachmentDocumentReference.json",
@@ -77,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
     "startLine": 1,
-    "endLine": 53
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",
@@ -102,6 +110,14 @@
     "fshFile": "StructureDefinitions\\EmigaUserPractitioner.fsh",
     "startLine": 1,
     "endLine": 98
+  },
+  {
+    "outputFile": "StructureDefinition-IdentifierEmigaAnnotationId.json",
+    "fshName": "IdentifierEmigaAnnotationId",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierEmigaAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
   },
   {
     "outputFile": "StructureDefinition-ProcessingStatus.json",
