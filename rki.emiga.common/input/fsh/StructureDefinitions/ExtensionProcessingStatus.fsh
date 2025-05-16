@@ -13,6 +13,6 @@ Context: Element
 * value[x] ^definition = "Bearbeitungsstatus des Vorgangs"
 * value[x] ^binding.description = "Bearbeitungsstatus"
 * value[x].system 1.. MS
-* value[x].version MS
+* value[x].version 
 * value[x].code 1.. MS
-* value[x].display MS
+* value[x].display 
