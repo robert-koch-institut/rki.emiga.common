@@ -18,7 +18,7 @@ Usage: #example
 * extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
 * extension[dateCreated].valueDate = "2023-10-01"
 
-
+* identifier.value = "ANNO-TestID-441557618"
 
 * status = #completed
 * category.text = "Test Schlagwort"
