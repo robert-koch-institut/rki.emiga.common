@@ -61,7 +61,15 @@ Description: "ToDo"
 * category 0..1 MS
 * category ^short = "Schlagwort"
 * category ^definition = "Schlagwort der Annotation"
-* category.coding 
+* category.coding from https://emiga.rki.de/fhir/common/ValueSet/KeywordsVS (preferred)
+* category.coding MS
+* category.coding.system 1..1 MS
+* category.coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/Keywords"
+* category.coding.version 0..1 MS
+* category.coding.code MS
+* category.coding.code ^short = "Schlagwort-Code"
+* category.coding.code ^definition = "Schlagwort-Code der Annotation"
+* category.coding.display 0..1 MS
 //* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
 * category.text MS
 //* category.text ^short = "Schlagwort-Inhalt"
@@ -107,8 +115,9 @@ Description: "ToDo"
 * payload ^short = "Inhalt"
 * payload ^definition = "Inhalt der Annotation"
 * payload.content[x] MS
-* payload.content[x] ^comment = "Der Inhalt der Annotation wird im contentString Feld gespeichert oder im Fall eines Anhangs im contentAttachment Referenziert"
-* payload.content[x] only string or Reference(AttachmentDocumentReference)
+* payload.content[x] only string or AttachmentAnnotation or Reference
+* payload.content[x] ^comment = "Der Inhalt der Annotation wird im contentString Feld gespeichert oder im Fall eines Anhangs im contentAttachment Feld"
+
 
 /*
 * note 0..* MS

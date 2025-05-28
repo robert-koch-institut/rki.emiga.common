@@ -8,6 +8,14 @@
     "endLine": 14
   },
   {
+    "outputFile": "CodeSystem-Keywords.json",
+    "fshName": "Keywords",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\Keywords.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
     "outputFile": "CodeSystem-PersonalInformation.json",
     "fshName": "PersonalInformation",
     "fshType": "CodeSystem",
@@ -53,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Communication-441557618.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 42
   },
   {
     "outputFile": "DocumentReference-441557619.json",
@@ -77,7 +85,15 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 111
+    "endLine": 119
+  },
+  {
+    "outputFile": "StructureDefinition-AttachmentAnnotation.json",
+    "fshName": "AttachmentAnnotation",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AttachmentAnnotation.fsh",
+    "startLine": 1,
+    "endLine": 13
   },
   {
     "outputFile": "StructureDefinition-AttachmentDocumentReference.json",
@@ -134,6 +150,14 @@
     "fshFile": "CodeSystem\\ConceptDesignationUse.fsh",
     "startLine": 16,
     "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-Keywords.json",
+    "fshName": "Keywords",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\Keywords.fsh",
+    "startLine": 12,
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-PersonalInformationVS.json",

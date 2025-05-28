@@ -1,5 +1,6 @@
 Instance: 441557618
 InstanceOf: AnnotationCommunication
+Description: "Test Annotation Example including attachment"
 Usage: #example
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
@@ -16,11 +17,14 @@ Usage: #example
 * extension[processingStatus].valueCoding.display = "zur Kenntnis"
 
 * extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
-* extension[dateCreated].valueDate = "2023-10-01"
+* extension[dateCreated].valueInstant = "2024-10-01T12:00:00Z"
 
 * identifier.value = "ANNO-TestID-441557618"
 
 * status = #completed
+* category.coding[0].system = "https://emiga.rki.de/fhir/common/CodeSystem/Keywords"
+* category.coding[0].code = #test
+* category.coding[0].display = "Test Schlagwort"
 * category.text = "Test Schlagwort"
 //* subject = Reference(Patient/example)
 * topic.text = "Test Betreff"
@@ -33,4 +37,8 @@ Usage: #example
 
 * payload[0].contentString = "Das ist ein Test Beschreibung"
 
-* payload[1].contentReference = Reference(DocumentReference/441557619)
+* payload[1].contentAttachment.contentType = #img/png
+* payload[1].contentAttachment.url = "https://example.com/image.png"
+* payload[1].contentAttachment.title = "Test Bild"
+
+//* payload[1].contentReference = Reference(DocumentReference/441557619)

@@ -36,6 +36,7 @@
           "reference": "Communication/441557618"
         },
         "name": "441557618",
+        "description": "Test Annotation Example including attachment",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
       },
       {
@@ -44,6 +45,14 @@
         },
         "name": "441557619",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AttachmentAnnotation"
+        },
+        "name": "Anhang",
+        "description": "Attachment Profil für EMIGA Anhänge",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -143,6 +152,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/Keywords"
+        },
+        "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/PersonalInformation"
         },
         "name": "Personenbezug",
@@ -203,6 +220,14 @@
         },
         "name": "Ressourcensichtbarkeit (Werteliste)",
         "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Keywords"
+        },
+        "name": "Schlagworter",
+        "description": "TODO",
         "exampleBoolean": false
       }
     ],

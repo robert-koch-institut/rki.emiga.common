@@ -52,7 +52,7 @@
         "min": 1,
         "type": [
           {
-            "code": "date"
+            "code": "instant"
           }
         ],
         "mustSupport": true
