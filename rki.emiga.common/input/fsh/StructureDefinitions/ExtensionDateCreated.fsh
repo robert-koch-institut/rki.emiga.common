@@ -7,4 +7,4 @@ Context: Element
 * ^version = "0.1.0"
 * insert MetadataProfile
 * value[x] 1.. MS
-* value[x] only date
+* value[x] only instant
