@@ -1,7 +1,7 @@
 Profile: IdentifierEmigaAnnotationId
 Parent: Identifier
 Id: IdentifierEmigaAnnotationId
-Title: "Identifier-Profil EMIGA Annotation"
+Title: "EMIGA Annotation-Identifier"
 Description: "Identifier Profil für EMIGA Annotationen"
 * insert MetadataProfile
 * ^version = "0.1.0"
