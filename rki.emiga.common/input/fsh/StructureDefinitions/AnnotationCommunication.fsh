@@ -13,7 +13,7 @@ Description: "ToDo"
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.1"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS
@@ -37,7 +37,15 @@ Description: "ToDo"
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
 * identifier 1.. MS
-* identifier only IdentifierEmigaAnnotationId
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+  * ^slicing.description = "slicing organization identifier by system"
+  * ^slicing.ordered = false
+* identifier contains emigaAnnotationId 1..1 MS and
+          survnetAnnotationId 0..1 MS
+* identifier[emigaAnnotationId] only IdentifierEmigaAnnotationId
+* identifier[survnetAnnotationId] only IdentifierSurvNetAnnotationId
 //* identifier only IdentifierAnn
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
