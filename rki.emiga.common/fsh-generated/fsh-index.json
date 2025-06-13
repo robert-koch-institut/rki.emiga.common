@@ -37,7 +37,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem\\Relevance.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 14
   },
   {
     "outputFile": "CodeSystem-ResourceResponsibility.json",
@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Communication-441557618.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 47
   },
   {
     "outputFile": "DocumentReference-441557619.json",
@@ -80,12 +80,20 @@
     "endLine": 12
   },
   {
+    "outputFile": "NamingSystem-SurvNetAnnotationId.json",
+    "fshName": "SurvNetAnnotationId",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\SurvNetAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "StructureDefinition-AnnotationCommunication.json",
     "fshName": "AnnotationCommunication",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 119
+    "endLine": 127
   },
   {
     "outputFile": "StructureDefinition-AttachmentAnnotation.json",
@@ -112,14 +120,6 @@
     "endLine": 10
   },
   {
-    "outputFile": "StructureDefinition-EmigaUserOrganization.json",
-    "fshName": "EmigaUserOrganization",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\EmigaUserOrganization.fsh",
-    "startLine": 1,
-    "endLine": 42
-  },
-  {
     "outputFile": "StructureDefinition-EmigaUserPractitioner.json",
     "fshName": "EmigaUserPractitioner",
     "fshType": "Profile",
@@ -132,6 +132,14 @@
     "fshName": "IdentifierEmigaAnnotationId",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\IdentifierEmigaAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-IdentifierSurvNetAnnotationId.json",
+    "fshName": "IdentifierSurvNetAnnotationId",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierSurvNetAnnotationId.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -180,8 +188,8 @@
     "fshName": "Relevance",
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\Relevance.fsh",
-    "startLine": 15,
-    "endLine": 23
+    "startLine": 16,
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-ResourceResponsibility.json",

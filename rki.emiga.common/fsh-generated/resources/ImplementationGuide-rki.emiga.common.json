@@ -96,18 +96,18 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/EmigaAnnotationId"
+          "reference": "StructureDefinition/IdentifierEmigaAnnotationId"
         },
-        "name": "Emiga Annotationen ID",
-        "description": "Emiga Annotationen ID to be used in Identifiers",
+        "name": "EMIGA Annotation-Identifier",
+        "description": "Identifier Profil für EMIGA Annotationen",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EmigaUserOrganization"
+          "reference": "NamingSystem/EmigaAnnotationId"
         },
-        "name": "Emiga Nutzende Organization",
-        "description": "TODO",
+        "name": "Emiga Annotationen ID",
+        "description": "Emiga Annotationen ID to be used in Identifiers",
         "exampleBoolean": false
       },
       {
@@ -124,14 +124,6 @@
         },
         "name": "Erstellungsdatum",
         "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierEmigaAnnotationId"
-        },
-        "name": "Identifier-Profil EMIGA Annotation",
-        "description": "Identifier Profil für EMIGA Annotationen",
         "exampleBoolean": false
       },
       {
@@ -228,6 +220,22 @@
         },
         "name": "Schlagworter",
         "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierSurvNetAnnotationId"
+        },
+        "name": "SurvNet Annotation-Identifier",
+        "description": "Identifier Profil für EMIGA Annotationen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/SurvNetAnnotationId"
+        },
+        "name": "SurvNet Annotationen ID",
+        "description": "SurvNet Annotationen ID to be used in Identifiers",
         "exampleBoolean": false
       }
     ],
