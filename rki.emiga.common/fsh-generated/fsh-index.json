@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Communication-441557618.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 51
   },
   {
     "outputFile": "DocumentReference-441557619.json",
@@ -69,7 +69,15 @@
     "fshType": "Instance",
     "fshFile": "Examples\\DocumentReference-441557619.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 19
+  },
+  {
+    "outputFile": "DocumentReference-441557620.json",
+    "fshName": "441557620",
+    "fshType": "Instance",
+    "fshFile": "Examples\\DocumentReference-441557620.fsh",
+    "startLine": 1,
+    "endLine": 18
   },
   {
     "outputFile": "NamingSystem-EmigaAnnotationId.json",
@@ -93,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 127
+    "endLine": 130
   },
   {
     "outputFile": "StructureDefinition-AttachmentAnnotation.json",
@@ -109,7 +117,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
     "startLine": 1,
-    "endLine": 77
+    "endLine": 85
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",
@@ -168,8 +176,8 @@
     "endLine": 19
   },
   {
-    "outputFile": "ValueSet-PersonalInformationVS.json",
-    "fshName": "PersonalInformationVS",
+    "outputFile": "ValueSet-PersonalInformation.json",
+    "fshName": "PersonalInformation",
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\PersonalInformation.fsh",
     "startLine": 16,

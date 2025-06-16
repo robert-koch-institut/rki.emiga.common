@@ -9,12 +9,14 @@
   "url": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
   "concept": [
     {
-      "code": "HasPersonalInformation",
-      "display": "Hat Personenbezug"
+      "code": "ContainsPersonalInformation",
+      "display": "Enthält Personenbezogene Daten",
+      "definition": "Kennzeichnet, dass die Ressource personenbezogene Daten enthält."
     },
     {
-      "code": "NoPersonalInformation",
-      "display": "Hat keinen Personenbezug"
+      "code": "ContainsNoPersonalInformation",
+      "display": "Enthält keinen Personenbezogenen Daten",
+      "definition": "Kennzeichnet, dass die Ressource keine personenbezogenen Daten enthält."
     }
   ],
   "language": "de-DE",
@@ -34,6 +36,6 @@
   "version": "0.1.0",
   "date": "2025-05-06",
   "caseSensitive": true,
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS",
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation",
   "count": 2
 }
