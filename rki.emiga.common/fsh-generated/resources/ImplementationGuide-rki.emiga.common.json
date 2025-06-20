@@ -56,6 +56,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/MunicipalityKey"
+        },
+        "name": "Amtliche Gemeindeschlüssel (AGS)",
+        "description": "Die Kodiersystematik 'Amtliche Gemeindeschlüssel (AGS)' ist ein Platzhalter CodeSystem, um die Gemeindeschlüsse in der FHIR Terminologie zu referenzieren.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AttachmentAnnotation"
         },
         "name": "Anhang",
@@ -66,7 +74,7 @@
         "reference": {
           "reference": "StructureDefinition/AttachmentDocumentReference"
         },
-        "name": "Anhang",
+        "name": "Anhang-Entität",
         "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
         "exampleBoolean": false
       },
@@ -104,6 +112,22 @@
       },
       {
         "reference": {
+          "reference": "NamingSystem/EmigaAttachmentId"
+        },
+        "name": "Emiga Anhang ID",
+        "description": "Emiga Anhang ID to be used in Identifiers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaAttachmentId"
+        },
+        "name": "EMIGA Annhang-Identifier",
+        "description": "Identifier Profil für EMIGA Annhänge",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/IdentifierEmigaAnnotationId"
         },
         "name": "EMIGA Annotation-Identifier",
@@ -136,6 +160,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MunicipalityKey"
+        },
+        "name": "Extension Amtliche Gemeindeschlüssel (AGS)",
+        "description": "Erweiterung zur Darstellung des amtliches Gemeindeschlüssels",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
@@ -145,14 +177,6 @@
       {
         "reference": {
           "reference": "ValueSet/ConceptDesignationUse"
-        },
-        "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
-        "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/Keywords"
         },
         "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
         "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
@@ -224,9 +248,33 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/Keywords"
+          "reference": "ValueSet/KeywordsGlobal"
         },
-        "name": "Schlagworter",
+        "name": "Schlagworter Global",
+        "description": "Werteliste mit Konzepten, die die Lokale Schlawörter beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KeywordsGlobal"
+        },
+        "name": "Schlagworter Global",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KeywordsLocal"
+        },
+        "name": "Schlagworter Lokal",
+        "description": "Werteliste mit Konzepten, die die Lokale Schlawörter beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KeywordsLocal"
+        },
+        "name": "Schlagworter Lokal",
         "description": "TODO",
         "exampleBoolean": false
       },

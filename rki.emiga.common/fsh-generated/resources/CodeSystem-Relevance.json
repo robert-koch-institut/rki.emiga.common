@@ -15,6 +15,10 @@
     {
       "code": "InEK",
       "display": "InEK Standortverzeichnis"
+    },
+    {
+      "code": "LDAP",
+      "display": "Created by User"
     }
   ],
   "language": "de-DE",
@@ -31,9 +35,9 @@
       ]
     }
   ],
-  "version": "1.0.0",
-  "date": "2024-12-18",
+  "version": "1.1.0",
+  "date": "2024-06-20",
   "caseSensitive": true,
   "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/Relevance",
-  "count": 2
+  "count": 3
 }
