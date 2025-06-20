@@ -1,7 +1,7 @@
 Profile: AttachmentDocumentReference
 Parent: DocumentReference
 Id: AttachmentDocumentReference
-Title: "Anhang"
+Title: "Anhang-Entität"
 Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen."
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
 * insert MetadataProfile
@@ -16,6 +16,16 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * status = #current (exactly)
 
 * identifier MS
+* identifier ^short = "TODO"
+* identifier ^definition = "TODO"
+* identifier 1.. MS
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+  * ^slicing.description = "slicing organization identifier by system"
+  * ^slicing.ordered = false
+* identifier contains emigaAttachmentId 1..1 MS
+* identifier[emigaAttachmentId] only IdentifierEmigaAttachmentId
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * docStatus 0..0
 * docStatus ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant."

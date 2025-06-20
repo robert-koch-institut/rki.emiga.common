@@ -8,6 +8,9 @@ Usage: #example
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
 * meta.security[visibility].code = #public
 
+* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
+* identifier[emigaAttachmentId].value = "ATTACH-TestID-441557619"
+
 //* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 //* meta.security[responsibility].code = #
 * status = #current
