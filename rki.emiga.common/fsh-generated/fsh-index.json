@@ -77,7 +77,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Communication-441557618.fsh",
     "startLine": 1,
-    "endLine": 58
+    "endLine": 49
   },
   {
     "outputFile": "DocumentReference-441557619.json",
@@ -147,7 +147,7 @@
     "outputFile": "StructureDefinition-DateCreated.json",
     "fshName": "DateCreated",
     "fshType": "Extension",
-    "fshFile": "StructureDefinitions\\ExtensionDateCreated.fsh",
+    "fshFile": "Extensions\\ExtensionDateCreated.fsh",
     "startLine": 1,
     "endLine": 10
   },
@@ -195,7 +195,7 @@
     "outputFile": "StructureDefinition-ProcessingStatus.json",
     "fshName": "ProcessingStatus",
     "fshType": "Extension",
-    "fshFile": "StructureDefinitions\\ExtensionProcessingStatus.fsh",
+    "fshFile": "Extensions\\ExtensionProcessingStatus.fsh",
     "startLine": 1,
     "endLine": 18
   },

@@ -8,7 +8,7 @@ CodeSystem-ProcessingStatus.json                        ProcessingStatus        
 CodeSystem-Relevance.json                               Relevance                      CodeSystem  CodeSystem\Relevance.fsh                                1 - 15
 CodeSystem-ResourceResponsibility.json                  ResourceResponsibility         CodeSystem  CodeSystem\ResourceResponsibility.fsh                   1 - 416
 CodeSystem-ResourceVisibilityType.json                  ResourceVisibilityType         CodeSystem  CodeSystem\ResourceVisibilityType.fsh                   1 - 13
-Communication-441557618.json                            441557618                      Instance    Examples\Communication-441557618.fsh                    1 - 58
+Communication-441557618.json                            441557618                      Instance    Examples\Communication-441557618.fsh                    1 - 49
 DocumentReference-441557619.json                        441557619                      Instance    Examples\DocumentReference-441557619.fsh                1 - 22
 DocumentReference-441557620.json                        441557620                      Instance    Examples\DocumentReference-441557620.fsh                1 - 20
 NamingSystem-EmigaAnnotationId.json                     EmigaAnnotationId              Instance    NamingSystem\EmigaAnnotationId.fsh                      1 - 12
@@ -17,13 +17,13 @@ NamingSystem-SurvNetAnnotationId.json                   SurvNetAnnotationId     
 StructureDefinition-AnnotationCommunication.json        AnnotationCommunication        Profile     StructureDefinitions\AnnotationCommunication.fsh        1 - 173
 StructureDefinition-AttachmentAnnotation.json           AttachmentAnnotation           Profile     StructureDefinitions\AttachmentAnnotation.fsh           1 - 13
 StructureDefinition-AttachmentDocumentReference.json    AttachmentDocumentReference    Profile     StructureDefinitions\AttachmentDocumentReference.fsh    1 - 95
-StructureDefinition-DateCreated.json                    DateCreated                    Extension   StructureDefinitions\ExtensionDateCreated.fsh           1 - 10
+StructureDefinition-DateCreated.json                    DateCreated                    Extension   Extensions\ExtensionDateCreated.fsh                     1 - 10
 StructureDefinition-EmigaUserPractitioner.json          EmigaUserPractitioner          Profile     StructureDefinitions\EmigaUserPractitioner.fsh          1 - 98
 StructureDefinition-IdentifierEmigaAnnotationId.json    IdentifierEmigaAnnotationId    Profile     StructureDefinitions\IdentifierEmigaAnnotationId.fsh    1 - 12
 StructureDefinition-IdentifierEmigaAttachmentId.json    IdentifierEmigaAttachmentId    Profile     StructureDefinitions\IdentifierEmigaAttachmentId.fsh    1 - 12
 StructureDefinition-IdentifierSurvNetAnnotationId.json  IdentifierSurvNetAnnotationId  Profile     StructureDefinitions\IdentifierSurvNetAnnotationId.fsh  1 - 12
 StructureDefinition-MunicipalityKey.json                MunicipalityKey                Extension   Extensions\ExtensionMunicipalityKey.fsh                 1 - 16
-StructureDefinition-ProcessingStatus.json               ProcessingStatus               Extension   StructureDefinitions\ExtensionProcessingStatus.fsh      1 - 18
+StructureDefinition-ProcessingStatus.json               ProcessingStatus               Extension   Extensions\ExtensionProcessingStatus.fsh                1 - 18
 ValueSet-ConceptDesignationUse.json                     ConceptDesignationUse          ValueSet    CodeSystem\ConceptDesignationUse.fsh                    16 - 23
 ValueSet-KeywordsGlobal.json                            KeywordsGlobal                 ValueSet    CodeSystem\KeywordsGlobal.fsh                           13 - 20
 ValueSet-KeywordsLocal.json                             KeywordsLocal                  ValueSet    CodeSystem\KeywordsLocal.fsh                            13 - 20
