@@ -18,3 +18,9 @@ Alias: $PersonalInformationVS = https://emiga.rki.de/fhir/common/ValueSet/Person
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ProcessingStatus = https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
 Alias: $DateCreated = https://emiga.rki.de/fhir/common/Extension/DateCreated
+Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+
+
+
+Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
+Alias: $humanname-de-basis = http://fhir.de/StructureDefinition/humanname-de-basis

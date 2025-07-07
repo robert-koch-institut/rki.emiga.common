@@ -56,6 +56,20 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c"
+        },
+        "name": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/FillingNote"
+        },
+        "name": "Ablagevermerk",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/MunicipalityKey"
         },
         "name": "Amtliche Gemeindeschlüssel (AGS)",
@@ -88,6 +102,21 @@
       },
       {
         "reference": {
+          "reference": "Communication/2"
+        },
+        "name": "Annotation-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/BatchReadCommunicationPractitioner"
+        },
+        "name": "Batch Bundle: Read Communication and Practitioner",
+        "description": "A batch bundle to read Communication and Practitioner resources by id.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
@@ -109,6 +138,13 @@
         "name": "Bearbeitungsstatus",
         "description": "TODO",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/CollectionBundle2"
+        },
+        "name": "CollectionBundle2",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -292,6 +328,21 @@
         },
         "name": "SurvNet Annotationen ID",
         "description": "SurvNet Annotationen ID to be used in Identifiers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/TransactionBundle"
+        },
+        "name": "TransactionBundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AdditionalPropertiesQuestionnaire"
+        },
+        "name": "Zusätzliche Eigenschaften",
+        "description": "TODO",
         "exampleBoolean": false
       }
     ],
