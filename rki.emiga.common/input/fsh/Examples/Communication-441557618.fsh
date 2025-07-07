@@ -10,8 +10,8 @@ Usage: #example
 * meta.security[visibility].code = #public
 
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
-* meta.tag[personalInformation].code = #HasPersonalInformation
-* meta.tag[personalInformation].display = "Hat Personenbezug"
+* meta.tag[personalInformation].code = #ContainsPersonalInformation
+* meta.tag[personalInformation].display = "Enthält Personenbezogene Daten"
 
 * extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"

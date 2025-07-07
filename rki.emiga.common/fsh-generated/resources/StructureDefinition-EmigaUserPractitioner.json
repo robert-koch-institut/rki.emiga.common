@@ -64,7 +64,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.5"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.6"
       },
       {
         "id": "Practitioner.meta.security",

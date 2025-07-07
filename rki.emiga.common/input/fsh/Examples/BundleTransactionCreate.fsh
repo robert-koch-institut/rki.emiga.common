@@ -10,7 +10,7 @@ Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlo
 Instance: TransactionBundle
 InstanceOf: Bundle
 Usage: #example
-* meta.profile = "https://emiga.rki.de/fhir/annotation/StructureDefinition/AnnotationBundle"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.6"
 * identifier.system = "https://emiga.rki.de/fhir/common/sid/AnnotationBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
 * type = #transaction
@@ -27,18 +27,30 @@ Usage: #example
 * entry[1].request.url = "Practitioner"
 
 Instance: Annotation-2
-InstanceOf: Communication
+InstanceOf: AnnotationCommunication
 Usage: #example
 * id = "2"
 * meta.versionId = "5"
-* meta.profile = "https://emiga.rki.de/fhir/outbreak/StructureDefinition/AnnotationCommunication|1.2.0-alpha.4"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.6"
 * meta.security[0] = $ResourceResponsibility#1.
 * meta.security[+] = $ResourceVisibilityType#public
-* meta.tag = $PersonalInformationCS#ContainsPersonalInformation "Enthält Personenbezogene Daten"
-* extension[0].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
-* extension[=].valueCodeableConcept = $ProcessingStatusCS#inprogress "in Bearbeitung"
-* extension[+].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
-* extension[=].valueInstant = "2023-10-01T13:00:00.000+01:00"
+
+* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+* meta.tag[personalInformation].code = #ContainsPersonalInformation
+* meta.tag[personalInformation].display = "Enthält Personenbezogene Daten"
+
+
+
+* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
+* extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
+* extension[processingStatus].valueCoding.code = #inprogress 
+* extension[processingStatus].valueCoding.display = "in Bearbeitung"
+
+* extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
+* extension[dateCreated].valueInstant = "2024-10-01T12:00:00Z"
+
+
+
 * identifier[0].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
 * identifier[=].value = "ANNO-1.-2025-00000002"
 * identifier[+].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
@@ -55,7 +67,7 @@ Usage: #example
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
 InstanceOf: Practitioner
 Usage: #example
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.4"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.6"
 * meta.security[0] = $ResourceVisibilityType#internal
 * meta.security[+] = $ResourceResponsibility#1.
 * identifier.value = "testuser@emiga.rki.de"

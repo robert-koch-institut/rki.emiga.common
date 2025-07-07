@@ -105,7 +105,15 @@
           "reference": "Communication/2"
         },
         "name": "Annotation-2",
-        "exampleBoolean": true
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AnnotationBundle"
+        },
+        "name": "Annotations Bundle",
+        "description": "TO DO",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -144,7 +152,7 @@
           "reference": "Bundle/CollectionBundle2"
         },
         "name": "CollectionBundle2",
-        "exampleBoolean": true
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
       },
       {
         "reference": {
