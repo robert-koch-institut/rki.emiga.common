@@ -10,7 +10,7 @@ Description: "TO DO"
 * ^version = "0.1.0"
 * ^date = "2025-07-07"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.6"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.7"
 //* type = #transaction (exactly)
 * type MS
 * type ^short = "Type des Bundles"

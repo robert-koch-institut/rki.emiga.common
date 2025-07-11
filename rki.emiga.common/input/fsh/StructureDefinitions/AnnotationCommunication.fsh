@@ -3,7 +3,7 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^date = "2025-04-29"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
@@ -13,7 +13,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.6"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.7"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS
@@ -122,7 +122,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * category.coding[ausbruchscategorieSnomed].userSelected ..0
 */
 //* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
-* category.text
+//* category.text
 //* category.text ^short = "Schlagwort-Inhalt"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * priority 0..0
@@ -132,7 +132,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * subject 0..0
 * subject ^comment = "Subject der Annotation ist ein andere Entität, es wird über about referenziert"
 //Betreff
-* topic MS
+* topic 1..1 MS
 * topic ^short = "Betreff"
 * topic.coding 0..0
 * topic.coding ^comment = "Der Betreff wird im Text Feld dokumentiert"
