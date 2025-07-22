@@ -47,6 +47,21 @@ RuleSet: ProfileSecurityTags
     * system = $ResourceResponsibility
     * code 1..1 MS
 
+RuleSet: ProfileSecurityTagVisibility
+* meta MS
+  * security MS
+    * ^slicing.discriminator.type = #value
+    * ^slicing.discriminator.path = "system"
+    * ^slicing.rules = #open
+    * ^slicing.description = "Slicing security attribute by coding system"
+    * ^slicing.ordered = false
+  * security contains
+      visibility 0..1 MS
+  * security[visibility] from $ResourceVisibilityTypeVS
+    * system 1..1 MS
+    * system = $ResourceVisibilityType
+    * code 1..1 MS
+
 // Standardprofil für die strikte Ausgestaltung von CodableConcepts, die lediglich ein Coding-Element zulässt
 RuleSet: StrictCodableConcept
 * coding 1..1 MS
@@ -60,3 +75,28 @@ RuleSet: StrictCoding
 * system 1..1 MS
 * code 1..1 MS
 * display 0..1
+
+
+
+
+
+
+RuleSet: ProfileMetaTags
+* meta.tag MS
+* meta.tag ^slicing.discriminator.type = #pattern
+* meta.tag ^slicing.discriminator.path = "system"
+* meta.tag ^slicing.rules = #open
+* meta.tag contains relevance 0..* MS
+* meta.tag[relevance] from $RelevanceVS (required)
+* meta.tag[relevance].system 1.. MS
+* meta.tag[relevance].system = $RelevanceCS
+* meta.tag[relevance].code 1.. MS
+* meta.tag[relevance].display MS
+
+
+RuleSet: ProfileMetaProfileTags
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains emigaprofile 0..*
+

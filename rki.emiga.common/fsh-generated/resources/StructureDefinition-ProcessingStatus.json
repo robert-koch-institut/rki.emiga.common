@@ -1,0 +1,81 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ProcessingStatus",
+  "url": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus",
+  "version": "0.1.0",
+  "name": "ProcessingStatus",
+  "title": "Bearbeitungsstatus",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "description": "Extension zur Abbildung der Bearbeitungsstatus eines Vorgangs.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Element",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Bearbeitungsstatus",
+        "definition": "Extension zur Abbildung der Bearbeitungsstatus eines Vorgangs."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Bearbeitungsstatus",
+        "definition": "Bearbeitungsstatus des Vorgangs",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
+          "description": "Bearbeitungsstatus"
+        }
+      },
+      {
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.value[x].code",
+        "path": "Extension.value[x].code",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

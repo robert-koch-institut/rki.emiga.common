@@ -8,12 +8,36 @@
     "endLine": 14
   },
   {
+    "outputFile": "CodeSystem-Keywords.json",
+    "fshName": "Keywords",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\Keywords.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "CodeSystem-PersonalInformation.json",
+    "fshName": "PersonalInformation",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\PersonalInformation.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "CodeSystem-ProcessingStatus.json",
+    "fshName": "ProcessingStatus",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\ProcessingStatus.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "CodeSystem-Relevance.json",
     "fshName": "Relevance",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem\\Relevance.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 14
   },
   {
     "outputFile": "CodeSystem-ResourceResponsibility.json",
@@ -21,7 +45,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem\\ResourceResponsibility.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 416
   },
   {
     "outputFile": "CodeSystem-ResourceVisibilityType.json",
@@ -32,6 +56,102 @@
     "endLine": 13
   },
   {
+    "outputFile": "Communication-441557618.json",
+    "fshName": "441557618",
+    "fshType": "Instance",
+    "fshFile": "Examples\\Communication-441557618.fsh",
+    "startLine": 1,
+    "endLine": 47
+  },
+  {
+    "outputFile": "DocumentReference-441557619.json",
+    "fshName": "441557619",
+    "fshType": "Instance",
+    "fshFile": "Examples\\DocumentReference-441557619.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "NamingSystem-EmigaAnnotationId.json",
+    "fshName": "EmigaAnnotationId",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\EmigaAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "NamingSystem-SurvNetAnnotationId.json",
+    "fshName": "SurvNetAnnotationId",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\SurvNetAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-AnnotationCommunication.json",
+    "fshName": "AnnotationCommunication",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
+    "startLine": 1,
+    "endLine": 127
+  },
+  {
+    "outputFile": "StructureDefinition-AttachmentAnnotation.json",
+    "fshName": "AttachmentAnnotation",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AttachmentAnnotation.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-AttachmentDocumentReference.json",
+    "fshName": "AttachmentDocumentReference",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
+    "startLine": 1,
+    "endLine": 77
+  },
+  {
+    "outputFile": "StructureDefinition-DateCreated.json",
+    "fshName": "DateCreated",
+    "fshType": "Extension",
+    "fshFile": "StructureDefinitions\\ExtensionDateCreated.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-EmigaUserPractitioner.json",
+    "fshName": "EmigaUserPractitioner",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\EmigaUserPractitioner.fsh",
+    "startLine": 1,
+    "endLine": 98
+  },
+  {
+    "outputFile": "StructureDefinition-IdentifierEmigaAnnotationId.json",
+    "fshName": "IdentifierEmigaAnnotationId",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierEmigaAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-IdentifierSurvNetAnnotationId.json",
+    "fshName": "IdentifierSurvNetAnnotationId",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierSurvNetAnnotationId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-ProcessingStatus.json",
+    "fshName": "ProcessingStatus",
+    "fshType": "Extension",
+    "fshFile": "StructureDefinitions\\ExtensionProcessingStatus.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "ValueSet-ConceptDesignationUse.json",
     "fshName": "ConceptDesignationUse",
     "fshType": "ValueSet",
@@ -40,20 +160,44 @@
     "endLine": 23
   },
   {
+    "outputFile": "ValueSet-Keywords.json",
+    "fshName": "Keywords",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\Keywords.fsh",
+    "startLine": 12,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-PersonalInformationVS.json",
+    "fshName": "PersonalInformationVS",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\PersonalInformation.fsh",
+    "startLine": 16,
+    "endLine": 24
+  },
+  {
+    "outputFile": "ValueSet-ProcessingStatusVS.json",
+    "fshName": "ProcessingStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\ProcessingStatus.fsh",
+    "startLine": 21,
+    "endLine": 29
+  },
+  {
     "outputFile": "ValueSet-Relevance.json",
     "fshName": "Relevance",
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\Relevance.fsh",
-    "startLine": 14,
-    "endLine": 22
+    "startLine": 16,
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-ResourceResponsibility.json",
     "fshName": "ResourceResponsibility",
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\ResourceResponsibility.fsh",
-    "startLine": 13,
-    "endLine": 20
+    "startLine": 419,
+    "endLine": 426
   },
   {
     "outputFile": "ValueSet-ResourceVisibilityType.json",

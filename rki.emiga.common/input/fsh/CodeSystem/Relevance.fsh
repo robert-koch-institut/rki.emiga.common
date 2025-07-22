@@ -9,7 +9,9 @@ Description: "Die Kodiersystematik Relevance definiert Konzepte, die die für ve
 * ^caseSensitive = true
 * ^content = #complete
 * ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/Relevance"
+
 * #IfsgKoordVwV "Paragraf 2 IfSG-Koordinierungs-VwV"
+* #InEK "InEK Standortverzeichnis"
 
 ValueSet: Relevance
 Id: Relevance

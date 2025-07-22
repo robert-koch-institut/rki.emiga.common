@@ -11,6 +11,10 @@
     {
       "code": "IfsgKoordVwV",
       "display": "Paragraf 2 IfSG-Koordinierungs-VwV"
+    },
+    {
+      "code": "InEK",
+      "display": "InEK Standortverzeichnis"
     }
   ],
   "language": "de-DE",
@@ -31,5 +35,5 @@
   "date": "2024-12-18",
   "caseSensitive": true,
   "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/Relevance",
-  "count": 1
+  "count": 2
 }

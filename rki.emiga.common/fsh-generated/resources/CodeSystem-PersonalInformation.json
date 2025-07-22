@@ -1,0 +1,39 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PersonalInformation",
+  "id": "PersonalInformation",
+  "title": "Personenbezug",
+  "description": "Die Kodiersystematik PersonalInformation definiert Konzepte, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+  "concept": [
+    {
+      "code": "HasPersonalInformation",
+      "display": "Hat Personenbezug"
+    },
+    {
+      "code": "NoPersonalInformation",
+      "display": "Hat keinen Personenbezug"
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "date": "2025-05-06",
+  "caseSensitive": true,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS",
+  "count": 2
+}

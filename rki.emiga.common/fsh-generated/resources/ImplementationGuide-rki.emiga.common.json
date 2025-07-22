@@ -33,6 +33,101 @@
     "resource": [
       {
         "reference": {
+          "reference": "Communication/441557618"
+        },
+        "name": "441557618",
+        "description": "Test Annotation Example including attachment",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/441557619"
+        },
+        "name": "441557619",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AttachmentAnnotation"
+        },
+        "name": "Anhang",
+        "description": "Attachment Profil für EMIGA Anhänge",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AttachmentDocumentReference"
+        },
+        "name": "Anhang",
+        "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AnnotationCommunication"
+        },
+        "name": "Annotation",
+        "description": "ToDo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ProcessingStatus"
+        },
+        "name": "Bearbeitungsstatus",
+        "description": "Extension zur Abbildung der Bearbeitungsstatus eines Vorgangs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ProcessingStatusVS"
+        },
+        "name": "Bearbeitungsstatus",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ProcessingStatus"
+        },
+        "name": "Bearbeitungsstatus",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaAnnotationId"
+        },
+        "name": "EMIGA Annotation-Identifier",
+        "description": "Identifier Profil für EMIGA Annotationen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/EmigaAnnotationId"
+        },
+        "name": "Emiga Annotationen ID",
+        "description": "Emiga Annotationen ID to be used in Identifiers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EmigaUserPractitioner"
+        },
+        "name": "Emiga Nutzende Person",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DateCreated"
+        },
+        "name": "Erstellungsdatum",
+        "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
@@ -45,6 +140,30 @@
         },
         "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
         "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Keywords"
+        },
+        "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/PersonalInformation"
+        },
+        "name": "Personenbezug",
+        "description": "Die Kodiersystematik PersonalInformation definiert Konzepte, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PersonalInformationVS"
+        },
+        "name": "Personenbezug (Werteliste)",
+        "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
         "exampleBoolean": false
       },
       {
@@ -93,6 +212,30 @@
         },
         "name": "Ressourcensichtbarkeit (Werteliste)",
         "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Keywords"
+        },
+        "name": "Schlagworter",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierSurvNetAnnotationId"
+        },
+        "name": "SurvNet Annotation-Identifier",
+        "description": "Identifier Profil für EMIGA Annotationen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/SurvNetAnnotationId"
+        },
+        "name": "SurvNet Annotationen ID",
+        "description": "SurvNet Annotationen ID to be used in Identifiers",
         "exampleBoolean": false
       }
     ],
