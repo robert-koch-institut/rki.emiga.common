@@ -12,7 +12,7 @@ Description: "Die Kodiersystematik Relevance definiert Konzepte, die die für ve
 
 * #IfsgKoordVwV "Paragraf 2 IfSG-Koordinierungs-VwV"
 * #InEK "InEK Standortverzeichnis"
-* #LDAP "Created by User"
+* #LDAP "Durch OEGD angelegt"
 
 ValueSet: Relevance
 Id: Relevance

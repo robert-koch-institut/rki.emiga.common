@@ -13,7 +13,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.2"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.5"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS
@@ -77,18 +77,18 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * category.coding ^definition = "TODO"
 * category.coding contains keywordsLocal 0..1 MS and
           keywordsGlobal 0..1 MS
-* category.coding[keywordsLocal] from https://emiga.rki.de/fhir/common/ValueSet/KeywordsLocal (preferred)
+* category.coding[keywordsLocal] from https://emiga.rki.de/fhir/common/ValueSet/KeywordsLocal (example)
 * category.coding[keywordsLocal].system 1..1 MS
-* category.coding[keywordsLocal].system = "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal"
+* category.coding[keywordsLocal].system = $KeywordsLocal
 * category.coding[keywordsLocal].version 0..1 MS
 * category.coding[keywordsLocal].code MS
 * category.coding[keywordsLocal].code ^short = "Schlagwort-Code Lokal"
 * category.coding[keywordsLocal].code ^definition = "Lokale Schlagwort-Code der Annotation"
 * category.coding[keywordsLocal].display 0..1 MS
 
-* category.coding[keywordsGlobal] from https://emiga.rki.de/fhir/common/ValueSet/KeywordsGlobal (preferred)
+* category.coding[keywordsGlobal] from https://emiga.rki.de/fhir/common/ValueSet/KeywordsGlobal (example)
 * category.coding[keywordsGlobal].system 1..1 MS
-* category.coding[keywordsGlobal].system = "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal"
+* category.coding[keywordsGlobal].system = $KeywordsGlobal
 * category.coding[keywordsGlobal].version 0..1 MS
 * category.coding[keywordsGlobal].code MS
 * category.coding[keywordsGlobal].code ^short = "Global Schlagwort-Code"

@@ -2,11 +2,11 @@ Extension: MunicipalityKey
 Id: MunicipalityKey
 Title: "Extension Amtliche Gemeindeschlüssel (AGS)"
 Description: "Erweiterung zur Darstellung des amtliches Gemeindeschlüssels"
+Context: Element
+
+* insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/Extension/MunicipalityKey"
-* ^context.type = #element
-* ^context.expression = "Patient.address"
-* ^context.expression = "Organization.address"
-* ^context.expression = "Location.address"
+* ^version = "0.1.0"
 * value[x] only Coding
 * valueCoding 1..1 MS
 * valueCoding.system 1..1 MS
