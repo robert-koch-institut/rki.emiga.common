@@ -13,7 +13,7 @@ Description: "TODO"
 * insert ProfileSecurityTags
 //* insert ProfileMetaTags
 * insert ProfileMetaProfileTags
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.5"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.6"
 
 // 'Additional content defined by implementations' - 0..* - Extension
 // Wird für die EMIGA Anwendungsfälle derzeit nicht benötigt.
@@ -36,15 +36,14 @@ Der entsprechende Eintrag muss gepflegt werden, um eindeutig feststellen zu kön
 
 // 'The name(s) associated with the practitioner' - 0..* - HumanName
 
-* name 0..0 
-/*
+* name MS
 * name only $humanname-de-basis
 * name.family 1.. MS  
 * name.family.extension[nachname] obeys validString
 * name.given 1.. MS  
 * name.given obeys validString
 * name.prefix MS
-*/
+
 
 // 'A contact detail for the practitioner (that apply to all roles)' - 0..* - ContactPoint
 // We slice the telecom element to apply the regex rules
@@ -99,3 +98,7 @@ Der entsprechende Eintrag muss gepflegt werden, um eindeutig feststellen zu kön
 
 
 
+Invariant: validString
+Description: "Zeichenlänge maximal 255 Zeichen"
+* severity = #error
+* expression = "$this.matches('^.{1,255}$')"

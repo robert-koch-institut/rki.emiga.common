@@ -10,7 +10,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.5"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.6"
 
 * status MS
 * status = #current (exactly)

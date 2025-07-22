@@ -1,5 +1,29 @@
 [
   {
+    "outputFile": "Bundle-BatchReadCommunicationPractitioner.json",
+    "fshName": "BatchReadCommunicationPractitioner",
+    "fshType": "Instance",
+    "fshFile": "Examples\\BundleBatchRead.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Bundle-CollectionBundle2.json",
+    "fshName": "CollectionBundle2",
+    "fshType": "Instance",
+    "fshFile": "Examples\\BundleCollection.fsh",
+    "startLine": 10,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Bundle-TransactionBundle.json",
+    "fshName": "TransactionBundle",
+    "fshType": "Instance",
+    "fshFile": "Examples\\BundleTransactionCreate.fsh",
+    "startLine": 10,
+    "endLine": 27
+  },
+  {
     "outputFile": "CodeSystem-ConceptDesignationUse.json",
     "fshName": "ConceptDesignationUse",
     "fshType": "CodeSystem",
@@ -72,6 +96,14 @@
     "endLine": 13
   },
   {
+    "outputFile": "Communication-2.json",
+    "fshName": "Annotation-2",
+    "fshType": "Instance",
+    "fshFile": "Examples\\BundleTransactionCreate.fsh",
+    "startLine": 29,
+    "endLine": 65
+  },
+  {
     "outputFile": "Communication-441557618.json",
     "fshName": "441557618",
     "fshType": "Instance",
@@ -120,6 +152,38 @@
     "endLine": 12
   },
   {
+    "outputFile": "Practitioner-5d4b8483-0a7d-471e-b1df-26addf06ff1c.json",
+    "fshName": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
+    "fshType": "Instance",
+    "fshFile": "Examples\\BundleTransactionCreate.fsh",
+    "startLine": 67,
+    "endLine": 74
+  },
+  {
+    "outputFile": "Questionnaire-FillingNote.json",
+    "fshName": "FillingNote",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire\\FilingNote.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaire.json",
+    "fshName": "AdditionalPropertiesQuestionnaire",
+    "fshType": "Profile",
+    "fshFile": "Questionnaire\\AdditionalPropertiesQuestionnaire.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-AnnotationBundle.json",
+    "fshName": "AnnotationBundle",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AnnotationBundle.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
     "outputFile": "StructureDefinition-AnnotationCommunication.json",
     "fshName": "AnnotationCommunication",
     "fshType": "Profile",
@@ -157,7 +221,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\EmigaUserPractitioner.fsh",
     "startLine": 1,
-    "endLine": 98
+    "endLine": 97
   },
   {
     "outputFile": "StructureDefinition-IdentifierEmigaAnnotationId.json",

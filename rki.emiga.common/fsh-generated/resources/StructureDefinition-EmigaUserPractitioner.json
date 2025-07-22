@@ -64,7 +64,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.5"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.6"
       },
       {
         "id": "Practitioner.meta.security",
@@ -184,7 +184,55 @@
       {
         "id": "Practitioner.name",
         "path": "Practitioner.name",
-        "max": "0"
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.family.extension:nachname",
+        "path": "Practitioner.name.family.extension",
+        "sliceName": "nachname",
+        "constraint": [
+          {
+            "key": "validString",
+            "human": "Zeichenlänge maximal 255 Zeichen",
+            "source": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner",
+            "severity": "error",
+            "expression": "$this.matches('^.{1,255}$')"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "validString",
+            "human": "Zeichenlänge maximal 255 Zeichen",
+            "source": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner",
+            "severity": "error",
+            "expression": "$this.matches('^.{1,255}$')"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.prefix",
+        "path": "Practitioner.name.prefix",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.telecom",
