@@ -49,6 +49,22 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/Relevance"
+        },
+        "name": "Relevanz",
+        "description": "Die Kodiersystematik Relevance definiert Konzepte, die die für verschiedene Emiga Use Cases relevanten Ressourcen kennzeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Relevance"
+        },
+        "name": "Relevanz (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die Relevanz der Ressourcen für verschiedene Use Cases kennzeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ResourceResponsibility"
         },
         "name": "ResourceResponsibility",

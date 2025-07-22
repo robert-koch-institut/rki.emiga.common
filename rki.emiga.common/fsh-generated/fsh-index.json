@@ -8,6 +8,14 @@
     "endLine": 14
   },
   {
+    "outputFile": "CodeSystem-Relevance.json",
+    "fshName": "Relevance",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\Relevance.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "CodeSystem-ResourceResponsibility.json",
     "fshName": "ResourceResponsibility",
     "fshType": "CodeSystem",
@@ -30,6 +38,14 @@
     "fshFile": "CodeSystem\\ConceptDesignationUse.fsh",
     "startLine": 16,
     "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-Relevance.json",
+    "fshName": "Relevance",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\Relevance.fsh",
+    "startLine": 14,
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-ResourceResponsibility.json",
