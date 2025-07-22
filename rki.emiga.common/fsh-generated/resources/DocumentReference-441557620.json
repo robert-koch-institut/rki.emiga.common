@@ -1,0 +1,41 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "441557620",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.7"
+    ],
+    "security": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "code": "1.01.0.01."
+      },
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "code": "public"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaAttachmentId",
+      "value": "ATTACH-TestID-441557620"
+    }
+  ],
+  "author": [
+    {
+      "reference": "Practitioner/example"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "image/png",
+        "url": "http://example.org/images/sample-image.png",
+        "title": "Sample Image"
+      }
+    }
+  ],
+  "status": "current",
+  "date": "2023-10-01T12:00:00Z"
+}

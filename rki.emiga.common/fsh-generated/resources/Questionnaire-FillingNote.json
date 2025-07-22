@@ -1,0 +1,53 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "FillingNote",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.7"
+    ]
+  },
+  "url": "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "check-box",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Check box"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "boolean",
+      "linkId": "690479987243",
+      "text": "Öffentlich"
+    },
+    {
+      "type": "date",
+      "linkId": "637754159837",
+      "text": "Datum"
+    },
+    {
+      "type": "text",
+      "linkId": "344086928467",
+      "text": "Kommentar:"
+    },
+    {
+      "type": "reference",
+      "linkId": "383858025148",
+      "text": "Bezugsentität"
+    }
+  ],
+  "version": "0.3.0",
+  "name": "Ablagevermerk",
+  "title": "Ablagevermerk",
+  "status": "draft",
+  "publisher": "Robert Koch Institute",
+  "copyright": "Robert Koch Institute",
+  "date": "2025-07-04"
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IdentifierEmigaAnnotationId",
+  "url": "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAnnotationId",
+  "version": "0.1.0",
+  "name": "IdentifierEmigaAnnotationId",
+  "title": "EMIGA Annotation-Identifier",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-05-16",
+  "publisher": "Robert Koch-Institut",
+  "description": "Identifier Profil für EMIGA Annotationen",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Identifier",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Identifier",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Identifier.type",
+        "path": "Identifier.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "XX",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Identifier.system",
+        "path": "Identifier.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId",
+        "mustSupport": true
+      },
+      {
+        "id": "Identifier.value",
+        "path": "Identifier.value",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

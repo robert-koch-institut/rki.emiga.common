@@ -1,0 +1,167 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AdditionalPropertiesQuestionnaire",
+  "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire",
+  "version": "0.1.0",
+  "name": "AdditionalPropertiesQuestionnaire",
+  "title": "Zusätzliche Eigenschaften",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-07-04",
+  "publisher": "Robert Koch-Institut",
+  "description": "TODO",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.meta",
+        "path": "Questionnaire.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.meta.profile",
+        "path": "Questionnaire.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Questionnaire.meta.profile:emigaprofile",
+        "path": "Questionnaire.meta.profile",
+        "sliceName": "emigaprofile",
+        "min": 0,
+        "max": "*",
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.7"
+      },
+      {
+        "id": "Questionnaire.meta.security",
+        "path": "Questionnaire.meta.security",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slicing security attribute by coding system",
+          "ordered": false
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.meta.security:visibility",
+        "path": "Questionnaire.meta.security",
+        "sliceName": "visibility",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
+        }
+      },
+      {
+        "id": "Questionnaire.meta.security:visibility.system",
+        "path": "Questionnaire.meta.security.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.meta.security:visibility.code",
+        "path": "Questionnaire.meta.security.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.meta.security:responsibility",
+        "path": "Questionnaire.meta.security",
+        "sliceName": "responsibility",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
+        }
+      },
+      {
+        "id": "Questionnaire.meta.security:responsibility.system",
+        "path": "Questionnaire.meta.security.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.meta.security:responsibility.code",
+        "path": "Questionnaire.meta.security.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.implicitRules",
+        "path": "Questionnaire.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.text",
+        "path": "Questionnaire.text",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.contained",
+        "path": "Questionnaire.contained",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.modifierExtension",
+        "path": "Questionnaire.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.item",
+        "path": "Questionnaire.item",
+        "mustSupport": true
+      }
+    ]
+  }
+}

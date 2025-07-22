@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PersonalInformation",
+  "id": "PersonalInformation",
+  "title": "Personenbezug (Werteliste)",
+  "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
+  "url": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "date": "2025-05-06",
+  "compose": {
+    "include": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+      }
+    ]
+  }
+}

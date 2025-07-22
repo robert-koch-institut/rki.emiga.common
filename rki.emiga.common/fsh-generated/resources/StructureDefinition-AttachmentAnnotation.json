@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AttachmentAnnotation",
+  "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentAnnotation",
+  "version": "0.1.0",
+  "name": "AttachmentAnnotation",
+  "title": "Anhang",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-05-28",
+  "publisher": "Robert Koch-Institut",
+  "description": "Attachment Profil für EMIGA Anhänge",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Attachment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Attachment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Attachment.contentType",
+        "path": "Attachment.contentType",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Attachment.url",
+        "path": "Attachment.url",
+        "mustSupport": true
+      },
+      {
+        "id": "Attachment.title",
+        "path": "Attachment.title",
+        "mustSupport": true
+      },
+      {
+        "id": "Attachment.creation",
+        "path": "Attachment.creation",
+        "mustSupport": true
+      }
+    ]
+  }
+}
