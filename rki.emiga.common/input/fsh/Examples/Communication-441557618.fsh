@@ -27,10 +27,17 @@ Usage: #example
 * identifier[survnetAnnotationId].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
 
 * status = #completed
-* category.coding[0].system = "https://emiga.rki.de/fhir/common/CodeSystem/Keywords"
-* category.coding[0].code = #comment
-* category.coding[0].display = "Kommentar"
-* category.text = "Kommentar"
+
+* category.coding[keywordsLocal] = $KeywordsLocal#comment "Kommentar"
+//* category.coding[keywordsLocal].code = #comment
+//* category.coding[keywordsLocal].display = "Kommentar"
+//* category[keywordsLocal].text = "Kommentar"
+
+* category.coding[keywordsGlobal] = $KeywordsGlobal#message "Nachricht"
+//* category.coding[keywordsGlobal].code = #comment
+//* category.coding[keywordsGlobal].display = "Kommentar"
+//* category[keywordsGlobal].text = "Kommentar"
+
 //* subject = Reference(Patient/example)
 * topic.text = "Test Betreff"
 

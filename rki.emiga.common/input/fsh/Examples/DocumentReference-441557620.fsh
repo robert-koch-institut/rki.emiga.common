@@ -11,6 +11,8 @@ Description: "Test Attachment DocumentReference Example with image reference"
 //* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 //* meta.security[responsibility].code = #
 * status = #current
+* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
+* identifier[emigaAttachmentId].value = "ATTACH-TestID-441557620"
 * author[0].reference = "Practitioner/example"
 * date = "2023-10-01T12:00:00Z"
 * content[reference].attachment.contentType = #image/png
