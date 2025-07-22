@@ -1,0 +1,9 @@
+Output File                                    Name                           Type        FSH File                                      Lines
+CodeSystem-ConceptDesignationUse.json          ConceptDesignationUse          CodeSystem  CodeSystem\ConceptDesignationUse.fsh          1 - 14
+CodeSystem-ResourceResponsibility.json         ResourceResponsibility         CodeSystem  CodeSystem\ResourceResponsibility.fsh         1 - 11
+CodeSystem-ResourceVisibilityType.json         ResourceVisibilityType         CodeSystem  CodeSystem\ResourceVisibilityType.fsh         1 - 13
+CodeSystem-TranslationFhirEndpointStatus.json  TranslationFhirEndpointStatus  CodeSystem  CodeSystem\TranslationFhirEndpointStatus.fsh  1 - 51
+CodeSystem-TranslationFhirLocationStatus.json  TranslationFhirLocationStatus  CodeSystem  CodeSystem\TranslationFhirLocationStatus.fsh  1 - 30
+ValueSet-ConceptDesignationUse.json            ConceptDesignationUse          ValueSet    CodeSystem\ConceptDesignationUse.fsh          16 - 23
+ValueSet-ResourceResponsibility.json           ResourceResponsibility         ValueSet    CodeSystem\ResourceResponsibility.fsh         13 - 20
+ValueSet-ResourceVisibilityType.json           ResourceVisibilityType         ValueSet    CodeSystem\ResourceVisibilityType.fsh         15 - 22

@@ -1,4 +1,3 @@
-
 // Metadaten-Elemente, die sich alle Profile teilen
 RuleSet: MetadataProfile
 * ^status = #active
@@ -40,8 +39,24 @@ RuleSet: ProfileSecurityTags
       visibility 0..1 MS and
       responsibility 0..1 MS
   * security[visibility] from $ResourceVisibilityTypeVS
+    * system 1..1 MS
     * system = $ResourceVisibilityType
-    * code 1..1
+    * code 1..1 MS
   * security[responsibility] from $ResourceResponsibilityVS
+    * system 1..1 MS
     * system = $ResourceResponsibility
-    * code 1..1
+    * code 1..1 MS
+
+// Standardprofil für die strikte Ausgestaltung von CodableConcepts, die lediglich ein Coding-Element zulässt
+RuleSet: StrictCodableConcept
+* coding 1..1 MS
+  * system 1..1 MS
+  * code 1..1 MS
+  * display 0..1
+* text 0..0
+
+// Standardprofil für die strikte Ausgestaltung von Codings (system + code sind verpflichtend)
+RuleSet: StrictCoding
+* system 1..1 MS
+* code 1..1 MS
+* display 0..1

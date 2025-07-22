@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ConceptDesignationUse",
+  "id": "ConceptDesignationUse",
+  "title": "Nutzungszwecke für Anzeigetexte (Werteliste)",
+  "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+  "url": "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2024-03-19",
+  "compose": {
+    "include": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+      }
+    ]
+  }
+}

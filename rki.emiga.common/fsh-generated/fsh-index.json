@@ -1,0 +1,66 @@
+[
+  {
+    "outputFile": "CodeSystem-ConceptDesignationUse.json",
+    "fshName": "ConceptDesignationUse",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\ConceptDesignationUse.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "CodeSystem-ResourceResponsibility.json",
+    "fshName": "ResourceResponsibility",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\ResourceResponsibility.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-ResourceVisibilityType.json",
+    "fshName": "ResourceVisibilityType",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\ResourceVisibilityType.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "CodeSystem-TranslationFhirEndpointStatus.json",
+    "fshName": "TranslationFhirEndpointStatus",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\TranslationFhirEndpointStatus.fsh",
+    "startLine": 1,
+    "endLine": 51
+  },
+  {
+    "outputFile": "CodeSystem-TranslationFhirLocationStatus.json",
+    "fshName": "TranslationFhirLocationStatus",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\TranslationFhirLocationStatus.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "ValueSet-ConceptDesignationUse.json",
+    "fshName": "ConceptDesignationUse",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\ConceptDesignationUse.fsh",
+    "startLine": 16,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-ResourceResponsibility.json",
+    "fshName": "ResourceResponsibility",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\ResourceResponsibility.fsh",
+    "startLine": 13,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-ResourceVisibilityType.json",
+    "fshName": "ResourceVisibilityType",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\ResourceVisibilityType.fsh",
+    "startLine": 15,
+    "endLine": 22
+  }
+]
