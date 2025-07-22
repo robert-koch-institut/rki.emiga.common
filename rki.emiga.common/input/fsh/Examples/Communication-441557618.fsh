@@ -3,7 +3,7 @@ InstanceOf: AnnotationCommunication
 Description: "Test Annotation Example including attachment"
 Usage: #example
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.1"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.2"
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.	
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
@@ -28,9 +28,9 @@ Usage: #example
 
 * status = #completed
 * category.coding[0].system = "https://emiga.rki.de/fhir/common/CodeSystem/Keywords"
-* category.coding[0].code = #test
-* category.coding[0].display = "Test Schlagwort"
-* category.text = "Test Schlagwort"
+* category.coding[0].code = #comment
+* category.coding[0].display = "Kommentar"
+* category.text = "Kommentar"
 //* subject = Reference(Patient/example)
 * topic.text = "Test Betreff"
 
@@ -42,8 +42,10 @@ Usage: #example
 
 * payload[0].contentString = "Das ist ein Test Beschreibung"
 
-* payload[1].contentAttachment.contentType = #img/png
-* payload[1].contentAttachment.url = "https://example.com/image.png"
-* payload[1].contentAttachment.title = "Test Bild"
+//* payload[0].contentReference.reference = "DocumentReference/441557619"
 
-//* payload[1].contentReference = Reference(DocumentReference/441557619)
+//* payload[1].contentAttachment.contentType = #img/png
+//* payload[1].contentAttachment.url = "https://example.com/image.png"
+//* payload[1].contentAttachment.title = "Test Bild"
+
+* payload[1].contentReference = Reference(DocumentReference/441557619)

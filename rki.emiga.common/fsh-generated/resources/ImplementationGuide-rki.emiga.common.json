@@ -48,6 +48,14 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/441557620"
+        },
+        "name": "441557620",
+        "description": "Test Attachment DocumentReference Example with image reference",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AttachmentAnnotation"
         },
         "name": "Anhang",
@@ -67,7 +75,7 @@
           "reference": "StructureDefinition/AnnotationCommunication"
         },
         "name": "Annotation",
-        "description": "ToDo",
+        "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
         "exampleBoolean": false
       },
       {
@@ -160,7 +168,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/PersonalInformationVS"
+          "reference": "ValueSet/PersonalInformation"
         },
         "name": "Personenbezug (Werteliste)",
         "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",

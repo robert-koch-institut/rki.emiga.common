@@ -2,7 +2,7 @@ Profile: AnnotationCommunication
 Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
-Description: "ToDo"
+Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
 * ^version = "0.1.0"
 * ^date = "2025-04-29"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
@@ -13,7 +13,7 @@ Description: "ToDo"
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.1"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.2"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS
@@ -123,8 +123,11 @@ Description: "ToDo"
 * payload ^short = "Inhalt"
 * payload ^definition = "Inhalt der Annotation"
 * payload.content[x] MS
-* payload.content[x] only string or AttachmentAnnotation or Reference
+* payload.content[x] only string or Reference(AttachmentDocumentReference) 
 * payload.content[x] ^comment = "Der Inhalt der Annotation wird im contentString Feld gespeichert oder im Fall eines Anhangs im contentAttachment Feld"
+//* payload.contentString 0..1 MS
+* payload.contentString ^short = "Beschreibung - Inhalt der Annotation"
+* payload.contentReference ^short = "Anhang - Hier wird der Anhang der Annotation referenziert"
 
 
 /*
