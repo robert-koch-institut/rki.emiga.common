@@ -1,0 +1,58 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "FillingNoteResponse",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.7"
+    ],
+    "security": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "code": "1.01.0.01."
+      },
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "code": "public"
+      }
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "690479987243"
+    },
+    {
+      "answer": [
+        {
+          "valueDate": "2025-07-04"
+        }
+      ],
+      "linkId": "637754159837"
+    },
+    {
+      "answer": [
+        {
+          "valueString": "Dies ist ein Beispiel-Kommentar."
+        }
+      ],
+      "linkId": "344086928467"
+    },
+    {
+      "answer": [
+        {
+          "valueReference": {
+            "reference": "Composition/example"
+          }
+        }
+      ],
+      "linkId": "383858025148"
+    }
+  ],
+  "questionnaire": "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote",
+  "status": "completed",
+  "authored": "2025-07-04"
+}

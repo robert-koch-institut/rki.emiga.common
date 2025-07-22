@@ -1,0 +1,572 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AnnotationCommunication",
+  "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
+  "version": "0.2.0",
+  "name": "AnnotationCommunication",
+  "title": "Annotation",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-04-29",
+  "publisher": "Robert Koch-Institut",
+  "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication.meta",
+        "path": "Communication.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.profile",
+        "path": "Communication.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Communication.meta.profile:emigaprofile",
+        "path": "Communication.meta.profile",
+        "sliceName": "emigaprofile",
+        "min": 0,
+        "max": "*",
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.7"
+      },
+      {
+        "id": "Communication.meta.security",
+        "path": "Communication.meta.security",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slicing security attribute by coding system",
+          "ordered": false
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.security:visibility",
+        "path": "Communication.meta.security",
+        "sliceName": "visibility",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
+        }
+      },
+      {
+        "id": "Communication.meta.security:visibility.system",
+        "path": "Communication.meta.security.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.security:visibility.code",
+        "path": "Communication.meta.security.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.security:responsibility",
+        "path": "Communication.meta.security",
+        "sliceName": "responsibility",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
+        }
+      },
+      {
+        "id": "Communication.meta.security:responsibility.system",
+        "path": "Communication.meta.security.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.security:responsibility.code",
+        "path": "Communication.meta.security.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.tag",
+        "path": "Communication.meta.tag",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.tag:personalInformation",
+        "path": "Communication.meta.tag",
+        "sliceName": "personalInformation",
+        "short": "Kennzeichnung von personenbezogenen Daten",
+        "definition": "Kennzeichnung von personenbezogenen Daten",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS"
+        }
+      },
+      {
+        "id": "Communication.meta.tag:personalInformation.system",
+        "path": "Communication.meta.tag.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.meta.tag:personalInformation.code",
+        "path": "Communication.meta.tag.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.implicitRules",
+        "path": "Communication.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Communication.language",
+        "path": "Communication.language",
+        "max": "0"
+      },
+      {
+        "id": "Communication.text",
+        "path": "Communication.text",
+        "max": "0"
+      },
+      {
+        "id": "Communication.contained",
+        "path": "Communication.contained",
+        "max": "0"
+      },
+      {
+        "id": "Communication.extension",
+        "path": "Communication.extension",
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.extension:processingStatus",
+        "path": "Communication.extension",
+        "sliceName": "processingStatus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.extension:dateCreated",
+        "path": "Communication.extension",
+        "sliceName": "dateCreated",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/Extension/DateCreated"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.modifierExtension",
+        "path": "Communication.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Communication.identifier",
+        "path": "Communication.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "slicing organization identifier by system",
+          "ordered": false
+        },
+        "short": "TODO",
+        "definition": "TODO",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:emigaAnnotationId",
+        "path": "Communication.identifier",
+        "sliceName": "emigaAnnotationId",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAnnotationId"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:survnetAnnotationId",
+        "path": "Communication.identifier",
+        "sliceName": "survnetAnnotationId",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetAnnotationId"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.instantiatesCanonical",
+        "path": "Communication.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "Communication.instantiatesUri",
+        "path": "Communication.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "Communication.basedOn",
+        "path": "Communication.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Communication.partOf",
+        "path": "Communication.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Communication.inResponseTo",
+        "path": "Communication.inResponseTo",
+        "max": "0"
+      },
+      {
+        "id": "Communication.status",
+        "path": "Communication.status",
+        "fixedCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.statusReason",
+        "path": "Communication.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "Communication.category",
+        "path": "Communication.category",
+        "short": "Schlagwort",
+        "definition": "Schlagwort der Annotation",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding",
+        "path": "Communication.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "TODO",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsLocal",
+        "path": "Communication.category.coding",
+        "sliceName": "keywordsLocal",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/KeywordsLocal"
+        }
+      },
+      {
+        "id": "Communication.category.coding:keywordsLocal.system",
+        "path": "Communication.category.coding.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsLocal.version",
+        "path": "Communication.category.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsLocal.code",
+        "path": "Communication.category.coding.code",
+        "short": "Schlagwort-Code Lokal",
+        "definition": "Lokale Schlagwort-Code der Annotation",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsLocal.display",
+        "path": "Communication.category.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsGlobal",
+        "path": "Communication.category.coding",
+        "sliceName": "keywordsGlobal",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/KeywordsGlobal"
+        }
+      },
+      {
+        "id": "Communication.category.coding:keywordsGlobal.system",
+        "path": "Communication.category.coding.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsGlobal.version",
+        "path": "Communication.category.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsGlobal.code",
+        "path": "Communication.category.coding.code",
+        "short": "Global Schlagwort-Code",
+        "definition": "Global Schlagwort-Code der Annotation",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding:keywordsGlobal.display",
+        "path": "Communication.category.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.priority",
+        "path": "Communication.priority",
+        "max": "0"
+      },
+      {
+        "id": "Communication.medium",
+        "path": "Communication.medium",
+        "max": "0"
+      },
+      {
+        "id": "Communication.subject",
+        "path": "Communication.subject",
+        "comment": "Subject der Annotation ist ein andere Entität, es wird über about referenziert",
+        "max": "0"
+      },
+      {
+        "id": "Communication.topic",
+        "path": "Communication.topic",
+        "short": "Betreff",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.topic.coding",
+        "path": "Communication.topic.coding",
+        "comment": "Der Betreff wird im Text Feld dokumentiert",
+        "max": "0"
+      },
+      {
+        "id": "Communication.topic.text",
+        "path": "Communication.topic.text",
+        "short": "Betreff-Inhalt",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.about",
+        "path": "Communication.about",
+        "short": "Bezugsentität",
+        "definition": "Referenz zur Bezugsentität",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.encounter",
+        "path": "Communication.encounter",
+        "max": "0"
+      },
+      {
+        "id": "Communication.sent",
+        "path": "Communication.sent",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.received",
+        "path": "Communication.received",
+        "max": "0"
+      },
+      {
+        "id": "Communication.recipient",
+        "path": "Communication.recipient",
+        "max": "0"
+      },
+      {
+        "id": "Communication.sender",
+        "path": "Communication.sender",
+        "short": "Erstellende Person",
+        "definition": "Erstellende Person der Annotation",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.reasonCode",
+        "path": "Communication.reasonCode",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
+        "max": "0"
+      },
+      {
+        "id": "Communication.reasonReference",
+        "path": "Communication.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "Communication.payload",
+        "path": "Communication.payload",
+        "short": "Inhalt",
+        "definition": "Inhalt der Annotation",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.payload.content[x]",
+        "path": "Communication.payload.content[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "comment": "Der Inhalt der Annotation wird im contentString Feld gespeichert oder im Fall eines Anhangs im contentAttachment Feld",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.payload.content[x]:contentString",
+        "path": "Communication.payload.content[x]",
+        "sliceName": "contentString",
+        "short": "Beschreibung - Inhalt der Annotation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Communication.payload.content[x]:contentReference",
+        "path": "Communication.payload.content[x]",
+        "sliceName": "contentReference",
+        "short": "Anhang - Hier wird der Anhang der Annotation referenziert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

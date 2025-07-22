@@ -1,0 +1,25 @@
+{
+  "resourceType": "Practitioner",
+  "id": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.7"
+    ],
+    "security": [
+      {
+        "code": "internal",
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+      },
+      {
+        "code": "1.",
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "value": "testuser@emiga.rki.de"
+    }
+  ],
+  "active": true
+}

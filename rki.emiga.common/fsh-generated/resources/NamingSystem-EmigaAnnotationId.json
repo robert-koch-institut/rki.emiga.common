@@ -1,0 +1,16 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "EmigaAnnotationId",
+  "description": "Emiga Annotationen ID to be used in Identifiers",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
+    }
+  ],
+  "publisher": "Robert Koch-Institut",
+  "date": "2025-05-16",
+  "name": "EmigaAnnotationId",
+  "status": "active",
+  "kind": "identifier"
+}

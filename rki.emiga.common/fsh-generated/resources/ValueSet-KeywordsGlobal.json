@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KeywordsGlobal",
+  "id": "KeywordsGlobal",
+  "title": "Schlagworter Global",
+  "description": "Werteliste mit Konzepten, die die Lokale Schlawörter beschreiben.",
+  "url": "https://emiga.rki.de/fhir/common/ValueSet/KeywordsGlobal",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2025-06-20",
+  "compose": {
+    "include": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal"
+      }
+    ]
+  }
+}

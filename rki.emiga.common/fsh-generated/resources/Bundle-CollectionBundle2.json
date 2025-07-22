@@ -1,0 +1,137 @@
+{
+  "resourceType": "Bundle",
+  "id": "CollectionBundle2",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
+    ]
+  },
+  "identifier": {
+    "system": "https://emiga.rki.de/fhir/common/sid/AnnotationBundleId",
+    "value": "d317ce08-1da0-48d4-8dd7-8edbe88d51f3"
+  },
+  "entry": [
+    {
+      "fullUrl": "https://emiga.rki.de/fhir/common/Communication/3",
+      "resource": {
+        "resourceType": "Communication",
+        "id": "3",
+        "meta": {
+          "profile": [
+            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.7"
+          ],
+          "security": [
+            {
+              "code": "1.",
+              "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
+            },
+            {
+              "code": "public",
+              "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+            }
+          ],
+          "tag": [
+            {
+              "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+              "code": "ContainsPersonalInformation",
+              "display": "Enthält Personenbezogene Daten"
+            }
+          ],
+          "versionId": "4"
+        },
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
+              "code": "forinformation",
+              "display": "zur Kenntnis"
+            },
+            "url": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
+          },
+          {
+            "url": "https://emiga.rki.de/fhir/common/Extension/DateCreated",
+            "valueInstant": "2024-10-01T12:00:00Z"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId",
+            "value": "ANNO-1.-2025-00000002"
+          },
+          {
+            "system": "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId",
+            "value": "SURVNET-TestID-441557618"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "comment",
+                "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
+                "display": "Kommentar"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "message",
+                "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal",
+                "display": "Nachricht"
+              }
+            ]
+          }
+        ],
+        "topic": {
+          "text": "Test Betreff"
+        },
+        "about": [
+          {
+            "reference": "Composition/d317ce08-1da0-48d4-8dd7-8edbe88d51f1"
+          }
+        ],
+        "payload": [
+          {
+            "contentString": "Das ist ein Test Beschreibung"
+          }
+        ],
+        "status": "completed",
+        "sent": "2025-07-03T09:28:36+01:00",
+        "sender": {
+          "reference": "Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1d"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1d",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "5d4b8483-0a7d-471e-b1df-26addf06ff1d",
+        "meta": {
+          "profile": [
+            "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.7"
+          ],
+          "security": [
+            {
+              "code": "internal",
+              "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+            },
+            {
+              "code": "1.",
+              "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "value": "testuser@emiga.rki.de"
+          }
+        ],
+        "active": true
+      }
+    }
+  ],
+  "type": "collection",
+  "timestamp": "2025-07-03T09:28:36.132+01:00"
+}

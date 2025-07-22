@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "not-present",
+  "name": "KeywordsLocal",
+  "id": "KeywordsLocal",
+  "title": "Schlagworter Lokal",
+  "description": "TODO",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2025-06-20",
+  "caseSensitive": true,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/KeywordsLocal"
+}

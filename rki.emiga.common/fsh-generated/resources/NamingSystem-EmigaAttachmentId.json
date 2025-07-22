@@ -1,0 +1,16 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "EmigaAttachmentId",
+  "description": "Emiga Anhang ID to be used in Identifiers",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
+    }
+  ],
+  "publisher": "Robert Koch-Institut",
+  "date": "2025-06-20",
+  "name": "EmigaAnhangId",
+  "status": "active",
+  "kind": "identifier"
+}

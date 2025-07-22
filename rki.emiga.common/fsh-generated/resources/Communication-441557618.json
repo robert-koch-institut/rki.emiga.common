@@ -1,0 +1,89 @@
+{
+  "resourceType": "Communication",
+  "id": "441557618",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.7"
+    ],
+    "security": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "code": "1.01.0.01."
+      },
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "code": "public"
+      }
+    ],
+    "tag": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+        "code": "ContainsPersonalInformation",
+        "display": "Enthält Personenbezogene Daten"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "valueCoding": {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
+        "code": "forinformation",
+        "display": "zur Kenntnis"
+      },
+      "url": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
+    },
+    {
+      "url": "https://emiga.rki.de/fhir/common/Extension/DateCreated",
+      "valueInstant": "2024-10-01T12:00:00Z"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId",
+      "value": "ANNO-TestID-441557618"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId",
+      "value": "SURVNET-TestID-441557618"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
+          "code": "comment",
+          "display": "Kommentar"
+        },
+        {
+          "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal",
+          "code": "message",
+          "display": "Nachricht"
+        }
+      ]
+    }
+  ],
+  "topic": {
+    "text": "Test Betreff"
+  },
+  "about": [
+    {
+      "reference": "Composition/example"
+    }
+  ],
+  "payload": [
+    {
+      "contentString": "Das ist ein Test Beschreibung"
+    },
+    {
+      "contentReference": {
+        "reference": "DocumentReference/441557619"
+      }
+    }
+  ],
+  "status": "completed",
+  "sent": "2024-10-01T12:00:00Z",
+  "sender": {
+    "reference": "Practitioner/example"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ProcessingStatus",
+  "id": "ProcessingStatus",
+  "title": "Bearbeitungsstatus",
+  "description": "TODO",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
+  "concept": [
+    {
+      "code": "inprogress",
+      "display": "in Bearbeitung",
+      "definition": "Der Vorgang ist in Bearbeitung."
+    },
+    {
+      "code": "closed",
+      "display": "abgeschlossen",
+      "definition": "Der Vorgang ist abgeschlossen."
+    },
+    {
+      "code": "cancelled",
+      "display": "verworfen",
+      "definition": "Der Vorgang ist verworfen."
+    },
+    {
+      "code": "handedover",
+      "display": "abgegeben",
+      "definition": "Der Vorgang wurde wurde an ein anderes GA abgegeben."
+    },
+    {
+      "code": "inhandover",
+      "display": "in Übergabe",
+      "definition": "Das GA hat den Vorgang zur Übernahme abgegeben."
+    },
+    {
+      "code": "intakeover",
+      "display": "in Übernahme",
+      "definition": "Das GA nimmt den Vorgang vom anderen GA an."
+    },
+    {
+      "code": "forinformation",
+      "display": "zur Kenntnis",
+      "definition": "Der Vorgang kann zur Kenntnis eingesehen werden."
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
+  "version": "0.1.0",
+  "date": "2025-02-10",
+  "caseSensitive": true,
+  "count": 7
+}
