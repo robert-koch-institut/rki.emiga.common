@@ -14,7 +14,7 @@ Description:    "TODO"
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.6"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.7"
 
 * item 0..* MS
 
