@@ -1,0 +1,12 @@
+Profile: IdentifierSurvNetAnnotationFileNumber
+Parent: Identifier
+Id: IdentifierSurvNetAnnotationFileNumber
+Title: "SurvNet Annotation-Aktenzeichen"
+Description: "Identifier Profil für SurvNet Annotation-Aktenzeichen"
+* insert MetadataProfile
+* ^version = "0.1.0"
+* ^date = "2025-07-25"
+* type = $v2-0203#XX
+* system 1.. MS
+* system = $SurvNetAnnotationFileNumber
+* value 1.. MS
