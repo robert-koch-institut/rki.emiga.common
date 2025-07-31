@@ -188,13 +188,33 @@
         "id": "DocumentReference.identifier:emigaAttachmentId",
         "path": "DocumentReference.identifier",
         "sliceName": "emigaAttachmentId",
-        "min": 1,
+        "short": "EMIGA Anhang-ID",
+        "definition": "EMIGA Anhang-ID ist ein eindeutiger technische Identifier für EMIGA Anhänge.",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
               "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAttachmentId"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:emigaAttachmentFileNumber",
+        "path": "DocumentReference.identifier",
+        "sliceName": "emigaAttachmentFileNumber",
+        "short": "EMIGA Anhang-Aktenzeichen",
+        "definition": "EMIGA Anhang-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Anhänge.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAttachmentFileNumber"
             ]
           }
         ],
@@ -353,6 +373,7 @@
       {
         "id": "DocumentReference.content:attachment.attachment.contentType",
         "path": "DocumentReference.content.attachment.contentType",
+        "short": "Dateiformat",
         "definition": "Hier wird das Dateiformat ausgewählt.\\nEs ist ein Code aus dem System urn:ietf:bcp:13 zu wählen",
         "min": 1,
         "mustSupport": true
@@ -377,16 +398,21 @@
       {
         "id": "DocumentReference.content:attachment.attachment.size",
         "path": "DocumentReference.content.attachment.size",
-        "max": "0"
+        "short": "Dateigröße",
+        "definition": "Hier wird die Größe der Datei in Byte angegeben.",
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.content:attachment.attachment.hash",
         "path": "DocumentReference.content.attachment.hash",
-        "max": "0"
+        "short": "Hashwert",
+        "definition": "Hier wird der Hashwert der Datei angegeben.\\nDer Hashwert wird verwendet, um die Integrität der Datei zu überprüfen.",
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.content:attachment.attachment.title",
         "path": "DocumentReference.content.attachment.title",
+        "short": "Titel der Datei",
         "definition": "Hier wird ein Titel bzw. eine Bezeichnung für die angehängte Datei angegeben.",
         "min": 1,
         "mustSupport": true
@@ -394,6 +420,7 @@
       {
         "id": "DocumentReference.content:attachment.attachment.creation",
         "path": "DocumentReference.content.attachment.creation",
+        "short": "Zeitpunkt der Erstellung des Anhangs",
         "definition": "Hier wird der Zeitpunkt der Erstellung des Anhangs angegeben.",
         "mustSupport": true
       }

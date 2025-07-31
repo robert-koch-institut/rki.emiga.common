@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationCommunication",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "AnnotationCommunication",
   "title": "Annotation",
   "status": "active",
   "experimental": false,
-  "date": "2025-04-29",
+  "date": "2025-07-25",
   "publisher": "Robert Koch-Institut",
   "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -255,7 +255,9 @@
         "id": "Communication.identifier:emigaAnnotationId",
         "path": "Communication.identifier",
         "sliceName": "emigaAnnotationId",
-        "min": 1,
+        "short": "EMIGA Annotation-ID",
+        "definition": "EMIGA Annotation-ID ist ein eindeutiger technische Identifier für EMIGA Annotationen.",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -271,6 +273,8 @@
         "id": "Communication.identifier:survnetAnnotationId",
         "path": "Communication.identifier",
         "sliceName": "survnetAnnotationId",
+        "short": "SurvNet Annotation-ID",
+        "definition": "SurvNet Annotation-ID ist ein fachlicher Identifier für SurvNet Annotationen.",
         "min": 0,
         "max": "1",
         "type": [
@@ -278,6 +282,42 @@
             "code": "Identifier",
             "profile": [
               "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetAnnotationId"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:emigaAnnotationFileNumber",
+        "path": "Communication.identifier",
+        "sliceName": "emigaAnnotationFileNumber",
+        "short": "EMIGA Annotation-Aktenzeichen",
+        "definition": "EMIGA Annotation-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Annotationen.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAnnotationFileNumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:survnetAnnotationFileNumber",
+        "path": "Communication.identifier",
+        "sliceName": "survnetAnnotationFileNumber",
+        "short": "SurvNet Annotation-Aktenzeichen",
+        "definition": "SurvNet Annotation-Aktenzeichen ist ein fachlicher Identifier für SurvNet Annotationen.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetAnnotationFileNumber"
             ]
           }
         ],
@@ -464,6 +504,8 @@
       {
         "id": "Communication.sent",
         "path": "Communication.sent",
+        "short": "Datum",
+        "definition": "Hier wird ein benutzerdefiniertes Datum angegeben.",
         "mustSupport": true
       },
       {
