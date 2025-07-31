@@ -1,7 +1,7 @@
 Instance: EmigaAnnotationId
 InstanceOf: NamingSystem
-Title: "Emiga Annotationen ID"
-Description: "Emiga Annotationen ID to be used in Identifiers"
+Title: "EMIGA Annotationen ID"
+Description: "EMIGA Annotationen ID ist ein eineindeutiger technischer Identifier für EMIGA Annotationen."
 Usage: #definition
 * publisher = "Robert Koch-Institut"
 * date = "2025-05-16"
