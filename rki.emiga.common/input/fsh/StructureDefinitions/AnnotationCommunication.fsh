@@ -3,8 +3,8 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.2.0"
-* ^date = "2025-04-29"
+* ^version = "0.3.0"
+* ^date = "2025-07-25"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
@@ -42,10 +42,22 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
   * ^slicing.rules = #open
   * ^slicing.description = "slicing organization identifier by system"
   * ^slicing.ordered = false
-* identifier contains emigaAnnotationId 1..1 MS and
-          survnetAnnotationId 0..1 MS
+* identifier contains emigaAnnotationId 0..1 MS and
+          survnetAnnotationId 0..1 MS and
+          emigaAnnotationFileNumber 0..1 MS and
+          survnetAnnotationFileNumber 0..1 MS
+* identifier[emigaAnnotationFileNumber] only IdentifierEmigaAnnotationFileNumber
 * identifier[emigaAnnotationId] only IdentifierEmigaAnnotationId
 * identifier[survnetAnnotationId] only IdentifierSurvNetAnnotationId
+* identifier[survnetAnnotationFileNumber] only IdentifierSurvNetAnnotationFileNumber
+* identifier[emigaAnnotationFileNumber] ^short = "EMIGA Annotation-Aktenzeichen"
+* identifier[emigaAnnotationFileNumber] ^definition = "EMIGA Annotation-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Annotationen."
+* identifier[survnetAnnotationFileNumber] ^short = "SurvNet Annotation-Aktenzeichen"
+* identifier[survnetAnnotationFileNumber] ^definition = "SurvNet Annotation-Aktenzeichen ist ein fachlicher Identifier für SurvNet Annotationen."
+* identifier[emigaAnnotationId] ^short = "EMIGA Annotation-ID"
+* identifier[emigaAnnotationId] ^definition = "EMIGA Annotation-ID ist ein eindeutiger technische Identifier für EMIGA Annotationen."
+* identifier[survnetAnnotationId] ^short = "SurvNet Annotation-ID"
+* identifier[survnetAnnotationId] ^definition = "SurvNet Annotation-ID ist ein fachlicher Identifier für SurvNet Annotationen."
 //* identifier only IdentifierAnn
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
@@ -147,6 +159,8 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * encounter 0..0
 //Erstellungsdatum
 * sent 0..1 MS
+* sent ^definition = "Hier wird ein benutzerdefiniertes Datum angegeben."
+* sent ^short = "Datum"
 
 * received 0..0
 
