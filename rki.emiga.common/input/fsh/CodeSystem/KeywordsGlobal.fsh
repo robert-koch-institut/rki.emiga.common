@@ -14,6 +14,7 @@ ValueSet: KeywordsGlobal
 Id: KeywordsGlobal
 Title: "Schlagworter Global"
 Description: "Werteliste mit Konzepten, die die Lokale Schlawörter beschreiben."
+* ^url = "https://emiga.rki.de/fhir/common/ValueSet/KeywordsGlobal"
 * insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2025-06-20"
