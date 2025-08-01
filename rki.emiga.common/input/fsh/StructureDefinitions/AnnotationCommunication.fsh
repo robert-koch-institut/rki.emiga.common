@@ -13,7 +13,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.7"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS
@@ -87,6 +87,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
 * category.coding ^definition = "TODO"
+
 * category.coding contains keywordsLocal 0..1 MS and
           keywordsGlobal 0..1 MS
 * category.coding[keywordsLocal] from https://emiga.rki.de/fhir/common/ValueSet/KeywordsLocal (example)
@@ -106,6 +107,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * category.coding[keywordsGlobal].code ^short = "Global Schlagwort-Code"
 * category.coding[keywordsGlobal].code ^definition = "Global Schlagwort-Code der Annotation"
 * category.coding[keywordsGlobal].display 0..1 MS
+
 
 
 /*
