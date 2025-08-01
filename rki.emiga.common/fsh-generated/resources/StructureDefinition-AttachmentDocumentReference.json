@@ -2,10 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AttachmentDocumentReference",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference",
+  "version": "0.1.0",
   "name": "AttachmentDocumentReference",
   "title": "Anhang-Entität",
   "status": "active",
   "experimental": false,
+  "date": "2025-07-31",
   "publisher": "Robert Koch-Institut",
   "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -77,7 +79,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.7"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.8"
       },
       {
         "id": "DocumentReference.meta.security",
@@ -337,12 +339,16 @@
       {
         "id": "DocumentReference.content:reference.attachment.size",
         "path": "DocumentReference.content.attachment.size",
-        "max": "0"
+        "short": "Dateigröße",
+        "definition": "Hier wird die Größe der Datei in Byte angegeben.",
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.content:reference.attachment.hash",
         "path": "DocumentReference.content.attachment.hash",
-        "max": "0"
+        "short": "Hashwert",
+        "definition": "Hier wird der Hashwert der Datei angegeben.",
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.content:reference.attachment.title",
@@ -406,7 +412,7 @@
         "id": "DocumentReference.content:attachment.attachment.hash",
         "path": "DocumentReference.content.attachment.hash",
         "short": "Hashwert",
-        "definition": "Hier wird der Hashwert der Datei angegeben.\\nDer Hashwert wird verwendet, um die Integrität der Datei zu überprüfen.",
+        "definition": "Hier wird der Hashwert der Datei angegeben.",
         "mustSupport": true
       },
       {

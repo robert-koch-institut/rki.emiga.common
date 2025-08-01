@@ -27,9 +27,9 @@ QuestionnaireResponse-FillingNoteResponse.json                      FillingNoteR
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire      Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 19
 StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json  OutbreakQuestionnaireResponseCommon    Profile     StructureDefinitions\AdditionalPropertiesQuestionnaireResponse.fsh  1 - 45
 StructureDefinition-AnnotationBundle.json                           AnnotationBundle                       Profile     StructureDefinitions\AnnotationBundle.fsh                           1 - 32
-StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication                Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 187
+StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication                Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 189
 StructureDefinition-AttachmentAnnotation.json                       AttachmentAnnotation                   Profile     StructureDefinitions\AttachmentAnnotation.fsh                       1 - 13
-StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference            Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 108
+StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference            Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 115
 StructureDefinition-DateCreated.json                                DateCreated                            Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 10
 StructureDefinition-EmigaUserPractitioner.json                      EmigaUserPractitioner                  Profile     StructureDefinitions\EmigaUserPractitioner.fsh                      1 - 97
 StructureDefinition-IdentifierEmigaAnnotationFileNumber.json        IdentifierEmigaAnnotationFileNumber    Profile     StructureDefinitions\IdentifierEmigaAnnotationFileNumber.fsh        1 - 12
@@ -41,8 +41,8 @@ StructureDefinition-IdentifierSurvNetAnnotationId.json              IdentifierSu
 StructureDefinition-MunicipalityKey.json                            MunicipalityKey                        Extension   Extensions\ExtensionMunicipalityKey.fsh                             1 - 16
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                       Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 18
 ValueSet-ConceptDesignationUse.json                                 ConceptDesignationUse                  ValueSet    CodeSystem\ConceptDesignationUse.fsh                                16 - 23
-ValueSet-KeywordsGlobal.json                                        KeywordsGlobal                         ValueSet    CodeSystem\KeywordsGlobal.fsh                                       13 - 20
-ValueSet-KeywordsLocal.json                                         KeywordsLocal                          ValueSet    CodeSystem\KeywordsLocal.fsh                                        13 - 20
+ValueSet-KeywordsGlobal.json                                        KeywordsGlobal                         ValueSet    CodeSystem\KeywordsGlobal.fsh                                       13 - 21
+ValueSet-KeywordsLocal.json                                         KeywordsLocal                          ValueSet    CodeSystem\KeywordsLocal.fsh                                        13 - 22
 ValueSet-PersonalInformation.json                                   PersonalInformation                    ValueSet    CodeSystem\PersonalInformation.fsh                                  16 - 24
 ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                     ValueSet    CodeSystem\ProcessingStatus.fsh                                     21 - 29
 ValueSet-Relevance.json                                             Relevance                              ValueSet    CodeSystem\Relevance.fsh                                            17 - 25

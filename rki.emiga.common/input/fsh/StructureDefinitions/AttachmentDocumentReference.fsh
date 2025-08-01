@@ -13,7 +13,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.7"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.8"
 
 * status MS
 * status = #current (exactly)
@@ -82,8 +82,12 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * content[reference].attachment.data ..0
 * content[reference].attachment.url 1.. MS
 * content[reference].attachment.url ^definition = "URI des Eintrags."
-* content[reference].attachment.size ..0
-* content[reference].attachment.hash ..0
+* content[reference].attachment.size MS
+* content[reference].attachment.size ^definition = "Hier wird die Größe der Datei in Byte angegeben."
+* content[reference].attachment.size ^short = "Dateigröße"
+* content[reference].attachment.hash MS
+* content[reference].attachment.hash ^definition = "Hier wird der Hashwert der Datei angegeben."
+* content[reference].attachment.hash ^short = "Hashwert"
 * content[reference].attachment.title 1.. MS
 * content[reference].attachment.title ^definition = "Name des referenzierten Dokumentes."
 * content[reference].attachment.creation MS
@@ -101,7 +105,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * content[attachment].attachment.size ^definition = "Hier wird die Größe der Datei in Byte angegeben."
 * content[attachment].attachment.size ^short = "Dateigröße"
 * content[attachment].attachment.hash MS
-* content[attachment].attachment.hash ^definition = "Hier wird der Hashwert der Datei angegeben.\\nDer Hashwert wird verwendet, um die Integrität der Datei zu überprüfen."
+* content[attachment].attachment.hash ^definition = "Hier wird der Hashwert der Datei angegeben."
 * content[attachment].attachment.hash ^short = "Hashwert"
 * content[attachment].attachment.title 1.. MS
 * content[attachment].attachment.title ^definition = "Hier wird ein Titel bzw. eine Bezeichnung für die angehängte Datei angegeben."

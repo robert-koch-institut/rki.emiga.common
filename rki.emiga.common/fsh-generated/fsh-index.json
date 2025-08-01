@@ -229,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 187
+    "endLine": 189
   },
   {
     "outputFile": "StructureDefinition-AttachmentAnnotation.json",
@@ -245,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
     "startLine": 1,
-    "endLine": 108
+    "endLine": 115
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",
@@ -341,7 +341,7 @@
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\KeywordsGlobal.fsh",
     "startLine": 13,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "ValueSet-KeywordsLocal.json",
@@ -349,7 +349,7 @@
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\KeywordsLocal.fsh",
     "startLine": 13,
-    "endLine": 20
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-PersonalInformation.json",
