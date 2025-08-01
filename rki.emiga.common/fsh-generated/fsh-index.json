@@ -192,28 +192,12 @@
     "endLine": 26
   },
   {
-    "outputFile": "QuestionnaireResponse-FillingNoteResponse.json",
-    "fshName": "FillingNoteResponse",
-    "fshType": "Instance",
-    "fshFile": "Examples\\FillingNoteResponse.fsh",
-    "startLine": 1,
-    "endLine": 19
-  },
-  {
     "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaire.json",
     "fshName": "AdditionalPropertiesQuestionnaire",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaire.fsh",
     "startLine": 1,
     "endLine": 19
-  },
-  {
-    "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
-    "fshName": "OutbreakQuestionnaireResponseCommon",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaireResponse.fsh",
-    "startLine": 1,
-    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-AnnotationBundle.json",
