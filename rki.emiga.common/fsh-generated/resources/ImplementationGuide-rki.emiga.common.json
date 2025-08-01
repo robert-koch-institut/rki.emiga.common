@@ -156,10 +156,34 @@
       },
       {
         "reference": {
+          "reference": "NamingSystem/EmigaAnnotationFileNumber"
+        },
+        "name": "EMIGA Aktenzeichen",
+        "description": "EMIGA Aktenzeichen ist eineindeutiger fachlicher Identifier für EMIGA Annotationen.  ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/EmigaAttachmentFileNumber"
+        },
+        "name": "EMIGA Anhang Aktenzeichen",
+        "description": "EMIGA Anhang Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Anhänge.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/EmigaAttachmentId"
         },
-        "name": "Emiga Anhang ID",
-        "description": "Emiga Anhang ID to be used in Identifiers",
+        "name": "EMIGA Anhang ID",
+        "description": "EMIGA Anhang ID ist ein eineindeutiger technischer Identifier für EMIGA Anhänge.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaAttachmentFileNumber"
+        },
+        "name": "EMIGA Anhang-Aktenzeichen",
+        "description": "Identifier Profil für EMIGA Anhang-Aktenzeichen",
         "exampleBoolean": false
       },
       {
@@ -168,6 +192,14 @@
         },
         "name": "EMIGA Annhang-Identifier",
         "description": "Identifier Profil für EMIGA Annhänge",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaAnnotationFileNumber"
+        },
+        "name": "EMIGA Annotation-Aktenzeichen",
+        "description": "Identifier Profil für EMIGA Annotation-Aktenzeichen",
         "exampleBoolean": false
       },
       {
@@ -182,8 +214,8 @@
         "reference": {
           "reference": "NamingSystem/EmigaAnnotationId"
         },
-        "name": "Emiga Annotationen ID",
-        "description": "Emiga Annotationen ID to be used in Identifiers",
+        "name": "EMIGA Annotationen ID",
+        "description": "EMIGA Annotationen ID ist ein eineindeutiger technischer Identifier für EMIGA Annotationen.",
         "exampleBoolean": false
       },
       {
@@ -209,6 +241,13 @@
         "name": "Extension Amtliche Gemeindeschlüssel (AGS)",
         "description": "Erweiterung zur Darstellung des amtliches Gemeindeschlüssels",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/FillingNoteResponse"
+        },
+        "name": "FillingNoteResponse",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
       },
       {
         "reference": {
@@ -324,6 +363,22 @@
       },
       {
         "reference": {
+          "reference": "NamingSystem/SurvNetAnnotationFileNumber"
+        },
+        "name": "SurvNet Annotation Aktenzeichen",
+        "description": "SurvNet Annotation Aktenzeichen ist einer fachlicher Identifier für SurvNet Annotationen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierSurvNetAnnotationFileNumber"
+        },
+        "name": "SurvNet Annotation-Aktenzeichen",
+        "description": "Identifier Profil für SurvNet Annotation-Aktenzeichen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/IdentifierSurvNetAnnotationId"
         },
         "name": "SurvNet Annotation-Identifier",
@@ -335,7 +390,7 @@
           "reference": "NamingSystem/SurvNetAnnotationId"
         },
         "name": "SurvNet Annotationen ID",
-        "description": "SurvNet Annotationen ID to be used in Identifiers",
+        "description": "SurvNet Annotationen ID ist ein eineindeutiger technischer Identifier für Annotationen aus SurvNet.",
         "exampleBoolean": false
       },
       {
@@ -350,6 +405,14 @@
           "reference": "StructureDefinition/AdditionalPropertiesQuestionnaire"
         },
         "name": "Zusätzliche Eigenschaften",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
+        },
+        "name": "Zusätzliche Eigenschaften Fragebogen-Antworten",
         "description": "TODO",
         "exampleBoolean": false
       }

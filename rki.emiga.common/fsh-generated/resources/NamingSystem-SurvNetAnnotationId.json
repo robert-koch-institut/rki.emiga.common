@@ -1,7 +1,7 @@
 {
   "resourceType": "NamingSystem",
   "id": "SurvNetAnnotationId",
-  "description": "SurvNet Annotationen ID to be used in Identifiers",
+  "description": "SurvNet Annotationen ID ist ein eineindeutiger technischer Identifier für Annotationen aus SurvNet.",
   "uniqueId": [
     {
       "type": "uri",

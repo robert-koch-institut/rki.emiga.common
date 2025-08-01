@@ -59,7 +59,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.7"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.8"
       },
       {
         "id": "QuestionnaireResponse.meta.security",

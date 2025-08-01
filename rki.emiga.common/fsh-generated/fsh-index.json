@@ -128,6 +128,14 @@
     "endLine": 20
   },
   {
+    "outputFile": "NamingSystem-EmigaAnnotationFileNumber.json",
+    "fshName": "EmigaAnnotationFileNumber",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\EmigaAnnotationFileNumber.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "NamingSystem-EmigaAnnotationId.json",
     "fshName": "EmigaAnnotationId",
     "fshType": "Instance",
@@ -136,10 +144,26 @@
     "endLine": 12
   },
   {
+    "outputFile": "NamingSystem-EmigaAttachmentFileNumber.json",
+    "fshName": "EmigaAttachmentFileNumber",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\EmigaAttachmentFileNumber.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "NamingSystem-EmigaAttachmentId.json",
     "fshName": "EmigaAttachmentId",
     "fshType": "Instance",
     "fshFile": "NamingSystem\\EmigaAttachmentId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "NamingSystem-SurvNetAnnotationFileNumber.json",
+    "fshName": "SurvNetAnnotationFileNumber",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\SurvNetAnnotationFileNumber.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -168,12 +192,28 @@
     "endLine": 26
   },
   {
+    "outputFile": "QuestionnaireResponse-FillingNoteResponse.json",
+    "fshName": "FillingNoteResponse",
+    "fshType": "Instance",
+    "fshFile": "Examples\\FillingNoteResponse.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaire.json",
     "fshName": "AdditionalPropertiesQuestionnaire",
     "fshType": "Profile",
-    "fshFile": "Questionnaire\\AdditionalPropertiesQuestionnaire.fsh",
+    "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaire.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
+    "fshName": "OutbreakQuestionnaireResponseCommon",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaireResponse.fsh",
+    "startLine": 1,
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-AnnotationBundle.json",
@@ -189,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 173
+    "endLine": 189
   },
   {
     "outputFile": "StructureDefinition-AttachmentAnnotation.json",
@@ -205,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
     "startLine": 1,
-    "endLine": 95
+    "endLine": 115
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",
@@ -224,6 +264,14 @@
     "endLine": 97
   },
   {
+    "outputFile": "StructureDefinition-IdentifierEmigaAnnotationFileNumber.json",
+    "fshName": "IdentifierEmigaAnnotationFileNumber",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierEmigaAnnotationFileNumber.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "StructureDefinition-IdentifierEmigaAnnotationId.json",
     "fshName": "IdentifierEmigaAnnotationId",
     "fshType": "Profile",
@@ -232,10 +280,26 @@
     "endLine": 12
   },
   {
+    "outputFile": "StructureDefinition-IdentifierEmigaAttachmentFileNumber.json",
+    "fshName": "IdentifierEmigaAttachmentFileNumber",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierEmigaAttachmentFileNumber.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "StructureDefinition-IdentifierEmigaAttachmentId.json",
     "fshName": "IdentifierEmigaAttachmentId",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\IdentifierEmigaAttachmentId.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-IdentifierSurvNetAnnotationFileNumber.json",
+    "fshName": "IdentifierSurvNetAnnotationFileNumber",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierSurvNetAnnotationFileNumber.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -277,7 +341,7 @@
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\KeywordsGlobal.fsh",
     "startLine": 13,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "ValueSet-KeywordsLocal.json",
@@ -285,7 +349,7 @@
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\KeywordsLocal.fsh",
     "startLine": 13,
-    "endLine": 20
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-PersonalInformation.json",

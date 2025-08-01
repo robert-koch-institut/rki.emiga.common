@@ -10,8 +10,8 @@ Description: "Die Kodiersystematik PersonalInformation definiert Konzepte, die d
 * ^content = #complete
 * ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation"
 
-* #ContainsPersonalInformation "Enthält Personenbezogene Daten" "Kennzeichnet, dass die Ressource personenbezogene Daten enthält."
-* #ContainsNoPersonalInformation "Enthält keinen Personenbezogenen Daten" "Kennzeichnet, dass die Ressource keine personenbezogenen Daten enthält."
+* #ContainsPersonalInformation "Enthält personenbezogene Daten" "Kennzeichnet, dass die Ressource personenbezogene Daten enthält."
+* #ContainsNoPersonalInformation "Enthält keine personenbezogenen Daten" "Kennzeichnet, dass die Ressource keine personenbezogenen Daten enthält."
 
 ValueSet: PersonalInformation
 Id: PersonalInformation

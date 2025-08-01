@@ -59,7 +59,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.7"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.8"
       },
       {
         "id": "Bundle.type",

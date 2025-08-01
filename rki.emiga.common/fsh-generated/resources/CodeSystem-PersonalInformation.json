@@ -10,12 +10,12 @@
   "concept": [
     {
       "code": "ContainsPersonalInformation",
-      "display": "Enthält Personenbezogene Daten",
+      "display": "Enthält personenbezogene Daten",
       "definition": "Kennzeichnet, dass die Ressource personenbezogene Daten enthält."
     },
     {
       "code": "ContainsNoPersonalInformation",
-      "display": "Enthält keinen Personenbezogenen Daten",
+      "display": "Enthält keine personenbezogenen Daten",
       "definition": "Kennzeichnet, dass die Ressource keine personenbezogenen Daten enthält."
     }
   ],

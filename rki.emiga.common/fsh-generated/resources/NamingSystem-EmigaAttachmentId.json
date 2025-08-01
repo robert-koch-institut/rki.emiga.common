@@ -1,7 +1,7 @@
 {
   "resourceType": "NamingSystem",
   "id": "EmigaAttachmentId",
-  "description": "Emiga Anhang ID to be used in Identifiers",
+  "description": "EMIGA Anhang ID ist ein eineindeutiger technischer Identifier für EMIGA Anhänge.",
   "uniqueId": [
     {
       "type": "uri",
