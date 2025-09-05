@@ -8,6 +8,9 @@ Description: "Test Attachment DocumentReference Example with image reference"
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
 * meta.security[visibility].code = #public
 
+* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+* meta.tag[personalInformation].code = #ContainsPersonalInformation
+* meta.tag[personalInformation].display = "Enthält Personenbezogene Daten"
 //* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 //* meta.security[responsibility].code = #
 * status = #current

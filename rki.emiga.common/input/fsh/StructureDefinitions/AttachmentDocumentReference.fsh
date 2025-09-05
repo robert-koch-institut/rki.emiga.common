@@ -14,6 +14,21 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * insert ProfileMetaProfileTags
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.8"
+* meta.tag MS
+* meta.tag ^slicing.discriminator.type = #pattern
+* meta.tag ^slicing.discriminator.path = "system"
+* meta.tag ^slicing.rules = #open
+* meta.tag contains 
+    personalInformation 1.. MS
+//* meta.tag[personalInformation] ^mustSupport = true
+* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS (required)
+* meta.tag[personalInformation].system 1.. MS
+* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+* meta.tag[personalInformation].version 
+* meta.tag[personalInformation].code 1.. MS
+* meta.tag[personalInformation].display 
+* meta.tag[personalInformation] ^definition = "Kennzeichnung von personenbezogenen Daten"
+* meta.tag[personalInformation] ^short = "Kennzeichnung von personenbezogenen Daten"
 
 * status MS
 * status = #current (exactly)

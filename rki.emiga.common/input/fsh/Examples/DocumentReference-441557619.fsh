@@ -8,6 +8,10 @@ Usage: #example
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
 * meta.security[visibility].code = #public
 
+* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+* meta.tag[personalInformation].code = #ContainsPersonalInformation
+* meta.tag[personalInformation].display = "Enthält Personenbezogene Daten"
+
 * identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
 * identifier[emigaAttachmentId].value = "ATTACH-TestID-441557619"
 
