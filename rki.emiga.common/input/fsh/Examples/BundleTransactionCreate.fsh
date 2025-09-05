@@ -10,7 +10,7 @@ Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlo
 Instance: TransactionBundle
 InstanceOf: Bundle
 Usage: #example
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.9"
 * identifier.system = "https://emiga.rki.de/fhir/common/sid/AnnotationBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
 * type = #transaction
@@ -31,7 +31,7 @@ InstanceOf: AnnotationCommunication
 Usage: #example
 * id = "2"
 * meta.versionId = "5"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
 * meta.security[0] = $ResourceResponsibility#1.
 * meta.security[+] = $ResourceVisibilityType#public
 
@@ -67,7 +67,7 @@ Usage: #example
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
 InstanceOf: Practitioner
 Usage: #example
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.9"
 * meta.security[0] = $ResourceVisibilityType#internal
 * meta.security[+] = $ResourceResponsibility#1.
 * identifier.value = "testuser@emiga.rki.de"

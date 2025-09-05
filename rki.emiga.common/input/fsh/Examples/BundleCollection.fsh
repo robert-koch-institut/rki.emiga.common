@@ -25,7 +25,7 @@ InstanceOf: AnnotationCommunication
 Usage: #inline
 * id = "3"
 * meta.versionId = "4"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
 * meta.security[0] = $ResourceResponsibility#1.
 * meta.security[+] = $ResourceVisibilityType#public
 
@@ -60,7 +60,7 @@ Usage: #inline
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1d
 InstanceOf: Practitioner
 Usage: #inline
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.9"
 * meta.security[0] = $ResourceVisibilityType#internal
 * meta.security[+] = $ResourceResponsibility#1.
 * identifier.value = "testuser@emiga.rki.de"

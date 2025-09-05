@@ -6,7 +6,7 @@ Description: "A batch bundle to read Communication and Practitioner resources by
 * type = #batch
 * identifier.system = "https://emiga.rki.de/fhir/common/sid/AnnotationBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f3"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.9"
 * timestamp = "2025-07-03T09:28:36.132+01:00"
 
 * entry[0].request.method = #GET
