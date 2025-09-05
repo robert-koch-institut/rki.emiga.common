@@ -117,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\DocumentReference-441557619.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 26
   },
   {
     "outputFile": "DocumentReference-441557620.json",
@@ -125,7 +125,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\DocumentReference-441557620.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 23
   },
   {
     "outputFile": "NamingSystem-EmigaAnnotationFileNumber.json",
@@ -192,12 +192,28 @@
     "endLine": 26
   },
   {
+    "outputFile": "QuestionnaireResponse-FillingNoteResponse.json",
+    "fshName": "FillingNoteResponse",
+    "fshType": "Instance",
+    "fshFile": "Examples\\FillingNoteResponse.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaire.json",
     "fshName": "AdditionalPropertiesQuestionnaire",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaire.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
+    "fshName": "OutbreakQuestionnaireResponseCommon",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaireResponse.fsh",
+    "startLine": 1,
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-AnnotationBundle.json",
@@ -229,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
     "startLine": 1,
-    "endLine": 115
+    "endLine": 130
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",

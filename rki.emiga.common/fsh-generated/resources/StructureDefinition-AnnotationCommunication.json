@@ -59,7 +59,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
       },
       {
         "id": "Communication.meta.security",
@@ -153,7 +153,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation"
         }
       },
       {

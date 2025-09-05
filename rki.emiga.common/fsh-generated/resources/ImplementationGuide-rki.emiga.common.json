@@ -244,6 +244,13 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/FillingNoteResponse"
+        },
+        "name": "FillingNoteResponse",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
@@ -398,6 +405,14 @@
           "reference": "StructureDefinition/AdditionalPropertiesQuestionnaire"
         },
         "name": "Zusätzliche Eigenschaften",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
+        },
+        "name": "Zusätzliche Eigenschaften Fragebogen-Antworten",
         "description": "TODO",
         "exampleBoolean": false
       }

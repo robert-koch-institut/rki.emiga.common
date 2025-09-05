@@ -3,7 +3,7 @@
   "id": "441557620",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.8"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.9"
     ],
     "security": [
       {
@@ -13,6 +13,13 @@
       {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
         "code": "public"
+      }
+    ],
+    "tag": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+        "code": "ContainsPersonalInformation",
+        "display": "Enthält Personenbezogene Daten"
       }
     ]
   },

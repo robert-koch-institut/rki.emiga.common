@@ -3,7 +3,7 @@
   "id": "TransactionBundle",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.8"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.9"
     ]
   },
   "identifier": {
@@ -22,7 +22,7 @@
         "id": "2",
         "meta": {
           "profile": [
-            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
           ],
           "security": [
             {
@@ -118,7 +118,7 @@
         "id": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
         "meta": {
           "profile": [
-            "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.8"
+            "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.9"
           ],
           "security": [
             {

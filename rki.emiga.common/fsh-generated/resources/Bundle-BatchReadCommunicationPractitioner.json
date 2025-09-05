@@ -3,7 +3,7 @@
   "id": "BatchReadCommunicationPractitioner",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.8"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.9"
     ]
   },
   "identifier": {
