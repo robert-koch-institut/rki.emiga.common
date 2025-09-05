@@ -3,8 +3,8 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.3.0"
-* ^date = "2025-07-25"
+* ^version = "0.3.1"
+* ^date = "2025-09-05"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
@@ -23,7 +23,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * meta.tag contains 
     personalInformation 1.. MS
 //* meta.tag[personalInformation] ^mustSupport = true
-* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS (required)
+* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation (required)
 * meta.tag[personalInformation].system 1.. MS
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].version 

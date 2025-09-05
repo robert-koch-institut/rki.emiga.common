@@ -3,8 +3,8 @@ Parent: DocumentReference
 Id: AttachmentDocumentReference
 Title: "Anhang-Entität"
 Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen."
-* ^version = "0.1.0"
-* ^date = "2025-07-31"
+* ^version = "0.2.0"
+* ^date = "2025-09-05"
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
 * insert MetadataProfile
@@ -21,7 +21,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * meta.tag contains 
     personalInformation 1.. MS
 //* meta.tag[personalInformation] ^mustSupport = true
-* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS (required)
+* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation (required)
 * meta.tag[personalInformation].system 1.. MS
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].version 
