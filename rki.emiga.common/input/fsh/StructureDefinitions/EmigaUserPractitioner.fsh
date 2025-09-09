@@ -97,8 +97,9 @@ Der entsprechende Eintrag muss gepflegt werden, um eindeutig feststellen zu kön
 * communication 0..0
 
 
-
+/*
 Invariant: validString
 Description: "Zeichenlänge maximal 255 Zeichen"
 * severity = #error
 * expression = "$this.matches('^.{1,255}$')"
+*/
