@@ -27,6 +27,18 @@
       "version": "1.4.0",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "hl7.fhir.r4.core",
+      "version": "4.0.1",
+      "uri": "http://hl7.org/fhir",
+      "id": "hl7_fhir_r4_core"
+    },
+    {
+      "packageId": "rki.demis.common",
+      "version": "2.2.0-snapshots",
+      "uri": "https://demis.rki.de/fhir/common",
+      "id": "rki_demis_common"
     }
   ],
   "definition": {
@@ -66,6 +78,14 @@
           "reference": "Questionnaire/FillingNote"
         },
         "name": "Ablagevermerk",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/FileNumberPatientId"
+        },
+        "name": "Aktenzeichen Patienten ID",
+        "description": "File Number PatientId to be used in Identifiers",
         "exampleBoolean": false
       },
       {
@@ -117,6 +137,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/Salutation"
+        },
+        "name": "Anrede",
+        "description": "Für die Betroffene Person kann eine Anrede angegeben werden. Diese wird bei Anschreiben verwendet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Salutation"
+        },
+        "name": "Anrede",
+        "description": "Werteliste mit Konzepten, die die Art der Anrede bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Salutation"
+        },
+        "name": "Anrede",
+        "description": "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Bundle/BatchReadCommunicationPractitioner"
         },
         "name": "Batch Bundle: Read Communication and Practitioner",
@@ -149,10 +193,34 @@
       },
       {
         "reference": {
+          "reference": "Patient/AffectedPerson-4550"
+        },
+        "name": "Beispiel Betroffene Person",
+        "description": "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AffectedPerson"
+        },
+        "name": "Betroffene Person",
+        "description": "Die betroffene Person enthält relevante Angaben zum Patienten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Bundle/CollectionBundle2"
         },
         "name": "CollectionBundle2",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FacilityAddressAffectedPerson"
+        },
+        "name": "Einrichtungsadresse Betroffene Person",
+        "description": "Über Einrichtungsadresse kann eine Einrichtung als Aufenthaltsort für die Betroffene Person angegeben werden.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -251,6 +319,38 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/IdentifierFileNumberPatientId"
+        },
+        "name": "Identifier-Profil Aktenzeichen des/der Patienten/-in ",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierReferenceNumberPatientId"
+        },
+        "name": "Identifier-Profil Referenznummer des/der Patienten/-in ",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/NullFlavor"
+        },
+        "name": "Nicht ermittelbar, Nicht erhoben Antworten",
+        "description": "Werteliste mit nicht ermittelbar und nicht erhoben Antworten.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NullFlavor"
+        },
+        "name": "Null flavor",
+        "description": "If the value is not a proper value, indicates the reason.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
@@ -279,6 +379,14 @@
         },
         "name": "Personenbezug (Werteliste)",
         "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/RefereceNumberPatientId"
+        },
+        "name": "Referenznummer Patienten ID",
+        "description": "Referece Number PatientId to be used in Identifiers",
         "exampleBoolean": false
       },
       {
@@ -363,6 +471,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/Citizenship"
+        },
+        "name": "Staatsangehörigkeit",
+        "description": "Profiles the patient-citizenship extension to bind the code slice to a country code ValueSet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/SurvNetAnnotationFileNumber"
         },
         "name": "SurvNet Annotation Aktenzeichen",
@@ -399,6 +515,22 @@
         },
         "name": "TransactionBundle",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/AssociationType"
+        },
+        "name": "Verbindungs-Qualifikation",
+        "description": "Das CodeSystem AssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/AssociationType"
+        },
+        "name": "Verbindungs-Qualifikation - Werteliste",
+        "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
+        "exampleBoolean": false
       },
       {
         "reference": {

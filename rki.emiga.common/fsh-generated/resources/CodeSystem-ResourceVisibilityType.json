@@ -11,7 +11,7 @@
     {
       "code": "public",
       "display": "öffentlich",
-      "definition": "Öffentliche Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Akteure (auch die Öffentlichkeit) zur Anzeige gepracht werden."
+      "definition": "Öffentliche Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Akteure (auch die Öffentlichkeit) zur Anzeige gebracht werden."
     },
     {
       "code": "internal",
