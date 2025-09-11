@@ -1,13 +1,15 @@
-CodeSystem: AssociationType
-Id: AssociationType
+CodeSystem: FacilityAssociationType
+Id: FacilityAssociationType
 Title: "Verbindungs-Qualifikation"
-Description: "Das CodeSystem AssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung."
+Description: "Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung."
+
+* insert MetadataTerminology
 * ^version = "0.1.0"
 * ^status = #active
 * ^date = "2025-09-03"
 * ^caseSensitive = true
-* ^url = "https://emiga.rki.de/fhir/CodeSystem/AssociationType"
-* ^valueSet = "https://emiga.rki.de/fhir/ValueSet/AssociationType"
+* ^url = "https://emiga.rki.de/fhir/CodeSystem/FacilityAssociationType"
+* ^valueSet = "https://emiga.rki.de/fhir/ValueSet/FacilityAssociationType"
 
 * ^content = #complete
 * ^count = 6
@@ -19,13 +21,13 @@ Description: "Das CodeSystem AssociationType enthält die Codes für die verschi
 * #memberOf "Mitglied in"	"Die Person ist Mitglied bei folgender Krankenkasse."
 * #connectedTo "Verbunden mit"	"Allgemeine, unspezifische Beziehung zur Einrichtung, wenn keine der anderen Qualifizierungen zutrifft, z.B. gelegentlicher Kontakt."
 
-ValueSet: AssociationType
-Id: AssociationType
+ValueSet: FacilityAssociationType
+Id: FacilityAssociationType
 Title: "Verbindungs-Qualifikation - Werteliste"
 Description: "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen."
-* ^url = "https://emiga.rki.de/fhir/ValueSet/AssociationType"
+* ^url = "https://emiga.rki.de/fhir/ValueSet/FacilityAssociationType"
 * insert MetadataTerminology
 * ^version = "0.1.0"
 * ^date = "2025-09-03"
-* include codes from system AssociationType
+* include codes from system FacilityAssociationType
 //* $v3-NullFlavor#NASK "not asked"
