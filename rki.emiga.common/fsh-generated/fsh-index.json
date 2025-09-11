@@ -219,7 +219,7 @@
     "outputFile": "Patient-AffectedPerson-4550.json",
     "fshName": "AffectedPerson-4550",
     "fshType": "Instance",
-    "fshFile": "Examples\\Patient.fsh",
+    "fshFile": "Examples\\Patient-AffectedPerson-4550.fsh",
     "startLine": 1,
     "endLine": 94
   },
@@ -341,7 +341,7 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionFacilityAddressAffectedPerson.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-IdentifierEmigaAnnotationFileNumber.json",

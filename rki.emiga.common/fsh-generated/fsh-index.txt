@@ -26,7 +26,7 @@ NamingSystem-FileNumberPatientId.json                               FileNumberPa
 NamingSystem-RefereceNumberPatientId.json                           RefereceNumberPatientId                Instance    NamingSystem\ReferenceNumberPatientID.fsh                           1 - 13
 NamingSystem-SurvNetAnnotationFileNumber.json                       SurvNetAnnotationFileNumber            Instance    NamingSystem\SurvNetAnnotationFileNumber.fsh                        1 - 12
 NamingSystem-SurvNetAnnotationId.json                               SurvNetAnnotationId                    Instance    NamingSystem\SurvNetAnnotationId.fsh                                1 - 12
-Patient-AffectedPerson-4550.json                                    AffectedPerson-4550                    Instance    Examples\Patient.fsh                                                1 - 94
+Patient-AffectedPerson-4550.json                                    AffectedPerson-4550                    Instance    Examples\Patient-AffectedPerson-4550.fsh                            1 - 94
 Practitioner-5d4b8483-0a7d-471e-b1df-26addf06ff1c.json              5d4b8483-0a7d-471e-b1df-26addf06ff1c   Instance    Examples\BundleTransactionCreate.fsh                                67 - 74
 Questionnaire-FillingNote.json                                      FillingNote                            Instance    Questionnaire\FilingNote.fsh                                        1 - 26
 QuestionnaireResponse-FillingNoteResponse.json                      FillingNoteResponse                    Instance    Examples\FillingNoteResponse.fsh                                    1 - 19
@@ -41,7 +41,7 @@ StructureDefinition-AttachmentDocumentReference.json                AttachmentDo
 StructureDefinition-Citizenship.json                                Citizenship                            Extension   Extensions\ExtensionCitizenship.fsh                                 1 - 19
 StructureDefinition-DateCreated.json                                DateCreated                            Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 10
 StructureDefinition-EmigaUserPractitioner.json                      EmigaUserPractitioner                  Profile     StructureDefinitions\EmigaUserPractitioner.fsh                      1 - 97
-StructureDefinition-FacilityAddressAffectedPerson.json              FacilityAddressAffectedPerson          Extension   Extensions\ExtensionFacilityAddressAffectedPerson.fsh               1 - 24
+StructureDefinition-FacilityAddressAffectedPerson.json              FacilityAddressAffectedPerson          Extension   Extensions\ExtensionFacilityAddressAffectedPerson.fsh               1 - 31
 StructureDefinition-IdentifierEmigaAnnotationFileNumber.json        IdentifierEmigaAnnotationFileNumber    Profile     StructureDefinitions\IdentifierEmigaAnnotationFileNumber.fsh        1 - 12
 StructureDefinition-IdentifierEmigaAnnotationId.json                IdentifierEmigaAnnotationId            Profile     StructureDefinitions\IdentifierEmigaAnnotationId.fsh                1 - 12
 StructureDefinition-IdentifierEmigaAttachmentFileNumber.json        IdentifierEmigaAttachmentFileNumber    Profile     StructureDefinitions\IdentifierEmigaAttachmentFileNumber.fsh        1 - 12
