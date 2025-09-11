@@ -9,15 +9,16 @@ Context: Patient.address
 * insert MetadataProfile
 
 * extension contains
-    facility 1..1 MS and
-    associationType 1..1 MS
+    facility 0..* MS and
+    associationType 0..* MS
 
-* extension[facility].valueReference only Reference(Organization or Location)
-* extension[facility].valueReference ^short = "Einrichtung"
-* extension[facility].valueReference ^definition = "Einrichtung, in der sich die betroffene Person aufhält"
-* extension[facility].valueReference ^type.aggregation = #bundled
+* extension[facility].value[x] only Reference(Organization or Location)
+* extension[facility].value[x] ^short = "Einrichtung"
+* extension[facility].value[x] ^definition = "Einrichtung, in der sich die betroffene Person aufhält"
+//* extension[facility].value[x] ^type.aggregation = #bundled
+* extension[facility].value[x] ^mustSupport = true
 
-* extension[associationType].valueCoding only Coding
-* extension[associationType].valueCoding from AssociationType (required)
+* extension[associationType].value[x] only Coding
+* extension[associationType].valueCoding from FacilityAssociationType (required)
 * extension[associationType].valueCoding ^short = "Verbindungs-Qualifikation"
 * extension[associationType].valueCoding ^definition = "Art der Verbindung der betroffenen Person zur Einrichtung"
