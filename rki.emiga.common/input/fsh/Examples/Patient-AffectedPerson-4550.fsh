@@ -69,12 +69,12 @@ Usage: #example
 
 * address.extension[facilityAssociation].url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
 * address.extension[facilityAssociation].extension[facility].url = "facility"
-* address.extension[facilityAssociation].extension[facility].valueReference.reference = "Organization/4550"
+* address.extension[facilityAssociation].extension[facility].valueReference.reference = "http://example.org/fhir/Organization/4550"
 
 * address.extension[facilityAssociation].extension[associationType].url = "associationType"
-* address.extension[facilityAssociation].extension[associationType].valueCoding.system = "https://emiga.rki.de/fhir/CodeSystem/AssociationType"
-* address.extension[facilityAssociation].extension[associationType].valueCoding.code = #caredForIn
-* address.extension[facilityAssociation].extension[associationType].valueCoding.display = "betreut in"
+* address.extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.system = "https://emiga.rki.de/fhir/CodeSystem/FacilityAssociationType"
+* address.extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.code = #caredForIn
+* address.extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.display = "Betreut in"
 
 
 * address.line[0].value = "Cherry Tree Lane 1"
