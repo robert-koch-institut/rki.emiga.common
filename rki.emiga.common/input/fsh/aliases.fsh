@@ -22,14 +22,20 @@ Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/Pers
 Alias: $PersonalInformationVS = https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ProcessingStatus = https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
+
+Alias: $ProcessingStatusAffectedPersonExt = https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson
+
 Alias: $DateCreated = https://emiga.rki.de/fhir/common/Extension/DateCreated
 Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
 
 Alias: $ReferenceNumberPatientId = https://emiga.rki.de/fhir/common/sid/ReferenceNumberPatientId
 Alias: $FileNumberPatientId = https://emiga.rki.de/fhir/common/sid/FileNumberPatientId
 Alias: $PatCitizenship = https://emiga.rki.de/fhir/common/Extension/Citizenship
-Alias: $PatBirthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: $PatBirthPlace = https://emiga.rki.de/fhir/common/Extension/LandOfBirth
 Alias: $salutation = https://emiga.rki.de/fhir/ValueSet/Salutation
+
+Alias: $Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
 
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 Alias: $AddressUse = https://demis.rki.de/fhir/StructureDefinition/AddressUse
