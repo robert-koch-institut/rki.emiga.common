@@ -6,16 +6,25 @@ Usage: #example
 * id = "AffectedPerson-4550"
 
 
-* meta.profile = "https://emiga.rki.de/fhir/case/StructureDefinition/AffectedPerson|1.2.0-alpha.9"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.9"
 
 * meta.security[visibility] = $ResourceVisibilityType#internal
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
-* extension[citizenship].extension[code].url = "code"
-* extension[citizenship].extension[code].valueCodeableConcept.coding.system = "http://hl7.org/fhir/ValueSet/iso3166-1-2"
-* extension[citizenship].extension[code].valueCodeableConcept.coding.code = #DE
-* extension[landOfBirth].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
-* extension[landOfBirth].valueAddress.country = "DE"
+* extension[citizenship].url = "https://emiga.rki.de/fhir/common/Extension/Citizenship"
+
+* extension[citizenship].valueCoding.system = "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+* extension[citizenship].valueCoding.code = #D
+* extension[citizenship].valueCoding.display = "Deutschland"
+* extension[citizenship].valueCoding.version = "8.00"
+* extension[landOfBirth].url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
+
+
+* extension[landOfBirth].valueCoding.system = "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+* extension[landOfBirth].valueCoding.code = #YU
+* extension[landOfBirth].valueCoding.display = "Jugoslawien"
+* extension[landOfBirth].valueCoding.version = "8.00"
+* extension[landOfBirth].url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
 
 * identifier[referencenumberpatientid].system = "https://emiga.rki.de/fhir/common/sid/ReferenceNumberPatientId"
 * identifier[referencenumberpatientid].value = "123456789"
@@ -40,7 +49,7 @@ Usage: #example
 * telecom[Email].value = "mary.poppins@example.com"
 
 * telecom[Phone].system = #phone
-* telecom[Phone].value = "+49-30-1234567"
+* telecom[Phone].value = "+49301234567"
 
 * gender = #other
 * gender.extension[other-amtlich].url = "http://fhir.de/StructureDefinition/gender-amtlich-de"
@@ -50,16 +59,23 @@ Usage: #example
 
 * birthDate = "1980-01-01"
 
-* deceasedBoolean = true
+//* deceasedBoolean = true
+
 * deceasedDateTime = "2025-04-11T10:00:00+01:00"
 
 * address.extension[addressUse].url = "https://demis.rki.de/fhir/StructureDefinition/AddressUse"
 * address.extension[addressUse].valueCoding.system = "https://demis.rki.de/fhir/CodeSystem/addressUse"
 * address.extension[addressUse].valueCoding.code = #primary
 
-* address.extension[facility].url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
-* address.extension[facility].extension[facility].url = "facility"
-* address.extension[facility].extension[facility].valueReference.reference = "Organization/4550"
+* address.extension[facilityAssociation].url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
+* address.extension[facilityAssociation].extension[facility].url = "facility"
+* address.extension[facilityAssociation].extension[facility].valueReference.reference = "Organization/4550"
+
+* address.extension[facilityAssociation].extension[associationType].url = "associationType"
+* address.extension[facilityAssociation].extension[associationType].valueCoding.system = "https://emiga.rki.de/fhir/CodeSystem/AssociationType"
+* address.extension[facilityAssociation].extension[associationType].valueCoding.code = #caredForIn
+* address.extension[facilityAssociation].extension[associationType].valueCoding.display = "betreut in"
+
 
 * address.line[0].value = "Cherry Tree Lane 1"
 * address.line[0].extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"

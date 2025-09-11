@@ -11,17 +11,17 @@
     {
       "code": "inprogress",
       "display": "in Bearbeitung",
-      "definition": "Der Vorgang ist in Bearbeitung."
+      "definition": "Der Vorgang oder die betroffene Person ist in Bearbeitung."
     },
     {
       "code": "closed",
       "display": "abgeschlossen",
-      "definition": "Der Vorgang ist abgeschlossen."
+      "definition": "Der Vorgang oder die betroffene Person ist abgeschlossen."
     },
     {
       "code": "cancelled",
       "display": "verworfen",
-      "definition": "Der Vorgang ist verworfen."
+      "definition": "Der Vorgang oder die betroffene Person ist verworfen."
     },
     {
       "code": "handedover",
@@ -58,9 +58,8 @@
       ]
     }
   ],
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
-  "version": "0.1.0",
-  "date": "2025-02-10",
+  "version": "0.2.0",
+  "date": "2025-09-11",
   "caseSensitive": true,
   "count": 7
 }

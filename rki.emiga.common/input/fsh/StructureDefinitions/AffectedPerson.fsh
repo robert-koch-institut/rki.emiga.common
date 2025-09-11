@@ -24,22 +24,21 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    $PatCitizenship named citizenship 0..2 and
-    $PatBirthPlace named landOfBirth 0..1
-    
+    $PatCitizenship named citizenship 0..* and
+    $PatBirthPlace named landOfBirth 0..1 and
+    $ProcessingStatusAffectedPersonExt named processingStatus 0..1 
 
-* extension[landOfBirth].valueAddress.use 0..0
-* extension[landOfBirth].valueAddress.type 0..0
-* extension[landOfBirth].valueAddress.line 0..0
-* extension[landOfBirth].valueAddress.city 0..0 
-* extension[landOfBirth].valueAddress.postalCode 0..0
-* extension[landOfBirth].valueAddress.district 0..0
-* extension[landOfBirth].valueAddress.state 0..0
-* extension[landOfBirth].valueAddress.country 1..1 MS
-* extension[landOfBirth].valueAddress.country ^short = "Geburtstaat"
-* extension[landOfBirth].valueAddress.country ^definition = "Geburtsstaat der betroffenen Person."
-* extension[landOfBirth].valueAddress.country from $iso3166-1-2 (extensible)
-* extension[landOfBirth].valueAddress.period 0..0
+* extension[citizenship].valueCoding ^mustSupport = true
+* extension[citizenship].valueCoding.system 1..1 MS
+* extension[citizenship].valueCoding.code 1..1 MS
+* extension[citizenship].valueCoding.display 0..1 MS
+* extension[citizenship].valueCoding.version 1..1 MS
+
+* extension[landOfBirth].valueCoding ^mustSupport = true
+* extension[landOfBirth].valueCoding.system 1..1 MS
+* extension[landOfBirth].valueCoding.code 1..1 MS
+* extension[landOfBirth].valueCoding.display 0..1 MS
+* extension[landOfBirth].valueCoding.version 1..1 MS
 /*
 * extension[nationality].extension contains
     code 0..1 and
@@ -128,13 +127,17 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * address MS
 * address only $address-de-basis
 * address.extension contains $AddressUse named addressUse 0..* and
-    $Facility named facility 0..*
+    $Facility named facilityAssociation 0..* and $Geolocation named geolocation 0..*
 * address.extension[addressUse].value[x] ^mustSupport = true
-* address.extension[facility].extension[facility].value[x] ^mustSupport = true
+* address.extension[facilityAssociation].extension[facility].value[x] ^mustSupport = true
 
 * address.extension[Stadtteil] ^mustSupport = true
 * address.extension[Stadtteil].valueString MS
 * address.extension[Stadtteil].valueString obeys validString
+
+* address.use 0..0
+* address.use ^comment = "Die Nutzung der Adresse wird über die Extension AddressUse abgebildet."
+
 * address.line.extension[Strasse] ^mustSupport = true
 * address.line.extension[Strasse].valueString MS
 * address.line.extension[Strasse].valueString obeys validString
@@ -168,7 +171,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * birthDate ^definition = "Geburtsdatum der betroffenen Person"
 
 // A Related Person Resource wird dafür warscheinlich benuzt, 
-
+/*
 * contact MS
 
 * contact.relationship 0..* MS
@@ -247,7 +250,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * contact.address.country ^short = "Land"
 * contact.address.country ^definition = "Land"
 * contact.address.city obeys validString
-
+*/
 * deceased[x] MS
 //* deceased[x] MS
 * deceased[x] ^short = "Verstorben"
@@ -265,6 +268,22 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * generalPractitioner ^short = "Behandelnde Person (Arzt/Ärztin)"
 * generalPractitioner ^definition = "Behandelnde Person der betroffenen Person."
 * managingOrganization ..0
+
+* link MS
+* link ^slicing.discriminator.type = #type
+* link ^slicing.discriminator.path = "other"
+* link ^slicing.rules = #open
+* link contains  relatedPersonLink 0..* MS and patientLink 0..* MS
+* link[patientLink].type 1..1 MS
+* link[patientLink].other 1..1 MS
+* link[patientLink].other only Reference(Patient)
+* link[patientLink].other.reference MS
+* link[relatedPersonLink].type 1..1 MS
+* link[relatedPersonLink].type = #seealso (exactly)
+* link[relatedPersonLink].other 1..1 MS
+* link[relatedPersonLink].other only Reference(RelatedPerson)
+* link[relatedPersonLink].other.reference MS
+
 
 // Diskussion ob ein managingOrganization benötigt wird
 //* managingOrganization 0..1 MS // Must have a managing organization

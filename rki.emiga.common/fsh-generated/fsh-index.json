@@ -24,20 +24,20 @@
     "endLine": 27
   },
   {
-    "outputFile": "CodeSystem-AssociationType.json",
-    "fshName": "AssociationType",
-    "fshType": "CodeSystem",
-    "fshFile": "CodeSystem\\AssociationType.fsh",
-    "startLine": 1,
-    "endLine": 20
-  },
-  {
     "outputFile": "CodeSystem-ConceptDesignationUse.json",
     "fshName": "ConceptDesignationUse",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem\\ConceptDesignationUse.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "CodeSystem-FacilityAssociationType.json",
+    "fshName": "FacilityAssociationType",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\AssociationType.fsh",
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "CodeSystem-KeywordsGlobal.json",
@@ -78,6 +78,14 @@
     "fshFile": "CodeSystem\\ProcessingStatus.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "CodeSystem-RelatedPersonRelationshipType.json",
+    "fshName": "RelatedPersonRelationshipType",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\RelatedPersonRelationshipType.fsh",
+    "startLine": 1,
+    "endLine": 15
   },
   {
     "outputFile": "CodeSystem-Relevance.json",
@@ -213,7 +221,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Patient.fsh",
     "startLine": 1,
-    "endLine": 78
+    "endLine": 94
   },
   {
     "outputFile": "Practitioner-5d4b8483-0a7d-471e-b1df-26addf06ff1c.json",
@@ -261,7 +269,15 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AffectedPerson.fsh",
     "startLine": 2,
-    "endLine": 267
+    "endLine": 285
+  },
+  {
+    "outputFile": "StructureDefinition-AffectedPersonRelatedPerson.json",
+    "fshName": "AffectedPersonRelatedPerson",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\AffectedPersonRelatedPerson.fsh",
+    "startLine": 1,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-AnnotationBundle.json",
@@ -301,7 +317,7 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionCitizenship.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",
@@ -325,7 +341,7 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionFacilityAddressAffectedPerson.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-IdentifierEmigaAnnotationFileNumber.json",
@@ -392,6 +408,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "StructureDefinition-LandOfBirth.json",
+    "fshName": "LandOfBirth",
+    "fshType": "Extension",
+    "fshFile": "Extensions\\ExtensionLandOfBirth.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "StructureDefinition-MunicipalityKey.json",
     "fshName": "MunicipalityKey",
     "fshType": "Extension",
@@ -416,6 +440,14 @@
     "endLine": 18
   },
   {
+    "outputFile": "StructureDefinition-ProcessingStatusAffectedPerson.json",
+    "fshName": "ProcessingStatusAffectedPerson",
+    "fshType": "Extension",
+    "fshFile": "Extensions\\ExtensionProcessingStatusAffectedPerson.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "StructureDefinition-Salutation.json",
     "fshName": "Salutation",
     "fshType": "Extension",
@@ -424,20 +456,28 @@
     "endLine": 16
   },
   {
-    "outputFile": "ValueSet-AssociationType.json",
-    "fshName": "AssociationType",
-    "fshType": "ValueSet",
-    "fshFile": "CodeSystem\\AssociationType.fsh",
-    "startLine": 22,
-    "endLine": 30
-  },
-  {
     "outputFile": "ValueSet-ConceptDesignationUse.json",
     "fshName": "ConceptDesignationUse",
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\ConceptDesignationUse.fsh",
     "startLine": 16,
     "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-DeuevAnlage8CountryCodes.json",
+    "fshName": "DeuevAnlage8CountryCodes",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\DeuevAnlage8CountryCodes.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-FacilityAssociationType.json",
+    "fshName": "FacilityAssociationType",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\AssociationType.fsh",
+    "startLine": 24,
+    "endLine": 32
   },
   {
     "outputFile": "ValueSet-KeywordsGlobal.json",
@@ -472,12 +512,28 @@
     "endLine": 24
   },
   {
+    "outputFile": "ValueSet-ProcessingStatusAffectedPersonVS.json",
+    "fshName": "ProcessingStatusAffectedPersonVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\ProcessingStatusAffectedPersonVS.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
     "outputFile": "ValueSet-ProcessingStatusVS.json",
     "fshName": "ProcessingStatusVS",
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\ProcessingStatus.fsh",
     "startLine": 21,
     "endLine": 29
+  },
+  {
+    "outputFile": "ValueSet-RelatedPersonRelationshipType.json",
+    "fshName": "RelatedPersonRelationshipType",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystem\\RelatedPersonRelationshipType.fsh",
+    "startLine": 17,
+    "endLine": 25
   },
   {
     "outputFile": "ValueSet-Relevance.json",

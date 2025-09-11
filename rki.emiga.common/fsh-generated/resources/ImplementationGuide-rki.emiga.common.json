@@ -169,6 +169,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ProcessingStatusAffectedPerson"
+        },
+        "name": "Bearbeitungsstatus",
+        "description": "Extension zur Abbildung der Bearbeitungsstatus einer betroffenen Person.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
@@ -193,6 +201,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ProcessingStatusAffectedPersonVS"
+        },
+        "name": "Bearbeitungsstatus betroffene Person",
+        "description": "Werteliste mit möglichen Bearbeitungsstatus einer betroffenen Person.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Patient/AffectedPerson-4550"
         },
         "name": "Beispiel Betroffene Person",
@@ -205,6 +221,30 @@
         },
         "name": "Betroffene Person",
         "description": "Die betroffene Person enthält relevante Angaben zum Patienten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/RelatedPersonRelationshipType"
+        },
+        "name": "Beziehungen zu anderen Personen",
+        "description": "Die Kodiersystematik 'RelatedPersonRelationship' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen zu unterscheiden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/RelatedPersonRelationshipType"
+        },
+        "name": "Beziehungen zu anderen Personen - Werteliste",
+        "description": "Werteliste mit Konzepten, die die Art der Beziehungen bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AffectedPersonRelatedPerson"
+        },
+        "name": "Bezugsperson der betroffenen Person",
+        "description": "TODO",
         "exampleBoolean": false
       },
       {
@@ -319,6 +359,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/LandOfBirth"
+        },
+        "name": "Geburtsland",
+        "description": "Geburtsland der betroffenen Person.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/IdentifierFileNumberPatientId"
         },
         "name": "Identifier-Profil Aktenzeichen des/der Patienten/-in ",
@@ -331,6 +379,14 @@
         },
         "name": "Identifier-Profil Referenznummer des/der Patienten/-in ",
         "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DeuevAnlage8CountryCodes"
+        },
+        "name": "Ländercodes gemäß Anlage 8 der DEÜV",
+        "description": "Werteliste mit Ländercodes gemäß Anlage 8 der DEÜV.",
         "exampleBoolean": false
       },
       {
@@ -474,7 +530,7 @@
           "reference": "StructureDefinition/Citizenship"
         },
         "name": "Staatsangehörigkeit",
-        "description": "Profiles the patient-citizenship extension to bind the code slice to a country code ValueSet.",
+        "description": "Staatsangehörigkeit der betroffenen Person.",
         "exampleBoolean": false
       },
       {
@@ -518,15 +574,15 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/AssociationType"
+          "reference": "CodeSystem/FacilityAssociationType"
         },
         "name": "Verbindungs-Qualifikation",
-        "description": "Das CodeSystem AssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung.",
+        "description": "Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/AssociationType"
+          "reference": "ValueSet/FacilityAssociationType"
         },
         "name": "Verbindungs-Qualifikation - Werteliste",
         "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
