@@ -1,14 +1,14 @@
-Extension: Citizenship
-Id: Citizenship
-Title: "Staatsangehörigkeit"
-Description: "Staatsangehörigkeit der betroffenen Person."
+Extension: LandOfBirth
+Id: LandOfBirth
+Title: "Geburtsland"
+Description: "Geburtsland der betroffenen Person."
 Context: Patient
 * insert MetadataProfile
 
-* ^url = "https://emiga.rki.de/fhir/common/Extension/Citizenship"
-* ^version = "0.4.0"
+* ^url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
+* ^version = "0.1.0"
 * ^date = "2025-09-11"
-* extension.url = "https://emiga.rki.de/fhir/common/Extension/Citizenship"
+* extension.url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
 * extension.extension 0..0
 * value[x] only Coding
 * value[x] from DeuevAnlage8CountryCodes (extensible)
