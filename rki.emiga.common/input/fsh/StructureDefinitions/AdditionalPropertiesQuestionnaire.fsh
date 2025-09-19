@@ -13,6 +13,7 @@ Description:    "TODO"
 * insert ProfileResourceCommon
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
+* insert IdentifierCommon
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.9"
 

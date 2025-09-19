@@ -21,17 +21,22 @@ Usage: #example
 * extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
 * extension[dateCreated].valueInstant = "2024-10-01T12:00:00Z"
 
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "Annotation-DEFG-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "AnnotationABCD-987654321"
+/*
 * identifier[emigaAnnotationId].value = "ANNO-TestID-441557618"
 * identifier[emigaAnnotationId].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
 * identifier[survnetAnnotationId].value = "SURVNET-TestID-441557618"
 * identifier[survnetAnnotationId].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
-
+*/
 * status = #completed
 
-* category.coding[keywordsLocal] = $KeywordsLocal#comment "Kommentar"
+//* category.coding[keywordsLocal] = $KeywordsLocal#comment "Kommentar"
 
 
-* category.coding[keywordsGlobal] = $KeywordsGlobal#message "Nachricht"
+//* category.coding[keywordsGlobal] = $KeywordsGlobal#message "Nachricht"
 
 
 //* subject = Reference(Patient/example)

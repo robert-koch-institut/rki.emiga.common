@@ -10,6 +10,10 @@ Usage: #definition
 * publisher = "Robert Koch Institute"
 * copyright = "Robert Koch Institute"
 * date = "2025-07-04"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "Eigenschaft-PQRST-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "Eigenschaft-XYZ-987654321"
 * item[0].type = #boolean
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#check-box "Check box"

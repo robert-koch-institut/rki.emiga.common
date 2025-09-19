@@ -13,6 +13,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
+
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.9"
 * meta.tag MS
 * meta.tag ^slicing.discriminator.type = #pattern
@@ -32,7 +33,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 
 * status MS
 * status = #current (exactly)
-
+/*
 * identifier MS
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
@@ -50,6 +51,8 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * identifier[emigaAttachmentFileNumber] ^definition = "EMIGA Anhang-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Anhänge."
 * identifier[emigaAttachmentId] ^short = "EMIGA Anhang-ID"
 * identifier[emigaAttachmentId] ^definition = "EMIGA Anhang-ID ist ein eindeutiger technische Identifier für EMIGA Anhänge."
+*/
+* insert IdentifierCommon
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * docStatus 0..0
 * docStatus ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant."

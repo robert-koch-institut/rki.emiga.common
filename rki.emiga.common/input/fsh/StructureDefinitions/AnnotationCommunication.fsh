@@ -34,6 +34,8 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * language 0..0
+* insert IdentifierCommon
+/*
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
 * identifier 1.. MS
@@ -58,6 +60,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * identifier[emigaAnnotationId] ^definition = "EMIGA Annotation-ID ist ein eindeutiger technische Identifier für EMIGA Annotationen."
 * identifier[survnetAnnotationId] ^short = "SurvNet Annotation-ID"
 * identifier[survnetAnnotationId] ^definition = "SurvNet Annotation-ID ist ein fachlicher Identifier für SurvNet Annotationen."
+*/
 //* identifier only IdentifierAnn
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
@@ -78,6 +81,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 1..1 MS
 
 //Es wird für "Schlagwort" überlegt
+/*
 * category MS
 * category ^short = "Schlagwort"
 * category ^definition = "Schlagwort der Annotation"
@@ -107,7 +111,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * category.coding[keywordsGlobal].code ^short = "Global Schlagwort-Code"
 * category.coding[keywordsGlobal].code ^definition = "Global Schlagwort-Code der Annotation"
 * category.coding[keywordsGlobal].display 0..1 MS
-
+*/
 
 
 /*

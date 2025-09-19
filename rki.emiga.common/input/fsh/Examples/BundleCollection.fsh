@@ -42,12 +42,17 @@ Usage: #inline
 * extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
 * extension[dateCreated].valueInstant = "2024-10-01T12:00:00Z"
 
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "DEFG-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "ABCD-987654321"
 
 
-* identifier[0].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
-* identifier[=].value = "ANNO-1.-2025-00000002"
-* identifier[+].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
-* identifier[=].value = "SURVNET-TestID-441557618"
+
+//* identifier[0].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
+//* identifier[=].value = "ANNO-1.-2025-00000002"
+//* identifier[+].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
+//* identifier[=].value = "SURVNET-TestID-441557618"
 * status = #completed
 * category[0] = $KeywordsLocal#comment "Kommentar"
 * category[+] = $KeywordsGlobal#message "Nachricht"
