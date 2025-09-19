@@ -76,7 +76,27 @@ RuleSet: StrictCoding
 * code 1..1 MS
 * display 0..1
 
+RuleSet: IdentifierCommon
+* identifier MS 
+* identifier
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+  * ^slicing.description = "slicing patient identifier by system"
+  * ^slicing.ordered = false
+* identifier contains EmigaID 1..1 MS and EmigaFileNumber 1..1 MS
 
+* identifier[EmigaID] only IdentifierEmigaID
+* identifier[EmigaID].use 0..1 MS
+* identifier[EmigaID].use = #official (exactly)
+* identifier[EmigaID].system 1..1 MS
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+
+* identifier[EmigaFileNumber] only IdentifierEmigaFileNumber
+* identifier[EmigaFileNumber].use 0..1 MS
+* identifier[EmigaFileNumber].use = #official (exactly)
+* identifier[EmigaFileNumber].system 1..1 MS
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 
 
 
