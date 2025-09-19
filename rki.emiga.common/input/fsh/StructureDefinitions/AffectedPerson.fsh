@@ -24,21 +24,31 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    $PatCitizenship named citizenship 0..* and
-    $PatBirthPlace named landOfBirth 0..1 and
-    $ProcessingStatusAffectedPersonExt named processingStatus 0..1 
+    //$PatCitizenship named citizenship 0..* MS and
+    $HL7PatCitizenship named citizenship 0..* MS and
+    $PatBirthPlace named landOfBirth 0..1 MS and
+    $ProcessingStatusAffectedPersonExt named processingStatus 0..1 MS 
 
-* extension[citizenship].valueCoding ^mustSupport = true
-* extension[citizenship].valueCoding.system 1..1 MS
-* extension[citizenship].valueCoding.code 1..1 MS
-* extension[citizenship].valueCoding.display 0..1 MS
-* extension[citizenship].valueCoding.version 1..1 MS
+* extension[citizenship].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship" (exactly)
+* extension[citizenship].extension[code].value[x] only CodeableConcept
+* extension[citizenship].extension[code].valueCodeableConcept from CountryCodes (extensible)
+//* extension[citizenship].valueCodeableConcept 1.. MS
+* extension[citizenship].extension[code].valueCodeableConcept ^short = "Staatsangehörigkeit"
+* extension[citizenship].extension[code].valueCodeableConcept ^definition = "Staatsangehörigkeit der betroffenen Person"
+* extension[citizenship].extension[code].valueCodeableConcept.coding 1.. MS
+* extension[citizenship].extension[code].valueCodeableConcept.coding.system 1..1 MS
+* extension[citizenship].extension[code].valueCodeableConcept.coding.system = "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+* extension[citizenship].extension[code].valueCodeableConcept.coding.code 1..1 MS
+* extension[citizenship].extension[code].valueCodeableConcept.coding.display ^mustSupport = true
+* extension[citizenship].extension[code].valueCodeableConcept.coding.version MS
+
+
+//* extension[citizenship].valueCoding ^mustSupport = true
+
 
 * extension[landOfBirth].valueCoding ^mustSupport = true
-* extension[landOfBirth].valueCoding.system 1..1 MS
-* extension[landOfBirth].valueCoding.code 1..1 MS
-* extension[landOfBirth].valueCoding.display 0..1 MS
-* extension[landOfBirth].valueCoding.version 1..1 MS
+
+* insert IdentifierCommon
 /*
 * extension[nationality].extension contains
     code 0..1 and
@@ -57,6 +67,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 //* identifier.system 0..1
 //* identifier.value 0..1
 // Must have at least two identifiers
+/*
 * identifier MS 
 * identifier
   * ^slicing.discriminator.type = #value
@@ -64,19 +75,23 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
   * ^slicing.rules = #open
   * ^slicing.description = "slicing patient identifier by system"
   * ^slicing.ordered = false
-* identifier contains referencenumberpatientid 1..1 MS and filenumberpatientid 1..1 MS
-* identifier[referencenumberpatientid] only IdentifierReferenceNumberPatientId
-* identifier[referencenumberpatientid].use 0..1 MS
-* identifier[referencenumberpatientid].use = #official (exactly)
-* identifier[referencenumberpatientid].system 1..1 MS
-* identifier[referencenumberpatientid].system = "https://emiga.rki.de/fhir/common/sid/ReferenceNumberPatientId"
+* identifier contains EmigaID 1..1 MS and EmigaFileNumber 1..1 MS
+
+* identifier[EmigaID] only IdentifierEmigaID
+* identifier[EmigaID].use 0..1 MS
+* identifier[EmigaID].use = #official (exactly)
+* identifier[EmigaID].system 1..1 MS
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+
+* identifier[EmigaFileNumber] only IdentifierEmigaFileNumber
+* identifier[EmigaFileNumber].use 0..1 MS
+* identifier[EmigaFileNumber].use = #official (exactly)
+* identifier[EmigaFileNumber].system 1..1 MS
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+*/
 //Reserved for later use
 //* identifier[referencenumberpatientid].assigner
-* identifier[filenumberpatientid] only IdentifierFileNumberPatientId
-* identifier[filenumberpatientid].use 0..1 MS
-* identifier[filenumberpatientid].use = #secondary (exactly)
-* identifier[filenumberpatientid].system 1..1 MS
-* identifier[filenumberpatientid].system = "https://emiga.rki.de/fhir/common/sid/FileNumberPatientId"
+
 
 // Indicating if the patient is active will not be needed at this point
 //active 0..1 
@@ -84,10 +99,11 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 // Name of the Patient
 * name MS
 * name only $humanname-de-basis
+* name obeys maidenNameOnlyFamily
 * name ^short = "Name"
 * name ^definition = "Name der betroffenen Person."
 // Name Extension for Salutation
-* name.extension contains https://emiga.rki.de/fhir/common/StructureDefinition/Salutation named salutation 0..1 MS
+* name.extension contains $SalutationExt named salutation 0..1 MS
 * name.use 0..1 MS
 * name.use ^comment = "Die Geburtsname wird über den use 'maiden' abgebildet. Der offizielle Name wird über den use 'official' abgebildet. Der Kurzname wird über den use 'nickname' abgebildet. Wenn kein Wert angegeben wird, ist der offizielle Name gemeint."
 * name.family MS
@@ -126,10 +142,21 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 
 * address MS
 * address only $address-de-basis
-* address.extension contains $AddressUse named addressUse 0..* and
-    $Facility named facilityAssociation 0..* and $Geolocation named geolocation 0..*
+* address.extension contains $AddressUse named addressUse 0..* MS and
+    $Facility named facilityAssociation 0..* MS and
+    $Geolocation named geolocation 0..* MS and
+    $RegionalKey named regionalKey 0..1 MS
+
 * address.extension[addressUse].value[x] ^mustSupport = true
 * address.extension[facilityAssociation].extension[facility].value[x] ^mustSupport = true
+* address.extension[geolocation].extension ^mustSupport = true
+* address.extension[geolocation].extension[latitude] ^mustSupport = true
+* address.extension[geolocation].extension[longitude] ^mustSupport = true
+
+* address.extension[regionalKey].extension[regionKey] ^mustSupport = true
+* address.extension[regionalKey].extension[regionReferenceSystem] ^mustSupport = true
+* address.extension[regionalKey].extension[regionKey].valueString ^mustSupport = true
+* address.extension[regionalKey].extension[regionReferenceSystem].valueString ^mustSupport = true
 
 * address.extension[Stadtteil] ^mustSupport = true
 * address.extension[Stadtteil].valueString MS
@@ -262,6 +289,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * photo ..0 
 * communication MS
 * communication.language MS
+* communication.language from CommonLanguages (extensible)
 * communication.language ^short = "Sprachkentnisse"
 * communication.language ^definition = "Sprachkentnisse der betroffenen Person."
 * generalPractitioner MS
@@ -345,3 +373,8 @@ Description: "Das Geburtsjahr muss mit 19 oder 20 beginnen."
 * expression = "$this.toString().matches('^19[0-9]{2}-[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}-[0-9]{2}|19[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}|19[0-9]{2}|20[0-9]{2}$')"
 
 
+// Invariant to ensure that only family name is present when name.use is maiden
+Invariant: maidenNameOnlyFamily
+Description: "Wenn name.use = 'maiden', darf nur name.family ausgefüllt werden. Die anderen Namensbestandteile müssen leer sein."
+* severity = #error
+* expression = "name.where(use = 'maiden').all(given.empty() and prefix.empty() and suffix.empty() and text.empty() and family.exists())"
