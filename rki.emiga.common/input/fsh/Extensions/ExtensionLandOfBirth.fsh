@@ -6,15 +6,19 @@ Context: Patient
 * insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
-* ^version = "0.1.0"
-* ^date = "2025-09-11"
-* extension.url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
-* extension.extension 0..0
+* ^version = "0.2.0"
+* ^date = "2025-09-12"
+* url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth" (exactly)
 * value[x] only Coding
-* value[x] from DeuevAnlage8CountryCodes (extensible)
-* valueCoding 1..1 MS
-* valueCoding.system 1..1 MS
-* valueCoding.code 1..1 MS
-* valueCoding.display 0..1 MS
-* valueCoding.system = "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+* value[x] from CountryCodes (extensible)
+* value[x] 1.. MS
+//* value[x].valueCodeableConcept from DeuevAnlage8CountryCodes (extensible)
+* url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth" (exactly)
+* value[x] ^short = "Staatsangehörigkeit"
+* value[x] ^definition = "Staatsangehörigkeit der betroffenen Person"
+* value[x].system 1..1 MS
+* value[x].system = "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+* value[x].code 1..1 MS
+* value[x].display ^mustSupport = true
+* value[x].version MS
 
