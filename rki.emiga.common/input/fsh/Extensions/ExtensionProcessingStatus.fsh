@@ -6,6 +6,8 @@ Context: Element
 * ^url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * ^version = "0.1.0"
 * insert MetadataProfile
+
+* url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus" (exactly)
 * value[x] 1.. MS
 * value[x] only Coding
 * value[x] from ProcessingStatusVS (required)
@@ -13,6 +15,6 @@ Context: Element
 * value[x] ^definition = "Bearbeitungsstatus des Vorgangs"
 * value[x] ^binding.description = "Bearbeitungsstatus"
 * value[x].system 1.. MS
-* value[x].version 
+* value[x].version MS
 * value[x].code 1.. MS
-* value[x].display 
+* value[x].display MS

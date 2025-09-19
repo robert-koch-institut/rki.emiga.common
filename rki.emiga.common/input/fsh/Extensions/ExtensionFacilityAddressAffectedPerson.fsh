@@ -7,7 +7,7 @@ Context: Patient.address
 * ^version = "0.1.0"
 * ^date = "2025-09-03"
 * insert MetadataProfile
-
+* url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson" (exactly)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed
@@ -25,7 +25,12 @@ Context: Patient.address
 
 //* extension[associationType].url = "associationType"
 * extension[associationType].value[x] only CodeableConcept
-* extension[associationType].valueCodeableConcept from FacilityAssociationType (required)
+* extension[associationType].valueCodeableConcept from FacilityAssociationTypeVS (required)
 * extension[associationType].valueCodeableConcept ^short = "Verbindungs-Qualifikation"
 * extension[associationType].valueCodeableConcept ^definition = "Art der Verbindung der betroffenen Person zur Einrichtung"
 * extension[associationType].valueCodeableConcept.coding 1.. MS
+* extension[associationType].valueCodeableConcept.coding.code 1..1 MS
+//* extension[associationType].valueCodeableConcept.coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/FacilityAssociationType"
+* extension[associationType].valueCodeableConcept.coding.system 1..1 MS
+* extension[associationType].valueCodeableConcept.coding.display MS
+* extension[associationType].valueCodeableConcept.coding.version MS
