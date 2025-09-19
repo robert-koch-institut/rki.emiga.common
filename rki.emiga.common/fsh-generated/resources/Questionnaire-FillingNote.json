@@ -7,6 +7,16 @@
     ]
   },
   "url": "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote",
+  "identifier": [
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+      "value": "Eigenschaft-PQRST-123456789"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+      "value": "Eigenschaft-XYZ-987654321"
+    }
+  ],
   "item": [
     {
       "extension": [

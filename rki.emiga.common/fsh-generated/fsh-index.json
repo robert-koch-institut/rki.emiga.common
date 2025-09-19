@@ -35,33 +35,9 @@
     "outputFile": "CodeSystem-FacilityAssociationType.json",
     "fshName": "FacilityAssociationType",
     "fshType": "CodeSystem",
-    "fshFile": "CodeSystem\\AssociationType.fsh",
+    "fshFile": "CodeSystem\\FacilityAssociationType.fsh",
     "startLine": 1,
     "endLine": 22
-  },
-  {
-    "outputFile": "CodeSystem-KeywordsGlobal.json",
-    "fshName": "KeywordsGlobal",
-    "fshType": "CodeSystem",
-    "fshFile": "CodeSystem\\KeywordsGlobal.fsh",
-    "startLine": 1,
-    "endLine": 11
-  },
-  {
-    "outputFile": "CodeSystem-KeywordsLocal.json",
-    "fshName": "KeywordsLocal",
-    "fshType": "CodeSystem",
-    "fshFile": "CodeSystem\\KeywordsLocal.fsh",
-    "startLine": 1,
-    "endLine": 11
-  },
-  {
-    "outputFile": "CodeSystem-MunicipalityKey.json",
-    "fshName": "MunicipalityKey",
-    "fshType": "CodeSystem",
-    "fshFile": "CodeSystem\\MunicipalityKey.fsh",
-    "startLine": 1,
-    "endLine": 10
   },
   {
     "outputFile": "CodeSystem-PersonalInformation.json",
@@ -78,6 +54,14 @@
     "fshFile": "CodeSystem\\ProcessingStatus.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "CodeSystem-RegionKeys.json",
+    "fshName": "RegionKeys",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem\\RegionKeys.fsh",
+    "startLine": 1,
+    "endLine": 11250
   },
   {
     "outputFile": "CodeSystem-RelatedPersonRelationshipType.json",
@@ -125,7 +109,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\BundleTransactionCreate.fsh",
     "startLine": 29,
-    "endLine": 65
+    "endLine": 70
   },
   {
     "outputFile": "Communication-441557618.json",
@@ -133,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Communication-441557618.fsh",
     "startLine": 1,
-    "endLine": 49
+    "endLine": 54
   },
   {
     "outputFile": "DocumentReference-441557619.json",
@@ -141,7 +125,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\DocumentReference-441557619.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 32
   },
   {
     "outputFile": "DocumentReference-441557620.json",
@@ -149,71 +133,23 @@
     "fshType": "Instance",
     "fshFile": "Examples\\DocumentReference-441557620.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 31
   },
   {
-    "outputFile": "NamingSystem-EmigaAnnotationFileNumber.json",
-    "fshName": "EmigaAnnotationFileNumber",
+    "outputFile": "NamingSystem-EmigaFileNumber.json",
+    "fshName": "EmigaFileNumber",
     "fshType": "Instance",
-    "fshFile": "NamingSystem\\EmigaAnnotationFileNumber.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "NamingSystem-EmigaAnnotationId.json",
-    "fshName": "EmigaAnnotationId",
-    "fshType": "Instance",
-    "fshFile": "NamingSystem\\EmigaAnnotationId.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "NamingSystem-EmigaAttachmentFileNumber.json",
-    "fshName": "EmigaAttachmentFileNumber",
-    "fshType": "Instance",
-    "fshFile": "NamingSystem\\EmigaAttachmentFileNumber.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "NamingSystem-EmigaAttachmentId.json",
-    "fshName": "EmigaAttachmentId",
-    "fshType": "Instance",
-    "fshFile": "NamingSystem\\EmigaAttachmentId.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "NamingSystem-FileNumberPatientId.json",
-    "fshName": "FileNumberPatientId",
-    "fshType": "Instance",
-    "fshFile": "NamingSystem\\FileNumberPatientId.fsh",
+    "fshFile": "NamingSystem\\EmigaFileNumber.fsh",
     "startLine": 1,
     "endLine": 13
   },
   {
-    "outputFile": "NamingSystem-RefereceNumberPatientId.json",
-    "fshName": "RefereceNumberPatientId",
+    "outputFile": "NamingSystem-EmigaID.json",
+    "fshName": "EmigaID",
     "fshType": "Instance",
-    "fshFile": "NamingSystem\\ReferenceNumberPatientID.fsh",
+    "fshFile": "NamingSystem\\EmigaID.fsh",
     "startLine": 1,
     "endLine": 13
-  },
-  {
-    "outputFile": "NamingSystem-SurvNetAnnotationFileNumber.json",
-    "fshName": "SurvNetAnnotationFileNumber",
-    "fshType": "Instance",
-    "fshFile": "NamingSystem\\SurvNetAnnotationFileNumber.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "NamingSystem-SurvNetAnnotationId.json",
-    "fshName": "SurvNetAnnotationId",
-    "fshType": "Instance",
-    "fshFile": "NamingSystem\\SurvNetAnnotationId.fsh",
-    "startLine": 1,
-    "endLine": 12
   },
   {
     "outputFile": "Patient-AffectedPerson-4550.json",
@@ -221,15 +157,23 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Patient-AffectedPerson-4550.fsh",
     "startLine": 1,
-    "endLine": 94
+    "endLine": 149
+  },
+  {
+    "outputFile": "Patient-AffectedPerson-4551.json",
+    "fshName": "AffectedPerson-4551",
+    "fshType": "Instance",
+    "fshFile": "Examples\\Patient-AffectedPerson-4551.fsh",
+    "startLine": 1,
+    "endLine": 122
   },
   {
     "outputFile": "Practitioner-5d4b8483-0a7d-471e-b1df-26addf06ff1c.json",
     "fshName": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
     "fshType": "Instance",
     "fshFile": "Examples\\BundleTransactionCreate.fsh",
-    "startLine": 67,
-    "endLine": 74
+    "startLine": 72,
+    "endLine": 79
   },
   {
     "outputFile": "Questionnaire-FillingNote.json",
@@ -237,7 +181,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire\\FilingNote.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 30
   },
   {
     "outputFile": "QuestionnaireResponse-FillingNoteResponse.json",
@@ -248,12 +192,20 @@
     "endLine": 19
   },
   {
+    "outputFile": "RelatedPerson-4551.json",
+    "fshName": "4551",
+    "fshType": "Instance",
+    "fshFile": "Examples\\RelatedPerson-4551.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
     "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaire.json",
     "fshName": "AdditionalPropertiesQuestionnaire",
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaire.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
@@ -261,7 +213,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AdditionalPropertiesQuestionnaireResponse.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-AffectedPerson.json",
@@ -269,7 +221,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AffectedPerson.fsh",
     "startLine": 2,
-    "endLine": 285
+    "endLine": 313
   },
   {
     "outputFile": "StructureDefinition-AffectedPersonRelatedPerson.json",
@@ -277,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AffectedPersonRelatedPerson.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-AnnotationBundle.json",
@@ -293,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AnnotationCommunication.fsh",
     "startLine": 1,
-    "endLine": 189
+    "endLine": 193
   },
   {
     "outputFile": "StructureDefinition-AttachmentAnnotation.json",
@@ -309,15 +261,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AttachmentDocumentReference.fsh",
     "startLine": 1,
-    "endLine": 130
-  },
-  {
-    "outputFile": "StructureDefinition-Citizenship.json",
-    "fshName": "Citizenship",
-    "fshType": "Extension",
-    "fshFile": "Extensions\\ExtensionCitizenship.fsh",
-    "startLine": 1,
-    "endLine": 19
+    "endLine": 133
   },
   {
     "outputFile": "StructureDefinition-DateCreated.json",
@@ -325,7 +269,7 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionDateCreated.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 11
   },
   {
     "outputFile": "StructureDefinition-EmigaUserPractitioner.json",
@@ -341,71 +285,23 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionFacilityAddressAffectedPerson.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 36
   },
   {
-    "outputFile": "StructureDefinition-IdentifierEmigaAnnotationFileNumber.json",
-    "fshName": "IdentifierEmigaAnnotationFileNumber",
+    "outputFile": "StructureDefinition-IdentifierEmigaFileNumber.json",
+    "fshName": "IdentifierEmigaFileNumber",
     "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierEmigaAnnotationFileNumber.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "StructureDefinition-IdentifierEmigaAnnotationId.json",
-    "fshName": "IdentifierEmigaAnnotationId",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierEmigaAnnotationId.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "StructureDefinition-IdentifierEmigaAttachmentFileNumber.json",
-    "fshName": "IdentifierEmigaAttachmentFileNumber",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierEmigaAttachmentFileNumber.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "StructureDefinition-IdentifierEmigaAttachmentId.json",
-    "fshName": "IdentifierEmigaAttachmentId",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierEmigaAttachmentId.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "StructureDefinition-IdentifierFileNumberPatientId.json",
-    "fshName": "IdentifierFileNumberPatientId",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierFileNumberPatientId.fsh",
+    "fshFile": "StructureDefinitions\\IdentifierEmigaFileNumber.fsh",
     "startLine": 1,
     "endLine": 15
   },
   {
-    "outputFile": "StructureDefinition-IdentifierReferenceNumberPatientId.json",
-    "fshName": "IdentifierReferenceNumberPatientId",
+    "outputFile": "StructureDefinition-IdentifierEmigaID.json",
+    "fshName": "IdentifierEmigaID",
     "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierReferenceNumberPatientId.fsh",
+    "fshFile": "StructureDefinitions\\IdentifierEmigaID.fsh",
     "startLine": 1,
-    "endLine": 14
-  },
-  {
-    "outputFile": "StructureDefinition-IdentifierSurvNetAnnotationFileNumber.json",
-    "fshName": "IdentifierSurvNetAnnotationFileNumber",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierSurvNetAnnotationFileNumber.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
-    "outputFile": "StructureDefinition-IdentifierSurvNetAnnotationId.json",
-    "fshName": "IdentifierSurvNetAnnotationId",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\IdentifierSurvNetAnnotationId.fsh",
-    "startLine": 1,
-    "endLine": 12
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-LandOfBirth.json",
@@ -413,15 +309,7 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionLandOfBirth.fsh",
     "startLine": 1,
-    "endLine": 19
-  },
-  {
-    "outputFile": "StructureDefinition-MunicipalityKey.json",
-    "fshName": "MunicipalityKey",
-    "fshType": "Extension",
-    "fshFile": "Extensions\\ExtensionMunicipalityKey.fsh",
-    "startLine": 1,
-    "endLine": 16
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-NullFlavor.json",
@@ -429,7 +317,7 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionNullFlavor.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-ProcessingStatus.json",
@@ -437,7 +325,7 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionProcessingStatus.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-ProcessingStatusAffectedPerson.json",
@@ -445,7 +333,23 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionProcessingStatusAffectedPerson.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-RegionalKey.json",
+    "fshName": "RegionalKey",
+    "fshType": "Extension",
+    "fshFile": "Extensions\\ExtensionRegionalKey.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-RelatedPersonLink.json",
+    "fshName": "RelatedPersonLink",
+    "fshType": "Extension",
+    "fshFile": "Extensions\\ExtensionRelatedPersonLink.fsh",
+    "startLine": 1,
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-Salutation.json",
@@ -453,7 +357,15 @@
     "fshType": "Extension",
     "fshFile": "Extensions\\ExtensionSalutation.fsh",
     "startLine": 1,
-    "endLine": 16
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-CommonLanguages.json",
+    "fshName": "CommonLanguages",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\CommonLanguages.fsh",
+    "startLine": 3,
+    "endLine": 1339
   },
   {
     "outputFile": "ValueSet-ConceptDesignationUse.json",
@@ -464,36 +376,20 @@
     "endLine": 23
   },
   {
-    "outputFile": "ValueSet-DeuevAnlage8CountryCodes.json",
-    "fshName": "DeuevAnlage8CountryCodes",
+    "outputFile": "ValueSet-CountryCodes.json",
+    "fshName": "CountryCodes",
     "fshType": "ValueSet",
-    "fshFile": "ValueSets\\DeuevAnlage8CountryCodes.fsh",
+    "fshFile": "ValueSets\\CountryCodes.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 24
   },
   {
-    "outputFile": "ValueSet-FacilityAssociationType.json",
-    "fshName": "FacilityAssociationType",
+    "outputFile": "ValueSet-FacilityAssociationTypeVS.json",
+    "fshName": "FacilityAssociationTypeVS",
     "fshType": "ValueSet",
-    "fshFile": "CodeSystem\\AssociationType.fsh",
+    "fshFile": "CodeSystem\\FacilityAssociationType.fsh",
     "startLine": 24,
-    "endLine": 32
-  },
-  {
-    "outputFile": "ValueSet-KeywordsGlobal.json",
-    "fshName": "KeywordsGlobal",
-    "fshType": "ValueSet",
-    "fshFile": "CodeSystem\\KeywordsGlobal.fsh",
-    "startLine": 13,
-    "endLine": 21
-  },
-  {
-    "outputFile": "ValueSet-KeywordsLocal.json",
-    "fshName": "KeywordsLocal",
-    "fshType": "ValueSet",
-    "fshFile": "CodeSystem\\KeywordsLocal.fsh",
-    "startLine": 13,
-    "endLine": 22
+    "endLine": 44
   },
   {
     "outputFile": "ValueSet-NullFlavor.json",
@@ -526,6 +422,14 @@
     "fshFile": "CodeSystem\\ProcessingStatus.fsh",
     "startLine": 21,
     "endLine": 29
+  },
+  {
+    "outputFile": "ValueSet-RegionKeys.json",
+    "fshName": "RegionKeys",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RegionKeys.fsh",
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-RelatedPersonRelationshipType.json",

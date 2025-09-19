@@ -220,48 +220,54 @@
             }
           ],
           "rules": "open",
-          "description": "slicing organization identifier by system",
+          "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "short": "TODO",
-        "definition": "TODO",
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:EmigaID",
+        "path": "DocumentReference.identifier",
+        "sliceName": "EmigaID",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DocumentReference.identifier:emigaAttachmentId",
-        "path": "DocumentReference.identifier",
-        "sliceName": "emigaAttachmentId",
-        "short": "EMIGA Anhang-ID",
-        "definition": "EMIGA Anhang-ID ist ein eindeutiger technische Identifier für EMIGA Anhänge.",
-        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAttachmentId"
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaID"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DocumentReference.identifier:emigaAttachmentFileNumber",
+        "id": "DocumentReference.identifier:EmigaID.use",
+        "path": "DocumentReference.identifier.use",
+        "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:EmigaFileNumber",
         "path": "DocumentReference.identifier",
-        "sliceName": "emigaAttachmentFileNumber",
-        "short": "EMIGA Anhang-Aktenzeichen",
-        "definition": "EMIGA Anhang-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Anhänge.",
-        "min": 0,
+        "sliceName": "EmigaFileNumber",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAttachmentFileNumber"
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaFileNumber"
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:EmigaFileNumber.use",
+        "path": "DocumentReference.identifier.use",
+        "fixedCode": "official",
         "mustSupport": true
       },
       {

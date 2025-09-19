@@ -55,12 +55,12 @@
         ],
         "identifier": [
           {
-            "system": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId",
-            "value": "ANNO-1.-2025-00000002"
+            "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+            "value": "DEFG-123456789"
           },
           {
-            "system": "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId",
-            "value": "SURVNET-TestID-441557618"
+            "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+            "value": "ABCD-987654321"
           }
         ],
         "category": [

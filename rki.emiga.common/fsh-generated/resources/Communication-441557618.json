@@ -39,28 +39,12 @@
   ],
   "identifier": [
     {
-      "system": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId",
-      "value": "ANNO-TestID-441557618"
+      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+      "value": "Annotation-DEFG-123456789"
     },
     {
-      "system": "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId",
-      "value": "SURVNET-TestID-441557618"
-    }
-  ],
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
-          "code": "comment",
-          "display": "Kommentar"
-        },
-        {
-          "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal",
-          "code": "message",
-          "display": "Nachricht"
-        }
-      ]
+      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+      "value": "AnnotationABCD-987654321"
     }
   ],
   "topic": {

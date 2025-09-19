@@ -39,6 +39,12 @@
       "version": "2.2.0-snapshots",
       "uri": "https://demis.rki.de/fhir/common",
       "id": "rki_demis_common"
+    },
+    {
+      "packageId": "rki.demis.disease",
+      "version": "2.2.2-snapshots",
+      "uri": "https://demis.rki.de/fhir/demis",
+      "id": "rki_demis_disease"
     }
   ],
   "definition": {
@@ -78,22 +84,6 @@
           "reference": "Questionnaire/FillingNote"
         },
         "name": "Ablagevermerk",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "NamingSystem/FileNumberPatientId"
-        },
-        "name": "Aktenzeichen Patienten ID",
-        "description": "File Number PatientId to be used in Identifiers",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/MunicipalityKey"
-        },
-        "name": "Amtliche Gemeindeschlüssel (AGS)",
-        "description": "Die Kodiersystematik 'Amtliche Gemeindeschlüssel (AGS)' ist ein Platzhalter CodeSystem, um die Gemeindeschlüsse in der FHIR Terminologie zu referenzieren.",
         "exampleBoolean": false
       },
       {
@@ -169,14 +159,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ProcessingStatusAffectedPerson"
-        },
-        "name": "Bearbeitungsstatus",
-        "description": "Extension zur Abbildung der Bearbeitungsstatus einer betroffenen Person.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
@@ -201,6 +183,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ProcessingStatusAffectedPerson"
+        },
+        "name": "Bearbeitungsstatus betroffene Person",
+        "description": "Extension zur Abbildung der Bearbeitungsstatus einer betroffenen Person.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ProcessingStatusAffectedPersonVS"
         },
         "name": "Bearbeitungsstatus betroffene Person",
@@ -214,6 +204,22 @@
         "name": "Beispiel Betroffene Person",
         "description": "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
+      },
+      {
+        "reference": {
+          "reference": "Patient/AffectedPerson-4551"
+        },
+        "name": "Beispiel Betroffene Person",
+        "description": "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/4551"
+        },
+        "name": "Beispiel Bezugsperson der betroffenen Person",
+        "description": "Ein Beispielinstanz einer Bezugsperson-Ressource. ",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
       },
       {
         "reference": {
@@ -249,6 +255,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/RelatedPersonLink"
+        },
+        "name": "Bezugsperson Link zum repräsentierten Patienten",
+        "description": "Verknüpft eine RelatedPerson-Ressource mit der Patient-Ressource, die dieselbe Person repräsentiert (z. B. wenn der gesetzliche Vormund ebenfalls ein Patient im System ist).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Bundle/CollectionBundle2"
         },
         "name": "CollectionBundle2",
@@ -264,66 +278,18 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/EmigaAnnotationFileNumber"
+          "reference": "NamingSystem/EmigaFileNumber"
         },
         "name": "EMIGA Aktenzeichen",
-        "description": "EMIGA Aktenzeichen ist eineindeutiger fachlicher Identifier für EMIGA Annotationen.  ",
+        "description": "EMIGA Aktenzeichen für die Verwendung in Identifiers",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "NamingSystem/EmigaAttachmentFileNumber"
+          "reference": "NamingSystem/EmigaID"
         },
-        "name": "EMIGA Anhang Aktenzeichen",
-        "description": "EMIGA Anhang Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Anhänge.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "NamingSystem/EmigaAttachmentId"
-        },
-        "name": "EMIGA Anhang ID",
-        "description": "EMIGA Anhang ID ist ein eineindeutiger technischer Identifier für EMIGA Anhänge.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierEmigaAttachmentFileNumber"
-        },
-        "name": "EMIGA Anhang-Aktenzeichen",
-        "description": "Identifier Profil für EMIGA Anhang-Aktenzeichen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierEmigaAttachmentId"
-        },
-        "name": "EMIGA Annhang-Identifier",
-        "description": "Identifier Profil für EMIGA Annhänge",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierEmigaAnnotationFileNumber"
-        },
-        "name": "EMIGA Annotation-Aktenzeichen",
-        "description": "Identifier Profil für EMIGA Annotation-Aktenzeichen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierEmigaAnnotationId"
-        },
-        "name": "EMIGA Annotation-Identifier",
-        "description": "Identifier Profil für EMIGA Annotationen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "NamingSystem/EmigaAnnotationId"
-        },
-        "name": "EMIGA Annotationen ID",
-        "description": "EMIGA Annotationen ID ist ein eineindeutiger technischer Identifier für EMIGA Annotationen.",
+        "name": "EMIGA ID",
+        "description": "EMIGA ID für die Verwendung in Identifiers",
         "exampleBoolean": false
       },
       {
@@ -344,14 +310,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/MunicipalityKey"
-        },
-        "name": "Extension Amtliche Gemeindeschlüssel (AGS)",
-        "description": "Erweiterung zur Darstellung des amtliches Gemeindeschlüssels",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "QuestionnaireResponse/FillingNoteResponse"
         },
         "name": "FillingNoteResponse",
@@ -367,23 +325,31 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/IdentifierFileNumberPatientId"
+          "reference": "ValueSet/CommonLanguages"
         },
-        "name": "Identifier-Profil Aktenzeichen des/der Patienten/-in ",
+        "name": "häufige Sprachen",
+        "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaFileNumber"
+        },
+        "name": "Identifier-Profil Aktenzeichen EMIGA",
         "description": "TODO",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/IdentifierReferenceNumberPatientId"
+          "reference": "StructureDefinition/IdentifierEmigaID"
         },
-        "name": "Identifier-Profil Referenznummer des/der Patienten/-in ",
+        "name": "Identifier-Profil EMIGA-ID",
         "description": "TODO",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/DeuevAnlage8CountryCodes"
+          "reference": "ValueSet/CountryCodes"
         },
         "name": "Ländercodes gemäß Anlage 8 der DEÜV",
         "description": "Werteliste mit Ländercodes gemäß Anlage 8 der DEÜV.",
@@ -439,10 +405,26 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/RefereceNumberPatientId"
+          "reference": "CodeSystem/RegionKeys"
         },
-        "name": "Referenznummer Patienten ID",
-        "description": "Referece Number PatientId to be used in Identifiers",
+        "name": "Regionalschlüssel",
+        "description": "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/RegionKeys"
+        },
+        "name": "Regionalschlüssel (Werteliste)",
+        "description": "Werteliste mit Regionalschlüsseln (Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS)).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RegionalKey"
+        },
+        "name": "Regionalschlüssel und Regionalbezugsystem",
+        "description": "Erweiterung zur Darstellung des Regionalschlüssels und des Regionalbezugsystems",
         "exampleBoolean": false
       },
       {
@@ -495,78 +477,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/KeywordsGlobal"
-        },
-        "name": "Schlagworter Global",
-        "description": "Werteliste mit Konzepten, die die Lokale Schlawörter beschreiben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/KeywordsGlobal"
-        },
-        "name": "Schlagworter Global",
-        "description": "TODO",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/KeywordsLocal"
-        },
-        "name": "Schlagworter Lokal",
-        "description": "Werteliste mit Konzepten, die die Lokale Schlawörter beschreiben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/KeywordsLocal"
-        },
-        "name": "Schlagworter Lokal",
-        "description": "TODO",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Citizenship"
-        },
-        "name": "Staatsangehörigkeit",
-        "description": "Staatsangehörigkeit der betroffenen Person.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "NamingSystem/SurvNetAnnotationFileNumber"
-        },
-        "name": "SurvNet Annotation Aktenzeichen",
-        "description": "SurvNet Annotation Aktenzeichen ist einer fachlicher Identifier für SurvNet Annotationen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierSurvNetAnnotationFileNumber"
-        },
-        "name": "SurvNet Annotation-Aktenzeichen",
-        "description": "Identifier Profil für SurvNet Annotation-Aktenzeichen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierSurvNetAnnotationId"
-        },
-        "name": "SurvNet Annotation-Identifier",
-        "description": "Identifier Profil für EMIGA Annotationen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "NamingSystem/SurvNetAnnotationId"
-        },
-        "name": "SurvNet Annotationen ID",
-        "description": "SurvNet Annotationen ID ist ein eineindeutiger technischer Identifier für Annotationen aus SurvNet.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Bundle/TransactionBundle"
         },
         "name": "TransactionBundle",
@@ -582,7 +492,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/FacilityAssociationType"
+          "reference": "ValueSet/FacilityAssociationTypeVS"
         },
         "name": "Verbindungs-Qualifikation - Werteliste",
         "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
