@@ -297,20 +297,49 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * generalPractitioner ^definition = "Behandelnde Person der betroffenen Person."
 * managingOrganization ..0
 
-* link MS
-* link ^slicing.discriminator.type = #type
-* link ^slicing.discriminator.path = "other"
+/*
+* link ^slicing.discriminator[0].type = #type
+* link ^slicing.discriminator[0].path = "other"
+* link ^slicing.discriminator[1].type = #value
+* link ^slicing.discriminator[1].path = "type"
 * link ^slicing.rules = #open
-* link contains  relatedPersonLink 0..* MS and patientLink 0..* MS
-* link[patientLink].type 1..1 MS
-* link[patientLink].other 1..1 MS
-* link[patientLink].other only Reference(Patient)
-* link[patientLink].other.reference MS
+
+* link contains relatedPersonLink 0..* MS and patientLink 0..* MS
+* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
+* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
 * link[relatedPersonLink].type 1..1 MS
 * link[relatedPersonLink].type = #seealso (exactly)
 * link[relatedPersonLink].other 1..1 MS
 * link[relatedPersonLink].other only Reference(RelatedPerson)
 * link[relatedPersonLink].other.reference MS
+
+* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
+* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
+* link[patientLink].type 1..1 MS
+* link[patientLink].other 1..1 MS
+* link[patientLink].other only Reference(Patient)
+* link[patientLink].other.reference MS
+*/
+
+* link MS
+* link ^slicing.discriminator.type = #type
+* link ^slicing.discriminator.path = "other"
+* link ^slicing.rules = #open
+* link contains  relatedPersonLink 0..* MS and 
+                patientLink 0..* MS
+* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"                
+* link[relatedPersonLink].type 1..1 MS
+* link[relatedPersonLink].type = #seealso (exactly)
+* link[relatedPersonLink].other 1..1 MS
+* link[relatedPersonLink].other only Reference(RelatedPerson)
+* link[relatedPersonLink].other.reference MS
+
+* link[patientLink].type 1..1 MS
+* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
+* link[patientLink].other 1..1 MS
+* link[patientLink].other only Reference(Patient)
+* link[patientLink].other.reference MS
+
 
 
 // Diskussion ob ein managingOrganization benötigt wird
