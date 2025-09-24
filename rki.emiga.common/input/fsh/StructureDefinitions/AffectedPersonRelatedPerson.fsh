@@ -15,8 +15,9 @@ Description: "TODO"
 * insert ProfileSecurityTags
 
 * insert IdentifierCommon
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.9"
 
-* extension contains $RelatedPersonLinkExt named linkToRepresentedPerson 1..1 MS
+* extension contains $RelatedPersonLinkExt named linkToRepresentedPerson 0..1 MS
 * extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink" (exactly)
 //* extension[linkToRepresentedPerson].valueReference.reference MS
 * extension[linkToRepresentedPerson].value[x] only Reference(Patient)
