@@ -389,6 +389,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/PersonenBundle"
+        },
+        "name": "Personen Bundle",
+        "description": "TO DO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/PersonalInformation"
         },
         "name": "Personenbezug",
@@ -481,6 +489,13 @@
         },
         "name": "TransactionBundle",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/TransactionBundleCreatePerson"
+        },
+        "name": "TransactionBundleCreatePerson",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenBundle"
       },
       {
         "reference": {

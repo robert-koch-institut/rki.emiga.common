@@ -24,6 +24,14 @@
     "endLine": 27
   },
   {
+    "outputFile": "Bundle-TransactionBundleCreatePerson.json",
+    "fshName": "TransactionBundleCreatePerson",
+    "fshType": "Instance",
+    "fshFile": "Examples\\BundleTransactionCreatePerson.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
     "outputFile": "CodeSystem-ConceptDesignationUse.json",
     "fshName": "ConceptDesignationUse",
     "fshType": "CodeSystem",
@@ -221,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AffectedPerson.fsh",
     "startLine": 2,
-    "endLine": 313
+    "endLine": 341
   },
   {
     "outputFile": "StructureDefinition-AffectedPersonRelatedPerson.json",
@@ -229,7 +237,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AffectedPersonRelatedPerson.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-AnnotationBundle.json",
@@ -318,6 +326,14 @@
     "fshFile": "Extensions\\ExtensionNullFlavor.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-PersonenBundle.json",
+    "fshName": "PersonenBundle",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\PersonenBundle.fsh",
+    "startLine": 1,
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-ProcessingStatus.json",

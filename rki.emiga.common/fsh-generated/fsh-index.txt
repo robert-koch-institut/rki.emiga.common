@@ -2,6 +2,7 @@ Output File                                                         Name        
 Bundle-BatchReadCommunicationPractitioner.json                      BatchReadCommunicationPractitioner    Instance    Examples\BundleBatchRead.fsh                                        1 - 16
 Bundle-CollectionBundle2.json                                       CollectionBundle2                     Instance    Examples\BundleCollection.fsh                                       10 - 21
 Bundle-TransactionBundle.json                                       TransactionBundle                     Instance    Examples\BundleTransactionCreate.fsh                                10 - 27
+Bundle-TransactionBundleCreatePerson.json                           TransactionBundleCreatePerson         Instance    Examples\BundleTransactionCreatePerson.fsh                          1 - 27
 CodeSystem-ConceptDesignationUse.json                               ConceptDesignationUse                 CodeSystem  CodeSystem\ConceptDesignationUse.fsh                                1 - 14
 CodeSystem-FacilityAssociationType.json                             FacilityAssociationType               CodeSystem  CodeSystem\FacilityAssociationType.fsh                              1 - 22
 CodeSystem-PersonalInformation.json                                 PersonalInformation                   CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 14
@@ -26,8 +27,8 @@ QuestionnaireResponse-FillingNoteResponse.json                      FillingNoteR
 RelatedPerson-4551.json                                             4551                                  Instance    Examples\RelatedPerson-4551.fsh                                     1 - 26
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire     Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 20
 StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json  OutbreakQuestionnaireResponseCommon   Profile     StructureDefinitions\AdditionalPropertiesQuestionnaireResponse.fsh  1 - 46
-StructureDefinition-AffectedPerson.json                             AffectedPerson                        Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 313
-StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson           Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 44
+StructureDefinition-AffectedPerson.json                             AffectedPerson                        Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 341
+StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson           Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 45
 StructureDefinition-AnnotationBundle.json                           AnnotationBundle                      Profile     StructureDefinitions\AnnotationBundle.fsh                           1 - 32
 StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication               Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 193
 StructureDefinition-AttachmentAnnotation.json                       AttachmentAnnotation                  Profile     StructureDefinitions\AttachmentAnnotation.fsh                       1 - 13
@@ -39,6 +40,7 @@ StructureDefinition-IdentifierEmigaFileNumber.json                  IdentifierEm
 StructureDefinition-IdentifierEmigaID.json                          IdentifierEmigaID                     Profile     StructureDefinitions\IdentifierEmigaID.fsh                          1 - 15
 StructureDefinition-LandOfBirth.json                                LandOfBirth                           Extension   Extensions\ExtensionLandOfBirth.fsh                                 1 - 23
 StructureDefinition-NullFlavor.json                                 NullFlavor                            Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
+StructureDefinition-PersonenBundle.json                             PersonenBundle                        Profile     StructureDefinitions\PersonenBundle.fsh                             1 - 33
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                      Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 20
 StructureDefinition-ProcessingStatusAffectedPerson.json             ProcessingStatusAffectedPerson        Extension   Extensions\ExtensionProcessingStatusAffectedPerson.fsh              1 - 20
 StructureDefinition-RegionalKey.json                                RegionalKey                           Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 36
