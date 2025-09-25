@@ -14,11 +14,11 @@ Usage: #example
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Bezugsperson-XYZ-987654321"
 
-* extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink"
-* extension[linkToRepresentedPerson].valueReference.reference = "AffectedPerson-4551"
-* extension[linkToRepresentedPerson].valueReference.identifier.system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
-* extension[linkToRepresentedPerson].valueReference.identifier.value = "Person-XYZ-987654321"
-* extension[linkToRepresentedPerson].valueReference.display = "Jones Calamity"
+//* extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink"
+//* extension[linkToRepresentedPerson].valueReference.reference = "AffectedPerson-4551"
+//* extension[linkToRepresentedPerson].valueReference.identifier.system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+//* extension[linkToRepresentedPerson].valueReference.identifier.value = "Person-XYZ-987654321"
+//* extension[linkToRepresentedPerson].valueReference.display = "Jones Calamity"
 
 * patient = Reference(AffectedPerson-4550)
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"

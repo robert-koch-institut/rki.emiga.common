@@ -237,7 +237,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\AffectedPersonRelatedPerson.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 47
   },
   {
     "outputFile": "StructureDefinition-AnnotationBundle.json",
@@ -358,14 +358,6 @@
     "fshFile": "Extensions\\ExtensionRegionalKey.fsh",
     "startLine": 1,
     "endLine": 36
-  },
-  {
-    "outputFile": "StructureDefinition-RelatedPersonLink.json",
-    "fshName": "RelatedPersonLink",
-    "fshType": "Extension",
-    "fshFile": "Extensions\\ExtensionRelatedPersonLink.fsh",
-    "startLine": 1,
-    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-Salutation.json",

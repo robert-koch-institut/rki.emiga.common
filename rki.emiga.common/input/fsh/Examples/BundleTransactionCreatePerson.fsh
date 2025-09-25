@@ -317,8 +317,8 @@ Usage: #inline
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Bezugsperson-XYZ-987654321"
 
-* extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink"
-* extension[linkToRepresentedPerson].valueReference.reference = "urn:uuid:7faa8330-db99-4a0e-a61b-91a26ef4d8df" // AffectedPerson-Mutter-1
+//* extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink"
+//* extension[linkToRepresentedPerson].valueReference.reference = "urn:uuid:7faa8330-db99-4a0e-a61b-91a26ef4d8df" // AffectedPerson-Mutter-1
 
 * patient = Reference(urn:uuid:d8140036-d5b5-461a-9a6e-adfb8a87039c) // AffectedPerson-Tochter-1
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"

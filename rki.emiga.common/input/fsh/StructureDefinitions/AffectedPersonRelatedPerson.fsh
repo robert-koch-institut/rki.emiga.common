@@ -17,6 +17,7 @@ Description: "TODO"
 * insert IdentifierCommon
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.9"
 
+/* extension nicht gebraucht
 * extension contains $RelatedPersonLinkExt named linkToRepresentedPerson 0..1 MS
 * extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink" (exactly)
 //* extension[linkToRepresentedPerson].valueReference.reference MS
@@ -34,8 +35,9 @@ Description: "TODO"
 * extension[linkToRepresentedPerson].valueReference.display ^definition = "Anzeigename der Patient-Ressource, die dieselbe Person repräsentiert."
 * extension[linkToRepresentedPerson] ^short = "Verweis auf die Bezugsperson"
 * extension[linkToRepresentedPerson] ^definition = "Verweis auf die Patient-Ressource, die dieselbe Person repräsentiert."
-
+*/
 //* identifier 1..*
+
 * patient MS
 * patient ^short = "Die betroffene Person, zu der die Bezugsperson in Beziehung steht."
 * patient ^definition = "Die betroffene Person, zu der die Bezugsperson in Beziehung steht."

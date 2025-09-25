@@ -255,14 +255,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/RelatedPersonLink"
-        },
-        "name": "Bezugsperson Link zum repräsentierten Patienten",
-        "description": "Verknüpft eine RelatedPerson-Ressource mit der Patient-Ressource, die dieselbe Person repräsentiert (z. B. wenn der gesetzliche Vormund ebenfalls ein Patient im System ist).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Bundle/CollectionBundle2"
         },
         "name": "CollectionBundle2",
