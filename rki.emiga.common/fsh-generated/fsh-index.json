@@ -117,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\BundleTransactionCreate.fsh",
     "startLine": 29,
-    "endLine": 70
+    "endLine": 72
   },
   {
     "outputFile": "Communication-441557618.json",
@@ -125,7 +125,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Communication-441557618.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 56
   },
   {
     "outputFile": "DocumentReference-441557619.json",
@@ -133,7 +133,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\DocumentReference-441557619.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 34
   },
   {
     "outputFile": "DocumentReference-441557620.json",
@@ -141,7 +141,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\DocumentReference-441557620.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 33
   },
   {
     "outputFile": "NamingSystem-EmigaFileNumber.json",
@@ -173,7 +173,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Patient-AffectedPerson-4550.fsh",
     "startLine": 1,
-    "endLine": 149
+    "endLine": 151
   },
   {
     "outputFile": "Patient-AffectedPerson-4551.json",
@@ -181,15 +181,15 @@
     "fshType": "Instance",
     "fshFile": "Examples\\Patient-AffectedPerson-4551.fsh",
     "startLine": 1,
-    "endLine": 122
+    "endLine": 124
   },
   {
     "outputFile": "Practitioner-5d4b8483-0a7d-471e-b1df-26addf06ff1c.json",
     "fshName": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
     "fshType": "Instance",
     "fshFile": "Examples\\BundleTransactionCreate.fsh",
-    "startLine": 72,
-    "endLine": 79
+    "startLine": 74,
+    "endLine": 81
   },
   {
     "outputFile": "Questionnaire-FillingNote.json",

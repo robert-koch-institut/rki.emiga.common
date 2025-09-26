@@ -19,6 +19,8 @@ Description: "Test Attachment DocumentReference Example with image reference"
 * identifier[EmigaID].value = "DEFG-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "ABCD-987654321"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "Attachment-SURVNET-987654321"
 
 
 //* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"

@@ -65,6 +65,10 @@
           {
             "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
             "value": "ABCD-987654321"
+          },
+          {
+            "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
+            "value": "SURVNET-987654321"
           }
         ],
         "category": [

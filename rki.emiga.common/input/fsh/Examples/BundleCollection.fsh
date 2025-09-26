@@ -46,6 +46,8 @@ Usage: #inline
 * identifier[EmigaID].value = "DEFG-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "ABCD-987654321"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "SURVNET-123456789"
 
 
 

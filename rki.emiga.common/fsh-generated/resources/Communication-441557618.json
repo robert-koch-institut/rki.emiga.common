@@ -45,6 +45,10 @@
     {
       "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
       "value": "AnnotationABCD-987654321"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
+      "value": "Annotation-SURVNET-987654321"
     }
   ],
   "topic": {

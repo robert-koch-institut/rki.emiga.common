@@ -75,7 +75,8 @@ Usage: #inline
 * identifier[EmigaID].value = "Person-DEFG-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-ABCD-987654321"
-
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "SURVNET-ABC-654321"
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
 * name.extension[salutation].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/Salutation"
@@ -222,7 +223,8 @@ Usage: #inline
 * identifier[EmigaID].value = "Person-PQRST-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-XYZ-987654321"
-
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "SURVNET-ABC-123456"
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
 * name.extension[salutation].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/Salutation"
@@ -316,6 +318,8 @@ Usage: #inline
 * identifier[EmigaID].value = "Bezugsperson-PQRST-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Bezugsperson-XYZ-987654321"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].value = "SURVNET-ABC-123456"
 
 //* extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink"
 //* extension[linkToRepresentedPerson].valueReference.reference = "urn:uuid:7faa8330-db99-4a0e-a61b-91a26ef4d8df" // AffectedPerson-Mutter-1

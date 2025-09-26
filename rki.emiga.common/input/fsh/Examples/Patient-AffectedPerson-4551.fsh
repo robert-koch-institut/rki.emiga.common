@@ -43,6 +43,8 @@ Usage: #example
 * identifier[EmigaID].value = "Person-PQRST-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-XYZ-987654321"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "SURVNET-Person-567890"
 
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"

@@ -16,6 +16,8 @@ Usage: #example
 * identifier[EmigaID].value = "Anhang-DEFG-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Anhang-ABCD-987654321"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "Anhang-SURVNET-987654321"
 
 
 //* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"

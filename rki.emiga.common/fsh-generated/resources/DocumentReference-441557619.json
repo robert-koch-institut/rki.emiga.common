@@ -31,6 +31,10 @@
     {
       "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
       "value": "Anhang-ABCD-987654321"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
+      "value": "Anhang-SURVNET-987654321"
     }
   ],
   "author": [

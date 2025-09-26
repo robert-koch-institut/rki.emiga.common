@@ -25,6 +25,8 @@ Usage: #example
 * identifier[EmigaID].value = "Annotation-DEFG-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "AnnotationABCD-987654321"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "Annotation-SURVNET-987654321"
 /*
 * identifier[emigaAnnotationId].value = "ANNO-TestID-441557618"
 * identifier[emigaAnnotationId].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
