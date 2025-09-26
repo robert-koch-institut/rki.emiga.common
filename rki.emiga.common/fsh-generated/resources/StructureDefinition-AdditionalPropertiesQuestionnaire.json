@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AdditionalPropertiesQuestionnaire",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "AdditionalPropertiesQuestionnaire",
   "title": "Zusätzliche Eigenschaften",
   "status": "active",
   "experimental": false,
-  "date": "2025-07-04",
+  "date": "2025-09-22",
   "publisher": "Robert Koch-Institut",
   "description": "TODO",
   "fhirVersion": "4.0.1",
@@ -216,6 +216,28 @@
         "id": "Questionnaire.identifier:EmigaFileNumber.use",
         "path": "Questionnaire.identifier.use",
         "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:SurvNetFileNumber",
+        "path": "Questionnaire.identifier",
+        "sliceName": "SurvNetFileNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetFileNumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:SurvNetFileNumber.use",
+        "path": "Questionnaire.identifier.use",
+        "fixedCode": "temp",
         "mustSupport": true
       },
       {

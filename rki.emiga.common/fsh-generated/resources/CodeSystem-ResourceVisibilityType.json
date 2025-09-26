@@ -16,12 +16,52 @@
     {
       "code": "internal",
       "display": "intern",
-      "definition": "ÖGD interne Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD eingesehen werden."
+      "definition": "ÖGD interne Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD eingesehen werden.",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "replaced-by",
+          "valueCode": "inPublicHealthService"
+        }
+      ]
     },
     {
       "code": "private",
       "display": "privat",
-      "definition": "Private Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen lediglich im Kontext einer bestimmten Stelle des Öffentlichen Gesundheitsdienstes zur Anzeige gebracht werden."
+      "definition": "Private Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen lediglich im Kontext einer bestimmten Stelle des Öffentlichen Gesundheitsdienstes zur Anzeige gebracht werden.",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "replaced-by",
+          "valueCode": "inAgency"
+        }
+      ]
+    },
+    {
+      "code": "inPublicHealthService",
+      "display": "ÖGD-weit",
+      "definition": "Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD eingesehen werden."
+    },
+    {
+      "code": "inFederalState",
+      "display": "BL-weit",
+      "definition": "Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD im eigenen Bundesland eingesehen werden."
+    },
+    {
+      "code": "inAgency",
+      "display": "Eigene ÖGD-Stelle",
+      "definition": "Ressourcen, die entsprechend ausgezeichnet sind, dürfen lediglich im Kontext einer bestimmten Stelle des Öffentlichen Gesundheitsdienstes zur Anzeige gebracht werden."
+    },
+    {
+      "code": "transferable",
+      "display": "übermittelbar",
+      "definition": "Ressourcen, die entsprechend ausgezeichnet sind, werden an die Bundesstelle und das RKI übermittelt."
     }
   ],
   "language": "de-DE",
@@ -38,9 +78,21 @@
       ]
     }
   ],
-  "version": "1.0.0",
-  "date": "2024-03-19",
+  "version": "2.0.0",
+  "date": "2024-09-26",
   "caseSensitive": true,
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType",
-  "count": 3
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "description": "Gekennzeichnet, ob ein Konzept verworfen ist.",
+      "type": "code"
+    },
+    {
+      "code": "replaced-by",
+      "description": "Der Code, den dieser Code ersetzt.",
+      "type": "code"
+    }
+  ],
+  "count": 7
 }

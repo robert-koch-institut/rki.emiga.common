@@ -11,7 +11,7 @@ CodeSystem-RegionKeys.json                                          RegionKeys  
 CodeSystem-RelatedPersonRelationshipType.json                       RelatedPersonRelationshipType         CodeSystem  CodeSystem\RelatedPersonRelationshipType.fsh                        1 - 15
 CodeSystem-Relevance.json                                           Relevance                             CodeSystem  CodeSystem\Relevance.fsh                                            1 - 15
 CodeSystem-ResourceResponsibility.json                              ResourceResponsibility                CodeSystem  CodeSystem\ResourceResponsibility.fsh                               1 - 416
-CodeSystem-ResourceVisibilityType.json                              ResourceVisibilityType                CodeSystem  CodeSystem\ResourceVisibilityType.fsh                               1 - 13
+CodeSystem-ResourceVisibilityType.json                              ResourceVisibilityType                CodeSystem  CodeSystem\ResourceVisibilityType.fsh                               1 - 40
 CodeSystem-Salutation.json                                          Salutation                            CodeSystem  CodeSystem\Salutation.fsh                                           1 - 15
 Communication-2.json                                                Annotation-2                          Instance    Examples\BundleTransactionCreate.fsh                                29 - 70
 Communication-441557618.json                                        441557618                             Instance    Examples\Communication-441557618.fsh                                1 - 54
@@ -19,6 +19,7 @@ DocumentReference-441557619.json                                    441557619   
 DocumentReference-441557620.json                                    441557620                             Instance    Examples\DocumentReference-441557620.fsh                            1 - 31
 NamingSystem-EmigaFileNumber.json                                   EmigaFileNumber                       Instance    NamingSystem\EmigaFileNumber.fsh                                    1 - 13
 NamingSystem-EmigaID.json                                           EmigaID                               Instance    NamingSystem\EmigaID.fsh                                            1 - 13
+NamingSystem-SurvNetFileNumber.json                                 SurvNetFileNumber                     Instance    NamingSystem\SurvNetFileNumber.fsh                                  1 - 12
 Patient-AffectedPerson-4550.json                                    AffectedPerson-4550                   Instance    Examples\Patient-AffectedPerson-4550.fsh                            1 - 149
 Patient-AffectedPerson-4551.json                                    AffectedPerson-4551                   Instance    Examples\Patient-AffectedPerson-4551.fsh                            1 - 122
 Practitioner-5d4b8483-0a7d-471e-b1df-26addf06ff1c.json              5d4b8483-0a7d-471e-b1df-26addf06ff1c  Instance    Examples\BundleTransactionCreate.fsh                                72 - 79
@@ -34,13 +35,15 @@ StructureDefinition-AnnotationCommunication.json                    AnnotationCo
 StructureDefinition-AttachmentAnnotation.json                       AttachmentAnnotation                  Profile     StructureDefinitions\AttachmentAnnotation.fsh                       1 - 13
 StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference           Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 133
 StructureDefinition-DateCreated.json                                DateCreated                           Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 11
+StructureDefinition-EMIGAPersonenTransactionBundle.json             EMIGAPersonenTransactionBundle        Profile     StructureDefinitions\EMIGAPersonenTransactionBundle.fsh             1 - 39
+StructureDefinition-EMIGAPersonenTransactionResponse.json           EMIGAPersonenTransactionResponse      Profile     StructureDefinitions\EMIGAPersonenTransactionResponseBundle.fsh     1 - 35
 StructureDefinition-EmigaUserPractitioner.json                      EmigaUserPractitioner                 Profile     StructureDefinitions\EmigaUserPractitioner.fsh                      1 - 97
 StructureDefinition-FacilityAddressAffectedPerson.json              FacilityAddressAffectedPerson         Extension   Extensions\ExtensionFacilityAddressAffectedPerson.fsh               1 - 36
-StructureDefinition-IdentifierEmigaFileNumber.json                  IdentifierEmigaFileNumber             Profile     StructureDefinitions\IdentifierEmigaFileNumber.fsh                  1 - 15
-StructureDefinition-IdentifierEmigaID.json                          IdentifierEmigaID                     Profile     StructureDefinitions\IdentifierEmigaID.fsh                          1 - 15
+StructureDefinition-IdentifierEmigaFileNumber.json                  IdentifierEmigaFileNumber             Profile     StructureDefinitions\IdentifierEmigaFileNumber.fsh                  1 - 19
+StructureDefinition-IdentifierEmigaID.json                          IdentifierEmigaID                     Profile     StructureDefinitions\IdentifierEmigaID.fsh                          1 - 19
+StructureDefinition-IdentifierSurvNetFileNumber.json                IdentifierSurvNetFileNumber           Profile     StructureDefinitions\IdentifierSurvNetFileNumber.fsh                1 - 19
 StructureDefinition-LandOfBirth.json                                LandOfBirth                           Extension   Extensions\ExtensionLandOfBirth.fsh                                 1 - 23
 StructureDefinition-NullFlavor.json                                 NullFlavor                            Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
-StructureDefinition-PersonenBundle.json                             PersonenBundle                        Profile     StructureDefinitions\PersonenBundle.fsh                             1 - 33
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                      Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 20
 StructureDefinition-ProcessingStatusAffectedPerson.json             ProcessingStatusAffectedPerson        Extension   Extensions\ExtensionProcessingStatusAffectedPerson.fsh              1 - 20
 StructureDefinition-RegionalKey.json                                RegionalKey                           Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 36
@@ -57,5 +60,5 @@ ValueSet-RegionKeys.json                                            RegionKeys  
 ValueSet-RelatedPersonRelationshipType.json                         RelatedPersonRelationshipType         ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        17 - 25
 ValueSet-Relevance.json                                             Relevance                             ValueSet    CodeSystem\Relevance.fsh                                            17 - 25
 ValueSet-ResourceResponsibility.json                                ResourceResponsibility                ValueSet    CodeSystem\ResourceResponsibility.fsh                               419 - 426
-ValueSet-ResourceVisibilityType.json                                ResourceVisibilityType                ValueSet    CodeSystem\ResourceVisibilityType.fsh                               15 - 22
+ValueSet-ResourceVisibilityType.json                                ResourceVisibilityType                ValueSet    CodeSystem\ResourceVisibilityType.fsh                               44 - 55
 ValueSet-Salutation.json                                            Salutation                            ValueSet    CodeSystem\Salutation.fsh                                           19 - 28

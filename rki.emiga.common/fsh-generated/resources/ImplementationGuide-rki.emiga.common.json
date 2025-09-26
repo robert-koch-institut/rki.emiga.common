@@ -278,6 +278,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaFileNumber"
+        },
+        "name": "EMIGA Aktenzeichen Identifier",
+        "description": "Eindeutiger fachlicher Identifier für EMIGA-Entitäten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/EmigaID"
         },
         "name": "EMIGA ID",
@@ -290,6 +298,30 @@
         },
         "name": "Emiga Nutzende Person",
         "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EMIGAPersonenTransactionBundle"
+        },
+        "name": "EMIGA Personen Transactionbundle",
+        "description": "TO DO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EMIGAPersonenTransactionResponse"
+        },
+        "name": "EMIGA Personen TransactionBundle-Response",
+        "description": "Dieses Profil definiert die Server-Antwort auf Transaktions-Bundles im Rahmen von EMIGA Personen-Szenarien.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierEmigaID"
+        },
+        "name": "EMIGA-ID Identifier",
+        "description": "Technischer Indentifikator für EMIGA-Entitäten.",
         "exampleBoolean": false
       },
       {
@@ -321,22 +353,6 @@
         },
         "name": "häufige Sprachen",
         "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierEmigaFileNumber"
-        },
-        "name": "Identifier-Profil Aktenzeichen EMIGA",
-        "description": "TODO",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IdentifierEmigaID"
-        },
-        "name": "Identifier-Profil EMIGA-ID",
-        "description": "TODO",
         "exampleBoolean": false
       },
       {
@@ -377,14 +393,6 @@
         },
         "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
         "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PersonenBundle"
-        },
-        "name": "Personen Bundle",
-        "description": "TO DO",
         "exampleBoolean": false
       },
       {
@@ -477,6 +485,22 @@
       },
       {
         "reference": {
+          "reference": "NamingSystem/SurvNetFileNumber"
+        },
+        "name": "SurvNet Aktenzeichen",
+        "description": "Das SurvNet-Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IdentifierSurvNetFileNumber"
+        },
+        "name": "SurvNet Aktenzeichen Identifier",
+        "description": "SurvNet Aktenzeichen Identifier-Profil",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Bundle/TransactionBundle"
         },
         "name": "TransactionBundle",
@@ -487,7 +511,7 @@
           "reference": "Bundle/TransactionBundleCreatePerson"
         },
         "name": "TransactionBundleCreatePerson",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenBundle"
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EMIGAPersonenTransactionBundle"
       },
       {
         "reference": {

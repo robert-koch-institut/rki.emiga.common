@@ -101,7 +101,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem\\ResourceVisibilityType.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 40
   },
   {
     "outputFile": "CodeSystem-Salutation.json",
@@ -158,6 +158,14 @@
     "fshFile": "NamingSystem\\EmigaID.fsh",
     "startLine": 1,
     "endLine": 13
+  },
+  {
+    "outputFile": "NamingSystem-SurvNetFileNumber.json",
+    "fshName": "SurvNetFileNumber",
+    "fshType": "Instance",
+    "fshFile": "NamingSystem\\SurvNetFileNumber.fsh",
+    "startLine": 1,
+    "endLine": 12
   },
   {
     "outputFile": "Patient-AffectedPerson-4550.json",
@@ -280,6 +288,22 @@
     "endLine": 11
   },
   {
+    "outputFile": "StructureDefinition-EMIGAPersonenTransactionBundle.json",
+    "fshName": "EMIGAPersonenTransactionBundle",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\EMIGAPersonenTransactionBundle.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-EMIGAPersonenTransactionResponse.json",
+    "fshName": "EMIGAPersonenTransactionResponse",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\EMIGAPersonenTransactionResponseBundle.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
     "outputFile": "StructureDefinition-EmigaUserPractitioner.json",
     "fshName": "EmigaUserPractitioner",
     "fshType": "Profile",
@@ -301,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\IdentifierEmigaFileNumber.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-IdentifierEmigaID.json",
@@ -309,7 +333,15 @@
     "fshType": "Profile",
     "fshFile": "StructureDefinitions\\IdentifierEmigaID.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-IdentifierSurvNetFileNumber.json",
+    "fshName": "IdentifierSurvNetFileNumber",
+    "fshType": "Profile",
+    "fshFile": "StructureDefinitions\\IdentifierSurvNetFileNumber.fsh",
+    "startLine": 1,
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-LandOfBirth.json",
@@ -326,14 +358,6 @@
     "fshFile": "Extensions\\ExtensionNullFlavor.fsh",
     "startLine": 1,
     "endLine": 21
-  },
-  {
-    "outputFile": "StructureDefinition-PersonenBundle.json",
-    "fshName": "PersonenBundle",
-    "fshType": "Profile",
-    "fshFile": "StructureDefinitions\\PersonenBundle.fsh",
-    "startLine": 1,
-    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-ProcessingStatus.json",
@@ -468,8 +492,8 @@
     "fshName": "ResourceVisibilityType",
     "fshType": "ValueSet",
     "fshFile": "CodeSystem\\ResourceVisibilityType.fsh",
-    "startLine": 15,
-    "endLine": 22
+    "startLine": 44,
+    "endLine": 55
   },
   {
     "outputFile": "ValueSet-Salutation.json",

@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationCommunication",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "name": "AnnotationCommunication",
   "title": "Annotation",
   "status": "active",
   "experimental": false,
-  "date": "2025-09-05",
+  "date": "2025-09-25",
   "publisher": "Robert Koch-Institut",
   "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -291,6 +291,28 @@
         "id": "Communication.identifier:EmigaFileNumber.use",
         "path": "Communication.identifier.use",
         "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:SurvNetFileNumber",
+        "path": "Communication.identifier",
+        "sliceName": "SurvNetFileNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetFileNumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:SurvNetFileNumber.use",
+        "path": "Communication.identifier.use",
+        "fixedCode": "temp",
         "mustSupport": true
       },
       {

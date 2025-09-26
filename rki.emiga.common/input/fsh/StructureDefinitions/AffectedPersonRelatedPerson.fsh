@@ -7,8 +7,8 @@ Description: "TODO"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
-* ^version = "0.1.0"
-* ^date = "2025-04-09"
+* ^version = "0.2.0"
+* ^date = "2025-09-25"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
