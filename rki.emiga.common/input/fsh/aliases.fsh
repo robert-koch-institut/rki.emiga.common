@@ -37,6 +37,7 @@ Alias: $FileNumberPatientId = https://emiga.rki.de/fhir/common/sid/FileNumberPat
 
 Alias: $EmigaFileNumber = https://emiga.rki.de/fhir/sid/EmigaFileNumber
 Alias: $EmigaID = https://emiga.rki.de/fhir/sid/EmigaID
+Alias: $SurvNetFileNumber = https://emiga.rki.de/fhir/sid/SurvNetFileNumber
 
 Alias: $PatCitizenship = https://emiga.rki.de/fhir/common/Extension/Citizenship
 Alias: $HL7PatCitizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
