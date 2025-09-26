@@ -1,9 +1,9 @@
 Instance: TransactionBundleCreatePerson
-InstanceOf: PersonenBundle
+InstanceOf: EMIGAPersonenTransactionBundle
 Usage: #example
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenBundle|1.2.0-alpha.9"
-* identifier.system = "https://emiga.rki.de/fhir/common/sid/PersonenBundleId"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EMIGAPersonenTransactionBundle|1.2.0-alpha.9"
+* identifier.system = "https://emiga.rki.de/fhir/common/sid/EMIGAPersonenTransactionBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
 * type = #transaction
 * timestamp = "2025-07-03T09:28:36.132+01:00"
