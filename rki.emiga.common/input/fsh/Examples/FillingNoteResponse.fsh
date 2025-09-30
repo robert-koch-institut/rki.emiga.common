@@ -5,7 +5,7 @@ Usage: #example
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.	
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #public
+* meta.security[visibility].code = #transferable
 * questionnaire = "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote"
 * status = #completed
 * authored = "2025-07-04"

@@ -33,7 +33,7 @@ Usage: #example
 * meta.versionId = "5"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
 * meta.security[0] = $ResourceResponsibility#1.
-* meta.security[+] = $ResourceVisibilityType#public
+* meta.security[+] = $ResourceVisibilityType#transferable
 
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].code = #ContainsPersonalInformation
