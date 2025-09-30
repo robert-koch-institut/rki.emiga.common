@@ -392,6 +392,14 @@
     "endLine": 20
   },
   {
+    "outputFile": "ValueSet-AnnotationResourceVisibilityType.json",
+    "fshName": "AnnotationResourceVisibilityType",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\AnnotationResourceVisibilityType.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "ValueSet-CommonLanguages.json",
     "fshName": "CommonLanguages",
     "fshType": "ValueSet",

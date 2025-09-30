@@ -48,6 +48,7 @@ StructureDefinition-ProcessingStatus.json                           ProcessingSt
 StructureDefinition-ProcessingStatusAffectedPerson.json             ProcessingStatusAffectedPerson        Extension   Extensions\ExtensionProcessingStatusAffectedPerson.fsh              1 - 20
 StructureDefinition-RegionalKey.json                                RegionalKey                           Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 36
 StructureDefinition-Salutation.json                                 Salutation                            Extension   Extensions\ExtensionSalutation.fsh                                  1 - 20
+ValueSet-AnnotationResourceVisibilityType.json                      AnnotationResourceVisibilityType      ValueSet    ValueSets\AnnotationResourceVisibilityType.fsh                      1 - 12
 ValueSet-CommonLanguages.json                                       CommonLanguages                       ValueSet    ValueSets\CommonLanguages.fsh                                       3 - 1339
 ValueSet-ConceptDesignationUse.json                                 ConceptDesignationUse                 ValueSet    CodeSystem\ConceptDesignationUse.fsh                                16 - 23
 ValueSet-CountryCodes.json                                          CountryCodes                          ValueSet    ValueSets\CountryCodes.fsh                                          1 - 24

@@ -485,6 +485,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/AnnotationResourceVisibilityType"
+        },
+        "name": "Ressourcensichtbarkeit (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/SurvNetFileNumber"
         },
         "name": "SurvNet Aktenzeichen",

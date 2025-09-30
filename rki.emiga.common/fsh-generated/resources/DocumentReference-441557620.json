@@ -12,7 +12,7 @@
       },
       {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
-        "code": "public"
+        "code": "transferable"
       }
     ],
     "tag": [

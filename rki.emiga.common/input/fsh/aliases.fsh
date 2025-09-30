@@ -5,6 +5,7 @@ Alias: $ResourceVisibilityType = https://emiga.rki.de/fhir/common/CodeSystem/Res
 Alias: $ResourceVisibilityTypeVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType
 Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility
 Alias: $ResourceResponsibilityVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility
+Alias: $ResourceVisibilityTypeAnnotation = https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType
 
 Alias: $EmigaAnnotationFileNumber = https://emiga.rki.de/fhir/sid/EmigaAnnotationFileNumber
 Alias: $SurvNetAnnotationFileNumber = https://emiga.rki.de/fhir/sid/SurvNetAnnotationFileNumber

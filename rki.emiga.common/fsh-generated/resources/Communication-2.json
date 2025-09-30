@@ -11,7 +11,7 @@
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
       },
       {
-        "code": "public",
+        "code": "transferable",
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
       }
     ],

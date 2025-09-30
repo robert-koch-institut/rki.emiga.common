@@ -47,6 +47,27 @@ RuleSet: ProfileSecurityTags
     * system = $ResourceResponsibility
     * code 1..1 MS
 
+
+RuleSet: ProfileSecurityTagsAnnotation
+* meta MS
+  * security MS
+    * ^slicing.discriminator.type = #value
+    * ^slicing.discriminator.path = "system"
+    * ^slicing.rules = #open
+    * ^slicing.description = "Slicing security attribute by coding system"
+    * ^slicing.ordered = false
+  * security contains
+      visibility 0..1 MS and
+      responsibility 0..1 MS
+  * security[visibility] from $ResourceVisibilityTypeAnnotation
+    * system 1..1 MS
+    * system = $ResourceVisibilityType
+    * code 1..1 MS
+  * security[responsibility] from $ResourceResponsibilityVS
+    * system 1..1 MS
+    * system = $ResourceResponsibility
+    * code 1..1 MS
+
 RuleSet: ProfileSecurityTagVisibility
 * meta MS
   * security MS
