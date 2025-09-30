@@ -9,7 +9,7 @@ Description:    "TODO"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire"
 
 * insert MetadataProfile
-* insert ProfileSecurityTags
+* insert ProfileSecurityTagsAnnotation
 * insert ProfileResourceCommon
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags

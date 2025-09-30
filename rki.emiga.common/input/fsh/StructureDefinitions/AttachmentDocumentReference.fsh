@@ -8,7 +8,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
 * insert MetadataProfile
-* insert ProfileSecurityTags
+* insert ProfileSecurityTagsAnnotation
 * insert ProfileResourceCommon
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags

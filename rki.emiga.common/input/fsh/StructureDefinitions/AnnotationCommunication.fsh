@@ -8,7 +8,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
-* insert ProfileSecurityTags
+* insert ProfileSecurityTagsAnnotation
 * insert ProfileResourceCommon
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags

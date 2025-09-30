@@ -11,7 +11,7 @@ Description: "TODO"
 * insert MetadataProfile
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
-* insert ProfileSecurityTags
+* insert ProfileSecurityTagsAnnotation
 * insert ProfileMetaProfileTags
 //* insert IdentifierCommon
 //* insert ProfileMetaTags
