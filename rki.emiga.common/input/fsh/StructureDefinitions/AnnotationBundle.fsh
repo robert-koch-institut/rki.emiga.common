@@ -7,13 +7,13 @@ Description: "TO DO"
 * insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
-* ^version = "0.1.0"
-* ^date = "2025-07-07"
+* ^version = "0.2.0"
+* ^date = "2025-10-14"
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.9"
-//* type = #transaction (exactly)
+* type = #collection (exactly)
 * type MS
-* type ^short = "Type des Bundles"
+* type ^short = "Typ des Bundles"
 //* type ^comment = "fix: transaction"
 * entry 1.. MS
 * entry ^short = "Der einzelne Eintrag zur Interaktion"
@@ -24,6 +24,7 @@ Description: "TO DO"
 * entry.resource MS
 * entry.resource ^short = "Die Ressourcen-Instanz der Interaktion"
 //* entry.search 
+/*
 * entry.request MS
 * entry.request ^short = "HTTP-Request innerhalb der Transaktion"
 * entry.request.method MS
@@ -31,3 +32,4 @@ Description: "TO DO"
 * entry.request.url MS
 * entry.request.url ^short = "Request-URL"
 //* entry.response ..0
+*/
