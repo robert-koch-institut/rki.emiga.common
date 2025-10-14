@@ -64,19 +64,28 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 //* identifier only IdentifierAnn
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
+* instantiatesCanonical ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesUri 0..0
+* instantiatesUri ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * basedOn 0..0
+* basedOn ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * partOf 0..0
+* partOf ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * inResponseTo 0..0
+* inResponseTo ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * status 1..1 MS
 * status = #completed (exactly)
+
+* status ^comment = "Der Status der Annotation wird auf 'completed' gesetzt, da der Verarbeitungsstatus der Annotation über die Extension ProcessingStatus definiert wird."
+
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * statusReason 0..0
+* statusReason ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 * extension 1.. MS
 * extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 1..1 MS
 
@@ -144,18 +153,22 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 //* category.text ^short = "Schlagwort-Inhalt"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * priority 0..0
+* priority ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * medium 0..0
+* medium ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * subject 0..0
 * subject ^comment = "Subject der Annotation ist ein andere Entität, es wird über about referenziert"
 //Betreff
 * topic 1..1 MS
 * topic ^short = "Betreff"
+* topic ^definition = "Der Betreff der Annotation"
 * topic.coding 0..0
 * topic.coding ^comment = "Der Betreff wird im Text Feld dokumentiert"
 * topic.text 1..1 MS
 * topic.text ^short = "Betreff-Inhalt"
+* topic.text ^definition = "Der Betreff der Annotation wird im Text Feld dokumentiert."
 
 //Über welche Entität wird die Annotation benötigt
 * about 0..* MS
@@ -163,14 +176,18 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * about ^definition = "Referenz zur Bezugsentität"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * encounter 0..0
+* encounter ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Erstellungsdatum
 * sent 0..1 MS
 * sent ^definition = "Hier wird ein benutzerdefiniertes Datum angegeben."
 * sent ^short = "Datum"
 
 * received 0..0
+* received ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
 
 * recipient 0..0
+* recipient ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 
 * sender 1..1 MS
 * sender only Reference(EmigaUserPractitioner)
@@ -182,6 +199,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * reasonReference 0..0 
+* reasonReference ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 * payload 1..* MS
 * payload ^short = "Inhalt"
 * payload ^definition = "Inhalt der Annotation"

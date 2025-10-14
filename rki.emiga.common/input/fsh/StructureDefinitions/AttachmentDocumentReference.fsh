@@ -33,6 +33,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 
 * status MS
 * status = #current (exactly)
+* status ^comment = "Derzeit für Emiga Anwendungsfälle nur 'current' relevant."
 /*
 * identifier MS
 * identifier ^short = "TODO"
@@ -80,9 +81,11 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * author ^definition = "Hier wird die Person angegeben, die den Anhang erstellt hat.\\nDies ist nicht die Person, die das Dokument erstellt hat, sondern die Person, die den Anhang erstellt hat."
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * authenticator 0..0
+* authenticator ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 
 
 * custodian 0..0
+* custodian ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //* custodian only Reference(EmigaUserOrganization)
 
 * content MS
@@ -99,6 +102,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * content[reference].attachment.language ..0
 * content[reference].attachment.data ..0
 * content[reference].attachment.url 1.. MS
+* content[reference].attachment.url ^short = "URI"
 * content[reference].attachment.url ^definition = "URI des Eintrags."
 * content[reference].attachment.size MS
 * content[reference].attachment.size ^definition = "Hier wird die Größe der Datei in Byte angegeben."
@@ -107,8 +111,10 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * content[reference].attachment.hash ^definition = "Hier wird der Hashwert der Datei angegeben."
 * content[reference].attachment.hash ^short = "Hashwert"
 * content[reference].attachment.title 1.. MS
-* content[reference].attachment.title ^definition = "Name des referenzierten Dokumentes."
+* content[reference].attachment.title ^short = "Titel"
+* content[reference].attachment.title ^definition = "Title des referenzierten Dokumentes."
 * content[reference].attachment.creation MS
+* content[reference].attachment.creation ^short = "Zeitpunkt der Erstellung des Dokumentes"
 * content[reference].attachment.creation ^definition = "Hier wird der Zeitpunkt der Erstellung des referenzierten Dokumentes angegeben."
 //* content[reference].format 
 * content[attachment].attachment MS
@@ -117,6 +123,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * content[attachment].attachment.contentType ^short = "Dateiformat"
 * content[attachment].attachment.language ..0
 * content[attachment].attachment.data 1.. MS
+* content[attachment].attachment.data ^short = "Datei"
 * content[attachment].attachment.data ^definition = "Hier wird das Dokument als Datei angehängt."
 * content[attachment].attachment.url ..0
 * content[attachment].attachment.size MS
