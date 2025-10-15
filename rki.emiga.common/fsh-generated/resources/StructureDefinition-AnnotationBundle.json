@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationBundle",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "AnnotationBundle",
   "title": "Annotations Bundle",
   "status": "active",
   "experimental": false,
-  "date": "2025-07-07",
+  "date": "2025-10-14",
   "publisher": "Robert Koch-Institut",
   "description": "TO DO",
   "fhirVersion": "4.0.1",
@@ -42,7 +42,8 @@
       {
         "id": "Bundle.type",
         "path": "Bundle.type",
-        "short": "Type des Bundles",
+        "short": "Typ des Bundles",
+        "fixedCode": "collection",
         "mustSupport": true
       },
       {
@@ -68,24 +69,6 @@
         "id": "Bundle.entry.resource",
         "path": "Bundle.entry.resource",
         "short": "Die Ressourcen-Instanz der Interaktion",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry.request",
-        "path": "Bundle.entry.request",
-        "short": "HTTP-Request innerhalb der Transaktion",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry.request.method",
-        "path": "Bundle.entry.request.method",
-        "short": "HTTP-Verb",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry.request.url",
-        "path": "Bundle.entry.request.url",
-        "short": "Request-URL",
         "mustSupport": true
       }
     ]

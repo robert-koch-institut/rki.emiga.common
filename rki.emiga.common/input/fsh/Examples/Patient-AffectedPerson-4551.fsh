@@ -53,18 +53,18 @@ Usage: #example
 * name.extension[salutation].valueCoding.display = "Sehr geehrte Frau"
 
 * name[0].use = #official
-* name[0].family.value = "Calamity"
-* name[0].family.extension[nachname].valueString = "Calamity"
-* name[0].given.value = "Jones"
+* name[0].family = "Calamity"
+//* name[0].family.extension[nachname].valueString = "Calamity"
+* name[0].given = "Jones"
 
 * name[1].use = #maiden
-* name[1].family.value = "Doe"
-* name[1].family.extension[nachname].valueString = "Doe"
+* name[1].family = "Doe"
+//* name[1].family.extension[nachname].valueString = "Doe"
 
 
 * name[2].use = #nickname
-* name[2].family.value = "Calam"
-* name[2].family.extension[nachname].valueString = "Calam"
+* name[2].family = "Calam"
+//* name[2].family.extension[nachname].valueString = "Calam"
 
 * telecom[Email].system = #email
 * telecom[Email].value = "jones.calamity@example.com"
@@ -104,14 +104,15 @@ Usage: #example
 * address[0].extension[geolocation].extension[longitude].valueDecimal = 1.3791
 * address[0].extension[geolocation].extension[longitude].url = "longitude"
 
-* address[0].line[0].value = "Cherry Tree Lane 1"
+* address[0].line[0] = "Blossom Lane 1"
 * address[0].line[0].extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-* address[0].line[0].extension[Strasse].valueString = "Cherry Tree Lane"
+* address[0].line[0].extension[Strasse].valueString = "Blossom Lane"
 * address[0].line[0].extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
 * address[0].line[0].extension[Hausnummer].valueString = "1"
 
 * address[0].postalCode = "12345"
 * address[0].city = "Berminghausen"
+* address[0].state = "DE-BE"
 * address[0].country = "DE"
 
 * communication[0].language.coding.system = "urn:ietf:bcp:47"
