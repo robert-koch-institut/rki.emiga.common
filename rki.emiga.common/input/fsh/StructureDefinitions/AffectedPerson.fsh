@@ -185,6 +185,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * address.postalCode ^definition = "Postleitzahl" //. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/postalCode) im coding Element dargestellt werden."
 * address.postalCode MS 
 * address.postalCode obeys validPLZ
+* address.state MS
 * address.country from $iso3166-1-2 (extensible)
 * address.country ^short = "Land"
 * address.country ^definition = "Land"
