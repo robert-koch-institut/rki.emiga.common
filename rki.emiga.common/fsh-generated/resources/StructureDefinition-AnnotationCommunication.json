@@ -301,47 +301,56 @@
       {
         "id": "Communication.instantiatesCanonical",
         "path": "Communication.instantiatesCanonical",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.instantiatesUri",
         "path": "Communication.instantiatesUri",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.basedOn",
         "path": "Communication.basedOn",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.partOf",
         "path": "Communication.partOf",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.inResponseTo",
         "path": "Communication.inResponseTo",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.status",
         "path": "Communication.status",
+        "comment": "Der Status der Annotation wird auf 'completed' gesetzt, da der Verarbeitungsstatus der Annotation über die Extension ProcessingStatus definiert wird.",
         "fixedCode": "completed",
         "mustSupport": true
       },
       {
         "id": "Communication.statusReason",
         "path": "Communication.statusReason",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.priority",
         "path": "Communication.priority",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.medium",
         "path": "Communication.medium",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -354,6 +363,7 @@
         "id": "Communication.topic",
         "path": "Communication.topic",
         "short": "Betreff",
+        "definition": "Der Betreff der Annotation",
         "min": 1,
         "mustSupport": true
       },
@@ -367,6 +377,7 @@
         "id": "Communication.topic.text",
         "path": "Communication.topic.text",
         "short": "Betreff-Inhalt",
+        "definition": "Der Betreff der Annotation wird im Text Feld dokumentiert.",
         "min": 1,
         "mustSupport": true
       },
@@ -380,6 +391,7 @@
       {
         "id": "Communication.encounter",
         "path": "Communication.encounter",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -392,11 +404,13 @@
       {
         "id": "Communication.received",
         "path": "Communication.received",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.recipient",
         "path": "Communication.recipient",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -424,6 +438,7 @@
       {
         "id": "Communication.reasonReference",
         "path": "Communication.reasonReference",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {

@@ -258,6 +258,7 @@
       {
         "id": "DocumentReference.status",
         "path": "DocumentReference.status",
+        "comment": "Derzeit für Emiga Anwendungsfälle nur 'current' relevant.",
         "fixedCode": "current",
         "mustSupport": true
       },
@@ -311,11 +312,13 @@
       {
         "id": "DocumentReference.authenticator",
         "path": "DocumentReference.authenticator",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "DocumentReference.custodian",
         "path": "DocumentReference.custodian",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -365,6 +368,7 @@
       {
         "id": "DocumentReference.content:reference.attachment.url",
         "path": "DocumentReference.content.attachment.url",
+        "short": "URI",
         "definition": "URI des Eintrags.",
         "min": 1,
         "mustSupport": true
@@ -386,13 +390,15 @@
       {
         "id": "DocumentReference.content:reference.attachment.title",
         "path": "DocumentReference.content.attachment.title",
-        "definition": "Name des referenzierten Dokumentes.",
+        "short": "Titel",
+        "definition": "Title des referenzierten Dokumentes.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "DocumentReference.content:reference.attachment.creation",
         "path": "DocumentReference.content.attachment.creation",
+        "short": "Zeitpunkt der Erstellung des Dokumentes",
         "definition": "Hier wird der Zeitpunkt der Erstellung des referenzierten Dokumentes angegeben.",
         "mustSupport": true
       },
@@ -425,6 +431,7 @@
       {
         "id": "DocumentReference.content:attachment.attachment.data",
         "path": "DocumentReference.content.attachment.data",
+        "short": "Datei",
         "definition": "Hier wird das Dokument als Datei angehängt.",
         "min": 1,
         "mustSupport": true
