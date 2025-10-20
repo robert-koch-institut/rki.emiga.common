@@ -125,7 +125,7 @@ Usage: #example
 * address[1].extension[addressUse].url = "https://demis.rki.de/fhir/StructureDefinition/AddressUse"
 * address[1].extension[addressUse].valueCoding.system = "https://demis.rki.de/fhir/CodeSystem/addressUse"
 * address[1].extension[addressUse].valueCoding.code = #current
-* address[1].extension[addressUse].valueCoding.display = "Derzeitige Aufenthaltsort"
+* address[1].extension[addressUse].valueCoding.display = "Derzeitiger Aufenthaltsort"
 * address[1].extension[facilityAssociation].url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
 * address[1].extension[facilityAssociation].extension[facility].url = "facility"
 * address[1].extension[facilityAssociation].extension[facility].valueReference.reference = "http://example.org/fhir/Organization/4550"
