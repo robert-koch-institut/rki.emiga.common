@@ -8,7 +8,7 @@ CodeSystem-FacilityAssociationType.json                             FacilityAsso
 CodeSystem-PersonalInformation.json                                 PersonalInformation                   CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 14
 CodeSystem-ProcessingStatus.json                                    ProcessingStatus                      CodeSystem  CodeSystem\ProcessingStatus.fsh                                     1 - 19
 CodeSystem-RegionKeys.json                                          RegionKeys                            CodeSystem  CodeSystem\RegionKeys.fsh                                           1 - 11250
-CodeSystem-RelatedPersonRelationshipType.json                       RelatedPersonRelationshipType         CodeSystem  CodeSystem\RelatedPersonRelationshipType.fsh                        1 - 15
+CodeSystem-RelatedPersonRelationshipType.json                       RelatedPersonRelationshipType         CodeSystem  CodeSystem\RelatedPersonRelationshipType.fsh                        1 - 16
 CodeSystem-Relevance.json                                           Relevance                             CodeSystem  CodeSystem\Relevance.fsh                                            1 - 15
 CodeSystem-ResourceResponsibility.json                              ResourceResponsibility                CodeSystem  CodeSystem\ResourceResponsibility.fsh                               1 - 416
 CodeSystem-ResourceVisibilityType.json                              ResourceVisibilityType                CodeSystem  CodeSystem\ResourceVisibilityType.fsh                               1 - 40
@@ -58,7 +58,7 @@ ValueSet-PersonalInformation.json                                   PersonalInfo
 ValueSet-ProcessingStatusAffectedPersonVS.json                      ProcessingStatusAffectedPersonVS      ValueSet    ValueSets\ProcessingStatusAffectedPersonVS.fsh                      1 - 13
 ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                    ValueSet    CodeSystem\ProcessingStatus.fsh                                     21 - 29
 ValueSet-RegionKeys.json                                            RegionKeys                            ValueSet    ValueSets\RegionKeys.fsh                                            1 - 22
-ValueSet-RelatedPersonRelationshipType.json                         RelatedPersonRelationshipType         ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        17 - 25
+ValueSet-RelatedPersonRelationshipType.json                         RelatedPersonRelationshipType         ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        19 - 27
 ValueSet-Relevance.json                                             Relevance                             ValueSet    CodeSystem\Relevance.fsh                                            17 - 25
 ValueSet-ResourceResponsibility.json                                ResourceResponsibility                ValueSet    CodeSystem\ResourceResponsibility.fsh                               419 - 426
 ValueSet-ResourceVisibilityType.json                                ResourceVisibilityType                ValueSet    CodeSystem\ResourceVisibilityType.fsh                               44 - 55
