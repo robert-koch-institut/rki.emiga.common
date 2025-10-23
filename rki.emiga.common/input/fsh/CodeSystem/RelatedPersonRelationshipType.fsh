@@ -5,23 +5,23 @@ Description: "Die Kodiersystematik 'RelatedPersonRelationship' definiert Konzept
 * insert MetadataTerminology
 
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
-* ^version = "1.1.0"
-* ^date = "2025-10-20"
+* ^version = "1.2.0"
+* ^date = "2025-10-23"
 * ^caseSensitive = true
 * ^content = #complete
-* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipType"
+* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipTypeVS"
 
 //* #legalGuardian "rechtlicher Betreuer" "Die betroffene Person hat einen rechtlichen Betreuer."
 //* #parentalAuthority "Erziehungsberechtigter" "Die betroffene Person hat einen Erziehungsberechtigten."
-* #custodian "Sorgeberechtigte Person" "Die betroffene Person hat einen Sorgeberechtigten."
+* #legalGuardian "Sorgeberechtigte Person" "Die betroffene Person hat einen Sorgeberechtigten."
 
 
-ValueSet: RelatedPersonRelationshipType
-Id: RelatedPersonRelationshipType
+ValueSet: RelatedPersonRelationshipTypeVS
+Id: RelatedPersonRelationshipTypeVS
 Title: "Beziehungen zu anderen Personen - Werteliste"
 Description: "Werteliste mit Konzepten, die die Art der Beziehungen bestimmen."
-* ^url = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipType"
+* ^url = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipTypeVS"
 * insert MetadataTerminology
-* ^version = "0.1.0"
-* ^date = "2025-09-03"
+* ^version = "0.2.0"
+* ^date = "2025-10-22"
 * include codes from system RelatedPersonRelationshipType
