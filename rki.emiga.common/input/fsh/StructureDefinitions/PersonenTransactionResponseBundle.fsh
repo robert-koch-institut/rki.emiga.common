@@ -1,6 +1,6 @@
-Profile: EMIGAPersonenTransactionResponse
+Profile: PersonenTransactionResponse
 Parent: Bundle
-Id: EMIGAPersonenTransactionResponse
+Id: PersonenTransactionResponse
 Title: "EMIGA Personen TransactionBundle-Response"
 Description: "Dieses Profil definiert die Server-Antwort auf Transaktions-Bundles im Rahmen von EMIGA Personen-Szenarien."
 * ^version = "0.1.0"

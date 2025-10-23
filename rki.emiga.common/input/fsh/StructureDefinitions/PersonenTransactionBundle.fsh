@@ -1,19 +1,19 @@
-Profile: EMIGAPersonenTransactionBundle
+Profile: PersonenTransactionBundle
 Parent: Bundle
-Id: EMIGAPersonenTransactionBundle
+Id: PersonenTransactionBundle
 Title: "EMIGA Personen Transactionbundle"
 Description: "TO DO"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 
 
-* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/EMIGAPersonenTransactionBundle"
+* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle"
 * ^version = "0.2.0"
 * ^date = "2025-09-26"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EMIGAPersonenTransactionBundle|1.2.0-alpha.9"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.9"
 //* type = #transaction (exactly)
-* type MS
+* type 1..1 MS
 * type ^short = "Type des Bundles"
 * type ^comment = "fix: transaction"
 * type = #transaction (exactly)
