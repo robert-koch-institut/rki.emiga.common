@@ -8,8 +8,8 @@ Description: "TO DO"
 
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle"
-* ^version = "0.2.0"
-* ^date = "2025-09-26"
+* ^version = "0.3.0"
+* ^date = "2025-10-23"
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.9"
 //* type = #transaction (exactly)

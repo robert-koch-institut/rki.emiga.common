@@ -3,9 +3,9 @@ Parent: Bundle
 Id: PersonenTransactionResponse
 Title: "EMIGA Personen TransactionBundle-Response"
 Description: "Dieses Profil definiert die Server-Antwort auf Transaktions-Bundles im Rahmen von EMIGA Personen-Szenarien."
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^experimental = false
-* ^date = "2025-09-26"
+* ^date = "2025-10-23"
 * ^publisher = "Robert Koch-Institut (RKI)"
 * type = #transaction-response (exactly)
 * type MS
