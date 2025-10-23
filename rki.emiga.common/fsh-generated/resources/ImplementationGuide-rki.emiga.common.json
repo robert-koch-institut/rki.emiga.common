@@ -302,7 +302,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EMIGAPersonenTransactionBundle"
+          "reference": "StructureDefinition/PersonenTransactionBundle"
         },
         "name": "EMIGA Personen Transactionbundle",
         "description": "TO DO",
@@ -310,7 +310,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EMIGAPersonenTransactionResponse"
+          "reference": "StructureDefinition/PersonenTransactionResponse"
         },
         "name": "EMIGA Personen TransactionBundle-Response",
         "description": "Dieses Profil definiert die Server-Antwort auf Transaktions-Bundles im Rahmen von EMIGA Personen-Szenarien.",
@@ -519,7 +519,7 @@
           "reference": "Bundle/TransactionBundleCreatePerson"
         },
         "name": "TransactionBundleCreatePerson",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EMIGAPersonenTransactionBundle"
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle"
       },
       {
         "reference": {

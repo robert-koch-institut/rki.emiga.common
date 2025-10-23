@@ -35,8 +35,6 @@ StructureDefinition-AnnotationCommunication.json                    AnnotationCo
 StructureDefinition-AttachmentAnnotation.json                       AttachmentAnnotation                  Profile     StructureDefinitions\AttachmentAnnotation.fsh                       1 - 13
 StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference           Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 140
 StructureDefinition-DateCreated.json                                DateCreated                           Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 11
-StructureDefinition-EMIGAPersonenTransactionBundle.json             EMIGAPersonenTransactionBundle        Profile     StructureDefinitions\EMIGAPersonenTransactionBundle.fsh             1 - 39
-StructureDefinition-EMIGAPersonenTransactionResponse.json           EMIGAPersonenTransactionResponse      Profile     StructureDefinitions\EMIGAPersonenTransactionResponseBundle.fsh     1 - 35
 StructureDefinition-EmigaUserPractitioner.json                      EmigaUserPractitioner                 Profile     StructureDefinitions\EmigaUserPractitioner.fsh                      1 - 97
 StructureDefinition-FacilityAddressAffectedPerson.json              FacilityAddressAffectedPerson         Extension   Extensions\ExtensionFacilityAddressAffectedPerson.fsh               1 - 36
 StructureDefinition-IdentifierEmigaFileNumber.json                  IdentifierEmigaFileNumber             Profile     StructureDefinitions\IdentifierEmigaFileNumber.fsh                  1 - 19
@@ -44,6 +42,8 @@ StructureDefinition-IdentifierEmigaID.json                          IdentifierEm
 StructureDefinition-IdentifierSurvNetFileNumber.json                IdentifierSurvNetFileNumber           Profile     StructureDefinitions\IdentifierSurvNetFileNumber.fsh                1 - 19
 StructureDefinition-LandOfBirth.json                                LandOfBirth                           Extension   Extensions\ExtensionLandOfBirth.fsh                                 1 - 23
 StructureDefinition-NullFlavor.json                                 NullFlavor                            Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
+StructureDefinition-PersonenTransactionBundle.json                  PersonenTransactionBundle             Profile     StructureDefinitions\PersonenTransactionBundle.fsh                  1 - 39
+StructureDefinition-PersonenTransactionResponse.json                PersonenTransactionResponse           Profile     StructureDefinitions\PersonenTransactionResponseBundle.fsh          1 - 35
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                      Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 20
 StructureDefinition-ProcessingStatusAffectedPerson.json             ProcessingStatusAffectedPerson        Extension   Extensions\ExtensionProcessingStatusAffectedPerson.fsh              1 - 20
 StructureDefinition-RegionalKey.json                                RegionalKey                           Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 36

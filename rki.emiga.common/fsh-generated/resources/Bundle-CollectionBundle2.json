@@ -26,8 +26,9 @@
               "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
             },
             {
-              "code": "public",
-              "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+              "code": "inAgency",
+              "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+              "display": "Eigene ÖGD-Stelle"
             }
           ],
           "tag": [

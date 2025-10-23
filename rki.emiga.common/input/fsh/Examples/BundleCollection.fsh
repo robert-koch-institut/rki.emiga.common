@@ -27,7 +27,7 @@ Usage: #inline
 * meta.versionId = "4"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
 * meta.security[0] = $ResourceResponsibility#1.
-* meta.security[+] = $ResourceVisibilityType#public
+* meta.security[+] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].code = #ContainsPersonalInformation
