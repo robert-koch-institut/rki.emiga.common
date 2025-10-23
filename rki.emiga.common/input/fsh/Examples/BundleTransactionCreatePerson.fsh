@@ -326,6 +326,6 @@ Usage: #inline
 
 * patient = Reference(urn:uuid:d8140036-d5b5-461a-9a6e-adfb8a87039c) // AffectedPerson-Tochter-1
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
-* relationship[0].coding.code = #custodian
+* relationship[0].coding.code = #legalGuardian
 * relationship[0].coding.display = "Sorgeberechtigte Person"
 

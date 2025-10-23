@@ -239,7 +239,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/RelatedPersonRelationshipType"
+          "reference": "ValueSet/RelatedPersonRelationshipTypeVS"
         },
         "name": "Beziehungen zu anderen Personen - Werteliste",
         "description": "Werteliste mit Konzepten, die die Art der Beziehungen bestimmen.",

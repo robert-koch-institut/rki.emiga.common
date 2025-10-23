@@ -29,7 +29,7 @@ RelatedPerson-4551.json                                             4551        
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire     Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 20
 StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json  OutbreakQuestionnaireResponseCommon   Profile     StructureDefinitions\AdditionalPropertiesQuestionnaireResponse.fsh  1 - 46
 StructureDefinition-AffectedPerson.json                             AffectedPerson                        Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 342
-StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson           Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 47
+StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson           Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 26
 StructureDefinition-AnnotationBundle.json                           AnnotationBundle                      Profile     StructureDefinitions\AnnotationBundle.fsh                           1 - 25
 StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication               Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 211
 StructureDefinition-AttachmentAnnotation.json                       AttachmentAnnotation                  Profile     StructureDefinitions\AttachmentAnnotation.fsh                       1 - 13
@@ -58,7 +58,7 @@ ValueSet-PersonalInformation.json                                   PersonalInfo
 ValueSet-ProcessingStatusAffectedPersonVS.json                      ProcessingStatusAffectedPersonVS      ValueSet    ValueSets\ProcessingStatusAffectedPersonVS.fsh                      1 - 13
 ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                    ValueSet    CodeSystem\ProcessingStatus.fsh                                     21 - 29
 ValueSet-RegionKeys.json                                            RegionKeys                            ValueSet    ValueSets\RegionKeys.fsh                                            1 - 22
-ValueSet-RelatedPersonRelationshipType.json                         RelatedPersonRelationshipType         ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        19 - 27
+ValueSet-RelatedPersonRelationshipTypeVS.json                       RelatedPersonRelationshipTypeVS       ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        19 - 27
 ValueSet-Relevance.json                                             Relevance                             ValueSet    CodeSystem\Relevance.fsh                                            17 - 25
 ValueSet-ResourceResponsibility.json                                ResourceResponsibility                ValueSet    CodeSystem\ResourceResponsibility.fsh                               419 - 426
 ValueSet-ResourceVisibilityType.json                                ResourceVisibilityType                ValueSet    CodeSystem\ResourceVisibilityType.fsh                               44 - 55

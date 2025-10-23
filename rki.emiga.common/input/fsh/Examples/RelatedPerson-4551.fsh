@@ -22,5 +22,5 @@ Usage: #example
 
 * patient = Reference(AffectedPerson-4550)
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
-* relationship[0].coding.code = #custodian
+* relationship[0].coding.code = #legalGuardian
 * relationship[0].coding.display = "Sorgeberechtigte Person"
