@@ -2,32 +2,15 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationCommunication",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "AnnotationCommunication",
   "title": "Annotation",
   "status": "active",
   "experimental": false,
-  "date": "2025-07-25",
+  "date": "2025-09-25",
   "publisher": "Robert Koch-Institut",
   "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Communication",
@@ -59,7 +42,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
       },
       {
         "id": "Communication.meta.security",
@@ -86,7 +69,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType"
         }
       },
       {
@@ -153,7 +136,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation"
         }
       },
       {
@@ -243,224 +226,131 @@
             }
           ],
           "rules": "open",
-          "description": "slicing organization identifier by system",
+          "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "short": "TODO",
-        "definition": "TODO",
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:EmigaID",
+        "path": "Communication.identifier",
+        "sliceName": "EmigaID",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.identifier:emigaAnnotationId",
-        "path": "Communication.identifier",
-        "sliceName": "emigaAnnotationId",
-        "short": "EMIGA Annotation-ID",
-        "definition": "EMIGA Annotation-ID ist ein eindeutiger technische Identifier für EMIGA Annotationen.",
-        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAnnotationId"
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaID"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "Communication.identifier:survnetAnnotationId",
+        "id": "Communication.identifier:EmigaID.use",
+        "path": "Communication.identifier.use",
+        "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:EmigaFileNumber",
         "path": "Communication.identifier",
-        "sliceName": "survnetAnnotationId",
-        "short": "SurvNet Annotation-ID",
-        "definition": "SurvNet Annotation-ID ist ein fachlicher Identifier für SurvNet Annotationen.",
-        "min": 0,
+        "sliceName": "EmigaFileNumber",
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetAnnotationId"
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaFileNumber"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "Communication.identifier:emigaAnnotationFileNumber",
+        "id": "Communication.identifier:EmigaFileNumber.use",
+        "path": "Communication.identifier.use",
+        "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier:SurvNetFileNumber",
         "path": "Communication.identifier",
-        "sliceName": "emigaAnnotationFileNumber",
-        "short": "EMIGA Annotation-Aktenzeichen",
-        "definition": "EMIGA Annotation-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Annotationen.",
+        "sliceName": "SurvNetFileNumber",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAnnotationFileNumber"
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetFileNumber"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "Communication.identifier:survnetAnnotationFileNumber",
-        "path": "Communication.identifier",
-        "sliceName": "survnetAnnotationFileNumber",
-        "short": "SurvNet Annotation-Aktenzeichen",
-        "definition": "SurvNet Annotation-Aktenzeichen ist ein fachlicher Identifier für SurvNet Annotationen.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetAnnotationFileNumber"
-            ]
-          }
-        ],
+        "id": "Communication.identifier:SurvNetFileNumber.use",
+        "path": "Communication.identifier.use",
+        "fixedCode": "temp",
         "mustSupport": true
       },
       {
         "id": "Communication.instantiatesCanonical",
         "path": "Communication.instantiatesCanonical",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.instantiatesUri",
         "path": "Communication.instantiatesUri",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.basedOn",
         "path": "Communication.basedOn",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.partOf",
         "path": "Communication.partOf",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.inResponseTo",
         "path": "Communication.inResponseTo",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.status",
         "path": "Communication.status",
+        "comment": "Der Status der Annotation wird auf 'completed' gesetzt, da der Verarbeitungsstatus der Annotation über die Extension ProcessingStatus definiert wird.",
         "fixedCode": "completed",
         "mustSupport": true
       },
       {
         "id": "Communication.statusReason",
         "path": "Communication.statusReason",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
-      },
-      {
-        "id": "Communication.category",
-        "path": "Communication.category",
-        "short": "Schlagwort",
-        "definition": "Schlagwort der Annotation",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding",
-        "path": "Communication.category.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "definition": "TODO",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsLocal",
-        "path": "Communication.category.coding",
-        "sliceName": "keywordsLocal",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "example",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/KeywordsLocal"
-        }
-      },
-      {
-        "id": "Communication.category.coding:keywordsLocal.system",
-        "path": "Communication.category.coding.system",
-        "min": 1,
-        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsLocal.version",
-        "path": "Communication.category.coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsLocal.code",
-        "path": "Communication.category.coding.code",
-        "short": "Schlagwort-Code Lokal",
-        "definition": "Lokale Schlagwort-Code der Annotation",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsLocal.display",
-        "path": "Communication.category.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsGlobal",
-        "path": "Communication.category.coding",
-        "sliceName": "keywordsGlobal",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "example",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/KeywordsGlobal"
-        }
-      },
-      {
-        "id": "Communication.category.coding:keywordsGlobal.system",
-        "path": "Communication.category.coding.system",
-        "min": 1,
-        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsGlobal.version",
-        "path": "Communication.category.coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsGlobal.code",
-        "path": "Communication.category.coding.code",
-        "short": "Global Schlagwort-Code",
-        "definition": "Global Schlagwort-Code der Annotation",
-        "mustSupport": true
-      },
-      {
-        "id": "Communication.category.coding:keywordsGlobal.display",
-        "path": "Communication.category.coding.display",
-        "mustSupport": true
       },
       {
         "id": "Communication.priority",
         "path": "Communication.priority",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.medium",
         "path": "Communication.medium",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -473,6 +363,7 @@
         "id": "Communication.topic",
         "path": "Communication.topic",
         "short": "Betreff",
+        "definition": "Der Betreff der Annotation",
         "min": 1,
         "mustSupport": true
       },
@@ -486,6 +377,7 @@
         "id": "Communication.topic.text",
         "path": "Communication.topic.text",
         "short": "Betreff-Inhalt",
+        "definition": "Der Betreff der Annotation wird im Text Feld dokumentiert.",
         "min": 1,
         "mustSupport": true
       },
@@ -499,6 +391,7 @@
       {
         "id": "Communication.encounter",
         "path": "Communication.encounter",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -511,11 +404,13 @@
       {
         "id": "Communication.received",
         "path": "Communication.received",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "Communication.recipient",
         "path": "Communication.recipient",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -543,6 +438,7 @@
       {
         "id": "Communication.reasonReference",
         "path": "Communication.reasonReference",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {

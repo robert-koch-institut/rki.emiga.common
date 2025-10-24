@@ -25,9 +25,9 @@ InstanceOf: AnnotationCommunication
 Usage: #inline
 * id = "3"
 * meta.versionId = "4"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
 * meta.security[0] = $ResourceResponsibility#1.
-* meta.security[+] = $ResourceVisibilityType#public
+* meta.security[+] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].code = #ContainsPersonalInformation
@@ -42,12 +42,19 @@ Usage: #inline
 * extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
 * extension[dateCreated].valueInstant = "2024-10-01T12:00:00Z"
 
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "DEFG-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "ABCD-987654321"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "SURVNET-123456789"
 
 
-* identifier[0].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
-* identifier[=].value = "ANNO-1.-2025-00000002"
-* identifier[+].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
-* identifier[=].value = "SURVNET-TestID-441557618"
+
+//* identifier[0].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
+//* identifier[=].value = "ANNO-1.-2025-00000002"
+//* identifier[+].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
+//* identifier[=].value = "SURVNET-TestID-441557618"
 * status = #completed
 * category[0] = $KeywordsLocal#comment "Kommentar"
 * category[+] = $KeywordsGlobal#message "Nachricht"
@@ -60,7 +67,7 @@ Usage: #inline
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1d
 InstanceOf: Practitioner
 Usage: #inline
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.9"
 * meta.security[0] = $ResourceVisibilityType#internal
 * meta.security[+] = $ResourceResponsibility#1.
 * identifier.value = "testuser@emiga.rki.de"

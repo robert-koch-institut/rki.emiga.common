@@ -3,17 +3,17 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.3.0"
-* ^date = "2025-07-25"
+* ^version = "0.4.0"
+* ^date = "2025-09-25"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
-* insert ProfileSecurityTags
+* insert ProfileSecurityTagsAnnotation
 * insert ProfileResourceCommon
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS
@@ -23,7 +23,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * meta.tag contains 
     personalInformation 1.. MS
 //* meta.tag[personalInformation] ^mustSupport = true
-* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS (required)
+* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation (required)
 * meta.tag[personalInformation].system 1.. MS
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].version 
@@ -34,6 +34,8 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * language 0..0
+* insert IdentifierCommon
+/*
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
 * identifier 1.. MS
@@ -58,26 +60,37 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * identifier[emigaAnnotationId] ^definition = "EMIGA Annotation-ID ist ein eindeutiger technische Identifier für EMIGA Annotationen."
 * identifier[survnetAnnotationId] ^short = "SurvNet Annotation-ID"
 * identifier[survnetAnnotationId] ^definition = "SurvNet Annotation-ID ist ein fachlicher Identifier für SurvNet Annotationen."
+*/
 //* identifier only IdentifierAnn
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
+* instantiatesCanonical ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesUri 0..0
+* instantiatesUri ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * basedOn 0..0
+* basedOn ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * partOf 0..0
+* partOf ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * inResponseTo 0..0
+* inResponseTo ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * status 1..1 MS
 * status = #completed (exactly)
+
+* status ^comment = "Der Status der Annotation wird auf 'completed' gesetzt, da der Verarbeitungsstatus der Annotation über die Extension ProcessingStatus definiert wird."
+
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * statusReason 0..0
+* statusReason ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 * extension 1.. MS
 * extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 1..1 MS
 
 //Es wird für "Schlagwort" überlegt
+/*
 * category MS
 * category ^short = "Schlagwort"
 * category ^definition = "Schlagwort der Annotation"
@@ -107,7 +120,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * category.coding[keywordsGlobal].code ^short = "Global Schlagwort-Code"
 * category.coding[keywordsGlobal].code ^definition = "Global Schlagwort-Code der Annotation"
 * category.coding[keywordsGlobal].display 0..1 MS
-
+*/
 
 
 /*
@@ -140,18 +153,22 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 //* category.text ^short = "Schlagwort-Inhalt"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * priority 0..0
+* priority ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * medium 0..0
+* medium ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * subject 0..0
 * subject ^comment = "Subject der Annotation ist ein andere Entität, es wird über about referenziert"
 //Betreff
 * topic 1..1 MS
 * topic ^short = "Betreff"
+* topic ^definition = "Der Betreff der Annotation"
 * topic.coding 0..0
 * topic.coding ^comment = "Der Betreff wird im Text Feld dokumentiert"
 * topic.text 1..1 MS
 * topic.text ^short = "Betreff-Inhalt"
+* topic.text ^definition = "Der Betreff der Annotation wird im Text Feld dokumentiert."
 
 //Über welche Entität wird die Annotation benötigt
 * about 0..* MS
@@ -159,14 +176,18 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * about ^definition = "Referenz zur Bezugsentität"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * encounter 0..0
+* encounter ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 //Erstellungsdatum
 * sent 0..1 MS
 * sent ^definition = "Hier wird ein benutzerdefiniertes Datum angegeben."
 * sent ^short = "Datum"
 
 * received 0..0
+* received ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
 
 * recipient 0..0
+* recipient ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 
 * sender 1..1 MS
 * sender only Reference(EmigaUserPractitioner)
@@ -178,6 +199,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * reasonReference 0..0 
+* reasonReference ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 * payload 1..* MS
 * payload ^short = "Inhalt"
 * payload ^definition = "Inhalt der Annotation"

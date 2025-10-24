@@ -1,11 +1,11 @@
 Instance: FillingNoteResponse
 InstanceOf: AdditionalPropertiesQuestionnaireResponse
 Usage: #example
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.8"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.9"
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.	
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #public
+* meta.security[visibility].code = #transferable
 * questionnaire = "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote"
 * status = #completed
 * authored = "2025-07-04"

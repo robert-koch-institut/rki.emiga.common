@@ -3,13 +3,17 @@ InstanceOf: AdditionalPropertiesQuestionnaire
 Usage: #definition
 * url = "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote"
 * version = "0.3.0"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.8"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.9"
 * name = "Ablagevermerk"
 * title = "Ablagevermerk"
 * status = #draft
 * publisher = "Robert Koch Institute"
 * copyright = "Robert Koch Institute"
 * date = "2025-07-04"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "Eigenschaft-PQRST-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "Eigenschaft-XYZ-987654321"
 * item[0].type = #boolean
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#check-box "Check box"

@@ -3,7 +3,7 @@
   "id": "TransactionBundle",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.8"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.9"
     ]
   },
   "identifier": {
@@ -22,7 +22,7 @@
         "id": "2",
         "meta": {
           "profile": [
-            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
           ],
           "security": [
             {
@@ -30,7 +30,7 @@
               "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
             },
             {
-              "code": "public",
+              "code": "transferable",
               "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
             }
           ],
@@ -59,12 +59,16 @@
         ],
         "identifier": [
           {
-            "system": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId",
-            "value": "ANNO-1.-2025-00000002"
+            "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+            "value": "DEFG-123456789"
           },
           {
-            "system": "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId",
-            "value": "SURVNET-TestID-441557618"
+            "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+            "value": "ABCD-987654321"
+          },
+          {
+            "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
+            "value": "SURVNET-987654321"
           }
         ],
         "category": [
@@ -118,7 +122,7 @@
         "id": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
         "meta": {
           "profile": [
-            "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.8"
+            "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.9"
           ],
           "security": [
             {

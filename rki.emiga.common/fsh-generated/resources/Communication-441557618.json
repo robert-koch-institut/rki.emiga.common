@@ -3,7 +3,7 @@
   "id": "441557618",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.8"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.9"
     ],
     "security": [
       {
@@ -12,7 +12,7 @@
       },
       {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
-        "code": "public"
+        "code": "transferable"
       }
     ],
     "tag": [
@@ -39,28 +39,16 @@
   ],
   "identifier": [
     {
-      "system": "https://emiga.rki.de/fhir/sid/EmigaAnnotationId",
-      "value": "ANNO-TestID-441557618"
+      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+      "value": "Annotation-DEFG-123456789"
     },
     {
-      "system": "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId",
-      "value": "SURVNET-TestID-441557618"
-    }
-  ],
-  "category": [
+      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+      "value": "AnnotationABCD-987654321"
+    },
     {
-      "coding": [
-        {
-          "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
-          "code": "comment",
-          "display": "Kommentar"
-        },
-        {
-          "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal",
-          "code": "message",
-          "display": "Nachricht"
-        }
-      ]
+      "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
+      "value": "Annotation-SURVNET-987654321"
     }
   ],
   "topic": {

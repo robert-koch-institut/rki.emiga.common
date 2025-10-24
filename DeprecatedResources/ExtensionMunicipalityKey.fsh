@@ -7,6 +7,7 @@ Context: Element
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/Extension/MunicipalityKey"
 * ^version = "0.1.0"
+* url = "https://emiga.rki.de/fhir/common/Extension/MunicipalityKey" (exactly)
 * value[x] only Coding
 * valueCoding 1..1 MS
 * valueCoding.system 1..1 MS

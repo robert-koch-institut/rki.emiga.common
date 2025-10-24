@@ -4,15 +4,15 @@ Title: "Bearbeitungsstatus"
 Description: "TODO"
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
-* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"
-* ^version = "0.1.0"
-* ^date = "2025-02-10"
+//* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"
+* ^version = "0.2.0"
+* ^date = "2025-09-11"
 * ^caseSensitive = true
 * ^content = #complete
 
-* #inprogress "in Bearbeitung" "Der Vorgang ist in Bearbeitung."
-* #closed "abgeschlossen" "Der Vorgang ist abgeschlossen."
-* #cancelled "verworfen" "Der Vorgang ist verworfen."
+* #inprogress "in Bearbeitung" "Der Vorgang oder die betroffene Person ist in Bearbeitung."
+* #closed "abgeschlossen" "Der Vorgang oder die betroffene Person ist abgeschlossen."
+* #cancelled "verworfen" "Der Vorgang oder die betroffene Person ist verworfen."
 * #handedover "abgegeben" "Der Vorgang wurde wurde an ein anderes GA abgegeben."
 * #inhandover "in Übergabe" "Das GA hat den Vorgang zur Übernahme abgegeben."
 * #intakeover "in Übernahme" "Das GA nimmt den Vorgang vom anderen GA an."

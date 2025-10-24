@@ -2,52 +2,15 @@
   "resourceType": "StructureDefinition",
   "id": "AttachmentDocumentReference",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "AttachmentDocumentReference",
   "title": "Anhang-Entität",
   "status": "active",
   "experimental": false,
-  "date": "2025-07-31",
+  "date": "2025-09-05",
   "publisher": "Robert Koch-Institut",
   "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "fhircomposition",
-      "uri": "http://hl7.org/fhir/composition",
-      "name": "FHIR Composition"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "cda",
-      "uri": "http://hl7.org/v3/cda",
-      "name": "CDA (R2)"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "xds",
-      "uri": "http://ihe.net/xds",
-      "name": "XDS metadata equivalent"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "DocumentReference",
@@ -79,7 +42,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.8"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.9"
       },
       {
         "id": "DocumentReference.meta.security",
@@ -106,7 +69,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType"
         }
       },
       {
@@ -148,6 +111,48 @@
         "mustSupport": true
       },
       {
+        "id": "DocumentReference.meta.tag",
+        "path": "DocumentReference.meta.tag",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.meta.tag:personalInformation",
+        "path": "DocumentReference.meta.tag",
+        "sliceName": "personalInformation",
+        "short": "Kennzeichnung von personenbezogenen Daten",
+        "definition": "Kennzeichnung von personenbezogenen Daten",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation"
+        }
+      },
+      {
+        "id": "DocumentReference.meta.tag:personalInformation.system",
+        "path": "DocumentReference.meta.tag.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.meta.tag:personalInformation.code",
+        "path": "DocumentReference.meta.tag.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "DocumentReference.implicitRules",
         "path": "DocumentReference.implicitRules",
         "max": "0"
@@ -178,53 +183,82 @@
             }
           ],
           "rules": "open",
-          "description": "slicing organization identifier by system",
+          "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "short": "TODO",
-        "definition": "TODO",
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:EmigaID",
+        "path": "DocumentReference.identifier",
+        "sliceName": "EmigaID",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DocumentReference.identifier:emigaAttachmentId",
-        "path": "DocumentReference.identifier",
-        "sliceName": "emigaAttachmentId",
-        "short": "EMIGA Anhang-ID",
-        "definition": "EMIGA Anhang-ID ist ein eindeutiger technische Identifier für EMIGA Anhänge.",
-        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAttachmentId"
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaID"
             ]
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "DocumentReference.identifier:emigaAttachmentFileNumber",
+        "id": "DocumentReference.identifier:EmigaID.use",
+        "path": "DocumentReference.identifier.use",
+        "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:EmigaFileNumber",
         "path": "DocumentReference.identifier",
-        "sliceName": "emigaAttachmentFileNumber",
-        "short": "EMIGA Anhang-Aktenzeichen",
-        "definition": "EMIGA Anhang-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Anhänge.",
+        "sliceName": "EmigaFileNumber",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaFileNumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:EmigaFileNumber.use",
+        "path": "DocumentReference.identifier.use",
+        "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:SurvNetFileNumber",
+        "path": "DocumentReference.identifier",
+        "sliceName": "SurvNetFileNumber",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Identifier",
             "profile": [
-              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaAttachmentFileNumber"
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetFileNumber"
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.identifier:SurvNetFileNumber.use",
+        "path": "DocumentReference.identifier.use",
+        "fixedCode": "temp",
         "mustSupport": true
       },
       {
         "id": "DocumentReference.status",
         "path": "DocumentReference.status",
+        "comment": "Derzeit für Emiga Anwendungsfälle nur 'current' relevant.",
         "fixedCode": "current",
         "mustSupport": true
       },
@@ -278,11 +312,13 @@
       {
         "id": "DocumentReference.authenticator",
         "path": "DocumentReference.authenticator",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
         "id": "DocumentReference.custodian",
         "path": "DocumentReference.custodian",
+        "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
       },
       {
@@ -332,6 +368,7 @@
       {
         "id": "DocumentReference.content:reference.attachment.url",
         "path": "DocumentReference.content.attachment.url",
+        "short": "URI",
         "definition": "URI des Eintrags.",
         "min": 1,
         "mustSupport": true
@@ -353,13 +390,15 @@
       {
         "id": "DocumentReference.content:reference.attachment.title",
         "path": "DocumentReference.content.attachment.title",
-        "definition": "Name des referenzierten Dokumentes.",
+        "short": "Titel",
+        "definition": "Title des referenzierten Dokumentes.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "DocumentReference.content:reference.attachment.creation",
         "path": "DocumentReference.content.attachment.creation",
+        "short": "Zeitpunkt der Erstellung des Dokumentes",
         "definition": "Hier wird der Zeitpunkt der Erstellung des referenzierten Dokumentes angegeben.",
         "mustSupport": true
       },
@@ -392,6 +431,7 @@
       {
         "id": "DocumentReference.content:attachment.attachment.data",
         "path": "DocumentReference.content.attachment.data",
+        "short": "Datei",
         "definition": "Hier wird das Dokument als Datei angehängt.",
         "min": 1,
         "mustSupport": true

@@ -2,42 +2,15 @@
   "resourceType": "StructureDefinition",
   "id": "AdditionalPropertiesQuestionnaire",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "AdditionalPropertiesQuestionnaire",
   "title": "Zusätzliche Eigenschaften",
   "status": "active",
   "experimental": false,
-  "date": "2025-07-04",
+  "date": "2025-09-22",
   "publisher": "Robert Koch-Institut",
   "description": "TODO",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "objimpl",
-      "uri": "http://hl7.org/fhir/object-implementation",
-      "name": "Object Implementation Information"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Questionnaire",
@@ -69,7 +42,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.8"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.9"
       },
       {
         "id": "Questionnaire.meta.security",
@@ -96,7 +69,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType"
         }
       },
       {
@@ -156,6 +129,89 @@
         "id": "Questionnaire.modifierExtension",
         "path": "Questionnaire.modifierExtension",
         "max": "0"
+      },
+      {
+        "id": "Questionnaire.identifier",
+        "path": "Questionnaire.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "slicing patient identifier by system",
+          "ordered": false
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:EmigaID",
+        "path": "Questionnaire.identifier",
+        "sliceName": "EmigaID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaID"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:EmigaID.use",
+        "path": "Questionnaire.identifier.use",
+        "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:EmigaFileNumber",
+        "path": "Questionnaire.identifier",
+        "sliceName": "EmigaFileNumber",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaFileNumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:EmigaFileNumber.use",
+        "path": "Questionnaire.identifier.use",
+        "fixedCode": "official",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:SurvNetFileNumber",
+        "path": "Questionnaire.identifier",
+        "sliceName": "SurvNetFileNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNetFileNumber"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.identifier:SurvNetFileNumber.use",
+        "path": "Questionnaire.identifier.use",
+        "fixedCode": "temp",
+        "mustSupport": true
       },
       {
         "id": "Questionnaire.item",

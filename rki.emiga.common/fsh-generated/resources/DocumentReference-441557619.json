@@ -3,7 +3,7 @@
   "id": "441557619",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.8"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.9"
     ],
     "security": [
       {
@@ -12,14 +12,29 @@
       },
       {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
-        "code": "public"
+        "code": "transferable"
+      }
+    ],
+    "tag": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+        "code": "ContainsPersonalInformation",
+        "display": "Enthält Personenbezogene Daten"
       }
     ]
   },
   "identifier": [
     {
-      "system": "https://emiga.rki.de/fhir/sid/EmigaAttachmentId",
-      "value": "ATTACH-TestID-441557619"
+      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+      "value": "Anhang-DEFG-123456789"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+      "value": "Anhang-ABCD-987654321"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
+      "value": "Anhang-SURVNET-987654321"
     }
   ],
   "author": [

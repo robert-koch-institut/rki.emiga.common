@@ -13,7 +13,7 @@ Description: "TODO"
 * insert ProfileSecurityTags
 //* insert ProfileMetaTags
 * insert ProfileMetaProfileTags
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.8"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.9"
 
 // 'Additional content defined by implementations' - 0..* - Extension
 // Wird für die EMIGA Anwendungsfälle derzeit nicht benötigt.
@@ -97,8 +97,9 @@ Der entsprechende Eintrag muss gepflegt werden, um eindeutig feststellen zu kön
 * communication 0..0
 
 
-
+/*
 Invariant: validString
 Description: "Zeichenlänge maximal 255 Zeichen"
 * severity = #error
 * expression = "$this.matches('^.{1,255}$')"
+*/
