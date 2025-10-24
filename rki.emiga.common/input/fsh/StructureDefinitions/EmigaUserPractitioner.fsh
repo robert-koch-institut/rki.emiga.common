@@ -1,7 +1,7 @@
 Profile: EmigaUserPractitioner
 Parent: Practitioner
 Id: EmigaUserPractitioner
-Title: "Emiga Nutzende Person"
+Title: "EMIGA Nutzende Person"
 Description: "TODO"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
 * ^version = "0.2.0"

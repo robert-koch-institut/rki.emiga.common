@@ -1,7 +1,7 @@
 CodeSystem: Relevance
 Id: Relevance
 Title: "Relevanz"
-Description: "Die Kodiersystematik Relevance definiert Konzepte, die die für verschiedene Emiga Use Cases relevanten Ressourcen kennzeichnen."
+Description: "Die Kodiersystematik Relevance definiert Konzepte, die die für verschiedene EMIGA Use Cases relevanten Ressourcen kennzeichnen."
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/Relevance"
 * insert MetadataTerminology
 * ^version = "1.2.0"

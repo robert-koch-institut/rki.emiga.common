@@ -35,21 +35,21 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * identifier[emigaAttachmentFileNumber] ^definition = "EMIGA Anhang-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Anhänge."
 * identifier[emigaAttachmentId] ^short = "EMIGA Anhang-ID"
 * identifier[emigaAttachmentId] ^definition = "EMIGA Anhang-ID ist ein eindeutiger technische Identifier für EMIGA Anhänge."
-// Derzeit für Emiga Anwendungsfälle nicht relevant
+// Derzeit für EMIGA Anwendungsfälle nicht relevant
 * docStatus 0..0
-* docStatus ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant."
+* docStatus ^comment = "Derzeit für EMIGA Anwendungsfälle nicht relevant."
 
-// Derzeit für Emiga Anwendungsfälle nicht relevant
+// Derzeit für EMIGA Anwendungsfälle nicht relevant
 * type 0..0
-* type ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant."
+* type ^comment = "Derzeit für EMIGA Anwendungsfälle nicht relevant."
 
-// Derzeit für Emiga Anwendungsfälle nicht relevant
+// Derzeit für EMIGA Anwendungsfälle nicht relevant
 * category 0..0 
-* category ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant."
+* category ^comment = "Derzeit für EMIGA Anwendungsfälle nicht relevant."
 
-// Derzeit für Emiga Anwendungsfälle nicht relevant
+// Derzeit für EMIGA Anwendungsfälle nicht relevant
 * subject 0..0
-* subject ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant."
+* subject ^comment = "Derzeit für EMIGA Anwendungsfälle nicht relevant."
 
 
 * date 0..1 MS
@@ -60,7 +60,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * author only Reference(EmigaUserPractitioner)
 * author ^short = "Erstellende Person der Anhang, nicht der Erstellende des Dokuments"
 * author ^definition = "Hier wird die Person angegeben, die den Anhang erstellt hat.\\nDies ist nicht die Person, die das Dokument erstellt hat, sondern die Person, die den Anhang erstellt hat."
-// Derzeit für Emiga Anwendungsfälle nicht relevant
+// Derzeit für EMIGA Anwendungsfälle nicht relevant
 * authenticator 0..0
 
 

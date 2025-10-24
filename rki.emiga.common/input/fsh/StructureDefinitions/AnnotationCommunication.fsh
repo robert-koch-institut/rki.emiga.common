@@ -32,7 +32,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * meta.tag[personalInformation] ^definition = "Kennzeichnung von personenbezogenen Daten"
 * meta.tag[personalInformation] ^short = "Kennzeichnung von personenbezogenen Daten"
 
-// Derzeit für Emiga Anwendungsfälle nicht relevant
+// Derzeit für EMIGA Anwendungsfälle nicht relevant
 * language 0..0
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
@@ -59,20 +59,20 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * identifier[survnetAnnotationId] ^short = "SurvNet Annotation-ID"
 * identifier[survnetAnnotationId] ^definition = "SurvNet Annotation-ID ist ein fachlicher Identifier für SurvNet Annotationen."
 //* identifier only IdentifierAnn
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * instantiatesUri 0..0
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * basedOn 0..0
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * partOf 0..0
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * inResponseTo 0..0
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * status 1..1 MS
 * status = #completed (exactly)
-// Derzeit für Emiga Anwendungsfälle nicht relevant
+// Derzeit für EMIGA Anwendungsfälle nicht relevant
 * statusReason 0..0
 * extension 1.. MS
 * extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 1..1 MS
@@ -138,11 +138,11 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 //* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
 //* category.text
 //* category.text ^short = "Schlagwort-Inhalt"
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * priority 0..0
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * medium 0..0
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * subject 0..0
 * subject ^comment = "Subject der Annotation ist ein andere Entität, es wird über about referenziert"
 //Betreff
@@ -157,7 +157,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * about 0..* MS
 * about ^short = "Bezugsentität"
 * about ^definition = "Referenz zur Bezugsentität"
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * encounter 0..0
 //Erstellungsdatum
 * sent 0..1 MS
@@ -172,11 +172,11 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * sender only Reference(EmigaUserPractitioner)
 * sender ^definition = "Erstellende Person der Annotation"
 * sender ^short = "Erstellende Person"
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * reasonCode 0..0
-* reasonCode ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+* reasonCode ^comment = "Derzeit für EMIGA Anwendungsfälle nicht relevant"
 
-//Derzeit für Emiga Anwendungsfälle nicht relevant
+//Derzeit für EMIGA Anwendungsfälle nicht relevant
 * reasonReference 0..0 
 * payload 1..* MS
 * payload ^short = "Inhalt"
