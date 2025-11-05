@@ -24,7 +24,7 @@
   "dependsOn": [
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.4.0",
+      "version": "1.4.0-snapshots",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
@@ -393,6 +393,14 @@
         },
         "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
         "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AffectedPersonBundle"
+        },
+        "name": "Person Bundle",
+        "description": "TO DO",
         "exampleBoolean": false
       },
       {

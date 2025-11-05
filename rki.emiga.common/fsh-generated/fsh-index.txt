@@ -29,6 +29,7 @@ RelatedPerson-4551.json                                             4551        
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire     Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 20
 StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json  OutbreakQuestionnaireResponseCommon   Profile     StructureDefinitions\AdditionalPropertiesQuestionnaireResponse.fsh  1 - 46
 StructureDefinition-AffectedPerson.json                             AffectedPerson                        Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 342
+StructureDefinition-AffectedPersonBundle.json                       AffectedPersonBundle                  Profile     StructureDefinitions\AffectedPersonBundle.fsh                       1 - 28
 StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson           Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 26
 StructureDefinition-AnnotationBundle.json                           AnnotationBundle                      Profile     StructureDefinitions\AnnotationBundle.fsh                           1 - 25
 StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication               Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 211
