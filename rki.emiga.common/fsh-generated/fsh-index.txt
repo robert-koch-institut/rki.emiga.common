@@ -43,7 +43,6 @@ StructureDefinition-IdentifierEmigaID.json                          IdentifierEm
 StructureDefinition-IdentifierSurvNetFileNumber.json                IdentifierSurvNetFileNumber           Profile     StructureDefinitions\IdentifierSurvNetFileNumber.fsh                1 - 19
 StructureDefinition-LandOfBirth.json                                LandOfBirth                           Extension   Extensions\ExtensionLandOfBirth.fsh                                 1 - 23
 StructureDefinition-NullFlavor.json                                 NullFlavor                            Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
-StructureDefinition-PersonBundle.json                               PersonBundle                          Profile     StructureDefinitions\PersonBundle.fsh                               1 - 28
 StructureDefinition-PersonenTransactionBundle.json                  PersonenTransactionBundle             Profile     StructureDefinitions\PersonenTransactionBundle.fsh                  1 - 39
 StructureDefinition-PersonenTransactionResponse.json                PersonenTransactionResponse           Profile     StructureDefinitions\PersonenTransactionResponseBundle.fsh          1 - 35
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                      Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 20
