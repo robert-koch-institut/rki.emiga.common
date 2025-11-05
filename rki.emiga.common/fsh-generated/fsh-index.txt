@@ -8,7 +8,7 @@ CodeSystem-FacilityAssociationType.json                             FacilityAsso
 CodeSystem-PersonalInformation.json                                 PersonalInformation                   CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 14
 CodeSystem-ProcessingStatus.json                                    ProcessingStatus                      CodeSystem  CodeSystem\ProcessingStatus.fsh                                     1 - 19
 CodeSystem-RegionKeys.json                                          RegionKeys                            CodeSystem  CodeSystem\RegionKeys.fsh                                           1 - 11250
-CodeSystem-RelatedPersonRelationshipType.json                       RelatedPersonRelationshipType         CodeSystem  CodeSystem\RelatedPersonRelationshipType.fsh                        1 - 16
+CodeSystem-RelatedPersonRelationshipType.json                       RelatedPersonRelationshipType         CodeSystem  CodeSystem\RelatedPersonRelationshipType.fsh                        1 - 17
 CodeSystem-Relevance.json                                           Relevance                             CodeSystem  CodeSystem\Relevance.fsh                                            1 - 15
 CodeSystem-ResourceResponsibility.json                              ResourceResponsibility                CodeSystem  CodeSystem\ResourceResponsibility.fsh                               1 - 416
 CodeSystem-ResourceVisibilityType.json                              ResourceVisibilityType                CodeSystem  CodeSystem\ResourceVisibilityType.fsh                               1 - 40
@@ -25,7 +25,7 @@ Patient-AffectedPerson-4551.json                                    AffectedPers
 Practitioner-5d4b8483-0a7d-471e-b1df-26addf06ff1c.json              5d4b8483-0a7d-471e-b1df-26addf06ff1c  Instance    Examples\BundleTransactionCreate.fsh                                74 - 81
 Questionnaire-FillingNote.json                                      FillingNote                           Instance    Questionnaire\FilingNote.fsh                                        1 - 30
 QuestionnaireResponse-FillingNoteResponse.json                      FillingNoteResponse                   Instance    Examples\FillingNoteResponse.fsh                                    1 - 19
-RelatedPerson-4551.json                                             4551                                  Instance    Examples\RelatedPerson-4551.fsh                                     1 - 26
+RelatedPerson-4551.json                                             4551                                  Instance    Examples\RelatedPerson-4551.fsh                                     1 - 30
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire     Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 20
 StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json  OutbreakQuestionnaireResponseCommon   Profile     StructureDefinitions\AdditionalPropertiesQuestionnaireResponse.fsh  1 - 46
 StructureDefinition-AffectedPerson.json                             AffectedPerson                        Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 342
@@ -42,6 +42,7 @@ StructureDefinition-IdentifierEmigaID.json                          IdentifierEm
 StructureDefinition-IdentifierSurvNetFileNumber.json                IdentifierSurvNetFileNumber           Profile     StructureDefinitions\IdentifierSurvNetFileNumber.fsh                1 - 19
 StructureDefinition-LandOfBirth.json                                LandOfBirth                           Extension   Extensions\ExtensionLandOfBirth.fsh                                 1 - 23
 StructureDefinition-NullFlavor.json                                 NullFlavor                            Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
+StructureDefinition-PersonBundle.json                               PersonBundle                          Profile     StructureDefinitions\PersonBundle.fsh                               1 - 28
 StructureDefinition-PersonenTransactionBundle.json                  PersonenTransactionBundle             Profile     StructureDefinitions\PersonenTransactionBundle.fsh                  1 - 39
 StructureDefinition-PersonenTransactionResponse.json                PersonenTransactionResponse           Profile     StructureDefinitions\PersonenTransactionResponseBundle.fsh          1 - 35
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                      Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 20
@@ -58,7 +59,7 @@ ValueSet-PersonalInformation.json                                   PersonalInfo
 ValueSet-ProcessingStatusAffectedPersonVS.json                      ProcessingStatusAffectedPersonVS      ValueSet    ValueSets\ProcessingStatusAffectedPersonVS.fsh                      1 - 13
 ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                    ValueSet    CodeSystem\ProcessingStatus.fsh                                     21 - 29
 ValueSet-RegionKeys.json                                            RegionKeys                            ValueSet    ValueSets\RegionKeys.fsh                                            1 - 22
-ValueSet-RelatedPersonRelationshipTypeVS.json                       RelatedPersonRelationshipTypeVS       ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        19 - 27
+ValueSet-RelatedPersonRelationshipTypeVS.json                       RelatedPersonRelationshipTypeVS       ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        20 - 28
 ValueSet-Relevance.json                                             Relevance                             ValueSet    CodeSystem\Relevance.fsh                                            17 - 25
 ValueSet-ResourceResponsibility.json                                ResourceResponsibility                ValueSet    CodeSystem\ResourceResponsibility.fsh                               419 - 426
 ValueSet-ResourceVisibilityType.json                                ResourceVisibilityType                ValueSet    CodeSystem\ResourceVisibilityType.fsh                               44 - 55
