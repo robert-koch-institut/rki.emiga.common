@@ -397,7 +397,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/PersonBundle"
+          "reference": "StructureDefinition/AffectedPersonBundle"
         },
         "name": "Person Bundle",
         "description": "TO DO",
