@@ -24,3 +24,7 @@ Usage: #example
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * relationship[0].coding.code = #legalGuardian
 * relationship[0].coding.display = "Sorgeberechtigte Person"
+
+* relationship[1].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
+* relationship[1].coding.code = #linkedPerson
+* relationship[1].coding.display = "verknüpfte Person"
