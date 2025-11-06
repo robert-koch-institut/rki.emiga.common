@@ -6,7 +6,7 @@ Bundle-TransactionBundleCreatePerson.json                           TransactionB
 CodeSystem-ConceptDesignationUse.json                               ConceptDesignationUse                 CodeSystem  CodeSystem\ConceptDesignationUse.fsh                                1 - 14
 CodeSystem-FacilityAssociationType.json                             FacilityAssociationType               CodeSystem  CodeSystem\FacilityAssociationType.fsh                              1 - 22
 CodeSystem-PersonalInformation.json                                 PersonalInformation                   CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 14
-CodeSystem-ProcessingStatus.json                                    ProcessingStatus                      CodeSystem  CodeSystem\ProcessingStatus.fsh                                     1 - 19
+CodeSystem-ProcessingStatus.json                                    ProcessingStatus                      CodeSystem  CodeSystem\ProcessingStatus.fsh                                     1 - 22
 CodeSystem-RegionKeys.json                                          RegionKeys                            CodeSystem  CodeSystem\RegionKeys.fsh                                           1 - 11250
 CodeSystem-RelatedPersonRelationshipType.json                       RelatedPersonRelationshipType         CodeSystem  CodeSystem\RelatedPersonRelationshipType.fsh                        1 - 17
 CodeSystem-Relevance.json                                           Relevance                             CodeSystem  CodeSystem\Relevance.fsh                                            1 - 15
@@ -56,8 +56,9 @@ ValueSet-CountryCodes.json                                          CountryCodes
 ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS             ValueSet    CodeSystem\FacilityAssociationType.fsh                              24 - 44
 ValueSet-NullFlavor.json                                            NullFlavor                            ValueSet    ValueSets\NullFlavor.fsh                                            1 - 19
 ValueSet-PersonalInformation.json                                   PersonalInformation                   ValueSet    CodeSystem\PersonalInformation.fsh                                  16 - 24
-ValueSet-ProcessingStatusAffectedPersonVS.json                      ProcessingStatusAffectedPersonVS      ValueSet    ValueSets\ProcessingStatusAffectedPersonVS.fsh                      1 - 13
-ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                    ValueSet    CodeSystem\ProcessingStatus.fsh                                     21 - 29
+ValueSet-ProcessingStatusAffectedPerson.json                        ProcessingStatusAffectedPerson        ValueSet    ValueSets\ProcessingStatusAffectedPersonVS.fsh                      1 - 13
+ValueSet-ProcessingStatusAnnotation.json                            ProcessingStatusAnnotation            ValueSet    ValueSets\ProcessingStatusAnnotation.fsh                            1 - 16
+ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                    ValueSet    CodeSystem\ProcessingStatus.fsh                                     24 - 32
 ValueSet-RegionKeys.json                                            RegionKeys                            ValueSet    ValueSets\RegionKeys.fsh                                            1 - 22
 ValueSet-RelatedPersonRelationshipTypeVS.json                       RelatedPersonRelationshipTypeVS       ValueSet    CodeSystem\RelatedPersonRelationshipType.fsh                        20 - 28
 ValueSet-Relevance.json                                             Relevance                             ValueSet    CodeSystem\Relevance.fsh                                            17 - 25

@@ -5,9 +5,14 @@
   "name": "ProcessingStatus",
   "id": "ProcessingStatus",
   "title": "Bearbeitungsstatus",
-  "description": "TODO",
+  "description": "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person.",
   "url": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
   "concept": [
+    {
+      "code": "open",
+      "display": "offen",
+      "definition": "Der Vorgang ist offen und wurde noch nicht bearbeitet."
+    },
     {
       "code": "inprogress",
       "display": "in Bearbeitung",
@@ -42,6 +47,16 @@
       "code": "forinformation",
       "display": "zur Kenntnis",
       "definition": "Der Vorgang kann zur Kenntnis eingesehen werden."
+    },
+    {
+      "code": "finishedProcessing",
+      "display": "fertig bearbeitet",
+      "definition": "Der Vorgang wurde vollständig bearbeitet."
+    },
+    {
+      "code": "noFurtherProcessing",
+      "display": "keine weitere Bearbeitung notwendig",
+      "definition": "Für den Vorgang ist keine weitere Bearbeitung notwendig."
     }
   ],
   "language": "de-DE",
@@ -58,8 +73,8 @@
       ]
     }
   ],
-  "version": "0.2.0",
-  "date": "2025-09-11",
+  "version": "0.3.0",
+  "date": "2025-11-06",
   "caseSensitive": true,
-  "count": 7
+  "count": 10
 }

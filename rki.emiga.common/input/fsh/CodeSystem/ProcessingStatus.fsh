@@ -1,15 +1,16 @@
 CodeSystem: ProcessingStatus
 Id: ProcessingStatus
 Title: "Bearbeitungsstatus"
-Description: "TODO"
+Description: "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person."
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 //* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"
-* ^version = "0.2.0"
-* ^date = "2025-09-11"
+* ^version = "0.3.0"
+* ^date = "2025-11-06"
 * ^caseSensitive = true
 * ^content = #complete
 
+* #open "offen" "Der Vorgang ist offen und wurde noch nicht bearbeitet."
 * #inprogress "in Bearbeitung" "Der Vorgang oder die betroffene Person ist in Bearbeitung."
 * #closed "abgeschlossen" "Der Vorgang oder die betroffene Person ist abgeschlossen."
 * #cancelled "verworfen" "Der Vorgang oder die betroffene Person ist verworfen."
@@ -17,6 +18,8 @@ Description: "TODO"
 * #inhandover "in Übergabe" "Das GA hat den Vorgang zur Übernahme abgegeben."
 * #intakeover "in Übernahme" "Das GA nimmt den Vorgang vom anderen GA an."
 * #forinformation "zur Kenntnis" "Der Vorgang kann zur Kenntnis eingesehen werden."
+* #finishedProcessing "fertig bearbeitet" "Der Vorgang wurde vollständig bearbeitet."
+* #noFurtherProcessing "keine weitere Bearbeitung notwendig" "Für den Vorgang ist keine weitere Bearbeitung notwendig."
 
 ValueSet: ProcessingStatusVS
 Id: ProcessingStatusVS
