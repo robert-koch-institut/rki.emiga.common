@@ -11,6 +11,10 @@ Alias: $EmigaAnnotationFileNumber = https://emiga.rki.de/fhir/sid/EmigaAnnotatio
 Alias: $SurvNetAnnotationFileNumber = https://emiga.rki.de/fhir/sid/SurvNetAnnotationFileNumber
 Alias: $EmigaAttachmentFileNumber = https://emiga.rki.de/fhir/sid/EmigaAttachmentFileNumber
 
+Alias: $ProcessingStatusAnnotation = https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation
+
+Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
+
 Alias: $EmigaAnnotationId = https://emiga.rki.de/fhir/sid/EmigaAnnotationId
 Alias: $EmigaAttachmentId = https://emiga.rki.de/fhir/sid/EmigaAttachmentId
 Alias: $SurvNetAnnotationId = https://emiga.rki.de/fhir/sid/SurvNetAnnotationId

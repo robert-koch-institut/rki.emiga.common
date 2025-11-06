@@ -53,7 +53,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation",
           "description": "Bearbeitungsstatus"
         }
       },

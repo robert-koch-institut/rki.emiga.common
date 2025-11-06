@@ -178,7 +178,15 @@
           "reference": "CodeSystem/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
-        "description": "TODO",
+        "description": "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ProcessingStatusAnnotation"
+        },
+        "name": "Bearbeitungsstatus Annotation",
+        "description": "Werteliste mit möglichen Bearbeitungsstatus für Annotationen.",
         "exampleBoolean": false
       },
       {
@@ -191,7 +199,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ProcessingStatusAffectedPersonVS"
+          "reference": "ValueSet/ProcessingStatusAffectedPerson"
         },
         "name": "Bearbeitungsstatus betroffene Person",
         "description": "Werteliste mit möglichen Bearbeitungsstatus einer betroffenen Person.",
