@@ -15,7 +15,7 @@ Description: "TODO"
 * insert ProfileSecurityTags
 
 * insert IdentifierCommon
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.9"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.10"
 
 * patient MS
 * patient ^short = "Die betroffene Person, zu der die Bezugsperson in Beziehung steht."

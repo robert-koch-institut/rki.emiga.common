@@ -4,7 +4,7 @@ Title: "Beispiel Bezugsperson der betroffenen Person"
 Description: "Ein Beispielinstanz einer Bezugsperson-Ressource. "
 Usage: #example
 * id = "4551"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.9"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.10"
 
 * meta.security[visibility] = $ResourceVisibilityType#internal
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
