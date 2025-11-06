@@ -10,7 +10,7 @@ Context: Element
 * url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus" (exactly)
 * value[x] 1.. MS
 * value[x] only Coding
-* value[x] from ProcessingStatusVS (required)
+* value[x] from ProcessingStatusAnnotation (required)
 * value[x] ^short = "Bearbeitungsstatus"
 * value[x] ^definition = "Bearbeitungsstatus des Vorgangs"
 * value[x] ^binding.description = "Bearbeitungsstatus"

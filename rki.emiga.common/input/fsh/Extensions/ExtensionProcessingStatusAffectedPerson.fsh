@@ -10,7 +10,7 @@ Context: Patient
 * url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson" (exactly)
 * value[x] 1.. MS
 * value[x] only Coding
-* value[x] from ProcessingStatusAffectedPersonVS (required)
+* value[x] from ProcessingStatusAffectedPerson (required)
 * value[x] ^short = "Bearbeitungsstatus der betroffenen Person"
 * value[x] ^definition = "Bearbeitungsstatus der betroffenen Person"
 * value[x] ^binding.description = "Bearbeitungsstatus der betroffenen Person"

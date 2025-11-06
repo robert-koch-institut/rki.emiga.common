@@ -1,16 +1,19 @@
-Profile: AnnotationBundle
+Profile: AffectedPersonBundle
 Parent: Bundle
-Id: AnnotationBundle
-Title: "Annotations Bundle"
+Id: AffectedPersonBundle
+Title: "Person Bundle"
 Description: "TO DO"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 
-* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
-* ^version = "0.3.0"
-* ^date = "2025-10-23"
+* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonBundle"
+* ^version = "0.1.0"
+* ^date = "2025-11-05"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.10"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonBundle|1.2.0-alpha.10"
+* meta.versionId MS
+* meta.versionId ^short = "Version der Instanz der Ressource"
+
 //* type = #collection (exactly)
 * type 1..1 MS
 * type ^short = "Typ des Bundles"

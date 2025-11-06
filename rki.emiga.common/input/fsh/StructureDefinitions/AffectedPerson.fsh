@@ -18,7 +18,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 
 * meta MS
 * meta.profile 1.. MS
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.9" 
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.10" 
 * extension MS
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
