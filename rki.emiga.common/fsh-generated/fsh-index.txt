@@ -1,8 +1,8 @@
 Output File                                                         Name                                  Type        FSH File                                                            Lines
 Bundle-BatchReadCommunicationPractitioner.json                      BatchReadCommunicationPractitioner    Instance    Examples\BundleBatchRead.fsh                                        1 - 16
 Bundle-CollectionBundle2.json                                       CollectionBundle2                     Instance    Examples\BundleCollection.fsh                                       10 - 21
+Bundle-PersonBundle.json                                            PersonBundle                          Instance    Examples\PersonBundle.fsh                                           1 - 12
 Bundle-TransactionBundle.json                                       TransactionBundle                     Instance    Examples\BundleTransactionCreate.fsh                                10 - 27
-Bundle-TransactionBundleCreatePerson.json                           TransactionBundleCreatePerson         Instance    Examples\BundleTransactionCreatePerson.fsh                          1 - 27
 CodeSystem-ConceptDesignationUse.json                               ConceptDesignationUse                 CodeSystem  CodeSystem\ConceptDesignationUse.fsh                                1 - 14
 CodeSystem-FacilityAssociationType.json                             FacilityAssociationType               CodeSystem  CodeSystem\FacilityAssociationType.fsh                              1 - 22
 CodeSystem-PersonalInformation.json                                 PersonalInformation                   CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 14
@@ -55,6 +55,7 @@ ValueSet-ConceptDesignationUse.json                                 ConceptDesig
 ValueSet-CountryCodes.json                                          CountryCodes                          ValueSet    ValueSets\CountryCodes.fsh                                          1 - 24
 ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS             ValueSet    CodeSystem\FacilityAssociationType.fsh                              24 - 44
 ValueSet-NullFlavor.json                                            NullFlavor                            ValueSet    ValueSets\NullFlavor.fsh                                            1 - 19
+ValueSet-PersonResourceVisibilityType.json                          PersonResourceVisibilityType          ValueSet    ValueSets\PersonResourceVisibilityType.fsh                          1 - 12
 ValueSet-PersonalInformation.json                                   PersonalInformation                   ValueSet    CodeSystem\PersonalInformation.fsh                                  16 - 24
 ValueSet-ProcessingStatusAffectedPerson.json                        ProcessingStatusAffectedPerson        ValueSet    ValueSets\ProcessingStatusAffectedPersonVS.fsh                      1 - 13
 ValueSet-ProcessingStatusAnnotation.json                            ProcessingStatusAnnotation            ValueSet    ValueSets\ProcessingStatusAnnotation.fsh                            1 - 16
