@@ -15,7 +15,7 @@ Description: "TODO"
 * insert ProfileMetaProfileTags
 //* insert IdentifierCommon
 //* insert ProfileMetaTags
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.10"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.11"
 
 * questionnaire 1..1 MS
 //* questionnaire = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire"

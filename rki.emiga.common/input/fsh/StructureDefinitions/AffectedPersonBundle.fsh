@@ -6,11 +6,11 @@ Description: "TO DO"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 
-* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonBundle"
+* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle"
 * ^version = "0.1.0"
 * ^date = "2025-11-05"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonBundle|1.2.0-alpha.10"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle|1.2.0-alpha.11"
 * meta.versionId MS
 * meta.versionId ^short = "Version der Instanz der Ressource"
 

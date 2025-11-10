@@ -12,10 +12,10 @@ Description: "TODO"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
-* insert ProfileSecurityTags
+* insert ProfileSecurityTagsPerson
 
 * insert IdentifierCommon
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.10"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.11"
 
 * patient MS
 * patient ^short = "Die betroffene Person, zu der die Bezugsperson in Beziehung steht."
