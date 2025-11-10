@@ -2,7 +2,7 @@ Instance: TransactionBundleCreatePerson
 InstanceOf: PersonenTransactionBundle
 Usage: #example
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.10"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.11"
 * identifier.system = "https://emiga.rki.de/fhir/common/sid/PersonenTransactionBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
 * type = #transaction
@@ -36,9 +36,11 @@ Title: "Beispiel Betroffene Person"
 Description: "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil."
 Usage: #inline
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.10"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.11"
 
-* meta.security[visibility] = $ResourceVisibilityType#internal
+* meta.security[visibility].system = $ResourceVisibilityType
+* meta.security[visibility].code = #inAgency 
+* meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
 
@@ -186,9 +188,11 @@ Description: "Ein Beispielinstanz einer Patient-Ressource basierend auf dem Affe
 Usage: #inline
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.10"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.11"
 
-* meta.security[visibility] = $ResourceVisibilityType#internal
+* meta.security[visibility].system = $ResourceVisibilityType
+* meta.security[visibility].code = #inAgency 
+* meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
 //* extension[citizenship].url = "https://emiga.rki.de/fhir/common/Extension/Citizenship"
@@ -309,9 +313,11 @@ Title: "Beispiel Bezugsperson der betroffenen Person"
 Description: "Ein Beispielinstanz einer Bezugsperson-Ressource. "
 Usage: #inline
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.10"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.11"
 
-* meta.security[visibility] = $ResourceVisibilityType#internal
+* meta.security[visibility].system = $ResourceVisibilityType
+* meta.security[visibility].code = #inAgency 
+* meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"

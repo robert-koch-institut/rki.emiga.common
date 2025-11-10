@@ -413,6 +413,13 @@
       },
       {
         "reference": {
+          "reference": "Bundle/PersonBundle"
+        },
+        "name": "Personen Bundle",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle"
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/PersonalInformation"
         },
         "name": "Personenbezug",
@@ -509,6 +516,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/PersonResourceVisibilityType"
+        },
+        "name": "Ressourcensichtbarkeit (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/SurvNetFileNumber"
         },
         "name": "SurvNet Aktenzeichen",
@@ -529,13 +544,6 @@
         },
         "name": "TransactionBundle",
         "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/TransactionBundleCreatePerson"
-        },
-        "name": "TransactionBundleCreatePerson",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle"
       },
       {
         "reference": {
