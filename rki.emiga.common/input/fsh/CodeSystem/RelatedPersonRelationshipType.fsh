@@ -5,16 +5,16 @@ Description: "Die Kodiersystematik 'RelatedPersonRelationship' definiert Konzept
 * insert MetadataTerminology
 
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
-* ^version = "1.3.0"
-* ^date = "2025-11-05"
+* ^version = "1.3.1"
+* ^date = "2025-11-10"
 * ^caseSensitive = true
 * ^content = #complete
 * ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipTypeVS"
 
 //* #legalGuardian "rechtlicher Betreuer" "Die betroffene Person hat einen rechtlichen Betreuer."
 //* #parentalAuthority "Erziehungsberechtigter" "Die betroffene Person hat einen Erziehungsberechtigten."
-* #legalGuardian "Sorgeberechtigte Person" "Die betroffene Person hat einen Sorgeberechtigten."
-* #linkedPerson "verknüpfte Person" "Die betroffene Person hat eine verknüpfte Person."
+* #legalGuardian "Sorgeberechtigte Person" "Person mit gesetzlichem Sorgerecht für eine andere Person"
+* #linkedPerson "verknüpfte Person" "Die betroffene Person ist eine verknüpfte Person."
 
 
 ValueSet: RelatedPersonRelationshipTypeVS
