@@ -1,11 +1,3 @@
-/*
-Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility
-Alias: $ResourceVisibilityType = https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType
-Alias: $PersonalInformation = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
-Alias: $ProcessingStatus = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
-Alias: $KeywordsLocal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal
-Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal
-*/
 
 Instance: TransactionBundle
 InstanceOf: Bundle
@@ -73,7 +65,7 @@ Usage: #example
 
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
 InstanceOf: Practitioner
-Usage: #example
+Usage: #inline
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.11"
 * meta.security[0] = $ResourceVisibilityType#internal
 * meta.security[+] = $ResourceResponsibility#1.
