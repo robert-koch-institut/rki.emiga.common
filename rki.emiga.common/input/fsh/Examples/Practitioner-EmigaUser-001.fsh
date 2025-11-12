@@ -5,7 +5,7 @@ Description: "Ein Beispielinstanz einer Practitioner-Ressource basierend auf dem
 Usage: #example
 * id = "EmigaUser-001"
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.11"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.12"
 * active = true
 * name.family = "Musterfrau"
 * name.given = "Erika"
