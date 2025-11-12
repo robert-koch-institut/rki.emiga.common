@@ -10,7 +10,7 @@ Description: "TODO"
 * insert MetadataProfile
 * insert ProfileResourceCommon
 * insert ProfileDomainResourceCommon
-* insert ProfileSecurityTags
+* insert ProfileSecurityTagsPerson
 //* insert ProfileMetaTags
 * insert ProfileMetaProfileTags
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.11"
