@@ -3,7 +3,7 @@ InstanceOf: AdditionalPropertiesQuestionnaire
 Usage: #definition
 * url = "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote"
 * version = "0.3.0"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.11"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.12"
 * name = "Ablagevermerk"
 * title = "Ablagevermerk"
 * status = #draft

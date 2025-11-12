@@ -15,6 +15,8 @@ Alias: $ProcessingStatusAnnotation = https://emiga.rki.de/fhir/common/ValueSet/P
 
 Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
 
+Alias: $LastModifiedBy = https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
+
 Alias: $EmigaAnnotationId = https://emiga.rki.de/fhir/sid/EmigaAnnotationId
 Alias: $EmigaAttachmentId = https://emiga.rki.de/fhir/sid/EmigaAttachmentId
 Alias: $SurvNetAnnotationId = https://emiga.rki.de/fhir/sid/SurvNetAnnotationId

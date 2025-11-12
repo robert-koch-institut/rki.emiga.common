@@ -4,9 +4,9 @@ Title: "Bearbeitungsstatus"
 Description: "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person."
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
-//* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"
-* ^version = "0.3.0"
-* ^date = "2025-11-06"
+* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"
+* ^version = "0.4.0"
+* ^date = "2025-11-12"
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -20,6 +20,7 @@ Description: "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs ode
 * #forinformation "zur Kenntnis" "Der Vorgang kann zur Kenntnis eingesehen werden."
 * #finishedProcessing "fertig bearbeitet" "Der Vorgang wurde vollständig bearbeitet."
 * #noFurtherProcessing "keine weitere Bearbeitung notwendig" "Für den Vorgang ist keine weitere Bearbeitung notwendig."
+* #started "begonnen" "Die Bearbeitung des Vorgangs wurde begonnen."
 
 ValueSet: ProcessingStatusVS
 Id: ProcessingStatusVS

@@ -57,6 +57,11 @@
       "code": "noFurtherProcessing",
       "display": "keine weitere Bearbeitung notwendig",
       "definition": "Für den Vorgang ist keine weitere Bearbeitung notwendig."
+    },
+    {
+      "code": "started",
+      "display": "begonnen",
+      "definition": "Die Bearbeitung des Vorgangs wurde begonnen."
     }
   ],
   "language": "de-DE",
@@ -73,8 +78,9 @@
       ]
     }
   ],
-  "version": "0.3.0",
-  "date": "2025-11-06",
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
+  "version": "0.4.0",
+  "date": "2025-11-12",
   "caseSensitive": true,
-  "count": 10
+  "count": 11
 }

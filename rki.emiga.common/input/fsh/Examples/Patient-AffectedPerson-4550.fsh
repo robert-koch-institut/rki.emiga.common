@@ -6,7 +6,9 @@ Usage: #example
 * id = "AffectedPerson-4550"
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.11"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.12"
+
+* meta.extension[lastModifiedBy].valueReference.reference = "Practitioner/EmigaUser-001"
 
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
@@ -45,8 +47,8 @@ Usage: #example
 * identifier[EmigaID].value = "Person-DEFG-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-ABCD-987654321"
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
-* identifier[SurvNetFileNumber].value = "SURVNET-Person-654321"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].value = "SURVNET-Person-654321"
 
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"

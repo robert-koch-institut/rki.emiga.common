@@ -13,7 +13,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.11"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.12"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS

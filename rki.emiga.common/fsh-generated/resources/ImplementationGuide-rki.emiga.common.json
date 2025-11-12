@@ -74,13 +74,6 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c"
-        },
-        "name": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/FillingNote"
         },
         "name": "Ablagevermerk",
@@ -148,14 +141,6 @@
         "name": "Anrede",
         "description": "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/BatchReadCommunicationPractitioner"
-        },
-        "name": "Batch Bundle: Read Communication and Practitioner",
-        "description": "A batch bundle to read Communication and Practitioner resources by id.",
-        "exampleBoolean": true
       },
       {
         "reference": {
@@ -231,6 +216,14 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/EmigaUser-001"
+        },
+        "name": "Beispiel EMIGA Nutzende Person",
+        "description": "Ein Beispielinstanz einer Practitioner-Ressource basierend auf dem EmigaUserPractitioner-Profil.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AffectedPerson"
         },
         "name": "Betroffene Person",
@@ -260,13 +253,6 @@
         "name": "Bezugsperson der betroffenen Person",
         "description": "TODO",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/CollectionBundle2"
-        },
-        "name": "CollectionBundle2",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
       },
       {
         "reference": {
@@ -413,13 +399,6 @@
       },
       {
         "reference": {
-          "reference": "Bundle/PersonBundle"
-        },
-        "name": "Personen Bundle",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle"
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/PersonalInformation"
         },
         "name": "Personenbezug",
@@ -547,6 +526,13 @@
       },
       {
         "reference": {
+          "reference": "Bundle/TransactionBundleCreatePerson"
+        },
+        "name": "TransactionBundleCreatePerson",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle"
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/FacilityAssociationType"
         },
         "name": "Verbindungs-Qualifikation",
@@ -559,6 +545,14 @@
         },
         "name": "Verbindungs-Qualifikation - Werteliste",
         "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/LastModifiedBy"
+        },
+        "name": "Zuletzt editiert von",
+        "description": "Extension um der letzten Nutzende Person zu referenzieren, die eine Ressource editiert hat.",
         "exampleBoolean": false
       },
       {
