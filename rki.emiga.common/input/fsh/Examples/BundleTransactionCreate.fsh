@@ -67,7 +67,7 @@ Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
 InstanceOf: Practitioner
 Usage: #inline
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.12"
-* meta.security[0] = $ResourceVisibilityType#internal
+* meta.security[0] = $ResourceVisibilityType#inAgency
 * meta.security[+] = $ResourceResponsibility#1.
 * identifier.value = "testuser@emiga.rki.de"
 * active = true

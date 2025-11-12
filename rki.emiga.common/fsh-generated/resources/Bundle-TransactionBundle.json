@@ -126,7 +126,7 @@
           ],
           "security": [
             {
-              "code": "internal",
+              "code": "inAgency",
               "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
             },
             {
