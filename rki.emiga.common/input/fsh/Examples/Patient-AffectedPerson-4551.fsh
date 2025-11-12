@@ -11,6 +11,8 @@ Usage: #example
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
+* meta.extension[lastModifiedBy].valueReference.reference = "Practitioner/EmigaUser-001"
+
 //* extension[citizenship].url = "https://emiga.rki.de/fhir/common/Extension/Citizenship"
 
 //* extension[citizenship].valueCoding.system = "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
@@ -43,8 +45,8 @@ Usage: #example
 * identifier[EmigaID].value = "Person-PQRST-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-XYZ-987654321"
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
-* identifier[SurvNetFileNumber].value = "SURVNET-Person-567890"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].value = "SURVNET-Person-567890"
 
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"

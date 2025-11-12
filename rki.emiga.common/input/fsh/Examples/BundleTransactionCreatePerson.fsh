@@ -8,23 +8,28 @@ Usage: #example
 * type = #transaction
 * timestamp = "2025-07-03T09:28:36.132+01:00"
 
-* entry[0].fullUrl = "urn:uuid:d8140036-d5b5-461a-9a6e-adfb8a87039c"
+* entry[0].fullUrl = "https://emiga.rki.de/fhir/common/Patient/AffectedPerson-Tochter-1"
 //* entry[0].fullUrl = "Patient/AffectedPerson-Tochter-1"
 * entry[0].resource = AffectedPerson-Tochter-1
 * entry[0].request.method = #POST
 * entry[0].request.url = "Patient"
 
-* entry[1].fullUrl = "urn:uuid:7faa8330-db99-4a0e-a61b-91a26ef4d8df"
+* entry[1].fullUrl = "https://emiga.rki.de/fhir/common/Patient/AffectedPerson-Mutter-1"
 //* entry[1].fullUrl = "Patient/AffectedPerson-Mutter-1"
 * entry[1].resource = AffectedPerson-Mutter-1
 * entry[1].request.method = #POST
 * entry[1].request.url = "Patient"
 
-* entry[2].fullUrl = "urn:uuid:2bc89b69-41f7-4037-8298-94dc6ac03479"
+* entry[2].fullUrl = "https://emiga.rki.de/fhir/common/RelatedPerson/RelatedPerson-Mutter-1"
 //* entry[2].fullUrl = "RelatedPerson/RelatedPerson-Mutter-1"
 * entry[2].resource = RelatedPerson-Mutter-1
 * entry[2].request.method = #POST
 * entry[2].request.url = "RelatedPerson"
+
+* entry[3].fullUrl = "https://emiga.rki.de/fhir/common/Practitioner/EmigaUser-005"
+* entry[3].resource = EmigaUser-005
+* entry[3].request.method = #POST
+* entry[3].request.url = "Practitioner"
 
 
 
@@ -43,7 +48,7 @@ Usage: #inline
 * meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
-
+* meta.extension[lastModifiedBy].valueReference.reference = "Practitioner/EmigaUser-005"
 
 //* extension[citizenship].url = "https://emiga.rki.de/fhir/common/Extension/Citizenship"
 
@@ -77,8 +82,8 @@ Usage: #inline
 * identifier[EmigaID].value = "Person-DEFG-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-ABCD-987654321"
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
-* identifier[SurvNetFileNumber].value = "SURVNET-ABC-654321"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].value = "SURVNET-ABC-654321"
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
 * name.extension[salutation].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/Salutation"
@@ -195,6 +200,7 @@ Usage: #inline
 * meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
+* meta.extension[lastModifiedBy].valueReference.reference = "Practitioner/EmigaUser-005"
 //* extension[citizenship].url = "https://emiga.rki.de/fhir/common/Extension/Citizenship"
 
 //* extension[citizenship].valueCoding.system = "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
@@ -227,8 +233,8 @@ Usage: #inline
 * identifier[EmigaID].value = "Person-PQRST-123456789"
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-XYZ-987654321"
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
-* identifier[SurvNetFileNumber].value = "SURVNET-ABC-123456"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].value = "SURVNET-ABC-123456"
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
 * name.extension[salutation].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/Salutation"
@@ -334,4 +340,22 @@ Usage: #inline
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * relationship[0].coding.code = #legalGuardian
 * relationship[0].coding.display = "Sorgeberechtigte Person"
+
+Instance: EmigaUser-005
+InstanceOf: EmigaUserPractitioner
+Title: "Beispiel EMIGA Nutzende Person"
+Description: "Ein Beispielinstanz einer Practitioner-Ressource basierend auf dem EmigaUserPractitioner-Profil."
+Usage: #inline
+* id = "EmigaUser-005"
+
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.11"
+* active = true
+
+* meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
+* meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
+
+* identifier.value = "testemail@example.com"
+
+* name.family = "Muster"
+* name.given = "Erik"
 
