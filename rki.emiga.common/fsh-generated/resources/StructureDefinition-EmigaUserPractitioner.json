@@ -69,7 +69,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonResourceVisibilityType"
         }
       },
       {

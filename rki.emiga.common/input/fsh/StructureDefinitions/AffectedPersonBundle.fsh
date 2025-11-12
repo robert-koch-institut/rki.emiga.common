@@ -7,8 +7,8 @@ Description: "TO DO"
 * insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle"
-* ^version = "0.1.0"
-* ^date = "2025-11-05"
+* ^version = "0.2.0"
+* ^date = "2025-11-12"
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle|1.2.0-alpha.11"
 * meta.versionId MS
@@ -16,6 +16,7 @@ Description: "TO DO"
 
 //* type = #collection (exactly)
 * type 1..1 MS
+* type = #transaction (exactly)
 * type ^short = "Typ des Bundles"
 //* type ^comment = "fix: transaction"
 * entry 1.. MS

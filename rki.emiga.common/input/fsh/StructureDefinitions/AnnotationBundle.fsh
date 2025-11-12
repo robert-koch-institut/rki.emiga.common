@@ -7,11 +7,12 @@ Description: "TO DO"
 * insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
-* ^version = "0.3.0"
-* ^date = "2025-10-23"
+* ^version = "0.4.0"
+* ^date = "2025-11-12"
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle|1.2.0-alpha.11"
-//* type = #collection (exactly)
+
+* type = #transaction (exactly)
 * type 1..1 MS
 * type ^short = "Typ des Bundles"
 //* type ^comment = "fix: transaction"

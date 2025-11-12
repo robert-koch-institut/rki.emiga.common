@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationBundle",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "AnnotationBundle",
   "title": "Annotations Bundle",
   "status": "active",
   "experimental": false,
-  "date": "2025-10-23",
+  "date": "2025-11-12",
   "publisher": "Robert Koch-Institut",
   "description": "TO DO",
   "fhirVersion": "4.0.1",
@@ -43,6 +43,7 @@
         "id": "Bundle.type",
         "path": "Bundle.type",
         "short": "Typ des Bundles",
+        "fixedCode": "transaction",
         "mustSupport": true
       },
       {
