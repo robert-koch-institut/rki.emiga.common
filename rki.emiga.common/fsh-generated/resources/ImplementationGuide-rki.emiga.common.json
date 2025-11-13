@@ -36,13 +36,13 @@
     },
     {
       "packageId": "rki.demis.common",
-      "version": "2.2.0-snapshots",
+      "version": "2.0.0-snapshots",
       "uri": "https://demis.rki.de/fhir/common",
       "id": "rki_demis_common"
     },
     {
       "packageId": "rki.demis.disease",
-      "version": "2.2.2-snapshots",
+      "version": "2.0.0-snapshots",
       "uri": "https://demis.rki.de/fhir/demis",
       "id": "rki_demis_disease"
     }
