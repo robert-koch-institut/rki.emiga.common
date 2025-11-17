@@ -1,0 +1,30 @@
+@startuml
+title AffectedPerson (Profile of Patient) - Class Diagram
+
+' Main Class
+class AffectedPerson{
+}
+
+class EmigaUserPractitioner {
+}
+
+class EmigaOrganization {
+}
+
+class Resource {
+}
+
+class AffectedPersonBundle {
+}
+
+AffectedPerson--> AffectedPersonRelatedPerson
+AffectedPerson--> EmigaOrganization
+AffectedPerson--> EmigaUserPractitioner
+AffectedPerson--> Resource
+
+AffectedPersonBundle ..>  AffectedPerson: entry[x]
+AffectedPersonBundle ..>  EmigaOrganization: entry[x]
+AffectedPersonBundle ..>  EmigaUserPractitioner: entry[x]
+AffectedPersonBundle ..>   Resource: entry[x]
+
+@enduml

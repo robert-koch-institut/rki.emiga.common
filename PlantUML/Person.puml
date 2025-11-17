@@ -2,76 +2,76 @@
 title AffectedPerson (Profile of Patient) - Class Diagram
 
 ' Main Class
-class EmigaTask {
-+ id: string [0..1]
+class AffectedPerson{
+<b>+</b> id: string [0..1]
 -- Meta --
-+ meta.extension:lastModifiedBy.value[x]: Reference(Practitioner) [1..1]
-+ meta.versionID: id [0..1] 
-+ meta.lastUpdated: instant [0..1] 
-+ meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
-+ meta.security:visibility.display: string [0..1]
-+ meta.security:responsibility.display: string [1..*]
+<b>+</b> meta.extension:lastModifiedBy.value[x]: Reference(Practitioner) [1..1]
+<b>+</b> meta.versionID: id [0..1] 
+<b>+</b> meta.lastUpdated: instant [0..1] 
+<b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
+<b>+</b> meta.security:visibility.display: string [0..1]
+<b>+</b> meta.security:responsibility.display: string [1..*]
 -- Identifiers --
-+ identifier:EmigaID.value: string [1..1] 
-+ identifier:EmigaFileNumber.value: string [1..1] 
-+ identifier:SurvNetFileNumber.value: string [1..1] 
-+ active: boolean [0..1]
+<b>+</b> identifier:EmigaID.value: string [1..1] 
+<b>+</b> identifier:EmigaFileNumber.value: string [1..1] 
+<b>+</b> identifier:SurvNetFileNumber.value: string [1..1] 
+<b>+</b> active: boolean [0..1]
 -- Personal Information --
-+ extension.citizenship:citizenship: Extension(Complex) [0..*]
-+ extension:landOfBirth: Extension(Coding) [0..1]
-+ extension:processingStatus: Extension(Coding) [0..1]
-+ gender: code [0..1]
-+ gender.extension:other-amtlich: Extension(Coding) [0..1]
-+ gender.extension:null-flavor: Extension(Coding) [0..1]
-+ birthDate: date [0..1]
-+ deceasedBoolean: boolean [0..1]
-+ deceasedDateTime: dateTime [0..1]
+<b>+</b> extension.citizenship:citizenship: Extension(Complex) [0..*]
+<b>+</b> extension:landOfBirth: Extension(Coding) [0..1]
+<b>+</b> extension:processingStatus: Extension(Coding) [0..1]
+<b>+</b> gender: code [0..1]
+<b>+</b> gender.extension:other-amtlich: Extension(Coding) [0..1]
+<b>+</b> gender.extension:null-flavor: Extension(Coding) [0..1]
+<b>+</b> birthDate: date [0..1]
+<b>+</b> deceasedBoolean: boolean [0..1]
+<b>+</b> deceasedDateTime: dateTime [0..1]
 -- Name --
-+ name.extension:salutation: Extension(Coding) [0..1]
-+ name.use: code [0..1]
-+ name.family: string [0..1]
-+ name.family.extension:namenszusatz: string [0..1]
-+ name.family.extension:nachname: string [0..1]
-+ name.family.extension:vorsatzwort: string [0..1]
-+ name.given: string [0..1]
-+ name.prefix: string [0..*]
-+ name.prefix.extension:prefix-qualifier: Extension(code) [0..*]
-+ name.suffix: string [0..*]
-+ name.period: Period [0..1]
+<b>+</b> name.extension:salutation: Extension(Coding) [0..1]
+<b>+</b> name.use: code [0..1]
+<b>+</b> name.family: string [0..1]
+<b>+</b> name.family.extension:namenszusatz: string [0..1]
+<b>+</b> name.family.extension:nachname: string [0..1]
+<b>+</b> name.family.extension:vorsatzwort: string [0..1]
+<b>+</b> name.given: string [0..1]
+<b>+</b> name.prefix: string [0..*]
+<b>+</b> name.prefix.extension:prefix-qualifier: Extension(code) [0..*]
+<b>+</b> name.suffix: string [0..*]
+<b>+</b> name.period: Period [0..1]
 -- Kommunikation --
-+ telecom:Email.value: string [0..*]
-+ telecom:Phone.value: string [0..*]
-+ telecom:Fax.value: string [0..*]
-+ address.extension:Stadtteil: string [0..1]
-+ address.extension:addressUse: Extension(Coding) [0..1]
-+ address.extension:facilityAssociation: Extension(Complex) [0..*]
-+ address.extension:geolocation: Extension(Complex) [0..1]
-+ address.extension:regionalKey: Extension(Complex) [0..1]
-+ address.type: code [0..1]
-+ address.text: string [0..1]
-+ address.line.extension:Strasse: string [0..1]
-+ address.line.extension:Hausnummer: string [0..1]
-+ address.line.extension:Adresszusatz: string [0..1]
-+ address.line.extension:Postfach: string [0..1]
-+ address.city: string [0..1]
-+ address.state: string [0..1]
-+ address.postalCode: string [0..1]
-+ address.country: string [0..1]
-+ address.period.start: dateTime [0..1]
-+ address.period.end: dateTime [0..1]
+<b>+</b> telecom:Email.value: string [0..*]
+<b>+</b> telecom:Phone.value: string [0..*]
+<b>+</b> telecom:Fax.value: string [0..*]
+<b>+</b> address.extension:Stadtteil: string [0..1]
+<b>+</b> address.extension:addressUse: Extension(Coding) [0..1]
+<b>+</b> address.extension:facilityAssociation: Extension(Complex) [0..*]
+<b>+</b> address.extension:geolocation: Extension(Complex) [0..1]
+<b>+</b> address.extension:regionalKey: Extension(Complex) [0..1]
+<b>+</b> address.type: code [0..1]
+<b>+</b> address.text: string [0..1]
+<b>+</b> address.line.extension:Strasse: string [0..1]
+<b>+</b> address.line.extension:Hausnummer: string [0..1]
+<b>+</b> address.line.extension:Adresszusatz: string [0..1]
+<b>+</b> address.line.extension:Postfach: string [0..1]
+<b>+</b> address.city: string [0..1]
+<b>+</b> address.state: string [0..1]
+<b>+</b> address.postalCode: string [0..1]
+<b>+</b> address.country: string [0..1]
+<b>+</b> address.period.start: dateTime [0..1]
+<b>+</b> address.period.end: dateTime [0..1]
 -- Kontakt --
-+ contact.relationship: CodeableConcept [0..*]
-+ contact.name: HumanName [0..1]
-+ contact.telecom: ContactPoint [0..*]
-+ contact.address: Address [0..1]
-+ contact.gender: code [0..1]
-+ contact.organization: Reference(Organization) [0..1]
-+ contact.period: Period [0..1]
-+ communication.language: CodeableConcept [0..1]
+<b>+</b> contact.relationship: CodeableConcept [0..*]
+<b>+</b> contact.name: HumanName [0..1]
+<b>+</b> contact.telecom: ContactPoint [0..*]
+<b>+</b> contact.address: Address [0..1]
+<b>+</b> contact.gender: code [0..1]
+<b>+</b> contact.organization: Reference(Organization) [0..1]
+<b>+</b> contact.period: Period [0..1]
+<b>+</b> communication.language: CodeableConcept [0..1]
 -- Link --
-+ generalPractitoner: Reference(Organization | Practitoner | PractitionerRole) [0..*]
-+ link:relatedPersonLink: Reference(RelatedPerson) [0..*]
-+ link:patientLink: Reference(Patient) [0..*]
+<b>+</b> generalPractitoner: Reference(Organization | Practitoner | PractitionerRole) [0..*]
+<b>+</b> link:relatedPersonLink: Reference(RelatedPerson) [0..*]
+<b>+</b> link:patientLink: Reference(Patient) [0..*]
 }
 
 ' Supporting Classes
@@ -88,9 +88,12 @@ class Resource{
 }
 
 ' Relationships (visual only)
-EmigaTask --> EmigaUserPractitioner: lastModifiedBy, generalPractitoner
-EmigaTask --> Resource: generalPractitoner
-EmigaTask --> EmigaOrganization: generalPractitoner, organization
-EmigaTask --> AffectedPersonRelatedPerson: relatedPerson
+AffectedPerson--> EmigaUserPractitioner: lastModifiedBy
+AffectedPerson--> EmigaUserPractitioner: generalPractitoner
+AffectedPerson--> Resource: generalPractitoner
+AffectedPerson--> EmigaOrganization: organization
+AffectedPerson--> EmigaOrganization: generalPractitoner
+AffectedPerson--> AffectedPersonRelatedPerson: relatedPerson
+AffectedPersonRelatedPerson .[#grey].> AffectedPerson: relationship
 
 @enduml
