@@ -144,6 +144,22 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/AttachmentDocumentReference-maximal"
+        },
+        "name": "Attachment Example (Maximal)",
+        "description": "A maximal example of an AttachmentDocumentReference according to the EMIGA profile.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/AttachmentDocumentReference-typical"
+        },
+        "name": "Attachment Example (Typical)",
+        "description": "A typical example of an attachment in EMIGA.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
@@ -304,7 +320,6 @@
       },
       {
         "reference": {
-<<<<<<< HEAD
           "reference": "RelatedPerson/affectedpersonrelatedperson-maximal"
         },
         "name": "Bezugsperson der betroffenen Person (Maximal)",
@@ -329,15 +344,6 @@
       },
       {
         "reference": {
-          "reference": "Bundle/CollectionBundle2"
-        },
-        "name": "CollectionBundle2",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
-      },
-      {
-        "reference": {
-=======
->>>>>>> origin/development
           "reference": "StructureDefinition/FacilityAddressAffectedPerson"
         },
         "name": "Einrichtungsadresse Betroffene Person",

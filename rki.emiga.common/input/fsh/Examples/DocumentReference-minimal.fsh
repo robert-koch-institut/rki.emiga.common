@@ -5,7 +5,7 @@ Title: "Minimal Attachment DocumentReference Example"
 Description: "A minimal example instance conforming to AttachmentDocumentReference profile"
 
 // Meta with MustSupport tag
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.10"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.12"
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].code = #ContainsPersonalInformation
 
