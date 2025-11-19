@@ -36,13 +36,13 @@
     },
     {
       "packageId": "rki.demis.common",
-      "version": "2.2.0-snapshots",
+      "version": "2.0.0-snapshots",
       "uri": "https://demis.rki.de/fhir/common",
       "id": "rki_demis_common"
     },
     {
       "packageId": "rki.demis.disease",
-      "version": "2.2.2-snapshots",
+      "version": "2.0.0-snapshots",
       "uri": "https://demis.rki.de/fhir/demis",
       "id": "rki_demis_disease"
     }
@@ -71,13 +71,6 @@
         "name": "441557620",
         "description": "Test Attachment DocumentReference Example with image reference",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c"
-        },
-        "name": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
-        "exampleBoolean": true
       },
       {
         "reference": {
@@ -148,14 +141,6 @@
         "name": "Anrede",
         "description": "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/BatchReadCommunicationPractitioner"
-        },
-        "name": "Batch Bundle: Read Communication and Practitioner",
-        "description": "A batch bundle to read Communication and Practitioner resources by id.",
-        "exampleBoolean": true
       },
       {
         "reference": {
@@ -279,6 +264,14 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/EmigaUser-001"
+        },
+        "name": "Beispiel EMIGA Nutzende Person",
+        "description": "Ein Beispielinstanz einer Practitioner-Ressource basierend auf dem EmigaUserPractitioner-Profil.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AffectedPerson"
         },
         "name": "Betroffene Person",
@@ -311,6 +304,7 @@
       },
       {
         "reference": {
+<<<<<<< HEAD
           "reference": "RelatedPerson/affectedpersonrelatedperson-maximal"
         },
         "name": "Bezugsperson der betroffenen Person (Maximal)",
@@ -342,6 +336,8 @@
       },
       {
         "reference": {
+=======
+>>>>>>> origin/development
           "reference": "StructureDefinition/FacilityAddressAffectedPerson"
         },
         "name": "Einrichtungsadresse Betroffene Person",
@@ -589,6 +585,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/PersonResourceVisibilityType"
+        },
+        "name": "Ressourcensichtbarkeit (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "NamingSystem/SurvNetFileNumber"
         },
         "name": "SurvNet Aktenzeichen",
@@ -631,6 +635,14 @@
         },
         "name": "Verbindungs-Qualifikation - Werteliste",
         "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/LastModifiedBy"
+        },
+        "name": "Zuletzt editiert von",
+        "description": "Extension um der letzten Nutzende Person zu referenzieren, die eine Ressource editiert hat.",
         "exampleBoolean": false
       },
       {

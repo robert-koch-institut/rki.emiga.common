@@ -27,8 +27,8 @@ publisher:
 dependencies:
   de.basisprofil.r4: 1.4.0-snapshots
   hl7.fhir.r4.core: 4.0.1
-  rki.demis.common: 2.2.0-snapshots
-  rki.demis.disease: 2.2.2-snapshots
+  rki.demis.common: 2.0.0-snapshots
+  rki.demis.disease: 2.0.0-snapshots
   
 #   hl7.fhir.us.mcode:
 #     id: mcode
