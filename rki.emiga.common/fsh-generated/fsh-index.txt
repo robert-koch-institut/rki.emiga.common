@@ -18,7 +18,7 @@ Communication-AnnotationCommunication-minimal.json                  AnnotationCo
 Communication-AnnotationCommunication-typical.json                  AnnotationCommunication-typical      Instance    Examples\AnnotationCommunication-typical.fsh                        1 - 44
 DocumentReference-441557619.json                                    441557619                            Instance    Examples\DocumentReference-441557619.fsh                            1 - 34
 DocumentReference-441557620.json                                    441557620                            Instance    Examples\DocumentReference-441557620.fsh                            1 - 33
-DocumentReference-AttachmentDocumentReference-maximal.json          AttachmentDocumentReference-maximal  Instance    Examples\DocumentReference-maximal.fsh                              1 - 53
+DocumentReference-AttachmentDocumentReference-maximal.json          AttachmentDocumentReference-maximal  Instance    Examples\DocumentReference-maximal.fsh                              1 - 52
 DocumentReference-AttachmentDocumentReference-typical.json          AttachmentDocumentReference-typical  Instance    Examples\DocumentReference-typical.fsh                              1 - 48
 DocumentReference-DocumentReference-minimal.json                    DocumentReference-minimal            Instance    Examples\DocumentReference-minimal.fsh                              1 - 32
 NamingSystem-EmigaFileNumber.json                                   EmigaFileNumber                      Instance    NamingSystem\EmigaFileNumber.fsh                                    1 - 13

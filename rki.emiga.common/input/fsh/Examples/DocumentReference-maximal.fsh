@@ -12,9 +12,8 @@ Usage: #example
 * meta.tag[personalInformation].display = "Contains personal data"
 * meta.tag[personalInformation].version = "1.0.0"
 
-// ------------------------
 // REQUIRED + MS FIELDS
-// ------------------------
+
 * status = #current
 * date = "2025-11-19T10:00:00+01:00"
 
