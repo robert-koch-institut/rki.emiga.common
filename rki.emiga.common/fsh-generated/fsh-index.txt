@@ -45,7 +45,7 @@ StructureDefinition-LastModifiedBy.json                             LastModified
 StructureDefinition-NullFlavor.json                                 NullFlavor                           Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
 StructureDefinition-PersonenTransactionBundle.json                  PersonenTransactionBundle            Profile     StructureDefinitions\PersonenTransactionBundle.fsh                  1 - 39
 StructureDefinition-PersonenTransactionResponse.json                PersonenTransactionResponse          Profile     StructureDefinitions\PersonenTransactionResponseBundle.fsh          1 - 35
-StructureDefinition-ProcessingStatus.json                           ProcessingStatus                     Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 20
+StructureDefinition-ProcessingStatus.json                           ProcessingStatus                     Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 21
 StructureDefinition-ProcessingStatusAffectedPerson.json             ProcessingStatusAffectedPerson       Extension   Extensions\ExtensionProcessingStatusAffectedPerson.fsh              1 - 20
 StructureDefinition-RegionalKey.json                                RegionalKey                          Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 36
 StructureDefinition-Salutation.json                                 Salutation                           Extension   Extensions\ExtensionSalutation.fsh                                  1 - 20
