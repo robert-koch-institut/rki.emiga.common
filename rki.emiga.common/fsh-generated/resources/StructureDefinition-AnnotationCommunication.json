@@ -195,6 +195,14 @@
         "mustSupport": true
       },
       {
+        "id": "Communication.extension:processingStatus.value[x]",
+        "path": "Communication.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation"
+        }
+      },
+      {
         "id": "Communication.extension:dateCreated",
         "path": "Communication.extension",
         "sliceName": "dateCreated",

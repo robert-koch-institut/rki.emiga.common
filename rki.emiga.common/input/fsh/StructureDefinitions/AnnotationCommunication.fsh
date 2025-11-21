@@ -88,6 +88,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * statusReason ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 * extension 1.. MS
 * extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 1..1 MS
+* extension[processingStatus].value[x] from ProcessingStatusAnnotation (required)
 
 //Es wird für "Schlagwort" überlegt
 /*
