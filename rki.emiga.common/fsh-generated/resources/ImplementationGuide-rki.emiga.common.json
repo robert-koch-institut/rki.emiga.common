@@ -256,6 +256,14 @@
       },
       {
         "reference": {
+          "reference": "ConceptMap/AdminGenderEngToGenderAmtDe"
+        },
+        "name": "ConceptMap AdministrativeGender (Eng) to GenderAmtlichDE",
+        "description": "ConceptMap zur Übersetzung von AdministrativeGender (englisch) zu GenderAmtlichDE (deutsch).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/FacilityAddressAffectedPerson"
         },
         "name": "Einrichtungsadresse Betroffene Person",
