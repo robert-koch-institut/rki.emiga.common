@@ -447,7 +447,7 @@
       },
       {
         "reference": {
-          "reference": "DocumentReference/DocumentReference-minimal"
+          "reference": "DocumentReference/AttachmentDocumentReference-minimal"
         },
         "name": "Minimal Attachment DocumentReference Example",
         "description": "A minimal example instance conforming to AttachmentDocumentReference profile",

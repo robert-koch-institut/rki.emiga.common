@@ -1,4 +1,4 @@
-Instance: DocumentReference-minimal
+Instance: AttachmentDocumentReference-minimal
 InstanceOf: AttachmentDocumentReference
 Usage: #example
 Title: "Minimal Attachment DocumentReference Example"
