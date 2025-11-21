@@ -31,7 +31,7 @@ StructureDefinition-AffectedPerson.json                             AffectedPers
 StructureDefinition-AffectedPersonBundle.json                       AffectedPersonBundle                 Profile     StructureDefinitions\AffectedPersonBundle.fsh                       1 - 29
 StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson          Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 26
 StructureDefinition-AnnotationBundle.json                           AnnotationBundle                     Profile     StructureDefinitions\AnnotationBundle.fsh                           1 - 26
-StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 211
+StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 212
 StructureDefinition-AttachmentAnnotation.json                       AttachmentAnnotation                 Profile     StructureDefinitions\AttachmentAnnotation.fsh                       1 - 13
 StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference          Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 140
 StructureDefinition-DateCreated.json                                DateCreated                          Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 11
@@ -45,7 +45,7 @@ StructureDefinition-LastModifiedBy.json                             LastModified
 StructureDefinition-NullFlavor.json                                 NullFlavor                           Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
 StructureDefinition-PersonenTransactionBundle.json                  PersonenTransactionBundle            Profile     StructureDefinitions\PersonenTransactionBundle.fsh                  1 - 39
 StructureDefinition-PersonenTransactionResponse.json                PersonenTransactionResponse          Profile     StructureDefinitions\PersonenTransactionResponseBundle.fsh          1 - 35
-StructureDefinition-ProcessingStatus.json                           ProcessingStatus                     Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 20
+StructureDefinition-ProcessingStatus.json                           ProcessingStatus                     Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 21
 StructureDefinition-ProcessingStatusAffectedPerson.json             ProcessingStatusAffectedPerson       Extension   Extensions\ExtensionProcessingStatusAffectedPerson.fsh              1 - 20
 StructureDefinition-RegionalKey.json                                RegionalKey                          Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 36
 StructureDefinition-Salutation.json                                 Salutation                           Extension   Extensions\ExtensionSalutation.fsh                                  1 - 20
