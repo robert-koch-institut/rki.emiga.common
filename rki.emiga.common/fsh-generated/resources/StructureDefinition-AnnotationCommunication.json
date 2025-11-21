@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationCommunication",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "name": "AnnotationCommunication",
   "title": "Annotation",
   "status": "active",
   "experimental": false,
-  "date": "2025-09-25",
+  "date": "2025-11-21",
   "publisher": "Robert Koch-Institut",
   "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -42,7 +42,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.12"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.14"
       },
       {
         "id": "Communication.meta.security",
@@ -193,6 +193,14 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Communication.extension:processingStatus.value[x]",
+        "path": "Communication.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation"
+        }
       },
       {
         "id": "Communication.extension:dateCreated",
