@@ -8,6 +8,7 @@ resourceParseMode: STRICT
 skipExampleValidation: false
 loadNpmDependencies: true
 snapshotDependenciesForSushi: true
+enableTreeShaking: true
 fhirSchemaValidationMaxSeverity: INFORMATION
 testFileDirectories: []
 profileSets:
