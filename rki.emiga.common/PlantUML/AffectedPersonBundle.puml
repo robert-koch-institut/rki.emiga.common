@@ -1,6 +1,9 @@
 @startuml
 title AffectedPerson (Profile of Patient) - Class Diagram
 
+'TODO what is this supposed to be used for? where is this information coming from? 
+' why is it called AffectedPersonBundle? does that refer to https://simplifier.net/rki.emiga.common/AffectedPersonBundle/~overview?
+
 ' Main Class
 class AffectedPerson{
 }
