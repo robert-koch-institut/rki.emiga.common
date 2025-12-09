@@ -1,52 +1,29 @@
 @startuml
+skinparam linetype ortho
+
 title AffectedPerson (Profile of Patient) - Class Diagram
 
 ' Main Class
 class AffectedPerson{
-' TODO andere IDs ignorieren wir?
-<b>+</b> active: boolean [0..1]
-<b>+</b> contained: Resource [0..*] 
-<b>+</b> id: string [0..1]
-<b>+</b> language: code [0..1] 
-<b>+</b> text: Narrative [0..1]
+<b>+</b> name: HumannameDeBasis [0..*]
 -- Meta --
 <b>+</b> meta.extension:lastModifiedBy.value[x]: Reference(Practitioner) [1..1]
-<b>+</b> meta.lastUpdated: instant [0..1] 
 <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
-<b>+</b> meta.security:responsibility.display: string [0..1]
-<b>+</b> meta.security:visibility.display: string [0..1]
-<b>+</b> meta.source: uri [0..1] 
-<b>+</b> meta.tag: Coding [0..*] 
-<b>+</b> meta.versionID: id [0..1] 
+<b>+</b> meta.security:responsibility: Coding [0..1]
+<b>+</b> meta.security:visibility: Coding [0..1]
 -- Identifiers --
-<b>+</b> identifier:EmigaFileNumber.value: string [1..1] 
-<b>+</b> identifier:EmigaID.value: string [1..1] 
-<b>+</b> identifier:SurvNetFileNumber.value: string [0..1] 
+<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [1..1]
+<b>+</b> identifier:EmigaID: IdentifierEmigaID [1..1]
+<b>+</b> identifier:SurvNetFileNumber: IdentifierSurvNetFileNumber [0..1]
 -- Personal Information --
 <b>+</b> birthDate: date [0..1]
 <b>+</b> deceasedBoolean: boolean [0..1]
 <b>+</b> deceasedDateTime: dateTime [0..1]
-' TODO reicht das für die Extension? Nicht noch die tieferen Ebenen darstellen? Was ist mit der modifierExtension?
-<b>+</b> extension.citizenship:citizenship: Extension(Complex) [0..*]
+<b>+</b> extension:citizenship: Extension(Complex) [0..*]
 <b>+</b> extension:landOfBirth: Extension(Coding) [0..1]
 <b>+</b> extension:processingStatus: Extension(Coding) [0..1]
-' TODO sollte das nicht analog zu anderen Extensions dargestellt werden?  wieso ist gender: code da? sollte nicht nur gender.value da sein?
 <b>+</b> gender: code [0..1]
-<b>+</b> gender.extension:null-flavor: Extension(Coding) [0..1]
 <b>+</b> gender.extension:other-amtlich: Extension(Coding) [0..1]
--- Name --
-'TODO sollen die oberen Ebenen der verschachtelten Werte auch angezeigt werden?
-<b>+</b> name.extension:salutation: Extension(Coding) [0..1]
-<b>+</b> name.family.extension:namenszusatz: Extension(string) [0..1]
-<b>+</b> name.family.extension:nachname: Extension(string) [0..1]
-<b>+</b> name.family.extension:vorsatzwort: Extension(string) [0..1]
-<b>+</b> name.given: string [0..*]
-<b>+</b> name.period: Period [0..1]
-' TODO hier die Extension oder das Value anzeigen?
-<b>+</b> name.prefix.extension:prefix-qualifier: Extension(code) [0..*]
-<b>+</b> name.suffix: string [0..*]
-<b>+</b> name.text: string [0..1]
-<b>+</b> name.use: code [0..1]
 -- Communication --
 <b>+</b> address.city: string [0..1]
 <b>+</b> address.country: string [0..1]
@@ -59,56 +36,15 @@ class AffectedPerson{
 <b>+</b> address.line.extension:Hausnummer: Extension(string) [0..1]
 <b>+</b> address.line.extension:Postfach: Extension(string) [0..1]
 <b>+</b> address.line.extension:Strasse: Extension(string) [0..1]
-<b>+</b> address.period.end: dateTime [0..1]
-<b>+</b> address.period.start: dateTime [0..1]
 <b>+</b> address.postalCode: string [0..1]
 <b>+</b> address.state: string [0..1]
-<b>+</b> address.text: string [0..1]
-<b>+</b> address.type: code [0..1]
-<b>+</b> telecom:Email.value: string [0..*]
-<b>+</b> telecom:Fax.value: string [0..*]
-<b>+</b> telecom:Phone.value: string [0..*]
--- Contact --
-' TODO was ist mit extension und modifierExtension?
-<b>+</b> contact.address: Address [0..1]
-<b>+</b> contact.gender: code [0..1]
-<b>+</b> contact.name: HumanName [0..1]
-<b>+</b> contact.organization: Reference(Organization) [0..1]
-<b>+</b> contact.period: Period [0..1]
-<b>+</b> contact.relationship: CodeableConcept [0..*]
-<b>+</b> contact.telecom: ContactPoint [0..*]
-<b>+</b> communication.language: CodeableConcept [0..1]
-<b>+</b> communication.preferred: boolean [0..1]
+<b>+</b> telecom:Email: ContactPoint [0..*]
+<b>+</b> telecom:Fax: ContactPoint [0..*]
+<b>+</b> telecom:Phone: ContactPoint [0..*]
 -- Links --
-' TODO was ist mit dem (All Slices) Ordner?
-<b>+</b> generalPractitoner: Reference(Organization | Practitoner | PractitionerRole) [0..*]
-<b>+</b> link:patientLink.other: Reference(Patient) [0..*]
-<b>+</b> link:relatedPersonLink.other: Reference(RelatedPerson) [0..*]
+<b>+</b> link:patientLink: BackboneElement [0..*]
+<b>+</b> link:relatedPersonLink: BackboneElement [0..*]
 }
 
-
-' TODO move this to an overview for affected person?
-/' Supporting Classes
-class AffectedPersonRelatedPerson{
-}
-
-class EmigaUserPractitioner{
-}
-
-class EmigaOrganization{  
-}
-
-class Resource{
-}
-
-' Relationships (visual only)
-AffectedPerson--> EmigaUserPractitioner: lastModifiedBy
-AffectedPerson--> EmigaUserPractitioner: generalPractitoner
-AffectedPerson--> Resource: generalPractitoner
-AffectedPerson--> EmigaOrganization: organization
-AffectedPerson--> EmigaOrganization: generalPractitoner
-AffectedPerson--> AffectedPersonRelatedPerson: relatedPerson
-AffectedPersonRelatedPerson .[#grey].> AffectedPerson: relationship
-'/
 
 @enduml
