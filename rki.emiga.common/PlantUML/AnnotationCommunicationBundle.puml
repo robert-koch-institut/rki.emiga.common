@@ -1,0 +1,27 @@
+@startuml
+skinparam linetype ortho
+
+title AnnotationCommunicationBundle - Class Diagram
+
+class AnnotationCommunication{
+}
+
+class Resource {
+}
+
+class AttachmentDocumentReference {
+}
+
+class EmigaUserPractitioner {
+}
+
+AnnotationCommunication --> EmigaUserPractitioner
+note on link: sender
+AnnotationCommunication --> AttachmentDocumentReference 
+note on link: contentReference
+
+Resource ..> AnnotationCommunication
+Resource ..> EmigaUserPractitioner
+Resource ..> AttachmentDocumentReference
+
+@enduml
