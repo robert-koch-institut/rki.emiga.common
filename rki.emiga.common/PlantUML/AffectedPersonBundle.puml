@@ -3,7 +3,6 @@ skinparam linetype ortho
 
 title AffectedPersonBundle - Class Diagram
 
-' Main Class
 class AffectedPerson{
 }
 
