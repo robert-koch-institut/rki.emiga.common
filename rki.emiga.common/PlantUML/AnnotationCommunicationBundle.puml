@@ -3,15 +3,14 @@ skinparam linetype ortho
 
 title AnnotationCommunicationBundle - Class Diagram
 
+class AnnotationCommunicationBundle{
+}
 class AnnotationCommunication{
 }
-
 class Resource {
 }
-
 class AttachmentDocumentReference {
 }
-
 class EmigaUserPractitioner {
 }
 
@@ -19,9 +18,15 @@ AnnotationCommunication --> EmigaUserPractitioner
 note on link: sender
 AnnotationCommunication --> AttachmentDocumentReference 
 note on link: contentReference
+AnnotationCommunication --> Resource
+note on link: about
 
-Resource ..> AnnotationCommunication
-Resource ..> EmigaUserPractitioner
-Resource ..> AttachmentDocumentReference
-
+AnnotationCommunicationBundle ..> AnnotationCommunication
+note on link: entry[x]
+AnnotationCommunicationBundle ..> EmigaUserPractitioner
+note on link: entry[x]
+AnnotationCommunicationBundle ..> AttachmentDocumentReference
+note on link: entry[x]
+AnnotationCommunicationBundle ..> Resource
+note on link: entry[x]
 @enduml
