@@ -9,6 +9,7 @@ class AnnotationCommunication{
 <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
 <b>+</b> meta.security:responsibility: Coding [0..1]
 <b>+</b> meta.security:visibility: Coding [0..1]
+<b>+</b> meta.tag:personalInformation: Coding [1..*]
 -- Identifiers --
 <b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [1..1]
 <b>+</b> identifier:EmigaID: IdentifierEmigaID [1..1]

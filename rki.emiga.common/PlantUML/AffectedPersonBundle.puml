@@ -13,16 +13,24 @@ class EmigaUserPractitioner {
 class EmigaOrganization {
 }
 
-
 class AffectedPersonBundle {
 }
 
-AffectedPerson--> AffectedPersonRelatedPerson
-AffectedPerson--> EmigaOrganization
-AffectedPerson--> EmigaUserPractitioner
+AffectedPerson --> AffectedPersonRelatedPerson
 
-AffectedPersonBundle ..>  AffectedPerson: entry[x]
-AffectedPersonBundle ..>  EmigaOrganization: entry[x]
-AffectedPersonBundle ..>  EmigaUserPractitioner: entry[x]
+AffectedPerson --> EmigaOrganization
+
+AffectedPerson --> EmigaUserPractitioner
+
+AffectedPersonBundle ..> AffectedPerson
+note on link: entry[x]
+
+AffectedPersonBundle ..> EmigaOrganization
+note on link: entry[x]
+
+AffectedPersonBundle ..> EmigaUserPractitioner
+note on link: entry[x]
+
+AffectedPerson ..> AffectedPerson
 
 @enduml
