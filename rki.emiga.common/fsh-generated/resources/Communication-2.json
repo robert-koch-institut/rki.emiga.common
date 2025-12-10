@@ -3,7 +3,7 @@
   "id": "2",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.12"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.14"
     ],
     "security": [
       {

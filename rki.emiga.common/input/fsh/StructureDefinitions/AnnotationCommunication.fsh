@@ -3,8 +3,8 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.4.0"
-* ^date = "2025-09-25"
+* ^version = "0.4.1"
+* ^date = "2025-11-21"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
@@ -13,7 +13,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * insert ProfileDomainResourceCommon
 * insert ProfileMetaProfileTags
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.14"
 
 //* meta.tag ^mustSupport = true
 * meta.tag MS
@@ -88,6 +88,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * statusReason ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
 * extension 1.. MS
 * extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 1..1 MS
+* extension[processingStatus].value[x] from ProcessingStatusAnnotation (required)
 
 //Es wird für "Schlagwort" überlegt
 /*

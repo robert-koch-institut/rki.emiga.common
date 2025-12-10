@@ -2,7 +2,7 @@ Instance: TransactionBundleCreatePerson
 InstanceOf: PersonenTransactionBundle
 Usage: #example
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.14"
 * identifier.system = "https://emiga.rki.de/fhir/common/sid/PersonenTransactionBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
 * type = #transaction
@@ -41,7 +41,7 @@ Title: "Beispiel Betroffene Person"
 Description: "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil."
 Usage: #inline
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.12"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.14"
 
 * meta.security[visibility].system = $ResourceVisibilityType
 * meta.security[visibility].code = #inAgency 
@@ -193,7 +193,7 @@ Description: "Ein Beispielinstanz einer Patient-Ressource basierend auf dem Affe
 Usage: #inline
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.12"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.14"
 
 * meta.security[visibility].system = $ResourceVisibilityType
 * meta.security[visibility].code = #inAgency 
@@ -319,7 +319,7 @@ Title: "Beispiel Bezugsperson der betroffenen Person"
 Description: "Ein Beispielinstanz einer Bezugsperson-Ressource. "
 Usage: #inline
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.12"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.14"
 
 * meta.security[visibility].system = $ResourceVisibilityType
 * meta.security[visibility].code = #inAgency 
@@ -348,7 +348,7 @@ Description: "Ein Beispielinstanz einer Practitioner-Ressource basierend auf dem
 Usage: #inline
 * id = "EmigaUser-005"
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.12"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.14"
 * active = true
 
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
