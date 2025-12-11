@@ -6,18 +6,14 @@ class AffectedPerson{
 }
 class EmigaUserPractitioner {
 }
-class EmigaOrganization {
-}
 class AffectedPersonBundle {
 }
 
 AffectedPerson --> AffectedPersonRelatedPerson
-AffectedPerson --> EmigaOrganization
 AffectedPerson --> EmigaUserPractitioner
 
 AffectedPersonBundle ..> AffectedPerson
 AffectedPersonBundle ..> AffectedPersonRelatedPerson
-AffectedPersonBundle ..> EmigaOrganization
 AffectedPersonBundle ..> EmigaUserPractitioner
 
 @enduml
