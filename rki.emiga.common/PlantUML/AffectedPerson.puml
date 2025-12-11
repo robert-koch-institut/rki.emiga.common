@@ -42,7 +42,6 @@ class AffectedPerson{
 <b>+</b> telecom:Fax: ContactPoint [0..*]
 <b>+</b> telecom:Phone: ContactPoint [0..*]
 -- Links --
-<b>+</b> link:patientLink: Reference(Patient) [0..*]
 <b>+</b> link:relatedPersonLink: Reference(RelatedPerson) [0..*]
 }
 

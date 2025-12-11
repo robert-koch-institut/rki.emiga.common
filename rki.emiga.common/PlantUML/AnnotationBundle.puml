@@ -19,11 +19,7 @@ AnnotationCommunication --> AttachmentDocumentReference
 AnnotationCommunication --> Resource
 
 AnnotationBundle ..> AnnotationCommunication
-note on link: entry[x]
 AnnotationBundle ..> EmigaUserPractitioner
-note on link: entry[x]
 AnnotationBundle ..> AttachmentDocumentReference
-note on link: entry[x]
 AnnotationBundle ..> Resource
-note on link: entry[x]
 @enduml

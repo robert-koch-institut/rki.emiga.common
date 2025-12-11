@@ -1,5 +1,4 @@
 @startuml
-skinparam linetype ortho
 
 title AffectedPersonBundle - Class Diagram
 
@@ -17,13 +16,8 @@ AffectedPerson --> EmigaOrganization
 AffectedPerson --> EmigaUserPractitioner
 
 AffectedPersonBundle ..> AffectedPerson
-note on link: entry[x]
 AffectedPersonBundle ..> AffectedPersonRelatedPerson
-note on link: entry[x]
 AffectedPersonBundle ..> EmigaOrganization
-note on link: entry[x]
 AffectedPersonBundle ..> EmigaUserPractitioner
-note on link: entry[x]
-AffectedPerson ..> AffectedPerson
 
 @enduml
