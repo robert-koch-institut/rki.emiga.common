@@ -1,0 +1,19 @@
+@startuml
+
+title AffectedPersonBundle - Class Diagram
+
+class AffectedPerson{
+}
+class EmigaUserPractitioner {
+}
+class AffectedPersonBundle {
+}
+
+AffectedPerson --> AffectedPersonRelatedPerson
+AffectedPerson --> EmigaUserPractitioner
+
+AffectedPersonBundle ..> AffectedPerson
+AffectedPersonBundle ..> AffectedPersonRelatedPerson
+AffectedPersonBundle ..> EmigaUserPractitioner
+
+@enduml
