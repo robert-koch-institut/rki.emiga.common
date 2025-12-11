@@ -1,9 +1,9 @@
 @startuml
 skinparam linetype ortho
 
-title AnnotationCommunicationBundle - Class Diagram
+title AnnotationBundle - Class Diagram
 
-class AnnotationCommunicationBundle{
+class AnnotationBundle{
 }
 class AnnotationCommunication{
 }
@@ -15,18 +15,15 @@ class EmigaUserPractitioner {
 }
 
 AnnotationCommunication --> EmigaUserPractitioner
-note on link: sender
 AnnotationCommunication --> AttachmentDocumentReference 
-note on link: contentReference
 AnnotationCommunication --> Resource
-note on link: about
 
-AnnotationCommunicationBundle ..> AnnotationCommunication
+AnnotationBundle ..> AnnotationCommunication
 note on link: entry[x]
-AnnotationCommunicationBundle ..> EmigaUserPractitioner
+AnnotationBundle ..> EmigaUserPractitioner
 note on link: entry[x]
-AnnotationCommunicationBundle ..> AttachmentDocumentReference
+AnnotationBundle ..> AttachmentDocumentReference
 note on link: entry[x]
-AnnotationCommunicationBundle ..> Resource
+AnnotationBundle ..> Resource
 note on link: entry[x]
 @enduml
