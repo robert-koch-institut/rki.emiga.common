@@ -3,7 +3,7 @@
   "id": "2",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.15"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.14"
     ],
     "security": [
       {
@@ -19,7 +19,7 @@
       {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
         "code": "ContainsPersonalInformation",
-        "display": "Enthält Personenbezogene Daten"
+        "display": "Enthält personenbezogene Daten"
       }
     ],
     "versionId": "5"

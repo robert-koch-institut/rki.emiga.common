@@ -10,7 +10,7 @@ Usage: #example
 
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].code = #ContainsPersonalInformation
-* meta.tag[personalInformation].display = "Enthält Personenbezogene Daten"
+* meta.tag[personalInformation].display = "Enthält personenbezogene Daten"
 
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Anhang-DEFG-123456789"
