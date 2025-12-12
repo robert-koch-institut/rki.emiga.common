@@ -9,8 +9,8 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.2.0"
-* ^date = "2025-09-26"
+* ^version = "0.3.0"
+* ^date = "2025-12-12"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
@@ -31,7 +31,10 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
     //$PatCitizenship named citizenship 0..* MS and
     $HL7PatCitizenship named citizenship 0..* MS and
     $PatBirthPlace named landOfBirth 0..1 MS and
-    $ProcessingStatusAffectedPersonExt named processingStatus 0..1 MS 
+    $ProcessingStatus named processingStatus 0..1 MS and
+    $Facility named facilityAssociation 0..* MS
+
+* extension[processingStatus].value[x] from ProcessingStatusAffectedPerson (required)
 
 * extension[citizenship].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship" (exactly)
 * extension[citizenship].extension[code].value[x] only CodeableConcept
@@ -46,7 +49,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * extension[citizenship].extension[code].valueCodeableConcept.coding.display ^mustSupport = true
 * extension[citizenship].extension[code].valueCodeableConcept.coding.version MS
 
-
+* extension[facilityAssociation].extension[facility].value[x] ^mustSupport = true
 //* extension[citizenship].valueCoding ^mustSupport = true
 
 
@@ -147,12 +150,11 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * address MS
 * address only $address-de-basis
 * address.extension contains $AddressUse named addressUse 0..* MS and
-    $Facility named facilityAssociation 0..* MS and
     $Geolocation named geolocation 0..* MS and
     $RegionalKey named regionalKey 0..1 MS
 
 * address.extension[addressUse].value[x] ^mustSupport = true
-* address.extension[facilityAssociation].extension[facility].value[x] ^mustSupport = true
+
 * address.extension[geolocation].extension ^mustSupport = true
 * address.extension[geolocation].extension[latitude] ^mustSupport = true
 * address.extension[geolocation].extension[longitude] ^mustSupport = true
