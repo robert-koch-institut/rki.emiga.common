@@ -35,7 +35,7 @@ Usage: #example
 * extension[landOfBirth].valueCoding.version = "8.00"
 * extension[landOfBirth].url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
 
-* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson"
+* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #inprogress
 * extension[processingStatus].valueCoding.display = "in Bearbeitung"

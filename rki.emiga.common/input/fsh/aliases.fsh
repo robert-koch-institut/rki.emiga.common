@@ -72,3 +72,9 @@ Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $data-absent = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $HL7DesignationUse = http://terminology.hl7.org/CodeSystem/designation-usage
 Alias: $ExtensionNullFlavor = https://emiga.rki.de/fhir/common/Extension/NullFlavor
+Alias: $sct = http://snomed.info/sct
+
+// DEMIS
+Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
+Alias: $AddressUse = https://demis.rki.de/fhir/StructureDefinition/AddressUse
+Alias: $Facility = https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson

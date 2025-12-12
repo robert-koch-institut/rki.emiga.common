@@ -144,14 +144,13 @@
           "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "min": 2,
         "mustSupport": true
       },
       {
         "id": "Questionnaire.identifier:EmigaID",
         "path": "Questionnaire.identifier",
         "sliceName": "EmigaID",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -173,7 +172,7 @@
         "id": "Questionnaire.identifier:EmigaFileNumber",
         "path": "Questionnaire.identifier",
         "sliceName": "EmigaFileNumber",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
