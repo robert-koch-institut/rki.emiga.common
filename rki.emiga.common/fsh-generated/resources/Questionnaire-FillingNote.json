@@ -3,7 +3,7 @@
   "id": "FillingNote",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.14"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.15"
     ]
   },
   "url": "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote",

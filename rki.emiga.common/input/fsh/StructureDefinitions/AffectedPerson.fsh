@@ -18,7 +18,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 
 * meta MS
 * meta.profile 1.. MS
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.14" 
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.15" 
 
 * meta.extension contains $LastModifiedBy named lastModifiedBy 0..1 MS
 * meta.extension[lastModifiedBy].value[x] only Reference(EmigaUserPractitioner)
