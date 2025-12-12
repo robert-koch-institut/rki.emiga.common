@@ -23,6 +23,7 @@ current_branch_flow:
     - |
       mkdir -p $CI_PROJECT_DIR/.fhir
       ln -s $CI_PROJECT_DIR/.fhir ~/.fhir 
+      git config --global --add safe.directory /builds/fhir/rki.emiga.common
       git checkout -B "$CI_COMMIT_REF_NAME"
       
       java -jar /workspace/profile-loader.jar \
