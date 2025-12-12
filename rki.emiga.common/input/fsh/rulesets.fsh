@@ -129,7 +129,7 @@ RuleSet: IdentifierCommon
   * ^slicing.rules = #open
   * ^slicing.description = "slicing patient identifier by system"
   * ^slicing.ordered = false
-* identifier contains EmigaID 1..1 MS and EmigaFileNumber 1..1 MS and SurvNetFileNumber 0..1 MS
+* identifier contains EmigaID 0..1 MS and EmigaFileNumber 0..1 MS and SurvNetFileNumber 0..1 MS
 
 * identifier[EmigaID] only IdentifierEmigaID
 * identifier[EmigaID].use 0..1 MS
