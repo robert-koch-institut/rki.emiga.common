@@ -1,0 +1,30 @@
+@startuml
+skinparam linetype ortho
+
+title AnnotationCommunication (Profile of Communication) - Class Diagram
+
+' Main Class
+class AnnotationCommunication{
+-- Meta --
+<b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
+<b>+</b> meta.security:responsibility: Coding [0..1]
+<b>+</b> meta.security:visibility: Coding [0..1]
+<b>+</b> meta.tag:personalInformation: Coding [1..*]
+-- Identifiers --
+<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [1..1]
+<b>+</b> identifier:EmigaID: IdentifierEmigaID [1..1]
+<b>+</b> identifier:SurvNetFileNumber: IdentifierSurvNetFileNumber [0..1]
+-- Communication Content --
+<b>+</b> about: Reference(Resource) [0..*] 
+<b>+</b> extension:processingStatus: Coding [1..1]
+<b>+</b> extension:dateCreated: instant [1..1]
+<b>+</b> payload: BackboneElement: [1..*]
+<b>+</b> payload.content[x]:contentReference: Reference(AttachmentDocumentReference) [0..1]
+<b>+</b> payload.content[x]:contentString: string [0..1]
+<b>+</b> sender: Reference(EmigaUserPractitioner) [1..1] 
+<b>+</b> sent: dateTime [0..1]
+<b>+</b> status: FixedValue ('completed') [1..1]
+<b>+</b> topic.text: string [1..1] 
+}
+
+@enduml

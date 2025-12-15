@@ -14,7 +14,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * insert ProfileMetaProfileTags
 
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.14"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.15"
 * meta.tag MS
 * meta.tag ^slicing.discriminator.type = #pattern
 * meta.tag ^slicing.discriminator.path = "system"

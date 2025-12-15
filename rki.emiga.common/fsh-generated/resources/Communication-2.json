@@ -19,7 +19,7 @@
       {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
         "code": "ContainsPersonalInformation",
-        "display": "Enthält Personenbezogene Daten"
+        "display": "Enthält personenbezogene Daten"
       }
     ],
     "versionId": "5"

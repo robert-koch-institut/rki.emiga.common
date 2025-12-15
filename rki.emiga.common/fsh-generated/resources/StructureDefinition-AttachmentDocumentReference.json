@@ -42,7 +42,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.14"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.15"
       },
       {
         "id": "DocumentReference.meta.security",
@@ -186,14 +186,13 @@
           "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "min": 2,
         "mustSupport": true
       },
       {
         "id": "DocumentReference.identifier:EmigaID",
         "path": "DocumentReference.identifier",
         "sliceName": "EmigaID",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -215,7 +214,7 @@
         "id": "DocumentReference.identifier:EmigaFileNumber",
         "path": "DocumentReference.identifier",
         "sliceName": "EmigaFileNumber",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

@@ -6,7 +6,7 @@ Usage: #example
 * id = "AffectedPerson-4550"
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.14"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.15"
 
 * meta.extension[lastModifiedBy].valueReference.reference = "Practitioner/EmigaUser-001"
 
@@ -37,10 +37,18 @@ Usage: #example
 * extension[landOfBirth].valueCoding.version = "8.00"
 * extension[landOfBirth].url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
 
-* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson"
+* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #inprogress
 * extension[processingStatus].valueCoding.display = "in Bearbeitung"
+
+* extension[facilityAssociation].url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
+* extension[facilityAssociation].extension[facility].url = "facility"
+* extension[facilityAssociation].extension[facility].valueReference.reference = "http://example.org/fhir/Organization/4550"
+* extension[facilityAssociation].extension[associationType].url = "associationType"
+* extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.system = "https://demis.rki.de/fhir/CodeSystem/organizationAssociation"
+* extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.code = #care
+* extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.display = "Betreuung"
 
 
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
@@ -128,13 +136,7 @@ Usage: #example
 * address[1].extension[addressUse].valueCoding.system = "https://demis.rki.de/fhir/CodeSystem/addressUse"
 * address[1].extension[addressUse].valueCoding.code = #current
 * address[1].extension[addressUse].valueCoding.display = "Derzeitiger Aufenthaltsort"
-* address[1].extension[facilityAssociation].url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
-* address[1].extension[facilityAssociation].extension[facility].url = "facility"
-* address[1].extension[facilityAssociation].extension[facility].valueReference.reference = "http://example.org/fhir/Organization/4550"
-* address[1].extension[facilityAssociation].extension[associationType].url = "associationType"
-* address[1].extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.system = "https://demis.rki.de/fhir/CodeSystem/organizationAssociation"
-* address[1].extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.code = #care
-* address[1].extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.display = "Betreuung"
+
 * address[1].extension[geolocation].extension[latitude].valueDecimal = 52.82096
 * address[1].extension[geolocation].extension[latitude].url = "latitude"
 * address[1].extension[geolocation].extension[longitude].valueDecimal = 1.3791
