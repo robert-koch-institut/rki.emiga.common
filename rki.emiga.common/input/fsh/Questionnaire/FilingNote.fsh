@@ -4,6 +4,10 @@ Usage: #definition
 * url = "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote"
 * version = "0.3.0"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.15"
+* meta.security[visibility].system = $ResourceVisibilityType
+* meta.security[visibility].code = #inAgency 
+* meta.security[visibility].display =  "Eigene ÖGD-Stelle"
+* meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 * name = "Ablagevermerk"
 * title = "Ablagevermerk"
 * status = #draft
