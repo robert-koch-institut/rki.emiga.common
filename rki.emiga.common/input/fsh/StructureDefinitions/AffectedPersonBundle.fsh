@@ -10,7 +10,7 @@ Description: "TO DO"
 * ^version = "0.2.0"
 * ^date = "2025-11-12"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle|1.2.0-alpha.15"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle|1.2.0-alpha.16"
 * meta.versionId MS
 * meta.versionId ^short = "Version der Instanz der Ressource"
 
