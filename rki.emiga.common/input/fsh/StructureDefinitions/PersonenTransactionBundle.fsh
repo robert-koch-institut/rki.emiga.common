@@ -11,7 +11,7 @@ Description: "TO DO"
 * ^version = "0.3.0"
 * ^date = "2025-10-23"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.15"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.16"
 //* type = #transaction (exactly)
 * type 1..1 MS
 * type ^short = "Type des Bundles"

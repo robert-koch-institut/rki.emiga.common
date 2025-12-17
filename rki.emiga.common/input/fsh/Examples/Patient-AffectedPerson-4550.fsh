@@ -6,7 +6,7 @@ Usage: #example
 * id = "AffectedPerson-4550"
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.15"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.16"
 
 * meta.extension[lastModifiedBy].valueReference.reference = "Practitioner/EmigaUser-001"
 
@@ -40,7 +40,7 @@ Usage: #example
 * extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #inprogress
-* extension[processingStatus].valueCoding.display = "in Bearbeitung"
+* extension[processingStatus].valueCoding.display = "In Bearbeitung"
 
 * extension[facilityAssociation].url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
 * extension[facilityAssociation].extension[facility].url = "facility"

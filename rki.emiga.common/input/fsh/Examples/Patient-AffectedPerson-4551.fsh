@@ -6,7 +6,7 @@ Usage: #example
 * id = "AffectedPerson-4551"
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.15"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.16"
 
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
@@ -38,7 +38,7 @@ Usage: #example
 * extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #inprogress
-* extension[processingStatus].valueCoding.display = "in Bearbeitung"
+* extension[processingStatus].valueCoding.display = "In Bearbeitung"
 
 
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"

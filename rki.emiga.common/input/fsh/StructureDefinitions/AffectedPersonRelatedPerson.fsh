@@ -7,15 +7,15 @@ Description: "TODO"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
-* ^version = "0.3.0"
-* ^date = "2025-10-23"
+* ^version = "0.4.0"
+* ^date = "2025-12-17"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
 * insert ProfileSecurityTagsPerson
 
 * insert IdentifierCommon
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.15"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.16"
 
 * patient MS
 * patient ^short = "Die betroffene Person, zu der die Bezugsperson in Beziehung steht."

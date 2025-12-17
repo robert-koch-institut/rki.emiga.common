@@ -3,7 +3,7 @@
   "id": "441557618",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.15"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.16"
     ],
     "security": [
       {
@@ -28,7 +28,7 @@
       "valueCoding": {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
         "code": "forinformation",
-        "display": "zur Kenntnis"
+        "display": "Zur Kenntnis"
       },
       "url": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
     },

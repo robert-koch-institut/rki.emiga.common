@@ -9,8 +9,8 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.3.0"
-* ^date = "2025-12-12"
+* ^version = "0.4.0"
+* ^date = "2025-12-17"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
@@ -18,7 +18,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 
 * meta MS
 * meta.profile 1.. MS
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.15" 
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.16" 
 
 * meta.extension contains $LastModifiedBy named lastModifiedBy 0..1 MS
 * meta.extension[lastModifiedBy].value[x] only Reference(EmigaUserPractitioner)
