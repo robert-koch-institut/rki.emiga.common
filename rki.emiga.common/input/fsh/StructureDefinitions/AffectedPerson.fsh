@@ -9,8 +9,8 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.3.0"
-* ^date = "2025-12-12"
+* ^version = "0.4.0"
+* ^date = "2025-12-17"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon

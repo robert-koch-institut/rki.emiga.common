@@ -3,8 +3,8 @@ Parent: DocumentReference
 Id: AttachmentDocumentReference
 Title: "Anhang-Entität"
 Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen."
-* ^version = "0.2.0"
-* ^date = "2025-09-05"
+* ^version = "0.3.0"
+* ^date = "2025-12-17"
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
 * insert MetadataProfile

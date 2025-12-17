@@ -4,8 +4,8 @@ Id: EmigaUserPractitioner
 Title: "Emiga Nutzende Person"
 Description: "TODO"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
-* ^version = "0.2.0"
-* ^date = "2025-03-03"
+* ^version = "0.3.0"
+* ^date = "2025-12-17"
 
 * insert MetadataProfile
 * insert ProfileResourceCommon
