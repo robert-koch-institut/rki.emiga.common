@@ -29,15 +29,15 @@ RuleSet: ProfileDomainResourceCommon
 // Profil-Regeln, die für alle Ressourcen, die sicherheitstechnisch eingestuft werden müssen, gelten
 RuleSet: ProfileSecurityTags
 * meta MS
-  * security MS
+  * security 2.. MS
     * ^slicing.discriminator.type = #value
     * ^slicing.discriminator.path = "system"
     * ^slicing.rules = #open
     * ^slicing.description = "Slicing security attribute by coding system"
     * ^slicing.ordered = false
   * security contains
-      visibility 0..1 MS and
-      responsibility 0..1 MS
+      visibility 1..1 MS and
+      responsibility 1..1 MS
   * security[visibility] from $ResourceVisibilityTypeVS
     * system 1..1 MS
     * system = $ResourceVisibilityType
@@ -49,15 +49,15 @@ RuleSet: ProfileSecurityTags
 
 RuleSet: ProfileSecurityTagsPerson
 * meta MS
-  * security MS
+  * security 2.. MS
     * ^slicing.discriminator.type = #value
     * ^slicing.discriminator.path = "system"
     * ^slicing.rules = #open
     * ^slicing.description = "Slicing security attribute by coding system"
     * ^slicing.ordered = false
   * security contains
-      visibility 0..1 MS and
-      responsibility 0..1 MS
+      visibility 1..1 MS and
+      responsibility 1..1 MS
   * security[visibility] from PersonResourceVisibilityType
     * system 1..1 MS
     * system = $ResourceVisibilityType
@@ -74,15 +74,15 @@ RuleSet: ProfileSecurityTagsPerson
 
 RuleSet: ProfileSecurityTagsAnnotation
 * meta MS
-  * security MS
+  * security 2.. MS
     * ^slicing.discriminator.type = #value
     * ^slicing.discriminator.path = "system"
     * ^slicing.rules = #open
     * ^slicing.description = "Slicing security attribute by coding system"
     * ^slicing.ordered = false
   * security contains
-      visibility 0..1 MS and
-      responsibility 0..1 MS
+      visibility 1..1 MS and
+      responsibility 1..1 MS
   * security[visibility] from $ResourceVisibilityTypeAnnotation
     * system 1..1 MS
     * system = $ResourceVisibilityType
@@ -94,14 +94,14 @@ RuleSet: ProfileSecurityTagsAnnotation
 
 RuleSet: ProfileSecurityTagVisibility
 * meta MS
-  * security MS
+  * security 1.. MS
     * ^slicing.discriminator.type = #value
     * ^slicing.discriminator.path = "system"
     * ^slicing.rules = #open
     * ^slicing.description = "Slicing security attribute by coding system"
     * ^slicing.ordered = false
   * security contains
-      visibility 0..1 MS
+      visibility 1..1 MS
   * security[visibility] from $ResourceVisibilityTypeVS
     * system 1..1 MS
     * system = $ResourceVisibilityType

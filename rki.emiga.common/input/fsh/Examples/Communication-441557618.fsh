@@ -16,7 +16,7 @@ Usage: #example
 * extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #forinformation 
-* extension[processingStatus].valueCoding.display = "zur Kenntnis"
+* extension[processingStatus].valueCoding.display = "Zur Kenntnis"
 
 * extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
 * extension[dateCreated].valueInstant = "2024-10-01T12:00:00Z"

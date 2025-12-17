@@ -22,7 +22,7 @@ NamingSystem-SurvNetFileNumber.json                                 SurvNetFileN
 Patient-AffectedPerson-4550.json                                    AffectedPerson-4550                  Instance    Examples\Patient-AffectedPerson-4550.fsh                            1 - 159
 Patient-AffectedPerson-4551.json                                    AffectedPerson-4551                  Instance    Examples\Patient-AffectedPerson-4551.fsh                            1 - 127
 Practitioner-EmigaUser-001.json                                     EmigaUser-001                        Instance    Examples\Practitioner-EmigaUser-001.fsh                             1 - 16
-Questionnaire-FillingNote.json                                      FillingNote                          Instance    Questionnaire\FilingNote.fsh                                        1 - 30
+Questionnaire-FillingNote.json                                      FillingNote                          Instance    Questionnaire\FilingNote.fsh                                        1 - 34
 QuestionnaireResponse-FillingNoteResponse.json                      FillingNoteResponse                  Instance    Examples\FillingNoteResponse.fsh                                    1 - 19
 RelatedPerson-4551.json                                             4551                                 Instance    Examples\RelatedPerson-4551.fsh                                     1 - 30
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire    Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 20
@@ -56,7 +56,7 @@ ValueSet-FacilityAssociationTypeVS.json                             FacilityAsso
 ValueSet-NullFlavor.json                                            NullFlavor                           ValueSet    ValueSets\NullFlavor.fsh                                            1 - 19
 ValueSet-PersonResourceVisibilityType.json                          PersonResourceVisibilityType         ValueSet    ValueSets\PersonResourceVisibilityType.fsh                          1 - 12
 ValueSet-PersonalInformation.json                                   PersonalInformation                  ValueSet    CodeSystem\PersonalInformation.fsh                                  16 - 24
-ValueSet-ProcessingStatusAffectedPerson.json                        ProcessingStatusAffectedPerson       ValueSet    ValueSets\ProcessingStatusAffectedPersonVS.fsh                      1 - 13
+ValueSet-ProcessingStatusAffectedPerson.json                        ProcessingStatusAffectedPerson       ValueSet    ValueSets\ProcessingStatusAffectedPerson.fsh                        1 - 13
 ValueSet-ProcessingStatusAnnotation.json                            ProcessingStatusAnnotation           ValueSet    ValueSets\ProcessingStatusAnnotation.fsh                            1 - 16
 ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                   ValueSet    CodeSystem\ProcessingStatus.fsh                                     25 - 33
 ValueSet-RegionKeys.json                                            RegionKeys                           ValueSet    ValueSets\RegionKeys.fsh                                            1 - 22

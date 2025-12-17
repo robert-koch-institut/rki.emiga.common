@@ -38,7 +38,7 @@ Usage: #example
 * extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #inprogress
-* extension[processingStatus].valueCoding.display = "in Bearbeitung"
+* extension[processingStatus].valueCoding.display = "In Bearbeitung"
 
 
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"

@@ -8,13 +8,13 @@ Description: "Werteliste mit möglichen Bearbeitungsstatus einer betroffenen Per
 * ^url = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAffectedPerson"
 
 
-* $ProcessingStatusCS#inprogress "in Bearbeitung" 
-* $ProcessingStatusCS#closed "abgeschlossen"
-* $ProcessingStatusCS#cancelled "verworfen"
-//* $ProcessingStatusCS#handedover "abgegeben"
-//* $ProcessingStatusCS#inhandover "in Übergabe"
-//* $ProcessingStatusCS#intakeover "in Übernahme"
-//* $ProcessingStatusCS#forinformation "zur Kenntnis"
+* $ProcessingStatusCS#inprogress "In Bearbeitung" 
+* $ProcessingStatusCS#closed "Abgeschlossen"
+* $ProcessingStatusCS#cancelled "Verworfen"
+//* $ProcessingStatusCS#handedover "Abgegeben"
+//* $ProcessingStatusCS#inhandover "In Übergabe"
+//* $ProcessingStatusCS#intakeover "In Übernahme"
+//* $ProcessingStatusCS#forinformation "Zur Kenntnis"
 
 //* $nullflavor#ASKU "asked but unknown" // nicht ermittelbar
 //* $nullflavor#NASK "not asked" // nicht erhoben
