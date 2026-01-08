@@ -24,7 +24,7 @@
   "dependsOn": [
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.4.0-snapshots",
+      "version": "1.4.0",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
@@ -36,13 +36,13 @@
     },
     {
       "packageId": "rki.demis.common",
-      "version": "2.0.0-snapshots",
+      "version": "2.0.0",
       "uri": "https://demis.rki.de/fhir/common",
       "id": "rki_demis_common"
     },
     {
       "packageId": "rki.demis.disease",
-      "version": "2.0.0-snapshots",
+      "version": "2.0.0",
       "uri": "https://demis.rki.de/fhir/demis",
       "id": "rki_demis_disease"
     }
