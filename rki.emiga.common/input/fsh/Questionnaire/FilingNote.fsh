@@ -3,7 +3,7 @@ InstanceOf: AdditionalPropertiesQuestionnaire
 Usage: #definition
 * url = "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote"
 * version = "0.3.0"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire|1.2.0-alpha.16"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire"
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.	
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
