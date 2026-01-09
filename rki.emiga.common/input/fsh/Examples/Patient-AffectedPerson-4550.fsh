@@ -6,7 +6,7 @@ Usage: #example
 * id = "AffectedPerson-4550"
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.16"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 
 * meta.extension[lastModifiedBy].valueReference.reference = "Practitioner/EmigaUser-001"
 
