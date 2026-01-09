@@ -43,7 +43,6 @@
         "id": "Bundle.type",
         "path": "Bundle.type",
         "short": "Typ des Bundles",
-        "fixedCode": "transaction",
         "mustSupport": true
       },
       {
