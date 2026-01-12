@@ -24,7 +24,7 @@
   "dependsOn": [
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.4.0-snapshots",
+      "version": "1.4.0",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
@@ -36,13 +36,13 @@
     },
     {
       "packageId": "rki.demis.common",
-      "version": "2.0.0-snapshots",
+      "version": "2.0.0",
       "uri": "https://demis.rki.de/fhir/common",
       "id": "rki_demis_common"
     },
     {
       "packageId": "rki.demis.disease",
-      "version": "2.0.0-snapshots",
+      "version": "2.0.0",
       "uri": "https://demis.rki.de/fhir/demis",
       "id": "rki_demis_disease"
     }
@@ -172,14 +172,6 @@
         },
         "name": "Bearbeitungsstatus Annotation",
         "description": "Werteliste mit möglichen Bearbeitungsstatus für Annotationen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ProcessingStatusAffectedPerson"
-        },
-        "name": "Bearbeitungsstatus betroffene Person",
-        "description": "Extension zur Abbildung der Bearbeitungsstatus einer betroffenen Person.",
         "exampleBoolean": false
       },
       {
@@ -355,6 +347,14 @@
         },
         "name": "häufige Sprachen",
         "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/YesNoNullFlavor"
+        },
+        "name": "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten",
+        "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben",
         "exampleBoolean": false
       },
       {

@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AttachmentDocumentReference",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "AttachmentDocumentReference",
   "title": "Anhang-Entität",
   "status": "active",
   "experimental": false,
-  "date": "2025-09-05",
+  "date": "2025-12-17",
   "publisher": "Robert Koch-Institut",
   "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -42,7 +42,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.14"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
       },
       {
         "id": "DocumentReference.meta.security",
@@ -58,13 +58,14 @@
           "description": "Slicing security attribute by coding system",
           "ordered": false
         },
+        "min": 2,
         "mustSupport": true
       },
       {
         "id": "DocumentReference.meta.security:visibility",
         "path": "DocumentReference.meta.security",
         "sliceName": "visibility",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": true,
         "binding": {
@@ -89,7 +90,7 @@
         "id": "DocumentReference.meta.security:responsibility",
         "path": "DocumentReference.meta.security",
         "sliceName": "responsibility",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": true,
         "binding": {
@@ -186,14 +187,13 @@
           "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "min": 2,
         "mustSupport": true
       },
       {
         "id": "DocumentReference.identifier:EmigaID",
         "path": "DocumentReference.identifier",
         "sliceName": "EmigaID",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -215,7 +215,7 @@
         "id": "DocumentReference.identifier:EmigaFileNumber",
         "path": "DocumentReference.identifier",
         "sliceName": "EmigaFileNumber",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

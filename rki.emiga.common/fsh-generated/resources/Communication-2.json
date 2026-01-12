@@ -3,23 +3,24 @@
   "id": "2",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication|1.2.0-alpha.14"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication4"
     ],
     "security": [
       {
-        "code": "1.",
-        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "code": "1."
       },
       {
-        "code": "transferable",
-        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "code": "transferable"
       }
     ],
     "tag": [
       {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
         "code": "ContainsPersonalInformation",
-        "display": "Enthält Personenbezogene Daten"
+        "display": "Enthält personenbezogene Daten"
       }
     ],
     "versionId": "5"
@@ -29,7 +30,7 @@
       "valueCoding": {
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
         "code": "inprogress",
-        "display": "in Bearbeitung"
+        "display": "In Bearbeitung"
       },
       "url": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
     },
