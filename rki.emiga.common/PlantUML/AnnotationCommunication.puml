@@ -18,7 +18,7 @@ class AnnotationCommunication{
 <b>+</b> about: Reference(Resource) [0..*] 
 <b>+</b> extension:processingStatus: Coding [1..1]
 <b>+</b> extension:dateCreated: instant [1..1]
-<b>+</b> payload: BackboneElement: [1..*]
+<b>+</b> payload: BackboneElement [1..*]
 <b>+</b> payload.content[x]:contentReference: Reference(AttachmentDocumentReference) [0..1]
 <b>+</b> payload.content[x]:contentString: string [0..1]
 <b>+</b> sender: Reference(EmigaUserPractitioner) [1..1] 

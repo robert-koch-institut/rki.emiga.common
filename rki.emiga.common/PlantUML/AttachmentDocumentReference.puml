@@ -7,18 +7,19 @@ title AttachmentDocumentReference (Profile of DocumentReference) - Class Diagram
 class AttachmentDocumentReference{
 -- Meta --
 <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
-<b>+</b> meta.security:responsibility: Coding [0..1]
-<b>+</b> meta.security:visibility: Coding [0..1]
+<b>+</b> meta.security:responsibility: Coding [1..1]
+<b>+</b> meta.security:visibility: Coding [1..1]
 <b>+</b> meta.tag:personalInformation: Coding [1..*]
 -- Identifiers --
-<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [1..1]
-<b>+</b> identifier:EmigaID: IdentifierEmigaID [1..1]
+<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [0..1]
+<b>+</b> identifier:EmigaID: IdentifierEmigaID [0..1]
 <b>+</b> identifier:SurvNetFileNumber: IdentifierSurvNetFileNumber [0..1]
 -- General Information --
 <b>+</b> status: FixedValue ('current') [1..1]
 <b>+</b> date: instant [0..1]
 <b>+</b> author: Reference(EmigaUserPractitioner) [0..1]
 -- Content --
+<b>+</b> content: BackboneElement [1..*]
 <b>+</b> content:reference: Attachement [0..*]
 <b>+</b> content:attachement: Attachement [0..*]
 }
