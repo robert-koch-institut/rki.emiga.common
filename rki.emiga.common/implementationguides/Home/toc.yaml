@@ -1,0 +1,20 @@
+- name: Index
+  filename: guide-index-home.guide.md
+- name: Über diese Leitfaden
+  filename: guide-ueber-diesen-leitfaden.guide.md
+- name: Grundlagen und Überblick
+  filename: guide-grundlagen-und-ueberblick.guide.md
+- name: Anwendungsfälle
+  filename: guide-anwendungsfaelle.guide.md  
+- name: Änderungshistorie
+  filename: guide-aenderungshistorie.guide.md
+- name: Ergänzende Hinweise
+  filename: guide-ergaenzende-hinweise.guide.md
+- name: Weiterführende Informationen
+  filename: guide-weiterfuehrende-informationen.guide.md
+- name: Ressourcen
+  filename: ressourcen
+- name: Implementierungshinweise
+  filename: implementierungshinweise
+- name: Lizenzen
+  filename: guide-lizenzen.guide.md  

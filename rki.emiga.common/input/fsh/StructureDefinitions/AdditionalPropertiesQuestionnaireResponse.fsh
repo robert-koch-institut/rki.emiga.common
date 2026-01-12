@@ -4,8 +4,8 @@ Id: AdditionalPropertiesQuestionnaireResponse
 Title: "Zusätzliche Eigenschaften Fragebogen-Antworten"
 Description: "TODO"
 
-* ^version = "0.1.0"
-* ^date = "2025-07-21"
+* ^version = "0.2.0"
+* ^date = "2025-12-17"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
 
 * insert MetadataProfile
@@ -15,7 +15,7 @@ Description: "TODO"
 * insert ProfileMetaProfileTags
 //* insert IdentifierCommon
 //* insert ProfileMetaTags
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.14"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
 
 * questionnaire 1..1 MS
 //* questionnaire = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire"
