@@ -13,7 +13,7 @@ class Patient {
 class Relationship{
 }
 
-AffectedPerson --> AffectedPersonRelatedPerson: link
+AffectedPerson --> AffectedPersonRelatedPerson: Link
 
 AffectedPersonRelatedPerson --> Patient: Bezugsperson
 AffectedPersonRelatedPerson --> Relationship: Beziehung zur betroffenen Person

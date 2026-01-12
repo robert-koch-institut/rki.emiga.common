@@ -7,15 +7,15 @@ title AffectedPersonRelatedPerson (Profile of RelatedPerson) - Class Diagram
 class AffectedPersonRelatedPerson{
 -- Meta --
 <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
-<b>+</b> meta.security:responsibility: Coding [0..1]
-<b>+</b> meta.security:visibility: Coding [0..1]
+<b>+</b> meta.security:responsibility: Coding [1..1]
+<b>+</b> meta.security:visibility: Coding [1..1]
 -- Identifiers --
-<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [1..1]
-<b>+</b> identifier:EmigaID: IdentifierEmigaID [1..1]
+<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [0..1]
+<b>+</b> identifier:EmigaID: IdentifierEmigaID [0..1]
 <b>+</b> identifier:SurvNetFileNumber: IdentifierSurvNetFileNumber [0..1]
 -- Links --
 <b>+</b> patient: Reference(Patient) [1..1]
-<b>+</b> relationship: CodealeConcept [1..*]
+<b>+</b> relationship: CodeableConcept [1..*]
 }
 
 @enduml
