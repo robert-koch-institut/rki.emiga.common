@@ -8,6 +8,12 @@ Im Folgenden werden UML-Diagramme für Personen dargestellt, die die für dieses
 @enduml
 </plantuml>
 
+<plantuml>
+@startuml
+!include ../../../../PlantUML/PersonRelatedPersonOverview.puml
+@enduml
+</plantuml>
+
 ## Betroffene Person
 <plantuml>
 @startuml
