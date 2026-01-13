@@ -26,3 +26,5 @@ Infektionsschutz und Meldewesen unterstützen.
 - **Zentraler Datenzugriff:** Epidemiologische Daten werden zentral bereitgestellt und durch ein Rollen- und Rechtekonzept geschützt. Dies sorgt für eine gleichmäßige Verfügbarkeit und erhöhte Datensicherheit.
 - **Förderung der Digitalisierung des ÖGD:** EMIGA ist Teil der bundesweiten Zukunftsplattform **ÖGDnet** und bildet das zentrale Modul für Infektionsschutz und Meldewesen.
 <br>&nbsp;<br>
+
+UML-Diagramme zur Darstellung der unterschiedlichen Anwendungsfälle sind im Kapitel Anwendungsfälle zu finden.
