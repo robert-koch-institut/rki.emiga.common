@@ -5,7 +5,7 @@
 - name: Grundlagen und Überblick
   filename: guide-grundlagen-und-ueberblick.guide.md
 - name: Anwendungsfälle
-  filename: anwendungsfaelle  
+  filename: guide-anwendungsfaelle.guide.md  
 - name: Änderungshistorie
   filename: guide-aenderungshistorie.guide.md
 - name: Ergänzende Hinweise
