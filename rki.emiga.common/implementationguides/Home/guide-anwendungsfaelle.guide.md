@@ -4,7 +4,47 @@ Im Folgenden werden UML-Diagramme dargestellt, die die für dieses Modul relevan
 
 ## Annotation
  <!--Falls wir Gerade Lienien im UML haben möchten, dann folgendes einfügen:  skinparam linetype ortho -->
+<plantuml>
+  set namespaceSeparator none
+  skinparam backgroundcolor transparent
+  skinparam classBackgroundColor #FFFFCC
+  skinparam classBorderColor black
+  skinparam classAttributeIconSize 1
+  skinparam nodesep 50
+  skinparam ranksep 50
 
+  class AnnotationCommunication{
+  <b>+</b> id: string [0..1]
+  -- Meta --
+  <b>+</b> meta.lastUpdated: instant [0..1] 
+  <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
+  <b>+</b> meta.security:responsibility.display: string [0..1]
+  <b>+</b> meta.security:visibility.display: string [0..1]
+  <b>+</b> meta.source: uri [0..1] 
+  <b>+</b> meta.versionID: id [0..1] 
+  -- Identifiers --
+  <b>+</b> identifier:EmigaFileNumber.value: string [1..1] 
+  <b>+</b> identifier:EmigaID.value: string [1..1] 
+  <b>+</b> identifier:SurvNetFileNumber.value: string [0..1] 
+  -- Communication Content --
+  <b>+</b> about: Reference(Resource) [0..*] 
+  <b>+</b> category: CodeableConcept [0..*]
+  <b>+</b> extension:processingStatus: Extension(Coding) [1..1]
+  <b>+</b> extension:dateCreated: Extension(instant) [1..1]
+  <b>+</b> note: Annotation [0..*]
+  <b>+</b> payload.content[x]:contentReference: Reference(AttachmentDocumentReference) [0..1]
+  <b>+</b> payload.content[x]:contentString: string [0..1]
+  <b>+</b> sender: Reference(EmigaUserPractitioner) [1..1] 
+  <b>+</b> sent: dateTime [0..1]
+  <b>+</b> status: code [1..1]
+  <b>+</b> topic.text: string [1..1] 
+  }
+  
+</plantuml>
+
+
+## Betroffene Person
+ <!--Falls wir Gerade Lienien im UML haben möchten, dann folgendes einfügen:  skinparam linetype ortho -->
 <plantuml>
   set namespaceSeparator none
   skinparam backgroundcolor transparent
@@ -90,46 +130,4 @@ Im Folgenden werden UML-Diagramme dargestellt, die die für dieses Modul relevan
   <b>+</b> link:patientLink.other: Reference(Patient) [0..*]
   <b>+</b> link:relatedPersonLink.other: Reference(RelatedPerson) [0..*]
   }
-</plantuml>
-
-
-## Betroffene Person
- <!--Falls wir Gerade Lienien im UML haben möchten, dann folgendes einfügen:  skinparam linetype ortho -->
-
-<plantuml>
-  set namespaceSeparator none
-  skinparam backgroundcolor transparent
-  skinparam classBackgroundColor #FFFFCC
-  skinparam classBorderColor black
-  skinparam classAttributeIconSize 1
-  skinparam nodesep 50
-  skinparam ranksep 50
-
-  class AnnotationCommunication{
-  <b>+</b> id: string [0..1]
-  -- Meta --
-  <b>+</b> meta.lastUpdated: instant [0..1] 
-  <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
-  <b>+</b> meta.security:responsibility.display: string [0..1]
-  <b>+</b> meta.security:visibility.display: string [0..1]
-  <b>+</b> meta.source: uri [0..1] 
-  <b>+</b> meta.versionID: id [0..1] 
-  -- Identifiers --
-  <b>+</b> identifier:EmigaFileNumber.value: string [1..1] 
-  <b>+</b> identifier:EmigaID.value: string [1..1] 
-  <b>+</b> identifier:SurvNetFileNumber.value: string [0..1] 
-  -- Communication Content --
-  <b>+</b> about: Reference(Resource) [0..*] 
-  <b>+</b> category: CodeableConcept [0..*]
-  <b>+</b> extension:processingStatus: Extension(Coding) [1..1]
-  <b>+</b> extension:dateCreated: Extension(instant) [1..1]
-  <b>+</b> note: Annotation [0..*]
-  <b>+</b> payload.content[x]:contentReference: Reference(AttachmentDocumentReference) [0..1]
-  <b>+</b> payload.content[x]:contentString: string [0..1]
-  <b>+</b> sender: Reference(EmigaUserPractitioner) [1..1] 
-  <b>+</b> sent: dateTime [0..1]
-  <b>+</b> status: code [1..1]
-  <b>+</b> topic.text: string [1..1] 
-  }
-  
 </plantuml>
