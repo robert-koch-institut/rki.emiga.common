@@ -44,11 +44,13 @@ from
 where 
     url = %canonical 
 for 
-    differential.element.constraint 
-select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
+    differential.element 
+    where
+        constraint.exists()
+    select 
+        Name: constraint.key, Element: id, Schweregrad: constraint.severity,Beschreibung: constraint.human, Ausdruck: constraint.expression
 </fql>
 <br>&nbsp;<br>
-
 ### Terminology-Bindings
 <fql headers="true">
 from 
