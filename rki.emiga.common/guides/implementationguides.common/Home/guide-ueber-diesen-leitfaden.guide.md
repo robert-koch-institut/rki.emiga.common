@@ -1,8 +1,4 @@
 # {{page-title}}
-&nbsp;
-
-### Über diesen Leitfaden
-
 In diesem Implementierungsleitfaden werden die FHIR-Basis-Ressourcen strukturiert dargestellt, die in EMIGA gemäß dem definierten Datenmodell über die FHIR-Schnittstelle übergeben werden. Außerdem werden die in den EMIGA Paketen <a href="https://simplifier.net/rki.emiga.common"> rki.emiga.common </a> enthaltenen Inhalte beschrieben.
 
 ### Zielgruppe
