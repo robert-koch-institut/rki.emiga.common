@@ -1,22 +1,22 @@
 - name: Index
   filename: guide-index-codesystems.guide.md
-  - name: Anrede
+- name: Anrede
   filename: guide-anrede.guide.md
-  - name: Anzeigetext Art
+- name: Anzeigetext Art
   filename: guide-anzeigetext-art.guide.md
-  - name: Bearbeitungsstatus
+- name: Bearbeitungsstatus
   filename: guide-bearbeitungsstatus.guide.md
-  - name: Beziehungen
+- name: Beziehungen
   filename: guide-beziehungen.guide.md
-  - name: Personenbezug
+- name: Personenbezug
   filename: guide-personenbezug.guide.md
-  - name: Regionalschlüssel
+- name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
-  - name: Relevance
+- name: Relevance
   filename: guide-relevance.guide.md
-  - name: Ressourcen Sichtbarkeit
+- name: Ressourcen Sichtbarkeit
   filename: guide-ressourcen-sichtbarkeit.guide.md
-  - name: Ressourcen Verantwortlichkeit
+- name: Ressourcen Verantwortlichkeit
   filename: guide-ressourcen-verantwortlichkeit.guide.md
-  - name: Verbindung zu Einrichtungen
+- name: Verbindung zu Einrichtungen
   filename: guide-verbindung-zu-einrichtugen.guide.md

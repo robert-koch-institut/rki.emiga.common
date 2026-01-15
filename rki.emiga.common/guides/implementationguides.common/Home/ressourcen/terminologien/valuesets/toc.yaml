@@ -1,34 +1,34 @@
 - name: Index
   filename: guide-index-codesystems.guide.md
-  - name: Anrede
+- name: Anrede
   filename: guide-anrede.guide.md
-  - name: Anzeigetext Art
+- name: Anzeigetext Art
   filename: guide-anzeigetext-art.guide.md
-  - name: Bearbeitungsstatus
+- name: Bearbeitungsstatus
   filename: guide-bearbeitungsstatus.guide.md
-  - name: Bearbeitungsstatus Annotation
+- name: Bearbeitungsstatus Annotation
   filename: guide-bearbeitungsstatus-annotation.guide.md
-  - name: Bearbeitungsstatus betroffene Person
+- name: Bearbeitungsstatus betroffene Person
   filename: guide-bearbeitungsstatus-betroffene-person.guide.md
-  - name: Beziehungen
+- name: Beziehungen
   filename: guide-beziehungen.guide.md
-  - name: Häufige Sprachen
+- name: Häufige Sprachen
   filename: guide-haeufige-sprachen.guide.md
-  - name: Ländercodes
+- name: Ländercodes
   filename: guide-laendercodes.guide.md
-  - name: Nicht vorhanden
+- name: Nicht vorhanden
   filename: guide-nicht-vorhanden.guide.md
-  - name: Personenbezug
+- name: Personenbezug
   filename: guide-personenbezug.guide.md
-  - name: Regionalschlüssel
+- name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
-  - name: Ressourcen Annotation Sichtbarkeit
+- name: Ressourcen Annotation Sichtbarkeit
   filename: guide-ressourcen-annotation-sichtbarkeit.guide.md
-  - name: Ressourcen Relevanz
+- name: Ressourcen Relevanz
   filename: guide-ressourcen-relevanz.guide.md
-  - name: Ressourcen Sichtbarkeit
+- name: Ressourcen Sichtbarkeit
   filename: guide-ressourcen-sichtbarkeit.guide.md
-  - name: Ressourcen Verantwortlichkeit
+- name: Ressourcen Verantwortlichkeit
   filename: guide-ressourcen-verantwortlichkeit.guide.md
-  - name: Verbindungs-Qualifikation
+- name: Verbindungs-Qualifikation
   filename: guide-verbindungs-qualifikation.guide.md
