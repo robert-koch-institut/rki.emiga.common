@@ -3,7 +3,7 @@ topic: SurvNetFileNumber
 canonical: https://emiga.rki.de/fhir/sid/SurvNetFileNumber
 ---
 
-## {{page-title}}
+# {{page-title}}
 ## Beschreibung
 Das SurvNet-Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe.
 <br>&nbsp;<br>

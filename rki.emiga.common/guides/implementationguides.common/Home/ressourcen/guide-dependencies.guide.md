@@ -1,4 +1,4 @@
-## {{page-title}}
+# {{page-title}}
 
 
 <table id="dependencies-table" style="border: 1px solid #e0e0e0; width: 100%; position: relative; display: table !important; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857; margin-bottom: 10px; border-collapse: collapse;">

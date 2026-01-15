@@ -3,7 +3,7 @@ topic: EmigaFileNumber
 canonical: https://emiga.rki.de/fhir/sid/EmigaFileNumber
 ---
 
-## {{page-title}}
+# {{page-title}}
 ## Beschreibung
 EMIGA-Aktenzeichen für die Verwendung in Identifier.
 <br>&nbsp;<br>

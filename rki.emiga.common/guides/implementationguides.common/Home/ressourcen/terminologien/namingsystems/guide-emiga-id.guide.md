@@ -3,7 +3,7 @@ topic: EmigaID
 canonical: https://emiga.rki.de/fhir/sid/EmigaID
 ---
 
-## {{page-title}}
+# {{page-title}}
 ## Beschreibung
 EMIGA-ID für die Verwendung in Identifier.
 <br>&nbsp;<br>
