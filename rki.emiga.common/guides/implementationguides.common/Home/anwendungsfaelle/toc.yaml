@@ -1,5 +1,5 @@
 - name: Index
-  filename: guide-index-anwendungsfaelle.guide.md
+  filename: Index.page.md
 - name: Annotationen
   filename: guide-annotationen.guide.md
 - name: Personen

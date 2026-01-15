@@ -1,5 +1,5 @@
 - name: Index
-  filename: guide-index-terminologien.guide.md
+  filename: Index.page.md
 - name: CodeSystems
   filename: codesystems
 - name: ValueSets

@@ -1,5 +1,5 @@
 - name: Index
-  filename: guide-index-codesystems.guide.md
+  filename: Index.page.md
 - name: Anrede
   filename: guide-anrede.guide.md
 - name: Anzeigetext Art

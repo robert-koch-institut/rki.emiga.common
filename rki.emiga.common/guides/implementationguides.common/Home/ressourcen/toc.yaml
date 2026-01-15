@@ -1,5 +1,5 @@
 - name: Index
-  filename: guide-index-ressourcen.guide.md
+  filename: Index.page.md
 - name: Dependencies
   filename: guide-dependencies.guide.md
 - name: StructureDefinitions

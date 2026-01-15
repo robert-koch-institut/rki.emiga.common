@@ -1,5 +1,5 @@
 - name: Index
-  filename: guide-index-home.guide.md
+  filename: Index.page.md
 - name: Über diesen Leitfaden
   filename: guide-ueber-diesen-leitfaden.guide.md
 - name: Grundlagen und Überblick
