@@ -1,0 +1,18 @@
+- name: Index
+  filename: Index.page.md
+- name: Anrede
+  filename: guide-anrede.guide.md
+- name: Bearbeitungsstatus
+  filename: guide-bearbeitungsstatus.guide.md
+- name: Bearbeitungsstatus betroffene Person
+  filename: guide-bearbeitungsstatus-betroffene-person.guide.md
+- name: Einrichtungsadresse betroffene Person
+  filename: guide-einrichtungsadresse-betroffene-person.guide.md
+- name: Erstellungsdatum
+  filename: guide-erstellungsdatum.guide.md
+- name: Geburtsland
+  filename: guide-geburtsland.guide.md
+- name: Nicht vorhanden
+  filename: guide-nicht-vorhanden.guide.md
+- name: Regionalschlüssel
+  filename: guide-regionalschluessel.guide.md
