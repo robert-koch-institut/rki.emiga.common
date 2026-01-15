@@ -8,9 +8,9 @@ Description: "Test Attachment DocumentReference Example with image reference"
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
 * meta.security[visibility].code = #transferable
 
-* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
-* meta.tag[personalInformation].code = #ContainsPersonalInformation
-* meta.tag[personalInformation].display = "Enthält personenbezogene Daten"
+//* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+//* meta.tag[personalInformation].code = #ContainsPersonalInformation
+//* meta.tag[personalInformation].display = "Enthält personenbezogene Daten"
 //* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 //* meta.security[responsibility].code = #
 * status = #current
@@ -28,6 +28,9 @@ Description: "Test Attachment DocumentReference Example with image reference"
 
 * author[0].reference = "Practitioner/example"
 * date = "2023-10-01T12:00:00Z"
-* content[reference].attachment.contentType = #image/png
-* content[reference].attachment.url = "http://example.org/images/sample-image.png"
-* content[reference].attachment.title = "Sample Image"
+* content.attachment.contentType = #image/png
+* content.attachment.size = 13577
+* content.attachment.hash = "MzU2am9JWkQydk1jeVMlUENTTlNuRVpvTDJKVGYvOW1ZL013VnB6REpCOD0="
+//* content[reference].attachment.url = "http://example.org/images/sample-image.png"
+* content.attachment.title = "Sample Image"
+* content.attachment.creation = "2026-01-13T14:22:43+00:00"
