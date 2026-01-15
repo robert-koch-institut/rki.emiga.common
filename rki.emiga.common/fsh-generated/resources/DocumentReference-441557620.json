@@ -14,13 +14,6 @@
         "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
         "code": "transferable"
       }
-    ],
-    "tag": [
-      {
-        "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
-        "code": "ContainsPersonalInformation",
-        "display": "Enthält personenbezogene Daten"
-      }
     ]
   },
   "identifier": [
@@ -46,8 +39,10 @@
     {
       "attachment": {
         "contentType": "image/png",
-        "url": "http://example.org/images/sample-image.png",
-        "title": "Sample Image"
+        "size": 13577,
+        "hash": "MzU2am9JWkQydk1jeVMlUENTTlNuRVpvTDJKVGYvOW1ZL013VnB6REpCOD0=",
+        "title": "Sample Image",
+        "creation": "2026-01-13T14:22:43+00:00"
       }
     }
   ],

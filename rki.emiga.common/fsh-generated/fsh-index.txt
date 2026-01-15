@@ -14,8 +14,8 @@ CodeSystem-Salutation.json                                          Salutation  
 Communication-2.json                                                Annotation-2                         Instance    Examples\BundleTransactionCreate.fsh                                21 - 64
 Communication-441557618.json                                        441557618                            Instance    Examples\Communication-441557618.fsh                                1 - 56
 ConceptMap-AdminGenderEngToGenderAmtDe.json                         AdminGenderEngToGenderAmtDe          Instance    ConceptMap\AdminGenderEngToGenderAmtDe.fsh                          2 - 42
-DocumentReference-441557619.json                                    441557619                            Instance    Examples\DocumentReference-441557619.fsh                            1 - 34
-DocumentReference-441557620.json                                    441557620                            Instance    Examples\DocumentReference-441557620.fsh                            1 - 33
+DocumentReference-441557620.json                                    441557620                            Instance    Examples\DocumentReference-441557620.fsh                            1 - 36
+DocumentReference-4691067.json                                      4691067                              Instance    Examples\DocumentReference-4691067.fsh                              2 - 19
 NamingSystem-EmigaFileNumber.json                                   EmigaFileNumber                      Instance    NamingSystem\EmigaFileNumber.fsh                                    1 - 13
 NamingSystem-EmigaID.json                                           EmigaID                              Instance    NamingSystem\EmigaID.fsh                                            1 - 13
 NamingSystem-SurvNetFileNumber.json                                 SurvNetFileNumber                    Instance    NamingSystem\SurvNetFileNumber.fsh                                  1 - 12
@@ -32,8 +32,7 @@ StructureDefinition-AffectedPersonBundle.json                       AffectedPers
 StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson          Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 26
 StructureDefinition-AnnotationBundle.json                           AnnotationBundle                     Profile     StructureDefinitions\AnnotationBundle.fsh                           1 - 26
 StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 212
-StructureDefinition-AttachmentAnnotation.json                       AttachmentAnnotation                 Profile     StructureDefinitions\AttachmentAnnotation.fsh                       1 - 13
-StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference          Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 140
+StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference          Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 123
 StructureDefinition-DateCreated.json                                DateCreated                          Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 11
 StructureDefinition-EmigaUserPractitioner.json                      EmigaUserPractitioner                Profile     StructureDefinitions\EmigaUserPractitioner.fsh                      1 - 97
 StructureDefinition-FacilityAddressAffectedPerson.json              FacilityAddressAffectedPerson        Extension   Extensions\ExtensionFacilityAddressAffectedPerson.fsh               1 - 36
