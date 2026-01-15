@@ -1,8 +1,0 @@
-- name: Index
-  filename: guide-index-terminologien.guide.md
-- name: CodeSystems
-  filename: codesystems
-- name: ValueSets
-  filename: valuesets
-- name: NamingSystems
-  filename: namingsystems
