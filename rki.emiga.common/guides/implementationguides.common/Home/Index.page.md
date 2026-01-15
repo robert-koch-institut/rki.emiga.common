@@ -17,7 +17,7 @@
 
 ### Herausgeber
 
-![RKI Logo](https://www.rki.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=2 "RKI Logo")
+{{render:guides/implementationguides.common/images/RKI.png}}
 
 
 
@@ -33,7 +33,7 @@ Nordufer 20\
 
 ### Kontakt
 
-![EMIGA Logo](https://www.rki.de/SharedDocs/Bilder/Institut/Abt3/FG32/EMIGA-Logo.webp?__blob=normal&v=4 "EMIGA Logo")
+{{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
 
 Sie erreichen uns über das EMIGA-Kontaktformular.
 
