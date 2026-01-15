@@ -3,10 +3,11 @@ Parent: DocumentReference
 Id: AttachmentDocumentReference
 Title: "Anhang-Entität"
 Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen."
-* ^version = "0.3.0"
-* ^date = "2025-12-17"
+* ^version = "0.4.0"
+* ^date = "2026-01-14"
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+
 * insert MetadataProfile
 * insert ProfileSecurityTagsAnnotation
 * insert ProfileResourceCommon
@@ -15,6 +16,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+/*
 * meta.tag MS
 * meta.tag ^slicing.discriminator.type = #pattern
 * meta.tag ^slicing.discriminator.path = "system"
@@ -30,6 +32,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * meta.tag[personalInformation].display 
 * meta.tag[personalInformation] ^definition = "Kennzeichnung von personenbezogenen Daten"
 * meta.tag[personalInformation] ^short = "Kennzeichnung von personenbezogenen Daten"
+*/
 
 * status MS
 * status = #current (exactly)
@@ -89,34 +92,37 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 //* custodian only Reference(EmigaUserOrganization)
 
 * content MS
-* content ^slicing.discriminator.type = #exists
-* content ^slicing.discriminator.path = "attachment.url"
-* content ^slicing.rules = #open
-* content ^definition = "Hier kann die Angabe einer strukturierten Referenz auf einen anderen Inhalt, bspw. ein anderes Dokument oder ein Dokument in der Form eines formatierten Anhangs abgebildet werden"
-* content contains
-    reference 0..* MS and
-    attachment 0..* MS
-* content[reference].attachment MS
-* content[reference].attachment.contentType MS
-* content[reference].attachment.contentType ^definition = "Hier wird das Dateiformat ausgewählt.\\nEs ist ein Code aus dem System urn:ietf:bcp:13 zu wählen"
-* content[reference].attachment.language ..0
-* content[reference].attachment.data ..0
-* content[reference].attachment.url 1.. MS
-* content[reference].attachment.url ^short = "URI"
-* content[reference].attachment.url ^definition = "URI des Eintrags."
-* content[reference].attachment.size MS
-* content[reference].attachment.size ^definition = "Hier wird die Größe der Datei in Byte angegeben."
-* content[reference].attachment.size ^short = "Dateigröße"
-* content[reference].attachment.hash MS
-* content[reference].attachment.hash ^definition = "Hier wird der Hashwert der Datei angegeben."
-* content[reference].attachment.hash ^short = "Hashwert"
-* content[reference].attachment.title 1.. MS
-* content[reference].attachment.title ^short = "Titel"
-* content[reference].attachment.title ^definition = "Title des referenzierten Dokumentes."
-* content[reference].attachment.creation MS
-* content[reference].attachment.creation ^short = "Zeitpunkt der Erstellung des Dokumentes"
-* content[reference].attachment.creation ^definition = "Hier wird der Zeitpunkt der Erstellung des referenzierten Dokumentes angegeben."
+//* content ^slicing.discriminator.type = #exists
+//* content ^slicing.discriminator.path = "attachment.url"
+//* content ^slicing.rules = #open
+//* content ^definition = "Hier kann die Angabe einer strukturierten Referenz auf einen anderen Inhalt, bspw. ein anderes Dokument oder ein Dokument in der Form eines formatierten Anhangs abgebildet werden"
+//* content contains
+//    reference 0..* MS 
+    
+    //and
+    //attachment 0..* MS
+* content.attachment MS
+* content.attachment.contentType 1.. MS
+* content.attachment.contentType ^definition = "Hier wird das Dateiformat ausgewählt.\\nEs ist ein Code aus dem System urn:ietf:bcp:13 zu wählen"
+* content.attachment.language ..0
+* content.attachment.data ..0
+* content.attachment.url MS
+* content.attachment.url ^short = "URI"
+* content.attachment.url ^definition = "URI des Eintrags."
+* content.attachment.size 1.. MS
+* content.attachment.size ^definition = "Hier wird die Größe der Datei in Byte angegeben."
+* content.attachment.size ^short = "Dateigröße"
+* content.attachment.hash 1.. MS
+* content.attachment.hash ^definition = "Hier wird der Hashwert der Datei angegeben."
+* content.attachment.hash ^short = "Hashwert"
+* content.attachment.title 1.. MS
+* content.attachment.title ^short = "Titel"
+* content.attachment.title ^definition = "Title des referenzierten Dokumentes."
+* content.attachment.creation 1.. MS
+* content.attachment.creation ^short = "Zeitpunkt der Erstellung des Dokumentes"
+* content.attachment.creation ^definition = "Hier wird der Zeitpunkt der Erstellung des referenzierten Dokumentes angegeben."
 //* content[reference].format 
+/*
 * content[attachment].attachment MS
 * content[attachment].attachment.contentType 1.. MS
 * content[attachment].attachment.contentType ^definition = "Hier wird das Dateiformat ausgewählt.\\nEs ist ein Code aus dem System urn:ietf:bcp:13 zu wählen"
@@ -139,7 +145,7 @@ Description: "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Ansch
 * content[attachment].attachment.creation ^definition = "Hier wird der Zeitpunkt der Erstellung des Anhangs angegeben."
 * content[attachment].attachment.creation ^short = "Zeitpunkt der Erstellung des Anhangs"
 //* content[attachment].format 
-
+*/
 /*
 * context 0..1
 * context.encounter 0..*
