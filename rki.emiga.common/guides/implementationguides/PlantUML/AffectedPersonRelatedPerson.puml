@@ -1,3 +1,4 @@
+@startuml
 skinparam linetype ortho
 
 title AffectedPersonRelatedPerson (Profile of RelatedPerson) - Class Diagram
@@ -16,3 +17,5 @@ class AffectedPersonRelatedPerson{
 <b>+</b> patient: Reference(Patient) [1..1]
 <b>+</b> relationship: CodeableConcept [1..*]
 }
+
+@enduml

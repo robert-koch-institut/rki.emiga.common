@@ -1,3 +1,4 @@
+@startuml
 skinparam linetype ortho
 
 title AnnotationCommunication (Profile of Communication) - Class Diagram
@@ -25,3 +26,5 @@ class AnnotationCommunication{
 <b>+</b> status: FixedValue ('completed') [1..1]
 <b>+</b> topic.text: string [1..1] 
 }
+
+@enduml

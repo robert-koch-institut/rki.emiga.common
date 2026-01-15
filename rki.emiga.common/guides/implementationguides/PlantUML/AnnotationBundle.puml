@@ -1,3 +1,4 @@
+@startuml
 skinparam linetype ortho
 
 title AnnotationBundle - Class Diagram
@@ -21,3 +22,5 @@ AnnotationBundle ..> AnnotationCommunication
 AnnotationBundle ..> EmigaUserPractitioner
 AnnotationBundle ..> AttachmentDocumentReference
 AnnotationBundle ..> Resource
+
+@enduml
