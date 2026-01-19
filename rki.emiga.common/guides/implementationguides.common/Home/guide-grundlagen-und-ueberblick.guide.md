@@ -1,7 +1,7 @@
 # {{page-title}}
 
 ## Über EMIGA
-![EMIGA Logo](https://www.rki.de/SharedDocs/Bilder/Institut/Abt3/FG32/EMIGA-Logo.webp?__blob=normal&v=4 "EMIGA Logo")
+{{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
 
 Die COVID-19-Pandemie hat verdeutlicht, wie essenziell effiziente digitale Werkzeuge für die 
 Überwachung und Eindämmung übertragbarer Krankheiten sind. Doch nicht nur in Krisenzeiten, sondern 
