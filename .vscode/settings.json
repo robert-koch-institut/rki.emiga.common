@@ -3,5 +3,14 @@
     "plantuml.exportSubFolder": false,
     "plantuml.commandArgs": [],
     "plantuml.diagramsRoot": "./rki.emiga.common/guides/implementationguides.common/PlantUML",
-    "plantuml.exportOutDir": "./rki.emiga.common/guides/implementationguides.common/PlantUML/PNGs"
+    "plantuml.exportOutDir": "./rki.emiga.common/guides/implementationguides.common/PlantUML/PNGs",
+    "triggerTaskOnSave.tasks": {
+        "generatePlantumlPng": [
+            "**/*.wsd",
+            "**/*.pu",
+            "**/*.puml",
+            "**/*.plantuml",
+            "**/*.iuml",
+        ]
+    },
 }
