@@ -5,5 +5,3 @@
     "plantuml.diagramsRoot": "./rki.emiga.common/guides/implementationguides.common/PlantUML",
     "plantuml.exportOutDir": "./rki.emiga.common/guides/implementationguides.common/PlantUML/PNGs"
 }
-
-//https://github.com/qjebbs/vscode-plantuml/issues/200
