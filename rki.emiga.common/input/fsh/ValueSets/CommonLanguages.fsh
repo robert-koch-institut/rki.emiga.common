@@ -21,6 +21,12 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#ar ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
 * $bcp47#ar ^designation[=].use = $designation-usage#display
 * $bcp47#ar ^designation[=].value = "Arabisch"
+
+* $bcp47#ar ^designation[+].language = #de
+* $bcp47#ar ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#ar ^designation[=].use = $designation-usage#display
+* $bcp47#ar ^designation[=].value = "Arabisch"
+
 * $bcp47#bn "Bengali"
 * $bcp47#bn ^designation[0].language = #en
 * $bcp47#bn ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
@@ -693,6 +699,10 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#hi ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
 * $bcp47#hi ^designation[=].use = $designation-usage#display
 * $bcp47#hi ^designation[=].value = "Hindi"
+* $bcp47#hi ^designation[+].language = #de
+* $bcp47#hi ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#hi ^designation[=].use = $designation-usage#display
+* $bcp47#hi ^designation[=].value = "Hindi"
 * $bcp47#hr "Croatian"
 * $bcp47#hr ^designation[0].language = #en
 * $bcp47#hr ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
@@ -977,11 +987,20 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#pa ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
 * $bcp47#pa ^designation[=].use = $designation-usage#display
 * $bcp47#pa ^designation[=].value = "Punjabi"
+* $bcp47#pa ^designation[+].language = #de
+* $bcp47#pa ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#pa ^designation[=].use = $designation-usage#display
+* $bcp47#pa ^designation[=].value = "Punjabi"
 * $bcp47#pl "Polish"
 * $bcp47#pl ^designation[0].language = #pl
 * $bcp47#pl ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
 * $bcp47#pl ^designation[=].use = $designation-usage#display
 * $bcp47#pl ^designation[=].value = "Polskie"
+* $bcp47#pl ^designation[0].language = #de
+* $bcp47#pl ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#pl ^designation[=].use = $designation-usage#display
+* $bcp47#pl ^designation[=].value = "Polnisch"
+
 * $bcp47#pt "Portuguese"
 * $bcp47#pt ^designation[0].language = #en
 * $bcp47#pt ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"

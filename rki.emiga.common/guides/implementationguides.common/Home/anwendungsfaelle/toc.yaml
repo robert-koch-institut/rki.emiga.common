@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Annotationen
+  filename: guide-annotationen.guide.md
+- name: Personen
+  filename: guide-personen.guide.md
