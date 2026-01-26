@@ -3,8 +3,8 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.5.0"
-* ^date = "2025-12-17"
+* ^version = "0.6.0"
+* ^date = "2026-01-26"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
@@ -38,30 +38,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 /*
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
-* identifier 1.. MS
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "system"
-  * ^slicing.rules = #open
-  * ^slicing.description = "slicing organization identifier by system"
-  * ^slicing.ordered = false
-* identifier contains emigaAnnotationId 0..1 MS and
-          survnetAnnotationId 0..1 MS and
-          emigaAnnotationFileNumber 0..1 MS and
-          survnetAnnotationFileNumber 0..1 MS
-* identifier[emigaAnnotationFileNumber] only IdentifierEmigaAnnotationFileNumber
-* identifier[emigaAnnotationId] only IdentifierEmigaAnnotationId
-* identifier[survnetAnnotationId] only IdentifierSurvNetAnnotationId
-* identifier[survnetAnnotationFileNumber] only IdentifierSurvNetAnnotationFileNumber
-* identifier[emigaAnnotationFileNumber] ^short = "EMIGA Annotation-Aktenzeichen"
-* identifier[emigaAnnotationFileNumber] ^definition = "EMIGA Annotation-Aktenzeichen ist ein eindeutiger fachlicher Identifier für EMIGA Annotationen."
-* identifier[survnetAnnotationFileNumber] ^short = "SurvNet Annotation-Aktenzeichen"
-* identifier[survnetAnnotationFileNumber] ^definition = "SurvNet Annotation-Aktenzeichen ist ein fachlicher Identifier für SurvNet Annotationen."
-* identifier[emigaAnnotationId] ^short = "EMIGA Annotation-ID"
-* identifier[emigaAnnotationId] ^definition = "EMIGA Annotation-ID ist ein eindeutiger technische Identifier für EMIGA Annotationen."
-* identifier[survnetAnnotationId] ^short = "SurvNet Annotation-ID"
-* identifier[survnetAnnotationId] ^definition = "SurvNet Annotation-ID ist ein fachlicher Identifier für SurvNet Annotationen."
-*/
-//* identifier only IdentifierAnn
+
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0
 * instantiatesCanonical ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
@@ -86,8 +63,8 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * statusReason 0..0
 * statusReason ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
-* extension 1.. MS
-* extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 1..1 MS
+* extension MS
+* extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 0..1 MS
 * extension[processingStatus].value[x] from ProcessingStatusAnnotation (required)
 
 //Es wird für "Schlagwort" überlegt
@@ -152,6 +129,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 //* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
 //* category.text
 //* category.text ^short = "Schlagwort-Inhalt"
+
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * priority 0..0
 * priority ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
@@ -201,7 +179,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * reasonReference 0..0 
 * reasonReference ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
-* payload 1..* MS
+* payload 0..* MS
 * payload ^short = "Inhalt"
 * payload ^definition = "Inhalt der Annotation"
 * payload.content[x] MS
