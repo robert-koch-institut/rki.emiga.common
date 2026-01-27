@@ -1,2 +1,2 @@
 ﻿**fix:** Set extension dateCreated and payload to optional  
-StructureDefinitions/AnnotationCommunication.fsh  
+StructureDefinitions/AnnotationCommunication.json
