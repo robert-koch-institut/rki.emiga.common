@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationCommunication",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "name": "AnnotationCommunication",
   "title": "Annotation",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-17",
+  "date": "2026-01-26",
   "publisher": "Robert Koch-Institut",
   "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -176,7 +176,7 @@
       {
         "id": "Communication.extension",
         "path": "Communication.extension",
-        "min": 2,
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -207,7 +207,7 @@
         "id": "Communication.extension:dateCreated",
         "path": "Communication.extension",
         "sliceName": "dateCreated",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -238,6 +238,8 @@
           "description": "slicing patient identifier by system",
           "ordered": false
         },
+        "short": "TODO",
+        "definition": "TODO",
         "mustSupport": true
       },
       {
@@ -454,7 +456,6 @@
         "path": "Communication.payload",
         "short": "Inhalt",
         "definition": "Inhalt der Annotation",
-        "min": 1,
         "mustSupport": true
       },
       {

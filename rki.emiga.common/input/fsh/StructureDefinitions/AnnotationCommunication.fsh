@@ -35,7 +35,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 // Derzeit für Emiga Anwendungsfälle nicht relevant
 * language 0..0
 * insert IdentifierCommon
-/*
+
 * identifier ^short = "TODO"
 * identifier ^definition = "TODO"
 
@@ -98,38 +98,10 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * category.coding[keywordsGlobal].code ^short = "Global Schlagwort-Code"
 * category.coding[keywordsGlobal].code ^definition = "Global Schlagwort-Code der Annotation"
 * category.coding[keywordsGlobal].display 0..1 MS
-*/
-
-
-/*
-* category.coding ^slicing.discriminator.type = #value
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding ^definition = "TODO"
-* category.coding contains
-    ausbruchscategorieSurvNet 0..1 MS and
-    ausbruchscategorieSnomed 0..1 MS
-* category.coding[ausbruchscategorieSurvNet] from $OutbreakCategoryVS (required)
-* category.coding[ausbruchscategorieSurvNet] ^short = "Ausbruchskategorie"
-* category.coding[ausbruchscategorieSurvNet] ^patternCoding.system = "https://emiga.rki.de/fhir/outbreak/CodeSystem/OutbreakCategory"
-* category.coding[ausbruchscategorieSurvNet].system 1.. MS
-* category.coding[ausbruchscategorieSurvNet].version MS
-* category.coding[ausbruchscategorieSurvNet].code 1.. MS
-* category.coding[ausbruchscategorieSurvNet].display MS
-* category.coding[ausbruchscategorieSurvNet].userSelected ..0
-* category.coding[ausbruchscategorieSnomed] from $sct (required)
-* category.coding[ausbruchscategorieSnomed] ^short = "Ausbruchskategorie mit Snomed kodiert"
-* category.coding[ausbruchscategorieSnomed] ^patternCoding.system = "http://snomed.info/sct"
-* category.coding[ausbruchscategorieSnomed].system 1.. MS
-* category.coding[ausbruchscategorieSnomed].version MS
-* category.coding[ausbruchscategorieSnomed].code 1.. MS
-* category.coding[ausbruchscategorieSnomed].display MS
-* category.coding[ausbruchscategorieSnomed].userSelected ..0
-*/
 //* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
 //* category.text
 //* category.text ^short = "Schlagwort-Inhalt"
-
+*/
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * priority 0..0
 * priority ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
@@ -189,12 +161,3 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * payload.contentString ^short = "Beschreibung - Inhalt der Annotation"
 * payload.contentReference ^short = "Anhang - Hier wird der Anhang der Annotation referenziert"
 
-
-/*
-* note 0..* MS
-* note ^short = "Beschreibung"
-* note ^definition = "Beschreibung der Annotation"
-* note.author[x] 0..0
-* note.author[x] ^comment = "Der Autor der Annotation wird über den Sender abgebildet"
-* note.text MS
-*/
