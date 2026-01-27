@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------------------------------
+ CLI - Scripts to create Release_Notes 
+ This file contains two cli-powershel scripts to create Release Notes from git messages
+ Author: Konstantinos Voulgaris
+ Date: 10/2025
+---------------------------------------------------------------------------------------------------- 
+
+ 1. Create .txt file with diffs between development and main branches.
+ Paste in Terminal:
+
+ git log --name-only --oneline --no-merges main.. development > Release_Notes_<package-version>.txt
+ 
+ 
+ 2. Create .md file
+ # Paste in Terminal / Replace Package Version with current
+ 
+ # Read the txt, replace feat:/fix: with bold markdown and append two spaces to each line,
+>> # preserving exact line count and order, then write the .md file.
+>> Get-Content 'P:\source\repos\rki.emiga.common\ReleaseNotes\Release_Notes_1.2.0-alpha.20.txt' |
+>>   ForEach-Object {
+>>     $line = $_
+>>     # Replace standalone feat: and fix: (case-sensitive as in your file) with bold markdown
+>>     $line = $line -replace '(?<=^|\s)feat:(?=\s|$)','**feat:**'
+>>     $line = $line -replace '(?<=^|\s)fix:(?=\s|$)','**fix:**'
+>>     # Preserve original content but trim trailing spaces then add exactly two spaces
+>>     $line = $line.TrimEnd() + '  '
+>>     $line
+>>   } | Set-Content 'p:\source\repos\rki.emiga.common\ReleaseNotes\Release_Notes_1.2.0-alpha.20.md' -Encoding UTF8
+easeNotes\x5cRelease_Notes_1.2.0-alpha.20.md'

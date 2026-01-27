@@ -31,7 +31,7 @@ StructureDefinition-AffectedPerson.json                             AffectedPers
 StructureDefinition-AffectedPersonBundle.json                       AffectedPersonBundle                 Profile     StructureDefinitions\AffectedPersonBundle.fsh                       1 - 29
 StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson          Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 26
 StructureDefinition-AnnotationBundle.json                           AnnotationBundle                     Profile     StructureDefinitions\AnnotationBundle.fsh                           1 - 26
-StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 212
+StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 162
 StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference          Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 123
 StructureDefinition-DateCreated.json                                DateCreated                          Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 11
 StructureDefinition-EmigaUserPractitioner.json                      EmigaUserPractitioner                Profile     StructureDefinitions\EmigaUserPractitioner.fsh                      1 - 97
