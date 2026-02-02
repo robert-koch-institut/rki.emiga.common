@@ -31,6 +31,7 @@ Description: "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen."
 * ^date = "2025-12-12"
 * include codes from system FacilityAssociationType
 * include codes from system https://demis.rki.de/fhir/CodeSystem/organizationAssociation
+* include codes from system NullFlavor
 
 /*
 * $v3-NullFlavor#ASKU "asked but unknown" // nicht ermittelbar
