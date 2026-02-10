@@ -22,7 +22,7 @@ Diese Ressourcen sind zentral für die Abbildung von Organisationen, Personen un
 | Bezugsperson der betroffenen Person (AffectedPersonRelatedPerson) | Dieses Profil bildet eine Bezugsperson der betroffenen Person ab. Es dient der strukturierten Darstellung von Personen, die in einer persönlichen oder rechtlichen Beziehung zur betroffenen Person stehen. |
 | EMIGA Aktenzeichen Identifier (IdentifierEmigaFileNumber) | Eindeutiger fachlicher Identifier für EMIGA-Entitäten. |
 | EMIGA-ID Identifier (IdentifierEmigaID) | Technischer Indentifikator für EMIGA-Entitäten. |
-| EMIGA Nutzende Person (EmigaUserPractitioner) | Abbildung einer EMIGA nutzende Person (z.B. Mitarbeitende von Gesundheitsämtern oder anderen beteiligten Organisationen). Es dient der strukturierten Erfassung von personenbezogenen und organisatorischen Basisdaten. |
+| EMIGA Nutzende Person (EmigaUserPractitioner) | Ist eine EMIGA nutzende Person, also jemand mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet. |
 | EMIGA Personen Transactionbundle (PersonenTransactionBundle) | Das EMIGA Personen Transactionbundle  dient der gebündelten, transaktionalen Übertragung von Operationen auf Personen-bezogene Ressourcen (z.B. betroffene Personen, Bezugspersonen, zugehörige Dokumentation). |
 | EMIGA Personen TransactionBundle-Response (PersonenTransactionResponse) | Dieses Profil definiert die Server-Antwort auf Transaktions-Bundles im Rahmen von EMIGA Personen-Szenarien. | 
 | Person Bundle (AffectedPersonBundle) | Personen-Bundle für eine betroffene Person. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person. |
