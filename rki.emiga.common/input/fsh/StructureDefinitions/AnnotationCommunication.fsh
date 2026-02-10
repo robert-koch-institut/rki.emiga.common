@@ -36,8 +36,8 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * language 0..0
 * insert IdentifierCommon
 
-* identifier ^short = "TODO"
-* identifier ^definition = "TODO"
+* identifier ^short = "Identifikator der Annotation"
+* identifier ^definition = "Eindeutiger fachlicher Identifikator der Annotation (z. B. Aktenzeichen, Dokumenten- oder Vorgangsnummer), der unabhängig von der technischen Ressourcen-ID zur Identifikation und Referenzierung der Annotation verwendet wird."
 
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * instantiatesCanonical 0..0

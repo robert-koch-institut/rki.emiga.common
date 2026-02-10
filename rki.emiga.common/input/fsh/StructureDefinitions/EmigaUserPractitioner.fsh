@@ -2,7 +2,7 @@ Profile: EmigaUserPractitioner
 Parent: Practitioner
 Id: EmigaUserPractitioner
 Title: "Emiga Nutzende Person"
-Description: "TODO"
+Description: "Abbildung einer EMIGA nutzende Person (z.B. Mitarbeitende von Gesundheitsämtern oder anderen beteiligten Organisationen). Es dient der strukturierten Erfassung von personenbezogenen und organisatorischen Basisdaten, die für die Authentifizierung, Autorisierung und Nachverfolgbarkeit von Aktionen im System erforderlich sind."
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
 * ^version = "0.3.0"
 * ^date = "2025-12-17"
