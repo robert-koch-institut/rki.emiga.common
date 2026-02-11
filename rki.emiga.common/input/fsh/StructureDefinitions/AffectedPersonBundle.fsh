@@ -2,7 +2,7 @@ Profile: AffectedPersonBundle
 Parent: Bundle
 Id: AffectedPersonBundle
 Title: "Person Bundle"
-Description: "Dieses Profil bildet ein Personen-Bundle für eine betroffene Person ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person innerhalb eines fachlichen Vorgangs."
+Description: "Dieses Profil bildet ein Person Bundle für eine betroffene Person ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person innerhalb eines fachlichen Vorgangs."
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 
