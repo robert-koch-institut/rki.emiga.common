@@ -25,7 +25,7 @@ Description: "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs ode
 ValueSet: ProcessingStatusVS
 Id: ProcessingStatusVS
 Title: "Bearbeitungsstatus"
-Description: "Dieses ValueSet umfasst die zulässigen Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden."
+Description: "Dieses ValueSet umfasst die Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden."
 * insert MetadataTerminology
 * ^version = "0.2.0"
 * ^date = "2025-12-12"

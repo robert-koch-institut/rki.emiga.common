@@ -14,7 +14,7 @@ Die ValueSets sind Sammlungen von Codes aus den oben genannten CodeSystems und d
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Anrede (Salutation) | Werteliste mit Konzepten, die die Art der Anrede bestimmen. |
 | Anzeigestext Art (ConceptDesignationUse) | Bestimmt die Darstellung eines Anzeigetext.|
-| Bearbeitungsstatus (ProcessingStatusVS) | Die zulässigen Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden. |
+| Bearbeitungsstatus (ProcessingStatusVS) | Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden. |
 | Bearbeitungsstatus Annotation (ProcessingStatusAnnotation) | Werteliste mit möglichen Bearbeitungsstatus für Annotationen. |
 | Bearbeitungsstatus betroffene Person (ProcessingStatusAffectedPerson) | Werteliste mit möglichen Bearbeitungsstatus einer betroffenen Person. |
 | Beziehungen (RelatedPersonRelationshipTypeVS) | Werteliste mit Konzepten, die die Art der Beziehungen bestimmen. |
