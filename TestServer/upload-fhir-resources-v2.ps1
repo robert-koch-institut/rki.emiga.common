@@ -18,7 +18,7 @@ param(
     [string]$Username = "admin",
     
     [Parameter(Mandatory=$false)]
-    [string]$Password = "sx*738(SacDq"
+    [SecureString]$Password = "sx*738(SacDq"
 )
 
 function Send-FhirResource {
