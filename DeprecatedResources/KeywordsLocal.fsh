@@ -1,7 +1,7 @@
 CodeSystem: KeywordsLocal
 Id: KeywordsLocal
 Title: "Schlagworter Lokal"
-Description: "TODO"
+Description: "Dieses CodeSystem definiert lokale Schlagwörter, die zur spezifischen Klassifikation und Kennzeichnung von Ressourcen und Inhalten in einem definierten organisatorischen oder projektspezifischen Kontext verwendet werden."
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal"
 * insert MetadataTerminology
 * ^version = "1.0.0"

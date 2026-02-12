@@ -2,7 +2,7 @@ Profile: PersonenTransactionBundle
 Parent: Bundle
 Id: PersonenTransactionBundle
 Title: "EMIGA Personen Transactionbundle"
-Description: "TO DO"
+Description: "Dieses Profil bildet ein EMIGA-Personen-Transaction-Bundle ab. Es dient der gebündelten, transaktionalen Übertragung von Operationen auf Personen-bezogene Ressourcen (z.B. betroffene Personen, Bezugspersonen, zugehörige Dokumentation)."
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 

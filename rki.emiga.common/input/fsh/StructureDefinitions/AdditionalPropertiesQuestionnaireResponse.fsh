@@ -2,7 +2,7 @@ Profile: OutbreakQuestionnaireResponseCommon
 Parent: QuestionnaireResponse
 Id: AdditionalPropertiesQuestionnaireResponse
 Title: "Zusätzliche Eigenschaften Fragebogen-Antworten"
-Description: "TODO"
+Description: "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen."
 
 * ^version = "0.2.0"
 * ^date = "2025-12-17"
