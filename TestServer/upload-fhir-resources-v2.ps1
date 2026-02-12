@@ -18,7 +18,7 @@ param(
     [string]$Username = "admin",
     
     [Parameter(Mandatory=$false)]
-    [SecureString]$Password = "sx*738(SacDq"
+    [SecureString]$Password = "<your_password_here>"
 )
 
 function Send-FhirResource {
@@ -26,7 +26,7 @@ function Send-FhirResource {
         [string]$ResourcePath,
         [string]$ServerUrl,
         [string]$User,
-        [string]$Pass,
+        [SecureString]$Pass,
         [bool]$IsDryRun,
         [bool]$IsValidate
     )
@@ -54,7 +54,9 @@ function Send-FhirResource {
         }
         
         # Create auth header
-        $pair = "${User}:${Pass}"
+        $ptr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Pass)
+        $plainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringBSTR($ptr)
+        $pair = "${User}:${plainPassword}"
         $bytes = [System.Text.Encoding]::ASCII.GetBytes($pair)
         $base64 = [System.Convert]::ToBase64String($bytes)
         
