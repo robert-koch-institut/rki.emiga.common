@@ -1,0 +1,87 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1770991664501)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BaseHealthcareService.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BaseHealthcareService",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991665625)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BaseLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BaseLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991666116)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BaseOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BaseOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991666894)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BasePractitioner.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BasePractitioner",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991667927)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BasePractitionerRole.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BasePractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    }
+]

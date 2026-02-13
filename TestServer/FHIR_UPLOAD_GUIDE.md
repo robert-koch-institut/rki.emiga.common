@@ -1,227 +1,117 @@
-# FHIR Package Upload Scripts - Usage Guide
+﻿# FHIR Package Upload Scripts - Usage Guide
 
 ## Overview
-Working PowerShell script to upload FHIR resources to the server:
+`upload-fhir-resources-v2.ps1` uploads FHIR JSON resources to an R4 HAPI FHIR JPA server.
 
-**upload-fhir-resources-v2.ps1** - Upload individual files or folders with built-in authentication
+Current capabilities:
+- Upload a single file or a folder (recursive)
+- Dry run and JSON validation modes
+- Secure authentication via `PSCredential` or password prompt
+- Optional example upload (`-IncludeExamples`)
+- Optional POST fallback for resources without `id` (`-PostWhenIdMissing`)
+- Automatic retry passes for missing-reference example uploads (`HAPI-1094`)
+- JSON outcome report + manual-fix text report
 
-### Authentication
-The script is pre-configured with authentication:
-- **Username:** admin
-- **Password:** <yourpasswordhere>
-- **Server:** https://testfhir.demo.emiga-rki.de/fhir
+Default server:
+- `https://testfhir.demo.emiga-rki.de/fhir`
 
-## Quick Start
+## Authentication
+No plaintext password is stored in script parameters.
 
-### Upload 5 EMIGA Packages (In Dependency Order)
+Use one of:
+1. Pass `-Credential`.
+2. Pass `-Username` and let script prompt for password in upload mode.
+
+Recommended command:
 ```powershell
-# Validate all packages first
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.common#1.2.0-alpha.16\package" -Validate
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.orgv#1.1.1\package" -Validate
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.vzd#2.0.0-alpha.18\package" -Validate
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.outbreak#0.1.3\package" -Validate
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.case#0.3.0-alpha.5\package" -Validate
-
-# Upload all packages
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.common#1.2.0-alpha.16\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.orgv#1.1.1\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.vzd#2.0.0-alpha.18\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.outbreak#0.1.3\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.case#0.3.0-alpha.5\package"
+$cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
 ```
 
-### Upload Single Package
+## Parameters
 ```powershell
-# Upload one package from .fhir cache
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.vzd#2.0.0-alpha.18\package"
-
-# Dry run (see what would be uploaded)
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.common#1.2.0-alpha.16\package" -DryRun
-
-# Validate JSON structure only
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.case#0.3.0-alpha.5\package" -Validate
+-FilePath           # Single JSON file
+-FolderPath         # Folder of JSON files (recursive)
+-DryRun             # Print what would be uploaded
+-Validate           # Validate JSON only (no upload)
+-IncludeExamples    # Include files under '\examples\' (default: false)
+-PostWhenIdMissing  # POST /{resourceType} when id is missing
+-FhirServerUrl      # Server base URL
+-Username           # Username for prompted credential mode
+-Credential         # PSCredential for Basic auth
+-OutcomeReportPath  # JSON report path
+-ManualFixReportPath# Text report with required manual content fixes
 ```
 
-### Upload Individual Files
+Validation rules:
+- Exactly one of `-FilePath` or `-FolderPath` is required.
+- `package.json` and `.index.json` are always skipped.
+- `examples` are skipped unless `-IncludeExamples` is provided.
+
+## Upload Behavior
+- Standard upload uses `PUT /{resourceType}/{id}`.
+- If `id` is missing:
+  - with `-PostWhenIdMissing`: uses `POST /{resourceType}`
+  - without it: marks entry as failed (`Missing id`).
+- In `-IncludeExamples` upload mode, script runs up to 5 passes to retry missing-reference failures (`HAPI-1094`) after dependencies are uploaded.
+
+## Reports
+### Outcome report (JSON)
+Default file:
+- `TestServer\fhir-upload-outcomes-yyyyMMdd-HHmmss.json`
+
+Each entry includes:
+- `Timestamp`, `FilePath`, `ResourceType`, `ResourceId`
+- `Action` (`Validate`, `DryRun`, `Upload`, `UploadPost`)
+- `Success`, `HttpStatus`, `Message`
+- `OperationOutcome` summary (if server returns one)
+
+### Manual-fix report (TXT)
+Default file:
+- `TestServer\fhir-manual-fixes-yyyyMMdd-HHmmss.txt`
+
+Generated when failures require content edits (for example):
+- Numeric-only IDs rejected by server (`HAPI-0960`)
+- Broken/missing references (`HAPI-1094`)
+
+## Typical Commands
+### Validate a package
 ```powershell
-# Single file
-.\upload-fhir-resources-v2.ps1 -FilePath "CapabilityStatement_TestServer.json"
-
-# All files in folder
-.\upload-fhir-resources-v2.ps1 -FolderPath "Examples"
-
-# Validate only
-.\upload-fhir-resources-v2.ps1 -FilePath "resource.json" -Validate
-
-# Dry run
-.\upload-fhir-resources-v2.ps1 -FolderPath "Examples" -DryRun
+.\upload-fhir-resources-v2.ps1 -FolderPath "C:\path\to\package" -Validate
 ```
 
-## Configuration
-
-### 5 EMIGA Packages
-
-Upload in dependency order:
-
-1. **EMIGA Common v1.2.0-alpha.16**  
-   `C:\Users\VoulgarisK\.fhir\packages\rki.emiga.common#1.2.0-alpha.16\package`
-
-2. **EMIGA OrgV v1.1.1**  
-   `C:\Users\VoulgarisK\.fhir\packages\rki.emiga.orgv#1.1.1\package`
-
-3. **EMIGA VZD v2.0.0-alpha.18**  
-   `C:\Users\VoulgarisK\.fhir\packages\rki.emiga.vzd#2.0.0-alpha.18\package`
-
-4. **EMIGA Outbreak v0.1.3**  
-   `C:\Users\VoulgarisK\.fhir\packages\rki.emiga.outbreak#0.1.3\package`
-
-5. **EMIGA Case v0.3.0-alpha.5**  
-   `C:\Users\VoulgarisK\.fhir\packages\rki.emiga.case#0.3.0-alpha.5\package`
-
-**Dependency Order:** Common → OrgV → VZD → Outbreak → Case
-
-### Script Parameters
-
+### Upload package (without examples)
 ```powershell
--FilePath        # Upload a single JSON file
--FolderPath      # Upload all JSON files in a folder (recursive)
--DryRun          # Show what would be uploaded without sending
--Validate        # Validate JSON structure only
--FhirServerUrl   # Override default server (default: https://testfhir.demo.emiga-rki.de/fhir)
--Username        # Override default username (default: admin)
--Password        # Override default password
+$cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
+.\upload-fhir-resources-v2.ps1 -FolderPath "C:\path\to\package" -Credential $cred
 ```
 
-## Features
-
-### Built-in Authentication
-- HTTP Basic Authentication pre-configured
-- Credentials: admin / sx*738(SacDq
-- Base64 encoded authorization header
-
-### Resource Upload
-- Uses PUT method with resourceType/id URL pattern
-- Requires resources to have both resourceType and id fields
-- UTF-8 encoding for all JSON files
-- Content-Type: application/fhir+json
-
-### Error Handling
-- Displays detailed error messages
-- Color-coded output (Green=success, Red=failure)
-- Continues processing even if one resource fails
-- Summary report at the end
-
-### Validation Mode
-Validate JSON structure without uploading:
+### Upload package with examples and POST fallback
 ```powershell
-.\upload-fhir-resources-v2.ps1 -FolderPath "path\to\package" -Validate
+$cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
+.\upload-fhir-resources-v2.ps1 -FolderPath "C:\path\to\package" -Credential $cred -IncludeExamples -PostWhenIdMissing
 ```
 
-### Dry Run Mode
-Test your upload without sending data:
+### Custom report locations
 ```powershell
-.\upload-fhir-resources-v2.ps1 -FolderPath "path\to\package" -DryRun
-```
-
-## Examples
-
-### Example 1: Upload All EMIGA Packages
-```powershell
-# Upload all 5 packages in dependency order
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.common#1.2.0-alpha.16\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.orgv#1.1.1\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.vzd#2.0.0-alpha.18\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.outbreak#0.1.3\package"
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.case#0.3.0-alpha.5\package"
-```
-
-### Example 2: Upload Single Package with Validation
-```powershell
-# Validate first
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.vzd#2.0.0-alpha.18\package" -Validate
-
-# If validation passes, upload
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.vzd#2.0.0-alpha.18\package"
-```
-
-### Example 3: Test Before Upload
-```powershell
-# Dry run first
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.common#1.2.0-alpha.16\package" -DryRun
-
-# If successful, do actual upload
-.\upload-fhir-resources-v2.ps1 -FolderPath "C:\Users\VoulgarisK\.fhir\packages\rki.emiga.common#1.2.0-alpha.16\package"
-```
-
-### Example 4: Upload Single File
-```powershell
-# Upload CapabilityStatement
-.\upload-fhir-resources-v2.ps1 -FilePath "CapabilityStatement_TestServer.json"
+$cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
+.\upload-fhir-resources-v2.ps1 -FolderPath "C:\path\to\package" -Credential $cred -OutcomeReportPath ".\outcomes.json" -ManualFixReportPath ".\manual-fixes.txt"
 ```
 
 ## Troubleshooting
+### `HAPI-1094` missing referenced resource
+- Cause: dependency ordering or broken reference id.
+- Script behavior: retries across passes when examples are enabled.
+- If still failing: use `fhir-manual-fixes-*.txt` and update referenced ids in package manually.
 
-### "Path not found" Error
-Check that your package paths are correct. Packages are in your FHIR cache:
-`C:\Users\VoulgarisK\.fhir\packages\`
+### `HAPI-0960` numeric ID rejected
+- Cause: server disallows client-assigned purely numeric `id`.
+- Fix: change `id` to include at least one non-numeric character and update all references.
 
-List all installed packages:
-```powershell
-Get-ChildItem "C:\Users\VoulgarisK\.fhir\packages" -Directory
-```
+### `Get-Credential` prompts for unexpected parameters
+- You may have a shadowed function.
+- Use fully-qualified cmdlet:
+  - `Microsoft.PowerShell.Security\Get-Credential -UserName "admin"`
 
-### "Upload failed" Error
-- Check server connectivity: `https://testfhir.demo.emiga-rki.de/fhir/metadata`
-- Verify authentication credentials are correct
-- Review error message details in console
-- Use -DryRun to test connectivity
-- Use -Validate to check JSON structure
-
-### "Missing resourceType or id" Error
-- Ensure all resources have a resourceType field
-- Ensure all resources have an id field
-- The script requires both fields for PUT operations
-
-### "No JSON files found" Warning
-- Ensure folder path contains .json files
-- Check file extensions (must be .json)
-- Verify folder path is correct
-
-### Authentication Issues
-Authentication is built-in with these credentials:
-- Username: admin
-- Password: <yourpasswordhere>
-
-To use different credentials:
-```powershell
-.\upload-fhir-resources-v2.ps1 -FolderPath "path" -Username "myuser" -Password "mypass"
-```
-
-## Server Information
-
-Default server: `https://testfhir.demo.emiga-rki.de/fhir`
-
-**Pre-installed packages on server:**
-- ✅ hl7.fhir.r4.core#4.0.1
-- ✅ hl7.terminology.r4
-
-
-
-### Change Default Server
-Edit the `$ServerUrl` parameter at the top of each script, or pass it via command line.
-
-## Tips
-
-1. **Always validate first** - Use `-Validate` to check JSON structure before uploading
-2. **Use -DryRun** to see what will be uploaded without sending data
-3. **Dependency order matters** - Common package must be uploaded before packages that depend on it
-4. **Check server status** - Visit `https://testfhir.demo.emiga-rki.de/fhir/metadata` to verify server is up
-5. **Keep logs** - Redirect output to file: `.\upload-fhir-resources-v2.ps1 ... > upload.log 2>&1`
-6. **Server auto-resolves dependencies** - Core FHIR and terminology packages are already available
-7. **Monitor output** - Green = success, Red = failure, Yellow = dry run/info
-
-## Support
-
-For issues or questions, check:
-- FHIR server capability statement: `https://testfhir.demo.emiga-rki.de/fhir/metadata`
-- FHIR transaction documentation: https://hl7.org/fhir/http.html#transaction
+### Upload summary crashes or strict-mode property errors
+- Use latest script version from this repository.
+- Re-run and inspect latest `fhir-upload-outcomes-*.json` + `fhir-manual-fixes-*.txt`.
