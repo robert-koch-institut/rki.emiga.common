@@ -1,0 +1,869 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1771340931044)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CapabilityStatementAnno.json",
+        "ResourceType":  "CapabilityStatement",
+        "ResourceId":  "51307798-1c99-4b7b-adfa-8573c7094eb4",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CapabilityStatement",
+                                 "Text":  "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003eHAPI FHIR Server\u003c/div\u003e",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340931239)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-ConceptDesignationUse.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ConceptDesignationUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340931418)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-FacilityAssociationType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "FacilityAssociationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340931608)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-PersonalInformation.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "PersonalInformation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340931786)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-ProcessingStatus.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ProcessingStatus",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340931975)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-RegionKeys.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "RegionKeys",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340938509)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-RelatedPersonRelationshipType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "RelatedPersonRelationshipType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340938682)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-Relevance.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Relevance",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340938862)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-ResourceResponsibility.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ResourceResponsibility",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340939688)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-ResourceVisibilityType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340939888)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\CodeSystem-Salutation.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340940062)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AdditionalPropertiesQuestionnaire.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AdditionalPropertiesQuestionnaire",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340940310)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AdditionalPropertiesQuestionnaireResponse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340940504)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AffectedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AffectedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340941106)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AffectedPersonBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AffectedPersonBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340941291)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AffectedPersonRelatedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AffectedPersonRelatedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340941506)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AnnotationBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AnnotationBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340941676)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AnnotationCommunication.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AnnotationCommunication",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340941996)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AttachmentAnnotation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AttachmentAnnotation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340944228)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-AttachmentDocumentReference.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AttachmentDocumentReference",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340944586)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-DateCreated.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "DateCreated",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340944745)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-EmigaUserPractitioner.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaUserPractitioner",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340944970)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-FacilityAddressAffectedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "FacilityAddressAffectedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340945149)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-IdentifierEmigaFileNumber.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340945309)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-IdentifierEmigaID.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaID",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340945459)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-IdentifierSurvNetFileNumber.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierSurvNetFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340945614)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-LandOfBirth.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "LandOfBirth",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340945770)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-LastModifiedBy.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "LastModifiedBy",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340945920)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-NullFlavor.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NullFlavor",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340946093)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-PersonenTransactionBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "PersonenTransactionBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340946309)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-ProcessingStatus.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ProcessingStatus",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340946478)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-RegionalKey.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "RegionalKey",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340946646)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\StructureDefinition-Salutation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340946817)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-AnnotationResourceVisibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AnnotationResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340946977)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-CommonLanguages.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "CommonLanguages",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340947898)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-ConceptDesignationUse.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ConceptDesignationUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340948075)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-CountryCodes.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "CountryCodes",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340948258)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-FacilityAssociationTypeVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "FacilityAssociationTypeVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340948422)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-NullFlavor.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "NullFlavor",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340948589)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-PersonalInformation.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PersonalInformation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340948763)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-PersonResourceVisibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PersonResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340948947)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-ProcessingStatusAffectedPerson.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ProcessingStatusAffectedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340949133)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-ProcessingStatusAnnotation.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ProcessingStatusAnnotation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340949307)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-ProcessingStatusVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ProcessingStatusVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340949467)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-RegionKeys.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "RegionKeys",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340949644)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-RelatedPersonRelationshipTypeVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "RelatedPersonRelationshipTypeVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340949820)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-Relevance.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "Relevance",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340950001)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-ResourceResponsibility.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ResourceResponsibility",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340950172)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-ResourceVisibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340950359)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-Salutation.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "Salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1771340950537)\/",
+        "FilePath":  "C:\\Users\\d93167\\.fhir\\packages\\rki.emiga.common#1.2.0-alpha.16\\package\\ValueSet-YesNoNullFlavor.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "YesNoNullFlavor",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    }
+]
