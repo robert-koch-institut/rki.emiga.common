@@ -10,6 +10,7 @@ from NamingSystem
 where uniqueId.where(value = %canonical).exists()
 select description
 </fql>
+
 <div id="rendered-codesystem">
     {{render:https://emiga.rki.de/fhir/sid/EmigaFileNumber}}
 </div>
