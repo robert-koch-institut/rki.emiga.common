@@ -5,8 +5,11 @@ canonical: https://emiga.rki.de/fhir/sid/EmigaFileNumber
 
 # {{page-title}}
 ## Beschreibung
-EMIGA-Aktenzeichen für die Verwendung in Identifier.
-<br>&nbsp;<br>
+<fql output="inline" headers="false">
+from NamingSystem
+where uniqueId.where(value = %canonical).exists()
+select description
+</fql>
 
 <div id="rendered-codesystem">
     {{render:https://emiga.rki.de/fhir/sid/EmigaFileNumber}}
