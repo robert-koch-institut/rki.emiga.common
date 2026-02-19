@@ -51,7 +51,7 @@ ValueSet-AnnotationResourceVisibilityType.json                      AnnotationRe
 ValueSet-CommonLanguages.json                                       CommonLanguages                      ValueSet    ValueSets\CommonLanguages.fsh                                       3 - 1358
 ValueSet-ConceptDesignationUse.json                                 ConceptDesignationUse                ValueSet    CodeSystem\ConceptDesignationUse.fsh                                16 - 23
 ValueSet-CountryCodes.json                                          CountryCodes                         ValueSet    ValueSets\CountryCodes.fsh                                          1 - 24
-ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS            ValueSet    CodeSystem\FacilityAssociationType.fsh                              24 - 33
+ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS            ValueSet    CodeSystem\FacilityAssociationType.fsh                              24 - 34
 ValueSet-NullFlavor.json                                            NullFlavor                           ValueSet    ValueSets\NullFlavor.fsh                                            1 - 19
 ValueSet-PersonResourceVisibilityType.json                          PersonResourceVisibilityType         ValueSet    ValueSets\PersonResourceVisibilityType.fsh                          1 - 12
 ValueSet-PersonalInformation.json                                   PersonalInformation                  ValueSet    CodeSystem\PersonalInformation.fsh                                  16 - 24
