@@ -5,8 +5,11 @@ canonical: https://emiga.rki.de/fhir/sid/SurvNetFileNumber
 
 # {{page-title}}
 ## Beschreibung
-Das SurvNet-Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe.
-<br>&nbsp;<br>
+<fql output="inline" headers="false">
+from NamingSystem
+where uniqueId.where(value = %canonical).exists()
+select description
+</fql>
 
 <div id="rendered-codesystem">
     {{render:https://emiga.rki.de/fhir/sid/SurvNetFileNumber}}

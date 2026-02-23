@@ -1,7 +1,7 @@
 CodeSystem: KeywordsGlobal
 Id: KeywordsGlobal
 Title: "Schlagworter Global"
-Description: "TODO"
+Description: "Dieses CodeSystem definiert globale Schlagwörter, die zur einheitlichen Klassifikation und Kennzeichnung von Ressourcen und Inhalten im Rahmen der Spezifikation verwendet werden."
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal"
 * insert MetadataTerminology
 * ^version = "1.0.0"

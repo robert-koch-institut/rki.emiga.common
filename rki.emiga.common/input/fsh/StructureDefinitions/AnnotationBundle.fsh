@@ -2,7 +2,7 @@ Profile: AnnotationBundle
 Parent: Bundle
 Id: AnnotationBundle
 Title: "Annotations Bundle"
-Description: "TO DO"
+Description: "Dieses Profil bildet ein Annotations-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Annotationen (z.B. Notizen, Kommentaren und zugehörigen Ressourcen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs."
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 
