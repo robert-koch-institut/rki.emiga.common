@@ -22,6 +22,10 @@ Use one of:
 1. Pass `-Credential`.
 2. Pass `-Username` and let script prompt for password in upload mode.
 
+Notes:
+- In `-DryRun`/`-Validate` modes, no credential is required.
+- If `-Credential` is passed, `-Username` is ignored and the credential username is used.
+
 Recommended command:
 ```powershell
 $cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
@@ -29,17 +33,17 @@ $cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
 
 ## Parameters
 ```powershell
--FilePath           # Single JSON file
--FolderPath         # Folder of JSON files (recursive)
--DryRun             # Print what would be uploaded
--Validate           # Validate JSON only (no upload)
--IncludeExamples    # Include files under '\examples\' (default: false)
--PostWhenIdMissing  # POST /{resourceType} when id is missing
--FhirServerUrl      # Server base URL
--Username           # Username for prompted credential mode
--Credential         # PSCredential for Basic auth
--OutcomeReportPath  # JSON report path
--ManualFixReportPath# Text report with required manual content fixes
+-FilePath            # Single JSON file
+-FolderPath          # Folder of JSON files (recursive)
+-DryRun              # Print what would be uploaded
+-Validate            # Validate JSON only (no upload)
+-IncludeExamples     # Include files under '\examples\' (default: false)
+-PostWhenIdMissing   # POST /{resourceType} when id is missing
+-FhirServerUrl       # Server base URL
+-Username            # Username for prompted credential mode
+-Credential          # PSCredential for Basic auth
+-OutcomeReportPath   # JSON report path
+-ManualFixReportPath # Text report with required manual content fixes
 ```
 
 Validation rules:
@@ -52,7 +56,8 @@ Validation rules:
 - If `id` is missing:
   - with `-PostWhenIdMissing`: uses `POST /{resourceType}`
   - without it: marks entry as failed (`Missing id`).
-- In `-IncludeExamples` upload mode, script runs up to 5 passes to retry missing-reference failures (`HAPI-1094`) after dependencies are uploaded.
+- In `-IncludeExamples` upload mode, script runs up to 5 passes and retries only missing-reference failures (`HAPI-1094`).
+- If a retry pass makes zero progress, deferred files are attempted one final time and processing stops.
 
 ## Reports
 ### Outcome report (JSON)
@@ -61,7 +66,7 @@ Default file:
 
 Each entry includes:
 - `Timestamp`, `FilePath`, `ResourceType`, `ResourceId`
-- `Action` (`Validate`, `DryRun`, `Upload`, `UploadPost`)
+- `Action` (`Validation`, `Validate`, `DryRun`, `Upload`, `UploadPost`)
 - `Success`, `HttpStatus`, `Message`
 - `OperationOutcome` summary (if server returns one)
 
@@ -69,9 +74,11 @@ Each entry includes:
 Default file:
 - `TestServer\fhir-manual-fixes-yyyyMMdd-HHmmss.txt`
 
-Generated when failures require content edits (for example):
+Generated only when failures require content edits (for example):
 - Numeric-only IDs rejected by server (`HAPI-0960`)
 - Broken/missing references (`HAPI-1094`)
+
+The report includes per-file suggestions inferred from server diagnostics and package IDs.
 
 ## Typical Commands
 ### Validate a package
@@ -96,6 +103,10 @@ $cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
 $cred = Microsoft.PowerShell.Security\Get-Credential -UserName "admin"
 .\upload-fhir-resources-v2.ps1 -FolderPath "C:\path\to\package" -Credential $cred -OutcomeReportPath ".\outcomes.json" -ManualFixReportPath ".\manual-fixes.txt"
 ```
+
+## Exit Code
+- `0`: all processed entries succeeded or were intentionally skipped.
+- `1`: at least one processed entry failed.
 
 ## Troubleshooting
 ### `HAPI-1094` missing referenced resource
