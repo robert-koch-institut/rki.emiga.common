@@ -132,7 +132,7 @@ function Send-FhirResource {
         [string]$User,
 
         [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty()]
+        [AllowEmptyString()]
         [string]$Pass,
 
         [Parameter(Mandatory = $true)]
