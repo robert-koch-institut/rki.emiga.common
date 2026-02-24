@@ -15,15 +15,15 @@ Description: "Test Attachment DocumentReference Example with image reference"
 //* meta.security[responsibility].code = #
 * status = #current
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
 * identifier[EmigaID].value = "DEFG-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "ABCD-987654321"
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
 * identifier[SurvNetFileNumber].value = "Attachment-SURVNET-987654321"
 
 
-//* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
+//* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/common/sid/EmigaAttachmentId"
 //* identifier[emigaAttachmentId].value = "ATTACH-TestID-441557620"
 
 * author[0].reference = "Practitioner/example"

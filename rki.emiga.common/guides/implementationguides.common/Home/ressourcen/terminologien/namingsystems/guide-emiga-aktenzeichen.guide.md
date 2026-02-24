@@ -1,6 +1,6 @@
 ---
 topic: EmigaFileNumber
-canonical: https://emiga.rki.de/fhir/sid/EmigaFileNumber
+canonical: https://emiga.rki.de/fhir/common/sid/EmigaFileNumber
 ---
 
 # {{page-title}}
@@ -12,7 +12,7 @@ select description
 </fql>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/sid/EmigaFileNumber}}
+    {{render:https://emiga.rki.de/fhir/common/sid/EmigaFileNumber}}
 </div>
 
 <style>

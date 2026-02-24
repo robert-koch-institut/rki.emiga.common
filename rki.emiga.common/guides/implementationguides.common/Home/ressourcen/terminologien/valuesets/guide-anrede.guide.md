@@ -1,6 +1,6 @@
 ---
 topic: Salutation
-canonical: https://emiga.rki.de/fhir/ValueSet/Salutation
+canonical: https://emiga.rki.de/fhir/common/ValueSet/Salutation
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/ValueSet/Salutation}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/Salutation}}
 </div>
 
 <style>

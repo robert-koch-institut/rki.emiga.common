@@ -13,7 +13,7 @@ Context: Patient.name
   * insert StrictCoding
 * value[x] from $salutation (required)
 * value[x] ^short = "Anrede der Betroffene Person"
-* value[x] ^definition = "Anrede der Betroffene Person. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://emiga.rki.de/fhir/ValueSet/Salutation) im coding Element dargestellt werden."
+* value[x] ^definition = "Anrede der Betroffene Person. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://emiga.rki.de/fhir/common/ValueSet/Salutation) im coding Element dargestellt werden."
 * value[x].system 1.. MS
 * value[x].version MS
 * value[x].code 1.. MS

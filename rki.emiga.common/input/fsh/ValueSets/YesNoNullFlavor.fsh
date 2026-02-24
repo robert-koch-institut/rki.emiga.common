@@ -8,13 +8,13 @@ Id: YesNoNullFlavor
 * ^date = "2025-02-03"
 * $sct#373066001 "Yes" // Ja
 * $sct#373067005 "No" // Nein 
-* $nullflavour#ASKU "asked but unknown" // nicht ermittelbar
-* $nullflavour#ASKU ^designation[0].use = $HL7DesignationUse#display
-* $nullflavour#ASKU ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
-* $nullflavour#ASKU ^designation[0].value = "nicht ermittelbar"
-* $nullflavour#ASKU ^designation[0].language = #de-DE
-* $nullflavour#NASK "not asked" // nicht erhoben
-* $nullflavour#NASK ^designation[0].use = $HL7DesignationUse#display
-* $nullflavour#NASK ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
-* $nullflavour#NASK ^designation[0].value = "nicht erhoben"
-* $nullflavour#NASK ^designation[0].language = #de-DE
+* $nullflavorVS#ASKU "asked but unknown" // nicht ermittelbar
+* $nullflavorVS#ASKU ^designation[0].use = $HL7DesignationUse#display
+* $nullflavorVS#ASKU ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $nullflavorVS#ASKU ^designation[0].value = "nicht ermittelbar"
+* $nullflavorVS#ASKU ^designation[0].language = #de-DE
+* $nullflavorVS#NASK "not asked" // nicht erhoben
+* $nullflavorVS#NASK ^designation[0].use = $HL7DesignationUse#display
+* $nullflavorVS#NASK ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $nullflavorVS#NASK ^designation[0].value = "nicht erhoben"
+* $nullflavorVS#NASK ^designation[0].language = #de-DE
