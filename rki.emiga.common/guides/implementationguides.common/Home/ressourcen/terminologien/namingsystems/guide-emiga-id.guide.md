@@ -1,6 +1,6 @@
 ---
 topic: EmigaID
-canonical: https://emiga.rki.de/fhir/sid/EmigaID
+canonical: https://emiga.rki.de/fhir/common/sid/EmigaID
 ---
 
 # {{page-title}}
@@ -12,7 +12,7 @@ select description
 </fql>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/sid/EmigaID}}
+    {{render:https://emiga.rki.de/fhir/common/sid/EmigaID}}
 </div>
 
 <style>

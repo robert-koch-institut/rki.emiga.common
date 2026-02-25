@@ -15,7 +15,7 @@ Context: Element
 * value[x] ^definition = "Gibt an, warum kein richtiger Wert vorhanden ist."
 * value[x] from NullFlavor (required)
 * value[x].system 1.. MS
-* value[x].system = $v3-NullFlavor
+* value[x].system = $nullflavorCS
 * value[x].version MS
 * value[x].code 1.. MS
 * value[x].display MS

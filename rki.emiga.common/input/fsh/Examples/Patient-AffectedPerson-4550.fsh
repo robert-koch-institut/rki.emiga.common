@@ -51,11 +51,11 @@ Usage: #example
 * extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.display = "Betreuung"
 
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
 * identifier[EmigaID].value = "Person-DEFG-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-ABCD-987654321"
-//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
 //* identifier[SurvNetFileNumber].value = "SURVNET-Person-654321"
 
 
