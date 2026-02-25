@@ -13,7 +13,6 @@ Alias: $Facility = https://emiga.rki.de/fhir/common/Extension/FacilityAddressAff
 Alias: $PatBirthPlace = https://emiga.rki.de/fhir/common/Extension/LandOfBirth
 Alias: $LastModifiedBy = https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
 Alias: $ExtensionNullFlavor = https://emiga.rki.de/fhir/common/Extension/NullFlavor
-//Alias: $PersonalInformation = https://emiga.rki.de/fhir/common/Extension/PersonalInformation
 Alias: $ProcessingStatus = https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
 Alias: $ProcessingStatusAffectedPersonExt = https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson
 Alias: $RegionalKey = https://emiga.rki.de/fhir/common/Extension/RegionalKey
