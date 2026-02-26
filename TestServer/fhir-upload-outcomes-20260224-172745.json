@@ -1,0 +1,11 @@
+﻿{
+    "Timestamp":  "\/Date(1771950465317)\/",
+    "FilePath":  "P:\\source\\repos\\rki.emiga.vzd\\rki.emiga.vzd\\fsh-generated\\resources\\Organization-44588964.json",
+    "ResourceType":  "Organization",
+    "ResourceId":  "44588964",
+    "Action":  "Validate",
+    "Success":  true,
+    "HttpStatus":  null,
+    "Message":  "Valid JSON",
+    "OperationOutcome":  null
+}
