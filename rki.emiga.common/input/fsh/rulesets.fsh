@@ -135,7 +135,7 @@ RuleSet: IdentifierCommon
 * identifier[EmigaID].use 0..1 MS
 * identifier[EmigaID].use = #official (exactly)
 * identifier[EmigaID].system 1..1 MS
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
 * identifier[EmigaID].value 1..1 MS
 * identifier[EmigaID].value ^short = "Wert des Identifiers"
 * identifier[EmigaID].value ^definition = "Der eigentliche Wert des Identifiers."
@@ -144,7 +144,7 @@ RuleSet: IdentifierCommon
 * identifier[EmigaFileNumber].use 0..1 MS
 * identifier[EmigaFileNumber].use = #official (exactly)
 * identifier[EmigaFileNumber].system 1..1 MS
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value 1..1 MS
 * identifier[EmigaFileNumber].value ^short = "Wert des Identifiers"
 * identifier[EmigaFileNumber].value ^definition = "Der eigentliche Wert des Identifiers. Das EMIGA Aktenzeichen wird wie folgt generiert: [ENTITÄT][CODE-SITE-ID][JAHR]-[Achtstellige-Zahl]"
@@ -153,7 +153,7 @@ RuleSet: IdentifierCommon
 * identifier[SurvNetFileNumber].use 0..1 MS
 * identifier[SurvNetFileNumber].use = #temp (exactly)
 * identifier[SurvNetFileNumber].system 1..1 MS
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
 * identifier[SurvNetFileNumber].value 1..1 MS
 * identifier[SurvNetFileNumber].value ^short = "Wert des Identifiers"
 * identifier[SurvNetFileNumber].value ^definition = "Der eigentliche Wert des Identifiers."

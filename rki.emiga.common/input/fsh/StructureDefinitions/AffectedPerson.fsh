@@ -88,13 +88,13 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * identifier[EmigaID].use 0..1 MS
 * identifier[EmigaID].use = #official (exactly)
 * identifier[EmigaID].system 1..1 MS
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
 
 * identifier[EmigaFileNumber] only IdentifierEmigaFileNumber
 * identifier[EmigaFileNumber].use 0..1 MS
 * identifier[EmigaFileNumber].use = #official (exactly)
 * identifier[EmigaFileNumber].system 1..1 MS
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
 */
 //Reserved for later use
 //* identifier[referencenumberpatientid].assigner
@@ -375,7 +375,6 @@ Description: "Die Url muss valide sein."
 * severity = #error
 * expression = "$this.matches('^(https?:\\/\\/)?([\\da-z.-]{1,1000})\\.([a-z.]{2,6})([/\\w.-]{0,999})\\/?$')"
 
-// TODO: Verify need of regex
 Invariant: validFaxNumber
 Description: "Die Faxnummer muss valide sein."
 * severity = #error

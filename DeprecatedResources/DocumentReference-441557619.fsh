@@ -12,15 +12,15 @@ Usage: #example
 //* meta.tag[personalInformation].code = #ContainsPersonalInformation
 //* meta.tag[personalInformation].display = "Enthält personenbezogene Daten"
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
 * identifier[EmigaID].value = "Anhang-DEFG-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Anhang-ABCD-987654321"
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
 * identifier[SurvNetFileNumber].value = "Anhang-SURVNET-987654321"
 
 
-//* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
+//* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/common/sid/EmigaAttachmentId"
 //* identifier[emigaAttachmentId].value = "ATTACH-TestID-441557619"
 
 //* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"

@@ -497,7 +497,7 @@ $resourceIndex = $null
 
 Write-Host 'FHIR Resource Upload' -ForegroundColor Cyan
 Write-Host "Server: $FhirServerUrl" -ForegroundColor Gray
-Write-Host "Include examples: true" -ForegroundColor Gray
+Write-Host "Include examples: $($IncludeExamples.IsPresent)" -ForegroundColor Gray
 Write-Host "POST when id missing: $($PostWhenIdMissing.IsPresent)" -ForegroundColor Gray
 
 if ($DryRun) {
@@ -523,6 +523,9 @@ if ($FilePath) {
     if ($fileName -ieq '.index.json' -or $fileName -ieq 'package.json') {
         Write-Host "Skipping non-resource file: $FilePath" -ForegroundColor Yellow
     }
+    elseif (-not $IncludeExamples.IsPresent -and $FilePath -match '[\\/]+examples[\\/]+') {
+        Write-Host "Skipping example file (use -IncludeExamples): $FilePath" -ForegroundColor Yellow
+    }
     else {
         $outcomes.Add((Send-FhirResource -ResourcePath $FilePath -ServerUrl $FhirServerUrl -User $Username -Pass $Password -IsDryRun $DryRun.IsPresent -IsValidate $Validate.IsPresent -UsePostWhenIdMissing $PostWhenIdMissing.IsPresent))
     }
@@ -536,7 +539,8 @@ else {
     Write-Host "Processing folder: $FolderPath"
     $files = Get-ChildItem -Path $FolderPath -Filter '*.json' -Recurse -File | Where-Object {
         $_.Name -ine '.index.json' -and
-        $_.Name -ine 'package.json'
+        $_.Name -ine 'package.json' -and
+        ($IncludeExamples.IsPresent -or $_.FullName -notmatch '[\\/]+examples[\\/]+')
     }
 
     $resourceIndex = Get-ResourceIndex -Files $files
@@ -544,7 +548,7 @@ else {
     Write-Host "Found $($files.Count) JSON files" -ForegroundColor Gray
     Write-Host ''
 
-    $maxPasses = if (-not $DryRun.IsPresent -and -not $Validate.IsPresent) { 5 } else { 1 }
+    $maxPasses = if ($IncludeExamples.IsPresent -and -not $DryRun.IsPresent -and -not $Validate.IsPresent) { 5 } else { 1 }
     $pendingFiles = @($files)
 
     for ($pass = 1; $pass -le $maxPasses -and $pendingFiles.Count -gt 0; $pass++) {

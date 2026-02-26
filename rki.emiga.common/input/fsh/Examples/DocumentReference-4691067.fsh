@@ -7,7 +7,7 @@ Usage: #example
 * meta.security[responsibility].code = #1.01.0.01.	
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
 * meta.security[visibility].code = #transferable
-* identifier.system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
+* identifier.system = "https://emiga.rki.de/fhir/common/sid/EmigaAttachmentId"
 * identifier.value = "4b5755cd-da8f-4b34-b78c-4b3ead465b39"
 * status = #current
 * date = "2026-01-12T18:34:42.844+00:00"
