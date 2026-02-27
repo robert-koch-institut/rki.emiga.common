@@ -1,6 +1,6 @@
 ---
-topic: ResourceResponsibilityVS
-canonical: https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS
+topic: PersonResourceVisibilityTypeVS
+canonical: https://emiga.rki.de/fhir/ValueSet/PersonResourceVisibilityTypeVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS}}
+    {{render:https://emiga.rki.de/fhir/ValueSet/PersonResourceVisibilityTypeVS}}
 </div>
 
 <style>

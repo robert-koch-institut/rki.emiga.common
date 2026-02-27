@@ -1,6 +1,6 @@
 ValueSet: YesNoNullFlavorVS
 Title: "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten"
-Description: "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben"
+Description: "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben."
 Id: YesNoNullFlavorVS
 * ^url = "https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavorVS"
 * insert MetadataTerminology

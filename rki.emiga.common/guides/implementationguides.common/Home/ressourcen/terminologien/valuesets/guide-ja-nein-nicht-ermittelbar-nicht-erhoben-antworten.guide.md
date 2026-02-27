@@ -1,13 +1,13 @@
 ---
-topic: Relevance
-canonical: https://emiga.rki.de/fhir/common/CodeSystem/Relevance
+topic: YesNoNullFlavorVS
+canonical: https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavorVS
 ---
 
 # {{page-title}}
 ## Beschreibung
 <fql output= "inline" headers="false">
 from 
-    CodeSystem
+    ValueSet
 where
     url = %canonical
 select
@@ -15,20 +15,8 @@ select
 </fql>
 <br>&nbsp;<br>
 
-### Metadaten
-<fql output="transpose" headers="true">
-from
-	CodeSystem
-where
-	url = %canonical
-select
-	CanonicalURL: url, Status: status, Version: version, Herausgeber: publisher
-</fql>
-<br>&nbsp;<br>
-
-### Überblick
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/CodeSystem/Relevance}}
+    {{render:https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavorVS}}
 </div>
 
 <style>
@@ -63,14 +51,16 @@ select
       border: 1px solid #d3d3d3;
       font-weight: bold;
   }
-    /* vierte Spalte ausblenden */
-  #rendered-codesystem td:nth-child(4), 
-  #rendered-codesystem th:nth-child(4) {
+
+  /* Dritte Spalte ausblenden, falls vorhanden */
+  #rendered-codesystem td:nth-child(3), 
+  #rendered-codesystem th:nth-child(3) {
       display: none;
+  }
 </style>
 <br>&nbsp;<br>
 
-### Inhalt
+## Inhalt
 <tabs>
 <tab= title="Darstellung">{{tree, buttons}} </tab>
 <tab title="XML">{{xml}}</tab>

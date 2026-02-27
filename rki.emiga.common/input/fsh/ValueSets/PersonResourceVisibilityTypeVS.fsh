@@ -1,5 +1,5 @@
 ValueSet: PersonResourceVisibilityTypeVS
-Title: "Ressourcensichtbarkeit (Werteliste)"
+Title: "Personen-Ressourcensichtbarkeit"
 Description: "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben."
 Id: PersonResourceVisibilityTypeVS
 * insert MetadataTerminology
