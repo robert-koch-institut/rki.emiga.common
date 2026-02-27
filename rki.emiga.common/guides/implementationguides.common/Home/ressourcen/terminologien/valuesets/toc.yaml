@@ -14,12 +14,16 @@
   filename: guide-beziehungen.guide.md
 - name: Häufige Sprachen
   filename: guide-haeufige-sprachen.guide.md
+- name: Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten
+  filename: guide-ja-nein-nicht-ermittelbar-nicht-erhoben-antworten.guide.md
 - name: Ländercodes
   filename: guide-laendercodes.guide.md
 - name: Nicht vorhanden
   filename: guide-nicht-vorhanden.guide.md
 - name: Personenbezug
   filename: guide-personenbezug.guide.md
+- name: Personen-Ressourcensichtbarkeit
+  filename: guide.personen-ressourcensichtbarkeit.guide.md
 - name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
 - name: Ressourcen Annotation Sichtbarkeit

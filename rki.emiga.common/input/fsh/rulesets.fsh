@@ -58,7 +58,7 @@ RuleSet: ProfileSecurityTagsPerson
   * security contains
       visibility 1..1 MS and
       responsibility 1..1 MS
-  * security[visibility] from PersonResourceVisibilityType
+  * security[visibility] from PersonResourceVisibilityTypeVS
     * system 1..1 MS
     * system = $ResourceVisibilityType
     * code 1..1 MS
@@ -83,7 +83,7 @@ RuleSet: ProfileSecurityTagsAnnotation
   * security contains
       visibility 1..1 MS and
       responsibility 1..1 MS
-  * security[visibility] from $ResourceVisibilityTypeAnnotation
+  * security[visibility] from $ResourceVisibilityTypeAnnotationVS
     * system 1..1 MS
     * system = $ResourceVisibilityType
     * code 1..1 MS

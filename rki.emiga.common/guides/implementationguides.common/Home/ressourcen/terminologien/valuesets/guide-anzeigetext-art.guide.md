@@ -1,6 +1,6 @@
 ---
-topic: ConceptDesignationUse
-canonical: https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse
+topic: ConceptDesignationUseVS
+canonical: https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUseVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUseVS}}
 </div>
 
 <style>

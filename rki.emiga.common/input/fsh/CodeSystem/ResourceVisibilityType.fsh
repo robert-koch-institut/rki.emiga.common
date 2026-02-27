@@ -7,16 +7,15 @@ Description: "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, 
 * ^date = "2024-09-26"
 * ^caseSensitive = true
 * ^content = #complete
+
 * ^property[0].code = #status
 * ^property[0].uri = "http://hl7.org/fhir/concept-properties#status"
 * ^property[0].description = "Gekennzeichnet, ob ein Konzept verworfen ist."
 * ^property[0].type = #code
 
 * ^property[+].code = #replaced-by
-//* ^property[+].uri = "http://emiga.rki.de/fhir/concept-properties#replaces"
 * ^property[=].description = "Der Code, den dieser Code ersetzt."
 * ^property[=].type = #code
-//* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
 
 * #public "öffentlich" "Öffentliche Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Akteure (auch die Öffentlichkeit) zur Anzeige gebracht werden."
 * #internal "intern" "ÖGD interne Sichtbarkeit - Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD eingesehen werden."
@@ -30,26 +29,6 @@ Description: "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, 
 * #private ^property[1].code = #replaced-by
 * #private ^property[1].valueCode = #inAgency
 * #inPublicHealthService "ÖGD-weit" "Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD eingesehen werden."
-//* #inPublicHealthService ^property.code = #replaces
-//* #inPublicHealthService ^property.valueCode = #internal
 * #inFederalState "BL-weit" "Ressourcen, die entsprechend ausgezeichnet sind, dürfen durch beliebige Stellen des ÖGD im eigenen Bundesland eingesehen werden."
 * #inAgency "Eigene ÖGD-Stelle" "Ressourcen, die entsprechend ausgezeichnet sind, dürfen lediglich im Kontext einer bestimmten Stelle des Öffentlichen Gesundheitsdienstes zur Anzeige gebracht werden."
-//* #inAgency ^status = #active
-//* #inAgency ^property.code = #replaces
-//* #inAgency ^property.valueCode = #private
 * #transferable "übermittelbar" "Ressourcen, die entsprechend ausgezeichnet sind, werden an die Bundesstelle und das RKI übermittelt."
-
-
-
-ValueSet: ResourceVisibilityType
-Title: "Ressourcensichtbarkeit (Werteliste)"
-Description: "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben."
-Id: ResourceVisibilityType
-* insert MetadataTerminology
-* ^version = "2.0.0"
-* ^date = "2025-09-26"
-//* include codes from system ResourceVisibilityType
-
-* $ResourceVisibilityType#public "öffentlich" 
-* $ResourceVisibilityType#internal "intern" 
-* $ResourceVisibilityType#private "privat" 

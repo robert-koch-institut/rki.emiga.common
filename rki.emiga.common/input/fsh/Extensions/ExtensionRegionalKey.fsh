@@ -23,7 +23,7 @@ Context: Patient.address
 //* extension[regionKey].valueString ^minLength = 12
 * extension[regionKey].valueString ^maxLength = 12
 //* extension[regionKey].valueString ^regex = "[0-9]{12}"
-* extension[regionKey].valueString from RegionKeys (required)
+* extension[regionKey].valueString from RegionKeysVS (required)
 * extension[regionKey].value[x] ^short = "Regionschlüssel"
 * extension[regionKey].value[x] ^definition = "Regionalschlüssel der betroffenen Person"
 //* extension[facility].value[x] ^type.aggregation = #bundled

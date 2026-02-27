@@ -34,11 +34,11 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
     $ProcessingStatus named processingStatus 0..1 MS and
     $Facility named facilityAssociation 0..* MS
 
-* extension[processingStatus].value[x] from ProcessingStatusAffectedPerson (required)
+* extension[processingStatus].value[x] from ProcessingStatusAffectedPersonVS (required)
 
 * extension[citizenship].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship" (exactly)
 * extension[citizenship].extension[code].value[x] only CodeableConcept
-* extension[citizenship].extension[code].valueCodeableConcept from CountryCodes (extensible)
+* extension[citizenship].extension[code].valueCodeableConcept from CountryCodesVS (extensible)
 //* extension[citizenship].valueCodeableConcept 1.. MS
 * extension[citizenship].extension[code].valueCodeableConcept ^short = "Staatsangehörigkeit"
 * extension[citizenship].extension[code].valueCodeableConcept ^definition = "Staatsangehörigkeit der betroffenen Person"
@@ -296,7 +296,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * photo ..0 
 * communication MS
 * communication.language MS
-* communication.language from CommonLanguages (extensible)
+* communication.language from CommonLanguagesVS (extensible)
 * communication.language ^short = "Sprachkentnisse"
 * communication.language ^definition = "Sprachkentnisse der betroffenen Person."
 * generalPractitioner MS

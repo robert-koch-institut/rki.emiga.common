@@ -1,6 +1,6 @@
 ---
-topic: ProcessingStatusAffectedPerson
-canonical: https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAffectedPerson
+topic: ProcessingStatusAffectedPersonVS
+canonical: https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAffectedPersonVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAffectedPerson}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAffectedPersonVS}}
 </div>
 
 <style>
