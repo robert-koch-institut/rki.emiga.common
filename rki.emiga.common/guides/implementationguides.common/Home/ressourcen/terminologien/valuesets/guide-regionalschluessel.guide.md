@@ -1,6 +1,6 @@
 ---
-topic: RegionKeys
-canonical: https://emiga.rki.de/fhir/ValueSet/RegionKeys
+topic: RegionKeysVS
+canonical: https://emiga.rki.de/fhir/ValueSet/RegionKeysVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/ValueSet/RegionKeys}}
+    {{render:https://emiga.rki.de/fhir/ValueSet/RegionKeysVS}}
 </div>
 
 <style>

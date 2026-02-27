@@ -10,7 +10,7 @@ Context: Patient
 * ^date = "2025-09-12"
 * url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth" (exactly)
 * value[x] only Coding
-* value[x] from CountryCodes (extensible)
+* value[x] from CountryCodesVS (extensible)
 * value[x] 1.. MS
 //* value[x].valueCodeableConcept from DeuevAnlage8CountryCodes (extensible)
 * url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth" (exactly)

@@ -1,6 +1,6 @@
 ---
-topic: AnnotationResourceVisibilityType
-canonical: https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType
+topic: AnnotationResourceVisibilityTypeVS
+canonical: https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityTypeVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityTypeVS}}
 </div>
 
 <style>

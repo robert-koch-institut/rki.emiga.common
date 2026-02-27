@@ -1,6 +1,6 @@
 ---
-topic: CommonLanguages
-canonical: https://emiga.rki.de/fhir/common/ValueSet/CommonLanguages
+topic: CommonLanguagesVS
+canonical: https://emiga.rki.de/fhir/common/ValueSet/CommonLanguagesVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/CommonLanguages}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/CommonLanguagesVS}}
 </div>
 
 <style>

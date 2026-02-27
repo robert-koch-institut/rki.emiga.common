@@ -25,4 +25,4 @@ Description: "Werteliste mit Konzepten, die die Art der Anrede bestimmen."
 * ^version = "1.0.0"
 * ^date = "2024-11-07"
 * include codes from system Salutation
-* $nullflavorCS#NASK "not asked"
+* $HL7NullflavorCS#NASK "not asked"

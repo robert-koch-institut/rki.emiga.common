@@ -1,6 +1,6 @@
 ---
-topic: CountryCodes
-canonical: https://emiga.rki.de/fhir/ValueSet/CountryCodes
+topic: CountryCodesVS
+canonical: https://emiga.rki.de/fhir/ValueSet/CountryCodesVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/ValueSet/CountryCodes}}
+    {{render:https://emiga.rki.de/fhir/ValueSet/CountryCodesVS}}
 </div>
 
 <style>
