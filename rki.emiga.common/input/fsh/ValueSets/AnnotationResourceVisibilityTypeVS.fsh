@@ -1,5 +1,5 @@
 ValueSet: AnnotationResourceVisibilityTypeVS
-Title: "Ressourcensichtbarkeit (Werteliste)"
+Title: "Ressourcensichtbarkeit"
 Description: "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben."
 Id: AnnotationResourceVisibilityTypeVS
 * insert MetadataTerminology
