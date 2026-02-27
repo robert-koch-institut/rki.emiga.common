@@ -110,7 +110,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * name ^short = "Name"
 * name ^definition = "Name der betroffenen Person."
 // Name Extension for Salutation
-* name.extension contains $SalutationVSExt named salutation 0..1 MS
+* name.extension contains $SalutationExt named salutation 0..1 MS
 * name.use 0..1 MS
 * name.use ^comment = "Die Geburtsname wird über den use 'maiden' abgebildet. Der offizielle Name wird über den use 'official' abgebildet. Der Kurzname wird über den use 'nickname' abgebildet. Wenn kein Wert angegeben wird, ist der offizielle Name gemeint."
 * name.family MS
