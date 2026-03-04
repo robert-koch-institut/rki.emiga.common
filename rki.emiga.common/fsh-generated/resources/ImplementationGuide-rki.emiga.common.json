@@ -107,7 +107,7 @@
           "reference": "ValueSet/AnnotationCategoryVS"
         },
         "name": "Annotationskategorien",
-        "description": "Werteliste mit Konzepten, die die Art der Annotationen bestimmen.",
+        "description": "Werteliste mit Konzepten, die die Art der Annotation bestimmen.",
         "exampleBoolean": false
       },
       {
