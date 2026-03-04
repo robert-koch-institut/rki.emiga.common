@@ -1,8 +1,9 @@
 // rki.emiga.common
+Alias: $AnnotationCategoryCS = https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory
+Alias: $AnnotationCategoryVS = https://emiga.rki.de/fhir/ValueSet/AnnotationCategoryVS
 Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
 Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
-Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal
-Alias: $KeywordsLocal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal
+
 Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
 Alias: $RelevanceCS = https://emiga.rki.de/fhir/common/CodeSystem/Relevance
 Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility
