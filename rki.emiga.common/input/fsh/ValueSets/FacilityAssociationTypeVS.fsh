@@ -9,6 +9,7 @@ Description: "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen."
 
 * include codes from system FacilityAssociationType
 * include codes from system https://demis.rki.de/fhir/CodeSystem/organizationAssociation
+<<<<<<< HEAD
 
 * $HL7NullflavorCS#ASKU "asked but unknown" // nicht ermittelbar
 * $HL7NullflavorCS#ASKU ^designation[0].use = $HL7DesignationUse#display
@@ -20,3 +21,6 @@ Description: "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen."
 * $HL7NullflavorCS#NASK ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
 * $HL7NullflavorCS#NASK ^designation[0].value = "nicht erhoben"
 * $HL7NullflavorCS#NASK ^designation[0].language = #de-DE
+=======
+* include codes from system $HL7NullflavorCS
+>>>>>>> origin/development
