@@ -55,8 +55,7 @@ Usage: #example
 //* identifier[+].system = "https://emiga.rki.de/fhir/common/sid/SurvNetAnnotationId"
 //* identifier[=].value = "SURVNET-TestID-441557618"
 * status = #completed
-* category[0] = $KeywordsLocal#comment "Kommentar"
-* category[+] = $KeywordsGlobal#message "Nachricht"
+* category[0] = $AnnotationCategoryCS#comment "Kommentar"
 * topic.text = "Test Betreff"
 * about = Reference(Composition/d317ce08-1da0-48d4-8dd7-8edbe88d51f1)
 * sent = "2025-07-03T09:28:36+01:00"

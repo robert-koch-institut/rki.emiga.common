@@ -67,41 +67,21 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 0..1 MS
 * extension[processingStatus].value[x] from ProcessingStatusAnnotationVS (required)
 
-//Es wird für "Schlagwort" überlegt
-/*
+
 * category MS
-* category ^short = "Schlagwort"
-* category ^definition = "Schlagwort der Annotation"
+* category ^short = "Kategorie"
+* category ^definition = "Kategorie der Annotation"
 
 * category.coding MS
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding ^definition = "TODO"
 
-* category.coding contains keywordsLocal 0..1 MS and
-          keywordsGlobal 0..1 MS
-* category.coding[keywordsLocal] from https://emiga.rki.de/fhir/common/ValueSet/KeywordsLocal (example)
-* category.coding[keywordsLocal].system 1..1 MS
-* category.coding[keywordsLocal].system = $KeywordsLocal
-* category.coding[keywordsLocal].version 0..1 MS
-* category.coding[keywordsLocal].code MS
-* category.coding[keywordsLocal].code ^short = "Schlagwort-Code Lokal"
-* category.coding[keywordsLocal].code ^definition = "Lokale Schlagwort-Code der Annotation"
-* category.coding[keywordsLocal].display 0..1 MS
+* category.coding from AnnotationCategoryVS (required)
+* category.coding.system 1..1 MS
+* category.coding.system = $AnnotationCategoryCS
+* category.coding.version 0..1 MS
+* category.coding.code 1..1 MS
+* category.coding.display 0..1 MS
 
-* category.coding[keywordsGlobal] from https://emiga.rki.de/fhir/common/ValueSet/KeywordsGlobal (example)
-* category.coding[keywordsGlobal].system 1..1 MS
-* category.coding[keywordsGlobal].system = $KeywordsGlobal
-* category.coding[keywordsGlobal].version 0..1 MS
-* category.coding[keywordsGlobal].code MS
-* category.coding[keywordsGlobal].code ^short = "Global Schlagwort-Code"
-* category.coding[keywordsGlobal].code ^definition = "Global Schlagwort-Code der Annotation"
-* category.coding[keywordsGlobal].display 0..1 MS
-//* category.coding ^comment = "Der Schlagwort wird im Text Feld dokumentiert"
-//* category.text
-//* category.text ^short = "Schlagwort-Inhalt"
-*/
+
 //Derzeit für Emiga Anwendungsfälle nicht relevant
 * priority 0..0
 * priority ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
