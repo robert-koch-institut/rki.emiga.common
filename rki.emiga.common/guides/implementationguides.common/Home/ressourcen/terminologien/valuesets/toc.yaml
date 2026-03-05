@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Annotationskategorien
+  filename: guide-annotationskategorien.guide.md
 - name: Anrede
   filename: guide-anrede.guide.md
 - name: Anzeigetext Art
