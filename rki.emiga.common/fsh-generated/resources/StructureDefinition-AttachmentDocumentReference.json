@@ -70,7 +70,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityTypeVS"
         }
       },
       {
@@ -95,7 +95,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS"
         }
       },
       {

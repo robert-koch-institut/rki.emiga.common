@@ -36,6 +36,6 @@
   "version": "0.1.0",
   "date": "2025-05-06",
   "caseSensitive": true,
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation",
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS",
   "count": 2
 }
