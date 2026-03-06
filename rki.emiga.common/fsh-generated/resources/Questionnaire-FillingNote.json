@@ -19,11 +19,11 @@
   "url": "https://emiga.rki.de/fhir/common/Questionnaire/FillingNote",
   "identifier": [
     {
-      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+      "system": "https://emiga.rki.de/fhir/common/sid/EmigaID",
       "value": "Eigenschaft-PQRST-123456789"
     },
     {
-      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+      "system": "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber",
       "value": "Eigenschaft-XYZ-987654321"
     }
   ],

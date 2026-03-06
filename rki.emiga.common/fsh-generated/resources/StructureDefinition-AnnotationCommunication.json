@@ -70,7 +70,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityTypeVS"
         }
       },
       {
@@ -95,7 +95,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS"
         }
       },
       {
@@ -210,7 +210,7 @@
         "path": "Communication.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotationVS"
         }
       },
       {
@@ -248,8 +248,8 @@
           "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "short": "TODO",
-        "definition": "TODO",
+        "short": "Identifikator der Annotation",
+        "definition": "Eindeutiger fachlicher Identifikator der Annotation (z. B. Aktenzeichen, Dokumenten- oder Vorgangsnummer), der unabhängig von der technischen Ressourcen-ID zur Identifikation und Referenzierung der Annotation verwendet wird.",
         "mustSupport": true
       },
       {
