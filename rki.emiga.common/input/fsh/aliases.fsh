@@ -1,64 +1,76 @@
 // rki.emiga.common
 Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
-Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
-Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal
-Alias: $KeywordsLocal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal
-Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
-Alias: $RelevanceCS = https://emiga.rki.de/fhir/common/CodeSystem/Relevance
-Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility
 Alias: $ResourceVisibilityType = https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType
-Alias: $PatCitizenship = https://emiga.rki.de/fhir/common/Extension/Citizenship
-Alias: $DateCreated = https://emiga.rki.de/fhir/common/Extension/DateCreated
-Alias: $Facility = https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson
-Alias: $PatBirthPlace = https://emiga.rki.de/fhir/common/Extension/LandOfBirth
+Alias: $ResourceResponsibilityVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS
+Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility
+Alias: $ResourceVisibilityTypeVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityTypeVS
+Alias: $ResourceVisibilityTypeAnnotation = https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType
+Alias: $EmigaAnnotationFileNumber = https://emiga.rki.de/fhir/common/sid/EmigaAnnotationFileNumber
+Alias: $SurvNetAnnotationFileNumber = https://emiga.rki.de/fhir/common/sid/SurvNetAnnotationFileNumber
+Alias: $EmigaAttachmentFileNumber = https://emiga.rki.de/fhir/common/sid/EmigaAttachmentFileNumber
+Alias: $ProcessingStatusAnnotation = https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation
+Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
 Alias: $LastModifiedBy = https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
-Alias: $ExtensionNullFlavor = https://emiga.rki.de/fhir/common/Extension/NullFlavor
+Alias: $EmigaAnnotationId = https://emiga.rki.de/fhir/common/sid/EmigaAnnotationId
+Alias: $EmigaAttachmentId = https://emiga.rki.de/fhir/common/sid/EmigaAttachmentId
+Alias: $SurvNetAnnotationId = https://emiga.rki.de/fhir/common/sid/SurvNetAnnotationId
+Alias: $KeywordsLocal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal
+Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal
+Alias: $RelevanceCS = https://emiga.rki.de/fhir/common/CodeSystem/Relevance
+Alias: $RelevanceVS = https://emiga.rki.de/fhir/common/ValueSet/RelevanceVS
+Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
+Alias: $PersonalInformationVS = https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ProcessingStatus = https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
 Alias: $ProcessingStatusAffectedPersonExt = https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson
-Alias: $RegionalKey = https://emiga.rki.de/fhir/common/Extension/RegionalKey
 Alias: $RelatedPersonLinkExt = https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink
-Alias: $SalutationExt = https://emiga.rki.de/fhir/common/Extension/Salutation
+Alias: $DateCreated = https://emiga.rki.de/fhir/common/Extension/DateCreated
+Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+Alias: $ReferenceNumberPatientId = https://emiga.rki.de/fhir/common/sid/ReferenceNumberPatientId
+Alias: $FileNumberPatientId = https://emiga.rki.de/fhir/common/sid/FileNumberPatientId
 Alias: $EmigaFileNumber = https://emiga.rki.de/fhir/common/sid/EmigaFileNumber
 Alias: $EmigaID = https://emiga.rki.de/fhir/common/sid/EmigaID
-Alias: $EmigaAnnotationFileNumber = https://emiga.rki.de/fhir/common/sid/EmigaAnnotationFileNumber
-Alias: $EmigaAnnotationId = https://emiga.rki.de/fhir/common/sid/EmigaAnnotationId
-Alias: $EmigaAttachmentFileNumber = https://emiga.rki.de/fhir/common/sid/EmigaAttachmentFileNumber
-Alias: $EmigaAttachmentId = https://emiga.rki.de/fhir/common/sid/EmigaAttachmentId
-Alias: $FileNumberPatientId = https://emiga.rki.de/fhir/common/sid/FileNumberPatientId
-Alias: $ReferenceNumberPatientId = https://emiga.rki.de/fhir/common/sid/ReferenceNumberPatientId
-Alias: $SurvNetAnnotationFileNumber = https://emiga.rki.de/fhir/common/sid/SurvNetAnnotationFileNumber
-Alias: $SurvNetAnnotationId = https://emiga.rki.de/fhir/common/sid/SurvNetAnnotationId
 Alias: $SurvNetFileNumber = https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber
-Alias: $SalutationVS = https://emiga.rki.de/fhir/common/ValueSet/SalutationVS
-Alias: $ResourceVisibilityTypeAnnotationVS = https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityTypeVS
-Alias: $PersonalInformationVS = https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS
-Alias: $ProcessingStatusAnnotationVS = https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotationVS
-Alias: $RelevanceVS = https://emiga.rki.de/fhir/common/ValueSet/RelevanceVS
-Alias: $ResourceResponsibilityVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS
-Alias: $ResourceVisibilityTypeVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityTypeVS
-
-// deutsches Basisprofil
+Alias: $PatCitizenship = https://emiga.rki.de/fhir/common/Extension/Citizenship
+Alias: $HL7PatCitizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
+Alias: $PatBirthPlace = https://emiga.rki.de/fhir/common/Extension/LandOfBirth
+Alias: $Salutation = https://emiga.rki.de/fhir/common/ValueSet/Salutation
+Alias: $SalutationExt = https://emiga.rki.de/fhir/common/Extension/Salutation
+Alias: $Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
+Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
+Alias: $AddressUse = https://demis.rki.de/fhir/StructureDefinition/AddressUse
+Alias: $Facility = https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson
+Alias: $bcp47 = urn:ietf:bcp:47
+Alias: $RegionalKey = https://emiga.rki.de/fhir/common/Extension/RegionalKey
+Alias: $DemisNoCountry = https://demis.rki.de/fhir/CodeSystem/noCountry
+Alias: $HL7Nullflavor = http://terminology.hl7.org/ValueSet/v3-NullFlavor
+Alias: $humanname-de-basis = http://fhir.de/StructureDefinition/humanname-de-basis
 Alias: $address-de-basis = http://fhir.de/StructureDefinition/address-de-basis
 Alias: $gender-amtlich-de = http://fhir.de/StructureDefinition/gender-amtlich-de
-Alias: $humanname-de-basis = http://fhir.de/StructureDefinition/humanname-de-basis
-
-// HL7
-Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $data-absent = http://hl7.org/fhir/StructureDefinition/data-absent-reason
-Alias: $Geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
-Alias: $HL7PatCitizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
-Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 Alias: $HL7DesignationUse = http://terminology.hl7.org/CodeSystem/designation-usage
-Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
-Alias: $HL7NullflavorCS = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
-Alias: $HL7NullflavorVS = http://terminology.hl7.org/ValueSet/v3-NullFlavor
-
-// SNOMED
+Alias: $ExtensionNullFlavor = https://emiga.rki.de/fhir/common/Extension/NullFlavor
 Alias: $sct = http://snomed.info/sct
 
+
+
+// deutsches Basisprofil
+
+
+// HL7
+
+
+
+
+
+
+
+// SNOMED
+
+
 // DEMIS
-Alias: $DemisNoCountry = https://demis.rki.de/fhir/CodeSystem/noCountry
-Alias: $AddressUse = https://demis.rki.de/fhir/StructureDefinition/AddressUse
+
+
 
 // Weitere
-Alias: $bcp47 = urn:ietf:bcp:47
