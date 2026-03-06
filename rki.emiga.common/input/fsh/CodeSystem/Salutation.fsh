@@ -7,7 +7,7 @@ Description: "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art 
 * ^date = "2024-11-07"
 * ^caseSensitive = true
 * ^content = #complete
-* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/SalutationVS"
+* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/Salutation"
 
 * #SehrGeehrteFrau "Sehr geehrte Frau"
 * #SehrGeehrterHerr "Sehr geehrter Herr"

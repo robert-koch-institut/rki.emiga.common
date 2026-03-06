@@ -41,11 +41,11 @@ Usage: #example
 * extension[processingStatus].valueCoding.display = "In Bearbeitung"
 
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Person-PQRST-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-XYZ-987654321"
-//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
 //* identifier[SurvNetFileNumber].value = "SURVNET-Person-567890"
 
 
