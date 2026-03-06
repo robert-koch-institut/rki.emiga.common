@@ -1,5 +1,5 @@
-ValueSet: ConceptDesignationUseVS
-Id: ConceptDesignationUseVS
+ValueSet: ConceptDesignationUse
+Id: ConceptDesignationUse
 Title: "Nutzungszwecke für Anzeigetexte"
 Description: "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben."
 * insert MetadataTerminology
