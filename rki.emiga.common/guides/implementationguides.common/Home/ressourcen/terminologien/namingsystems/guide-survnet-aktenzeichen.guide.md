@@ -1,6 +1,6 @@
 ---
 topic: SurvNetFileNumber
-canonical: https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber
+canonical: https://emiga.rki.de/fhir/sid/SurvNetFileNumber
 ---
 
 # {{page-title}}
@@ -12,7 +12,7 @@ select description
 </fql>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber}}
+    {{render:https://emiga.rki.de/fhir/sid/SurvNetFileNumber}}
 </div>
 
 <style>

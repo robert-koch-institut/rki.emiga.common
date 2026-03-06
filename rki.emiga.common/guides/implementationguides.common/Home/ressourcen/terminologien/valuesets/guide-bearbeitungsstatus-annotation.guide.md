@@ -1,6 +1,6 @@
 ---
-topic: ProcessingStatusAnnotationVS
-canonical: https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotationVS
+topic: ProcessingStatusAnnotation
+canonical: https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotationVS}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation}}
 </div>
 
 <style>

@@ -1,6 +1,6 @@
 ---
-topic: YesNoNullFlavorVS
-canonical: https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavorVS
+topic: YesNoNullFlavor
+canonical: https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavor
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavorVS}}
+    {{render:https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavor}}
 </div>
 
 <style>

@@ -1,5 +1,5 @@
-ValueSet: CommonLanguagesVS
-Id: CommonLanguagesVS
+ValueSet: CommonLanguages
+Id: CommonLanguages
 Title: "häufige Sprachen"
 Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)"
 
@@ -1344,13 +1344,13 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#zh-TW ^designation[=].use = $HL7DesignationUse#display
 * $bcp47#zh-TW ^designation[=].value = "Kinesisk (Taiwan)"
 
-* $HL7NullflavorCS#ASKU "asked but unknown" // nicht ermittelbar
-* $HL7NullflavorCS#ASKU ^designation[0].use = $HL7DesignationUse#display
-* $HL7NullflavorCS#ASKU ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
-* $HL7NullflavorCS#ASKU ^designation[0].value = "nicht ermittelbar"
-* $HL7NullflavorCS#ASKU ^designation[0].language = #de-DE
-* $HL7NullflavorCS#NASK "not asked" // nicht erhoben
-* $HL7NullflavorCS#NASK ^designation[0].use = $HL7DesignationUse#display
-* $HL7NullflavorCS#NASK ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
-* $HL7NullflavorCS#NASK ^designation[0].value = "nicht erhoben"
-* $HL7NullflavorCS#NASK ^designation[0].language = #de-DE
+* $v3-NullFlavor#ASKU "asked but unknown" // nicht ermittelbar
+* $v3-NullFlavor#ASKU ^designation[0].use = $HL7DesignationUse#display
+* $v3-NullFlavor#ASKU ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $v3-NullFlavor#ASKU ^designation[0].value = "nicht ermittelbar"
+* $v3-NullFlavor#ASKU ^designation[0].language = #de-DE
+* $v3-NullFlavor#NASK "not asked" // nicht erhoben
+* $v3-NullFlavor#NASK ^designation[0].use = $HL7DesignationUse#display
+* $v3-NullFlavor#NASK ^designation[0].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $v3-NullFlavor#NASK ^designation[0].value = "nicht erhoben"
+* $v3-NullFlavor#NASK ^designation[0].language = #de-DE

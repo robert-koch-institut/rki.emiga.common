@@ -86,11 +86,11 @@ Usage: #inline
 * extension[facilityAssociation].extension[associationType].valueCodeableConcept.coding.display = "Betreuung"
 
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Person-DEFG-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-ABCD-987654321"
-//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
 //* identifier[SurvNetFileNumber].value = "SURVNET-ABC-654321"
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
@@ -231,11 +231,11 @@ Usage: #inline
 * extension[processingStatus].valueCoding.display = "In Bearbeitung"
 
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Person-PQRST-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-XYZ-987654321"
-//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
 //* identifier[SurvNetFileNumber].value = "SURVNET-ABC-123456"
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
@@ -328,11 +328,11 @@ Usage: #inline
 * meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Bezugsperson-PQRST-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Bezugsperson-XYZ-987654321"
-//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
+//* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
 //* identifier[SurvNetFileNumber].value = "SURVNET-ABC-123456"
 
 //* extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink"

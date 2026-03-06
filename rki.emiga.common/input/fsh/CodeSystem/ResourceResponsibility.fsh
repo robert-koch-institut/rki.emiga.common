@@ -7,7 +7,7 @@ Description: "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, 
 * ^date = "2025-05-05"
 * ^caseSensitive = true
 * ^content = #complete
-* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS"
+* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
 * ^count = 404
 
 * #0. "-kein-"
