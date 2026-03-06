@@ -10,9 +10,9 @@ Description: "Die Kodiersystematik 'RelatedPersonRelationship' definiert Konzept
 * ^content = #complete
 * ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipTypeVS"
 
-* #legalGuardian "Sorgeberechtigte Person" "Person mit gesetzlichem Sorgerecht für eine andere Person"
-* #legalRepresentative "Gesetzliche Vertretung" "Person oder Stelle, die eine andere Person auf gesetzlicher Grundlage rechtlich vertritt (z. B. Eltern, Vormund, Betreuer)."
-* #authorizedPerson "Bevollmächtigte Person" "Person, die aufgrund einer erteilten Vollmacht eine andere Person rechtlich oder in Angelegenheiten des Gesundheitswesens vertritt."
+* #legalGuardian "Sorgeberechtigte Person" "Person mit elterlicher Sorge für ein Kind."
+* #legalRepresentative "Gesetzliche Vertretung" "Person mit gesetzlicher oder gerichtlich bestellter Vertretungsbefugnis im festgelegten Aufgabenkreis."
+* #authorizedPerson "Bevollmächtigte Person" "Person mit durch Vollmacht erteilter Vertretungsbefugnis."
 * #representedPerson "Vertretene Person" "Person, deren Angelegenheiten durch eine gesetzliche Vertretung oder eine bevollmächtigte Person wahrgenommen werden."
 * #grantingPerson "Vollmachtgebende Person" "Person, die einer anderen Person eine Vollmacht zur Vertretung erteilt hat."
 * #linkedPerson "Kind" "Person in der Rolle eines Kindes in Bezug auf die bezugnehmende Person (Eltern-Kind-Beziehung)."
