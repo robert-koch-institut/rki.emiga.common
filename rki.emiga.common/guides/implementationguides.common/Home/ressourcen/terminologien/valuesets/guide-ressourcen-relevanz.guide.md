@@ -1,6 +1,6 @@
 ---
-topic: RelevanceVS
-canonical: https://emiga.rki.de/fhir/common/ValueSet/RelevanceVS
+topic: Relevance
+canonical: https://emiga.rki.de/fhir/common/ValueSet/Relevance
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/RelevanceVS}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/Relevance}}
 </div>
 
 <style>

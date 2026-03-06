@@ -1,6 +1,6 @@
 ---
-topic: PersonalInformationVS
-canonical: https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS
+topic: PersonalInformation
+canonical: https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation}}
 </div>
 
 <style>

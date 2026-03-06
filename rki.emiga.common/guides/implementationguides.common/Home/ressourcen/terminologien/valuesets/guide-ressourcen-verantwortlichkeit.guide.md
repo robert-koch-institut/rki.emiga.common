@@ -1,6 +1,6 @@
 ---
-topic: ResourceResponsibilityVS
-canonical: https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS
+topic: ResourceResponsibility
+canonical: https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility}}
 </div>
 
 <style>
