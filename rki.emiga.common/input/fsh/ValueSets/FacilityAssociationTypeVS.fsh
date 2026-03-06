@@ -9,4 +9,4 @@ Description: "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen."
 
 * include codes from system FacilityAssociationType
 * include codes from system https://demis.rki.de/fhir/CodeSystem/organizationAssociation
-* include codes from system $HL7NullflavorCS
+* include codes from system $v3-NullFlavor
