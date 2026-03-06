@@ -34,11 +34,11 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
     $ProcessingStatus named processingStatus 0..1 MS and
     $Facility named facilityAssociation 0..* MS
 
-* extension[processingStatus].value[x] from ProcessingStatusAffectedPersonVS (required)
+* extension[processingStatus].value[x] from ProcessingStatusAffectedPerson (required)
 
 * extension[citizenship].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship" (exactly)
 * extension[citizenship].extension[code].value[x] only CodeableConcept
-* extension[citizenship].extension[code].valueCodeableConcept from CountryCodesVS (extensible)
+* extension[citizenship].extension[code].valueCodeableConcept from CountryCodes (extensible)
 //* extension[citizenship].valueCodeableConcept 1.. MS
 * extension[citizenship].extension[code].valueCodeableConcept ^short = "Staatsangehörigkeit"
 * extension[citizenship].extension[code].valueCodeableConcept ^definition = "Staatsangehörigkeit der betroffenen Person"
@@ -88,13 +88,13 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * identifier[EmigaID].use 0..1 MS
 * identifier[EmigaID].use = #official (exactly)
 * identifier[EmigaID].system 1..1 MS
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 
 * identifier[EmigaFileNumber] only IdentifierEmigaFileNumber
 * identifier[EmigaFileNumber].use 0..1 MS
 * identifier[EmigaFileNumber].use = #official (exactly)
 * identifier[EmigaFileNumber].system 1..1 MS
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 */
 //Reserved for later use
 //* identifier[referencenumberpatientid].assigner
@@ -296,7 +296,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * photo ..0 
 * communication MS
 * communication.language MS
-* communication.language from CommonLanguagesVS (extensible)
+* communication.language from CommonLanguages (extensible)
 * communication.language ^short = "Sprachkentnisse"
 * communication.language ^definition = "Sprachkentnisse der betroffenen Person."
 * generalPractitioner MS
