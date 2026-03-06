@@ -107,7 +107,7 @@
           "reference": "StructureDefinition/AnnotationBundle"
         },
         "name": "Annotations Bundle",
-        "description": "TO DO",
+        "description": "Dieses Profil bildet ein Annotations-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Annotationen (z.B. Notizen, Kommentaren und zugehörigen Ressourcen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs.",
         "exampleBoolean": false
       },
       {
@@ -120,7 +120,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/Salutation"
+          "reference": "ValueSet/SalutationVS"
         },
         "name": "Anrede",
         "description": "Werteliste mit Konzepten, die die Art der Anrede bestimmen.",
@@ -147,7 +147,7 @@
           "reference": "ValueSet/ProcessingStatusVS"
         },
         "name": "Bearbeitungsstatus",
-        "description": "TODO",
+        "description": "Dieses ValueSet umfasst die Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden.",
         "exampleBoolean": false
       },
       {
@@ -160,7 +160,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ProcessingStatusAnnotation"
+          "reference": "ValueSet/ProcessingStatusAnnotationVS"
         },
         "name": "Bearbeitungsstatus Annotation",
         "description": "Werteliste mit möglichen Bearbeitungsstatus für Annotationen.",
@@ -168,7 +168,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ProcessingStatusAffectedPerson"
+          "reference": "ValueSet/ProcessingStatusAffectedPersonVS"
         },
         "name": "Bearbeitungsstatus betroffene Person",
         "description": "Werteliste mit möglichen Bearbeitungsstatus einer betroffenen Person.",
@@ -216,6 +216,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/RelatedPersonRelationshipTypeVS"
+        },
+        "name": "Beziehungen zu anderen Personen",
+        "description": "Werteliste mit Konzepten, die die Art der Beziehungen bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/RelatedPersonRelationshipType"
         },
         "name": "Beziehungen zu anderen Personen",
@@ -224,18 +232,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/RelatedPersonRelationshipTypeVS"
-        },
-        "name": "Beziehungen zu anderen Personen - Werteliste",
-        "description": "Werteliste mit Konzepten, die die Art der Beziehungen bestimmen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AffectedPersonRelatedPerson"
         },
         "name": "Bezugsperson der betroffenen Person",
-        "description": "TODO",
+        "description": "Dieses Profil bildet eine Bezugsperson der betroffenen Person ab. Es dient der strukturierten Darstellung von Personen, die in einer persönlichen oder rechtlichen Beziehung zur betroffenen Person stehen und im Rahmen der fachlichen Prozesse berücksichtigt werden müssen.",
         "exampleBoolean": false
       },
       {
@@ -283,7 +283,7 @@
           "reference": "StructureDefinition/EmigaUserPractitioner"
         },
         "name": "Emiga Nutzende Person",
-        "description": "TODO",
+        "description": "Ist eine EMIGA nutzende Person, also jemand mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet.",
         "exampleBoolean": false
       },
       {
@@ -291,7 +291,7 @@
           "reference": "StructureDefinition/PersonenTransactionBundle"
         },
         "name": "EMIGA Personen Transactionbundle",
-        "description": "TO DO",
+        "description": "Dieses Profil bildet ein EMIGA-Personen-Transaction-Bundle ab. Es dient der gebündelten, transaktionalen Übertragung von Operationen auf Personen-bezogene Ressourcen (z.B. betroffene Personen, Bezugspersonen, zugehörige Dokumentation).",
         "exampleBoolean": false
       },
       {
@@ -335,7 +335,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/CommonLanguages"
+          "reference": "ValueSet/CommonLanguagesVS"
         },
         "name": "häufige Sprachen",
         "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)",
@@ -343,15 +343,15 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/YesNoNullFlavor"
+          "reference": "ValueSet/YesNoNullFlavorVS"
         },
         "name": "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten",
-        "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben",
+        "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/CountryCodes"
+          "reference": "ValueSet/CountryCodesVS"
         },
         "name": "Ländercodes gemäß Anlage 8 der DEÜV",
         "description": "Werteliste mit Ländercodes gemäß Anlage 8 der DEÜV.",
@@ -359,7 +359,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/NullFlavor"
+          "reference": "ValueSet/NullFlavorVS"
         },
         "name": "Nicht ermittelbar, Nicht erhoben Antworten",
         "description": "Werteliste mit nicht ermittelbar und nicht erhoben Antworten.",
@@ -375,6 +375,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ConceptDesignationUseVS"
+        },
+        "name": "Nutzungszwecke für Anzeigetexte",
+        "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
@@ -383,18 +391,26 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ConceptDesignationUse"
+          "reference": "StructureDefinition/AffectedPersonBundle"
         },
-        "name": "Nutzungszwecke für Anzeigetexte (Werteliste)",
-        "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "name": "Person Bundle",
+        "description": "Dieses Profil bildet ein Person Bundle für eine betroffene Person ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person innerhalb eines fachlichen Vorgangs.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AffectedPersonBundle"
+          "reference": "ValueSet/PersonResourceVisibilityTypeVS"
         },
-        "name": "Person Bundle",
-        "description": "TO DO",
+        "name": "Personen-Ressourcensichtbarkeit",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PersonalInformationVS"
+        },
+        "name": "Personenbezug",
+        "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
         "exampleBoolean": false
       },
       {
@@ -407,14 +423,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/PersonalInformation"
-        },
-        "name": "Personenbezug (Werteliste)",
-        "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/RegionKeys"
         },
         "name": "Regionalschlüssel",
@@ -423,7 +431,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/RegionKeys"
+          "reference": "ValueSet/RegionKeysVS"
         },
         "name": "Regionalschlüssel (Werteliste)",
         "description": "Werteliste mit Regionalschlüsseln (Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS)).",
@@ -439,6 +447,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/RelevanceVS"
+        },
+        "name": "Relevanz",
+        "description": "Werteliste mit Konzepten, die die Relevanz der Ressourcen für verschiedene Use Cases kennzeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/Relevance"
         },
         "name": "Relevanz",
@@ -447,10 +463,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/Relevance"
+          "reference": "ValueSet/ResourceResponsibilityVS"
         },
-        "name": "Relevanz (Werteliste)",
-        "description": "Werteliste mit Konzepten, die die Relevanz der Ressourcen für verschiedene Use Cases kennzeichnen.",
+        "name": "ResourceResponsibility",
+        "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen.",
         "exampleBoolean": false
       },
       {
@@ -463,10 +479,18 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ResourceResponsibility"
+          "reference": "ValueSet/AnnotationResourceVisibilityTypeVS"
         },
-        "name": "ResourceResponsibility (Werteliste)",
-        "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen.",
+        "name": "Ressourcensichtbarkeit",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ResourceVisibilityTypeVS"
+        },
+        "name": "Ressourcensichtbarkeit",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
         "exampleBoolean": false
       },
       {
@@ -475,30 +499,6 @@
         },
         "name": "Ressourcensichtbarkeit",
         "description": "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll, oder nicht.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ResourceVisibilityType"
-        },
-        "name": "Ressourcensichtbarkeit (Werteliste)",
-        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/AnnotationResourceVisibilityType"
-        },
-        "name": "Ressourcensichtbarkeit (Werteliste)",
-        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/PersonResourceVisibilityType"
-        },
-        "name": "Ressourcensichtbarkeit (Werteliste)",
-        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
         "exampleBoolean": false
       },
       {
@@ -533,18 +533,18 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/FacilityAssociationType"
+          "reference": "ValueSet/FacilityAssociationTypeVS"
         },
         "name": "Verbindungs-Qualifikation",
-        "description": "Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung.",
+        "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/FacilityAssociationTypeVS"
+          "reference": "CodeSystem/FacilityAssociationType"
         },
-        "name": "Verbindungs-Qualifikation - Werteliste",
-        "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
+        "name": "Verbindungs-Qualifikation",
+        "description": "Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung.",
         "exampleBoolean": false
       },
       {
@@ -560,7 +560,7 @@
           "reference": "StructureDefinition/AdditionalPropertiesQuestionnaire"
         },
         "name": "Zusätzliche Eigenschaften",
-        "description": "TODO",
+        "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) für Fragebögen strukturiert abzubilden. Es dient dazu, erweiterte Konfigurations- und Steuerungsinformationen zu einem Fragebogen zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
         "exampleBoolean": false
       },
       {
@@ -568,7 +568,7 @@
           "reference": "StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
         },
         "name": "Zusätzliche Eigenschaften Fragebogen-Antworten",
-        "description": "TODO",
+        "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
         "exampleBoolean": false
       }
     ],
