@@ -1,4 +1,4 @@
-Extensionsid// rki.emiga.common
+// rki.emiga.common
 Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
 Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
 Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal
