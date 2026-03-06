@@ -50,7 +50,6 @@ Alias: $gender-amtlich-de = http://fhir.de/StructureDefinition/gender-amtlich-de
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $data-absent = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $HL7DesignationUse = http://terminology.hl7.org/CodeSystem/designation-usage
-Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
 Alias: $ExtensionNullFlavor = https://emiga.rki.de/fhir/common/Extension/NullFlavor
 Alias: $sct = http://snomed.info/sct
 
