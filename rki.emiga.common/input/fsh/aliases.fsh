@@ -1,9 +1,9 @@
 // rki.emiga.common
 Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
 Alias: $ResourceVisibilityType = https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType
+Alias: $ResourceVisibilityTypeVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityTypeVS
 Alias: $ResourceResponsibilityVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS
 Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility
-Alias: $ResourceVisibilityTypeVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityTypeVS
 Alias: $ResourceVisibilityTypeAnnotation = https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType
 Alias: $EmigaAnnotationFileNumber = https://emiga.rki.de/fhir/common/sid/EmigaAnnotationFileNumber
 Alias: $SurvNetAnnotationFileNumber = https://emiga.rki.de/fhir/common/sid/SurvNetAnnotationFileNumber
