@@ -1,6 +1,6 @@
 ---
 topic: Salutation
-canonical: https://emiga.rki.de/fhir/common/ValueSet/Salutation
+canonical: https://emiga.rki.de/fhir/ValueSet/Salutation
 ---
 
 # {{page-title}}
