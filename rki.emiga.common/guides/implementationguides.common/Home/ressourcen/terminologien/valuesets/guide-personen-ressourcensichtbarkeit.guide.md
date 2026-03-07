@@ -1,6 +1,6 @@
 ---
-topic: PersonResourceVisibilityTypeVS
-canonical: https://emiga.rki.de/fhir/ValueSet/PersonResourceVisibilityTypeVS
+topic: PersonResourceVisibilityType
+canonical: https://emiga.rki.de/fhir/common/ValueSet/PersonResourceVisibilityType
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/ValueSet/PersonResourceVisibilityTypeVS}}
+    {{render:https://emiga.rki.de/fhir/common/ValueSet/PersonResourceVisibilityType}}
 </div>
 
 <style>

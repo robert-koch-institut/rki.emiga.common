@@ -129,6 +129,7 @@
       {
         "reference": {
           "reference": "ValueSet/SalutationVS"
+          "reference": "ValueSet/SalutationVS"
         },
         "name": "Anrede",
         "description": "Werteliste mit Konzepten, die die Art der Anrede bestimmen.",
@@ -156,6 +157,7 @@
         },
         "name": "Bearbeitungsstatus",
         "description": "Dieses ValueSet umfasst die Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden.",
+        "description": "Dieses ValueSet umfasst die Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden.",
         "exampleBoolean": false
       },
       {
@@ -169,6 +171,7 @@
       {
         "reference": {
           "reference": "ValueSet/ProcessingStatusAnnotationVS"
+          "reference": "ValueSet/ProcessingStatusAnnotationVS"
         },
         "name": "Bearbeitungsstatus Annotation",
         "description": "Werteliste mit möglichen Bearbeitungsstatus für Annotationen.",
@@ -176,6 +179,7 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ProcessingStatusAffectedPersonVS"
           "reference": "ValueSet/ProcessingStatusAffectedPersonVS"
         },
         "name": "Bearbeitungsstatus betroffene Person",
@@ -308,6 +312,7 @@
         },
         "name": "EMIGA Personen Transactionbundle",
         "description": "Dieses Profil bildet ein EMIGA-Personen-Transaction-Bundle ab. Es dient der gebündelten, transaktionalen Übertragung von Operationen auf Personen-bezogene Ressourcen (z.B. betroffene Personen, Bezugspersonen, zugehörige Dokumentation).",
+        "description": "Dieses Profil bildet ein EMIGA-Personen-Transaction-Bundle ab. Es dient der gebündelten, transaktionalen Übertragung von Operationen auf Personen-bezogene Ressourcen (z.B. betroffene Personen, Bezugspersonen, zugehörige Dokumentation).",
         "exampleBoolean": false
       },
       {
@@ -352,6 +357,7 @@
       {
         "reference": {
           "reference": "ValueSet/CommonLanguagesVS"
+          "reference": "ValueSet/CommonLanguagesVS"
         },
         "name": "häufige Sprachen",
         "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)",
@@ -360,8 +366,10 @@
       {
         "reference": {
           "reference": "ValueSet/YesNoNullFlavorVS"
+          "reference": "ValueSet/YesNoNullFlavorVS"
         },
         "name": "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten",
+        "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben.",
         "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben.",
         "exampleBoolean": false
       },
@@ -375,6 +383,7 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/NullFlavorVS"
           "reference": "ValueSet/NullFlavorVS"
         },
         "name": "Nicht ermittelbar, Nicht erhoben Antworten",
@@ -399,6 +408,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ConceptDesignationUseVS"
+        },
+        "name": "Nutzungszwecke für Anzeigetexte",
+        "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
@@ -408,7 +425,18 @@
       {
         "reference": {
           "reference": "StructureDefinition/AffectedPersonBundle"
+          "reference": "StructureDefinition/AffectedPersonBundle"
         },
+        "name": "Person Bundle",
+        "description": "Dieses Profil bildet ein Person Bundle für eine betroffene Person ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person innerhalb eines fachlichen Vorgangs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PersonResourceVisibilityTypeVS"
+        },
+        "name": "Personen-Ressourcensichtbarkeit",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
         "name": "Person Bundle",
         "description": "Dieses Profil bildet ein Person Bundle für eine betroffene Person ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person innerhalb eines fachlichen Vorgangs.",
         "exampleBoolean": false
@@ -424,7 +452,10 @@
       {
         "reference": {
           "reference": "ValueSet/PersonalInformationVS"
+          "reference": "ValueSet/PersonalInformationVS"
         },
+        "name": "Personenbezug",
+        "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
         "name": "Personenbezug",
         "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
         "exampleBoolean": false
@@ -447,6 +478,7 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/RegionKeysVS"
           "reference": "ValueSet/RegionKeysVS"
         },
         "name": "Regionalschlüssel (Werteliste)",
@@ -471,6 +503,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/RelevanceVS"
+        },
+        "name": "Relevanz",
+        "description": "Werteliste mit Konzepten, die die Relevanz der Ressourcen für verschiedene Use Cases kennzeichnen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/Relevance"
         },
         "name": "Relevanz",
@@ -480,7 +520,10 @@
       {
         "reference": {
           "reference": "ValueSet/ResourceResponsibilityVS"
+          "reference": "ValueSet/ResourceResponsibilityVS"
         },
+        "name": "ResourceResponsibility",
+        "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen.",
         "name": "ResourceResponsibility",
         "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen.",
         "exampleBoolean": false
@@ -496,7 +539,18 @@
       {
         "reference": {
           "reference": "ValueSet/AnnotationResourceVisibilityTypeVS"
+          "reference": "ValueSet/AnnotationResourceVisibilityTypeVS"
         },
+        "name": "Ressourcensichtbarkeit",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ResourceVisibilityTypeVS"
+        },
+        "name": "Ressourcensichtbarkeit",
+        "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
         "name": "Ressourcensichtbarkeit",
         "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
         "exampleBoolean": false
@@ -557,6 +611,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/FacilityAssociationTypeVS"
+        },
+        "name": "Verbindungs-Qualifikation",
+        "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/FacilityAssociationType"
         },
         "name": "Verbindungs-Qualifikation",
@@ -577,6 +639,7 @@
         },
         "name": "Zusätzliche Eigenschaften",
         "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) für Fragebögen strukturiert abzubilden. Es dient dazu, erweiterte Konfigurations- und Steuerungsinformationen zu einem Fragebogen zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
+        "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) für Fragebögen strukturiert abzubilden. Es dient dazu, erweiterte Konfigurations- und Steuerungsinformationen zu einem Fragebogen zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
         "exampleBoolean": false
       },
       {
@@ -584,6 +647,7 @@
           "reference": "StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
         },
         "name": "Zusätzliche Eigenschaften Fragebogen-Antworten",
+        "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
         "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
         "exampleBoolean": false
       }

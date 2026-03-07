@@ -1,0 +1,77 @@
+{
+  "resourceType": "Communication",
+  "id": "441557618",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+    ],
+    "security": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "code": "1.01.0.01."
+      },
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "code": "transferable"
+      }
+    ],
+    "tag": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation",
+        "code": "ContainsPersonalInformation",
+        "display": "Enthält personenbezogene Daten"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "valueCoding": {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
+        "code": "forinformation",
+        "display": "Zur Kenntnis"
+      },
+      "url": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
+    },
+    {
+      "url": "https://emiga.rki.de/fhir/common/Extension/DateCreated",
+      "valueInstant": "2024-10-01T12:00:00Z"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://emiga.rki.de/fhir/common/sid/EmigaID",
+      "value": "Annotation-DEFG-123456789"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber",
+      "value": "AnnotationABCD-987654321"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber",
+      "value": "Annotation-SURVNET-987654321"
+    }
+  ],
+  "topic": {
+    "text": "Test Betreff"
+  },
+  "about": [
+    {
+      "reference": "Composition/example"
+    }
+  ],
+  "payload": [
+    {
+      "contentString": "Das ist ein Test Beschreibung"
+    },
+    {
+      "contentReference": {
+        "reference": "DocumentReference/441557619"
+      }
+    }
+  ],
+  "status": "completed",
+  "sent": "2024-10-01T12:00:00Z",
+  "sender": {
+    "reference": "Practitioner/example"
+  }
+}

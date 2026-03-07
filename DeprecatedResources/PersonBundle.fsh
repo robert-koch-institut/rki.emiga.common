@@ -58,9 +58,9 @@ Usage: #inline
 * extension[processingStatus].valueCoding.display = "in Bearbeitung"
 
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Person-XYZ-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-QRST-987654321"
 
 * name.extension[salutation].url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
@@ -211,11 +211,11 @@ Usage: #inline
 * extension[processingStatus].valueCoding.display = "in Bearbeitung"
 
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Person-PQRST-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Person-XYZ-987654321"
-* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
 * identifier[SurvNetFileNumber].value = "SURVNET-Person-567890"
 
 
@@ -309,14 +309,14 @@ Usage: #inline
 * meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/common/sid/EmigaID"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "Bezugsperson-ADCDEF-123456789"
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 * identifier[EmigaFileNumber].value = "Bezugsperson-DEFG-987654321"
 
 //* extension[linkToRepresentedPerson].url = "https://emiga.rki.de/fhir/common/Extension/RelatedPersonLink"
 //* extension[linkToRepresentedPerson].valueReference.reference = "AffectedPerson-4551"
-//* extension[linkToRepresentedPerson].valueReference.identifier.system = "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber"
+//* extension[linkToRepresentedPerson].valueReference.identifier.system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
 //* extension[linkToRepresentedPerson].valueReference.identifier.value = "Person-XYZ-987654321"
 //* extension[linkToRepresentedPerson].valueReference.display = "Jones Calamity"
 
