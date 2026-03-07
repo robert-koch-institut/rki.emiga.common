@@ -70,7 +70,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityTypeVS"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType"
         }
       },
       {
@@ -95,7 +95,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibilityVS"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
         }
       },
       {
@@ -176,6 +176,16 @@
       {
         "id": "Communication.extension",
         "path": "Communication.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "mustSupport": true
       },
@@ -200,7 +210,7 @@
         "path": "Communication.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotationVS"
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation"
         }
       },
       {
