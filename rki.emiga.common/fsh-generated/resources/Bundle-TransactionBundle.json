@@ -60,15 +60,15 @@
         ],
         "identifier": [
           {
-            "system": "https://emiga.rki.de/fhir/common/sid/EmigaID",
+            "system": "https://emiga.rki.de/fhir/sid/EmigaID",
             "value": "DEFG-123456789"
           },
           {
-            "system": "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber",
+            "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
             "value": "ABCD-987654321"
           },
           {
-            "system": "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber",
+            "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
             "value": "SURVNET-987654321"
           }
         ],
@@ -77,17 +77,8 @@
             "coding": [
               {
                 "code": "comment",
-                "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal",
+                "system": "https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory",
                 "display": "Kommentar"
-              }
-            ]
-          },
-          {
-            "coding": [
-              {
-                "code": "message",
-                "system": "https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal",
-                "display": "Nachricht"
               }
             ]
           }

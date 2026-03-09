@@ -1,8 +1,7 @@
 // rki.emiga.common
+Alias: $AnnotationCategoryCS = https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory
 Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
 Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
-Alias: $KeywordsGlobal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsGlobal
-Alias: $KeywordsLocal = https://emiga.rki.de/fhir/common/CodeSystem/KeywordsLocal
 Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
 Alias: $RelevanceCS = https://emiga.rki.de/fhir/common/CodeSystem/Relevance
 Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility
@@ -29,6 +28,7 @@ Alias: $ReferenceNumberPatientId = https://emiga.rki.de/fhir/common/sid/Referenc
 Alias: $SurvNetAnnotationFileNumber = https://emiga.rki.de/fhir/sid/SurvNetAnnotationFileNumber
 Alias: $SurvNetAnnotationId = https://emiga.rki.de/fhir/sid/SurvNetAnnotationId
 Alias: $SurvNetFileNumber = https://emiga.rki.de/fhir/sid/SurvNetFileNumber
+Alias: $AnnotationCategoryVS = https://emiga.rki.de/fhir/ValueSet/AnnotationCategoryVS
 Alias: $salutation = https://emiga.rki.de/fhir/ValueSet/Salutation
 Alias: $ResourceVisibilityTypeAnnotation = https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType
 Alias: $PersonalInformationVS = https://emiga.rki.de/fhir/common/ValueSet/PersonalInformationVS

@@ -1,4 +1,4 @@
-Instance: 441557618
+Instance: Communication441557618
 InstanceOf: AnnotationCommunication
 Description: "Test Annotation Example including attachment"
 Usage: #example
@@ -35,7 +35,7 @@ Usage: #example
 */
 * status = #completed
 
-//* category.coding[keywordsLocal] = $KeywordsLocal#comment "Kommentar"
+* category.coding = $AnnotationCategoryCS#comment "Kommentar"
 
 
 //* category.coding[keywordsGlobal] = $KeywordsGlobal#message "Nachricht"

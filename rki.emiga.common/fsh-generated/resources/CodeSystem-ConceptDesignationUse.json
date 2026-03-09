@@ -46,6 +46,6 @@
   "version": "1.0.0",
   "date": "2024-03-28",
   "caseSensitive": true,
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUseVS",
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse",
   "count": 4
 }

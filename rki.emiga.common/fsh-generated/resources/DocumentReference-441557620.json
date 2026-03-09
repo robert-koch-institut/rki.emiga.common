@@ -18,15 +18,15 @@
   },
   "identifier": [
     {
-      "system": "https://emiga.rki.de/fhir/common/sid/EmigaID",
+      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
       "value": "DEFG-123456789"
     },
     {
-      "system": "https://emiga.rki.de/fhir/common/sid/EmigaFileNumber",
+      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
       "value": "ABCD-987654321"
     },
     {
-      "system": "https://emiga.rki.de/fhir/common/sid/SurvNetFileNumber",
+      "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
       "value": "Attachment-SURVNET-987654321"
     }
   ],

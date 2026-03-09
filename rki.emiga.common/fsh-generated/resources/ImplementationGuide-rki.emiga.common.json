@@ -51,14 +51,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "Communication/441557618"
-        },
-        "name": "441557618",
-        "description": "Test Annotation Example including attachment",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
-      },
-      {
-        "reference": {
           "reference": "DocumentReference/441557620"
         },
         "name": "441557620",
@@ -112,6 +104,22 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/AnnotationCategoryVS"
+        },
+        "name": "Annotationskategorien",
+        "description": "Werteliste mit Konzepten, die die Art der Annotation bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/AnnotationCategory"
+        },
+        "name": "Annotationskategorien",
+        "description": "Das CodeSystem AnnotationCategory enthält die Codes für die verschiedenen Arten von Annotationen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Salutation"
         },
         "name": "Anrede",
@@ -120,7 +128,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/SalutationVS"
+          "reference": "ValueSet/Salutation"
         },
         "name": "Anrede",
         "description": "Werteliste mit Konzepten, die die Art der Anrede bestimmen.",
@@ -160,7 +168,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ProcessingStatusAnnotationVS"
+          "reference": "ValueSet/ProcessingStatusAnnotation"
         },
         "name": "Bearbeitungsstatus Annotation",
         "description": "Werteliste mit möglichen Bearbeitungsstatus für Annotationen.",
@@ -168,7 +176,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ProcessingStatusAffectedPersonVS"
+          "reference": "ValueSet/ProcessingStatusAffectedPerson"
         },
         "name": "Bearbeitungsstatus betroffene Person",
         "description": "Werteliste mit möglichen Bearbeitungsstatus einer betroffenen Person.",
@@ -237,6 +245,14 @@
         "name": "Bezugsperson der betroffenen Person",
         "description": "Dieses Profil bildet eine Bezugsperson der betroffenen Person ab. Es dient der strukturierten Darstellung von Personen, die in einer persönlichen oder rechtlichen Beziehung zur betroffenen Person stehen und im Rahmen der fachlichen Prozesse berücksichtigt werden müssen.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Communication/Communication441557618"
+        },
+        "name": "Communication441557618",
+        "description": "Test Annotation Example including attachment",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
       },
       {
         "reference": {
@@ -335,7 +351,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/CommonLanguagesVS"
+          "reference": "ValueSet/CommonLanguages"
         },
         "name": "häufige Sprachen",
         "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)",
@@ -343,7 +359,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/YesNoNullFlavorVS"
+          "reference": "ValueSet/YesNoNullFlavor"
         },
         "name": "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten",
         "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben.",
@@ -351,7 +367,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/CountryCodesVS"
+          "reference": "ValueSet/CountryCodes"
         },
         "name": "Ländercodes gemäß Anlage 8 der DEÜV",
         "description": "Werteliste mit Ländercodes gemäß Anlage 8 der DEÜV.",
@@ -359,7 +375,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/NullFlavorVS"
+          "reference": "ValueSet/NullFlavor"
         },
         "name": "Nicht ermittelbar, Nicht erhoben Antworten",
         "description": "Werteliste mit nicht ermittelbar und nicht erhoben Antworten.",
@@ -375,7 +391,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ConceptDesignationUseVS"
+          "reference": "ValueSet/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
         "description": "Werteliste mit Konzepten, die die Nutzungszwecke für Anzeigetexte beschreiben.",
@@ -399,7 +415,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/PersonResourceVisibilityTypeVS"
+          "reference": "ValueSet/PersonResourceVisibilityType"
         },
         "name": "Personen-Ressourcensichtbarkeit",
         "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
@@ -407,7 +423,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/PersonalInformationVS"
+          "reference": "ValueSet/PersonalInformation"
         },
         "name": "Personenbezug",
         "description": "Werteliste mit Konzepten, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
@@ -431,7 +447,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/RegionKeysVS"
+          "reference": "ValueSet/RegionKeys"
         },
         "name": "Regionalschlüssel (Werteliste)",
         "description": "Werteliste mit Regionalschlüsseln (Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS)).",
@@ -447,7 +463,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/RelevanceVS"
+          "reference": "ValueSet/Relevance"
         },
         "name": "Relevanz",
         "description": "Werteliste mit Konzepten, die die Relevanz der Ressourcen für verschiedene Use Cases kennzeichnen.",
@@ -463,7 +479,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ResourceResponsibilityVS"
+          "reference": "ValueSet/ResourceResponsibility"
         },
         "name": "ResourceResponsibility",
         "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen.",
@@ -479,7 +495,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/AnnotationResourceVisibilityTypeVS"
+          "reference": "ValueSet/AnnotationResourceVisibilityType"
         },
         "name": "Ressourcensichtbarkeit",
         "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
@@ -487,7 +503,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ResourceVisibilityTypeVS"
+          "reference": "ValueSet/ResourceVisibilityType"
         },
         "name": "Ressourcensichtbarkeit",
         "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",

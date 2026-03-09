@@ -38,6 +38,6 @@
   "version": "1.2.0",
   "date": "2024-06-20",
   "caseSensitive": true,
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/RelevanceVS",
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/Relevance",
   "count": 3
 }
