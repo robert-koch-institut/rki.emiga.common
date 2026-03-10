@@ -200,7 +200,7 @@
       },
       {
         "reference": {
-          "reference": "RelatedPerson/4551"
+          "reference": "RelatedPerson/RelatedPerson4551"
         },
         "name": "Beispiel Bezugsperson der betroffenen Person",
         "description": "Ein Beispielinstanz einer Bezugsperson-Ressource. ",

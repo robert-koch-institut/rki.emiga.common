@@ -59,7 +59,7 @@ Usage: #example
 * topic.text = "Test Betreff"
 * about = Reference(Composition/d317ce08-1da0-48d4-8dd7-8edbe88d51f1)
 * sent = "2025-07-03T09:28:36+01:00"
-* sender = Reference(5d4b8483-0a7d-471e-b1df-26addf06ff1c)
+* sender = Reference(Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c)
 * payload.contentString = "Das ist ein Test Beschreibung"
 
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
