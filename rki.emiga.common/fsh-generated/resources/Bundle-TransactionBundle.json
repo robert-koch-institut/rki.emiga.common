@@ -3,7 +3,7 @@
   "id": "TransactionBundle",
   "meta": {
     "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle4"
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
     ]
   },
   "identifier": {
@@ -16,14 +16,13 @@
         "method": "POST",
         "url": "Communication"
       },
-      "fullUrl": "https://emiga.rki.de/fhir/common/Communication/2",
+      "fullUrl": "https://emiga.rki.de/fhir/common/Communication/Annotation-2",
       "resource": {
         "resourceType": "Communication",
-        "id": "2",
+        "id": "Annotation-2",
         "meta": {
           "profile": [
-            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
-            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication4"
+            "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
           ],
           "security": [
             {
@@ -114,7 +113,7 @@
         "id": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
         "meta": {
           "profile": [
-            "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner4"
+            "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
           ]
         },
         "identifier": [

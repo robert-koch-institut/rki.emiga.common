@@ -20,7 +20,7 @@ Usage: #example
 //* extension[linkToRepresentedPerson].valueReference.identifier.value = "Person-XYZ-987654321"
 //* extension[linkToRepresentedPerson].valueReference.display = "Jones Calamity"
 
-* patient = Reference(AffectedPerson-4550)
+* patient = Reference(AffectedPerson4550)
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * relationship[0].coding.code = #legalGuardian
 * relationship[0].coding.display = "Sorgeberechtigte Person"
