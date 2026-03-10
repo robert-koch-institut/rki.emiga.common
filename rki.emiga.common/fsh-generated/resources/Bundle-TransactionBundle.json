@@ -98,7 +98,7 @@
         "status": "completed",
         "sent": "2025-07-03T09:28:36+01:00",
         "sender": {
-          "reference": "Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c"
+          "reference": "urn:uuid:5d4b8483-0a7d-471e-b1df-26addf06ff1c"
         }
       }
     },
@@ -107,7 +107,7 @@
         "method": "POST",
         "url": "Practitioner"
       },
-      "fullUrl": "https://emiga.rki.de/fhir/common/Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c",
+      "fullUrl": "urn:uuid:5d4b8483-0a7d-471e-b1df-26addf06ff1c",
       "resource": {
         "resourceType": "Practitioner",
         "id": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",

@@ -74,13 +74,6 @@
       },
       {
         "reference": {
-          "reference": "Communication/Annotation-2"
-        },
-        "name": "Annotation-2",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AnnotationBundle"
         },
         "name": "Annotations Bundle",

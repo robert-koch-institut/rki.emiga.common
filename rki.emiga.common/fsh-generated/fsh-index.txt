@@ -12,7 +12,6 @@ CodeSystem-Relevance.json                                           Relevance   
 CodeSystem-ResourceResponsibility.json                              ResourceResponsibility               CodeSystem  CodeSystem\ResourceResponsibility.fsh                               1 - 416
 CodeSystem-ResourceVisibilityType.json                              ResourceVisibilityType               CodeSystem  CodeSystem\ResourceVisibilityType.fsh                               1 - 34
 CodeSystem-Salutation.json                                          Salutation                           CodeSystem  CodeSystem\Salutation.fsh                                           1 - 16
-Communication-Annotation-2.json                                     Annotation-2                         Instance    Examples\BundleTransactionCreate.fsh                                21 - 63
 Communication-Communication441557618.json                           Communication441557618               Instance    Examples\Communication-441557618.fsh                                1 - 56
 ConceptMap-AdminGenderEngToGenderAmtDe.json                         AdminGenderEngToGenderAmtDe          Instance    ConceptMap\AdminGenderEngToGenderAmtDe.fsh                          2 - 42
 DocumentReference-Attachment-441557620.json                         Attachment-441557620                 Instance    Examples\DocumentReference-441557620.fsh                            1 - 36
