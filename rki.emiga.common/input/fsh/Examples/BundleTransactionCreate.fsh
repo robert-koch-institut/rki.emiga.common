@@ -13,7 +13,7 @@ Usage: #example
 * entry[0].request.method = #POST
 * entry[0].request.url = "Communication"
 
-* entry[1].fullUrl = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c"
+* entry[1].fullUrl = "https://emiga.rki.de/fhir/common/Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c"
 * entry[1].resource = 5d4b8483-0a7d-471e-b1df-26addf06ff1c
 * entry[1].request.method = #POST
 * entry[1].request.url = "Practitioner"
@@ -65,6 +65,7 @@ Usage: #example
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
 InstanceOf: Practitioner
 Usage: #inline
+* id = "5d4b8483-0a7d-471e-b1df-26addf06ff1c"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
 //* meta.security[visibility] = $ResourceVisibilityType#inAgency
 //* meta.security[responsibility] = $ResourceResponsibility#1.

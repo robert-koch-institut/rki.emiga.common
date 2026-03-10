@@ -107,7 +107,7 @@
         "method": "POST",
         "url": "Practitioner"
       },
-      "fullUrl": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c",
+      "fullUrl": "https://emiga.rki.de/fhir/common/Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c",
       "resource": {
         "resourceType": "Practitioner",
         "id": "5d4b8483-0a7d-471e-b1df-26addf06ff1c",
