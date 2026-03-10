@@ -121,7 +121,7 @@ Usage: #example
 * communication[0].language.coding.code = #de
 * communication[0].language.coding.display = "Deutsch"
 
-* generalPractitioner[0].reference = "Practitioner/4550"
+//* generalPractitioner[0].reference = "Practitioner/4550"
 
-* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-4551"
+* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson4551"
 * link[relatedPersonLink].type = #seealso
