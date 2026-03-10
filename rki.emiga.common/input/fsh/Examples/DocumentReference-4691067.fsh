@@ -1,5 +1,5 @@
 
-Instance: 4691067
+Instance: Attachment-4691067
 InstanceOf: AttachmentDocumentReference
 Usage: #example
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"

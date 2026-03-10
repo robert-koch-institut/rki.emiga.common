@@ -2,13 +2,13 @@
 Instance: TransactionBundle
 InstanceOf: Bundle
 Usage: #example
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle4"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
 * identifier.system = "https://emiga.rki.de/fhir/common/sid/AnnotationBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
 * type = #transaction
 * timestamp = "2025-07-03T09:28:36.132+01:00"
 
-* entry[0].fullUrl = "https://emiga.rki.de/fhir/common/Communication/2"
+* entry[0].fullUrl = "https://emiga.rki.de/fhir/common/Communication/Annotation-2"
 * entry[0].resource = Annotation-2
 * entry[0].request.method = #POST
 * entry[0].request.url = "Communication"
@@ -21,9 +21,9 @@ Usage: #example
 Instance: Annotation-2
 InstanceOf: AnnotationCommunication
 Usage: #example
-* id = "2"
+* id = "Annotation-2"
 * meta.versionId = "5"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication4"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 * meta.security[responsibility] = $ResourceResponsibility#1.
 * meta.security[visibility] = $ResourceVisibilityType#transferable
 
@@ -65,7 +65,7 @@ Usage: #example
 Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
 InstanceOf: Practitioner
 Usage: #inline
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner4"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
 //* meta.security[visibility] = $ResourceVisibilityType#inAgency
 //* meta.security[responsibility] = $ResourceResponsibility#1.
 * identifier.value = "testuser@emiga.rki.de"

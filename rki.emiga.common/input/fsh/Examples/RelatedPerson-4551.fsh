@@ -1,4 +1,4 @@
-Instance: 4551
+Instance: RelatedPerson4551
 InstanceOf: AffectedPersonRelatedPerson
 Title: "Beispiel Bezugsperson der betroffenen Person"
 Description: "Ein Beispielinstanz einer Bezugsperson-Ressource. "
