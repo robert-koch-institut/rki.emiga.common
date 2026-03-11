@@ -1,0 +1,1141 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1773152040868)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-AnnotationCategory.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152041809)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-ConceptDesignationUse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152042118)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-FacilityAssociationType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152042498)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-PersonalInformation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152042815)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-ProcessingStatus.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152043156)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-RegionKeys.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152047928)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-RelatedPersonRelationshipType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152048253)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-Relevance.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152048600)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-ResourceResponsibility.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152049472)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-ResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152049859)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\CodeSystem-Salutation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152050156)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AdditionalPropertiesQuestionnaire.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152050961)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152051995)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AffectedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152053049)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AffectedPersonBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152054009)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AffectedPersonRelatedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152054961)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AnnotationBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152055787)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AnnotationCommunication.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152056489)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-AttachmentDocumentReference.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152057046)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-DateCreated.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152057427)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-EmigaUserPractitioner.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152058459)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-FacilityAddressAffectedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152059297)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-IdentifierEmigaFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152059762)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-IdentifierEmigaID.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152060324)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-IdentifierSurvNetFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152060814)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-LandOfBirth.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152061464)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-LastModifiedBy.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152061898)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-NullFlavor.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152062478)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-PersonenTransactionBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152063428)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-ProcessingStatus.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152063880)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-RegionalKey.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152064472)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\StructureDefinition-Salutation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152064919)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-AnnotationCategoryVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152065248)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-AnnotationResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152065569)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-CommonLanguages.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152066663)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-ConceptDesignationUse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152066963)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-CountryCodes.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152067300)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-FacilityAssociationTypeVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152067646)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-NullFlavor.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152067977)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-PersonalInformation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152068331)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-PersonResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152068634)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-ProcessingStatusAffectedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152068946)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-ProcessingStatusAnnotation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152069244)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-ProcessingStatusVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152069574)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-RegionKeys.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152069878)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-RelatedPersonRelationshipTypeVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152070231)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-Relevance.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152070536)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-ResourceResponsibility.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152071001)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-ResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152071342)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-Salutation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152071663)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\ValueSet-YesNoNullFlavor.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152071997)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Bundle-TransactionBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152072316)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Bundle-TransactionBundleCreatePerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152072810)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Communication-Annotation-2.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152073137)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Communication-Communication441557618.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152073448)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\ConceptMap-AdminGenderEngToGenderAmtDe.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152073790)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\DocumentReference-Attachment-441557620.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152074100)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\DocumentReference-Attachment-4691067.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152074402)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\NamingSystem-EmigaFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152074703)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\NamingSystem-EmigaID.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152075015)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\NamingSystem-SurvNetFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152075320)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Patient-AffectedPerson-4551.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152075651)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Patient-AffectedPerson4550.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152075976)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Practitioner-EmigaUser-001.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152076276)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\Questionnaire-FillingNote.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152076589)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\QuestionnaireResponse-FillingNoteResponse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773152076885)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21111\\package\\examples\\RelatedPerson-RelatedPerson4551.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  401,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (401) Nicht autorisiert.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n401 Authorization Required\r\n\r\n401 Authorization Required\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    }
+]

@@ -9,7 +9,7 @@
   "experimental": false,
   "date": "2025-12-17",
   "publisher": "Robert Koch-Institut",
-  "description": "TODO",
+  "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) für Fragebögen strukturiert abzubilden. Es dient dazu, erweiterte Konfigurations- und Steuerungsinformationen zu einem Fragebogen zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

@@ -1,6 +1,6 @@
 ---
-topic: Relevance
-canonical: https://emiga.rki.de/fhir/common/CodeSystem/Relevance
+topic: AnnotationCategory
+canonical: https://emiga.rki.de/fhir/common/CodeSystem/AnnotationCategory
 ---
 
 # {{page-title}}
@@ -28,7 +28,7 @@ select
 
 ### Überblick
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/CodeSystem/Relevance}}
+    {{render:https://emiga.rki.de/fhir/common/CodeSystem/AnnotationCategory}}
 </div>
 
 <style>

@@ -1,0 +1,22 @@
+﻿{
+    "Timestamp":  "\/Date(1773219089848)\/",
+    "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.2111111\\package\\examples\\Bundle-TransactionBundleCreatePerson.json",
+    "ResourceType":  null,
+    "ResourceId":  null,
+    "Action":  "Upload",
+    "Success":  false,
+    "HttpStatus":  400,
+    "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+    "OperationOutcome":  {
+                             "ResourceType":  "OperationOutcome",
+                             "Text":  null,
+                             "Issues":  [
+                                            {
+                                                "Severity":  "error",
+                                                "Code":  "processing",
+                                                "Diagnostics":  "HAPI-0541: Unable to satisfy placeholder ID urn:uuid:2bc89b69-41f7-4037-8298-94dc6ac03479 found in element named \u0027link.other\u0027 within resource of type: Patient",
+                                                "Details":  null
+                                            }
+                                        ]
+                         }
+}

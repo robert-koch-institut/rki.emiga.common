@@ -10,6 +10,7 @@
 
 | **CodeSystem**                             | **Beschreibung**                                                                                       |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Annotationskategorien (AnnotationCategory) | Das CodeSystem AnnotationCategory enthält die Codes für die verschiedenen Arten von Annotationen. |
 | Anrede (Salutation) | Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen. |
 | Anzeigetext Art (ConceptDesignationUse) | Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. |
 | Bearbeitungsstatus (ProcessingStatus) | CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person. |

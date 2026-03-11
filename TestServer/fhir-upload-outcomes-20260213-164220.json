@@ -1,0 +1,1226 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1770997341179)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-HealthcareServiceCategory.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "HealthcareServiceCategory",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997341601)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-HealthcareServiceDutyHours.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "HealthcareServiceDutyHours",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997341909)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-HealthcareServiceSpecialty.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "HealthcareServiceSpecialty",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997342273)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-IneKFacilityType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "IneKFacilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997342590)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-OrganizationType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "OrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997343125)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-OrgVBundleId.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "OrgVBundleId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997343541)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-OrgVBundleVersion.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "OrgVBundleVersion",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997343844)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-PractitionerRole.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "PractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997344214)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\CodeSystem-responsibilityType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "responsibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997344491)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\NamingSystem-CodeSiteId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "CodeSiteId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997344767)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\NamingSystem-EmigaOrgvFileNumber.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "EmigaOrgvFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997345057)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\NamingSystem-EmigaOrgvId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "EmigaOrgvId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997345352)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\NamingSystem-IneKFileHeaderId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "IneKFileHeaderId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997345711)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-DutyHoursAvailability.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "DutyHoursAvailability",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997346279)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaDepartmentOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaDepartmentOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997347175)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaHealthcareService.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHealthcareService",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997347788)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaHospitalFacilityLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalFacilityLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997348556)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaHospitalLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997349300)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaHospitalOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997349926)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaHospitalRoomLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalRoomLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997350497)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997351045)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997351669)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaPractitioner.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaPractitioner",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997352170)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaPractitionerRole.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaPractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997352646)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-EmigaPublicHealthOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaPublicHealthOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997353191)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-IdentifierCodeSiteId.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierCodeSiteId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997353639)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-IdentifierEmigaOrgvFileNumber.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaOrgvFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997354082)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-IdentifierEmigaOrgvId.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaOrgvId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997354688)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-InekPostalAddress.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "InekPostalAddress",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997355737)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-IneKVersionPeriod.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IneKVersionPeriod",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997356654)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-OrgVBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "OrgVBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997357660)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-ResponsibilityHealthdepartments.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ResponsibilityHealthdepartments",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997358539)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\StructureDefinition-UTMCoordinates.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "UTMCoordinates",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997359368)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-AddressTypePhysicalBoth.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AddressTypePhysicalBoth",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997359651)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-Fachbereich.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "Fachbereich",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997359950)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-GenericOrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "GenericOrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997360338)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-HealthcareServiceCategory.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceCategory",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997360648)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-HealthcareServiceDutyHours.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceDutyHours",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997360956)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-HealthcareServiceSpecialty.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceSpecialty",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997361253)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-HealthcareServiceType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997361562)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-HospitalOrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HospitalOrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997361852)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-IneKFacilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "IneKFacilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997362160)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-OrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "OrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997362688)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-OrgVBundleId.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "OrgVBundleId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997362990)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-OrgVBundleVersion.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "OrgVBundleVersion",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997363369)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-PractitionerRole.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997363673)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-PublicHealthOrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PublicHealthOrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997363982)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\ValueSet-responsibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "responsibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997364285)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\HealthcareService-EpiWarnHealthcareService.json",
+        "ResourceType":  "HealthcareService",
+        "ResourceId":  "EpiWarnHealthcareService",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "HealthcareService",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997364624)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\HealthcareService-EpiWarnHealthcareServiceInvTest.json",
+        "ResourceType":  "HealthcareService",
+        "ResourceId":  "EpiWarnHealthcareServiceInvTest",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "HealthcareService",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997364913)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\HealthcareService-HealthcareService44588971.json",
+        "ResourceType":  "HealthcareService",
+        "ResourceId":  "HealthcareService44588971",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "HealthcareService",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997365209)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\HealthcareService-HealthcareService44588973.json",
+        "ResourceType":  "HealthcareService",
+        "ResourceId":  "HealthcareService44588973",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "HealthcareService",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997365491)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-EpiWarnLocation.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "EpiWarnLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997365788)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-HospitalRoomLocation.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "HospitalRoomLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997366201)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-InekEinricthung01.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "InekEinricthung01",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997366522)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-InekEinricthung02.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "InekEinricthung02",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997366891)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-IneKStandort.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "IneKStandort",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997367216)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-LaborLocation.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "LaborLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997367652)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-LaborLocationSub.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "LaborLocationSub",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997368015)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-Location44588965.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "Location44588965",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997368304)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Location-Station01.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "Station01",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997368608)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Organization-EpiWarnOrganization.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "EpiWarnOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997368901)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Organization-InekKrankenhausOrganization.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "InekKrankenhausOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997369228)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Organization-LaborOrganization.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "LaborOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997369621)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Organization-Organization44588980.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "Organization44588980",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997369917)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Organization-Organization44588981.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "Organization44588981",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997370201)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Practitioner-EpiWarnPractitioner.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "EpiWarnPractitioner",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997370497)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Practitioner-Practitioner44588966.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "Practitioner44588966",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997370786)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\Practitioner-Practitioner44588970.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "Practitioner44588970",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997371061)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\PractitionerRole-EpiWarnPractitionerRole.json",
+        "ResourceType":  "PractitionerRole",
+        "ResourceId":  "EpiWarnPractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "PractitionerRole",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997371356)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\PractitionerRole-Practitioner44588967.json",
+        "ResourceType":  "PractitionerRole",
+        "ResourceId":  "Practitioner44588967",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "PractitionerRole",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770997371644)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.192\\package\\examples\\PractitionerRole-PractitionerRole44588971.json",
+        "ResourceType":  "PractitionerRole",
+        "ResourceId":  "PractitionerRole44588971",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "PractitionerRole",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    }
+]

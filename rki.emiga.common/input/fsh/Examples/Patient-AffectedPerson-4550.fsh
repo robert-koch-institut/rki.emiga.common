@@ -1,9 +1,9 @@
-Instance: AffectedPerson-4550
+Instance: AffectedPerson4550
 InstanceOf: AffectedPerson
 Title: "Beispiel Betroffene Person"
 Description: "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil."
 Usage: #example
-* id = "AffectedPerson-4550"
+* id = "AffectedPerson4550"
 
 
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
@@ -156,4 +156,4 @@ Usage: #example
 * communication[0].language.coding.code = #de
 * communication[0].language.coding.display = "Deutsch"
 
-* generalPractitioner[0].reference = "Practitioner/4550"
+//* generalPractitioner[0].reference = "Practitioner/4550"

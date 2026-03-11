@@ -1,11 +1,12 @@
 ValueSet: YesNoNullFlavor
 Title: "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten"
-Description: "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben"
+Description: "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben."
 Id: YesNoNullFlavor
 * ^url = "https://emiga.rki.de/fhir/ValueSet/YesNoNullFlavor"
 * insert MetadataTerminology
 * ^version = "1.0.0"
 * ^date = "2025-02-03"
+
 * $sct#373066001 "Yes" // Ja
 * $sct#373067005 "No" // Nein 
 * $nullflavour#ASKU "asked but unknown" // nicht ermittelbar

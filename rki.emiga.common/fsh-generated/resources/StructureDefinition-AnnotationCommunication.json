@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AnnotationCommunication",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "name": "AnnotationCommunication",
   "title": "Annotation",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-26",
+  "date": "2026-03-04",
   "publisher": "Robert Koch-Institut",
   "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -238,8 +238,8 @@
           "description": "slicing patient identifier by system",
           "ordered": false
         },
-        "short": "TODO",
-        "definition": "TODO",
+        "short": "Identifikator der Annotation",
+        "definition": "Eindeutiger fachlicher Identifikator der Annotation (z. B. Aktenzeichen, Dokumenten- oder Vorgangsnummer), der unabhängig von der technischen Ressourcen-ID zur Identifikation und Referenzierung der Annotation verwendet wird.",
         "mustSupport": true
       },
       {
@@ -350,6 +350,45 @@
         "path": "Communication.statusReason",
         "comment": "Derzeit für Emiga Anwendungsfälle nicht relevant",
         "max": "0"
+      },
+      {
+        "id": "Communication.category",
+        "path": "Communication.category",
+        "short": "Kategorie",
+        "definition": "Kategorie der Annotation",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding",
+        "path": "Communication.category.coding",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://emiga.rki.de/fhir/ValueSet/AnnotationCategoryVS"
+        }
+      },
+      {
+        "id": "Communication.category.coding.system",
+        "path": "Communication.category.coding.system",
+        "min": 1,
+        "patternUri": "https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding.version",
+        "path": "Communication.category.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding.code",
+        "path": "Communication.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category.coding.display",
+        "path": "Communication.category.coding.display",
+        "mustSupport": true
       },
       {
         "id": "Communication.priority",

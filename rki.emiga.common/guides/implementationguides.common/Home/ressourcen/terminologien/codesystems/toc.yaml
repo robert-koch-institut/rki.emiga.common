@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Annotationskategorien
+  filename: guide-annotationskategorien.guide.md
 - name: Anrede
   filename: guide-anrede.guide.md
 - name: Anzeigetext Art
@@ -12,8 +14,8 @@
   filename: guide-personenbezug.guide.md
 - name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
-- name: Relevance
-  filename: guide-relevance.guide.md
+- name: Relevanz
+  filename: guide-relevanz.guide.md
 - name: Ressourcen Sichtbarkeit
   filename: guide-ressourcen-sichtbarkeit.guide.md
 - name: Ressourcen Verantwortlichkeit

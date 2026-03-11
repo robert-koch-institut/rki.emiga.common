@@ -9,7 +9,7 @@
   "experimental": false,
   "date": "2025-11-12",
   "publisher": "Robert Koch-Institut",
-  "description": "TO DO",
+  "description": "Dieses Profil bildet ein Annotations-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Annotationen (z.B. Notizen, Kommentaren und zugehörigen Ressourcen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

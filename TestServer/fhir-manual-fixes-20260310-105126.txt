@@ -1,0 +1,38 @@
+﻿Manual changes required before upload can fully succeed
+Generated: 2026-03-10T10:55:08
+
+1. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.21\package\examples\Communication-2.json
+   Issue: Numeric resource id not allowed by server
+   Suggestion: Change id '2' to contain at least one non-numeric character (example: '<Type>-2') and update all references to it.
+   Diagnostic: HAPI-0960: Can not create resource with ID[2], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character
+
+2. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.21\package\examples\DocumentReference-441557620.json
+   Issue: Numeric resource id not allowed by server
+   Suggestion: Change id '441557620' to contain at least one non-numeric character (example: '<Type>-441557620') and update all references to it.
+   Diagnostic: HAPI-0960: Can not create resource with ID[441557620], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character
+
+3. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.21\package\examples\DocumentReference-4691067.json
+   Issue: Numeric resource id not allowed by server
+   Suggestion: Change id '4691067' to contain at least one non-numeric character (example: '<Type>-4691067') and update all references to it.
+   Diagnostic: HAPI-0960: Can not create resource with ID[4691067], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character
+
+4. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.21\package\examples\RelatedPerson-4551.json
+   Issue: Numeric resource id not allowed by server
+   Suggestion: Change id '4551' to contain at least one non-numeric character (example: '<Type>-4551') and update all references to it.
+   Diagnostic: HAPI-0960: Can not create resource with ID[4551], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character
+
+5. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.21\package\examples\Communication-Communication441557618.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'Practitioner/example' in path 'Communication.sender' to an existing resource id.
+   Diagnostic: HAPI-1094: Resource Practitioner/example not found, specified in path: Communication.sender
+
+6. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.21\package\examples\Patient-AffectedPerson-4550.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'Practitioner/4550' in path 'Patient.generalPractitioner' to an existing resource id.
+   Diagnostic: HAPI-1094: Resource Practitioner/4550 not found, specified in path: Patient.generalPractitioner
+
+7. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.21\package\examples\Patient-AffectedPerson-4551.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'Practitioner/4550' in path 'Patient.generalPractitioner' to an existing resource id.
+   Diagnostic: HAPI-1094: Resource Practitioner/4550 not found, specified in path: Patient.generalPractitioner
+

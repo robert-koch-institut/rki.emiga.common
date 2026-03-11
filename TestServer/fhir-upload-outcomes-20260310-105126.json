@@ -1,0 +1,1186 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1773136429709)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-AnnotationCategory.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "AnnotationCategory",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136431011)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-ConceptDesignationUse.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ConceptDesignationUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136431820)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-FacilityAssociationType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "FacilityAssociationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136432567)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-PersonalInformation.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "PersonalInformation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136433330)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-ProcessingStatus.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ProcessingStatus",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136434123)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-RegionKeys.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "RegionKeys",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136437205)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-RelatedPersonRelationshipType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "RelatedPersonRelationshipType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136437955)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-Relevance.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Relevance",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136438698)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-ResourceResponsibility.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ResourceResponsibility",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136440320)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-ResourceVisibilityType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136441006)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\CodeSystem-Salutation.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136441725)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AdditionalPropertiesQuestionnaire.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AdditionalPropertiesQuestionnaire",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136444403)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AdditionalPropertiesQuestionnaireResponse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136446715)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AffectedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AffectedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136449935)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AffectedPersonBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AffectedPersonBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136451695)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AffectedPersonRelatedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AffectedPersonRelatedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136453715)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AnnotationBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AnnotationBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136455664)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AnnotationCommunication.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AnnotationCommunication",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136458468)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-AttachmentDocumentReference.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AttachmentDocumentReference",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136460239)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-DateCreated.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "DateCreated",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136461065)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-EmigaUserPractitioner.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaUserPractitioner",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136463511)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-FacilityAddressAffectedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "FacilityAddressAffectedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136464989)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-IdentifierEmigaFileNumber.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136466061)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-IdentifierEmigaID.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaID",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136467207)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-IdentifierSurvNetFileNumber.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierSurvNetFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136468343)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-LandOfBirth.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "LandOfBirth",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136469489)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-LastModifiedBy.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "LastModifiedBy",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136470317)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-NullFlavor.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NullFlavor",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136471466)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-PersonenTransactionBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "PersonenTransactionBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136473667)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-ProcessingStatus.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ProcessingStatus",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136474774)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-RegionalKey.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "RegionalKey",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136475943)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\StructureDefinition-Salutation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136477066)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-AnnotationCategoryVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AnnotationCategoryVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136477835)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-AnnotationResourceVisibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AnnotationResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136478629)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-CommonLanguages.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "CommonLanguages",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136480879)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-ConceptDesignationUse.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ConceptDesignationUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136481589)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-CountryCodes.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "CountryCodes",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136482339)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-FacilityAssociationTypeVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "FacilityAssociationTypeVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136483062)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-NullFlavor.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "NullFlavor",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136483798)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-PersonalInformation.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PersonalInformation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136484541)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-PersonResourceVisibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PersonResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136485301)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-ProcessingStatusAffectedPerson.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ProcessingStatusAffectedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136485997)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-ProcessingStatusAnnotation.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ProcessingStatusAnnotation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136486705)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-ProcessingStatusVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ProcessingStatusVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136487400)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-RegionKeys.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "RegionKeys",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136488109)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-RelatedPersonRelationshipTypeVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "RelatedPersonRelationshipTypeVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136488853)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-Relevance.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "Relevance",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136489581)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-ResourceResponsibility.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ResourceResponsibility",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136490319)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-ResourceVisibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ResourceVisibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136490996)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-Salutation.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "Salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136491619)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\ValueSet-YesNoNullFlavor.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "YesNoNullFlavor",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136492289)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Bundle-TransactionBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  422,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (422) Unprocessable Entity.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0522: Unable to store a Bundle resource on this server with a Bundle.type value of: transaction. Note that if you are trying to perform a FHIR transaction or batch operation you should POST the Bundle resource to the Base URL of the server, not to the /Bundle endpoint.",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136492945)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Bundle-TransactionBundleCreatePerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  422,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (422) Unprocessable Entity.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0522: Unable to store a Bundle resource on this server with a Bundle.type value of: transaction. Note that if you are trying to perform a FHIR transaction or batch operation you should POST the Bundle resource to the Base URL of the server, not to the /Bundle endpoint.",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136493697)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Communication-2.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[2], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136495001)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\ConceptMap-AdminGenderEngToGenderAmtDe.json",
+        "ResourceType":  "ConceptMap",
+        "ResourceId":  "AdminGenderEngToGenderAmtDe",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ConceptMap",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136495763)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\DocumentReference-441557620.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[441557620], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136496470)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\DocumentReference-4691067.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[4691067], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136497165)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\NamingSystem-EmigaFileNumber.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "EmigaFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136497890)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\NamingSystem-EmigaID.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "EmigaID",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136498564)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\NamingSystem-SurvNetFileNumber.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "SurvNetFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136500674)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Practitioner-EmigaUser-001.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "EmigaUser-001",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136501386)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Questionnaire-FillingNote.json",
+        "ResourceType":  "Questionnaire",
+        "ResourceId":  "FillingNote",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Questionnaire",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136502112)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\QuestionnaireResponse-FillingNoteResponse.json",
+        "ResourceType":  "QuestionnaireResponse",
+        "ResourceId":  "FillingNoteResponse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "QuestionnaireResponse",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136502871)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\RelatedPerson-4551.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[4551], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136505842)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Communication-Communication441557618.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Practitioner/example not found, specified in path: Communication.sender",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136506577)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Patient-AffectedPerson-4550.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Practitioner/4550 not found, specified in path: Patient.generalPractitioner",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1773136507345)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.21\\package\\examples\\Patient-AffectedPerson-4551.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Practitioner/4550 not found, specified in path: Patient.generalPractitioner",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    }
+]

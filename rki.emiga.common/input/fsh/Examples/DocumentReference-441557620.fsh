@@ -1,4 +1,4 @@
-Instance: 441557620
+Instance: Attachment-441557620
 InstanceOf: AttachmentDocumentReference
 Usage: #example
 Description: "Test Attachment DocumentReference Example with image reference"
@@ -26,7 +26,7 @@ Description: "Test Attachment DocumentReference Example with image reference"
 //* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
 //* identifier[emigaAttachmentId].value = "ATTACH-TestID-441557620"
 
-* author[0].reference = "Practitioner/example"
+* author[0].reference = "Practitioner/EmigaUser-001"
 * date = "2023-10-01T12:00:00Z"
 * content.attachment.contentType = #image/png
 * content.attachment.size = 13577

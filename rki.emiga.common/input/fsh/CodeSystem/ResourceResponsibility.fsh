@@ -414,14 +414,3 @@ Description: "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, 
 * #1.17.0.02. "ÜbwSt ÖRA Ost (für BB, BE, SN, ST, TH)"
 * #1.17.0.03. "ÜbwSt ÖRA Süd (für BW, BY)"
 * #1.17.0.04. "ÜbwSt ÖRA West (für HE, NW, RP, SL)"
-
-
-ValueSet: ResourceResponsibility
-Id: ResourceResponsibility
-Title: "ResourceResponsibility (Werteliste)"
-Description: "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen."
-* insert MetadataTerminology
-* ^version = "1.0.0"
-* ^date = "2024-03-19"
-* include codes from system ResourceResponsibility
-
