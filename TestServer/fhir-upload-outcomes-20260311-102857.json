@@ -1,0 +1,17 @@
+﻿{
+    "Timestamp":  "\/Date(1773221367400)\/",
+    "FilePath":  "P:\\source\\repos\\rki.emiga.common\\rki.emiga.common\\fsh-generated\\resources\\DocumentReference-Attachment-4691067.json",
+    "ResourceType":  "DocumentReference",
+    "ResourceId":  "Attachment-4691067",
+    "Action":  "Upload",
+    "Success":  true,
+    "HttpStatus":  200,
+    "Message":  "Uploaded",
+    "OperationOutcome":  {
+                             "ResourceType":  "DocumentReference",
+                             "Text":  null,
+                             "Issues":  [
+
+                                        ]
+                         }
+}
