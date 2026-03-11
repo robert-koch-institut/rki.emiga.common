@@ -1,20 +1,20 @@
 
-Instance: TransactionBundle
+Instance: TransactionBundleAnnotation01
 InstanceOf: Bundle
 Usage: #example
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
 * identifier.system = "https://emiga.rki.de/fhir/common/sid/AnnotationBundleId"
 * identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
 * type = #transaction
-* timestamp = "2025-07-03T09:28:36.132+01:00"
+//* timestamp = "2025-07-03T09:28:36.132+01:00"
 
 * entry[0].fullUrl = "https://emiga.rki.de/fhir/common/Communication/Annotation-2"
 * entry[0].resource = Annotation-2
 * entry[0].request.method = #POST
 * entry[0].request.url = "Communication"
 
-* entry[1].fullUrl = "urn:uuid:5d4b8483-0a7d-471e-b1df-26addf06ff1c"
-* entry[1].resource = 5d4b8483-0a7d-471e-b1df-26addf06ff1c
+* entry[1].fullUrl = "https://emiga.rki.de/fhir/common/Practitioner/EMIGA-USER-002"
+* entry[1].resource = EMIGA-USER-002
 * entry[1].request.method = #POST
 * entry[1].request.url = "Practitioner"
 
@@ -59,13 +59,13 @@ Usage: #inline
 * topic.text = "Test Betreff"
 * about = Reference(Composition/d317ce08-1da0-48d4-8dd7-8edbe88d51f1)
 * sent = "2025-07-03T09:28:36+01:00"
-* sender = Reference(urn:uuid:5d4b8483-0a7d-471e-b1df-26addf06ff1c)
+* sender = Reference(Practitioner/EMIGA-USER-002)
 * payload.contentString = "Das ist ein Test Beschreibung"
 
-Instance: 5d4b8483-0a7d-471e-b1df-26addf06ff1c
+Instance: EMIGA-USER-002
 InstanceOf: Practitioner
 Usage: #inline
-* id = "5d4b8483-0a7d-471e-b1df-26addf06ff1c"
+* id = "EMIGA-USER-002"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
 //* meta.security[visibility] = $ResourceVisibilityType#inAgency
 //* meta.security[responsibility] = $ResourceResponsibility#1.

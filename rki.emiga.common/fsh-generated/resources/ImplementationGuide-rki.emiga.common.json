@@ -528,9 +528,9 @@
       },
       {
         "reference": {
-          "reference": "Bundle/TransactionBundle"
+          "reference": "Bundle/TransactionBundleAnnotation01"
         },
-        "name": "TransactionBundle",
+        "name": "TransactionBundleAnnotation01",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
       },
       {
