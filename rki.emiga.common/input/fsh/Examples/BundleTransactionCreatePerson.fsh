@@ -8,7 +8,7 @@ Usage: #example
 * type = #transaction
 * timestamp = "2025-07-03T09:28:36.132+01:00"
 
-* entry[0].fullUrl = "https://emiga.rki.de/fhir/common/Patient/AffectedPerson-Tochter-1"
+* entry[0].fullUrl = "urn:uuid:d8140036-d5b5-461a-9a6e-adfb8a87039c"
 //* entry[0].fullUrl = "Patient/AffectedPerson-Tochter-1"
 * entry[0].resource = AffectedPerson-Tochter-1
 * entry[0].request.method = #POST
@@ -20,7 +20,7 @@ Usage: #example
 * entry[1].request.method = #POST
 * entry[1].request.url = "Patient"
 
-* entry[2].fullUrl = "https://emiga.rki.de/fhir/common/RelatedPerson/RelatedPerson-Mutter-1"
+* entry[2].fullUrl = "urn:uuid:2bc89b69-41f7-4037-8298-94dc6ac03479"
 //* entry[2].fullUrl = "RelatedPerson/RelatedPerson-Mutter-1"
 * entry[2].resource = RelatedPerson-Mutter-1
 * entry[2].request.method = #POST

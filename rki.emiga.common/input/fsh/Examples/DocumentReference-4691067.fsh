@@ -11,7 +11,7 @@ Usage: #example
 * identifier.value = "4b5755cd-da8f-4b34-b78c-4b3ead465b39"
 * status = #current
 * date = "2026-01-12T18:34:42.844+00:00"
-* author = Reference(EmigaUserPractitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c)
+* author = Reference(Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c)
 * content.attachment.contentType = #application/pdf
 * content.attachment.size = 16577
 * content.attachment.hash = "MzU2am9JWkQydk1jeVRlUDNTZlNuRVpvTDJKVGYvOW1ZL013VnB6REpCOD0="
