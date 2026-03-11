@@ -51,21 +51,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "DocumentReference/441557620"
-        },
-        "name": "441557620",
-        "description": "Test Attachment DocumentReference Example with image reference",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
-      },
-      {
-        "reference": {
-          "reference": "DocumentReference/4691067"
-        },
-        "name": "4691067",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/FillingNote"
         },
         "name": "Ablagevermerk",
@@ -86,13 +71,6 @@
         "name": "Annotation",
         "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Communication/2"
-        },
-        "name": "Annotation-2",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
       },
       {
         "reference": {
@@ -144,6 +122,21 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/Attachment-441557620"
+        },
+        "name": "Attachment-441557620",
+        "description": "Test Attachment DocumentReference Example with image reference",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/Attachment-4691067"
+        },
+        "name": "Attachment-4691067",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
@@ -184,7 +177,7 @@
       },
       {
         "reference": {
-          "reference": "Patient/AffectedPerson-4550"
+          "reference": "Patient/AffectedPerson4550"
         },
         "name": "Beispiel Betroffene Person",
         "description": "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
@@ -200,7 +193,7 @@
       },
       {
         "reference": {
-          "reference": "RelatedPerson/4551"
+          "reference": "RelatedPerson/RelatedPerson4551"
         },
         "name": "Beispiel Bezugsperson der betroffenen Person",
         "description": "Ein Beispielinstanz einer Bezugsperson-Ressource. ",
@@ -535,10 +528,10 @@
       },
       {
         "reference": {
-          "reference": "Bundle/TransactionBundle"
+          "reference": "Bundle/TransactionBundleAnnotation01"
         },
-        "name": "TransactionBundle",
-        "exampleBoolean": true
+        "name": "TransactionBundleAnnotation01",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
       },
       {
         "reference": {

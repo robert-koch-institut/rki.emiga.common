@@ -1,0 +1,8 @@
+﻿Manual changes required before upload can fully succeed
+Generated: 2026-03-10T15:37:58
+
+1. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.211111\package\examples\Communication-Annotation-2.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c' in path 'Communication.sender' to an existing resource id.
+   Diagnostic: HAPI-1094: Resource Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c not found, specified in path: Communication.sender
+

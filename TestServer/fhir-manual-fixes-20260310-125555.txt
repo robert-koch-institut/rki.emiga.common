@@ -1,0 +1,23 @@
+﻿Manual changes required before upload can fully succeed
+Generated: 2026-03-10T12:57:50
+
+1. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.211\package\examples\RelatedPerson-4551.json
+   Issue: Numeric resource id not allowed by server
+   Suggestion: Change id '4551' to contain at least one non-numeric character (example: '<Type>-4551') and update all references to it.
+   Diagnostic: HAPI-0960: Can not create resource with ID[4551], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character
+
+2. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.211\package\examples\Communication-Annotation-2.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c' in path 'Communication.sender' to an existing resource id.
+   Diagnostic: HAPI-1094: Resource Practitioner/5d4b8483-0a7d-471e-b1df-26addf06ff1c not found, specified in path: Communication.sender
+
+3. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.211\package\examples\DocumentReference-Attachment-441557620.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'Practitioner/example' in path 'DocumentReference.author' to an existing resource id.
+   Diagnostic: HAPI-1094: Resource Practitioner/example not found, specified in path: DocumentReference.author
+
+4. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.common#1.2.0-alpha.211\package\examples\Patient-AffectedPerson-4551.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'RelatedPerson/AffectedPersonRelatedPerson4551' in path 'Patient.link.other' to an existing resource id.
+   Diagnostic: HAPI-1094: Resource RelatedPerson/AffectedPersonRelatedPerson4551 not found, specified in path: Patient.link.other
+

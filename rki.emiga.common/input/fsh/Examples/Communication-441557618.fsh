@@ -48,9 +48,9 @@ Usage: #example
 
 * sent = "2024-10-01T12:00:00Z"
 
-* sender = Reference(Practitioner/example)
+* sender = Reference(Practitioner/EmigaUser-001)
 
 * payload[0].contentString = "Das ist ein Test Beschreibung"
 
 
-* payload[1].contentReference = Reference(DocumentReference/441557619)
+* payload[1].contentReference = Reference(DocumentReference/Attachment-4691067)

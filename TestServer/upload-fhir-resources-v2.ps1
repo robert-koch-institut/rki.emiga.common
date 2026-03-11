@@ -216,13 +216,26 @@ function Send-FhirResource {
             Accept        = 'application/fhir+json'
         }
 
+        $bundleType = $null
+        if ($resourceType -eq 'Bundle' -and $resource.PSObject.Properties.Match('type').Count -gt 0 -and $resource.type) {
+            $bundleType = $resource.type.ToString().ToLowerInvariant()
+        }
+
         $method = 'Put'
         $url = "$ServerUrl/$resourceType/$resourceId"
         $action = 'Upload'
         $message = 'Uploaded'
         $httpStatus = 200
 
-        if (-not $resourceId) {
+        # FHIR transaction/batch bundles must be posted to the base URL.
+        if ($resourceType -eq 'Bundle' -and ($bundleType -eq 'transaction' -or $bundleType -eq 'batch')) {
+            $method = 'Post'
+            $url = "{0}/" -f $ServerUrl.TrimEnd('/')
+            $action = 'UploadBundleOperation'
+            $message = "Uploaded $bundleType bundle to base endpoint"
+            $httpStatus = 200
+        }
+        elseif (-not $resourceId) {
             if ($UsePostWhenIdMissing) {
                 $method = 'Post'
                 $url = "$ServerUrl/$resourceType"
@@ -246,6 +259,7 @@ function Send-FhirResource {
             }
         }
 
+        Write-Host "  Request: $method $url" -ForegroundColor DarkGray
         $response = Invoke-RestMethod -Uri $url -Method $method -Body $content -Headers $headers -ContentType 'application/fhir+json; charset=utf-8' -ErrorAction Stop
         $operationOutcome = Get-OperationOutcomeSummary -BodyObject $response
 

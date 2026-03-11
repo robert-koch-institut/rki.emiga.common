@@ -1,0 +1,17 @@
+﻿{
+    "Timestamp":  "\/Date(1773219352143)\/",
+    "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.2111111\\package\\examples\\Bundle-TransactionBundleCreatePerson.json",
+    "ResourceType":  "Bundle",
+    "ResourceId":  "TransactionBundleCreatePerson",
+    "Action":  "UploadBundleOperation",
+    "Success":  true,
+    "HttpStatus":  200,
+    "Message":  "Uploaded transaction bundle to base endpoint",
+    "OperationOutcome":  {
+                             "ResourceType":  "Bundle",
+                             "Text":  null,
+                             "Issues":  [
+
+                                        ]
+                         }
+}
