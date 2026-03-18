@@ -2,11 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "ProcessingStatus",
   "url": "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "ProcessingStatus",
   "title": "Bearbeitungsstatus",
   "status": "active",
   "experimental": false,
+  "date": "2025-11-21",
   "publisher": "Robert Koch-Institut",
   "description": "Extension zur Abbildung der Bearbeitungsstatus eines Vorgangs.",
   "fhirVersion": "4.0.1",
@@ -52,8 +53,8 @@
         ],
         "mustSupport": true,
         "binding": {
-          "strength": "required",
-          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation",
+          "strength": "example",
+          "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
           "description": "Bearbeitungsstatus"
         }
       },

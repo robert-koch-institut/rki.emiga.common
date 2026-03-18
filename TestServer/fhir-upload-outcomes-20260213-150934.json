@@ -1,0 +1,1372 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1770991774608)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-HealthcareServiceCategory.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "HealthcareServiceCategory",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991774960)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-HealthcareServiceDutyHours.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "HealthcareServiceDutyHours",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991775289)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-HealthcareServiceSpecialty.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "HealthcareServiceSpecialty",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991775767)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-IneKFacilityType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "IneKFacilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991776101)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-OrganizationType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "OrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991776735)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-OrgVBundleId.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "OrgVBundleId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991777020)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-OrgVBundleVersion.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "OrgVBundleVersion",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991777325)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-PractitionerRole.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "PractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991777664)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\CodeSystem-responsibilityType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "responsibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991778010)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\NamingSystem-CodeSiteId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "CodeSiteId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991778300)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\NamingSystem-EmigaOrgvFileNumber.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "EmigaOrgvFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991778593)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\NamingSystem-EmigaOrgvId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "EmigaOrgvId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991778892)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\NamingSystem-IneKFileHeaderId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "IneKFileHeaderId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991779176)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-DutyHoursAvailability.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "DutyHoursAvailability",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991779688)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaDepartmentOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaDepartmentOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991780739)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaHealthcareService.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHealthcareService",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991781306)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaHospitalFacilityLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalFacilityLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991782397)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaHospitalLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991783151)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaHospitalOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991783756)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaHospitalRoomLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaHospitalRoomLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991784283)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991784953)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991785665)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaPractitioner.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaPractitioner",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991786116)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaPractitionerRole.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaPractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991786537)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-EmigaPublicHealthOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "EmigaPublicHealthOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991787150)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-IdentifierCodeSiteId.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierCodeSiteId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991787596)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-IdentifierEmigaOrgvFileNumber.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaOrgvFileNumber",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991788063)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-IdentifierEmigaOrgvId.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IdentifierEmigaOrgvId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991788528)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-InekPostalAddress.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "InekPostalAddress",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991789550)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-IneKVersionPeriod.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "IneKVersionPeriod",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991790537)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-OrgVBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "OrgVBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991791532)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-ResponsibilityHealthdepartments.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ResponsibilityHealthdepartments",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991792459)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\StructureDefinition-UTMCoordinates.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "UTMCoordinates",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991793342)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-AddressTypePhysicalBoth.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AddressTypePhysicalBoth",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991793658)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-Fachbereich.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "Fachbereich",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991793957)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-GenericOrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "GenericOrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991794370)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-HealthcareServiceCategory.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceCategory",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991794677)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-HealthcareServiceDutyHours.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceDutyHours",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991794978)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-HealthcareServiceSpecialty.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceSpecialty",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991795306)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-HealthcareServiceType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HealthcareServiceType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991795624)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-HospitalOrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "HospitalOrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991795930)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-IneKFacilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "IneKFacilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991796229)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-OrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "OrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991796597)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-OrgVBundleId.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "OrgVBundleId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991796892)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-OrgVBundleVersion.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "OrgVBundleVersion",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991797191)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-PractitionerRole.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PractitionerRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991797505)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-PublicHealthOrganizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "PublicHealthOrganizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991798872)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\ValueSet-responsibilityType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "responsibilityType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991799175)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\HealthcareService-44588972.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588972], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991799467)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\HealthcareService-44588973.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588973], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991799751)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\HealthcareService-EpiWarnHealthcareService.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Location/EpiWarnLocation not found, specified in path: HealthcareService.location",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991800044)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\HealthcareService-EpiWarnHealthcareServiceInvTest.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Location/EpiWarnLocation not found, specified in path: HealthcareService.location",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991800346)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-44588965.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588965], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991800625)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-EpiWarnLocation.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "EpiWarnLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991800927)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-HospitalRoomLocation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/InekKrankenhaus not found, specified in path: Location.managingOrganization",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991801221)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-InekEinricthung01.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/InekKrankenhaus not found, specified in path: Location.managingOrganization",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991801491)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-InekEinricthung02.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/InekKrankenhaus not found, specified in path: Location.managingOrganization",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991801793)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-IneKStandort.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "IneKStandort",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991802117)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-LaborLocation.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "LaborLocation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991802424)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-LaborLocationSub.json",
+        "ResourceType":  "Location",
+        "ResourceId":  "LaborLocationSub",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Location",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991802730)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Location-Station01.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/InekKrankenhaus not found, specified in path: Location.managingOrganization",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991803023)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Organization-44588964.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588964], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991803303)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Organization-44588980.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588980], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991803582)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Organization-44588981.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588981], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991803864)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Organization-EpiWarnOrganization.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "EpiWarnOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991804177)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Organization-InekKrankenhausOrganization.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "InekKrankenhausOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991804482)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Organization-LaborOrganization.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "LaborOrganization",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991804793)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Practitioner-44588966.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588966], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991805072)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Practitioner-44588968.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588968], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991805342)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Practitioner-44588970.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588970], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991805615)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\Practitioner-EpiWarnPractitioner.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "EpiWarnPractitioner",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991805908)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\PractitionerRole-44588967.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588967], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991806180)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\PractitionerRole-44588969.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588969], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991806460)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\PractitionerRole-44588971.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-0960: Can not create resource with ID[44588971], no resource with this ID exists and clients may only assign IDs which contain at least one non-numeric character",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991806749)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.vzd#2.0.0-alpha.19\\package\\examples\\PractitionerRole-EpiWarnPractitionerRole.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource HealthcareService/EpiWarnHealthcareService not found, specified in path: PractitionerRole.healthcareService",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    }
+]

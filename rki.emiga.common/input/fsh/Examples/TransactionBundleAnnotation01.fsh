@@ -1,0 +1,75 @@
+
+Instance: TransactionBundleAnnotation01
+InstanceOf: Bundle
+Usage: #example
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
+* identifier.system = "https://emiga.rki.de/fhir/common/sid/AnnotationBundleId"
+* identifier.value = "d317ce08-1da0-48d4-8dd7-8edbe88d51f4"
+* type = #transaction
+//* timestamp = "2025-07-03T09:28:36.132+01:00"
+
+* entry[0].fullUrl = "https://emiga.rki.de/fhir/common/Communication/Annotation-2"
+* entry[0].resource = Annotation-2
+* entry[0].request.method = #POST
+* entry[0].request.url = "Communication"
+
+* entry[1].fullUrl = "https://emiga.rki.de/fhir/common/Practitioner/EMIGA-USER-002"
+* entry[1].resource = EMIGA-USER-002
+* entry[1].request.method = #POST
+* entry[1].request.url = "Practitioner"
+
+Instance: Annotation-2
+InstanceOf: AnnotationCommunication
+Usage: #inline
+* id = "Annotation-2"
+* meta.versionId = "5"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+* meta.security[responsibility] = $ResourceResponsibility#1.
+* meta.security[visibility] = $ResourceVisibilityType#transferable
+
+* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+* meta.tag[personalInformation].code = #ContainsPersonalInformation
+* meta.tag[personalInformation].display = "Enthält personenbezogene Daten"
+
+
+
+* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
+* extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
+* extension[processingStatus].valueCoding.code = #inprogress 
+* extension[processingStatus].valueCoding.display = "In Bearbeitung"
+
+* extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
+* extension[dateCreated].valueInstant = "2024-10-01T12:00:00Z"
+
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "DEFG-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "ABCD-987654321"
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "SURVNET-987654321"
+
+
+
+//* identifier[0].system = "https://emiga.rki.de/fhir/sid/EmigaAnnotationId"
+//* identifier[=].value = "ANNO-1.-2025-00000002"
+//* identifier[+].system = "https://emiga.rki.de/fhir/sid/SurvNetAnnotationId"
+//* identifier[=].value = "SURVNET-TestID-441557618"
+* status = #completed
+* category[0] = $AnnotationCategoryCS#comment "Kommentar"
+* topic.text = "Test Betreff"
+* about = Reference(Composition/d317ce08-1da0-48d4-8dd7-8edbe88d51f1)
+* sent = "2025-07-03T09:28:36+01:00"
+* sender = Reference(Practitioner/EMIGA-USER-002)
+* payload.contentString = "Das ist ein Test Beschreibung"
+
+Instance: EMIGA-USER-002
+InstanceOf: Practitioner
+Usage: #inline
+* id = "EMIGA-USER-002"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
+//* meta.security[visibility] = $ResourceVisibilityType#inAgency
+//* meta.security[responsibility] = $ResourceResponsibility#1.
+* identifier.value = "testuser@emiga.rki.de"
+* active = true
+//* name.family = "Muster"
+//* name.given = "Max"

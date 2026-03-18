@@ -4,7 +4,7 @@
   "name": "ProcessingStatusVS",
   "id": "ProcessingStatusVS",
   "title": "Bearbeitungsstatus",
-  "description": "TODO",
+  "description": "Dieses ValueSet umfasst die Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden.",
   "url": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
   "language": "de-DE",
   "experimental": false,
@@ -20,8 +20,8 @@
       ]
     }
   ],
-  "version": "0.1.0",
-  "date": "2025-02-10",
+  "version": "0.2.0",
+  "date": "2025-12-12",
   "compose": {
     "include": [
       {

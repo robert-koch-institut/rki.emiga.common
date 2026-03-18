@@ -2,14 +2,14 @@
   "resourceType": "StructureDefinition",
   "id": "AdditionalPropertiesQuestionnaireResponse",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "OutbreakQuestionnaireResponseCommon",
   "title": "Zusätzliche Eigenschaften Fragebogen-Antworten",
   "status": "active",
   "experimental": false,
-  "date": "2025-07-21",
+  "date": "2025-12-17",
   "publisher": "Robert Koch-Institut",
-  "description": "TODO",
+  "description": "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -42,7 +42,7 @@
         "sliceName": "emigaprofile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.12"
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
       },
       {
         "id": "QuestionnaireResponse.meta.security",
@@ -58,13 +58,14 @@
           "description": "Slicing security attribute by coding system",
           "ordered": false
         },
+        "min": 2,
         "mustSupport": true
       },
       {
         "id": "QuestionnaireResponse.meta.security:visibility",
         "path": "QuestionnaireResponse.meta.security",
         "sliceName": "visibility",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": true,
         "binding": {
@@ -89,7 +90,7 @@
         "id": "QuestionnaireResponse.meta.security:responsibility",
         "path": "QuestionnaireResponse.meta.security",
         "sliceName": "responsibility",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "mustSupport": true,
         "binding": {

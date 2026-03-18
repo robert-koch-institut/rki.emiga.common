@@ -10,57 +10,57 @@
   "concept": [
     {
       "code": "open",
-      "display": "offen",
+      "display": "Offen",
       "definition": "Der Vorgang ist offen und wurde noch nicht bearbeitet."
     },
     {
       "code": "inprogress",
-      "display": "in Bearbeitung",
+      "display": "In Bearbeitung",
       "definition": "Der Vorgang oder die betroffene Person ist in Bearbeitung."
     },
     {
       "code": "closed",
-      "display": "abgeschlossen",
+      "display": "Abgeschlossen",
       "definition": "Der Vorgang oder die betroffene Person ist abgeschlossen."
     },
     {
       "code": "cancelled",
-      "display": "verworfen",
+      "display": "Verworfen",
       "definition": "Der Vorgang oder die betroffene Person ist verworfen."
     },
     {
       "code": "handedover",
-      "display": "abgegeben",
+      "display": "Abgegeben",
       "definition": "Der Vorgang wurde wurde an ein anderes GA abgegeben."
     },
     {
       "code": "inhandover",
-      "display": "in Übergabe",
+      "display": "In Übergabe",
       "definition": "Das GA hat den Vorgang zur Übernahme abgegeben."
     },
     {
       "code": "intakeover",
-      "display": "in Übernahme",
+      "display": "In Übernahme",
       "definition": "Das GA nimmt den Vorgang vom anderen GA an."
     },
     {
       "code": "forinformation",
-      "display": "zur Kenntnis",
+      "display": "Zur Kenntnis",
       "definition": "Der Vorgang kann zur Kenntnis eingesehen werden."
     },
     {
       "code": "finishedProcessing",
-      "display": "fertig bearbeitet",
+      "display": "Fertig bearbeitet",
       "definition": "Der Vorgang wurde vollständig bearbeitet."
     },
     {
       "code": "noFurtherProcessing",
-      "display": "keine weitere Bearbeitung notwendig",
+      "display": "Keine weitere Bearbeitung notwendig",
       "definition": "Für den Vorgang ist keine weitere Bearbeitung notwendig."
     },
     {
       "code": "started",
-      "display": "begonnen",
+      "display": "Begonnen",
       "definition": "Die Bearbeitung des Vorgangs wurde begonnen."
     }
   ],
@@ -79,8 +79,8 @@
     }
   ],
   "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
-  "version": "0.4.0",
-  "date": "2025-11-12",
+  "version": "0.5.0",
+  "date": "2025-12-12",
   "caseSensitive": true,
   "count": 11
 }

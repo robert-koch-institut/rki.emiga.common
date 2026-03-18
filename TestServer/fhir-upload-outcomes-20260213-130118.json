@@ -1,0 +1,3908 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1770984078447)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-Abrechnungsart.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Abrechnungsart",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984078913)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-administrative-gender-supplement.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "administrative-gender-supplement",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984079278)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-alpha-id.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "alpha-id",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984079612)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-anlage-6-vorsatzworte.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "anlage-6-vorsatzworte",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984080074)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-anlage-7-namenszusaetze.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "anlage-7-namenszusaetze",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984080479)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-anlage-8-laenderkennzeichen.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "anlage-8-laenderkennzeichen",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984081123)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-ask.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ask",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984081424)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-atc.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "atc",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984081748)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-Aufnahmeanlass.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Aufnahmeanlass",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984082102)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-AufnahmegrundDritteStelle.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "AufnahmegrundDritteStelle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984082410)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-AufnahmegrundErsteUndZweiteStelle.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "AufnahmegrundErsteUndZweiteStelle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984082701)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-AufnahmegrundVierteStelle.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "AufnahmegrundVierteStelle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984083021)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-CodeSystemISO31662DE.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "CodeSystemISO31662DE",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984083319)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-cs-common-meta-tag-de.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "cs-common-meta-tag-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984083613)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-cs-merkzeichen-de.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "cs-merkzeichen-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984083907)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-diagnosis-role-supplement.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "diagnosis-role-supplement",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984084206)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-EntlassungsgrundDritteStelle.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "EntlassungsgrundDritteStelle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984084502)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-EntlassungsgrundErsteUndZweiteStelle.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "EntlassungsgrundErsteUndZweiteStelle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984084827)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-Fachabteilungsschluessel-erweitert.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Fachabteilungsschluessel-erweitert",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984085280)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-Fachabteilungsschluessel.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Fachabteilungsschluessel",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984085606)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-gender-amtlich-de.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "gender-amtlich-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984085940)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-icd-10-gm-mehrfachcodierungs-kennzeichen.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "icd-10-gm-mehrfachcodierungs-kennzeichen",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984086224)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-icd-10-gm.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "icd-10-gm",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984086521)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-identifier-type-de-basis.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "identifier-type-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984086821)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-identifier-type-v2-supplement.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "identifier-type-v2-supplement",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984087098)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-klassifikation.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "klassifikation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984087461)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-KontaktArtDe.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "KontaktArtDe",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984087767)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-KontaktDiagnoseProzedur.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "KontaktDiagnoseProzedur",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984088063)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-Kontaktebene.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "Kontaktebene",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984088356)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-marital-status-supplement.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "marital-status-supplement",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984088639)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-observation-category-supplement.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "observation-category-supplement",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984088953)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-ops.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "ops",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984089232)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-pzn.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "pzn",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984089510)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-RuhenderLeistungsanspruchGKV.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "RuhenderLeistungsanspruchGKV",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984089802)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-supplement-iso-3166.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "supplement-iso-3166",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984090537)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-VersichertenartPKV.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "VersichertenartPKV",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984090818)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-versicherungsart-de-basis.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "versicherungsart-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984091101)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-wahlleistungen-de.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "wahlleistungen-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984091396)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-wg14.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "wg14",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984091676)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\CodeSystem-WirkstofftypCS.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "WirkstofftypCS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984091980)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ImplementationGuide.json",
+        "ResourceType":  "ImplementationGuide",
+        "ResourceId":  null,
+        "Action":  "Validation",
+        "Success":  false,
+        "HttpStatus":  null,
+        "Message":  "Missing resourceType or id",
+        "OperationOutcome":  null
+    },
+    {
+        "Timestamp":  "\/Date(1770984091986)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\package.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Validation",
+        "Success":  false,
+        "HttpStatus":  null,
+        "Message":  "Missing resourceType or id",
+        "OperationOutcome":  null
+    },
+    {
+        "Timestamp":  "\/Date(1770984091991)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\SearchParameter-Condition-related.json",
+        "ResourceType":  "SearchParameter",
+        "ResourceId":  "Condition-related",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "SearchParameter",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984092263)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-AbrechnendeIK.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AbrechnendeIK",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984092617)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-address-de-basis.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "address-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984093576)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-ags.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ags",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984094029)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-Aufnahmegrund.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Aufnahmegrund",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984094659)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-besondere-personengruppe.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "besondere-personengruppe",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984095141)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-chargeitem-de-ebm.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "chargeitem-de-ebm",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984096158)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingAlphaID.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingAlphaID",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984096532)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingAlphaIDSE.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingAlphaIDSE",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984096934)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingASK.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingASK",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984097336)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingATC.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingATC",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984097733)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingCAS.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingCAS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984098125)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingICD10GM.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingICD10GM",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984098611)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingOPS.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingOPS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984099072)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-CodingPZN.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "CodingPZN",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984099486)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-coverage-de-basis.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "coverage-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984100489)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-coverage-de-gkv.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "coverage-de-gkv",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984100985)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-coverage-de-sel.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "coverage-de-sel",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984101910)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-dmp-kennzeichen.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "dmp-kennzeichen",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984102352)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-einlesedatum-karte.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "einlesedatum-karte",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984102716)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-Entlassungsgrund.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Entlassungsgrund",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984103308)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-ExtensionAbrechnungsart.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ExtensionAbrechnungsart",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984103763)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-ExtensionAbrechnungsDiagnoseProzedur.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ExtensionAbrechnungsDiagnoseProzedur",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984104296)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-ExtensionFachabteilungsschluessel301.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ExtensionFachabteilungsschluessel301",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984104836)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-ExtensionLebensphase.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ExtensionLebensphase",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984105477)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-gender-amtlich-de.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "gender-amtlich-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984105839)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-generation-egk.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "generation-egk",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984106238)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-GradDerBehinderung.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "GradDerBehinderung",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984107260)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-humanname-de-basis.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "humanname-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984107943)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-humanname-namenszusatz.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "humanname-namenszusatz",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984108303)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-icd-10-gm-diagnosesicherheit.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "icd-10-gm-diagnosesicherheit",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984108681)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-icd-10-gm-mehrfachcodierungs-kennzeichen.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "icd-10-gm-mehrfachcodierungs-kennzeichen",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984109161)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-abrechnungsnummer.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-abrechnungsnummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984109626)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-aufnahmenummer.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-aufnahmenummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984110076)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-bsnr.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-bsnr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984110833)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-efn.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-efn",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984111560)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-iknr.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-iknr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984112104)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-kvid-10.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-kvid-10",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984112552)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-kzva.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-kzva",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984113559)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-lanr.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-lanr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984114320)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-lbnr.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-lbnr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984114773)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-pid.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-pid",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984115225)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-pkv-kvid-10.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-pkv-kvid-10",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984115672)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-pkv.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-pkv",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984116231)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-pseudo-kvid.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-pseudo-kvid",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984116669)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-reisepassnummer.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-reisepassnummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984117133)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-standortnummer.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-standortnummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984117593)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-telematik-id.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-telematik-id",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984118047)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-vknr.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-vknr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984118812)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-identifier-zanr.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "identifier-zanr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984119559)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-informationrecipient.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "informationrecipient",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984119950)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-kostenerstattung.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "kostenerstattung",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984120664)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-namingsystem-de-basis.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "namingsystem-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984121511)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-normgroesse.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "normgroesse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984121899)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-ekg.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-ekg",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984122715)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-pflegegrad.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-pflegegrad",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984123709)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-score-gcs.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-score-gcs",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984124275)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-atemfrequenz.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-atemfrequenz",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984124706)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-blutdruck.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-blutdruck",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984125511)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-herzfrequenz.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-herzfrequenz",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984126006)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-koerpergewicht.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-koerpergewicht",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984126473)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-koerpergroesse.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-koerpergroesse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984126872)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-koerpertemperatur.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-koerpertemperatur",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984127645)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-kopfumfang.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-kopfumfang",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984128034)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-sauerstoffsaettigung-pulsoximetrie.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-sauerstoffsaettigung-pulsoximetrie",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984128460)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign-sauerstoffsaettigung.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign-sauerstoffsaettigung",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984128944)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-observation-de-vitalsign.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "observation-de-vitalsign",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984129401)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-onlinepruefung-egk.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "onlinepruefung-egk",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984130127)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-ProzedurDokumentationsdatum.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ProzedurDokumentationsdatum",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984130509)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-ruhender-leistungsanspruch.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ruhender-leistungsanspruch",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984131316)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-seitenlokalisation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "seitenlokalisation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984131780)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-versichertenart.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "versichertenart",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984132247)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-version-vsdm.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "version-vsdm",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984132599)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-Wahlleistung.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Wahlleistung",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984133058)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-WirkstofftypEX.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "WirkstofftypEX",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984133521)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-wop.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "wop",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984134007)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\StructureDefinition-zuzahlungsstatus.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "zuzahlungsstatus",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984134566)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-AbrechnungsartVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AbrechnungsartVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984134859)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-AbrechnungsDiagnoseProzedur.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AbrechnungsDiagnoseProzedur",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984135134)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-ArgeIkKlassifikationVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ArgeIkKlassifikationVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984135411)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-AufnahmeanlassVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AufnahmeanlassVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984135684)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-AufnahmegrundDritteStelleVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AufnahmegrundDritteStelleVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984135970)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-AufnahmegrundErsteUndZweiteStelleVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AufnahmegrundErsteUndZweiteStelleVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984136250)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-AufnahmegrundVierteStelleVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "AufnahmegrundVierteStelleVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984136533)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-common-meta-tag-de.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "common-meta-tag-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984136819)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-Diagnosesubtyp.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "Diagnosesubtyp",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984137104)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-DiagnoseTyp.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "DiagnoseTyp",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984137398)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-EkgAbleitungenVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "EkgAbleitungenVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984137686)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-EkgLeads.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "EkgLeads",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984137993)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-EncounterClassDE.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "EncounterClassDE",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984138273)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-EncounterStatusDe.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "EncounterStatusDe",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984138555)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-EntlassungsgrundDritteStelleVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "EntlassungsgrundDritteStelleVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984138840)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-EntlassungsgrundErsteUndZweiteStelleVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "EntlassungsgrundErsteUndZweiteStelleVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984139135)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-FachabteilungsschluesselErweitert.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "FachabteilungsschluesselErweitert",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984139423)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-FachabteilungsschluesselVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "FachabteilungsschluesselVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984139727)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-glasgow-coma-score-eye.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "glasgow-coma-score-eye",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984140046)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-glasgow-coma-score-motor.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "glasgow-coma-score-motor",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984140337)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-glasgow-coma-score-verbal.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "glasgow-coma-score-verbal",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984140645)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-icd-10-gm-mehrfachcodierungs-kennzeichen.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "icd-10-gm-mehrfachcodierungs-kennzeichen",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984140928)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-identifier-type-de-basis.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "identifier-type-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984141221)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-identifier-type-kvid-de-basis.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "identifier-type-kvid-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984141515)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-kontaktart-de.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "kontaktart-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984141799)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-kontaktebene-de.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "kontaktebene-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984142080)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-lebensphase-de.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "lebensphase-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984142376)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-merkzeichen-de.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "merkzeichen-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984142657)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-ops-vs.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ops-vs",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984142948)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-pflegegrad-de.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "pflegegrad-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984143250)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-RuhenderLeistungsanspruchGKV.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "RuhenderLeistungsanspruchGKV",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984143542)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-UcumVitalsCommonDE.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "UcumVitalsCommonDE",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984143843)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-valueset-alpha-id.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "valueset-alpha-id",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984144135)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-valueset-ask.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "valueset-ask",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984144429)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-valueset-atc.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "valueset-atc",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984144711)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-ValueSet-GenderOtherDE.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ValueSet-GenderOtherDE",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984145001)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-valueset-ICD-10-GM.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "valueset-ICD-10-GM",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984145336)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-ValueSet-OPS-SNOMED-Source-Codes.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ValueSet-OPS-SNOMED-Source-Codes",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984145647)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-valueset-pzn.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "valueset-pzn",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984145938)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-valueset-VersicherungsartDeBasis.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "valueset-VersicherungsartDeBasis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984146273)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-valueset-wg14.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "valueset-wg14",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984146561)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-ValueSetISO31662DE.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ValueSetISO31662DE",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984146903)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-ValueSetVitalSignDE-Body-Height-Loinc.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "ValueSetVitalSignDE-Body-Height-Loinc",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984147194)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VersichertenartPKV.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VersichertenartPKV",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984147482)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Atemfrequenz-SNOMED-CT.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Atemfrequenz-SNOMED-CT",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984147785)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Body-Length-UCUM.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Body-Length-UCUM",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984148087)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Body-Weigth-UCUM.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Body-Weigth-UCUM",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984148394)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Herzfrequenz-SNOMED-CT.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Herzfrequenz-SNOMED-CT",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984148704)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Koerpergewicht-SNOMED-CT.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Koerpergewicht-SNOMED-CT",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984148997)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Koerpergroesse-SNOMED-CT.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Koerpergroesse-SNOMED-CT",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984149289)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Koerpertemperatur-SNOMED-CT.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Koerpertemperatur-SNOMED-CT",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984149593)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Kopfumfang-SNOMED-CT.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Kopfumfang-SNOMED-CT",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984149883)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-VitalSignDE-Sauerstoffsaettigung-SNOMED-CT.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "VitalSignDE-Sauerstoffsaettigung-SNOMED-CT",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984150171)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-wahlleistungen-de.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "wahlleistungen-de",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984150464)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\ValueSet-WirkstofftypVS.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "WirkstofftypVS",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984150753)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\ChargeItem-Example-chargeitem-ebm-1.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/Example-patient-de-basis-address-1 not found, specified in path: ChargeItem.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984151037)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\ConceptMap-ConceptMap-OPS-SNOMED-Category-Mapping.json",
+        "ResourceType":  "ConceptMap",
+        "ResourceId":  "ConceptMap-OPS-SNOMED-Category-Mapping",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ConceptMap",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984151406)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Condition-Example-condition-ausrufezeichen-primaer.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Condition.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984151684)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Condition-Example-condition-ausrufezeichen-sekundaer.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Condition.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984151939)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Condition-Example-condition-kreuz-stern-primaer.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Condition.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984152202)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Condition-Example-condition-kreuz-stern-sekundaer.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Condition/Example-condition-kreuz-stern-primaer not found, specified in path: Condition.extension(\u0027http://hl7.org/fhir/StructureDefinition/condition-related\u0027).value",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984152485)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Condition-Example-condition-minimal.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Condition.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984152770)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Condition-Example-condition-zustand-nach.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Condition.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984153047)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Coverage-Example-coverage-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Coverage.beneficiary",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984153340)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-arge-ik-iknr.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-arge-ik-iknr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984153639)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-asv-teamnummer.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-asv-teamnummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984153935)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingsystem-bfarm-btmnr.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingsystem-bfarm-btmnr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984154224)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingsystem-BundesaerztekammerEfn.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingsystem-BundesaerztekammerEfn",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984154516)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingsystem-gkv-hmnr.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingsystem-gkv-hmnr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984154827)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingsystem-gkv-kvid-10.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingsystem-gkv-kvid-10",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984155108)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-gkv-kvk-versichertennummer.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-gkv-kvk-versichertennummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984155405)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-gkv-kvnr-30.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-gkv-kvnr-30",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984155712)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-gkv-pseudo-kvid.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-gkv-pseudo-kvid",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984156000)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-goae.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-goae",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984156300)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-gzae.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-gzae",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984156602)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-kbv-bsnr.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-kbv-bsnr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984156908)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-kbv-lanr.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-kbv-lanr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984157200)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-kbv-pnr.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-kbv-pnr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984157498)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-kbv-vknr.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-kbv-vknr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984157806)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-KzbvZahnarztnummer.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-KzbvZahnarztnummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984158104)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-KzvAbrechnungsnummer.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-KzvAbrechnungsnummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984158404)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\NamingSystem-namingSystem-KzvZahnarztnummer.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "namingSystem-KzvZahnarztnummer",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984158702)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-grad-der-behinderung.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984159044)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-atemfrequenz.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984159291)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-blutdruck.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984159579)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-ekg-deprecated.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984159876)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-ekg.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984160161)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-gcs.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984160456)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-herzfrequenz.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984160741)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-koerpergewicht.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984161329)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-koerpergroesse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject.where(resolve() is Patient)",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984161618)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-koerpertemperatur.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984161900)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-kopfumfang.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984162182)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-pflegegrad.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984162457)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-Example-observation-sauerstoffsaettigung.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984162746)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Observation-ExampleObservationSauerstoffsaettigungPulsoximetrie.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Patient/example not found, specified in path: Observation.subject",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984163035)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-address-de-basis.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-address-de-basis",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984163336)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-de-basis-address.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-de-basis-address",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984163670)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-de-basis-humanname-komplex.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-de-basis-humanname-komplex",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984163969)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-de-basis-humanname-namenszusatz-titel.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-de-basis-humanname-namenszusatz-titel",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984164275)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-de-basis-humanname-vorsatzwort.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-de-basis-humanname-vorsatzwort",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984164544)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-de-basis-humanname.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-de-basis-humanname",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984164823)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-de-basis-kvid.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-de-basis-kvid",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984165101)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Patient-Example-patient-de-basis-mrnr.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "Example-patient-de-basis-mrnr",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770984165380)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\de.basisprofil.r4#1.6.0-ballot2\\package\\examples\\Practitioner-Example-practitioner-example.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "Example-practitioner-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    }
+]

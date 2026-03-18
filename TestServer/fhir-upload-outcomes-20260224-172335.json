@@ -1,0 +1,57 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1771950215714)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BaseHealthcareService.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BaseHealthcareService",
+        "Action":  "Validate",
+        "Success":  true,
+        "HttpStatus":  null,
+        "Message":  "Valid JSON",
+        "OperationOutcome":  null
+    },
+    {
+        "Timestamp":  "\/Date(1771950215730)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BaseLocation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BaseLocation",
+        "Action":  "Validate",
+        "Success":  true,
+        "HttpStatus":  null,
+        "Message":  "Valid JSON",
+        "OperationOutcome":  null
+    },
+    {
+        "Timestamp":  "\/Date(1771950215841)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BaseOrganization.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BaseOrganization",
+        "Action":  "Validate",
+        "Success":  true,
+        "HttpStatus":  null,
+        "Message":  "Valid JSON",
+        "OperationOutcome":  null
+    },
+    {
+        "Timestamp":  "\/Date(1771950215863)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BasePractitioner.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BasePractitioner",
+        "Action":  "Validate",
+        "Success":  true,
+        "HttpStatus":  null,
+        "Message":  "Valid JSON",
+        "OperationOutcome":  null
+    },
+    {
+        "Timestamp":  "\/Date(1771950215900)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.emiga.orgv#1.1.1\\package\\StructureDefinition-BasePractitionerRole.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "BasePractitionerRole",
+        "Action":  "Validate",
+        "Success":  true,
+        "HttpStatus":  null,
+        "Message":  "Valid JSON",
+        "OperationOutcome":  null
+    }
+]

@@ -2,7 +2,6 @@ ValueSet: CountryCodes
 Title: "Ländercodes gemäß Anlage 8 der DEÜV"
 Description: "Werteliste mit Ländercodes gemäß Anlage 8 der DEÜV."
 Id: CountryCodes
-
 * ^url = "https://emiga.rki.de/fhir/ValueSet/CountryCodes"
 * insert MetadataTerminology
 * ^version = "1.1.0"

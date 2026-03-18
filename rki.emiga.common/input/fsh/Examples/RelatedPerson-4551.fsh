@@ -1,10 +1,10 @@
-Instance: 4551
+Instance: RelatedPerson4551
 InstanceOf: AffectedPersonRelatedPerson
 Title: "Beispiel Bezugsperson der betroffenen Person"
 Description: "Ein Beispielinstanz einer Bezugsperson-Ressource. "
 Usage: #example
-* id = "4551"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.12"
+* id = "RelatedPerson4551"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
 
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
@@ -20,7 +20,7 @@ Usage: #example
 //* extension[linkToRepresentedPerson].valueReference.identifier.value = "Person-XYZ-987654321"
 //* extension[linkToRepresentedPerson].valueReference.display = "Jones Calamity"
 
-* patient = Reference(AffectedPerson-4550)
+* patient = Reference(AffectedPerson4550)
 * relationship[0].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * relationship[0].coding.code = #legalGuardian
 * relationship[0].coding.display = "Sorgeberechtigte Person"

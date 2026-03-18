@@ -6,7 +6,7 @@ Usage: #example
 * id = "AffectedPerson-4551"
 
 
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.12"
+* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
@@ -35,10 +35,10 @@ Usage: #example
 * extension[landOfBirth].valueCoding.version = "8.00"
 * extension[landOfBirth].url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
 
-* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson"
+* extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #inprogress
-* extension[processingStatus].valueCoding.display = "in Bearbeitung"
+* extension[processingStatus].valueCoding.display = "In Bearbeitung"
 
 
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
@@ -121,7 +121,7 @@ Usage: #example
 * communication[0].language.coding.code = #de
 * communication[0].language.coding.display = "Deutsch"
 
-* generalPractitioner[0].reference = "Practitioner/4550"
+//* generalPractitioner[0].reference = "Practitioner/4550"
 
-* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-4551"
+* link[relatedPersonLink].other.reference = "RelatedPerson/RelatedPerson4551"
 * link[relatedPersonLink].type = #seealso

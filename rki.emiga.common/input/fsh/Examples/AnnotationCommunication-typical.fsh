@@ -7,7 +7,11 @@ Usage: #example
 * id = "AnnotationCommunication-typical"
 
 // Meta
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
+* meta.security[responsibility].code = #1.01.0.01.
+* meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+* meta.security[visibility].code = #transferable
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].code = #ContainsPersonalInformation
 

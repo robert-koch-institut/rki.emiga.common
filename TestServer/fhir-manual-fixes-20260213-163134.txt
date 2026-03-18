@@ -1,0 +1,8 @@
+﻿Manual changes required before upload can fully succeed
+Generated: 2026-02-13T16:32:06
+
+1. File: C:\Users\VoulgarisK\.fhir\packages\test.rki.emiga.vzd#2.0.0-alpha.191\package\examples\Location-Station01.json
+   Issue: Missing referenced resource
+   Suggestion: Update reference 'Organization/InekKrankenhaus' to 'Organization/InekKrankenhausOrganization' in path 'Location.managingOrganization'.
+   Diagnostic: HAPI-1094: Resource Organization/InekKrankenhaus not found, specified in path: Location.managingOrganization
+

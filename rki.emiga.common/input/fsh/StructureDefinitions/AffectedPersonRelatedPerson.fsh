@@ -2,20 +2,20 @@ Profile: AffectedPersonRelatedPerson
 Parent: RelatedPerson
 Id: AffectedPersonRelatedPerson
 Title: "Bezugsperson der betroffenen Person"
-Description: "TODO"
+Description: "Dieses Profil bildet eine Bezugsperson der betroffenen Person ab. Es dient der strukturierten Darstellung von Personen, die in einer persönlichen oder rechtlichen Beziehung zur betroffenen Person stehen und im Rahmen der fachlichen Prozesse berücksichtigt werden müssen."
 
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
-* ^version = "0.3.0"
-* ^date = "2025-10-23"
+* ^version = "0.4.0"
+* ^date = "2025-12-17"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
 * insert ProfileSecurityTagsPerson
 
 * insert IdentifierCommon
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
 
 * patient MS
 * patient ^short = "Die betroffene Person, zu der die Bezugsperson in Beziehung steht."

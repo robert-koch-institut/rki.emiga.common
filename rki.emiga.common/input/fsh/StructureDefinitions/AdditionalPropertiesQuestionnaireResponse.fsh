@@ -2,10 +2,10 @@ Profile: OutbreakQuestionnaireResponseCommon
 Parent: QuestionnaireResponse
 Id: AdditionalPropertiesQuestionnaireResponse
 Title: "Zusätzliche Eigenschaften Fragebogen-Antworten"
-Description: "TODO"
+Description: "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen."
 
-* ^version = "0.1.0"
-* ^date = "2025-07-21"
+* ^version = "0.2.0"
+* ^date = "2025-12-17"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
 
 * insert MetadataProfile
@@ -15,7 +15,7 @@ Description: "TODO"
 * insert ProfileMetaProfileTags
 //* insert IdentifierCommon
 //* insert ProfileMetaTags
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
 
 * questionnaire 1..1 MS
 //* questionnaire = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaire"

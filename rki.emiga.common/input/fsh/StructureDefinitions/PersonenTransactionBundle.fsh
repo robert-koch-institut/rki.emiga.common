@@ -2,7 +2,7 @@ Profile: PersonenTransactionBundle
 Parent: Bundle
 Id: PersonenTransactionBundle
 Title: "EMIGA Personen Transactionbundle"
-Description: "TO DO"
+Description: "Dieses Profil bildet ein EMIGA-Personen-Transaction-Bundle ab. Es dient der gebündelten, transaktionalen Übertragung von Operationen auf Personen-bezogene Ressourcen (z.B. betroffene Personen, Bezugspersonen, zugehörige Dokumentation)."
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 
@@ -11,7 +11,7 @@ Description: "TO DO"
 * ^version = "0.3.0"
 * ^date = "2025-10-23"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle"
 //* type = #transaction (exactly)
 * type 1..1 MS
 * type ^short = "Type des Bundles"

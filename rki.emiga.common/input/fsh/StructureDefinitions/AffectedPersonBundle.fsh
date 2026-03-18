@@ -2,7 +2,7 @@ Profile: AffectedPersonBundle
 Parent: Bundle
 Id: AffectedPersonBundle
 Title: "Person Bundle"
-Description: "TO DO"
+Description: "Dieses Profil bildet ein Person Bundle für eine betroffene Person ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person innerhalb eines fachlichen Vorgangs."
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 
@@ -10,7 +10,7 @@ Description: "TO DO"
 * ^version = "0.2.0"
 * ^date = "2025-11-12"
 
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonBundle"
 * meta.versionId MS
 * meta.versionId ^short = "Version der Instanz der Ressource"
 

@@ -6,8 +6,9 @@ output: common_napi_output_location
 skipFhirSchemaValidation: false
 resourceParseMode: STRICT
 skipExampleValidation: false
-loadNpmDependencies: false
-snapshotDependenciesForSushi: false
+loadNpmDependencies: true
+snapshotDependenciesForSushi: true
+enableTreeShaking: true
 fhirSchemaValidationMaxSeverity: INFORMATION
 testFileDirectories: []
 profileSets:

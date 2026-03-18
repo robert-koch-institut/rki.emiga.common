@@ -10,8 +10,11 @@ Title: "Bezugsperson der betroffenen Person (Typisch)"
 Description: "Typisches Beispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht."
 
 * id = "affectedpersonrelatedperson-typical"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|0.2.0"
-
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
+* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
+* meta.security[responsibility].code = #1.01.0.01.
+* meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+* meta.security[visibility].code = #transferable
 // -----------------------------------------------------------------------------
 //  Identifieren (EmigaID + EmigaFileNumber)
 // -----------------------------------------------------------------------------

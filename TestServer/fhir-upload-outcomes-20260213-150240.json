@@ -1,0 +1,1271 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1770991360953)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-addressUse.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "addressUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991361488)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-country.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "country",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991362121)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-geographicRegion.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "geographicRegion",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991362934)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-organizationType.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "organizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991363705)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-postalCode.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "postalCode",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991369356)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-reportingSite.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "reportingSite",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991371221)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-salutation.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991371541)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\CodeSystem-transmissionCategory.json",
+        "ResourceType":  "CodeSystem",
+        "ResourceId":  "transmissionCategory",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "CodeSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991371974)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ConceptMap-ISO3166CountryCodes2DEMISCountryCodes.json",
+        "ResourceType":  "ConceptMap",
+        "ResourceId":  "ISO3166CountryCodes2DEMISCountryCodes",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ConceptMap",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991373222)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\NamingSystem-DemisLaboratoryId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "DemisLaboratoryId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991373502)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\NamingSystem-DemisParticipantId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "DemisParticipantId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991373789)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\NamingSystem-NotificationBundleId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "NotificationBundleId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991374088)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\NamingSystem-NotificationId.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "NotificationId",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991374412)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\NamingSystem-SendingServiceProvider.json",
+        "ResourceType":  "NamingSystem",
+        "ResourceId":  "SendingServiceProvider",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "NamingSystem",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991374702)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\OperationDefinition-ProcessNotification.json",
+        "ResourceType":  "OperationDefinition",
+        "ResourceId":  "ProcessNotification",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991375027)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-AddressUse.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "AddressUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991375517)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-Comment.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Comment",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991375884)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-County.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "County",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991376384)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-FacilityAddressNotifiedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "FacilityAddressNotifiedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991376840)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-Notification.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Notification",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991377959)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-NotificationBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NotificationBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991379095)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-NotificationReceipt.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NotificationReceipt",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991380233)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-NotifiedPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NotifiedPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991380723)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-NotifiedPersonFacility.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NotifiedPersonFacility",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991381791)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-NotifiedPersonNotByName.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NotifiedPersonNotByName",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991382567)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-Notifier.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Notifier",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991383111)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-NotifierFacility.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NotifierFacility",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991383651)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-NotifierRole.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "NotifierRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991384651)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-ProcessNotificationRequestParameters.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ProcessNotificationRequestParameters",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991385357)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-ProcessNotificationResponse.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ProcessNotificationResponse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991386090)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-ProcessNotificationResponseParameters.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ProcessNotificationResponseParameters",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991387076)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-PseudonymRecordType.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "PseudonymRecordType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991387419)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-ReceiptBundle.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ReceiptBundle",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991388476)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-ReceivedNotification.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ReceivedNotification",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991388943)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-ReceptionTimeStampType.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "ReceptionTimeStampType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991389284)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-Salutation.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "Salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991389776)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-SubmittingFacility.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "SubmittingFacility",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991390268)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-SubmittingPerson.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "SubmittingPerson",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991391309)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-SubmittingRole.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "SubmittingRole",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991392328)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\StructureDefinition-TransmittingSite.json",
+        "ResourceType":  "StructureDefinition",
+        "ResourceId":  "TransmittingSite",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "StructureDefinition",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991393354)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-addressUse.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "addressUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991393621)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-answerSetAddressUse.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "answerSetAddressUse",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991393914)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-country.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "country",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991394213)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-county.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "county",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991395078)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-geographicRegion.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "geographicRegion",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991395354)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-organizationType.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "organizationType",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991395630)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-postalCode.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "postalCode",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991395933)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-reportingSite.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "reportingSite",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991396239)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-salutation.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "salutation",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991396526)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\ValueSet-transmissionCategory.json",
+        "ResourceType":  "ValueSet",
+        "ResourceId":  "transmissionCategory",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "ValueSet",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991396815)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\AddressUse-example.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "AddressUse-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991397111)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\Comment-example.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "Comment-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991397411)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\FacilityAddressNotifiedPerson-example.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "FacilityAddressNotifiedPerson-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991397696)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\NotificationReceipt-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/1.11.0.11.01. not found, specified in path: Composition.section.entry",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991397979)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\NotifiedPerson-example.json",
+        "ResourceType":  "Patient",
+        "ResourceId":  "NotifiedPerson-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Patient",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991398273)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\NotifiedPersonFacility-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/d3539a4c-9093-467a-a3e8-050594afbd59 not found, specified in path: Organization.partOf",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991398558)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\Notifier-example.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "Notifier-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991398853)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\NotifierFacility-example-2.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "NotifierFacility-example-2",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991399156)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\NotifierFacility-example-3.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "NotifierFacility-example-3",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991399432)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\NotifierFacility-example.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "NotifierFacility-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991399707)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\NotifierRole-notifier-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Practitioner/61ebe359-bfdc-4613-8bf2-c5e300945f0n55 not found, specified in path: PractitionerRole.practitioner",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991400001)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\Notifierrole-notifierFacility-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0n51 not found, specified in path: PractitionerRole.organization",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991400276)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\OperationOutcome-example-2.json",
+        "ResourceType":  "OperationOutcome",
+        "ResourceId":  "Processnotificationresponse-neg-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  null,
+                                                    "Details":  "Profile https://demis.rki.de/fhir/StructureDefinition/PathogenDetection, Element \u0027Bundle.entry[7].resource.code\u0027: minimum required = 1, but only found 0"
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991400594)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\OperationOutcome-example.json",
+        "ResourceType":  "OperationOutcome",
+        "ResourceId":  "Processnotificationresponse-pos-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "information",
+                                                    "Code":  "informational",
+                                                    "Diagnostics":  null,
+                                                    "Details":  "All OK"
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991400868)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\ProcessNotificationResponseParameters-example.json",
+        "ResourceType":  "Parameters",
+        "ResourceId":  "ProcessNotificationResponseParameters-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Parameters",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991401173)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\ReceiptBundle-example.json",
+        "ResourceType":  "Bundle",
+        "ResourceId":  "ReceiptBundle-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Bundle",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991401474)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\ReceivedNotification-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/DEMIS not found, specified in path: Composition.author",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991401752)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\Salutation-example.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "Salutation-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991402068)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\SubmittingFacility-example.json",
+        "ResourceType":  "Organization",
+        "ResourceId":  "SubmittingFacility-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Organization",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991402349)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\SubmittingPerson-example.json",
+        "ResourceType":  "Practitioner",
+        "ResourceId":  "SubmittingPerson-example",
+        "Action":  "Upload",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Practitioner",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991402645)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\SubmittingRole-SubmittingFacility-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Organization/61ebe359-bfdc-4613-8bf2-c5e300945f0n12 not found, specified in path: PractitionerRole.organization",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1770991402919)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\rki.demis.common#2.0.0\\package\\examples\\SubmittingRole-SubmittingPerson-example.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  "OperationOutcome",
+                                 "Text":  null,
+                                 "Issues":  [
+                                                {
+                                                    "Severity":  "error",
+                                                    "Code":  "processing",
+                                                    "Diagnostics":  "HAPI-1094: Resource Practitioner/61ebe359-bfdc-4613-8bf2-c5e300945f0n32 not found, specified in path: PractitionerRole.practitioner",
+                                                    "Details":  null
+                                                }
+                                            ]
+                             }
+    }
+]

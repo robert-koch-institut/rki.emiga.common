@@ -1,0 +1,90 @@
+{
+	"resourceType": "CapabilityStatement",
+	"id": "51307798-1c99-4b7b-adfa-8573c7094eb4",
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HAPI FHIR Server</div>"
+	},
+	"name": "RestServer",
+	"status": "active",
+	"date": "2025-12-16T11:37:51.493+01:00",
+	"publisher": "Not provided",
+	"kind": "instance",
+	"software": {
+		"name": "HAPI FHIR Server",
+		"version": "8.0.0"
+	},
+	"implementation": {
+		"description": "HAPI FHIR",
+		"url": "https://anmerkung.demo.emiga-rki.de/annotationmgmt-service/api/fhir"
+	},
+	"fhirVersion": "4.0.1",
+	"format": [
+		"application/fhir+xml",
+		"xml",
+		"application/fhir+json",
+		"json",
+		"html/json",
+		"html/xml"
+	],
+	"rest": [
+		{
+			"mode": "server",
+			"resource": [
+				{
+					"type": "Bundle",
+					"profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
+					"searchInclude": [
+						"*"
+					],
+					"operation": [
+						{
+							"name": "annotation-version-details",
+							"definition": "https://anmerkung.demo.emiga-rki.de/annotationmgmt-service/api/fhir/OperationDefinition/Bundle-i-annotation-version-details"
+						},
+						{
+							"name": "search-annotation",
+							"definition": "https://anmerkung.demo.emiga-rki.de/annotationmgmt-service/api/fhir/OperationDefinition/Bundle-t-search-annotation"
+						},
+						{
+							"name": "search-annotation-history",
+							"definition": "https://anmerkung.demo.emiga-rki.de/annotationmgmt-service/api/fhir/OperationDefinition/Bundle-i-search-annotation-history"
+						},
+						{
+							"name": "annotation-details",
+							"definition": "https://anmerkung.demo.emiga-rki.de/annotationmgmt-service/api/fhir/OperationDefinition/Bundle-i-annotation-details"
+						},
+						{
+							"name": "create-annotation",
+							"definition": "https://anmerkung.demo.emiga-rki.de/annotationmgmt-service/api/fhir/OperationDefinition/Bundle-t-create-annotation"
+						}
+					]
+				},
+				{
+					"type": "Identifier",
+					"searchInclude": [
+						"*"
+					],
+					"operation": [
+						{
+							"name": "emiga-identifier",
+							"definition": "https://anmerkung.demo.emiga-rki.de/annotationmgmt-service/api/fhir/OperationDefinition/Identifier-t-emiga-identifier"
+						}
+					]
+				},
+				{
+					"type": "OperationDefinition",
+					"profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+					"interaction": [
+						{
+							"code": "read"
+						}
+					],
+					"searchInclude": [
+						"*"
+					]
+				}
+			]
+		}
+	]
+}

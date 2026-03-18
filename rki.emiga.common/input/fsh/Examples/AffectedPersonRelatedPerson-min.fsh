@@ -10,7 +10,11 @@ Title: "Bezugsperson der betroffenen Person (Minimal)"
 Description: "Minimalbeispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht."
 
 * id = "affectedpersonrelatedperson-min"
-* meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson|0.2.0"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
+* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
+* meta.security[responsibility].code = #1.01.0.01.
+* meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
+* meta.security[visibility].code = #transferable
 
 // Identifier
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"

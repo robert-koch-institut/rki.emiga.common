@@ -1,16 +1,16 @@
-Instance: 441557620
+Instance: Attachment-441557620
 InstanceOf: AttachmentDocumentReference
 Usage: #example
 Description: "Test Attachment DocumentReference Example with image reference"
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.	
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
 * meta.security[visibility].code = #transferable
 
-* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
-* meta.tag[personalInformation].code = #ContainsPersonalInformation
-* meta.tag[personalInformation].display = "Enthält Personenbezogene Daten"
+//* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+//* meta.tag[personalInformation].code = #ContainsPersonalInformation
+//* meta.tag[personalInformation].display = "Enthält personenbezogene Daten"
 //* meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 //* meta.security[responsibility].code = #
 * status = #current
@@ -26,8 +26,11 @@ Description: "Test Attachment DocumentReference Example with image reference"
 //* identifier[emigaAttachmentId].system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
 //* identifier[emigaAttachmentId].value = "ATTACH-TestID-441557620"
 
-* author[0].reference = "Practitioner/example"
+* author[0].reference = "Practitioner/EmigaUser-001"
 * date = "2023-10-01T12:00:00Z"
-* content[reference].attachment.contentType = #image/png
-* content[reference].attachment.url = "http://example.org/images/sample-image.png"
-* content[reference].attachment.title = "Sample Image"
+* content.attachment.contentType = #image/png
+* content.attachment.size = 13577
+* content.attachment.hash = "MzU2am9JWkQydk1jeVMlUENTTlNuRVpvTDJKVGYvOW1ZL013VnB6REpCOD0="
+//* content[reference].attachment.url = "http://example.org/images/sample-image.png"
+* content.attachment.title = "Sample Image"
+* content.attachment.creation = "2026-01-13T14:22:43+00:00"

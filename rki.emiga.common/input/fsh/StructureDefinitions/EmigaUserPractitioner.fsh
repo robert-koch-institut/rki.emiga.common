@@ -2,10 +2,10 @@ Profile: EmigaUserPractitioner
 Parent: Practitioner
 Id: EmigaUserPractitioner
 Title: "Emiga Nutzende Person"
-Description: "TODO"
+Description: "Ist eine EMIGA nutzende Person, also jemand mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet."
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
-* ^version = "0.2.0"
-* ^date = "2025-03-03"
+* ^version = "0.3.0"
+* ^date = "2025-12-17"
 
 * insert MetadataProfile
 * insert ProfileResourceCommon
@@ -13,7 +13,7 @@ Description: "TODO"
 * insert ProfileSecurityTagsPerson
 //* insert ProfileMetaTags
 * insert ProfileMetaProfileTags
-* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner|1.2.0-alpha.12"
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
 
 // 'Additional content defined by implementations' - 0..* - Extension
 // Wird für die EMIGA Anwendungsfälle derzeit nicht benötigt.
