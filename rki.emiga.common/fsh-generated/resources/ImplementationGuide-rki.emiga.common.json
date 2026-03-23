@@ -360,6 +360,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/CountyVS"
+        },
+        "name": "Landkreis-Werteliste",
+        "description": "Die Wertemenge 'CountyVS' definiert Konzepte, die den Landkreis charakterisieren.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/CountryCodes"
         },
         "name": "Ländercodes gemäß Anlage 8 der DEÜV",
