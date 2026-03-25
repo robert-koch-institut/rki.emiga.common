@@ -78,9 +78,11 @@
       ]
     }
   ],
-  "version": "2.0.0",
-  "date": "2024-09-26",
+  "version": "2.0.1",
+  "date": "2026-03-24",
   "caseSensitive": true,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType",
+  "count": 7,
   "property": [
     {
       "code": "status",
@@ -93,6 +95,5 @@
       "description": "Der Code, den dieser Code ersetzt.",
       "type": "code"
     }
-  ],
-  "count": 7
+  ]
 }
