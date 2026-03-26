@@ -7,12 +7,17 @@ Description: "ConceptMap zur Übersetzung von AdministrativeGender (englisch) zu
 //* insert MetadataTerminology
 
 * url = "https://emiga.rki.de/fhir/ConceptMap/AdminGenderEngToGenderAmtDe"
-* version = "0.1.0"
+* version = "0.1.1"
 * name = "AdministrativeGenderToGenderAmtlichDE"
-* date = "2025-11-19"
+* date = "2026-03-26"
 * status = #active
-* sourceCanonical = "http://hl7.org/fhir/administrative-gender"
-* targetCanonical = "http://fhir.de/CodeSystem/gender-amtlich-de"
+* experimental = false
+* publisher = "Robert Koch-Institut"
+* contact.name = "Robert Koch-Institut"
+* contact.telecom.system = #url
+* contact.telecom.value = "https://rki.de"
+* sourceCanonical = "http://hl7.org/fhir/ValueSet/administrative-gender"
+* targetCanonical = "http://fhir.de/ValueSet/gender-amtlich-de"
 
 * group[0].source = "http://hl7.org/fhir/administrative-gender"
 * group[0].target = "http://fhir.de/CodeSystem/gender-amtlich-de"
