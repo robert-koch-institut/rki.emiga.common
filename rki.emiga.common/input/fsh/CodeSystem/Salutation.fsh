@@ -3,12 +3,12 @@ Id: Salutation
 Title: "Anrede"
 Description: "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen."
 * insert MetadataTerminology
-* ^version = "1.0.1"
-* ^date = "2024-11-07"
+* ^version = "1.0.2"
+* ^date = "2024-03-26"
 * ^caseSensitive = true
 * ^content = #complete
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/Salutation"
-* ^valueSet = "https://emiga.rki.de/fhir/ValueSet/Salutation"
+//* ^valueSet = "https://emiga.rki.de/fhir/ValueSet/Salutation"
 * ^count = 5
 
 * #SehrGeehrteFrau "Sehr geehrte Frau"
