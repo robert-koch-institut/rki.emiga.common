@@ -14,7 +14,7 @@ Description: "Typisches Beispiel einer Bezugsperson, die mit einer betroffenen P
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #transferable
+* meta.security[visibility].code = #inPublicHealthService
 // -----------------------------------------------------------------------------
 //  Identifieren (EmigaID + EmigaFileNumber)
 // -----------------------------------------------------------------------------

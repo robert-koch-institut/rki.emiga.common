@@ -8,7 +8,7 @@ Usage: #example
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #transferable
+* meta.security[visibility].code = #inPublicHealthService
 // REQUIRED + MS FIELDS
 * status = #current
 * date = "2025-11-19T10:00:00+01:00"
