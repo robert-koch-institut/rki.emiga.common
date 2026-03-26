@@ -1,0 +1,42 @@
+--- !<NAPI_PROFILE_GENERATION>
+name: "flow_common_local"
+description: "generates FHIR profiles for NAPI consumption"
+keepTempFiles: false
+profileSets:
+- identifier: "rki.emiga.common"
+  artifactRepo: "profile_common_fsh"
+  localCopyLocation: null
+  reference: "feature/profile-loader-validation"
+  skipSanityCheckValidation: false
+  ignoredSanityChecks:
+  - name: "MatchingNameAndIdCheck"
+    reasoning: "IDs are not matching the names as per NAPI naming conventions."
+  resourceBaseUrl: null
+  skipFhirSchemaValidation: false
+  skipExampleValidation: false
+  qualityControl: []
+  qualityControlRepos: []
+  treatAsDependencyOnly: false
+skipExampleValidation: false
+skipFhirSchemaValidation: false
+resourceParseMode: "STRICT"
+fhirSchemaValidationMaxSeverity: "INFORMATION"
+fhirExampleValidationMaxSeverity: null
+output: "napi_output_location_common"
+testFileDirectories: []
+terminologyServers:
+- "http://tx.fhir.org/r4"
+valueSetExpansionIgnoreUrls:
+- "http://ihe-d.de/ValueSets/IHEXDSeventCodeList"
+loadNpmDependencies: true
+snapshotDependenciesForSushi: true
+enableTreeShaking: true
+treeShakingWhitelistedResources: []
+treeShakingIgnoredResources: []
+alwaysOutputBuiltInsMatching: []
+treeShakingTerminologyServerURL: ""
+ntsPackages: []
+additionalDependencies: []
+excludeNpmDependencies: []
+excludeExampleNpmDependencies: false
+fhirValidationConfig: null
