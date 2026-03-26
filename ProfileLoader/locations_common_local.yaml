@@ -1,0 +1,14 @@
+locations:
+  # ------------------------------------------------------------------------
+ - name: profile_common_fsh
+   type: FILESYSTEM
+   environment: PROD
+   # local Git repository location:
+   fullPath: P:/source/repos/rki.emiga.common
+#------------------------------------------------------------------------
+ - name: napi_output_location_common
+   type: FILESYSTEM
+   environment: PROD
+   # output folder:
+   fullPath: P:/source/repos/rki.emiga.common/output
+#------------------------------------------------------------------------
