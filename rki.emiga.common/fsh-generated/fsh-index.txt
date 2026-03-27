@@ -3,7 +3,7 @@ Bundle-TransactionBundleAnnotation01.json                           TransactionB
 Bundle-TransactionBundleCreatePerson.json                           TransactionBundleCreatePerson        Instance    Examples\BundleTransactionCreatePerson.fsh                          1 - 32
 CodeSystem-AnnotationCategory.json                                  AnnotationCategory                   CodeSystem  CodeSystem\AnnotationCategory.fsh                                   1 - 18
 CodeSystem-ConceptDesignationUse.json                               ConceptDesignationUse                CodeSystem  CodeSystem\ConceptDesignationUse.fsh                                1 - 17
-CodeSystem-FacilityAssociationType.json                             FacilityAssociationType              CodeSystem  CodeSystem\FacilityAssociationType.fsh                              1 - 14
+CodeSystem-FacilityAssociationType.json                             FacilityAssociationType              CodeSystem  CodeSystem\FacilityAssociationType.fsh                              1 - 15
 CodeSystem-PersonalInformation.json                                 PersonalInformation                  CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 15
 CodeSystem-ProcessingStatus.json                                    ProcessingStatus                     CodeSystem  CodeSystem\ProcessingStatus.fsh                                     1 - 24
 CodeSystem-RegionKeys.json                                          RegionKeys                           CodeSystem  CodeSystem\RegionKeys.fsh                                           1 - 11293
@@ -53,6 +53,7 @@ ValueSet-CommonLanguages.json                                       CommonLangua
 ValueSet-ConceptDesignationUse.json                                 ConceptDesignationUse                ValueSet    ValueSets\ConceptDesignationUse.fsh                                 1 - 9
 ValueSet-CountryCodes.json                                          CountryCodes                         ValueSet    ValueSets\CountryCodes.fsh                                          1 - 23
 ValueSet-CountyVS.json                                              CountyVS                             ValueSet    ValueSets\CountyVS.fsh                                              1 - 422
+ValueSet-FacilityAssociationType.json                               FacilityAssociationType              ValueSet    CodeSystem\FacilityAssociationType.fsh                              17 - 26
 ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS            ValueSet    ValueSets\FacilityAssociationTypeVS.fsh                             1 - 12
 ValueSet-NullFlavor.json                                            NullFlavor                           ValueSet    ValueSets\NullFlavor.fsh                                            1 - 19
 ValueSet-PersonResourceVisibilityType.json                          PersonResourceVisibilityType         ValueSet    ValueSets\PersonResourceVisibilityType.fsh                          1 - 11
