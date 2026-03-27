@@ -54,7 +54,7 @@ ValueSet-ConceptDesignationUse.json                                 ConceptDesig
 ValueSet-CountryCodes.json                                          CountryCodes                         ValueSet    ValueSets\CountryCodes.fsh                                          1 - 23
 ValueSet-CountyVS.json                                              CountyVS                             ValueSet    ValueSets\CountyVS.fsh                                              1 - 422
 ValueSet-FacilityAssociationType.json                               FacilityAssociationType              ValueSet    CodeSystem\FacilityAssociationType.fsh                              17 - 26
-ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS            ValueSet    ValueSets\FacilityAssociationTypeVS.fsh                             1 - 12
+ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS            ValueSet    ValueSets\FacilityAssociationTypeVS.fsh                             1 - 21
 ValueSet-NullFlavor.json                                            NullFlavor                           ValueSet    ValueSets\NullFlavor.fsh                                            1 - 19
 ValueSet-PersonResourceVisibilityType.json                          PersonResourceVisibilityType         ValueSet    ValueSets\PersonResourceVisibilityType.fsh                          1 - 11
 ValueSet-PersonalInformation.json                                   PersonalInformation                  ValueSet    ValueSets\PersonalInformation.fsh                                   1 - 10
