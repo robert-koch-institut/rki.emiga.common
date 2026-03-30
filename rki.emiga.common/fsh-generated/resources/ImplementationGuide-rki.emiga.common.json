@@ -490,7 +490,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/FacilityAssociationType"
+          "reference": "ValueSet/FacilityAssociationTypeVS"
         },
         "name": "Verbindungs-Qualifikation",
         "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
@@ -498,7 +498,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/FacilityAssociationTypeVS"
+          "reference": "ValueSet/FacilityAssociationType"
         },
         "name": "Verbindungs-Qualifikation",
         "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
