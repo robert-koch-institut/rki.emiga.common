@@ -7,6 +7,7 @@
   "title": "Erstellungsdatum",
   "status": "active",
   "experimental": false,
+  "date": "2025-11-07",
   "publisher": "Robert Koch-Institut",
   "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
   "fhirVersion": "4.0.1",

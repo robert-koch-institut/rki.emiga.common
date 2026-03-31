@@ -78,9 +78,10 @@
       ]
     }
   ],
-  "version": "2.0.0",
-  "date": "2024-09-26",
+  "version": "2.0.2",
+  "date": "2026-03-26",
   "caseSensitive": true,
+  "count": 7,
   "property": [
     {
       "code": "status",
@@ -93,6 +94,5 @@
       "description": "Der Code, den dieser Code ersetzt.",
       "type": "code"
     }
-  ],
-  "count": 7
+  ]
 }

@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "EmigaUserPractitioner",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "name": "EmigaUserPractitioner",
   "title": "Emiga Nutzende Person",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-17",
+  "date": "2025-03-26",
   "publisher": "Robert Koch-Institut",
   "description": "Ist eine EMIGA nutzende Person, also jemand mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet.",
   "fhirVersion": "4.0.1",
@@ -182,7 +182,11 @@
       {
         "id": "Practitioner.name.family.extension:nachname",
         "path": "Practitioner.name.family.extension",
-        "sliceName": "nachname",
+        "sliceName": "nachname"
+      },
+      {
+        "id": "Practitioner.name.family.extension:nachname.value[x]",
+        "path": "Practitioner.name.family.extension.value[x]",
         "constraint": [
           {
             "key": "validString",

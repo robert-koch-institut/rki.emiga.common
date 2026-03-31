@@ -51,13 +51,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "Questionnaire/FillingNote"
-        },
-        "name": "Ablagevermerk",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AttachmentDocumentReference"
         },
         "name": "Anhang-Entität",
@@ -70,14 +63,6 @@
         },
         "name": "Annotation",
         "description": "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AnnotationBundle"
-        },
-        "name": "Annotations Bundle",
-        "description": "Dieses Profil bildet ein Annotations-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Annotationen (z.B. Notizen, Kommentaren und zugehörigen Ressourcen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs.",
         "exampleBoolean": false
       },
       {
@@ -297,22 +282,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/PersonenTransactionBundle"
-        },
-        "name": "EMIGA Personen Transactionbundle",
-        "description": "Dieses Profil bildet ein EMIGA-Personen-Transaction-Bundle ab. Es dient der gebündelten, transaktionalen Übertragung von Operationen auf Personen-bezogene Ressourcen (z.B. betroffene Personen, Bezugspersonen, zugehörige Dokumentation).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PersonenTransactionResponse"
-        },
-        "name": "EMIGA Personen TransactionBundle-Response",
-        "description": "Dieses Profil definiert die Server-Antwort auf Transaktions-Bundles im Rahmen von EMIGA Personen-Szenarien.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/IdentifierEmigaID"
         },
         "name": "EMIGA-ID Identifier",
@@ -326,13 +295,6 @@
         "name": "Erstellungsdatum",
         "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "QuestionnaireResponse/FillingNoteResponse"
-        },
-        "name": "FillingNoteResponse",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
       },
       {
         "reference": {
@@ -356,6 +318,14 @@
         },
         "name": "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten",
         "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/CountyVS"
+        },
+        "name": "Landkreis-Werteliste",
+        "description": "Die Wertemenge 'CountyVS' definiert Konzepte, die den Landkreis charakterisieren.",
         "exampleBoolean": false
       },
       {
@@ -396,14 +366,6 @@
         },
         "name": "Nutzungszwecke für Anzeigetexte",
         "description": "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AffectedPersonBundle"
-        },
-        "name": "Person Bundle",
-        "description": "Dieses Profil bildet ein Person Bundle für eine betroffene Person ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung aller relevanten Ressourcen (z.B. Patient, Bezugspersonen, Kontakte, Annotationen) zu einer betroffenen Person innerhalb eines fachlichen Vorgangs.",
         "exampleBoolean": false
       },
       {
@@ -525,20 +487,6 @@
         "name": "SurvNet Aktenzeichen Identifier",
         "description": "SurvNet Aktenzeichen Identifier-Profil",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/TransactionBundleAnnotation01"
-        },
-        "name": "TransactionBundleAnnotation01",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/TransactionBundleCreatePerson"
-        },
-        "name": "TransactionBundleCreatePerson",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle"
       },
       {
         "reference": {

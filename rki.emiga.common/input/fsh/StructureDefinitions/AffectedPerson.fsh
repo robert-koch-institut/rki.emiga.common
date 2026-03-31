@@ -9,8 +9,8 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.4.0"
-* ^date = "2025-12-17"
+* ^version = "0.4.1"
+* ^date = "2025-03-26"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
@@ -412,4 +412,4 @@ Description: "Das Geburtsjahr muss mit 19 oder 20 beginnen."
 Invariant: maidenNameOnlyFamily
 Description: "Wenn name.use = 'maiden', darf nur name.family ausgefüllt werden. Die anderen Namensbestandteile müssen leer sein."
 * severity = #error
-* expression = "name.where(use = 'maiden').all(given.empty() and prefix.empty() and suffix.empty() and text.empty() and family.exists())"
+* expression = "(use = 'maiden') implies (given.empty() and prefix.empty() and suffix.empty() and text.empty() and family.exists())"
