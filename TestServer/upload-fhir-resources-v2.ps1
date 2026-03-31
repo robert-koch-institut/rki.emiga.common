@@ -146,13 +146,13 @@ function Send-FhirResource {
     )
 
     $now = Get-Date
+    $resourceType = $null
+    $resourceId = $null
 
     try {
         $content = Get-Content -Path $ResourcePath -Raw -Encoding UTF8
         $resource = $content | ConvertFrom-Json -ErrorAction Stop
 
-        $resourceType = $null
-        $resourceId = $null
 
         if ($resource.PSObject.Properties.Match('resourceType').Count -gt 0) {
             $resourceType = $resource.resourceType
@@ -333,8 +333,8 @@ function Send-FhirResource {
         return [pscustomobject]@{
             Timestamp        = $now
             FilePath         = $ResourcePath
-            ResourceType     = $null
-            ResourceId       = $null
+            ResourceType     = $resourceType
+            ResourceId       = $resourceId
             Action           = 'Upload'
             Success          = $false
             HttpStatus       = $httpStatus
