@@ -1,0 +1,1158 @@
+﻿[
+    {
+        "Timestamp":  "\/Date(1774954969320)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-AnnotationCategory.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954973684)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-ConceptDesignationUse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954974029)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-FacilityAssociationType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954974266)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-PersonalInformation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954974511)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-ProcessingStatus.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954974829)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-RegionKeys.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954975581)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-RelatedPersonRelationshipType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954975831)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-Relevance.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954976107)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-ResourceResponsibility.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954976833)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-ResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954977114)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\CodeSystem-Salutation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954977353)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AdditionalPropertiesQuestionnaire.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954977777)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954978049)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AffectedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954979011)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AffectedPersonBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954979346)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AffectedPersonRelatedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954979664)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AnnotationBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954979978)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AnnotationCommunication.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954980812)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-AttachmentDocumentReference.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954981164)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-DateCreated.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954981497)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-EmigaUserPractitioner.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954981821)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-FacilityAddressAffectedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954982408)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-IdentifierEmigaFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954982817)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-IdentifierEmigaID.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954983154)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-IdentifierSurvNetFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954983493)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-LandOfBirth.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954983917)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-LastModifiedBy.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954984245)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-NullFlavor.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954984720)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-PersonenTransactionBundle.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954985085)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-ProcessingStatus.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954985479)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-RegionalKey.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954985979)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\StructureDefinition-Salutation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954986385)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-AnnotationCategoryVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954986655)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-AnnotationResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954986901)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-CommonLanguages.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  400,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n400 Bad Request\r\n\r\n400 Bad Request\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954987198)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-ConceptDesignationUse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954987421)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-CountryCodes.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954987631)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-CountyVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954988203)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-FacilityAssociationType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954988413)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-FacilityAssociationTypeVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954988626)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-NullFlavor.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954988840)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-PersonalInformation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954989037)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-PersonResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954989256)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-ProcessingStatusAffectedPerson.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954989512)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-ProcessingStatusAnnotation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954989735)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-ProcessingStatusVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954989964)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-RegionKeys.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954990193)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-RelatedPersonRelationshipTypeVS.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954990396)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-Relevance.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954990666)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-ResourceResponsibility.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954990887)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-ResourceVisibilityType.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954991093)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-Salutation.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954991317)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\ValueSet-YesNoNullFlavor.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954991515)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\Bundle-TransactionBundleAnnotation01.json",
+        "ResourceType":  "Bundle",
+        "ResourceId":  "TransactionBundleAnnotation01",
+        "Action":  "UploadBundleOperation",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded transaction bundle to base endpoint",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Bundle",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954992333)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\Bundle-TransactionBundleCreatePerson.json",
+        "ResourceType":  "Bundle",
+        "ResourceId":  "TransactionBundleCreatePerson",
+        "Action":  "UploadBundleOperation",
+        "Success":  true,
+        "HttpStatus":  200,
+        "Message":  "Uploaded transaction bundle to base endpoint",
+        "OperationOutcome":  {
+                                 "ResourceType":  "Bundle",
+                                 "Text":  null,
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954992927)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\Communication-Communication441557618.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954993209)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\ConceptMap-AdminGenderEngToGenderAmtDe.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954993432)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\DocumentReference-Attachment-441557620.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954993666)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\DocumentReference-Attachment-4691067.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954993907)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\NamingSystem-EmigaFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954994125)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\NamingSystem-EmigaID.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954994336)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\NamingSystem-SurvNetFileNumber.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954994549)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\Patient-AffectedPerson-4551.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954994888)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\Patient-AffectedPerson4550.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954995134)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\Practitioner-EmigaUser-001.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954995352)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\Questionnaire-FillingNote.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954995598)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\QuestionnaireResponse-FillingNoteResponse.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    },
+    {
+        "Timestamp":  "\/Date(1774954995824)\/",
+        "FilePath":  "C:\\Users\\VoulgarisK\\.fhir\\packages\\test.rki.emiga.common#1.2.0-alpha.22\\package\\examples\\RelatedPerson-RelatedPerson4551.json",
+        "ResourceType":  null,
+        "ResourceId":  null,
+        "Action":  "Upload",
+        "Success":  false,
+        "HttpStatus":  403,
+        "Message":  "Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.",
+        "OperationOutcome":  {
+                                 "ResourceType":  null,
+                                 "Text":  "\r\n403 Forbidden\r\n\r\n403 Forbidden\r\nnginx\r\n\r\n\r\n",
+                                 "Issues":  [
+
+                                            ]
+                             }
+    }
+]
