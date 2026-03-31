@@ -498,14 +498,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/FacilityAssociationType"
-        },
-        "name": "Verbindungs-Qualifikation",
-        "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/FacilityAssociationType"
         },
         "name": "Verbindungs-Qualifikation",
