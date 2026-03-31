@@ -27,4 +27,4 @@ Usage: #example
 
 * relationship[1].coding.system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * relationship[1].coding.code = #linkedPerson
-* relationship[1].coding.display = "verknüpfte Person"
+* relationship[1].coding.display = "Kind"

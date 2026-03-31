@@ -1,0 +1,11 @@
+defaults: KEEP # or REPLACE
+filters:
+  # This is an older release where case sensitivity was configured wrong
+  - onlyForResourceTypes: [StructureDefinition]
+    ignoreIds:
+      - Type_Specific_Checks_DT_String_WS
+      - Terminology_PassThrough_TX_Message
+  - ignoreMessagesMatching: ".*dom-6:.*"
+  - onlyForResourceTypes: [OperationOutcome, Location, Bundle]
+    ignoreIds:    
+      - Terminology_TX_NoValid_2_CC    

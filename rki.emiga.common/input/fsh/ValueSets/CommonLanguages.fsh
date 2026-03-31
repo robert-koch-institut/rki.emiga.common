@@ -5,6 +5,8 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 
 * ^identifier.system = "urn:ietf:rfc:3986"
 * insert MetadataTerminology
+* ^version = "0.1.0"
+* ^date = "2025-11-19"
 
 * $bcp47#ar "Arabic"
 * $bcp47#ar ^designation[0].language = #da

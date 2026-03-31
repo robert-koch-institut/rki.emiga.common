@@ -2,14 +2,22 @@ CodeSystem: RegionKeys
 Id: RegionKeys
 Title: "Regionalschlüssel"
 Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/"
-* ^url = "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2025-09-30"
-* ^version = "2025-09-30"
+
+* ^url = "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2026-03-31"
+* ^version = "2026-03-31"
 * ^status = #active
 * ^content = #complete
 * ^publisher = "Statistisches Bundesamt, Wiesbaden"
 * ^experimental = false
+* ^count = 11240
 
-
+* ^property[0].code = #status
+* ^property[0].uri = "http://hl7.org/fhir/concept-properties#status"
+* ^property[0].description = "Gekennzeichnet, ob ein Konzept verworfen ist."
+* ^property[0].type = #code
+* ^property[+].code = #replaced-by
+* ^property[=].description = "Der Code, den dieser Code ersetzt."
+* ^property[=].type = #code
 
 * #010010000000 "Flensburg, Stadt"
 * #010020000000 "Kiel, Landeshauptstadt"
@@ -264,6 +272,8 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #010535391127 "Walksfelde"
 * #010535391130 "Wentorf (Amt Sandesneben)"
 * #010539105105 "Sachsenwald (Forstgutsbez.),gemfr.Geb."
+* #010539105105 ^property[0].code = #status
+* #010539105105 ^property[0].valueCode = #deprecated
 * #010540033033 "Friedrichstadt, Stadt"
 * #010540056056 "Husum, Stadt"
 * #010540108108 "Reußenköge"
@@ -484,6 +494,10 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #010565690037 "Neuendeich"
 * #010570001001 "Ascheberg (Holstein)"
 * #010570008008 "Bönebüttel"
+* #010570008008 ^property[0].code = #status
+* #010570008008 ^property[0].valueCode = #deprecated
+* #010570008008 ^property[1].code = #replaced-by
+* #010570008008 ^property[1].valueCode = #010575785008 "Bönebüttel"
 * #010570009009 "Bösdorf"
 * #010570057057 "Plön, Stadt"
 * #010570062062 "Preetz, Stadt"
@@ -560,6 +574,7 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #010575782051 "Mönkeberg"
 * #010575782074 "Schönkirchen"
 * #010575785005 "Belau"
+* #010575785008 "Bönebüttel"
 * #010575785024 "Großharrie"
 * #010575785068 "Rendswühren"
 * #010575785069 "Ruhwinkel"
@@ -951,6 +966,8 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #010605086097 "Wensin"
 * #010605086098 "Westerrade"
 * #010609014014 "Buchholz (Forstgutsbez.),gemfr. Gebiet"
+* #010609014014 ^property[0].code = #status
+* #010609014014 ^property[0].valueCode = #deprecated
 * #010610029029 "Glückstadt, Stadt"
 * #010610046046 "Itzehoe, Stadt"
 * #010610113113 "Wilster, Stadt"
@@ -2756,6 +2773,7 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #064120000000 "Frankfurt am Main, Stadt"
 * #064130000000 "Offenbach am Main, Stadt"
 * #064140000000 "Wiesbaden, Landeshauptstadt"
+* #064150000000 "Hanau, Brüder-Grimm-Stadt"
 * #064310001001 "Abtsteinach"
 * #064310002002 "Bensheim, Stadt"
 * #064310003003 "Biblis"
@@ -2843,6 +2861,10 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #064350012012 "Gründau"
 * #064350013013 "Hammersbach"
 * #064350014014 "Hanau, Brüder-Grimm-Stadt"
+* #064350014014 ^property[0].code = #status
+* #064350014014 ^property[0].valueCode = #deprecated
+* #064350014014 ^property[1].code = #replaced-by
+* #064350014014 ^property[1].valueCode = #064150000000 "Hanau, Brueder-Grimm-Stadt"
 * #064350015015 "Hasselroth"
 * #064350016016 "Jossgrund"
 * #064350017017 "Langenselbold, Stadt"
@@ -7191,6 +7213,8 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #092735219178 "Volkenschwand"
 * #092739451451 "Dürnbucher Forst"
 * #092739452452 "Frauenforst"
+* #092739452452 ^property[0].code = #status
+* #092739452452 ^property[0].valueCode = #deprecated
 * #092739453453 "Hacklberg"
 * #092740111111 "Adlkofen"
 * #092740113113 "Altdorf, M"
@@ -7773,7 +7797,11 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #094755432174 "Sparneck, M"
 * #094755432184 "Weißdorf"
 * #094759451451 "Forst Schwarzenbach a.Wald"
+* #094759451451 ^property[0].code = #status
+* #094759451451 ^property[0].valueCode = #deprecated
 * #094759453453 "Geroldsgrüner Forst"
+* #094759453453 ^property[0].code = #status
+* #094759453453 ^property[0].valueCode = #deprecated
 * #094759454454 "Martinlamitzer Forst-Nord"
 * #094760145145 "Kronach, St"
 * #094760146146 "Küps, M"
@@ -7795,6 +7823,8 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #094765434171 "Schneckenlohe"
 * #094769451451 "Birnbaum"
 * #094769453453 "Langenbacher Forst"
+* #094769453453 ^property[0].code = #status
+* #094769453453 ^property[0].valueCode = #deprecated
 * #094770121121 "Himmelkron"
 * #094770128128 "Kulmbach, GKSt"
 * #094770136136 "Mainleus, M"
@@ -10973,10 +11003,16 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #160715008031 "Hetschburg"
 * #160715008037 "Kapellendorf"
 * #160715008038 "Kiliansroda"
+* #160715008038 ^property[0].code = #status
+* #160715008038 ^property[0].valueCode = #deprecated
 * #160715008042 "Kleinschwabhausen"
+* #160715008042 ^property[0].code = #status
+* #160715008042 ^property[0].valueCode = #deprecated
 * #160715008049 "Lehnstedt"
 * #160715008053 "Magdala, Stadt"
 * #160715008055 "Mechelroda"
+* #160715008055 ^property[0].code = #status
+* #160715008055 ^property[0].valueCode = #deprecated
 * #160715008056 "Mellingen"
 * #160715008071 "Oettern"
 * #160715008089 "Umpferstedt"
@@ -11221,6 +11257,7 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #160770001001 "Altenburg, Stadt"
 * #160770028028 "Lucka, Stadt"
 * #160770032032 "Meuselwitz, Stadt"
+* #160770043043 "Schmölln, Stadt"
 * #160775004005 "Fockendorf"
 * #160775004007 "Gerstenberg"
 * #160775004015 "Haselbach"
@@ -11247,4 +11284,10 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #160775051023 "Langenleuba-Niederhain"
 * #160775051036 "Nobitz"
 * #160775052003 "Dobitschen"
+* #160775052003 ^property[0].code = #status
+* #160775052003 ^property[0].valueCode = #deprecated
 * #160775052043 "Schmölln, Stadt"
+* #160775052043 ^property[0].code = #status
+* #160775052043 ^property[0].valueCode = #deprecated
+* #160775052043 ^property[1].code = #replaced-by
+* #160775052043 ^property[1].valueCode = #1607700443043 "Schmölln, Stadt"
