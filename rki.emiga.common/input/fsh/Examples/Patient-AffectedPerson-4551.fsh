@@ -124,4 +124,5 @@ Usage: #example
 //* generalPractitioner[0].reference = "Practitioner/4550"
 
 * link[relatedPersonLink].other.reference = "RelatedPerson/RelatedPerson4551"
+* link[relatedPersonLink].other.type = "RelatedPerson"
 * link[relatedPersonLink].type = #seealso

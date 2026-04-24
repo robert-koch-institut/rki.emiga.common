@@ -9,8 +9,8 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.4.1"
-* ^date = "2025-03-26"
+* ^version = "0.5.0"
+* ^date = "2026-04-23"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
@@ -18,6 +18,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 
 * meta MS
 * meta.profile 1.. MS
+* meta.profile[emigaprofile] MS
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson" 
 
 * meta.extension contains $LastModifiedBy named lastModifiedBy 0..1 MS
@@ -126,9 +127,9 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * telecom ^slicing.rules = #closed
 * telecom ^definition = "Kontaktangaben der betroffenen Person. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden."
 * telecom contains
-    Email 0..* and
-    Phone 0..* and
-    Fax 0..*
+    Email 0..* MS and
+    Phone 0..* MS and
+    Fax 0..* MS
 * telecom[Email].system 1.. MS
 * telecom[Email].system = #email (exactly)
 * telecom[Email].value 1.. MS
@@ -329,8 +330,8 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 */
 
 * link MS
-* link ^slicing.discriminator.type = #type
-* link ^slicing.discriminator.path = "other"
+* link ^slicing.discriminator.type = #value
+* link ^slicing.discriminator.path = "other.type"
 * link ^slicing.rules = #open
 * link contains  relatedPersonLink 0..* MS and 
                 patientLink 0..* MS
@@ -340,11 +341,16 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * link[relatedPersonLink].other 1..1 MS
 * link[relatedPersonLink].other only Reference(RelatedPerson)
 * link[relatedPersonLink].other.reference MS
+* link[relatedPersonLink].other.type 1..1 MS
+* link[relatedPersonLink].other.type = "RelatedPerson" (exactly)
+* link[relatedPersonLink].other.reference MS
 
 * link[patientLink].type 1..1 MS
 * link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
 * link[patientLink].other 1..1 MS
 * link[patientLink].other only Reference(Patient)
+* link[patientLink].other.type 1..1 MS
+* link[patientLink].other.type = "Patient" (exactly)
 * link[patientLink].other.reference MS
 
 
