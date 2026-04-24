@@ -147,6 +147,7 @@ Usage: #example
 * address[1].line[0].extension[Strasse].valueString = "Blossom Hill"
 * address[1].line[0].extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
 * address[1].line[0].extension[Hausnummer].valueString = "2"
+* address[1].line = "Blossom Hill 2"
 
 * address[1].postalCode = "54321"
 * address[1].city = "Blumenland"
