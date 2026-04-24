@@ -3,13 +3,15 @@ Id: RegionKeys
 Title: "Regionalschlüssel"
 Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/"
 
-* ^url = "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2026-03-31"
+* ^url = "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs"
 * ^version = "2026-03-31"
+* ^date = "2026-03-31"
 * ^status = #active
 * ^content = #complete
 * ^publisher = "Statistisches Bundesamt, Wiesbaden"
 * ^experimental = false
 * ^count = 11240
+* ^caseSensitive = true
 
 * ^property[0].code = #status
 * ^property[0].uri = "http://hl7.org/fhir/concept-properties#status"
@@ -9254,7 +9256,7 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #120715102074 "Felixsee/Feliksowy Jazor"
 * #120715102153 "Groß Schacksdorf-Simmersdorf"
 * #120715102189 "Jämlitz-Klein Düben"
-* #120715102294 "Neiße-Malxetal/Dolina Nysa-Małksa "
+* #120715102294 "Neiße-Malxetal/Dolina Nysa-Małksa"
 * #120715102392 "Tschernitz/Cersk"
 * #120715102414 "Wiesengrund/Łukojce"
 * #120715107052 "Drachhausen/Hochoza"
@@ -11290,4 +11292,4 @@ Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS
 * #160775052043 ^property[0].code = #status
 * #160775052043 ^property[0].valueCode = #deprecated
 * #160775052043 ^property[1].code = #replaced-by
-* #160775052043 ^property[1].valueCode = #1607700443043 "Schmölln, Stadt"
+* #160775052043 ^property[1].valueCode = #160770043043 "Schmölln, Stadt"
