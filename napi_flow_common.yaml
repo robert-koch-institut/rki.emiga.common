@@ -57,6 +57,7 @@ treeShakingWhitelistedResources: []
 treeShakingIgnoredResources:
 - "http://fhir.de/ValueSet/gender-amtlich-de"
 - "http://fhir.de/ValueSet/dkgev/anlage-8-laenderkennzeichen"
+- "http://terminology.hl7.org/CodeSystem/designation-usage"
 alwaysOutputBuiltInsMatching: []
 treeShakingTerminologyServerURL: ""
 ntsPackages: []
