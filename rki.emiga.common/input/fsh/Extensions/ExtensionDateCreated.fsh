@@ -5,6 +5,7 @@ Description: "Extension zur Abbildung der Erstellungsdatum eine Resource."
 Context: Element
 * ^url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
 * ^version = "0.1.0"
+* ^date = "2025-11-07"
 * insert MetadataProfile
 * url = "https://emiga.rki.de/fhir/common/Extension/DateCreated" (exactly)
 * value[x] 1.. MS
