@@ -14,11 +14,10 @@ Description: "Maximalbeispiel einer Bezugsperson, die mit einer betroffenen Pers
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #inPublicHealthService
+* meta.security[visibility].code = #transferable
 // -----------------------------------------------------------------------------
 //  Identifieren (EmigaID + EmigaFileNumber + SurvNetFileNumber)
 // -----------------------------------------------------------------------------
-
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "RelatedPerson-PQRST-123456789"
 * identifier[EmigaID].use = #official
