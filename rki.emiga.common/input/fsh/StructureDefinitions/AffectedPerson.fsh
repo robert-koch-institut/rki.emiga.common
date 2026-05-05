@@ -113,12 +113,15 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * name.extension contains $SalutationExt named salutation 0..1 MS
 * name.use 0..1 MS
 * name.use ^comment = "Die Geburtsname wird über den use 'maiden' abgebildet. Der offizielle Name wird über den use 'official' abgebildet. Der Kurzname wird über den use 'nickname' abgebildet. Wenn kein Wert angegeben wird, ist der offizielle Name gemeint."
+* name.use obeys validString
 * name.family MS
 * name.family ^short = "Nachname"
 * name.family ^definition = "Nachname der betroffenen Person."
+* name.family obeys validString
 * name.given MS
 * name.given ^short = "Vorname"
 * name.given ^definition = "Vorname der betroffenen Person."
+* name.given obeys validString
 // Kontaktangaben des Patientes
 * telecom 0.. MS
 * telecom ^slicing.discriminator.type = #value
@@ -312,16 +315,16 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * link ^slicing.rules = #open
 
 * link contains relatedPersonLink 0..* MS and patientLink 0..* MS
-* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
-* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
+* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource, die die selbe Person darstellt"
+* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource, die die selbe Person darstellt"
 * link[relatedPersonLink].type 1..1 MS
 * link[relatedPersonLink].type = #seealso (exactly)
 * link[relatedPersonLink].other 1..1 MS
 * link[relatedPersonLink].other only Reference(RelatedPerson)
 * link[relatedPersonLink].other.reference MS
 
-* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
-* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
+* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource, die die selbe Person darstellt"
+* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource, die die selbe Person darstellt"
 * link[patientLink].type 1..1 MS
 * link[patientLink].other 1..1 MS
 * link[patientLink].other only Reference(Patient)
