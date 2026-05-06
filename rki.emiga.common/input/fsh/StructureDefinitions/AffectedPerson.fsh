@@ -315,16 +315,16 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * link ^slicing.rules = #open
 
 * link contains relatedPersonLink 0..* MS and patientLink 0..* MS
-* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource, die die selbe Person darstellt"
-* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource, die die selbe Person darstellt"
+* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource, die dieselbe Person darstellt"
+* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource, die dieselbe Person darstellt"
 * link[relatedPersonLink].type 1..1 MS
 * link[relatedPersonLink].type = #seealso (exactly)
 * link[relatedPersonLink].other 1..1 MS
 * link[relatedPersonLink].other only Reference(RelatedPerson)
 * link[relatedPersonLink].other.reference MS
 
-* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource, die die selbe Person darstellt"
-* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource, die die selbe Person darstellt"
+* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource, die dieselbe Person darstellt"
+* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource, die dieselbe Person darstellt"
 * link[patientLink].type 1..1 MS
 * link[patientLink].other 1..1 MS
 * link[patientLink].other only Reference(Patient)
