@@ -289,9 +289,9 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * contact.address.city obeys validString
 */
 * deceased[x] MS
-//* deceased[x] MS
 * deceased[x] ^short = "Verstorben"
 * deceased[x] ^definition = "Angabe ob die betroffene Person verstorben ist"
+* deceased[x] obeys deceasedDateTimeNotInFuture
 
 // Noch nicht benötigt
 * maritalStatus ..0
@@ -416,3 +416,8 @@ Invariant: maidenNameOnlyFamily
 Description: "Wenn name.use = 'maiden', darf nur name.family ausgefüllt werden. Die anderen Namensbestandteile müssen leer sein."
 * severity = #error
 * expression = "(use = 'maiden') implies (given.empty() and prefix.empty() and suffix.empty() and text.empty() and family.exists())"
+
+Invariant: deceasedDateTimeNotInFuture
+Description: "Das Todesdatum darf nicht in der Zukunft liegen."
+* severity = #error
+* expression = "deceased.ofType(dateTime).exists() implies deceased.ofType(dateTime) <= now()"
