@@ -1,7 +1,7 @@
 CodeSystem: RegionKeys
 Id: RegionKeys
 Title: "Regionalschlüssel"
-Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/"
+Description: "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Die Versionsnummer ist hierbei analog zu der Versionsnummer des verwendeten Stands der Regionalschlüssel von Destatis. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/"
 
 * ^url = "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs"
 * ^version = "2026-03-31"
