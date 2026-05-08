@@ -369,24 +369,24 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 Invariant: validEmailAddress
 Description: "Die E-Mail-Adresse muss valide sein."
 * severity = #error
-* expression = "$this.matches('^[a-zA-Z0-9._%+\-]@(?:[a-zA-Z0-9\-]\.)+[a-zA-Z]{2,63}$')"
+* expression = "$this.matches('^[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9\\-]+(?:\\.[a-zA-Z0-9\\-]+)*\\.[a-zA-Z]{2,63}$')"
 
 //    Max. Zeichenlänge = 50 / Nur Zahlen erlaubt / Länderpräfix mit Deutschland als Default 
 Invariant: validPhoneNumber
 Description: "Die Telefonnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(( ?+[0-9]{1,4}( ?[0-9]? ?| ?([0-9]?) ?))|((0[0-9 ]?) ?)|( ?0[0-9]? ?( |-|\/) ?))? ?[0-9]+?[0-9 \/-]*[0-9]$')"
+* expression = "$this.matches('^(?:\\+[1-9][0-9]{1,14}|[0-9][0-9 ./()\\-]{0,48}[0-9])$')"
 
 //     Max. Zeichenlänge = 1000 / Alle Zeichen erlaubt / Formatvalidierung Website
 Invariant: validUrl
 Description: "Die Url muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(https?:\\/\\/)?([\\da-z.-]{1,1000})\\.([a-z.]{2,6})([/\\w.-]{0,999})\\/?$')"
+* expression = "$this.matches('^(https?:\\/\\/)?[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,63}(\\/[a-zA-Z0-9._\\-\\/%%]*)?$')"
 
 Invariant: validFaxNumber
 Description: "Die Faxnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(( ?+[0-9]{1,4}( ?[0-9]? ?| ?([0-9]?) ?))|((0[0-9 ]?) ?)|( ?0[0-9]? ?( |-|\/) ?))? ?[0-9]+?[0-9 \/-]*[0-9]$')"
+* expression = "$this.matches('^(?:\\+[1-9][0-9]{1,14}|[0-9][0-9 ./()\\-]{0,48}[0-9])$')"
 
 Invariant: validString
 Description: "Zeichenlänge maximal 255 Zeichen"
@@ -404,9 +404,9 @@ Description: "Die PLZ muss valide sein. Zeichenlänge maximal 10 Zeichen"
 * expression = "$this.matches('^.{1,10}$')"
 
 Invariant: validBirthDate
-Description: "Das Geburtsjahr muss mit 19 oder 20 beginnen."
-* severity = #warning
-* expression = "$this.toString().matches('^19[0-9]{2}-[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}-[0-9]{2}|19[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}|19[0-9]{2}|20[0-9]{2}$')"
+Description: "Das Geburtsjahr muss mit 19 oder 20 beginnen und darf nicht in der Zukunft liegen."
+* severity = #error
+* expression = "$this.toString().matches('^(19|20)[0-9]{2}(-[0-9]{2}(-[0-9]{2})?)?$') and $this <= today()"
 
 Invariant: maidenNameOnlyFamily
 Description: "Wenn name.use = 'maiden', darf nur name.family ausgefüllt werden. Die anderen Namensbestandteile müssen leer sein."
