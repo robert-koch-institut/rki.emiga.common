@@ -113,12 +113,15 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * name.extension contains $SalutationExt named salutation 0..1 MS
 * name.use 0..1 MS
 * name.use ^comment = "Die Geburtsname wird über den use 'maiden' abgebildet. Der offizielle Name wird über den use 'official' abgebildet. Der Kurzname wird über den use 'nickname' abgebildet. Wenn kein Wert angegeben wird, ist der offizielle Name gemeint."
+* name.use obeys validString
 * name.family MS
 * name.family ^short = "Nachname"
 * name.family ^definition = "Nachname der betroffenen Person."
+* name.family obeys validString
 * name.given MS
 * name.given ^short = "Vorname"
 * name.given ^definition = "Vorname der betroffenen Person."
+* name.given obeys validString
 // Kontaktangaben des Patientes
 * telecom 0.. MS
 * telecom ^slicing.discriminator.type = #value
@@ -286,9 +289,9 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * contact.address.city obeys validString
 */
 * deceased[x] MS
-//* deceased[x] MS
 * deceased[x] ^short = "Verstorben"
 * deceased[x] ^definition = "Angabe ob die betroffene Person verstorben ist"
+* deceased[x] obeys deceasedDateTimeNotInFuture
 
 // Noch nicht benötigt
 * maritalStatus ..0
@@ -312,16 +315,16 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * link ^slicing.rules = #open
 
 * link contains relatedPersonLink 0..* MS and patientLink 0..* MS
-* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
-* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
+* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource, die dieselbe Person darstellt"
+* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource, die dieselbe Person darstellt"
 * link[relatedPersonLink].type 1..1 MS
 * link[relatedPersonLink].type = #seealso (exactly)
 * link[relatedPersonLink].other 1..1 MS
 * link[relatedPersonLink].other only Reference(RelatedPerson)
 * link[relatedPersonLink].other.reference MS
 
-* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
-* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
+* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource, die dieselbe Person darstellt"
+* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource, die dieselbe Person darstellt"
 * link[patientLink].type 1..1 MS
 * link[patientLink].other 1..1 MS
 * link[patientLink].other only Reference(Patient)
@@ -360,16 +363,15 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 Invariant: validEmailAddress
 Description: "Die E-Mail-Adresse muss valide sein."
 * severity = #error
-* expression = "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
+* expression = "$this.matches('^[a-zA-Z0-9._%+\-]@(?:[a-zA-Z0-9\-]\.)+[a-zA-Z]{2,63}$')"
 
 //    Max. Zeichenlänge = 50 / Nur Zahlen erlaubt / Länderpräfix mit Deutschland als Default 
 Invariant: validPhoneNumber
 Description: "Die Telefonnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(( ?\\\\+[0-9]{2,4}( ?[0-9]+? ?| ? \\\\([0-9]+?\\\\) ?))|(\\\\(0[0-9 ]+?\\\\) ?)|( 0[0-9]+? ?( |-|\\/) ?))? ?[0-9]+?[0-9 \\/-]*[0-9]$')"
+* expression = "$this.matches('^(( ?+[0-9]{1,4}( ?[0-9]? ?| ?([0-9]?) ?))|((0[0-9 ]?) ?)|( ?0[0-9]? ?( |-|\/) ?))? ?[0-9]+?[0-9 \/-]*[0-9]$')"
 
 //     Max. Zeichenlänge = 1000 / Alle Zeichen erlaubt / Formatvalidierung Website
-
 Invariant: validUrl
 Description: "Die Url muss valide sein."
 * severity = #error
@@ -378,24 +380,17 @@ Description: "Die Url muss valide sein."
 Invariant: validFaxNumber
 Description: "Die Faxnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(( ?\\\\+[0-9]{2,4}( ?[0-9]+? ?| ? \\\\([0-9]+?\\\\) ?))|(\\\\(0[0-9 ]+?\\\\) ?)|( 0[0-9]+? ?( |-|\\/) ?))? ?[0-9]+?[0-9 \\/-]*[0-9]$')"
-
-// valid String
+* expression = "$this.matches('^(( ?+[0-9]{1,4}( ?[0-9]? ?| ?([0-9]?) ?))|((0[0-9 ]?) ?)|( ?0[0-9]? ?( |-|\/) ?))? ?[0-9]+?[0-9 \/-]*[0-9]$')"
 
 Invariant: validString
 Description: "Zeichenlänge maximal 255 Zeichen"
 * severity = #error
 * expression = "$this.matches('^.{1,255}$')"
 
-// valid Hausnummer
-
 Invariant: validHouseNumber
 Description: "Die Hausnummer muss valide sein. Zeichenlänge maximal 50 Zeichen"
 * severity = #error
 * expression = "$this.matches('^.{1,50}$')"
-
-
-//valid PLZ
 
 Invariant: validPLZ
 Description: "Die PLZ muss valide sein. Zeichenlänge maximal 10 Zeichen"
@@ -407,9 +402,12 @@ Description: "Das Geburtsjahr muss mit 19 oder 20 beginnen."
 * severity = #warning
 * expression = "$this.toString().matches('^19[0-9]{2}-[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}-[0-9]{2}|19[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}|19[0-9]{2}|20[0-9]{2}$')"
 
-
-// Invariant to ensure that only family name is present when name.use is maiden
 Invariant: maidenNameOnlyFamily
 Description: "Wenn name.use = 'maiden', darf nur name.family ausgefüllt werden. Die anderen Namensbestandteile müssen leer sein."
 * severity = #error
 * expression = "(use = 'maiden') implies (given.empty() and prefix.empty() and suffix.empty() and text.empty() and family.exists())"
+
+Invariant: deceasedDateTimeNotInFuture
+Description: "Das Todesdatum darf nicht in der Zukunft liegen."
+* severity = #error
+* expression = "deceased.ofType(dateTime).exists() implies deceased.ofType(dateTime) <= now()"
