@@ -16,21 +16,17 @@ Description: "Dieses Profil bildet ein Match-Output-Bundle ab. Es dient der stru
 * type 1..1 MS
 * type ^short = "Typ des Bundles"
 * type = #searchset (exactly)
-* entry 1.. MS
-* entry ^short = "Der einzelne Eintrag zur Interaktion"
-* entry.link ..0
-* entry.fullUrl MS
-* entry.fullUrl ^short = "vollständige URL der Ressource"
-* entry.fullUrl ^comment = "auch die Verwendung von UUIDs in der Form ';urn:uuid:.....' ist möglich."
-* entry.resource MS
-* entry.resource ^short = "Die Ressourcen-Instanz der Interaktion"
-//* entry.search 
-/*
-* entry.request MS
-* entry.request ^short = "HTTP-Request innerhalb der Transaktion"
-* entry.request.method MS
-* entry.request.method ^short = "HTTP-Verb"
-* entry.request.url MS
-* entry.request.url ^short = "Request-URL"
-//* entry.response ..0
-*/
+* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry.fullUrl 1..
+* entry contains
+    Patient 0..*  
+* entry[Patient] ^short = "Patient"
+* entry[Patient].resource 1.. MS
+* entry[Patient].resource only AffectedPerson
+* entry[Patient].search 1.. MS
+* entry[Patient].search.extension contains http://hl7.org/fhir/StructureDefinition/match-grade named MatchGrade 1..1 MS and https://emiga.rki.de/fhir/common/StructureDefinition/DuplicateMatchMetadata named DuplicateMatchMetadata 1..1 MS
+* entry[Patient].search.mode 1.. MS
+* entry[Patient].search.mode = #match
+* entry[Patient].search.score 1.. MS
