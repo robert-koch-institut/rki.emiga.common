@@ -292,6 +292,12 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * deceased[x] MS
 * deceased[x] ^short = "Verstorben"
 * deceased[x] ^definition = "Angabe ob die betroffene Person verstorben ist"
+* deceasedBoolean MS
+* deceasedBoolean ^short = "Verstorben (boolean)"
+* deceasedBoolean ^definition = "Angabe ob die betroffene Person verstorben ist (boolean)."
+* deceasedDateTime MS
+* deceasedDateTime ^short = "Verstorben (Datum/Uhrzeit)"
+* deceasedDateTime ^definition = "Angabe ob die betroffene Person verstorben ist mit Angabe des Datums und der Uhrzeit."
 * deceasedDateTime obeys deceasedDateTimeNotInFuture
 
 // Noch nicht benötigt
