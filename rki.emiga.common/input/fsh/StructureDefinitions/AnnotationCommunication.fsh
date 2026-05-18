@@ -3,8 +3,8 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.8.0"
-* ^date = "2026-04-24"
+* ^version = "0.9.0"
+* ^date = "2026-05-18"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
