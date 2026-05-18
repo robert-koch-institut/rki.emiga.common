@@ -102,7 +102,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * topic.text ^definition = "Der Betreff der Annotation wird im Text Feld dokumentiert."
 
 //Über welche Entität wird die Annotation benötigt
-* about 0..* MS
+* about 1..1 MS
 * about ^short = "Bezugsentität"
 * about ^definition = "Referenz zur Bezugsentität"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
