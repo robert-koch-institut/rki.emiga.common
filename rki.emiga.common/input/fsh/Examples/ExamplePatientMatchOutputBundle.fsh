@@ -12,6 +12,8 @@ Description: "Example Patient/$match response Bundle containing normalized searc
 
 * meta.profile[+] = $MatchOutputBundle
 * type = #searchset
+* link[0].relation = "self"
+* link[0].url = "https://emiga.rki.de/fhir/Patient/$match"
 * total = 2
 
 
@@ -88,27 +90,27 @@ Description: "Example Patient/$match response Bundle containing normalized searc
 
 * entry[1].search.extension[1].extension[3].url = "triggerReason"
 * entry[1].search.extension[1].extension[3].valueCoding = $DuplicateMatchTriggerReasonsCS#address-fallback "Adress-Fallback"
-* entry[1].search.extension[1].extension[3].valueCoding.version = "0.1.0"
+//* entry[1].search.extension[1].extension[3].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[4].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[4].valueCoding = $DuplicateMatchCriteriaCS#birthDateExact "Geburtsdatum exakt übereinstimmend"
-* entry[1].search.extension[1].extension[4].valueCoding.version = "0.1.0"
+//* entry[1].search.extension[1].extension[4].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[5].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[5].valueCoding = $DuplicateMatchCriteriaCS#streetPhonetic "Straße phonetisch übereinstimmend"
-* entry[1].search.extension[1].extension[5].valueCoding.version = "0.1.0"
+//* entry[1].search.extension[1].extension[5].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[6].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[6].valueCoding = $DuplicateMatchCriteriaCS#houseNumberExact "Hausnummer exakt übereinstimmend"
-* entry[1].search.extension[1].extension[6].valueCoding.version = "0.1.0"
+//* entry[1].search.extension[1].extension[6].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[7].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[7].valueCoding = $DuplicateMatchCriteriaCS#postalCodeExact "Postleitzahl exakt übereinstimmend"
-* entry[1].search.extension[1].extension[7].valueCoding.version = "0.1.0"
+//* entry[1].search.extension[1].extension[7].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[8].url = "nonMatchedCriteria"
 * entry[1].search.extension[1].extension[8].valueCoding = $DuplicateMatchCriteriaCS#birthNameFuzzy "Geburtsname ungefähr übereinstimmend (fuzzy)"
-* entry[1].search.extension[1].extension[8].valueCoding.version = "0.1.0"
+//* entry[1].search.extension[1].extension[8].valueCoding.version = "0.1.0"
 
 
 // -----------------------------------------------------------------------------
@@ -116,7 +118,7 @@ Description: "Example Patient/$match response Bundle containing normalized searc
 // -----------------------------------------------------------------------------
 
 Instance: ExampleDuplicateCandidatePatientOne
-InstanceOf: Patient
+InstanceOf: AffectedPerson
 Usage: #inline
 Title: "Example Duplicate Candidate Patient One"
 Description: "First example Patient resource returned as a duplicate candidate."
@@ -124,17 +126,20 @@ Description: "First example Patient resource returned as a duplicate candidate."
 * meta.profile[+] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 * id = "example-duplicate-candidate-patient-one"
 
+* meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
+* meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
+
 * identifier[0].system = "https://emiga.rki.de/fhir/sid/person-management/patient-id"
 * identifier[0].value = "PMS-123456"
 
 * name[0].use = #official
 * name[0].family = "Mustermann"
-* name[0].given[0] = "Max"
+* name[0].given = "Max"
 
 * gender = #male
 * birthDate = "1980-01-01"
 
-* address[0].use = #home
+//* address[0].use = #home
 * address[0].line[0] = "Musterstraße 12"
 * address[0].city = "Berlin"
 * address[0].postalCode = "10115"
@@ -146,7 +151,7 @@ Description: "First example Patient resource returned as a duplicate candidate."
 // -----------------------------------------------------------------------------
 
 Instance: ExampleDuplicateCandidatePatientTwo
-InstanceOf: Patient
+InstanceOf: AffectedPerson
 Usage: #inline
 Title: "Example Duplicate Candidate Patient Two"
 Description: "Second example Patient resource returned as a duplicate candidate."
@@ -154,17 +159,20 @@ Description: "Second example Patient resource returned as a duplicate candidate.
 * meta.profile[+] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 * id = "example-duplicate-candidate-patient-two"
 
+* meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
+* meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
+
 * identifier[0].system = "https://emiga.rki.de/fhir/sid/person-management/patient-id"
 * identifier[0].value = "PMS-789012"
 
 * name[0].use = #official
 * name[0].family = "Muster"
-* name[0].given[0] = "Maximilian"
+* name[0].given = "Maximilian"
 
 * gender = #male
 * birthDate = "1980-01-01"
 
-* address[0].use = #home
+//* address[0].use = #home
 * address[0].line[0] = "Musterstr. 12"
 * address[0].city = "Berlin"
 * address[0].postalCode = "10115"
