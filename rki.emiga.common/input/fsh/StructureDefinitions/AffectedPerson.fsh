@@ -292,7 +292,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * deceased[x] MS
 * deceased[x] ^short = "Verstorben"
 * deceased[x] ^definition = "Angabe ob die betroffene Person verstorben ist"
-* deceased[x] obeys deceasedDateTimeNotInFuture
+* deceasedDateTime obeys deceasedDateTimeNotInFuture
 
 // Noch nicht benötigt
 * maritalStatus ..0
@@ -369,13 +369,13 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 Invariant: validEmailAddress
 Description: "Die E-Mail-Adresse muss valide sein."
 * severity = #error
-* expression = "$this.matches('^[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9\\-]+(?:\\.[a-zA-Z0-9\\-]+)*\\.[a-zA-Z]{2,63}$')"
+* expression = "$this.matches('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+.[a-zA-Z]{2,63}$')"
 
 //    Max. Zeichenlänge = 50 / Nur Zahlen erlaubt / Länderpräfix mit Deutschland als Default 
 Invariant: validPhoneNumber
 Description: "Die Telefonnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(?:\\+[1-9][0-9]{1,14}|[0-9][0-9 ./()\\-]{0,48}[0-9])$')"
+* expression = "$this.matches('^(?:[+][1-9][0-9]{1,14}|[0-9][0-9 .()/-]{0,48}[0-9])$')"
 
 //     Max. Zeichenlänge = 1000 / Alle Zeichen erlaubt / Formatvalidierung Website
 Invariant: validUrl
@@ -386,7 +386,7 @@ Description: "Die Url muss valide sein."
 Invariant: validFaxNumber
 Description: "Die Faxnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(?:\\+[1-9][0-9]{1,14}|[0-9][0-9 ./()\\-]{0,48}[0-9])$')"
+* expression = "$this.matches('^(?:[+][1-9][0-9]{1,14}|[0-9][0-9 .()/-]{0,48}[0-9])$')"
 
 Invariant: validString
 Description: "Zeichenlänge maximal 255 Zeichen"
@@ -416,4 +416,4 @@ Description: "Wenn name.use = 'maiden', darf nur name.family ausgefüllt werden.
 Invariant: deceasedDateTimeNotInFuture
 Description: "Das Todesdatum darf nicht in der Zukunft liegen."
 * severity = #error
-* expression = "deceased.ofType(dateTime).exists() implies deceased.ofType(dateTime) <= now()"
+* expression = "$this <= now()"
