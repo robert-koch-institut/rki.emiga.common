@@ -9,7 +9,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.5.1"
+* ^version = "0.5.0"
 * ^date = "2026-05-18"
 
 * insert ProfileResourceCommon
@@ -57,52 +57,6 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * extension[landOfBirth].valueCoding ^mustSupport = true
 
 * insert IdentifierCommon
-/*
-* extension[nationality].extension contains
-    code 0..1 and
-    period 0..1
-* extension[nationality].extension[code].value[x] only CodeableConcept
-* extension[nationality].extension[period].value[x] only Period
-*/
-//* extension[birthPlace] from http://hl7.org/fhir/StructureDefinition/patient-birthPlace
-//* extension[birthPlace] ^definition = "Geburtsland"
-//* extension[birthPlace].value[x] only Address
-
-// 'Identifies this Patient across multiple systems' - 0..* - Identifier
-// Logischer Identifier des Patientes
-// Wir gestalten das Slicing bewusst offen, um später weitere Identifier-Typen abbilden zu können (z.B. DEMIS-ID, gematik-ID, usw.)
-// Cardinalities will be set in slicing
-//* identifier.system 0..1
-//* identifier.value 0..1
-// Must have at least two identifiers
-/*
-* identifier MS 
-* identifier
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "system"
-  * ^slicing.rules = #open
-  * ^slicing.description = "slicing patient identifier by system"
-  * ^slicing.ordered = false
-* identifier contains EmigaID 1..1 MS and EmigaFileNumber 1..1 MS
-
-* identifier[EmigaID] only IdentifierEmigaID
-* identifier[EmigaID].use 0..1 MS
-* identifier[EmigaID].use = #official (exactly)
-* identifier[EmigaID].system 1..1 MS
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
-
-* identifier[EmigaFileNumber] only IdentifierEmigaFileNumber
-* identifier[EmigaFileNumber].use 0..1 MS
-* identifier[EmigaFileNumber].use = #official (exactly)
-* identifier[EmigaFileNumber].system 1..1 MS
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
-*/
-//Reserved for later use
-//* identifier[referencenumberpatientid].assigner
-
-
-// Indicating if the patient is active will not be needed at this point
-//active 0..1 
 
 // Name of the Patient
 * name MS
@@ -208,87 +162,6 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * birthDate ^short = "Geburtsdatum"
 * birthDate ^definition = "Geburtsdatum der betroffenen Person"
 
-// A Related Person Resource wird dafür warscheinlich benuzt, 
-/*
-* contact MS
-
-* contact.relationship 0..* MS
-* contact.relationship.coding MS
-* contact.relationship.coding.system 0..1 MS
-* contact.relationship.coding.code 0..1 MS
-* contact.name 0..1 MS
-* contact.name only $humanname-de-basis
-* contact.name ^short = "Name"
-* contact.name ^definition = "Name der Kontakt Person."
-// Name Extension for Salutation
-//* name.extension contains https://emiga.rki.de/fhir/case/StructureDefinition/Salutation named salutation 1..1 MS
-* contact.name.family 0..1 MS
-* contact.name.family ^short = "Nachname"
-* contact.name.family ^definition = "Nachname der betroffenen Person."
-* contact.name.given ..1 MS
-* contact.name.given ^short = "Vorname"
-* contact.name.given ^definition = "Vorname der betroffenen Person."
-
-//* contact.telecom 0..* 
-//* contact.telecom.system 0..1
-//* contact.telecom.value 0..1
-* contact.telecom 0.. MS
-* contact.telecom ^slicing.discriminator.type = #value
-* contact.telecom ^slicing.discriminator.path = "system"
-* contact.telecom ^slicing.rules = #closed
-* contact.telecom ^definition = "Kontaktangaben der Organisation. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden."
-* contact.telecom contains
-    Email 0..* and
-    Phone 0..* and
-    Fax 0..*
-* contact.telecom[Email].system 1.. MS
-* contact.telecom[Email].system = #email (exactly)
-* contact.telecom[Email].value 1.. MS
-* contact.telecom[Email].value obeys validEmailAddress
-* contact.telecom[Phone].system 1.. MS
-* contact.telecom[Phone].system = #phone (exactly)
-* contact.telecom[Phone].value 1.. MS
-* contact.telecom[Phone].value obeys validPhoneNumber
-* contact.telecom[Fax].system = #fax (exactly)
-* contact.telecom[Fax].value 1.. MS
-* contact.telecom[Fax].value obeys validFaxNumber
-
-* contact.gender 0..1 MS
-* contact.gender.extension ^slicing.discriminator.type = #value
-* contact.gender.extension ^slicing.discriminator.path = "url"
-* contact.gender.extension ^slicing.rules = #open
-* contact.gender.extension contains $gender-amtlich-de named other-amtlich 0..1 MS and $data-absent named data-absent-reason 0..1 MS
-
-* contact.address 0..1 MS
-* contact.address only $address-de-basis
-* contact.address.extension[Stadtteil] ^mustSupport = true
-* contact.address.extension[Stadtteil].valueString MS
-* contact.address.extension[Stadtteil].valueString obeys validString
-* contact.address.line.extension[Strasse] ^mustSupport = true
-* contact.address.line.extension[Strasse].valueString MS
-* contact.address.line.extension[Strasse].valueString obeys validString
-* contact.address.line.extension[Hausnummer] ^mustSupport = true
-* contact.address.line.extension[Hausnummer].valueString MS
-* contact.address.line.extension[Hausnummer].valueString obeys validHouseNumber
-* contact.address.line.extension[Adresszusatz] ^mustSupport = true
-* contact.address.line.extension[Adresszusatz].valueString MS
-* contact.address.line.extension[Adresszusatz].valueString obeys validString
-* contact.address.line.extension[Postfach] ^mustSupport = true
-* contact.address.line.extension[Postfach].valueString MS
-* contact.address.line.extension[Postfach].valueString obeys validString
-* contact.address.city MS
-* contact.address.city ^short = "Stadt"
-* contact.address.city ^definition = "Stadt"
-// Reserved for later use if needed
-//* address.postalCode from $postalCode (preferred)
-* contact.address.postalCode ^definition = "Postleitzahl" //. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/postalCode) im coding Element dargestellt werden."
-* contact.address.postalCode MS 
-* contact.address.postalCode obeys validPLZ
-* contact.address.country from $iso3166-1-2 (extensible)
-* contact.address.country ^short = "Land"
-* contact.address.country ^definition = "Land"
-* contact.address.city obeys validString
-*/
 * deceased[x] MS
 * deceased[x] ^short = "Verstorben"
 * deceased[x] ^definition = "Angabe ob die betroffene Person verstorben ist"
@@ -314,30 +187,6 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * generalPractitioner ^definition = "Behandelnde Person der betroffenen Person."
 * managingOrganization ..0
 
-/*
-* link ^slicing.discriminator[0].type = #type
-* link ^slicing.discriminator[0].path = "other"
-* link ^slicing.discriminator[1].type = #value
-* link ^slicing.discriminator[1].path = "type"
-* link ^slicing.rules = #open
-
-* link contains relatedPersonLink 0..* MS and patientLink 0..* MS
-* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource, die dieselbe Person darstellt"
-* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource, die dieselbe Person darstellt"
-* link[relatedPersonLink].type 1..1 MS
-* link[relatedPersonLink].type = #seealso (exactly)
-* link[relatedPersonLink].other 1..1 MS
-* link[relatedPersonLink].other only Reference(RelatedPerson)
-* link[relatedPersonLink].other.reference MS
-
-* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource, die dieselbe Person darstellt"
-* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource, die dieselbe Person darstellt"
-* link[patientLink].type 1..1 MS
-* link[patientLink].other 1..1 MS
-* link[patientLink].other only Reference(Patient)
-* link[patientLink].other.reference MS
-*/
-
 * link MS
 * link ^slicing.discriminator.type = #value
 * link ^slicing.discriminator.path = "other.type"
@@ -361,13 +210,6 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * link[patientLink].other.type 1..1 MS
 * link[patientLink].other.type = "Patient" (exactly)
 * link[patientLink].other.reference MS
-
-
-
-// Diskussion ob ein managingOrganization benötigt wird
-//* managingOrganization 0..1 MS // Must have a managing organization
-//* managingOrganization.reference 0..1
-//* link 0..* 
 
 // Invariants to validate the address and telecom values
 
