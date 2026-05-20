@@ -26,7 +26,7 @@ Practitioner-EmigaUser-001.json                                     EmigaUser-00
 RelatedPerson-RelatedPerson4551.json                                RelatedPerson4551                    Instance    Examples\RelatedPerson-4551.fsh                                     1 - 30
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire    Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 20
 StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json  OutbreakQuestionnaireResponseCommon  Profile     StructureDefinitions\AdditionalPropertiesQuestionnaireResponse.fsh  1 - 46
-StructureDefinition-AffectedPerson.json                             AffectedPerson                       Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 363
+StructureDefinition-AffectedPerson.json                             AffectedPerson                       Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 212
 StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson          Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 26
 StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 144
 StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference          Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 123
