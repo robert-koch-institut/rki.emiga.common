@@ -1,9 +1,6 @@
 Output File                                                         Name                                 Type        FSH File                                                            Lines
-Bundle-ExamplePatientMatchOutputBundle.json                         ExamplePatientMatchOutputBundle      Instance    Examples\ExamplePatientMatchOutputBundle.fsh                        7 - 112
 CodeSystem-AnnotationCategory.json                                  AnnotationCategory                   CodeSystem  CodeSystem\AnnotationCategory.fsh                                   1 - 18
 CodeSystem-ConceptDesignationUse.json                               ConceptDesignationUse                CodeSystem  CodeSystem\ConceptDesignationUse.fsh                                1 - 17
-CodeSystem-DuplicateMatchCriteria.json                              DuplicateMatchCriteria               CodeSystem  CodeSystem\DuplicateMatchCriteria.fsh                               1 - 22
-CodeSystem-DuplicateMatchTriggerReasons.json                        DuplicateMatchTriggerReasons         CodeSystem  CodeSystem\DuplicateMatchTriggerReasons.fsh                         1 - 15
 CodeSystem-FacilityAssociationType.json                             FacilityAssociationType              CodeSystem  CodeSystem\FacilityAssociationType.fsh                              1 - 15
 CodeSystem-PersonalInformation.json                                 PersonalInformation                  CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 15
 CodeSystem-ProcessingStatus.json                                    ProcessingStatus                     CodeSystem  CodeSystem\ProcessingStatus.fsh                                     1 - 24
@@ -31,7 +28,6 @@ StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPers
 StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 144
 StructureDefinition-AttachmentDocumentReference.json                AttachmentDocumentReference          Profile     StructureDefinitions\AttachmentDocumentReference.fsh                1 - 123
 StructureDefinition-DateCreated.json                                DateCreated                          Extension   Extensions\ExtensionDateCreated.fsh                                 1 - 12
-StructureDefinition-DuplicateMatchMetadata.json                     DuplicateMatchMetadata               Extension   Extensions\ExtensionDuplicateMatchMetadata.fsh                      1 - 74
 StructureDefinition-EmigaUserPractitioner.json                      EmigaUserPractitioner                Profile     StructureDefinitions\EmigaUserPractitioner.fsh                      1 - 97
 StructureDefinition-FacilityAddressAffectedPerson.json              FacilityAddressAffectedPerson        Extension   Extensions\ExtensionFacilityAddressAffectedPerson.fsh               1 - 36
 StructureDefinition-IdentifierEmigaFileNumber.json                  IdentifierEmigaFileNumber            Profile     StructureDefinitions\IdentifierEmigaFileNumber.fsh                  1 - 19
@@ -39,7 +35,6 @@ StructureDefinition-IdentifierEmigaID.json                          IdentifierEm
 StructureDefinition-IdentifierSurvNetFileNumber.json                IdentifierSurvNetFileNumber          Profile     StructureDefinitions\IdentifierSurvNetFileNumber.fsh                1 - 19
 StructureDefinition-LandOfBirth.json                                LandOfBirth                          Extension   Extensions\ExtensionLandOfBirth.fsh                                 1 - 23
 StructureDefinition-LastModifiedBy.json                             LastModifiedBy                       Extension   Extensions\ExtensionLastModifiedBy.fsh                              1 - 15
-StructureDefinition-MatchOutputBundle.json                          MatchOutputBundle                    Profile     StructureDefinitions\MatchOutputBundle.fsh                          1 - 52
 StructureDefinition-NullFlavor.json                                 NullFlavor                           Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                     Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 21
 StructureDefinition-RegionalKey.json                                RegionalKey                          Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 29
@@ -50,8 +45,6 @@ ValueSet-CommonLanguages.json                                       CommonLangua
 ValueSet-ConceptDesignationUse.json                                 ConceptDesignationUse                ValueSet    ValueSets\ConceptDesignationUse.fsh                                 1 - 9
 ValueSet-CountryCodes.json                                          CountryCodes                         ValueSet    ValueSets\CountryCodes.fsh                                          1 - 23
 ValueSet-CountyVS.json                                              CountyVS                             ValueSet    ValueSets\CountyVS.fsh                                              1 - 422
-ValueSet-DuplicateMatchCriteriaVS.json                              DuplicateMatchCriteriaVS             ValueSet    ValueSets\DuplicateMatchCriteriaVS.fsh                              1 - 10
-ValueSet-DuplicateMatchTriggerReasonsVS.json                        DuplicateMatchTriggerReasonsVS       ValueSet    ValueSets\DuplicateMatchTriggerReasonsVS.fsh                        1 - 10
 ValueSet-FacilityAssociationTypeVS.json                             FacilityAssociationTypeVS            ValueSet    ValueSets\FacilityAssociationTypeVS.fsh                             1 - 21
 ValueSet-NullFlavor.json                                            NullFlavor                           ValueSet    ValueSets\NullFlavor.fsh                                            1 - 19
 ValueSet-PersonResourceVisibilityType.json                          PersonResourceVisibilityType         ValueSet    ValueSets\PersonResourceVisibilityType.fsh                          1 - 11
