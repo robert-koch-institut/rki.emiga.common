@@ -42,7 +42,7 @@ StructureDefinition-LastModifiedBy.json                             LastModified
 StructureDefinition-MatchOutputBundle.json                          MatchOutputBundle                    Profile     StructureDefinitions\MatchOutputBundle.fsh                          1 - 52
 StructureDefinition-NullFlavor.json                                 NullFlavor                           Extension   Extensions\ExtensionNullFlavor.fsh                                  1 - 21
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                     Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 21
-StructureDefinition-RegionalKey.json                                RegionalKey                          Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 36
+StructureDefinition-RegionalKey.json                                RegionalKey                          Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 29
 StructureDefinition-Salutation.json                                 Salutation                           Extension   Extensions\ExtensionSalutation.fsh                                  1 - 20
 ValueSet-AnnotationCategoryVS.json                                  AnnotationCategoryVS                 ValueSet    ValueSets\AnnotationCategoryVS.fsh                                  1 - 10
 ValueSet-AnnotationResourceVisibilityType.json                      AnnotationResourceVisibilityType     ValueSet    ValueSets\AnnotationResourceVisibilityTypeVS.fsh                    1 - 11
