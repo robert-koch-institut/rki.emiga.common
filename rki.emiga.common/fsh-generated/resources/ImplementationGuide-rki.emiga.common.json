@@ -242,6 +242,46 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/DuplicateMatchMetadata"
+        },
+        "name": "Dublettenprüfung Metadaten",
+        "description": "Metadaten zur Dublettenprüfung einer Resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/DuplicateMatchCriteria"
+        },
+        "name": "Dublettenprüfungs-Kriterien",
+        "description": "Die Kodiersystematik 'DuplicateMatchCriteria' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Dublettenprüfungs-Kriterien zu unterscheiden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DuplicateMatchCriteriaVS"
+        },
+        "name": "Dublettenprüfungs-Kriterien (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die Art der Dublettenprüfungs-Kriterien bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/DuplicateMatchTriggerReasons"
+        },
+        "name": "Dublettenprüfungsgründe",
+        "description": "Die Kodiersystematik 'DuplicateMatchTriggerReasons' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Gründen für Dublettenprüfungen zu unterscheiden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/DuplicateMatchTriggerReasonsVS"
+        },
+        "name": "Dublettenprüfungsgründe (Werteliste)",
+        "description": "Werteliste mit Konzepten, die die Art der Dublettenprüfungsgründe bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/FacilityAddressAffectedPerson"
         },
         "name": "Einrichtungsadresse Betroffene Person",
@@ -298,6 +338,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/ExamplePatientMatchOutputBundle"
+        },
+        "name": "Example Patient Match Output Bundle",
+        "description": "Example Patient/$match response Bundle containing normalized search score, match grade, and duplicate match metadata.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/LandOfBirth"
         },
         "name": "Geburtsland",
@@ -334,6 +382,14 @@
         },
         "name": "Ländercodes gemäß Anlage 8 der DEÜV",
         "description": "Werteliste mit Ländercodes gemäß Anlage 8 der DEÜV.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MatchOutputBundle"
+        },
+        "name": "Match Output Bundle",
+        "description": "Dieses Profil bildet ein Match-Output-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Match-Ergebnissen (z.B. Dublettenprüfungen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs.",
         "exampleBoolean": false
       },
       {
@@ -397,7 +453,7 @@
           "reference": "CodeSystem/RegionKeys"
         },
         "name": "Regionalschlüssel",
-        "description": "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/",
+        "description": "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Die Versionsnummer ist hierbei analog zu der Versionsnummer des verwendeten Stands der Regionalschlüssel von Destatis. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/",
         "exampleBoolean": false
       },
       {

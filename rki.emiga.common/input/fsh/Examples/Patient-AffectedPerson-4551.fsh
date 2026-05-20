@@ -106,11 +106,11 @@ Usage: #example
 * address[0].extension[geolocation].extension[longitude].valueDecimal = 1.3791
 * address[0].extension[geolocation].extension[longitude].url = "longitude"
 
-* address[0].line[0] = "Blossom Lane 1"
-* address[0].line[0].extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-* address[0].line[0].extension[Strasse].valueString = "Blossom Lane"
-* address[0].line[0].extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
-* address[0].line[0].extension[Hausnummer].valueString = "1"
+* address[0].line = "Blossom Lane 1"
+* address[0].line.extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address[0].line.extension[Strasse].valueString = "Blossom Lane"
+* address[0].line.extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address[0].line.extension[Hausnummer].valueString = "1"
 
 * address[0].postalCode = "12345"
 * address[0].city = "Berminghausen"
@@ -124,4 +124,5 @@ Usage: #example
 //* generalPractitioner[0].reference = "Practitioner/4550"
 
 * link[relatedPersonLink].other.reference = "RelatedPerson/RelatedPerson4551"
+* link[relatedPersonLink].other.type = "RelatedPerson"
 * link[relatedPersonLink].type = #seealso
