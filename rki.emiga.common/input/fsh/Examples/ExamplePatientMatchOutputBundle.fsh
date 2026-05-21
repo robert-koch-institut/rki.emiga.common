@@ -90,27 +90,27 @@ Description: "Example Patient/$match response Bundle containing normalized searc
 
 * entry[1].search.extension[1].extension[3].url = "triggerReason"
 * entry[1].search.extension[1].extension[3].valueCoding = $DuplicateMatchTriggerReasonsCS#address-fallback "Adress-Fallback"
-//* entry[1].search.extension[1].extension[3].valueCoding.version = "0.1.0"
+* entry[1].search.extension[1].extension[3].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[4].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[4].valueCoding = $DuplicateMatchCriteriaCS#birthDateExact "Geburtsdatum exakt übereinstimmend"
-//* entry[1].search.extension[1].extension[4].valueCoding.version = "0.1.0"
+* entry[1].search.extension[1].extension[4].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[5].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[5].valueCoding = $DuplicateMatchCriteriaCS#streetPhonetic "Straße phonetisch übereinstimmend"
-//* entry[1].search.extension[1].extension[5].valueCoding.version = "0.1.0"
+* entry[1].search.extension[1].extension[5].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[6].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[6].valueCoding = $DuplicateMatchCriteriaCS#houseNumberExact "Hausnummer exakt übereinstimmend"
-//* entry[1].search.extension[1].extension[6].valueCoding.version = "0.1.0"
+* entry[1].search.extension[1].extension[6].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[7].url = "matchedCriteria"
 * entry[1].search.extension[1].extension[7].valueCoding = $DuplicateMatchCriteriaCS#postalCodeExact "Postleitzahl exakt übereinstimmend"
-//* entry[1].search.extension[1].extension[7].valueCoding.version = "0.1.0"
+* entry[1].search.extension[1].extension[7].valueCoding.version = "0.1.0"
 
 * entry[1].search.extension[1].extension[8].url = "nonMatchedCriteria"
 * entry[1].search.extension[1].extension[8].valueCoding = $DuplicateMatchCriteriaCS#birthNameFuzzy "Geburtsname ungefähr übereinstimmend (fuzzy)"
-//* entry[1].search.extension[1].extension[8].valueCoding.version = "0.1.0"
+* entry[1].search.extension[1].extension[8].valueCoding.version = "0.1.0"
 
 
 // -----------------------------------------------------------------------------
@@ -129,8 +129,10 @@ Description: "First example Patient resource returned as a duplicate candidate."
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
-* identifier[0].system = "https://emiga.rki.de/fhir/sid/person-management/patient-id"
-* identifier[0].value = "PMS-123456"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "Person-XYZ-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "Person-PQRS-987654321"
 
 * name[0].use = #official
 * name[0].family = "Mustermann"
@@ -140,7 +142,13 @@ Description: "First example Patient resource returned as a duplicate candidate."
 * birthDate = "1980-01-01"
 
 //* address[0].use = #home
-* address[0].line[0] = "Musterstraße 12"
+//* address[0].use = #home
+* address[0].line = "Musterstr. 12"
+* address[0].line.extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address[0].line.extension[Strasse].valueString = "Musterstr."
+* address[0].line.extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address[0].line.extension[Hausnummer].valueString = "12"
+
 * address[0].city = "Berlin"
 * address[0].postalCode = "10115"
 * address[0].country = "DE"
@@ -162,8 +170,10 @@ Description: "Second example Patient resource returned as a duplicate candidate.
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
-* identifier[0].system = "https://emiga.rki.de/fhir/sid/person-management/patient-id"
-* identifier[0].value = "PMS-789012"
+* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
+* identifier[EmigaID].value = "Person-KLMN-123456789"
+* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+* identifier[EmigaFileNumber].value = "Person-GHIJ-987654321"
 
 * name[0].use = #official
 * name[0].family = "Muster"
@@ -173,7 +183,13 @@ Description: "Second example Patient resource returned as a duplicate candidate.
 * birthDate = "1980-01-01"
 
 //* address[0].use = #home
-* address[0].line[0] = "Musterstr. 12"
+* address[0].line = "Musterstr. 12"
+* address[0].line.extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address[0].line.extension[Strasse].valueString = "Musterstr."
+* address[0].line.extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address[0].line.extension[Hausnummer].valueString = "12"
+
+
 * address[0].city = "Berlin"
 * address[0].postalCode = "10115"
 * address[0].country = "DE"
