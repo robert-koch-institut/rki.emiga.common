@@ -1,25 +1,11 @@
-﻿**fix:** Add meta.security and remove array from name.given  
+﻿**feat:** Add Invariant validRegionKey that enforces exactly 12 digits for the regional keys    
+Extensions/ExtensionRegionalKey.json  
+**feat:** Tighten Cardinality on Communication.about to 1..1  
+StructureDefinitions/AnnotationCommunication.json   
+**fix:** Add meta.security and remove array from name.given  
 Examples/ExamplePatientMatchOutputBundle.json  
 **fix:** Regex to pass java Validator, fix invariant to function correctly  
 StructureDefinitions/AffectedPerson.json  
-**feat:** Add example Bundle instance  
-Examples/ExamplePatientMatchOutputBundle.json  
-**feat:** Add extensions in Profile  
-StructureDefinitions/MatchOutputBundle.json  
-**feat:** Add element matchScore in Extension  
-Extensions/ExtensionDuplicateMatchMetadata.json  
-**feat:** Add DuplicateMatchTriggerReasons VS and CS  
-CodeSystem/DuplicateMatchTriggerReasons.json  
-ValueSets/DuplicateMatchTriggerReasonsVS.json  
-**feat:** Add DuplicateMatchCriteria VS and CS  
-CodeSystem/DuplicateMatchCriteria.json  
-ValueSets/DuplicateMatchCriteriaVS.json  
-**feat:** Add slicing in entry  
-StructureDefinitions/MatchOutputBundle.json  
-**feat:** Add MatchOutputBundle Profile  
-StructureDefinitions/MatchOutputBundle.json  
-**feat:** Add Extension DuplicateMatchMetadata  
-Extensions/ExtensionDuplicateMatchMetadata.json  
 **fix:** Adjusted Invariant expressions for Email, Telephone, Fax Url to pass sushi compiling, Add "birthday not allowed in the future in birthdate Invariant  
 StructureDefinitions/AffectedPerson.json  
 **feat:** updated regex for email, telephone and fax - fax and email was the same, thus updated both to the same new regex  
