@@ -30,6 +30,6 @@ Context: Patient.address
 
 
 Invariant: validRegionKey
-Description: "Der Regionschlüssel soll genau 12 Ziffern enthalten."
+Description: "Der Regionalschlüssel soll genau 12 Ziffern enthalten."
 * severity = #error
 * expression = "$this.matches('^[0-9]{12}$')"
