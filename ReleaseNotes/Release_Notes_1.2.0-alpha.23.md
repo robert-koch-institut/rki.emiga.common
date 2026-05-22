@@ -10,8 +10,6 @@ StructureDefinitions/AffectedPerson.json
 StructureDefinitions/AffectedPerson.json  
 **feat:** updated regex for email, telephone and fax - fax and email was the same, thus updated both to the same new regex  
 StructureDefinitions/AffectedPerson.json  
-**fix:** typo  
-StructureDefinitions/AffectedPerson.json  
 **feat:** added constraint for deceased not in future  
 StructureDefinitions/AffectedPerson.json  
 **feat:** added regex constraints  
