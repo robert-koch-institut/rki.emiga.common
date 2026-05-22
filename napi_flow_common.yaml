@@ -11,14 +11,18 @@ profileSets:
   ignoredSanityChecks:
   - name: "MatchingNameAndIdCheck"
     reasoning: "IDs are not matching the names as per NAPI naming conventions."
-  #- name: "ValidReferencedValueSetCheck"
-  #  reasoning: "Referenced ValueSets must be valid."
-  #- name: "ValidUrlPatternCheck"
-  #  reasoning: "URLs must follow a specific pattern."
-  #- name: "MatchingVersionAndIdCheck"
-  #  reasoning: "Versions are not matching the IDs as per NAPI naming conventions."
-  #- name: "ExistenceOfValueSetCheck"
-  #  reasoning: "Referenced ValueSets must exist."
+  - name: "ValidReferencedValueSetCheck"
+    reasoning: "Referenced ValueSets must be valid."
+  - name: "ValidUrlPatternCheck"
+    reasoning: "URLs must follow a specific pattern."
+  - name: "MatchingVersionAndIdCheck"
+    reasoning: "Versions are not matching the IDs as per NAPI naming conventions."
+  - name: "ExistenceOfValueSetCheck"
+    reasoning: "Referenced ValueSets must exist."
+  # name: "ExistenceOfDateCheck"
+  #  reasoning: "Profiles must have a date."
+  - name: "VersionIsSemanticVersionCheck"
+    reasoning: "Versions must follow semantic versioning."
   resourceBaseUrl: null
   skipFhirSchemaValidation: false
   skipExampleValidation: false
@@ -28,7 +32,7 @@ profileSets:
 skipExampleValidation: false
 skipFhirSchemaValidation: false
 resourceParseMode: "STRICT"
-fhirSchemaValidationMaxSeverity: "INFORMATION"
+fhirSchemaValidationMaxSeverity: "ERROR"
 fhirExampleValidationMaxSeverity: null
 output: "napi_output_location_common"
 testFileDirectories: []
@@ -36,11 +40,24 @@ terminologyServers:
 - "http://tx.fhir.org/r4"
 valueSetExpansionIgnoreUrls:
 - "http://ihe-d.de/ValueSets/IHEXDSeventCodeList"
+- "http://fhir.de/ValueSet/bfarm/alpha-id"
+- "http://fhir.de/ValueSet/ask"
+- "http://fhir.de/ValueSet/bfarm/icd-10-gm"
+- "http://fhir.de/ValueSet/bfarm/atc"
+- "http://fhir.de/ValueSet/bfarm/ops"
+- "http://fhir.de/ValueSet/ifa/pzn"
+- "http://fhir.de/ValueSet/abdata/wg14"
+- "http://hl7.org/fhir/ValueSet/designation-use"
+#- "http://fhir.de/ValueSet/dkgev/anlage-8-laenderkennzeichen"
+#- "http://fhir.de/ValueSet/gender-amtlich-de"
 loadNpmDependencies: true
 snapshotDependenciesForSushi: true
 enableTreeShaking: true
 treeShakingWhitelistedResources: []
-treeShakingIgnoredResources: []
+treeShakingIgnoredResources:
+- "http://fhir.de/ValueSet/gender-amtlich-de"
+- "http://fhir.de/ValueSet/dkgev/anlage-8-laenderkennzeichen"
+- "http://terminology.hl7.org/CodeSystem/designation-usage"
 alwaysOutputBuiltInsMatching: []
 treeShakingTerminologyServerURL: ""
 ntsPackages: []

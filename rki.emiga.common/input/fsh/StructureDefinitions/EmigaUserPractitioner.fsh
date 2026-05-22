@@ -4,8 +4,8 @@ Id: EmigaUserPractitioner
 Title: "Emiga Nutzende Person"
 Description: "Ist eine EMIGA nutzende Person, also jemand mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet."
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
-* ^version = "0.3.1"
-* ^date = "2025-03-26"
+* ^version = "0.4.0"
+* ^date = "2026-04-24"
 
 * insert MetadataProfile
 * insert ProfileResourceCommon
