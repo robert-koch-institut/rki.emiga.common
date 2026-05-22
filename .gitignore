@@ -8,3 +8,6 @@ Thumbs.db
 /target
 /.project
 /TestServer
+/location_common_local.yaml
+/napi_flow_common.ignore.yaml
+/napi_flow_common.yaml

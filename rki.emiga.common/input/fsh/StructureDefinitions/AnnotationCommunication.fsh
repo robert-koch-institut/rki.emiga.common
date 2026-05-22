@@ -3,8 +3,8 @@ Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
-* ^version = "0.7.0"
-* ^date = "2026-03-04"
+* ^version = "0.9.0"
+* ^date = "2026-05-18"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
@@ -102,7 +102,7 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * topic.text ^definition = "Der Betreff der Annotation wird im Text Feld dokumentiert."
 
 //Über welche Entität wird die Annotation benötigt
-* about 0..* MS
+* about 1..1 MS
 * about ^short = "Bezugsentität"
 * about ^definition = "Referenz zur Bezugsentität"
 //Derzeit für Emiga Anwendungsfälle nicht relevant
@@ -138,6 +138,8 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * payload.content[x] only string or Reference(AttachmentDocumentReference) 
 * payload.content[x] ^comment = "Der Inhalt der Annotation wird im contentString Feld gespeichert oder im Fall eines Anhangs im contentAttachment Feld"
 //* payload.contentString 0..1 MS
+* payload.contentString MS
 * payload.contentString ^short = "Beschreibung - Inhalt der Annotation"
+* payload.contentReference MS
 * payload.contentReference ^short = "Anhang - Hier wird der Anhang der Annotation referenziert"
 

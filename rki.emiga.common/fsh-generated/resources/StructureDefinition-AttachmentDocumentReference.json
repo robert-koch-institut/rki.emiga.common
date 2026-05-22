@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "AttachmentDocumentReference",
   "url": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "name": "AttachmentDocumentReference",
   "title": "Anhang-Entität",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-14",
+  "date": "2026-04-24",
   "publisher": "Robert Koch-Institut",
   "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
   "fhirVersion": "4.0.1",
@@ -34,15 +34,17 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "DocumentReference.meta.profile:emigaprofile",
         "path": "DocumentReference.meta.profile",
         "sliceName": "emigaprofile",
-        "min": 0,
-        "max": "*",
-        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference",
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.meta.security",
