@@ -67,8 +67,7 @@ InstanceOf: EmigaUserPractitioner
 Usage: #inline
 * id = "EMIGA-USER-002"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
-//* meta.security[visibility] = $ResourceVisibilityType#inAgency
-//* meta.security[responsibility] = $ResourceResponsibility#1.
+
 * meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
