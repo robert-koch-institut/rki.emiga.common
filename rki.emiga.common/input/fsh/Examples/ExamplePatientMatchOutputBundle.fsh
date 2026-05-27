@@ -1,9 +1,3 @@
-Alias: $MatchOutputBundle = https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle
-Alias: $DuplicateMatchMetadata = https://emiga.rki.de/fhir/common/StructureDefinition/DuplicateMatchMetadata
-Alias: $MatchGrade = http://hl7.org/fhir/StructureDefinition/match-grade
-Alias: $DuplicateMatchCriteriaCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchCriteria
-Alias: $DuplicateMatchTriggerReasonsCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchTriggerReasons
-
 Instance: ExamplePatientMatchOutputBundle
 InstanceOf: MatchOutputBundle
 Usage: #example
