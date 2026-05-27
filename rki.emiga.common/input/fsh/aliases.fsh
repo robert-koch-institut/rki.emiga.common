@@ -1,6 +1,6 @@
 // rki.emiga.common
 Alias: $AnnotationCategoryCS = https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory
-Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse#
+Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
 Alias: $DuplicateMatchCriteriaCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchCriteria
 Alias: $DuplicateMatchTriggerReasonsCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchTriggerReasons
 Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
