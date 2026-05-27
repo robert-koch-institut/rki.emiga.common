@@ -8,7 +8,7 @@ Instance: ExamplePatientMatchOutputBundle
 InstanceOf: MatchOutputBundle
 Usage: #example
 Title: "Example Patient Match Output Bundle"
-Description: "Example Patient/$match response Bundle containing normalized search score, match grade, and duplicate match metadata."
+
 
 * meta.profile[+] = $MatchOutputBundle
 * type = #searchset
