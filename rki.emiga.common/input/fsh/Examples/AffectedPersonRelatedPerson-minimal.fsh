@@ -14,7 +14,7 @@ Description: "Minimalbeispiel einer Bezugsperson, die mit einer betroffenen Pers
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #inPublicHealthService
+* meta.security[visibility].code = #inAgency 
 
 // Identifier
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
@@ -27,11 +27,10 @@ Description: "Minimalbeispiel einer Bezugsperson, die mit einer betroffenen Pers
 
 // Patient reference — link to minimal AffectedPerson instance
 * patient = Reference(AffectedPerson-minimal)
-* patient.reference = "Patient/AffectedPerson-minimal"
 * patient.display = "Betroffene Person (Minimal)"
 
 // Relationship type - using EMIGA CodeSystem
 * relationship[0].coding[0].system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * relationship[0].coding[0].code = #legalGuardian
-* relationship[0].coding[0].display = "rechtlicher Betreuer"
-* relationship[0].text = "rechtlicher Betreuer"
+* relationship[0].coding[0].display = "Sorgeberechtigte Person"
+* relationship[0].text = "Sorgeberechtigte Person"

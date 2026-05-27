@@ -39,7 +39,7 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 
 //  telecom (multiple)
 * telecom[Phone].system = #phone
-* telecom[Phone].value = "+49-89-1234567"
+* telecom[Phone].value = "+49 89 1234567"
 * telecom[Phone].use = #mobile
 
 * telecom[Email].system = #email
@@ -47,10 +47,10 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 * telecom[Email].use = #home
 
 * telecom[Fax].system = #fax
-* telecom[Fax].value = "+49-89-1112223"
+* telecom[Fax].value = "+49 89 1112223"
 
 // Gender with amtlich extension
-* gender = #female
+* gender = #other
 * gender.extension[other-amtlich].url = "http://fhir.de/StructureDefinition/gender-amtlich-de"
 * gender.extension[other-amtlich].valueCoding.system = "http://fhir.de/CodeSystem/gender-amtlich-de"
 * gender.extension[other-amtlich].valueCoding.code = #D
@@ -91,26 +91,19 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 * deceasedBoolean = false
 
 //  link (multiple)
+
 // Required slices (use named paths)
 * link[patientLink].other.reference = "Patient/AffectedPerson-maximal"
 * link[patientLink].type = #seealso
-
 * link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-maximal"
 * link[relatedPersonLink].type = #seealso
 
 // Additional link entries (unsliced)
-* link[0].other.reference = "Patient/AP-002"
+// Additional link entries (unsliced)
+* link[0].other.reference = "Patient/AffectedPerson-minimal"
 * link[0].type = #seealso
-
-* link[1].other.reference = "Patient/AP-003"
-* link[1].type = #replaces
-
-
-* link[relatedPersonLink].type = #seealso
-* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-maximal"
-
-* link[patientLink].type = #seealso
-* link[patientLink].other.reference = "Patient/AffectedPerson-maximal"
+* link[1].other.reference = "Patient/AffectedPerson-typical"
+* link[1].type = #seealso
 
 // Communication (Sprachkenntnisse)
 * communication[+].language.coding.system = "urn:ietf:bcp:47"

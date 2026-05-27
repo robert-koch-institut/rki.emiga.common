@@ -9,8 +9,8 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.4.1"
-* ^date = "2025-03-26"
+* ^version = "0.5.0"
+* ^date = "2026-05-18"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
@@ -18,6 +18,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 
 * meta MS
 * meta.profile 1.. MS
+* meta.profile[emigaprofile] MS
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson" 
 
 * meta.extension contains $LastModifiedBy named lastModifiedBy 0..1 MS
@@ -56,52 +57,6 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * extension[landOfBirth].valueCoding ^mustSupport = true
 
 * insert IdentifierCommon
-/*
-* extension[nationality].extension contains
-    code 0..1 and
-    period 0..1
-* extension[nationality].extension[code].value[x] only CodeableConcept
-* extension[nationality].extension[period].value[x] only Period
-*/
-//* extension[birthPlace] from http://hl7.org/fhir/StructureDefinition/patient-birthPlace
-//* extension[birthPlace] ^definition = "Geburtsland"
-//* extension[birthPlace].value[x] only Address
-
-// 'Identifies this Patient across multiple systems' - 0..* - Identifier
-// Logischer Identifier des Patientes
-// Wir gestalten das Slicing bewusst offen, um später weitere Identifier-Typen abbilden zu können (z.B. DEMIS-ID, gematik-ID, usw.)
-// Cardinalities will be set in slicing
-//* identifier.system 0..1
-//* identifier.value 0..1
-// Must have at least two identifiers
-/*
-* identifier MS 
-* identifier
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "system"
-  * ^slicing.rules = #open
-  * ^slicing.description = "slicing patient identifier by system"
-  * ^slicing.ordered = false
-* identifier contains EmigaID 1..1 MS and EmigaFileNumber 1..1 MS
-
-* identifier[EmigaID] only IdentifierEmigaID
-* identifier[EmigaID].use 0..1 MS
-* identifier[EmigaID].use = #official (exactly)
-* identifier[EmigaID].system 1..1 MS
-* identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
-
-* identifier[EmigaFileNumber] only IdentifierEmigaFileNumber
-* identifier[EmigaFileNumber].use 0..1 MS
-* identifier[EmigaFileNumber].use = #official (exactly)
-* identifier[EmigaFileNumber].system 1..1 MS
-* identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
-*/
-//Reserved for later use
-//* identifier[referencenumberpatientid].assigner
-
-
-// Indicating if the patient is active will not be needed at this point
-//active 0..1 
 
 // Name of the Patient
 * name MS
@@ -113,12 +68,15 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * name.extension contains $SalutationExt named salutation 0..1 MS
 * name.use 0..1 MS
 * name.use ^comment = "Die Geburtsname wird über den use 'maiden' abgebildet. Der offizielle Name wird über den use 'official' abgebildet. Der Kurzname wird über den use 'nickname' abgebildet. Wenn kein Wert angegeben wird, ist der offizielle Name gemeint."
+* name.use obeys validString
 * name.family MS
 * name.family ^short = "Nachname"
 * name.family ^definition = "Nachname der betroffenen Person."
+* name.family obeys validString
 * name.given MS
 * name.given ^short = "Vorname"
 * name.given ^definition = "Vorname der betroffenen Person."
+* name.given obeys validString
 // Kontaktangaben des Patientes
 * telecom 0.. MS
 * telecom ^slicing.discriminator.type = #value
@@ -126,9 +84,9 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * telecom ^slicing.rules = #closed
 * telecom ^definition = "Kontaktangaben der betroffenen Person. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden."
 * telecom contains
-    Email 0..* and
-    Phone 0..* and
-    Fax 0..*
+    Email 0..* MS and
+    Phone 0..* MS and
+    Fax 0..* MS
 * telecom[Email].system 1.. MS
 * telecom[Email].system = #email (exactly)
 * telecom[Email].value 1.. MS
@@ -204,91 +162,16 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * birthDate ^short = "Geburtsdatum"
 * birthDate ^definition = "Geburtsdatum der betroffenen Person"
 
-// A Related Person Resource wird dafür warscheinlich benuzt, 
-/*
-* contact MS
-
-* contact.relationship 0..* MS
-* contact.relationship.coding MS
-* contact.relationship.coding.system 0..1 MS
-* contact.relationship.coding.code 0..1 MS
-* contact.name 0..1 MS
-* contact.name only $humanname-de-basis
-* contact.name ^short = "Name"
-* contact.name ^definition = "Name der Kontakt Person."
-// Name Extension for Salutation
-//* name.extension contains https://emiga.rki.de/fhir/case/StructureDefinition/Salutation named salutation 1..1 MS
-* contact.name.family 0..1 MS
-* contact.name.family ^short = "Nachname"
-* contact.name.family ^definition = "Nachname der betroffenen Person."
-* contact.name.given ..1 MS
-* contact.name.given ^short = "Vorname"
-* contact.name.given ^definition = "Vorname der betroffenen Person."
-
-//* contact.telecom 0..* 
-//* contact.telecom.system 0..1
-//* contact.telecom.value 0..1
-* contact.telecom 0.. MS
-* contact.telecom ^slicing.discriminator.type = #value
-* contact.telecom ^slicing.discriminator.path = "system"
-* contact.telecom ^slicing.rules = #closed
-* contact.telecom ^definition = "Kontaktangaben der Organisation. Telefonnummern, E-Mailadressen, Urls und Faxnummern können angegeben werden."
-* contact.telecom contains
-    Email 0..* and
-    Phone 0..* and
-    Fax 0..*
-* contact.telecom[Email].system 1.. MS
-* contact.telecom[Email].system = #email (exactly)
-* contact.telecom[Email].value 1.. MS
-* contact.telecom[Email].value obeys validEmailAddress
-* contact.telecom[Phone].system 1.. MS
-* contact.telecom[Phone].system = #phone (exactly)
-* contact.telecom[Phone].value 1.. MS
-* contact.telecom[Phone].value obeys validPhoneNumber
-* contact.telecom[Fax].system = #fax (exactly)
-* contact.telecom[Fax].value 1.. MS
-* contact.telecom[Fax].value obeys validFaxNumber
-
-* contact.gender 0..1 MS
-* contact.gender.extension ^slicing.discriminator.type = #value
-* contact.gender.extension ^slicing.discriminator.path = "url"
-* contact.gender.extension ^slicing.rules = #open
-* contact.gender.extension contains $gender-amtlich-de named other-amtlich 0..1 MS and $data-absent named data-absent-reason 0..1 MS
-
-* contact.address 0..1 MS
-* contact.address only $address-de-basis
-* contact.address.extension[Stadtteil] ^mustSupport = true
-* contact.address.extension[Stadtteil].valueString MS
-* contact.address.extension[Stadtteil].valueString obeys validString
-* contact.address.line.extension[Strasse] ^mustSupport = true
-* contact.address.line.extension[Strasse].valueString MS
-* contact.address.line.extension[Strasse].valueString obeys validString
-* contact.address.line.extension[Hausnummer] ^mustSupport = true
-* contact.address.line.extension[Hausnummer].valueString MS
-* contact.address.line.extension[Hausnummer].valueString obeys validHouseNumber
-* contact.address.line.extension[Adresszusatz] ^mustSupport = true
-* contact.address.line.extension[Adresszusatz].valueString MS
-* contact.address.line.extension[Adresszusatz].valueString obeys validString
-* contact.address.line.extension[Postfach] ^mustSupport = true
-* contact.address.line.extension[Postfach].valueString MS
-* contact.address.line.extension[Postfach].valueString obeys validString
-* contact.address.city MS
-* contact.address.city ^short = "Stadt"
-* contact.address.city ^definition = "Stadt"
-// Reserved for later use if needed
-//* address.postalCode from $postalCode (preferred)
-* contact.address.postalCode ^definition = "Postleitzahl" //. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/postalCode) im coding Element dargestellt werden."
-* contact.address.postalCode MS 
-* contact.address.postalCode obeys validPLZ
-* contact.address.country from $iso3166-1-2 (extensible)
-* contact.address.country ^short = "Land"
-* contact.address.country ^definition = "Land"
-* contact.address.city obeys validString
-*/
 * deceased[x] MS
-//* deceased[x] MS
 * deceased[x] ^short = "Verstorben"
 * deceased[x] ^definition = "Angabe ob die betroffene Person verstorben ist"
+* deceasedBoolean MS
+* deceasedBoolean ^short = "Verstorben (boolean)"
+* deceasedBoolean ^definition = "Angabe ob die betroffene Person verstorben ist (boolean)."
+* deceasedDateTime MS
+* deceasedDateTime ^short = "Verstorben (Datum/Uhrzeit)"
+* deceasedDateTime ^definition = "Angabe ob die betroffene Person verstorben ist mit Angabe des Datums und der Uhrzeit."
+* deceasedDateTime obeys deceasedDateTimeNotInFuture
 
 // Noch nicht benötigt
 * maritalStatus ..0
@@ -304,33 +187,9 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * generalPractitioner ^definition = "Behandelnde Person der betroffenen Person."
 * managingOrganization ..0
 
-/*
-* link ^slicing.discriminator[0].type = #type
-* link ^slicing.discriminator[0].path = "other"
-* link ^slicing.discriminator[1].type = #value
-* link ^slicing.discriminator[1].path = "type"
-* link ^slicing.rules = #open
-
-* link contains relatedPersonLink 0..* MS and patientLink 0..* MS
-* link[relatedPersonLink] ^short = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
-* link[relatedPersonLink] ^definition = "Link zu einer Bezugsperson (RelatedPerson) Resource die den selben Person darstellt"
-* link[relatedPersonLink].type 1..1 MS
-* link[relatedPersonLink].type = #seealso (exactly)
-* link[relatedPersonLink].other 1..1 MS
-* link[relatedPersonLink].other only Reference(RelatedPerson)
-* link[relatedPersonLink].other.reference MS
-
-* link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
-* link[patientLink] ^definition = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
-* link[patientLink].type 1..1 MS
-* link[patientLink].other 1..1 MS
-* link[patientLink].other only Reference(Patient)
-* link[patientLink].other.reference MS
-*/
-
 * link MS
-* link ^slicing.discriminator.type = #type
-* link ^slicing.discriminator.path = "other"
+* link ^slicing.discriminator.type = #value
+* link ^slicing.discriminator.path = "other.type"
 * link ^slicing.rules = #open
 * link contains  relatedPersonLink 0..* MS and 
                 patientLink 0..* MS
@@ -340,19 +199,17 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 * link[relatedPersonLink].other 1..1 MS
 * link[relatedPersonLink].other only Reference(RelatedPerson)
 * link[relatedPersonLink].other.reference MS
+* link[relatedPersonLink].other.type 1..1 MS
+* link[relatedPersonLink].other.type = "RelatedPerson" (exactly)
+* link[relatedPersonLink].other.reference MS
 
 * link[patientLink].type 1..1 MS
 * link[patientLink] ^short = "Link zu einer betroffenen Person (Patient) Resource die den selben Person darstellt"
 * link[patientLink].other 1..1 MS
 * link[patientLink].other only Reference(Patient)
+* link[patientLink].other.type 1..1 MS
+* link[patientLink].other.type = "Patient" (exactly)
 * link[patientLink].other.reference MS
-
-
-
-// Diskussion ob ein managingOrganization benötigt wird
-//* managingOrganization 0..1 MS // Must have a managing organization
-//* managingOrganization.reference 0..1
-//* link 0..* 
 
 // Invariants to validate the address and telecom values
 
@@ -360,42 +217,34 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 Invariant: validEmailAddress
 Description: "Die E-Mail-Adresse muss valide sein."
 * severity = #error
-* expression = "$this.matches('^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+[.])+[a-zA-Z0-9]{2,63}$')"
+* expression = "$this.matches('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+.[a-zA-Z]{2,63}$')"
 
 //    Max. Zeichenlänge = 50 / Nur Zahlen erlaubt / Länderpräfix mit Deutschland als Default 
 Invariant: validPhoneNumber
 Description: "Die Telefonnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(( ?\\\\+[0-9]{2,4}( ?[0-9]+? ?| ? \\\\([0-9]+?\\\\) ?))|(\\\\(0[0-9 ]+?\\\\) ?)|( 0[0-9]+? ?( |-|\\/) ?))? ?[0-9]+?[0-9 \\/-]*[0-9]$')"
+* expression = "$this.matches('^(?:[+][1-9][0-9]{1,14}|[0-9][0-9 .()/-]{0,48}[0-9])$')"
 
 //     Max. Zeichenlänge = 1000 / Alle Zeichen erlaubt / Formatvalidierung Website
-
 Invariant: validUrl
 Description: "Die Url muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(https?:\\/\\/)?([\\da-z.-]{1,1000})\\.([a-z.]{2,6})([/\\w.-]{0,999})\\/?$')"
+* expression = "$this.matches('^(https?:\\/\\/)?[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,63}(\\/[a-zA-Z0-9._\\-\\/%%]*)?$')"
 
 Invariant: validFaxNumber
 Description: "Die Faxnummer muss valide sein."
 * severity = #error
-* expression = "$this.matches('^(( ?\\\\+[0-9]{2,4}( ?[0-9]+? ?| ? \\\\([0-9]+?\\\\) ?))|(\\\\(0[0-9 ]+?\\\\) ?)|( 0[0-9]+? ?( |-|\\/) ?))? ?[0-9]+?[0-9 \\/-]*[0-9]$')"
-
-// valid String
+* expression = "$this.matches('^(?:[+][1-9][0-9]{1,14}|[0-9][0-9 .()/-]{0,48}[0-9])$')"
 
 Invariant: validString
 Description: "Zeichenlänge maximal 255 Zeichen"
 * severity = #error
 * expression = "$this.matches('^.{1,255}$')"
 
-// valid Hausnummer
-
 Invariant: validHouseNumber
 Description: "Die Hausnummer muss valide sein. Zeichenlänge maximal 50 Zeichen"
 * severity = #error
 * expression = "$this.matches('^.{1,50}$')"
-
-
-//valid PLZ
 
 Invariant: validPLZ
 Description: "Die PLZ muss valide sein. Zeichenlänge maximal 10 Zeichen"
@@ -403,13 +252,16 @@ Description: "Die PLZ muss valide sein. Zeichenlänge maximal 10 Zeichen"
 * expression = "$this.matches('^.{1,10}$')"
 
 Invariant: validBirthDate
-Description: "Das Geburtsjahr muss mit 19 oder 20 beginnen."
-* severity = #warning
-* expression = "$this.toString().matches('^19[0-9]{2}-[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}-[0-9]{2}|19[0-9]{2}-[0-9]{2}|20[0-9]{2}-[0-9]{2}|19[0-9]{2}|20[0-9]{2}$')"
+Description: "Das Geburtsjahr muss mit 19 oder 20 beginnen und darf nicht in der Zukunft liegen."
+* severity = #error
+* expression = "$this.toString().matches('^(19|20)[0-9]{2}(-[0-9]{2}(-[0-9]{2})?)?$') and $this <= today()"
 
-
-// Invariant to ensure that only family name is present when name.use is maiden
 Invariant: maidenNameOnlyFamily
 Description: "Wenn name.use = 'maiden', darf nur name.family ausgefüllt werden. Die anderen Namensbestandteile müssen leer sein."
 * severity = #error
 * expression = "(use = 'maiden') implies (given.empty() and prefix.empty() and suffix.empty() and text.empty() and family.exists())"
+
+Invariant: deceasedDateTimeNotInFuture
+Description: "Das Todesdatum darf nicht in der Zukunft liegen."
+* severity = #error
+* expression = "$this <= now()"

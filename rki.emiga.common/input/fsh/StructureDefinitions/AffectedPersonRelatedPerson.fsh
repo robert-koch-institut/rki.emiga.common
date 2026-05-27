@@ -7,8 +7,8 @@ Description: "Dieses Profil bildet eine Bezugsperson der betroffenen Person ab. 
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
-* ^version = "0.4.0"
-* ^date = "2025-12-17"
+* ^version = "0.5.0"
+* ^date = "2026-04-24"
 
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon

@@ -9,3 +9,4 @@ Id: PersonResourceVisibilityType
 
 * $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle" 
 * $ResourceVisibilityType#transferable "übermittelbar"
+

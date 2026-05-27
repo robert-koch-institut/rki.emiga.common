@@ -40,7 +40,6 @@ Usage: #example
 
 // About (multiple references allowed)
 * about[+] = Reference(DocumentReference/DocumentReference-maximal)
-* about[+] = Reference(Observation/Observation-Result-003)
 
 // Sent (custom date)
 * sent = "2025-11-10T10:00:00Z"

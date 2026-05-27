@@ -1,24 +1,23 @@
 // -----------------------------------------------------------------------------
-//  AffectedPersonRelatedPerson-typical.fsh
-//  Typical example for RelatedPerson linked to AffectedPerson
+//  AffectedPersonRelatedPerson-maximal.fsh
+//  Maximal example for RelatedPerson linked to AffectedPerson
 // -----------------------------------------------------------------------------
 
-Instance: AffectedPersonRelatedPerson-typical
+Instance: AffectedPersonRelatedPerson-maximal
 InstanceOf: AffectedPersonRelatedPerson
 Usage: #example
-Title: "Bezugsperson der betroffenen Person (Typisch)"
-Description: "Typisches Beispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht."
+Title: "Bezugsperson der betroffenen Person (Maximal)"
+Description: "Maximalbeispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht."
 
-* id = "affectedpersonrelatedperson-typical"
+* id = "affectedpersonrelatedperson-maximal"
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #inPublicHealthService
+* meta.security[visibility].code = #transferable
 // -----------------------------------------------------------------------------
-//  Identifieren (EmigaID + EmigaFileNumber)
+//  Identifieren (EmigaID + EmigaFileNumber + SurvNetFileNumber)
 // -----------------------------------------------------------------------------
-
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
 * identifier[EmigaID].value = "RelatedPerson-PQRST-123456789"
 * identifier[EmigaID].use = #official
@@ -27,19 +26,22 @@ Description: "Typisches Beispiel einer Bezugsperson, die mit einer betroffenen P
 * identifier[EmigaFileNumber].value = "RelatedPerson-XYZ-987654321"
 * identifier[EmigaFileNumber].use = #official
 
+* identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+* identifier[SurvNetFileNumber].value = "SURVNET-RelatedPerson-567890"
+* identifier[SurvNetFileNumber].use = #temp
+
 // -----------------------------------------------------------------------------
 //  Bezug zur betroffenen Person
 // -----------------------------------------------------------------------------
 
-* patient = Reference(AffectedPerson-typical)
-* patient.reference = "Patient/AffectedPerson-typical"
-* patient.display = "Betroffene Person (Typisch - Anna Müller)"
+* patient = Reference(AffectedPerson-maximal)
+* patient.display = "Betroffene Person (Maximal - Anna Müller)"
 
 // -----------------------------------------------------------------------------
-//  Beziehungstyp (EMIGA CodeSystem)
+//  Beziehungstyp (EMIGA CodeSystem / ValueSet)
 // -----------------------------------------------------------------------------
 
 * relationship[0].coding[0].system = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
-* relationship[0].coding[0].code = #parentalAuthority
-* relationship[0].coding[0].display = "Erziehungsberechtigter"
-* relationship[0].text = "Erziehungsberechtigter"
+* relationship[0].coding[0].code = #legalGuardian
+* relationship[0].coding[0].display = "Sorgeberechtigte Person"
+* relationship[0].text = "Sorgeberechtigte Person"
