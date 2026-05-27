@@ -67,14 +67,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AnnotationBundle"
-        },
-        "name": "Annotations Bundle",
-        "description": "Dieses Profil bildet ein Annotations-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Annotationen (z.B. Notizen, Kommentaren und zugehörigen Ressourcen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/AnnotationCategoryVS"
         },
         "name": "Annotationskategorien",
@@ -349,7 +341,6 @@
           "reference": "Bundle/ExamplePatientMatchOutputBundle"
         },
         "name": "Example Patient Match Output Bundle",
-        "description": "Example Patient/$match response Bundle containing normalized search score, match grade, and duplicate match metadata.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle"
       },
       {
@@ -551,13 +542,6 @@
         "name": "SurvNet Aktenzeichen Identifier",
         "description": "SurvNet Aktenzeichen Identifier-Profil",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/TransactionBundleAnnotation01"
-        },
-        "name": "TransactionBundleAnnotation01",
-        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationBundle"
       },
       {
         "reference": {
