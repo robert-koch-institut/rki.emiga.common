@@ -86,16 +86,16 @@ Im Folgenden wird ein Beispiel für eine Bezugsperson einer betroffenen Person d
 
 <tabs>
     <tab title="Übersicht">      
-        {{render:RelatedPerson-4551.json}}
+        {{render:RelatedPerson4551.json}}
     </tab>
     <tab title="XML">      
-        {{xml:RelatedPerson-4551.json}}
+        {{xml:RelatedPerson4551.json}}
     </tab>
     <tab title="JSON">
-        {{json:RelatedPerson-4551.json}}
+        {{json:RelatedPerson4551.json}}
     </tab>
     <tab title="Link">
-        {{link:RelatedPerson-4551.json}}
+        {{link:RelatedPerson4551.json}}
     </tab>
 </tabs>
 
