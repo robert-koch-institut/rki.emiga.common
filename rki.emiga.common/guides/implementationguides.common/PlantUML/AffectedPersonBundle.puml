@@ -1,18 +1,20 @@
 @startuml
-title AffectedPersonBundle - Class Diagram
+title Create Person - Class Diagram
 
 class AffectedPerson{
 }
 class EmigaUserPractitioner {
 }
-class AffectedPersonBundle {
+class TransactionBundle {
+    <b>+</b> type: FixedValue ('transaction') [1..1]
 }
 
-AffectedPerson --> AffectedPersonRelatedPerson
-AffectedPerson --> EmigaUserPractitioner
+AffectedPerson --> AffectedPersonRelatedPerson : link.relatedPersonLink
+AffectedPerson --> EmigaUserPractitioner : lastModifiedBy
 
-AffectedPersonBundle ..> AffectedPerson
-AffectedPersonBundle ..> AffectedPersonRelatedPerson
-AffectedPersonBundle ..> EmigaUserPractitioner
+TransactionBundle ..> AffectedPerson : entry[0]
+TransactionBundle ..> EmigaUserPractitioner : entry[1]
+TransactionBundle ..> AffectedPersonRelatedPerson : entry[2]
+
 
 @enduml

@@ -1,26 +1,23 @@
 @startuml
 skinparam linetype ortho
 
-title AnnotationBundle - Class Diagram
+title Create Annotation - Class Diagram
 
-class AnnotationBundle{
+class Bundle{
+    <b>+</b> type: FixedValue ('transaction') [1..1]
 }
 class AnnotationCommunication{
-}
-class Resource {
 }
 class AttachmentDocumentReference {
 }
 class EmigaUserPractitioner {
 }
 
-AnnotationCommunication --> EmigaUserPractitioner
-AnnotationCommunication --> AttachmentDocumentReference 
-AnnotationCommunication --> Resource
+AnnotationCommunication --> EmigaUserPractitioner : author
+AnnotationCommunication --> AttachmentDocumentReference : payload
 
-AnnotationBundle ..> AnnotationCommunication
-AnnotationBundle ..> EmigaUserPractitioner
-AnnotationBundle ..> AttachmentDocumentReference
-AnnotationBundle ..> Resource
+Bundle ..> AnnotationCommunication : entry[0]
+Bundle ..> EmigaUserPractitioner : entry[1]
+Bundle ..> AttachmentDocumentReference : entry[2]
 
 @enduml
