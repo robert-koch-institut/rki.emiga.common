@@ -11,10 +11,10 @@ Dieser Abschnitt bietet eine Übersicht über alle in diesem Implementierungslei
 
 #### Enthaltene Anwendungsfälle:
 
-1. **Annotationen**  
-   Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen.
+1. **Annotationen und Anhänge**  
+   Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen. Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.
 
-2. **Personen**  
+2. **Personen und Bezugspersonen**  
    Die betroffene Person enthält relevante Angaben zum Patienten.
 
 
