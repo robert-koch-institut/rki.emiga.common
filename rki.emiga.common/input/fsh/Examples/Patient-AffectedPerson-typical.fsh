@@ -9,7 +9,7 @@ Usage: #example
 // Meta Profile
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.9"
 
-* meta.security[visibility] = $ResourceVisibilityType#internal
+* meta.security[visibility] = $ResourceVisibilityType#inAgency
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
 // Citizenship (must include coding.system + coding.code)
@@ -43,13 +43,6 @@ Usage: #example
 * telecom[Phone].system = #phone
 * telecom[Phone].value = "+49301234567"
 
-// Address with extensions
-* address[0].line[0].value = "Cherry Tree Lane 1"
-* address[0].line[0].extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-* address[0].line[0].extension[Strasse].valueString = "Cherry Tree Lane"
-* address[0].line[0].extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
-* address[0].line[0].extension[Hausnummer].valueString = "1"
-
 // Gender with amtlich extension
 * gender = #female
 
@@ -71,14 +64,14 @@ Usage: #example
 * communication[0].language.coding.display = "Deutsch"
 
 // General Practitioner
-* generalPractitioner[0].reference = "Practitioner/1234"
+* generalPractitioner[0].reference = "Practitioner/EmigaUser-001"
 
 * deceasedBoolean = false
 
 // Link to RelatedPerson
 * link[relatedPersonLink].type = #seealso
-* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-typical"
+* link[relatedPersonLink].other.reference = "RelatedPerson/affectedPersonRelatedPerson-minimal"
 
 // Link to Patient
 * link[patientLink].type = #seealso
-* link[patientLink].other.reference = "Patient/AffectedPerson-typical"
+* link[patientLink].other.reference = "Patient/AffectedPerson-minimal"

@@ -9,7 +9,7 @@ Usage: #example
 // Meta Profile
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.9"
 
-* meta.security[visibility] = $ResourceVisibilityType#internal
+* meta.security[visibility] = $ResourceVisibilityType#inAgency
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
 
@@ -56,10 +56,4 @@ Usage: #example
 // Deceased Status
 * deceasedBoolean = false
  
-// Link to RelatedPerson (mandatory type + other reference)
-* link[relatedPersonLink].type = #seealso
-* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-minimal"
 
-// Link to Patient (mandatory type + other reference)
-* link[patientLink].type = #seealso
-* link[patientLink].other.reference = "Patient/AffectedPerson-minimal"

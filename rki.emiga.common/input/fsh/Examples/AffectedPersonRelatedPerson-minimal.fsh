@@ -9,7 +9,7 @@ Usage: #example
 Title: "Bezugsperson der betroffenen Person (Minimal)"
 Description: "Minimalbeispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht."
 
-* id = "affectedpersonrelatedperson-min"
+* id = "affectedpersonrelatedperson-minimal"
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.

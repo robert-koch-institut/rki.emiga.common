@@ -9,7 +9,7 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 // Meta Profile
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson|1.2.0-alpha.9"
 
-* meta.security[visibility] = $ResourceVisibilityType#internal
+* meta.security[visibility] = $ResourceVisibilityType#inAgency
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
 
@@ -35,11 +35,10 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 
 * name[1].use = #maiden
 * name[1].family = "Schneider"
-* name[1].given[0] = "Anna"
 
 //  telecom (multiple)
 * telecom[Phone].system = #phone
-* telecom[Phone].value = "+49 89 1234567"
+* telecom[Phone].value = "+49891234567"
 * telecom[Phone].use = #mobile
 
 * telecom[Email].system = #email
@@ -47,7 +46,7 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 * telecom[Email].use = #home
 
 * telecom[Fax].system = #fax
-* telecom[Fax].value = "+49 89 1112223"
+* telecom[Fax].value = "+49891112223"
 
 // Gender with amtlich extension
 * gender = #other
@@ -61,30 +60,32 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 
 // Address with all Must Support extensions
 * address[0].line[0].value = "Cherry Tree Lane 1"
-
 // Street and house number
 * address[0].line[0].extension[Strasse].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
 * address[0].line[0].extension[Strasse].valueString = "Cherry Tree Lane"
-
 * address[0].line[0].extension[Hausnummer].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
 * address[0].line[0].extension[Hausnummer].valueString = "1"
-
 // Additional address details
 * address[0].line[0].extension[Adresszusatz].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
 * address[0].line[0].extension[Adresszusatz].valueString = "3rd Floor"
-
-* address[0].line[0].extension[Postfach].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
-* address[0].line[0].extension[Postfach].valueString = "Postfach 123"
-
 // City and postal code
 * address[0].city = "München"
 * address[0].postalCode = "80331"
-
 // Address use (RKI extension)
 * address[0].extension[addressUse].url = "https://demis.rki.de/fhir/StructureDefinition/AddressUse"
 * address[0].extension[addressUse].valueCoding.system = "https://demis.rki.de/fhir/CodeSystem/addressUse"
 * address[0].extension[addressUse].valueCoding.code = #primary
 * address[0].extension[addressUse].valueCoding.display = "Hauptwohnsitz"
+// PO Box address (separate from street address per add-6 constraint)
+* address[1].line[0].value = "Postfach 123"
+* address[1].line[0].extension[Postfach].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
+* address[1].line[0].extension[Postfach].valueString = "Postfach 123"
+* address[1].city = "München"
+* address[1].postalCode = "80331"
+* address[1].extension[addressUse].url = "https://demis.rki.de/fhir/StructureDefinition/AddressUse"
+* address[1].extension[addressUse].valueCoding.system = "https://demis.rki.de/fhir/CodeSystem/addressUse"
+* address[1].extension[addressUse].valueCoding.code = #primary
+* address[1].extension[addressUse].valueCoding.display = "Hauptwohnsitz"
 
 
 // Deceased Boolean 
@@ -92,17 +93,13 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 
 //  link (multiple)
 
-// Required slices (use named paths)
-* link[patientLink].other.reference = "Patient/AffectedPerson-maximal"
-* link[patientLink].type = #seealso
-* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-maximal"
+// Link to RelatedPerson
 * link[relatedPersonLink].type = #seealso
+* link[relatedPersonLink].other.reference = "RelatedPerson/AffectedPersonRelatedPerson-minimal"
 
-// Additional link entries (unsliced)
-// Additional link entries (unsliced)
-* link[0].other.reference = "Patient/AffectedPerson-minimal"
-* link[0].type = #seealso
-* link[1].other.reference = "Patient/AffectedPerson-typical"
+// Link to Patient
+* link[patientLink].type = #seealso
+* link[patientLink].other.reference = "Patient/AffectedPerson-minimal"
 * link[1].type = #seealso
 
 // Communication (Sprachkenntnisse)
@@ -111,4 +108,4 @@ Description: "Ein maximales Beispiel für eine Patientenressource basierend auf 
 * communication[=].language.coding.display = "Deutsch"
 
 // General Practitioner (Behandelnde Person)
-* generalPractitioner[+].reference = "Practitioner/Dr-Schmidt"
+* generalPractitioner[+].reference = "Practitioner/EmigaUser-001"

@@ -324,7 +324,7 @@
       },
       {
         "reference": {
-          "reference": "RelatedPerson/affectedpersonrelatedperson-min"
+          "reference": "RelatedPerson/affectedpersonrelatedperson-minimal"
         },
         "name": "Bezugsperson der betroffenen Person (Minimal)",
         "description": "Minimalbeispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht.",

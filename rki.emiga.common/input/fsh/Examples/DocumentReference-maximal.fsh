@@ -8,12 +8,12 @@ Usage: #example
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #inPublicHealthService
+* meta.security[visibility].code = #inAgency
 // REQUIRED + MS FIELDS
 * status = #current
 * date = "2025-11-19T10:00:00+01:00"
 // Required author
-* author[0].reference = "Practitioner/example"
+* author[0].reference = "Practitioner/EmigaUser-001"
 // Identifiers
 * identifier[EmigaID].use = #official
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"

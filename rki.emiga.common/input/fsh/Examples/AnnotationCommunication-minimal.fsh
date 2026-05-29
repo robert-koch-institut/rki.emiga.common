@@ -10,7 +10,7 @@ Description: "Ein minimales Beispiel für eine AnnotationCommunication-Ressource
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.
 * meta.security[visibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
-* meta.security[visibility].code = #inPublicHealthService
+* meta.security[visibility].code = #inAgency
 * meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * meta.tag[personalInformation].code = #ContainsPersonalInformation
 
@@ -25,13 +25,13 @@ Description: "Ein minimales Beispiel für eine AnnotationCommunication-Ressource
 * topic.text = "Meldung zur Datenkorrektur"
 
 // Referenz auf die Person, die die Annotation erstellt hat.
-* sender = Reference(EmigaUserPractitioner/Practitioner-Mueller) 
+* sender = Reference(Practitioner/EmigaUser-001) 
 
 // Datum der Erstellung oder des Versands der Annotation
 * sent = "2025-11-10T10:00:00Z"       
 
 // Die Annotation bezieht sich auf das im Beispiel 'DocumentReference-minimal' definierte Dokument.
-* about = Reference(DocumentReference/DocumentReference-minimal) 
+* about = Reference(AttachmentDocumentReference-minimal)
 
 // Der Inhalt der Annotation als Text
 * payload.contentString = "Die Zahlungsdaten wurden überprüft und bestätigt." 
