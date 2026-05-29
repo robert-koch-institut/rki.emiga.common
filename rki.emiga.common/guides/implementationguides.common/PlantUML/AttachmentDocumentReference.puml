@@ -1,7 +1,7 @@
 @startuml
 skinparam linetype ortho
 
-title AttachmentDocumentReference (Profile of DocumentReference) - Class Diagram
+title AttachmentDocumentReference (Profile of DocumentReference) 
 
 ' Main Class
 class AttachmentDocumentReference{

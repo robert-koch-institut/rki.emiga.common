@@ -1,5 +1,5 @@
 @startuml
-title Create Person - Class Diagram
+title Create Person 
 
 class AffectedPerson{
 }

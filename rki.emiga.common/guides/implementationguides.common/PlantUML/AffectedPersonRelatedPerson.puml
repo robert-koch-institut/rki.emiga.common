@@ -1,7 +1,7 @@
 @startuml
 skinparam linetype ortho
 
-title AffectedPersonRelatedPerson (Profile of RelatedPerson) - Class Diagram
+title AffectedPersonRelatedPerson (Profile of RelatedPerson) 
 
 ' Main Class
 class AffectedPersonRelatedPerson{

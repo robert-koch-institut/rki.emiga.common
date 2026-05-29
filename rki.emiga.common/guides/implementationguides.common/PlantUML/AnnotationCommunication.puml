@@ -1,7 +1,7 @@
 @startuml
 skinparam linetype ortho
 
-title AnnotationCommunication (Profile of Communication) - Class Diagram
+title AnnotationCommunication (Profile of Communication) 
 
 ' Main Class
 class AnnotationCommunication{

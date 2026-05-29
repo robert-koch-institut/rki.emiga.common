@@ -1,6 +1,6 @@
 @startuml
 
-title RelatedPerson - Class Diagram
+title RelatedPerson 
 
 class AffectedPerson{
 }
