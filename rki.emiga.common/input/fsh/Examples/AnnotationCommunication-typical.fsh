@@ -29,7 +29,7 @@ Usage: #example
 * extension[processingStatus].url = "https://emiga.rki.de/fhir/common/Extension/ProcessingStatus"
 * extension[processingStatus].valueCoding.system = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * extension[processingStatus].valueCoding.code = #closed
-* extension[processingStatus].valueCoding.display = "abgeschlossen"
+* extension[processingStatus].valueCoding.display = "Abgeschlossen"
 
 * extension[dateCreated].url = "https://emiga.rki.de/fhir/common/Extension/DateCreated"
 * extension[dateCreated].valueInstant = "2025-11-10T10:00:00Z"
