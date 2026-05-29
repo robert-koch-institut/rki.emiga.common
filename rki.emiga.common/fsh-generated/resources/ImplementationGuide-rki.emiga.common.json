@@ -45,6 +45,24 @@
       "version": "2.0.0",
       "uri": "https://demis.rki.de/fhir/demis",
       "id": "rki_demis_disease"
+    },
+    {
+      "packageId": "hl7.fhir.uv.tools.r4",
+      "version": "1.1.2",
+      "uri": "http://hl7.org/fhir/tools",
+      "id": "hl7_fhir_uv_tools_r4"
+    },
+    {
+      "packageId": "hl7.terminology.r4",
+      "version": "7.1.0",
+      "uri": "http://terminology.hl7.org",
+      "id": "hl7_terminology_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.2.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions_r4"
     }
   ],
   "definition": {
@@ -107,6 +125,30 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/AttachmentDocumentReference-maximal"
+        },
+        "name": "Attachment Example (Maximal)",
+        "description": "A maximal example of an AttachmentDocumentReference according to the EMIGA profile.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/AttachmentDocumentReference-minimal"
+        },
+        "name": "Attachment Example (Minimal)",
+        "description": "A minimal example of an AttachmentDocumentReference.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/AttachmentDocumentReference-typical"
+        },
+        "name": "Attachment Example (Typical)",
+        "description": "A typical example of an AttachmentDocumentReference.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
+      },
+      {
+        "reference": {
           "reference": "DocumentReference/Attachment-441557620"
         },
         "name": "Attachment-441557620",
@@ -162,6 +204,30 @@
       },
       {
         "reference": {
+          "reference": "Communication/AnnotationCommunication-maximal"
+        },
+        "name": "Beispiel AnnotationCommunication - Maximal",
+        "description": "Ein maximales Beispiel für eine AnnotationCommunication-Ressource basierend auf dem Profil AnnotationCommunication.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+      },
+      {
+        "reference": {
+          "reference": "Communication/AnnotationCommunication-minimal"
+        },
+        "name": "Beispiel AnnotationCommunication - Minimal",
+        "description": "Ein minimales Beispiel für eine AnnotationCommunication-Ressource basierend auf dem Profil AnnotationCommunication.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+      },
+      {
+        "reference": {
+          "reference": "Communication/AnnotationCommunication-typical"
+        },
+        "name": "Beispiel AnnotationCommunication - typical",
+        "description": "Ein typisches Beispiel für eine AnnotationCommunication-Ressource basierend auf dem Profil AnnotationCommunication.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
+      },
+      {
+        "reference": {
           "reference": "Patient/AffectedPerson4550"
         },
         "name": "Beispiel Betroffene Person",
@@ -174,6 +240,30 @@
         },
         "name": "Beispiel Betroffene Person",
         "description": "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
+      },
+      {
+        "reference": {
+          "reference": "Patient/AffectedPerson-maximal"
+        },
+        "name": "Beispiel Betroffene Person",
+        "description": "Ein maximales Beispiel für eine Patientenressource basierend auf dem AffectedPerson-Profil.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
+      },
+      {
+        "reference": {
+          "reference": "Patient/AffectedPerson-minimal"
+        },
+        "name": "Beispiel Betroffene Person",
+        "description": "Ein minimales Beispiel für eine Patientenressource basierend auf dem AffectedPerson-Profil.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
+      },
+      {
+        "reference": {
+          "reference": "Patient/AffectedPerson-typical"
+        },
+        "name": "Beispiel Betroffene Person",
+        "description": "Ein typisches Beispiel für eine Patientenressource, die auf dem AffectedPerson-Profil basiert.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
       },
       {
@@ -223,6 +313,30 @@
         "name": "Bezugsperson der betroffenen Person",
         "description": "Dieses Profil bildet eine Bezugsperson der betroffenen Person ab. Es dient der strukturierten Darstellung von Personen, die in einer persönlichen oder rechtlichen Beziehung zur betroffenen Person stehen und im Rahmen der fachlichen Prozesse berücksichtigt werden müssen.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/affectedpersonrelatedperson-maximal"
+        },
+        "name": "Bezugsperson der betroffenen Person (Maximal)",
+        "description": "Maximalbeispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/affectedpersonrelatedperson-minimal"
+        },
+        "name": "Bezugsperson der betroffenen Person (Minimal)",
+        "description": "Minimalbeispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/affectedpersonrelatedperson-typical"
+        },
+        "name": "Bezugsperson der betroffenen Person (Typisch)",
+        "description": "Typisches Beispiel einer Bezugsperson, die mit einer betroffenen Person in Beziehung steht.",
+        "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
       },
       {
         "reference": {
