@@ -1,0 +1,9 @@
+﻿{
+    "private":  true,
+    "name":  "emiga-codesystem-release-manager",
+    "version":  "0.1.0",
+    "scripts":  {
+                    "start":  "echo \"starting app\"",
+                    "test":  "echo \"no tests\""
+                }
+}
