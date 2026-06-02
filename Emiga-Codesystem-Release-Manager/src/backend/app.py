@@ -1,17 +1,18 @@
-﻿from fastapi import FastAPI, HTTPException
+﻿from fastapi import FastAPI, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List, Optional
+from pydantic import BaseModel, Field
+from typing import List, Optional, Dict, Any
 from datetime import datetime
 import uuid
 
+from .validators import FHIRSchemaValidator, generate_validation_report_json
+
 app = FastAPI(
-    title="ECUM Backend API",
-    version="0.1.0",
-    description="EMIGA Codesystem Update Manager REST API"
+    title="EMIGA Release Manager API",
+    description="FHIR CodeSystem release automation",
+    version="0.1.0"
 )
 
-# Enable CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -20,9 +21,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class ConceptModel(BaseModel):
-    code: str
-    display: str
+class CodeSystemConceptModel(BaseModel):
+    code: str = Field(..., description="Concept code")
+    display: str = Field(..., description="Concept display text")
     definition: Optional[str] = None
 
 class CodeSystemModel(BaseModel):
@@ -30,36 +31,79 @@ class CodeSystemModel(BaseModel):
     url: str
     version: str
     name: str
-    status: str = "active"
-    concepts: List[ConceptModel] = []
-
-class ValidationRequest(BaseModel):
-    resourceId: str
-    fshContent: str
-    strictMode: bool = False
-
-class ValidationReport(BaseModel):
-    resourceId: str
-    valid: bool
-    errors: List[str] = []
-    warnings: List[str] = []
-    timestamp: datetime
+    status: str
+    concepts: List[CodeSystemConceptModel]
 
 class ReleaseRequest(BaseModel):
-    branchName: str
-    semverBump: str  # major | minor | patch
-    publishToSimplifier: bool = False
-    dryRun: bool = True
+    resource_id: str
+    target_env: Optional[str] = "sandbox"
+    description: Optional[str] = None
 
 class ReleaseResponse(BaseModel):
     releaseId: str
     status: str
-    branchSha: Optional[str] = None
-    packageUrl: Optional[str] = None
-    workflowUrl: Optional[str] = None
+    branchSha: Optional[str]
+    packageUrl: Optional[str]
+    workflowUrl: Optional[str]
     timestamp: datetime
 
-# ============ In-Memory Storage (for demo) ============
+class AuthRequest(BaseModel):
+    username: str
+    password: str
+
+class AuthResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    username: str
+    role: str
+
+USER_STORE = {
+    "admin": {"password": "password123", "role": "admin"},
+    "editor": {"password": "editor1", "role": "editor"},
+}
+
+TOKEN_STORE: Dict[str, Dict[str, Any]] = {}
+
+def create_token(username: str) -> str:
+    token = f"{username}-{uuid.uuid4().hex}"
+    TOKEN_STORE[token] = {
+        "username": username,
+        "role": USER_STORE[username]["role"],
+        "created_at": datetime.utcnow().isoformat(),
+    }
+    return token
+
+def get_current_user(authorization: Optional[str] = Header(None)) -> Dict[str, Any]:
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="Missing or invalid Authorization header")
+
+    token = authorization.split(" ", 1)[1]
+    session = TOKEN_STORE.get(token)
+    if not session:
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+    return session
+
+@app.post("/api/v1/auth/login", response_model=AuthResponse)
+def login(req: AuthRequest):
+    account = USER_STORE.get(req.username)
+    if not account or account["password"] != req.password:
+        raise HTTPException(status_code=401, detail="Invalid username or password")
+
+    token = create_token(req.username)
+    return AuthResponse(
+        access_token=token,
+        username=req.username,
+        role=account["role"],
+    )
+
+@app.post("/api/v1/auth/logout")
+def logout(authorization: Optional[str] = Header(None)):
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="Missing or invalid Authorization header")
+
+    token = authorization.split(" ", 1)[1]
+    TOKEN_STORE.pop(token, None)
+    return {"message": "Logged out"}
 
 resources_db = {
     "cs-001": {
@@ -75,28 +119,24 @@ resources_db = {
     }
 }
 
-# ============ Health Check ============
-
 @app.get("/api/v1/health")
 def health_check():
     return {"status": "ok", "service": "ECUM Backend"}
 
-# ============ Resources Endpoints ============
-
 @app.get("/api/v1/resources", response_model=List[CodeSystemModel])
-def list_resources():
+def list_resources(current_user: Dict[str, Any] = Depends(get_current_user)):
     """List all CodeSystem resources"""
     return list(resources_db.values())
 
 @app.get("/api/v1/resources/{resource_id}", response_model=CodeSystemModel)
-def get_resource(resource_id: str):
+def get_resource(resource_id: str, current_user: Dict[str, Any] = Depends(get_current_user)):
     """Get a specific CodeSystem resource"""
     if resource_id not in resources_db:
         raise HTTPException(status_code=404, detail="Resource not found")
     return resources_db[resource_id]
 
 @app.post("/api/v1/resources", response_model=CodeSystemModel)
-def create_resource(resource: CodeSystemModel):
+def create_resource(resource: CodeSystemModel, current_user: Dict[str, Any] = Depends(get_current_user)):
     """Create a new CodeSystem resource"""
     if resource.id in resources_db:
         raise HTTPException(status_code=409, detail="Resource already exists")
@@ -104,7 +144,7 @@ def create_resource(resource: CodeSystemModel):
     return resource
 
 @app.put("/api/v1/resources/{resource_id}", response_model=CodeSystemModel)
-def update_resource(resource_id: str, resource: CodeSystemModel):
+def update_resource(resource_id: str, resource: CodeSystemModel, current_user: Dict[str, Any] = Depends(get_current_user)):
     """Update an existing CodeSystem resource"""
     if resource_id not in resources_db:
         raise HTTPException(status_code=404, detail="Resource not found")
@@ -112,51 +152,15 @@ def update_resource(resource_id: str, resource: CodeSystemModel):
     return resource
 
 @app.delete("/api/v1/resources/{resource_id}")
-def delete_resource(resource_id: str):
+def delete_resource(resource_id: str, current_user: Dict[str, Any] = Depends(get_current_user)):
     """Delete a CodeSystem resource"""
     if resource_id not in resources_db:
         raise HTTPException(status_code=404, detail="Resource not found")
     del resources_db[resource_id]
     return {"message": "Resource deleted"}
 
-# ============ Validation Endpoint ============
-
-@app.post("/api/v1/validate", response_model=ValidationReport)
-def validate_resource(req: ValidationRequest):
-    """
-    Validate FSH content for a resource.
-    This is a placeholder - integrate HAPI/Firely SDK here.
-    """
-    errors: List[str] = []
-    warnings: List[str] = []
-    valid = True
-
-    if not req.fshContent or not req.fshContent.strip():
-        errors.append("FSH content cannot be empty")
-        valid = False
-
-    if "CodeSystem:" not in req.fshContent and "Instance:" not in req.fshContent:
-        warnings.append("FSH content may be incomplete - missing CodeSystem or Instance declaration")
-
-    # rudimentary duplicate check against existing resource concepts
-    if req.resourceId in resources_db:
-        existing_codes = [c["code"] for c in resources_db[req.resourceId].get("concepts", [])]
-        if len(existing_codes) != len(set(existing_codes)):
-            errors.append("Duplicate codes detected in existing resource")
-            valid = False
-
-    return ValidationReport(
-        resourceId=req.resourceId,
-        valid=valid,
-        errors=errors,
-        warnings=warnings,
-        timestamp=datetime.utcnow()
-    )
-
-# ============ Release Management Endpoint ============
-
 @app.post("/api/v1/release/trigger", response_model=ReleaseResponse)
-def trigger_release(req: ReleaseRequest):
+def trigger_release(req: ReleaseRequest, current_user: Dict[str, Any] = Depends(get_current_user)):
     """
     Trigger a release pipeline.
     In production, this would:
@@ -174,8 +178,6 @@ def trigger_release(req: ReleaseRequest):
         workflowUrl=None,
         timestamp=datetime.utcnow()
     )
-
-# ============ Root ============
 
 @app.get("/")
 def root():
