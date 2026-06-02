@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ResourceVisibilityType",
+  "id": "ResourceVisibilityType",
+  "title": "Ressourcensichtbarkeit",
+  "description": "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben.",
+  "url": "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "2.0.0",
+  "date": "2025-09-26",
+  "compose": {
+    "include": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "concept": [
+          {
+            "code": "public",
+            "display": "öffentlich"
+          },
+          {
+            "code": "internal",
+            "display": "intern"
+          },
+          {
+            "code": "private",
+            "display": "privat"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "AnnotationCategory",
+  "id": "AnnotationCategory",
+  "title": "Annotationskategorien",
+  "description": "Das CodeSystem AnnotationCategory enthält die Codes für die verschiedenen Arten von Annotationen.",
+  "url": "https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory",
+  "concept": [
+    {
+      "code": "comment",
+      "display": "Kommentar",
+      "definition": "Annotationen mit zusätzlichen Attributen und ohne Anhänge."
+    },
+    {
+      "code": "attachment",
+      "display": "Anhang",
+      "definition": "Annotationen mit Anhängen und ohne zusätzliche Attribute."
+    },
+    {
+      "code": "note",
+      "display": "Notiz",
+      "definition": "Annotationen mit zusätzlichen Eigenschaften und ohne Anhänge."
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.2",
+  "date": "2026-03-24",
+  "caseSensitive": true,
+  "count": 3,
+  "valueSet": "https://emiga.rki.de/fhir/ValueSet/AnnotationCategoryVS"
+}

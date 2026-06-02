@@ -1,0 +1,134 @@
+info  Running SUSHI v3.16.5 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    --snapshot
+info    P:\source\repos\rki.emiga.common\rki.emiga.commonR6
+info  No output path specified. Output to P:\source\repos\rki.emiga.common\rki.emiga.commonR6
+info  Using configuration file: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 69 documents with 59 aliases.
+info  Imported 55 definitions and 14 instances.
+warn  Detected FSH entity definitions with duplicate names. While FSH allows for duplicate names across entity types, they can lead to ambiguous results when referring to these entities by name elsewhere (e.g., in references). Consider using unique names in FSH declarations and assigning duplicated names using caret assignment rules instead. Detected duplicate names: NullFlavor, ProcessingStatus, Salutation, ConceptDesignationUse, PersonalInformation, RegionKeys, Relevance, ResourceResponsibility, ResourceVisibilityType.
+warn  SUSHI support for pre-release versions of FHIR is experimental. Use at your own risk!
+warn  Failed to load automatically-provided hl7.fhir.uv.tools.r5#latest
+warn  Failed to load automatically-provided hl7.terminology.r5#latest
+warn  Failed to load automatically-provided hl7.fhir.uv.extensions.r5#latest
+info  Loaded de.basisprofil.r4#1.5.4 with 168 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources
+info  Loaded rki.demis.common#2.0.0 with 50 resources
+info  Loaded rki.demis.disease#2.0.0 with 376 resources
+info  Loaded hl7.fhir.r6.core#6.0.0-ballot3 with 3113 resources
+info  Loaded virtual package sushi-local#LOCAL with 0 resources
+info  Converting FSH to FHIR resources...
+error Cannot override required binding with extensible binding.
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AffectedPerson.fsh
+  Line: 182
+error No element found at path instantiatesCanonical for CardRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 43
+error No element found at path instantiatesCanonical for CaretValueRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 44
+error No element found at path instantiatesUri for CardRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 46
+error No element found at path instantiatesUri for CaretValueRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 47
+error No element found at path reasonCode for CardRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 128
+error No element found at path reasonCode for CaretValueRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 129
+error No element found at path reasonReference for CardRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 132
+error No element found at path reasonReference for CaretValueRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 133
+error The type "string" does not match any of the allowed types: Attachment or Reference(http://hl7.org/fhir/StructureDefinition/Resource) or CodeableConcept
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 138
+error No element found at path payload.contentString for FlagRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 141
+error No element found at path payload.contentString for CaretValueRule in AnnotationCommunicationR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AnnotationCommunication.fsh
+  Line: 142
+error No element found at path authenticator for CardRule in AttachmentDocumentReferenceR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AttachmentDocumentReference.fsh
+  Line: 86
+error No element found at path authenticator for CaretValueRule in AttachmentDocumentReferenceR6, skipping rule
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\StructureDefinitions\AttachmentDocumentReference.fsh
+  Line: 87
+info  Converted 20 FHIR StructureDefinitions.
+info  Converted 13 FHIR CodeSystems.
+info  Converted 22 FHIR ValueSets.
+error The element or path you referenced does not exist: sourceCanonical
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 19
+error The element or path you referenced does not exist: targetCanonical
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 20
+error The element or path you referenced does not exist: group.element.target.equivalence
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 29
+error The element or path you referenced does not exist: group.element[1].target.equivalence
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 35
+error The element or path you referenced does not exist: group.element[2].target.equivalence
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 41
+error The element or path you referenced does not exist: group.element[3].target.equivalence
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 47
+error Element ConceptMap.group.element.target.relationship has minimum cardinality 1 but occurs 0 time(s).
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 2 - 47
+error Element ConceptMap.group.element.target.relationship has minimum cardinality 1 but occurs 0 time(s).
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 2 - 47
+error Element ConceptMap.group.element.target.relationship has minimum cardinality 1 but occurs 0 time(s).
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 2 - 47
+error Element ConceptMap.group.element.target.relationship has minimum cardinality 1 but occurs 0 time(s).
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\ConceptMap\AdminGenderEngToGenderAmtDe.fsh
+  Line: 2 - 47
+error The element or path you referenced does not exist: payload.contentString
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\Examples\Communication-441557618.fsh
+  Line: 52 - 53
+error Cannot assign string value: self. Value does not match element type: code
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\Examples\ExamplePatientMatchOutputBundle.fsh
+  Line: 9
+error Element Bundle.link.relation has minimum cardinality 1 but occurs 0 time(s).
+  File: P:\source\repos\rki.emiga.common\rki.emiga.commonR6\input\fsh\Examples\ExamplePatientMatchOutputBundle.fsh
+  Line: 1 - 107
+info  Converted 14 FHIR instances.
+info  Exporting FHIR resources as JSON...
+warn  The array 'payload' in Communication441557618 is missing values at the following indices: 0
+info  Exported 67 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-rki.emiga.common.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+info  The sample-ig located at https://github.com/FHIR/sample-ig contains scripts useful for downloading and running the IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |      11       |      9       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         22         |        13         |         14         | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| That was 'crab-tastic'.                27 Errors     6 Warnings |
+===================================================================
+|    You are using SUSHI version 3.16.5, but the latest stable    |
+| release is version 3.19.0. To install the latest release, run:  |
+|                    npm install -g fsh-sushi                     |
+===================================================================
+

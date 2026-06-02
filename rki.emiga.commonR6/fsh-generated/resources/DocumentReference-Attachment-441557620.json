@@ -1,0 +1,51 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "Attachment-441557620",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReferenceR6"
+    ],
+    "security": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "code": "1.01.0.01."
+      },
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "code": "transferable"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+      "value": "DEFG-123456789"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+      "value": "ABCD-987654321"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber",
+      "value": "Attachment-SURVNET-987654321"
+    }
+  ],
+  "author": [
+    {
+      "reference": "Practitioner/EmigaUser-001"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "image/png",
+        "size": "13577",
+        "hash": "MzU2am9JWkQydk1jeVMlUENTTlNuRVpvTDJKVGYvOW1ZL013VnB6REpCOD0=",
+        "title": "Sample Image",
+        "creation": "2026-01-13T14:22:43+00:00"
+      }
+    }
+  ],
+  "status": "current",
+  "date": "2023-10-01T12:00:00Z"
+}

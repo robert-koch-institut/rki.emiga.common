@@ -1,0 +1,18 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "EmigaFileNumber",
+  "url": "https://emiga.rki.de/fhir/common/NamingSystem/EmigaFileNumber",
+  "title": "EMIGA Aktenzeichen",
+  "description": "EMIGA Aktenzeichen für die Verwendung in Identifiers",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
+    }
+  ],
+  "publisher": "Robert Koch-Institut",
+  "date": "2025-09-15",
+  "name": "EmigaFileNumber",
+  "status": "active",
+  "kind": "identifier"
+}

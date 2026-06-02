@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ProcessingStatusAnnotation",
+  "id": "ProcessingStatusAnnotation",
+  "title": "Bearbeitungsstatus Annotation",
+  "description": "Werteliste mit möglichen Bearbeitungsstatus für Annotationen.",
+  "url": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "date": "2025-11-06",
+  "compose": {
+    "include": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
+        "concept": [
+          {
+            "code": "inprogress",
+            "display": "In Bearbeitung"
+          },
+          {
+            "code": "closed",
+            "display": "Abgeschlossen"
+          },
+          {
+            "code": "cancelled",
+            "display": "Verworfen"
+          },
+          {
+            "code": "handedover",
+            "display": "Abgegeben"
+          },
+          {
+            "code": "inhandover",
+            "display": "In Übergabe"
+          },
+          {
+            "code": "intakeover",
+            "display": "In Übernahme"
+          },
+          {
+            "code": "forinformation",
+            "display": "Zur Kenntnis"
+          }
+        ]
+      }
+    ]
+  }
+}

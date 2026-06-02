@@ -1,0 +1,54 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "RelatedPerson4551",
+  "meta": {
+    "profile": [
+      "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPersonR6"
+    ],
+    "security": [
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
+        "code": "inAgency",
+        "display": "Eigene ÖGD-Stelle"
+      },
+      {
+        "system": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
+        "code": "1.",
+        "display": "Robert Koch-Institut"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaID",
+      "value": "Bezugsperson-PQRST-123456789"
+    },
+    {
+      "system": "https://emiga.rki.de/fhir/sid/EmigaFileNumber",
+      "value": "Bezugsperson-XYZ-987654321"
+    }
+  ],
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType",
+          "code": "legalGuardian",
+          "display": "Sorgeberechtigte Person"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType",
+          "code": "linkedPerson",
+          "display": "Kind"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/AffectedPerson4550"
+  }
+}

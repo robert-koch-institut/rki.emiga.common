@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RegionKeys",
+  "id": "RegionKeys",
+  "title": "Regionalschlüssel (Werteliste)",
+  "description": "Werteliste mit Regionalschlüsseln (Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS)).",
+  "url": "https://emiga.rki.de/fhir/ValueSet/RegionKeys",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "date": "2025-09-08",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "ASKU",
+            "display": "asked but unknown",
+            "designation": [
+              {
+                "use": {
+                  "code": "display",
+                  "system": "http://terminology.hl7.org/CodeSystem/designation-usage"
+                },
+                "value": "nicht ermittelbar",
+                "language": "de-DE"
+              }
+            ]
+          },
+          {
+            "code": "NASK",
+            "display": "not asked",
+            "designation": [
+              {
+                "use": {
+                  "code": "display",
+                  "system": "http://terminology.hl7.org/CodeSystem/designation-usage"
+                },
+                "value": "nicht erhoben",
+                "language": "de-DE"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

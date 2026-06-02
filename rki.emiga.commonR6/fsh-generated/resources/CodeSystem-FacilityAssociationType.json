@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "FacilityAssociationType",
+  "id": "FacilityAssociationType",
+  "title": "Verbindungs-Qualifikation",
+  "description": "Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung.",
+  "url": "https://emiga.rki.de/fhir/CodeSystem/FacilityAssociationType",
+  "concept": [
+    {
+      "code": "connectedTo",
+      "display": "Verbunden mit",
+      "definition": "Allgemeine, unspezifische Beziehung zur Einrichtung, wenn keine der anderen Qualifizierungen zutrifft, z.B. gelegentlicher Kontakt."
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "0.2.2",
+  "date": "2026-04-24",
+  "caseSensitive": true,
+  "count": 1
+}

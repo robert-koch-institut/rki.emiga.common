@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Salutation",
+  "id": "Salutation",
+  "title": "Anrede",
+  "description": "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen.",
+  "url": "https://emiga.rki.de/fhir/common/CodeSystem/Salutation",
+  "concept": [
+    {
+      "code": "SehrGeehrteFrau",
+      "display": "Sehr geehrte Frau"
+    },
+    {
+      "code": "SehrGeehrterHerr",
+      "display": "Sehr geehrter Herr"
+    },
+    {
+      "code": "SehrGeehrteFamilie",
+      "display": "Sehr geehrte Familie"
+    },
+    {
+      "code": "SehrGeehrteErziehungsberechtigte",
+      "display": "Sehr geehrte Erziehungsberechtigte des Kindes"
+    },
+    {
+      "code": "SehrGeehrteDameSehrGeehrterHerr",
+      "display": "Sehr geehrte Dame, sehr geehrter Herr"
+    }
+  ],
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.2",
+  "date": "2024-03-26",
+  "caseSensitive": true,
+  "count": 5
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "SurvNetFileNumber",
+  "url": "https://emiga.rki.de/fhir/common/NamingSystem/SurvNetFileNumber",
+  "title": "SurvNet Aktenzeichen",
+  "description": "Das SurvNet-Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe.",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
+    }
+  ],
+  "publisher": "Robert Koch-Institut",
+  "date": "2025-09-26",
+  "name": "SurvNetFileNumber",
+  "status": "active",
+  "kind": "identifier"
+}

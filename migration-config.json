@@ -1,0 +1,17 @@
+{
+  "configVersion": "1.0.3",
+  "packageId": "de.basisprofil.r4",
+  "packageVersion": "1.5.0",
+  "enableGoFSH": false,
+  "resourcesDir": "rki.emiga.common",
+  "resourcesR6Dir": "rki.emiga.commonR6",
+  "compareDir": "compare",
+  "outputDir": "output",
+  "rulesConfigPath": null,
+  "validatorJarPath": "validator_cli.jar",
+  "workdir": null,
+  "compareMode": "incremental",
+  "exportZip": true,
+  "skipTerminologyReport": false,
+  "skipSearchParameterReport": false
+}

@@ -1,0 +1,1678 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CountyVS",
+  "id": "CountyVS",
+  "title": "Landkreis-Werteliste",
+  "description": "Die Wertemenge 'CountyVS' definiert Konzepte, die den Landkreis charakterisieren.",
+  "url": "https://emiga.rki.de/fhir/ValueSet/CountyVS",
+  "language": "de-DE",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "date": "2026-03-23",
+  "compose": {
+    "include": [
+      {
+        "system": "https://demis.rki.de/fhir/CodeSystem/geographicRegion",
+        "concept": [
+          {
+            "code": "11001001",
+            "display": "SK Flensburg"
+          },
+          {
+            "code": "11001002",
+            "display": "SK Kiel"
+          },
+          {
+            "code": "11001003",
+            "display": "SK Lübeck"
+          },
+          {
+            "code": "11001004",
+            "display": "SK Neumünster"
+          },
+          {
+            "code": "11001051",
+            "display": "LK Dithmarschen"
+          },
+          {
+            "code": "11001053",
+            "display": "LK Herzogtum Lauenburg"
+          },
+          {
+            "code": "11001054",
+            "display": "LK Nordfriesland"
+          },
+          {
+            "code": "11001055",
+            "display": "LK Ostholstein"
+          },
+          {
+            "code": "11001056",
+            "display": "LK Pinneberg"
+          },
+          {
+            "code": "11001057",
+            "display": "LK Plön"
+          },
+          {
+            "code": "11001058",
+            "display": "LK Rendsburg-Eckernförde"
+          },
+          {
+            "code": "11001059",
+            "display": "LK Schleswig-Flensburg"
+          },
+          {
+            "code": "11001060",
+            "display": "LK Segeberg"
+          },
+          {
+            "code": "11001061",
+            "display": "LK Steinburg"
+          },
+          {
+            "code": "11001062",
+            "display": "LK Stormarn"
+          },
+          {
+            "code": "11002000",
+            "display": "SK Hamburg"
+          },
+          {
+            "code": "11003101",
+            "display": "SK Braunschweig"
+          },
+          {
+            "code": "11003102",
+            "display": "SK Salzgitter"
+          },
+          {
+            "code": "11003103",
+            "display": "SK Wolfsburg"
+          },
+          {
+            "code": "11003151",
+            "display": "LK Gifhorn"
+          },
+          {
+            "code": "11003159",
+            "display": "LK Göttingen"
+          },
+          {
+            "code": "11003153",
+            "display": "LK Goslar"
+          },
+          {
+            "code": "11003154",
+            "display": "LK Helmstedt"
+          },
+          {
+            "code": "11003155",
+            "display": "LK Northeim"
+          },
+          {
+            "code": "11003157",
+            "display": "LK Peine"
+          },
+          {
+            "code": "11003158",
+            "display": "LK Wolfenbüttel"
+          },
+          {
+            "code": "11003241",
+            "display": "Region Hannover"
+          },
+          {
+            "code": "11003251",
+            "display": "LK Diepholz"
+          },
+          {
+            "code": "11003252",
+            "display": "LK Hameln-Pyrmont"
+          },
+          {
+            "code": "11003254",
+            "display": "LK Hildesheim"
+          },
+          {
+            "code": "11003255",
+            "display": "LK Holzminden"
+          },
+          {
+            "code": "11003256",
+            "display": "LK Nienburg (Weser)"
+          },
+          {
+            "code": "11003257",
+            "display": "LK Schaumburg"
+          },
+          {
+            "code": "11003351",
+            "display": "LK Celle"
+          },
+          {
+            "code": "11003352",
+            "display": "LK Cuxhaven"
+          },
+          {
+            "code": "11003353",
+            "display": "LK Harburg"
+          },
+          {
+            "code": "11003354",
+            "display": "LK Lüchow-Dannenberg"
+          },
+          {
+            "code": "11003355",
+            "display": "LK Lüneburg"
+          },
+          {
+            "code": "11003356",
+            "display": "LK Osterholz"
+          },
+          {
+            "code": "11003357",
+            "display": "LK Rotenburg (Wümme)"
+          },
+          {
+            "code": "11003358",
+            "display": "LK Heidekreis"
+          },
+          {
+            "code": "11003359",
+            "display": "LK Stade"
+          },
+          {
+            "code": "11003360",
+            "display": "LK Uelzen"
+          },
+          {
+            "code": "11003361",
+            "display": "LK Verden"
+          },
+          {
+            "code": "11003401",
+            "display": "SK Delmenhorst"
+          },
+          {
+            "code": "11003402",
+            "display": "SK Emden"
+          },
+          {
+            "code": "11003403",
+            "display": "SK Oldenburg"
+          },
+          {
+            "code": "11003404",
+            "display": "SK Osnabrück"
+          },
+          {
+            "code": "11003405",
+            "display": "SK Wilhelmshaven"
+          },
+          {
+            "code": "11003451",
+            "display": "LK Ammerland"
+          },
+          {
+            "code": "11003452",
+            "display": "LK Aurich"
+          },
+          {
+            "code": "11003453",
+            "display": "LK Cloppenburg"
+          },
+          {
+            "code": "11003454",
+            "display": "LK Emsland"
+          },
+          {
+            "code": "11003455",
+            "display": "LK Friesland"
+          },
+          {
+            "code": "11003456",
+            "display": "LK Grafschaft Bentheim"
+          },
+          {
+            "code": "11003457",
+            "display": "LK Leer"
+          },
+          {
+            "code": "11003458",
+            "display": "LK Oldenburg"
+          },
+          {
+            "code": "11003459",
+            "display": "LK Osnabrück"
+          },
+          {
+            "code": "11003460",
+            "display": "LK Vechta"
+          },
+          {
+            "code": "11003461",
+            "display": "LK Wesermarsch"
+          },
+          {
+            "code": "11003462",
+            "display": "LK Wittmund"
+          },
+          {
+            "code": "11004011",
+            "display": "SK Bremen"
+          },
+          {
+            "code": "11004012",
+            "display": "SK Bremerhaven"
+          },
+          {
+            "code": "11005554",
+            "display": "LK Borken"
+          },
+          {
+            "code": "11005558",
+            "display": "LK Coesfeld"
+          },
+          {
+            "code": "11005358",
+            "display": "LK Düren"
+          },
+          {
+            "code": "11005954",
+            "display": "LK Ennepe-Ruhr-Kreis"
+          },
+          {
+            "code": "11005366",
+            "display": "LK Euskirchen"
+          },
+          {
+            "code": "11005754",
+            "display": "LK Gütersloh"
+          },
+          {
+            "code": "11005370",
+            "display": "LK Heinsberg"
+          },
+          {
+            "code": "11005758",
+            "display": "LK Herford"
+          },
+          {
+            "code": "11005958",
+            "display": "LK Hochsauerlandkreis"
+          },
+          {
+            "code": "11005762",
+            "display": "LK Höxter"
+          },
+          {
+            "code": "11005154",
+            "display": "LK Kleve"
+          },
+          {
+            "code": "11005766",
+            "display": "LK Lippe"
+          },
+          {
+            "code": "11005962",
+            "display": "LK Märkischer Kreis"
+          },
+          {
+            "code": "11005158",
+            "display": "LK Mettmann"
+          },
+          {
+            "code": "11005770",
+            "display": "LK Minden-Lübbecke"
+          },
+          {
+            "code": "11005374",
+            "display": "LK Oberbergischer Kreis"
+          },
+          {
+            "code": "11005966",
+            "display": "LK Olpe"
+          },
+          {
+            "code": "11005774",
+            "display": "LK Paderborn"
+          },
+          {
+            "code": "11005562",
+            "display": "LK Recklinghausen"
+          },
+          {
+            "code": "11005362",
+            "display": "LK Rhein-Erft-Kreis"
+          },
+          {
+            "code": "11005162",
+            "display": "LK Rhein-Kreis Neuss"
+          },
+          {
+            "code": "11005382",
+            "display": "LK Rhein-Sieg-Kreis"
+          },
+          {
+            "code": "11005378",
+            "display": "LK Rheinisch-Bergischer Kreis"
+          },
+          {
+            "code": "11005970",
+            "display": "LK Siegen-Wittgenstein"
+          },
+          {
+            "code": "11005974",
+            "display": "LK Soest"
+          },
+          {
+            "code": "11005566",
+            "display": "LK Steinfurt"
+          },
+          {
+            "code": "11005978",
+            "display": "LK Unna"
+          },
+          {
+            "code": "11005166",
+            "display": "LK Viersen"
+          },
+          {
+            "code": "11005570",
+            "display": "LK Warendorf"
+          },
+          {
+            "code": "11005170",
+            "display": "LK Wesel"
+          },
+          {
+            "code": "11005711",
+            "display": "SK Bielefeld"
+          },
+          {
+            "code": "11005911",
+            "display": "SK Bochum"
+          },
+          {
+            "code": "11005314",
+            "display": "SK Bonn"
+          },
+          {
+            "code": "11005512",
+            "display": "SK Bottrop"
+          },
+          {
+            "code": "11005913",
+            "display": "SK Dortmund"
+          },
+          {
+            "code": "11005112",
+            "display": "SK Duisburg"
+          },
+          {
+            "code": "11005111",
+            "display": "SK Düsseldorf"
+          },
+          {
+            "code": "11005113",
+            "display": "SK Essen"
+          },
+          {
+            "code": "11005513",
+            "display": "SK Gelsenkirchen"
+          },
+          {
+            "code": "11005914",
+            "display": "SK Hagen"
+          },
+          {
+            "code": "11005915",
+            "display": "SK Hamm"
+          },
+          {
+            "code": "11005916",
+            "display": "SK Herne"
+          },
+          {
+            "code": "11005315",
+            "display": "SK Köln"
+          },
+          {
+            "code": "11005114",
+            "display": "SK Krefeld"
+          },
+          {
+            "code": "11005316",
+            "display": "SK Leverkusen"
+          },
+          {
+            "code": "11005116",
+            "display": "SK Mönchengladbach"
+          },
+          {
+            "code": "11005117",
+            "display": "SK Mülheim a.d.Ruhr"
+          },
+          {
+            "code": "11005515",
+            "display": "SK Münster"
+          },
+          {
+            "code": "11005119",
+            "display": "SK Oberhausen"
+          },
+          {
+            "code": "11005120",
+            "display": "SK Remscheid"
+          },
+          {
+            "code": "11005122",
+            "display": "SK Solingen"
+          },
+          {
+            "code": "11005124",
+            "display": "SK Wuppertal"
+          },
+          {
+            "code": "11005334",
+            "display": "StädteRegion Aachen"
+          },
+          {
+            "code": "11006431",
+            "display": "LK Bergstraße"
+          },
+          {
+            "code": "11006432",
+            "display": "LK Darmstadt-Dieburg"
+          },
+          {
+            "code": "11006631",
+            "display": "LK Fulda"
+          },
+          {
+            "code": "11006531",
+            "display": "LK Gießen"
+          },
+          {
+            "code": "11006433",
+            "display": "LK Groß-Gerau"
+          },
+          {
+            "code": "11006632",
+            "display": "LK Hersfeld-Rotenburg"
+          },
+          {
+            "code": "11006434",
+            "display": "LK Hochtaunuskreis"
+          },
+          {
+            "code": "11006633",
+            "display": "LK Kassel"
+          },
+          {
+            "code": "11006532",
+            "display": "LK Lahn-Dill-Kreis"
+          },
+          {
+            "code": "11006533",
+            "display": "LK Limburg-Weilburg"
+          },
+          {
+            "code": "11006435",
+            "display": "LK Main-Kinzig-Kreis"
+          },
+          {
+            "code": "11006436",
+            "display": "LK Main-Taunus-Kreis"
+          },
+          {
+            "code": "11006534",
+            "display": "LK Marburg-Biedenkopf"
+          },
+          {
+            "code": "11006437",
+            "display": "LK Odenwaldkreis"
+          },
+          {
+            "code": "11006438",
+            "display": "LK Offenbach"
+          },
+          {
+            "code": "11006439",
+            "display": "LK Rheingau-Taunus-Kreis"
+          },
+          {
+            "code": "11006634",
+            "display": "LK Schwalm-Eder-Kreis"
+          },
+          {
+            "code": "11006535",
+            "display": "LK Vogelsbergkreis"
+          },
+          {
+            "code": "11006635",
+            "display": "LK Waldeck-Frankenberg"
+          },
+          {
+            "code": "11006636",
+            "display": "LK Werra-Meißner-Kreis"
+          },
+          {
+            "code": "11006440",
+            "display": "LK Wetteraukreis"
+          },
+          {
+            "code": "11006411",
+            "display": "SK Darmstadt"
+          },
+          {
+            "code": "11006412",
+            "display": "SK Frankfurt am Main"
+          },
+          {
+            "code": "11006611",
+            "display": "SK Kassel"
+          },
+          {
+            "code": "11006413",
+            "display": "SK Offenbach"
+          },
+          {
+            "code": "11006414",
+            "display": "SK Wiesbaden"
+          },
+          {
+            "code": "11007131",
+            "display": "LK Ahrweiler"
+          },
+          {
+            "code": "11007132",
+            "display": "LK Altenkirchen"
+          },
+          {
+            "code": "11007331",
+            "display": "LK Alzey-Worms"
+          },
+          {
+            "code": "11007332",
+            "display": "LK Bad Dürkheim"
+          },
+          {
+            "code": "11007133",
+            "display": "LK Bad Kreuznach"
+          },
+          {
+            "code": "11007231",
+            "display": "LK Bernkastel-Wittlich"
+          },
+          {
+            "code": "11007134",
+            "display": "LK Birkenfeld"
+          },
+          {
+            "code": "11007232",
+            "display": "LK Bitburg-Prüm"
+          },
+          {
+            "code": "11007135",
+            "display": "LK Cochem-Zell"
+          },
+          {
+            "code": "11007333",
+            "display": "LK Donnersbergkreis"
+          },
+          {
+            "code": "11007334",
+            "display": "LK Germersheim"
+          },
+          {
+            "code": "11007335",
+            "display": "LK Kaiserslautern"
+          },
+          {
+            "code": "11007336",
+            "display": "LK Kusel"
+          },
+          {
+            "code": "11007339",
+            "display": "LK Mainz-Bingen"
+          },
+          {
+            "code": "11007137",
+            "display": "LK Mayen-Koblenz"
+          },
+          {
+            "code": "11007138",
+            "display": "LK Neuwied"
+          },
+          {
+            "code": "11007140",
+            "display": "LK Rhein-Hunsrück-Kreis"
+          },
+          {
+            "code": "11007141",
+            "display": "LK Rhein-Lahn-Kreis"
+          },
+          {
+            "code": "11007338",
+            "display": "LK Rhein-Pfalz-Kreis"
+          },
+          {
+            "code": "11007337",
+            "display": "LK Südliche Weinstraße"
+          },
+          {
+            "code": "11007340",
+            "display": "LK Südwestpfalz"
+          },
+          {
+            "code": "11007235",
+            "display": "LK Trier-Saarburg"
+          },
+          {
+            "code": "11007233",
+            "display": "LK Vulkaneifel"
+          },
+          {
+            "code": "11007143",
+            "display": "LK Westerwaldkreis"
+          },
+          {
+            "code": "11007311",
+            "display": "SK Frankenthal"
+          },
+          {
+            "code": "11007312",
+            "display": "SK Kaiserslautern"
+          },
+          {
+            "code": "11007111",
+            "display": "SK Koblenz"
+          },
+          {
+            "code": "11007313",
+            "display": "SK Landau i.d.Pfalz"
+          },
+          {
+            "code": "11007314",
+            "display": "SK Ludwigshafen"
+          },
+          {
+            "code": "11007315",
+            "display": "SK Mainz"
+          },
+          {
+            "code": "11007316",
+            "display": "SK Neustadt a.d.Weinstraße"
+          },
+          {
+            "code": "11007317",
+            "display": "SK Pirmasens"
+          },
+          {
+            "code": "11007318",
+            "display": "SK Speyer"
+          },
+          {
+            "code": "11007211",
+            "display": "SK Trier"
+          },
+          {
+            "code": "11007319",
+            "display": "SK Worms"
+          },
+          {
+            "code": "11007320",
+            "display": "SK Zweibrücken"
+          },
+          {
+            "code": "11008425",
+            "display": "LK Alb-Donau-Kreis"
+          },
+          {
+            "code": "11008426",
+            "display": "LK Biberach"
+          },
+          {
+            "code": "11008115",
+            "display": "LK Böblingen"
+          },
+          {
+            "code": "11008435",
+            "display": "LK Bodenseekreis"
+          },
+          {
+            "code": "11008315",
+            "display": "LK Breisgau-Hochschwarzwald"
+          },
+          {
+            "code": "11008235",
+            "display": "LK Calw"
+          },
+          {
+            "code": "11008316",
+            "display": "LK Emmendingen"
+          },
+          {
+            "code": "11008236",
+            "display": "LK Enzkreis"
+          },
+          {
+            "code": "11008116",
+            "display": "LK Esslingen"
+          },
+          {
+            "code": "11008237",
+            "display": "LK Freudenstadt"
+          },
+          {
+            "code": "11008117",
+            "display": "LK Göppingen"
+          },
+          {
+            "code": "11008135",
+            "display": "LK Heidenheim"
+          },
+          {
+            "code": "11008125",
+            "display": "LK Heilbronn"
+          },
+          {
+            "code": "11008126",
+            "display": "LK Hohenlohekreis"
+          },
+          {
+            "code": "11008215",
+            "display": "LK Karlsruhe"
+          },
+          {
+            "code": "11008335",
+            "display": "LK Konstanz"
+          },
+          {
+            "code": "11008336",
+            "display": "LK Lörrach"
+          },
+          {
+            "code": "11008118",
+            "display": "LK Ludwigsburg"
+          },
+          {
+            "code": "11008128",
+            "display": "LK Main-Tauber-Kreis"
+          },
+          {
+            "code": "11008225",
+            "display": "LK Neckar-Odenwald-Kreis"
+          },
+          {
+            "code": "11008317",
+            "display": "LK Ortenaukreis"
+          },
+          {
+            "code": "11008136",
+            "display": "LK Ostalbkreis"
+          },
+          {
+            "code": "11008216",
+            "display": "LK Rastatt"
+          },
+          {
+            "code": "11008436",
+            "display": "LK Ravensburg"
+          },
+          {
+            "code": "11008119",
+            "display": "LK Rems-Murr-Kreis"
+          },
+          {
+            "code": "11008415",
+            "display": "LK Reutlingen"
+          },
+          {
+            "code": "11008226",
+            "display": "LK Rhein-Neckar-Kreis"
+          },
+          {
+            "code": "11008325",
+            "display": "LK Rottweil"
+          },
+          {
+            "code": "11008127",
+            "display": "LK Schwäbisch Hall"
+          },
+          {
+            "code": "11008326",
+            "display": "LK Schwarzwald-Baar-Kreis"
+          },
+          {
+            "code": "11008437",
+            "display": "LK Sigmaringen"
+          },
+          {
+            "code": "11008416",
+            "display": "LK Tübingen"
+          },
+          {
+            "code": "11008327",
+            "display": "LK Tuttlingen"
+          },
+          {
+            "code": "11008337",
+            "display": "LK Waldshut"
+          },
+          {
+            "code": "11008417",
+            "display": "LK Zollernalbkreis"
+          },
+          {
+            "code": "11008211",
+            "display": "SK Baden-Baden"
+          },
+          {
+            "code": "11008311",
+            "display": "SK Freiburg i.Breisgau"
+          },
+          {
+            "code": "11008221",
+            "display": "SK Heidelberg"
+          },
+          {
+            "code": "11008121",
+            "display": "SK Heilbronn"
+          },
+          {
+            "code": "11008212",
+            "display": "SK Karlsruhe"
+          },
+          {
+            "code": "11008222",
+            "display": "SK Mannheim"
+          },
+          {
+            "code": "11008231",
+            "display": "SK Pforzheim"
+          },
+          {
+            "code": "11008111",
+            "display": "SK Stuttgart"
+          },
+          {
+            "code": "11008421",
+            "display": "SK Ulm"
+          },
+          {
+            "code": "11009771",
+            "display": "LK Aichach-Friedberg"
+          },
+          {
+            "code": "11009171",
+            "display": "LK Altötting"
+          },
+          {
+            "code": "11009371",
+            "display": "LK Amberg-Sulzbach"
+          },
+          {
+            "code": "11009571",
+            "display": "LK Ansbach"
+          },
+          {
+            "code": "11009671",
+            "display": "LK Aschaffenburg"
+          },
+          {
+            "code": "11009772",
+            "display": "LK Augsburg"
+          },
+          {
+            "code": "11009672",
+            "display": "LK Bad Kissingen"
+          },
+          {
+            "code": "11009173",
+            "display": "LK Bad Tölz-Wolfratshausen"
+          },
+          {
+            "code": "11009471",
+            "display": "LK Bamberg"
+          },
+          {
+            "code": "11009472",
+            "display": "LK Bayreuth"
+          },
+          {
+            "code": "11009172",
+            "display": "LK Berchtesgadener Land"
+          },
+          {
+            "code": "11009372",
+            "display": "LK Cham"
+          },
+          {
+            "code": "11009473",
+            "display": "LK Coburg"
+          },
+          {
+            "code": "11009174",
+            "display": "LK Dachau"
+          },
+          {
+            "code": "11009271",
+            "display": "LK Deggendorf"
+          },
+          {
+            "code": "11009773",
+            "display": "LK Dillingen a.d.Donau"
+          },
+          {
+            "code": "11009279",
+            "display": "LK Dingolfing-Landau"
+          },
+          {
+            "code": "11009779",
+            "display": "LK Donau-Ries"
+          },
+          {
+            "code": "11009175",
+            "display": "LK Ebersberg"
+          },
+          {
+            "code": "11009176",
+            "display": "LK Eichstätt"
+          },
+          {
+            "code": "11009177",
+            "display": "LK Erding"
+          },
+          {
+            "code": "11009572",
+            "display": "LK Erlangen-Höchstadt"
+          },
+          {
+            "code": "11009474",
+            "display": "LK Forchheim"
+          },
+          {
+            "code": "11009178",
+            "display": "LK Freising"
+          },
+          {
+            "code": "11009272",
+            "display": "LK Freyung-Grafenau"
+          },
+          {
+            "code": "11009179",
+            "display": "LK Fürstenfeldbruck"
+          },
+          {
+            "code": "11009573",
+            "display": "LK Fürth"
+          },
+          {
+            "code": "11009180",
+            "display": "LK Garmisch-Partenkirchen"
+          },
+          {
+            "code": "11009774",
+            "display": "LK Günzburg"
+          },
+          {
+            "code": "11009674",
+            "display": "LK Haßberge"
+          },
+          {
+            "code": "11009475",
+            "display": "LK Hof"
+          },
+          {
+            "code": "11009273",
+            "display": "LK Kelheim"
+          },
+          {
+            "code": "11009675",
+            "display": "LK Kitzingen"
+          },
+          {
+            "code": "11009476",
+            "display": "LK Kronach"
+          },
+          {
+            "code": "11009477",
+            "display": "LK Kulmbach"
+          },
+          {
+            "code": "11009181",
+            "display": "LK Landsberg a.Lech"
+          },
+          {
+            "code": "11009274",
+            "display": "LK Landshut"
+          },
+          {
+            "code": "11009478",
+            "display": "LK Lichtenfels"
+          },
+          {
+            "code": "11009776",
+            "display": "LK Lindau"
+          },
+          {
+            "code": "11009677",
+            "display": "LK Main-Spessart"
+          },
+          {
+            "code": "11009182",
+            "display": "LK Miesbach"
+          },
+          {
+            "code": "11009676",
+            "display": "LK Miltenberg"
+          },
+          {
+            "code": "11009183",
+            "display": "LK Mühldorf a.Inn"
+          },
+          {
+            "code": "11009184",
+            "display": "LK München"
+          },
+          {
+            "code": "11009775",
+            "display": "LK Neu-Ulm"
+          },
+          {
+            "code": "11009185",
+            "display": "LK Neuburg-Schrobenhausen"
+          },
+          {
+            "code": "11009373",
+            "display": "LK Neumarkt i.d.OPf."
+          },
+          {
+            "code": "11009575",
+            "display": "LK Neustadt a.d.Aisch-Bad Windsheim"
+          },
+          {
+            "code": "11009374",
+            "display": "LK Neustadt a.d.Waldnaab"
+          },
+          {
+            "code": "11009574",
+            "display": "LK Nürnberger Land"
+          },
+          {
+            "code": "11009780",
+            "display": "LK Oberallgäu"
+          },
+          {
+            "code": "11009777",
+            "display": "LK Ostallgäu"
+          },
+          {
+            "code": "11009275",
+            "display": "LK Passau"
+          },
+          {
+            "code": "11009186",
+            "display": "LK Pfaffenhofen a.d.Ilm"
+          },
+          {
+            "code": "11009276",
+            "display": "LK Regen"
+          },
+          {
+            "code": "11009375",
+            "display": "LK Regensburg"
+          },
+          {
+            "code": "11009673",
+            "display": "LK Rhön-Grabfeld"
+          },
+          {
+            "code": "11009187",
+            "display": "LK Rosenheim"
+          },
+          {
+            "code": "11009576",
+            "display": "LK Roth"
+          },
+          {
+            "code": "11009277",
+            "display": "LK Rottal-Inn"
+          },
+          {
+            "code": "11009376",
+            "display": "LK Schwandorf"
+          },
+          {
+            "code": "11009678",
+            "display": "LK Schweinfurt"
+          },
+          {
+            "code": "11009188",
+            "display": "LK Starnberg"
+          },
+          {
+            "code": "11009278",
+            "display": "LK Straubing-Bogen"
+          },
+          {
+            "code": "11009377",
+            "display": "LK Tirschenreuth"
+          },
+          {
+            "code": "11009189",
+            "display": "LK Traunstein"
+          },
+          {
+            "code": "11009778",
+            "display": "LK Unterallgäu"
+          },
+          {
+            "code": "11009190",
+            "display": "LK Weilheim-Schongau"
+          },
+          {
+            "code": "11009577",
+            "display": "LK Weißenburg-Gunzenhausen"
+          },
+          {
+            "code": "11009479",
+            "display": "LK Wunsiedel i.Fichtelgebirge"
+          },
+          {
+            "code": "11009679",
+            "display": "LK Würzburg"
+          },
+          {
+            "code": "11009361",
+            "display": "SK Amberg"
+          },
+          {
+            "code": "11009561",
+            "display": "SK Ansbach"
+          },
+          {
+            "code": "11009661",
+            "display": "SK Aschaffenburg"
+          },
+          {
+            "code": "11009761",
+            "display": "SK Augsburg"
+          },
+          {
+            "code": "11009461",
+            "display": "SK Bamberg"
+          },
+          {
+            "code": "11009462",
+            "display": "SK Bayreuth"
+          },
+          {
+            "code": "11009463",
+            "display": "SK Coburg"
+          },
+          {
+            "code": "11009562",
+            "display": "SK Erlangen"
+          },
+          {
+            "code": "11009563",
+            "display": "SK Fürth"
+          },
+          {
+            "code": "11009464",
+            "display": "SK Hof"
+          },
+          {
+            "code": "11009161",
+            "display": "SK Ingolstadt"
+          },
+          {
+            "code": "11009762",
+            "display": "SK Kaufbeuren"
+          },
+          {
+            "code": "11009763",
+            "display": "SK Kempten"
+          },
+          {
+            "code": "11009261",
+            "display": "SK Landshut"
+          },
+          {
+            "code": "11009764",
+            "display": "SK Memmingen"
+          },
+          {
+            "code": "11009162",
+            "display": "SK München"
+          },
+          {
+            "code": "11009564",
+            "display": "SK Nürnberg"
+          },
+          {
+            "code": "11009262",
+            "display": "SK Passau"
+          },
+          {
+            "code": "11009362",
+            "display": "SK Regensburg"
+          },
+          {
+            "code": "11009163",
+            "display": "SK Rosenheim"
+          },
+          {
+            "code": "11009565",
+            "display": "SK Schwabach"
+          },
+          {
+            "code": "11009662",
+            "display": "SK Schweinfurt"
+          },
+          {
+            "code": "11009263",
+            "display": "SK Straubing"
+          },
+          {
+            "code": "11009363",
+            "display": "SK Weiden i.d.OPf."
+          },
+          {
+            "code": "11009663",
+            "display": "SK Würzburg"
+          },
+          {
+            "code": "11010042",
+            "display": "LK Merzig-Wadern"
+          },
+          {
+            "code": "11010043",
+            "display": "LK Neunkirchen"
+          },
+          {
+            "code": "11010045",
+            "display": "LK Saarpfalz-Kreis"
+          },
+          {
+            "code": "11010044",
+            "display": "LK Saarlouis"
+          },
+          {
+            "code": "11010046",
+            "display": "LK Sankt Wendel"
+          },
+          {
+            "code": "11010041",
+            "display": "LK Stadtverband Saarbrücken"
+          },
+          {
+            "code": "11011004",
+            "display": "SK Berlin Charlottenburg-Wilmersdorf"
+          },
+          {
+            "code": "11011002",
+            "display": "SK Berlin Friedrichshain-Kreuzberg"
+          },
+          {
+            "code": "11011011",
+            "display": "SK Berlin Lichtenberg"
+          },
+          {
+            "code": "11011010",
+            "display": "SK Berlin Marzahn-Hellersdorf"
+          },
+          {
+            "code": "11011001",
+            "display": "SK Berlin Mitte"
+          },
+          {
+            "code": "11011008",
+            "display": "SK Berlin Neukölln"
+          },
+          {
+            "code": "11011003",
+            "display": "SK Berlin Pankow"
+          },
+          {
+            "code": "11011012",
+            "display": "SK Berlin Reinickendorf"
+          },
+          {
+            "code": "11011005",
+            "display": "SK Berlin Spandau"
+          },
+          {
+            "code": "11011006",
+            "display": "SK Berlin Steglitz-Zehlendorf"
+          },
+          {
+            "code": "11011007",
+            "display": "SK Berlin Tempelhof-Schöneberg"
+          },
+          {
+            "code": "11011009",
+            "display": "SK Berlin Treptow-Köpenick"
+          },
+          {
+            "code": "11012060",
+            "display": "LK Barnim"
+          },
+          {
+            "code": "11012061",
+            "display": "LK Dahme-Spreewald"
+          },
+          {
+            "code": "11012062",
+            "display": "LK Elbe-Elster"
+          },
+          {
+            "code": "11012063",
+            "display": "LK Havelland"
+          },
+          {
+            "code": "11012064",
+            "display": "LK Märkisch-Oderland"
+          },
+          {
+            "code": "11012065",
+            "display": "LK Oberhavel"
+          },
+          {
+            "code": "11012066",
+            "display": "LK Oberspreewald-Lausitz"
+          },
+          {
+            "code": "11012067",
+            "display": "LK Oder-Spree"
+          },
+          {
+            "code": "11012068",
+            "display": "LK Ostprignitz-Ruppin"
+          },
+          {
+            "code": "11012069",
+            "display": "LK Potsdam-Mittelmark"
+          },
+          {
+            "code": "11012070",
+            "display": "LK Prignitz"
+          },
+          {
+            "code": "11012071",
+            "display": "LK Spree-Neiße"
+          },
+          {
+            "code": "11012072",
+            "display": "LK Teltow-Fläming"
+          },
+          {
+            "code": "11012073",
+            "display": "LK Uckermark"
+          },
+          {
+            "code": "11012051",
+            "display": "SK Brandenburg a.d.Havel"
+          },
+          {
+            "code": "11012052",
+            "display": "SK Cottbus"
+          },
+          {
+            "code": "11012053",
+            "display": "SK Frankfurt (Oder)"
+          },
+          {
+            "code": "11012054",
+            "display": "SK Potsdam"
+          },
+          {
+            "code": "11013003",
+            "display": "SK Rostock"
+          },
+          {
+            "code": "11013004",
+            "display": "SK Schwerin"
+          },
+          {
+            "code": "11013071",
+            "display": "LK Mecklenburgische Seenplatte"
+          },
+          {
+            "code": "11013072",
+            "display": "LK Rostock"
+          },
+          {
+            "code": "11013073",
+            "display": "LK Vorpommern-Rügen"
+          },
+          {
+            "code": "11013074",
+            "display": "LK Nordwestmecklenburg"
+          },
+          {
+            "code": "11013075",
+            "display": "LK Vorpommern-Greifswald"
+          },
+          {
+            "code": "11013076",
+            "display": "LK Ludwigslust-Parchim"
+          },
+          {
+            "code": "11014625",
+            "display": "LK Bautzen"
+          },
+          {
+            "code": "11014521",
+            "display": "LK Erzgebirgskreis"
+          },
+          {
+            "code": "11014626",
+            "display": "LK Görlitz"
+          },
+          {
+            "code": "11014729",
+            "display": "LK Leipzig"
+          },
+          {
+            "code": "11014627",
+            "display": "LK Meißen"
+          },
+          {
+            "code": "11014522",
+            "display": "LK Mittelsachsen"
+          },
+          {
+            "code": "11014730",
+            "display": "LK Nordsachsen"
+          },
+          {
+            "code": "11014628",
+            "display": "LK Sächsische Schweiz-Osterzgebirge"
+          },
+          {
+            "code": "11014523",
+            "display": "LK Vogtlandkreis"
+          },
+          {
+            "code": "11014524",
+            "display": "LK Zwickau"
+          },
+          {
+            "code": "11014511",
+            "display": "SK Chemnitz"
+          },
+          {
+            "code": "11014612",
+            "display": "SK Dresden"
+          },
+          {
+            "code": "11014713",
+            "display": "SK Leipzig"
+          },
+          {
+            "code": "11015081",
+            "display": "LK Altmarkkreis Salzwedel"
+          },
+          {
+            "code": "11015082",
+            "display": "LK Anhalt-Bitterfeld"
+          },
+          {
+            "code": "11015083",
+            "display": "LK Börde"
+          },
+          {
+            "code": "11015084",
+            "display": "LK Burgenlandkreis"
+          },
+          {
+            "code": "11015085",
+            "display": "LK Harz"
+          },
+          {
+            "code": "11015086",
+            "display": "LK Jerichower Land"
+          },
+          {
+            "code": "11015087",
+            "display": "LK Mansfeld-Südharz"
+          },
+          {
+            "code": "11015088",
+            "display": "LK Saalekreis"
+          },
+          {
+            "code": "11015089",
+            "display": "LK Salzlandkreis"
+          },
+          {
+            "code": "11015090",
+            "display": "LK Stendal"
+          },
+          {
+            "code": "11015091",
+            "display": "LK Wittenberg"
+          },
+          {
+            "code": "11015001",
+            "display": "SK Dessau-Roßlau"
+          },
+          {
+            "code": "11015002",
+            "display": "SK Halle"
+          },
+          {
+            "code": "11015003",
+            "display": "SK Magdeburg"
+          },
+          {
+            "code": "11016077",
+            "display": "LK Altenburger Land"
+          },
+          {
+            "code": "11016061",
+            "display": "LK Eichsfeld"
+          },
+          {
+            "code": "11016067",
+            "display": "LK Gotha"
+          },
+          {
+            "code": "11016076",
+            "display": "LK Greiz"
+          },
+          {
+            "code": "11016069",
+            "display": "LK Hildburghausen"
+          },
+          {
+            "code": "11016070",
+            "display": "LK Ilm-Kreis"
+          },
+          {
+            "code": "11016065",
+            "display": "LK Kyffhäuserkreis"
+          },
+          {
+            "code": "11016062",
+            "display": "LK Nordhausen"
+          },
+          {
+            "code": "11016074",
+            "display": "LK Saale-Holzland-Kreis"
+          },
+          {
+            "code": "11016075",
+            "display": "LK Saale-Orla-Kreis"
+          },
+          {
+            "code": "11016073",
+            "display": "LK Saalfeld-Rudolstadt"
+          },
+          {
+            "code": "11016066",
+            "display": "LK Schmalkalden-Meiningen"
+          },
+          {
+            "code": "11016068",
+            "display": "LK Sömmerda"
+          },
+          {
+            "code": "11016072",
+            "display": "LK Sonneberg"
+          },
+          {
+            "code": "11016064",
+            "display": "LK Unstrut-Hainich-Kreis"
+          },
+          {
+            "code": "11016063",
+            "display": "LK Wartburgkreis"
+          },
+          {
+            "code": "11016071",
+            "display": "LK Weimarer Land"
+          },
+          {
+            "code": "11016051",
+            "display": "SK Erfurt"
+          },
+          {
+            "code": "11016052",
+            "display": "SK Gera"
+          },
+          {
+            "code": "11016053",
+            "display": "SK Jena"
+          },
+          {
+            "code": "11016054",
+            "display": "SK Suhl"
+          },
+          {
+            "code": "11016055",
+            "display": "SK Weimar"
+          }
+        ]
+      }
+    ]
+  }
+}

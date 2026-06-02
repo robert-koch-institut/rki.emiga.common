@@ -1,0 +1,145 @@
+Profile: AnnotationCommunicationR6
+Parent: Communication
+Id: AnnotationCommunicationR6
+Title: "Annotation"
+Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
+* ^version = "0.9.0"
+* ^date = "2026-05-18"
+* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunicationR6"
+
+* insert MetadataProfile
+* insert ProfileSecurityTagsAnnotation
+* insert ProfileResourceCommon
+* insert ProfileDomainResourceCommon
+* insert ProfileMetaProfileTags
+
+* meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunicationR6"
+
+//* meta.tag ^mustSupport = true
+* meta.tag MS
+* meta.tag ^slicing.discriminator.type = #pattern
+* meta.tag ^slicing.discriminator.path = "system"
+* meta.tag ^slicing.rules = #open
+* meta.tag contains 
+    personalInformation 1.. MS
+//* meta.tag[personalInformation] ^mustSupport = true
+* meta.tag[personalInformation] from https://emiga.rki.de/fhir/common/ValueSet/PersonalInformation (required)
+* meta.tag[personalInformation].system 1.. MS
+* meta.tag[personalInformation].system = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
+* meta.tag[personalInformation].version 
+* meta.tag[personalInformation].code 1.. MS
+* meta.tag[personalInformation].display 
+* meta.tag[personalInformation] ^definition = "Kennzeichnung von personenbezogenen Daten"
+* meta.tag[personalInformation] ^short = "Kennzeichnung von personenbezogenen Daten"
+
+// Derzeit für Emiga Anwendungsfälle nicht relevant
+* language 0..0
+* insert IdentifierCommon
+
+* identifier ^short = "Identifikator der Annotation"
+* identifier ^definition = "Eindeutiger fachlicher Identifikator der Annotation (z. B. Aktenzeichen, Dokumenten- oder Vorgangsnummer), der unabhängig von der technischen Ressourcen-ID zur Identifikation und Referenzierung der Annotation verwendet wird."
+
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+// AUTO-DISABLED (SUSHI R6): * instantiatesCanonical 0..0
+// AUTO-DISABLED (SUSHI R6): * instantiatesCanonical ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+// AUTO-DISABLED (SUSHI R6): * instantiatesUri 0..0
+// AUTO-DISABLED (SUSHI R6): * instantiatesUri ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* basedOn 0..0
+* basedOn ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* partOf 0..0
+* partOf ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* inResponseTo 0..0
+* inResponseTo ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* status 1..1 MS
+* status = #completed (exactly)
+
+* status ^comment = "Der Status der Annotation wird auf 'completed' gesetzt, da der Verarbeitungsstatus der Annotation über die Extension ProcessingStatus definiert wird."
+
+// Derzeit für Emiga Anwendungsfälle nicht relevant
+* statusReason 0..0
+* statusReason ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+* extension MS
+* extension contains $ProcessingStatus named processingStatus 1..1 MS and $DateCreated named dateCreated 0..1 MS
+* extension[processingStatus].value[x] from ProcessingStatusAnnotation (required)
+
+
+* category MS
+* category ^short = "Kategorie"
+* category ^definition = "Kategorie der Annotation"
+
+* category.coding MS
+
+* category.coding from AnnotationCategoryVS (required)
+* category.coding.system 1..1 MS
+* category.coding.system = $AnnotationCategoryCS
+* category.coding.version 0..1 MS
+* category.coding.code 1..1 MS
+* category.coding.display 0..1 MS
+
+
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* priority 0..0
+* priority ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* medium 0..0
+* medium ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* subject 0..0
+* subject ^comment = "Subject der Annotation ist ein andere Entität, es wird über about referenziert"
+//Betreff
+* topic 1..1 MS
+* topic ^short = "Betreff"
+* topic ^definition = "Der Betreff der Annotation"
+* topic.coding 0..0
+* topic.coding ^comment = "Der Betreff wird im Text Feld dokumentiert"
+* topic.text 1..1 MS
+* topic.text ^short = "Betreff-Inhalt"
+* topic.text ^definition = "Der Betreff der Annotation wird im Text Feld dokumentiert."
+
+//Über welche Entität wird die Annotation benötigt
+* about 1..1 MS
+* about ^short = "Bezugsentität"
+* about ^definition = "Referenz zur Bezugsentität"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+* encounter 0..0
+* encounter ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Erstellungsdatum
+* sent 0..1 MS
+* sent ^definition = "Hier wird ein benutzerdefiniertes Datum angegeben."
+* sent ^short = "Datum"
+
+* received 0..0
+* received ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+
+* recipient 0..0
+* recipient ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+
+* sender 1..1 MS
+* sender only Reference(EmigaUserPractitionerR6)
+* sender ^definition = "Erstellende Person der Annotation"
+* sender ^short = "Erstellende Person"
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+// AUTO-DISABLED (SUSHI R6): * reasonCode 0..0
+// AUTO-DISABLED (SUSHI R6): * reasonCode ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+
+//Derzeit für Emiga Anwendungsfälle nicht relevant
+// AUTO-DISABLED (SUSHI R6): * reasonReference 0..0 
+// AUTO-DISABLED (SUSHI R6): * reasonReference ^comment = "Derzeit für Emiga Anwendungsfälle nicht relevant"
+* payload 0..* MS
+* payload ^short = "Inhalt"
+* payload ^definition = "Inhalt der Annotation"
+* payload.content[x] MS
+// AUTO-DISABLED (SUSHI R6): * payload.content[x] only string or Reference(AttachmentDocumentReferenceR6) 
+* payload.content[x] ^comment = "Der Inhalt der Annotation wird im contentString Feld gespeichert oder im Fall eines Anhangs im contentAttachment Feld"
+//* payload.contentString 0..1 MS
+// AUTO-DISABLED (SUSHI R6): * payload.contentString MS
+// AUTO-DISABLED (SUSHI R6): * payload.contentString ^short = "Beschreibung - Inhalt der Annotation"
+* payload.contentReference MS
+* payload.contentReference ^short = "Anhang - Hier wird der Anhang der Annotation referenziert"
+

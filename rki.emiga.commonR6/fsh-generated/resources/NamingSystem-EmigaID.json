@@ -1,0 +1,18 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "EmigaID",
+  "url": "https://emiga.rki.de/fhir/common/NamingSystem/EmigaID",
+  "title": "EMIGA ID",
+  "description": "EMIGA ID für die Verwendung in Identifiers",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://emiga.rki.de/fhir/sid/EmigaID"
+    }
+  ],
+  "publisher": "Robert Koch-Institut",
+  "date": "2025-09-15",
+  "name": "EmigaID",
+  "status": "active",
+  "kind": "identifier"
+}
