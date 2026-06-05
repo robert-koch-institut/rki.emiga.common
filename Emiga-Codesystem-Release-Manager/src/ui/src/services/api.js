@@ -29,3 +29,21 @@ export async function fetchResources(token) {
 
   return response.json();
 }
+
+export async function updateResource(token, resourceId, data) {
+  const response = await fetch(`${API_BASE}/api/v1/resources/${resourceId}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    const body = await response.json().catch(() => null);
+    throw new Error(body?.detail || 'Unable to save resource');
+  }
+
+  return response.json();
+}

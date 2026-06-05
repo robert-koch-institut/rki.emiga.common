@@ -1,11 +1,18 @@
 import { useEffect, useState } from 'react';
-import { fetchResources } from '../services/api';
+import { fetchResources, updateResource } from '../services/api';
 
 export default function Dashboard({ token, user, onLogout }) {
   const [resources, setResources] = useState([]);
   const [loading, setLoading] = useState(true);
   const [validationResult, setValidationResult] = useState(null);
   const [validatingId, setValidatingId] = useState(null);
+  const [editingResource, setEditingResource] = useState(null);
+  const [editForm, setEditForm] = useState({
+    name: '',
+    status: '',
+    version: '',
+    url: '',
+  });
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -57,24 +64,59 @@ export default function Dashboard({ token, user, onLogout }) {
     }
   };
 
+  const handleEdit = (resource) => {
+    setEditingResource(resource.id);
+    setEditForm({
+      name: resource.name,
+      status: resource.status,
+      version: resource.version,
+      url: resource.url,
+    });
+    setValidationResult(null);
+  };
+
+  const handleCancelEdit = () => {
+    setEditingResource(null);
+    setEditForm({ name: '', status: '', version: '', url: '' });
+  };
+
+  const handleSave = async () => {
+    if (!editingResource) return;
+
+    setError('');
+    try {
+      const existing = resources.find((r) => r.id === editingResource);
+      const updated = await updateResource(token, editingResource, {
+        id: editingResource,
+        name: editForm.name,
+        status: editForm.status,
+        version: editForm.version,
+        url: editForm.url,
+        concepts: existing?.concepts || [],
+      });
+
+      setResources((prev) =>
+        prev.map((resource) => (resource.id === editingResource ? updated : resource))
+      );
+      setEditingResource(null);
+    } catch (err) {
+      setError(err.message || 'Unable to save resource');
+    }
+  };
+
   const getStatusBadge = (status) => {
     return `badge-${status}`;
   };
 
-  const getSeverityClass = (severity) => {
-    return severity?.toLowerCase() || 'info';
-  };
-
   return (
     <div className="dashboard">
-      {/* SIDEBAR */}
       <div className="dashboard-sidebar">
-        <div className="sidebar-logo">
-          🏥 EMIGA TUM
-        </div>
-        
+        <div className="sidebar-logo">🏥 ECUM</div>
+
         <nav className="sidebar-nav">
-          <a href="#dashboard" className="active">📊 Dashboard</a>
+          <a href="#dashboard" className="active">
+            📊 Dashboard
+          </a>
           <a href="#resources">📋 Resources</a>
           <a href="#releases">📦 Releases</a>
           <a href="#settings">⚙️ Settings</a>
@@ -91,18 +133,18 @@ export default function Dashboard({ token, user, onLogout }) {
         </div>
       </div>
 
-      {/* MAIN CONTENT */}
       <div className="dashboard-content">
         <div className="dashboard-header">
           <h1>Dashboard</h1>
           <p>Manage and validate FHIR CodeSystem resources</p>
         </div>
 
-        {error && <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}>
-          <strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}
-        </div>}
+        {error && (
+          <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}>
+            <strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}
+          </div>
+        )}
 
-        {/* RESOURCES PANEL */}
         <div className="panel">
           <h2>
             <div className="panel-icon">📋</div>
@@ -135,7 +177,9 @@ export default function Dashboard({ token, user, onLogout }) {
               <tbody>
                 {resources.map((resource) => (
                   <tr key={resource.id}>
-                    <td><strong>{resource.id}</strong></td>
+                    <td>
+                      <strong>{resource.id}</strong>
+                    </td>
                     <td>{resource.name}</td>
                     <td>
                       <span className={`resource-badge ${getStatusBadge(resource.status)}`}>
@@ -153,6 +197,9 @@ export default function Dashboard({ token, user, onLogout }) {
                         >
                           {validatingId === resource.id ? '⊙ Validating' : '✓ Validate'}
                         </button>
+                        <button className="btn btn-secondary" onClick={() => handleEdit(resource)}>
+                          ✎ Edit
+                        </button>
                       </div>
                     </td>
                   </tr>
@@ -162,7 +209,63 @@ export default function Dashboard({ token, user, onLogout }) {
           )}
         </div>
 
-        {/* VALIDATION RESULT PANEL */}
+        {editingResource && (
+          <div className="panel">
+            <h2>
+              <div className="panel-icon">✎</div>
+              Edit Resource
+            </h2>
+
+            <div className="validation-result">
+              <div className="form-group">
+                <label htmlFor="resource-name">Name</label>
+                <input
+                  id="resource-name"
+                  type="text"
+                  value={editForm.name}
+                  onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="resource-status">Status</label>
+                <input
+                  id="resource-status"
+                  type="text"
+                  value={editForm.status}
+                  onChange={(e) => setEditForm({ ...editForm, status: e.target.value })}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="resource-version">Version</label>
+                <input
+                  id="resource-version"
+                  type="text"
+                  value={editForm.version}
+                  onChange={(e) => setEditForm({ ...editForm, version: e.target.value })}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="resource-url">URL</label>
+                <input
+                  id="resource-url"
+                  type="text"
+                  value={editForm.url}
+                  onChange={(e) => setEditForm({ ...editForm, url: e.target.value })}
+                />
+              </div>
+
+              <div className="action-buttons" style={{ marginTop: '1rem' }}>
+                <button className="btn btn-primary" onClick={handleSave}>
+                  Save Changes
+                </button>
+                <button className="btn btn-secondary" onClick={handleCancelEdit}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         {validationResult && (
           <div className="panel">
             <h2>
@@ -171,7 +274,9 @@ export default function Dashboard({ token, user, onLogout }) {
             </h2>
 
             <div className="validation-result">
-              <h3>Resource: <strong>{validationResult.resource_id}</strong></h3>
+              <h3>
+                Resource: <strong>{validationResult.resource_id}</strong>
+              </h3>
               <div className="validation-stats">
                 <div className="stat">
                   <span className="stat-label">Status</span>
@@ -185,13 +290,21 @@ export default function Dashboard({ token, user, onLogout }) {
                 </div>
                 <div className="stat">
                   <span className="stat-label">Errors</span>
-                  <span className={`stat-value ${validationResult.errors_count > 0 ? 'error' : 'success'}`}>
+                  <span
+                    className={`stat-value ${
+                      validationResult.errors_count > 0 ? 'error' : 'success'
+                    }`}
+                  >
                     {validationResult.errors_count}
                   </span>
                 </div>
                 <div className="stat">
                   <span className="stat-label">Warnings</span>
-                  <span className={`stat-value ${validationResult.warnings_count > 0 ? 'warning' : 'success'}`}>
+                  <span
+                    className={`stat-value ${
+                      validationResult.warnings_count > 0 ? 'warning' : 'success'
+                    }`}
+                  >
                     {validationResult.warnings_count}
                   </span>
                 </div>

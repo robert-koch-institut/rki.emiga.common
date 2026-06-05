@@ -5,7 +5,11 @@ from typing import List, Optional, Dict, Any
 from datetime import datetime
 import uuid
 
-from .validators import FHIRSchemaValidator, generate_validation_report_json
+from sqlalchemy.orm import Session
+
+from .db import get_db, init_db, verify_password
+from .models import User, CodeSystemResource
+from .validators import FHIRSchemaValidator
 
 app = FastAPI(
     title="EMIGA Release Manager API",
@@ -21,10 +25,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 class CodeSystemConceptModel(BaseModel):
     code: str = Field(..., description="Concept code")
     display: str = Field(..., description="Concept display text")
     definition: Optional[str] = None
+
 
 class CodeSystemModel(BaseModel):
     id: str
@@ -34,10 +40,12 @@ class CodeSystemModel(BaseModel):
     status: str
     concepts: List[CodeSystemConceptModel]
 
+
 class ReleaseRequest(BaseModel):
     resource_id: str
     target_env: Optional[str] = "sandbox"
     description: Optional[str] = None
+
 
 class ReleaseResponse(BaseModel):
     releaseId: str
@@ -47,9 +55,11 @@ class ReleaseResponse(BaseModel):
     workflowUrl: Optional[str]
     timestamp: datetime
 
+
 class AuthRequest(BaseModel):
     username: str
     password: str
+
 
 class AuthResponse(BaseModel):
     access_token: str
@@ -57,21 +67,24 @@ class AuthResponse(BaseModel):
     username: str
     role: str
 
-USER_STORE = {
-    "admin": {"password": "password123", "role": "admin"},
-    "editor": {"password": "editor1", "role": "editor"},
-}
+
+class ValidationRequest(BaseModel):
+    resource: Dict[str, Any]
+    config: Optional[Dict[str, Any]] = None
+
 
 TOKEN_STORE: Dict[str, Dict[str, Any]] = {}
 
-def create_token(username: str) -> str:
+
+def create_token(username: str, role: str) -> str:
     token = f"{username}-{uuid.uuid4().hex}"
     TOKEN_STORE[token] = {
         "username": username,
-        "role": USER_STORE[username]["role"],
+        "role": role,
         "created_at": datetime.utcnow().isoformat(),
     }
     return token
+
 
 def get_current_user(authorization: Optional[str] = Header(None)) -> Dict[str, Any]:
     if not authorization or not authorization.startswith("Bearer "):
@@ -83,18 +96,36 @@ def get_current_user(authorization: Optional[str] = Header(None)) -> Dict[str, A
         raise HTTPException(status_code=401, detail="Invalid or expired token")
     return session
 
+
+def resource_to_dict(resource: CodeSystemResource) -> Dict[str, Any]:
+    return {
+        "id": resource.id,
+        "url": resource.url,
+        "version": resource.version,
+        "name": resource.name,
+        "status": resource.status,
+        "concepts": resource.concepts or [],
+    }
+
+
+@app.on_event("startup")
+def on_startup():
+    init_db()
+
+
 @app.post("/api/v1/auth/login", response_model=AuthResponse)
-def login(req: AuthRequest):
-    account = USER_STORE.get(req.username)
-    if not account or account["password"] != req.password:
+def login(req: AuthRequest, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.username == req.username).first()
+    if not user or not verify_password(req.password, user.password_hash):
         raise HTTPException(status_code=401, detail="Invalid username or password")
 
-    token = create_token(req.username)
+    token = create_token(user.username, user.role)
     return AuthResponse(
         access_token=token,
-        username=req.username,
-        role=account["role"],
+        username=user.username,
+        role=user.role,
     )
+
 
 @app.post("/api/v1/auth/logout")
 def logout(authorization: Optional[str] = Header(None)):
@@ -105,70 +136,82 @@ def logout(authorization: Optional[str] = Header(None)):
     TOKEN_STORE.pop(token, None)
     return {"message": "Logged out"}
 
-resources_db = {
-    "cs-001": {
-        "id": "cs-001",
-        "url": "http://example.com/codesystems/cs-001",
-        "version": "1.0.0",
-        "name": "ExampleCodeSystem",
-        "status": "active",
-        "concepts": [
-            {"code": "active", "display": "Active", "definition": "The resource is active"},
-            {"code": "inactive", "display": "Inactive", "definition": "The resource is inactive"}
-        ]
-    }
-}
 
 @app.get("/api/v1/health")
 def health_check():
     return {"status": "ok", "service": "ECUM Backend"}
 
+
 @app.get("/api/v1/resources", response_model=List[CodeSystemModel])
-def list_resources(current_user: Dict[str, Any] = Depends(get_current_user)):
-    """List all CodeSystem resources"""
-    return list(resources_db.values())
+def list_resources(
+    current_user: Dict[str, Any] = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    items = db.query(CodeSystemResource).all()
+    return [resource_to_dict(item) for item in items]
+
 
 @app.get("/api/v1/resources/{resource_id}", response_model=CodeSystemModel)
-def get_resource(resource_id: str, current_user: Dict[str, Any] = Depends(get_current_user)):
-    """Get a specific CodeSystem resource"""
-    if resource_id not in resources_db:
+def get_resource(
+    resource_id: str,
+    current_user: Dict[str, Any] = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    resource = db.query(CodeSystemResource).filter(CodeSystemResource.id == resource_id).first()
+    if not resource:
         raise HTTPException(status_code=404, detail="Resource not found")
-    return resources_db[resource_id]
+    return resource_to_dict(resource)
+
 
 @app.post("/api/v1/resources", response_model=CodeSystemModel)
-def create_resource(resource: CodeSystemModel, current_user: Dict[str, Any] = Depends(get_current_user)):
-    """Create a new CodeSystem resource"""
-    if resource.id in resources_db:
+def create_resource(
+    resource: CodeSystemModel,
+    current_user: Dict[str, Any] = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    if db.query(CodeSystemResource).filter(CodeSystemResource.id == resource.id).first():
         raise HTTPException(status_code=409, detail="Resource already exists")
-    resources_db[resource.id] = resource.dict()
+    db_resource = CodeSystemResource(**resource.dict())
+    db.add(db_resource)
+    db.commit()
     return resource
+
 
 @app.put("/api/v1/resources/{resource_id}", response_model=CodeSystemModel)
-def update_resource(resource_id: str, resource: CodeSystemModel, current_user: Dict[str, Any] = Depends(get_current_user)):
-    """Update an existing CodeSystem resource"""
-    if resource_id not in resources_db:
+def update_resource(
+    resource_id: str,
+    resource: CodeSystemModel,
+    current_user: Dict[str, Any] = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    db_resource = db.query(CodeSystemResource).filter(CodeSystemResource.id == resource_id).first()
+    if not db_resource:
         raise HTTPException(status_code=404, detail="Resource not found")
-    resources_db[resource_id] = resource.dict()
-    return resource
+
+    for key, value in resource.dict().items():
+        setattr(db_resource, key, value)
+
+    db.commit()
+    db.refresh(db_resource)
+    return resource_to_dict(db_resource)
+
 
 @app.delete("/api/v1/resources/{resource_id}")
-def delete_resource(resource_id: str, current_user: Dict[str, Any] = Depends(get_current_user)):
-    """Delete a CodeSystem resource"""
-    if resource_id not in resources_db:
+def delete_resource(
+    resource_id: str,
+    current_user: Dict[str, Any] = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    db_resource = db.query(CodeSystemResource).filter(CodeSystemResource.id == resource_id).first()
+    if not db_resource:
         raise HTTPException(status_code=404, detail="Resource not found")
-    del resources_db[resource_id]
+    db.delete(db_resource)
+    db.commit()
     return {"message": "Resource deleted"}
+
 
 @app.post("/api/v1/release/trigger", response_model=ReleaseResponse)
 def trigger_release(req: ReleaseRequest, current_user: Dict[str, Any] = Depends(get_current_user)):
-    """
-    Trigger a release pipeline.
-    In production, this would:
-    1. Create a git branch
-    2. Trigger GitHub Actions
-    3. Return workflow URL
-    """
-    # Prototype: return a pending release with generated id
     rid = str(uuid.uuid4())
     return ReleaseResponse(
         releaseId=rid,
@@ -179,6 +222,21 @@ def trigger_release(req: ReleaseRequest, current_user: Dict[str, Any] = Depends(
         timestamp=datetime.utcnow()
     )
 
+
+@app.post("/validate")
+def validate_codesystem(req: ValidationRequest):
+    validator = FHIRSchemaValidator()
+    report = validator.validate(req.resource, req.config)
+    return {
+        "resource_id": report.resource_id,
+        "valid": report.valid,
+        "issues_count": len(report.issues),
+        "errors_count": sum(1 for i in report.issues if i.severity == report.issues[0].severity.ERROR),
+        "warnings_count": sum(1 for i in report.issues if i.severity == report.issues[0].severity.WARNING),
+        "issues": [issue.__dict__ for issue in report.issues],
+    }
+
+
 @app.get("/")
 def root():
     return {
@@ -187,7 +245,3 @@ def root():
         "docs_url": "/docs",
         "healthcheck": "/api/v1/health"
     }
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=5000)
