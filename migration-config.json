@@ -8,7 +8,7 @@
   "compareDir": "compare",
   "outputDir": "output",
   "rulesConfigPath": null,
-  "validatorJarPath": "validator_cli.jar",
+  "validatorJarPath": "P:\\validator_cli.jar",
   "workdir": null,
   "compareMode": "incremental",
   "exportZip": true,
