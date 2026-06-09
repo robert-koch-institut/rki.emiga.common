@@ -7,7 +7,7 @@ import uuid
 
 from sqlalchemy.orm import Session
 
-from .db import get_db, init_db, verify_password
+from .db import get_db, init_db, verify_password, get_password_hash
 from .models import User, CodeSystemResource
 from .validators import FHIRSchemaValidator
 
@@ -76,11 +76,12 @@ class ValidationRequest(BaseModel):
 TOKEN_STORE: Dict[str, Dict[str, Any]] = {}
 
 
-def create_token(username: str, role: str) -> str:
-    token = f"{username}-{uuid.uuid4().hex}"
+def create_token(user: User) -> str:
+    token = f"{user.username}-{uuid.uuid4().hex}"
     TOKEN_STORE[token] = {
-        "username": username,
-        "role": role,
+        "user_id": user.id,
+        "username": user.username,
+        "role": user.role,
         "created_at": datetime.utcnow().isoformat(),
     }
     return token
@@ -119,7 +120,7 @@ def login(req: AuthRequest, db: Session = Depends(get_db)):
     if not user or not verify_password(req.password, user.password_hash):
         raise HTTPException(status_code=401, detail="Invalid username or password")
 
-    token = create_token(user.username, user.role)
+    token = create_token(user)
     return AuthResponse(
         access_token=token,
         username=user.username,
@@ -137,6 +138,28 @@ def logout(authorization: Optional[str] = Header(None)):
     return {"message": "Logged out"}
 
 
+@app.post("/api/v1/auth/signup", response_model=AuthResponse)
+def signup(req: AuthRequest, db: Session = Depends(get_db)):
+    if db.query(User).filter(User.username == req.username).first():
+        raise HTTPException(status_code=409, detail="Username already exists")
+
+    user = User(
+        username=req.username,
+        password_hash=get_password_hash(req.password),
+        role="editor",
+    )
+    db.add(user)
+    db.commit()
+    db.refresh(user)
+
+    token = create_token(user)
+    return AuthResponse(
+        access_token=token,
+        username=user.username,
+        role=user.role,
+    )
+
+
 @app.get("/api/v1/health")
 def health_check():
     return {"status": "ok", "service": "ECUM Backend"}
@@ -147,7 +170,7 @@ def list_resources(
     current_user: Dict[str, Any] = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
-    items = db.query(CodeSystemResource).all()
+    items = db.query(CodeSystemResource).filter(CodeSystemResource.user_id == current_user["user_id"]).all()
     return [resource_to_dict(item) for item in items]
 
 
@@ -157,7 +180,14 @@ def get_resource(
     current_user: Dict[str, Any] = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
-    resource = db.query(CodeSystemResource).filter(CodeSystemResource.id == resource_id).first()
+    resource = (
+        db.query(CodeSystemResource)
+        .filter(
+            CodeSystemResource.id == resource_id,
+            CodeSystemResource.user_id == current_user["user_id"],
+        )
+        .first()
+    )
     if not resource:
         raise HTTPException(status_code=404, detail="Resource not found")
     return resource_to_dict(resource)
@@ -171,10 +201,12 @@ def create_resource(
 ):
     if db.query(CodeSystemResource).filter(CodeSystemResource.id == resource.id).first():
         raise HTTPException(status_code=409, detail="Resource already exists")
-    db_resource = CodeSystemResource(**resource.dict())
+
+    db_resource = CodeSystemResource(**resource.dict(), user_id=current_user["user_id"])
     db.add(db_resource)
     db.commit()
-    return resource
+    db.refresh(db_resource)
+    return resource_to_dict(db_resource)
 
 
 @app.put("/api/v1/resources/{resource_id}", response_model=CodeSystemModel)
@@ -184,7 +216,14 @@ def update_resource(
     current_user: Dict[str, Any] = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
-    db_resource = db.query(CodeSystemResource).filter(CodeSystemResource.id == resource_id).first()
+    db_resource = (
+        db.query(CodeSystemResource)
+        .filter(
+            CodeSystemResource.id == resource_id,
+            CodeSystemResource.user_id == current_user["user_id"],
+        )
+        .first()
+    )
     if not db_resource:
         raise HTTPException(status_code=404, detail="Resource not found")
 
@@ -202,7 +241,14 @@ def delete_resource(
     current_user: Dict[str, Any] = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
-    db_resource = db.query(CodeSystemResource).filter(CodeSystemResource.id == resource_id).first()
+    db_resource = (
+        db.query(CodeSystemResource)
+        .filter(
+            CodeSystemResource.id == resource_id,
+            CodeSystemResource.user_id == current_user["user_id"],
+        )
+        .first()
+    )
     if not db_resource:
         raise HTTPException(status_code=404, detail="Resource not found")
     db.delete(db_resource)

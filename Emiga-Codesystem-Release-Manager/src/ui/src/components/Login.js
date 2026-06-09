@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { login } from '../services/api';
+import { login, signup } from '../services/api';
 
 export default function Login({ onLogin }) {
+  const [isRegistering, setIsRegistering] = useState(false);
   const [username, setUsername] = useState('admin');
   const [password, setPassword] = useState('password123');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -12,11 +14,20 @@ export default function Login({ onLogin }) {
     setError('');
     setLoading(true);
 
+    if (isRegistering && password !== confirmPassword) {
+      setError('Passwords do not match');
+      setLoading(false);
+      return;
+    }
+
     try {
-      const auth = await login(username, password);
+      const auth = isRegistering
+        ? await signup(username, password)
+        : await login(username, password);
+
       onLogin(auth);
     } catch (err) {
-      setError(err.message || 'Login failed');
+      setError(err.message || 'Authentication failed');
     } finally {
       setLoading(false);
     }
@@ -25,9 +36,13 @@ export default function Login({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h1>EMIGA TUM</h1>
-        <p>EMIGA Terminology Update Manager</p>
-        
+        <h1>{isRegistering ? 'Create account' : 'ECUM'}</h1>
+        <p>
+          {isRegistering
+            ? 'Sign up to manage CodeSystem resources.'
+            : 'EMIGA Codesystem Update Manager'}
+        </p>
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
@@ -51,15 +66,46 @@ export default function Login({ onLogin }) {
             />
           </div>
 
+          {isRegistering && (
+            <div className="form-group">
+              <label htmlFor="confirm-password">Confirm Password</label>
+              <input
+                id="confirm-password"
+                type="password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
+              />
+            </div>
+          )}
+
           <button type="submit" disabled={loading}>
-            {loading ? <span className="loading-spinner"></span> : 'Sign in'}
+            {loading ? 'Working...' : isRegistering ? 'Sign up' : 'Sign in'}
           </button>
         </form>
 
+        <button
+          type="button"
+          className="btn btn-secondary"
+          onClick={() => {
+            setIsRegistering(!isRegistering);
+            setError('');
+          }}
+          style={{ width: '100%', marginTop: '1rem' }}
+        >
+          {isRegistering ? 'Back to login' : 'Create new account'}
+        </button>
+
         <div className="hint">
-          <strong>Demo Credentials:</strong>
-          admin / password123<br/>
-          editor / editor1
+          {isRegistering ? (
+            <strong>After signing up, you will be logged in automatically.</strong>
+          ) : (
+            <>
+              <strong>Demo Credentials:</strong>
+              admin / password123<br />
+              editor / editor1
+            </>
+          )}
         </div>
 
         {error && <div className="error">{error}</div>}

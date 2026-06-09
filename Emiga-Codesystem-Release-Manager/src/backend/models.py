@@ -16,6 +16,7 @@ class User(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
     edits = relationship("UserEdit", back_populates="user")
+    resources = relationship("CodeSystemResource", back_populates="owner")
 
 
 class CodeSystemResource(Base):
@@ -27,8 +28,11 @@ class CodeSystemResource(Base):
     status = Column(String(50), nullable=False)
     version = Column(String(50), nullable=False)
     concepts = Column(JSON, nullable=False, default=list)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False)
+
+    owner = relationship("User", back_populates="resources")
 
 
 class UserEdit(Base):
