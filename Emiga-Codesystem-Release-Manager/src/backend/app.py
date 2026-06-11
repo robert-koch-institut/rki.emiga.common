@@ -1,4 +1,7 @@
-﻿from fastapi import FastAPI, HTTPException, Depends, Header
+﻿import json
+import os
+from pathlib import Path
+from fastapi import FastAPI, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
@@ -27,8 +30,8 @@ app.add_middleware(
 
 
 class CodeSystemConceptModel(BaseModel):
-    code: str = Field(..., description="Concept code")
-    display: str = Field(..., description="Concept display text")
+    code: str
+    display: str
     definition: Optional[str] = None
 
 
@@ -98,9 +101,20 @@ def get_current_user(authorization: Optional[str] = Header(None)) -> Dict[str, A
     return session
 
 
+def normalize_resource_payload(resource: dict) -> dict:
+    return {
+        "resource_id": resource.get("id"),
+        "url": resource.get("url", ""),
+        "name": resource.get("name", ""),
+        "status": resource.get("status", "unknown"),
+        "version": resource.get("version", ""),
+        "concepts": resource.get("concept", []) or [],
+    }
+
+
 def resource_to_dict(resource: CodeSystemResource) -> Dict[str, Any]:
     return {
-        "id": resource.id,
+        "id": resource.resource_id,
         "url": resource.url,
         "version": resource.version,
         "name": resource.name,
@@ -109,60 +123,99 @@ def resource_to_dict(resource: CodeSystemResource) -> Dict[str, Any]:
     }
 
 
+def get_fsh_resources_folder() -> Path:
+    env_path = os.environ.get("FSH_RESOURCES_PATH")
+    if env_path:
+        path = Path(env_path).expanduser()
+        if path.exists():
+            return path
+
+    repo_root = Path(__file__).resolve().parents[3]
+    candidates = [
+        repo_root / "fsh-generated" / "resources",
+        repo_root.parent / "rki.emiga.common" / "fsh-generated" / "resources",
+        repo_root.parent / "rki.emiga.common" / "rki.emiga.common" / "fsh-generated" / "resources",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    raise HTTPException(
+        status_code=500,
+        detail="FSH resources folder not found. Set FSH_RESOURCES_PATH or place fsh-generated/resources next to the repo."
+    )
+
+
+def load_fsh_codesystems() -> List[Dict[str, Any]]:
+    folder = get_fsh_resources_folder()
+    results = []
+    for json_path in folder.glob("CodeSystem-*.json"):
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+        if data.get("resourceType") != "CodeSystem":
+            continue
+        results.append({
+            "id": data.get("id"),
+            "name": data.get("name"),
+            "url": data.get("url"),
+            "status": data.get("status"),
+            "version": data.get("version"),
+            "concepts_count": len(data.get("concept", []) or []),
+        })
+    return sorted(results, key=lambda item: item["name"] or item["id"])
+
+
+def load_fsh_codesystem(resource_id: str) -> Optional[Dict[str, Any]]:
+    folder = get_fsh_resources_folder()
+    for json_path in folder.glob("CodeSystem-*.json"):
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+        if data.get("resourceType") == "CodeSystem" and data.get("id") == resource_id:
+            return data
+    return None
+
+
 @app.on_event("startup")
 def on_startup():
     init_db()
 
 
-@app.post("/api/v1/auth/login", response_model=AuthResponse)
-def login(req: AuthRequest, db: Session = Depends(get_db)):
-    user = db.query(User).filter(User.username == req.username).first()
-    if not user or not verify_password(req.password, user.password_hash):
-        raise HTTPException(status_code=401, detail="Invalid username or password")
+@app.get("/api/v1/fsh-codesystems")
+def list_fsh_codesystems(
+    current_user: Dict[str, Any] = Depends(get_current_user),
+):
+    return load_fsh_codesystems()
 
-    token = create_token(user)
-    return AuthResponse(
-        access_token=token,
-        username=user.username,
-        role=user.role,
+
+@app.post("/api/v1/fsh-codesystems/import/{resource_id}", response_model=CodeSystemModel)
+def import_fsh_codesystem(
+    resource_id: str,
+    current_user: Dict[str, Any] = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    resource = load_fsh_codesystem(resource_id)
+    if not resource:
+        raise HTTPException(status_code=404, detail="FSH CodeSystem not found")
+
+    normalized = normalize_resource_payload(resource)
+    if db.query(CodeSystemResource).filter(
+        CodeSystemResource.resource_id == normalized["resource_id"],
+        CodeSystemResource.user_id == current_user["user_id"],
+    ).first():
+        raise HTTPException(status_code=409, detail="CodeSystem already imported")
+
+    db_resource = CodeSystemResource(
+        id=f"{current_user['user_id']}:{normalized['resource_id']}",
+        resource_id=normalized["resource_id"],
+        url=normalized["url"],
+        name=normalized["name"],
+        status=normalized["status"],
+        version=normalized["version"],
+        concepts=normalized["concepts"],
+        user_id=current_user["user_id"],
     )
-
-
-@app.post("/api/v1/auth/logout")
-def logout(authorization: Optional[str] = Header(None)):
-    if not authorization or not authorization.startswith("Bearer "):
-        raise HTTPException(status_code=401, detail="Missing or invalid Authorization header")
-
-    token = authorization.split(" ", 1)[1]
-    TOKEN_STORE.pop(token, None)
-    return {"message": "Logged out"}
-
-
-@app.post("/api/v1/auth/signup", response_model=AuthResponse)
-def signup(req: AuthRequest, db: Session = Depends(get_db)):
-    if db.query(User).filter(User.username == req.username).first():
-        raise HTTPException(status_code=409, detail="Username already exists")
-
-    user = User(
-        username=req.username,
-        password_hash=get_password_hash(req.password),
-        role="editor",
-    )
-    db.add(user)
+    db.add(db_resource)
     db.commit()
-    db.refresh(user)
-
-    token = create_token(user)
-    return AuthResponse(
-        access_token=token,
-        username=user.username,
-        role=user.role,
-    )
-
-
-@app.get("/api/v1/health")
-def health_check():
-    return {"status": "ok", "service": "ECUM Backend"}
+    db.refresh(db_resource)
+    return resource_to_dict(db_resource)
 
 
 @app.get("/api/v1/resources", response_model=List[CodeSystemModel])
@@ -183,7 +236,7 @@ def get_resource(
     resource = (
         db.query(CodeSystemResource)
         .filter(
-            CodeSystemResource.id == resource_id,
+            CodeSystemResource.resource_id == resource_id,
             CodeSystemResource.user_id == current_user["user_id"],
         )
         .first()
@@ -199,10 +252,22 @@ def create_resource(
     current_user: Dict[str, Any] = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
-    if db.query(CodeSystemResource).filter(CodeSystemResource.id == resource.id).first():
+    if db.query(CodeSystemResource).filter(
+        CodeSystemResource.resource_id == resource.id,
+        CodeSystemResource.user_id == current_user["user_id"],
+    ).first():
         raise HTTPException(status_code=409, detail="Resource already exists")
 
-    db_resource = CodeSystemResource(**resource.dict(), user_id=current_user["user_id"])
+    db_resource = CodeSystemResource(
+        id=f"{current_user['user_id']}:{resource.id}",
+        resource_id=resource.id,
+        url=resource.url,
+        name=resource.name,
+        status=resource.status,
+        version=resource.version,
+        concepts=resource.concepts,
+        user_id=current_user["user_id"],
+    )
     db.add(db_resource)
     db.commit()
     db.refresh(db_resource)
@@ -219,7 +284,7 @@ def update_resource(
     db_resource = (
         db.query(CodeSystemResource)
         .filter(
-            CodeSystemResource.id == resource_id,
+            CodeSystemResource.resource_id == resource_id,
             CodeSystemResource.user_id == current_user["user_id"],
         )
         .first()
@@ -228,6 +293,8 @@ def update_resource(
         raise HTTPException(status_code=404, detail="Resource not found")
 
     for key, value in resource.dict().items():
+        if key == "id":
+            continue
         setattr(db_resource, key, value)
 
     db.commit()
@@ -244,7 +311,7 @@ def delete_resource(
     db_resource = (
         db.query(CodeSystemResource)
         .filter(
-            CodeSystemResource.id == resource_id,
+            CodeSystemResource.resource_id == resource_id,
             CodeSystemResource.user_id == current_user["user_id"],
         )
         .first()
@@ -291,3 +358,40 @@ def root():
         "docs_url": "/docs",
         "healthcheck": "/api/v1/health"
     }
+
+
+@app.post("/api/v1/auth/login", response_model=AuthResponse)
+def login(req: AuthRequest, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.username == req.username).first()
+    if not user or not verify_password(req.password, user.password_hash):
+        raise HTTPException(status_code=401, detail="Invalid username or password")
+
+    access_token = create_token(user)
+    return AuthResponse(
+        access_token=access_token,
+        username=user.username,
+        role=user.role,
+    )
+
+
+@app.post("/api/v1/auth/signup", response_model=AuthResponse)
+def signup(req: AuthRequest, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.username == req.username).first()
+    if user:
+        raise HTTPException(status_code=409, detail="Username already exists")
+
+    new_user = User(
+        username=req.username,
+        hashed_password=get_password_hash(req.password),
+        role="user",  # default role
+    )
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+
+    access_token = create_token(new_user)
+    return AuthResponse(
+        access_token=access_token,
+        username=new_user.username,
+        role=new_user.role,
+    )

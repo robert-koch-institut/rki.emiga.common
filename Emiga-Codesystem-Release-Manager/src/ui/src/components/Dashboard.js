@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchResources, updateResource } from '../services/api';
+import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResource } from '../services/api';
 
 export default function Dashboard({ token, user, onLogout }) {
   const [resources, setResources] = useState([]);
@@ -14,9 +14,13 @@ export default function Dashboard({ token, user, onLogout }) {
     url: '',
   });
   const [error, setError] = useState('');
+  const [fshCodeSystems, setFshCodeSystems] = useState([]);
+  const [selectedFshId, setSelectedFshId] = useState('');
+  const [importing, setImporting] = useState(false);
 
   useEffect(() => {
     loadResources();
+    loadFshCodeSystems();
   }, [token]);
 
   const loadResources = async () => {
@@ -30,6 +34,34 @@ export default function Dashboard({ token, user, onLogout }) {
       setError(err.message || 'Failed to load resources');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const loadFshCodeSystems = async () => {
+    try {
+      const list = await fetchFshCodeSystems(token);
+      setFshCodeSystems(list);
+    } catch (err) {
+      console.warn('Unable to load FSH codesystems', err);
+    }
+  };
+
+  const handleImportCodeSystem = async () => {
+    if (!selectedFshId) {
+      setError('Select a CodeSystem first');
+      return;
+    }
+    setError('');
+    setImporting(true);
+
+    try {
+      const imported = await importFshCodeSystem(token, selectedFshId);
+      setResources((prev) => [...prev, imported]);
+      setSelectedFshId('');
+    } catch (err) {
+      setError(err.message || 'Unable to import CodeSystem');
+    } finally {
+      setImporting(false);
     }
   };
 
@@ -94,7 +126,6 @@ export default function Dashboard({ token, user, onLogout }) {
         url: editForm.url,
         concepts: existing?.concepts || [],
       });
-
       setResources((prev) =>
         prev.map((resource) => (resource.id === editingResource ? updated : resource))
       );
@@ -114,9 +145,7 @@ export default function Dashboard({ token, user, onLogout }) {
         <div className="sidebar-logo">🏥 ECUM</div>
 
         <nav className="sidebar-nav">
-          <a href="#dashboard" className="active">
-            📊 Dashboard
-          </a>
+          <a href="#dashboard" className="active">📊 Dashboard</a>
           <a href="#resources">📋 Resources</a>
           <a href="#releases">📦 Releases</a>
           <a href="#settings">⚙️ Settings</a>
@@ -127,9 +156,7 @@ export default function Dashboard({ token, user, onLogout }) {
             <div className="user-name">{user?.username}</div>
             <div className="user-role">{user?.role}</div>
           </div>
-          <button className="logout-btn" onClick={onLogout}>
-            Sign Out
-          </button>
+          <button className="logout-btn" onClick={onLogout}>Sign Out</button>
         </div>
       </div>
 
@@ -147,6 +174,47 @@ export default function Dashboard({ token, user, onLogout }) {
 
         <div className="panel">
           <h2>
+            <div className="panel-icon">🔎</div>
+            Select CodeSystem to Import
+          </h2>
+
+          <div className="form-group">
+            <label htmlFor="fsh-select">Choose a CodeSystem</label>
+            <select
+              id="fsh-select"
+              value={selectedFshId}
+              onChange={(e) => setSelectedFshId(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '0.9rem 1rem',
+                borderRadius: '8px',
+                border: '1px solid #e2e8f0',
+                background: '#f8fafc',
+                fontSize: '0.95rem',
+              }}
+            >
+              <option value="">Select a CodeSystem</option>
+              {fshCodeSystems.map((item) => (
+                <option key={item.id} value={item.id}>
+                  {item.name || item.id} — {item.version || 'no version'}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="action-buttons" style={{ marginTop: '1rem' }}>
+            <button
+              className="btn btn-primary"
+              onClick={handleImportCodeSystem}
+              disabled={!selectedFshId || importing}
+            >
+              {importing ? 'Importing…' : 'Import selected CodeSystem'}
+            </button>
+          </div>
+        </div>
+
+        <div className="panel">
+          <h2>
             <div className="panel-icon">📋</div>
             CodeSystem Resources
           </h2>
@@ -160,7 +228,7 @@ export default function Dashboard({ token, user, onLogout }) {
             <div className="empty-state">
               <div className="empty-state-icon">📭</div>
               <div className="empty-state-title">No resources found</div>
-              <div className="empty-state-text">Start by creating a new CodeSystem</div>
+              <div className="empty-state-text">Import a CodeSystem to start editing.</div>
             </div>
           ) : (
             <table className="resource-table">
@@ -177,9 +245,7 @@ export default function Dashboard({ token, user, onLogout }) {
               <tbody>
                 {resources.map((resource) => (
                   <tr key={resource.id}>
-                    <td>
-                      <strong>{resource.id}</strong>
-                    </td>
+                    <td><strong>{resource.id}</strong></td>
                     <td>{resource.name}</td>
                     <td>
                       <span className={`resource-badge ${getStatusBadge(resource.status)}`}>
@@ -197,7 +263,10 @@ export default function Dashboard({ token, user, onLogout }) {
                         >
                           {validatingId === resource.id ? '⊙ Validating' : '✓ Validate'}
                         </button>
-                        <button className="btn btn-secondary" onClick={() => handleEdit(resource)}>
+                        <button
+                          className="btn btn-secondary"
+                          onClick={() => handleEdit(resource)}
+                        >
                           ✎ Edit
                         </button>
                       </div>
@@ -274,9 +343,7 @@ export default function Dashboard({ token, user, onLogout }) {
             </h2>
 
             <div className="validation-result">
-              <h3>
-                Resource: <strong>{validationResult.resource_id}</strong>
-              </h3>
+              <h3>Resource: <strong>{validationResult.resource_id}</strong></h3>
               <div className="validation-stats">
                 <div className="stat">
                   <span className="stat-label">Status</span>
@@ -290,22 +357,14 @@ export default function Dashboard({ token, user, onLogout }) {
                 </div>
                 <div className="stat">
                   <span className="stat-label">Errors</span>
-                  <span
-                    className={`stat-value ${
-                      validationResult.errors_count > 0 ? 'error' : 'success'
-                    }`}
-                  >
+                  <span className={`stat-value ${validationResult.errors_count > 0 ? 'error' : 'success'}`}>
                     {validationResult.errors_count}
                   </span>
                 </div>
                 <div className="stat">
                   <span className="stat-label">Warnings</span>
-                  <span
-                    className={`stat-value ${
-                      validationResult.warnings_count > 0 ? 'warning' : 'success'
-                    }`}
-                  >
-                    {validationResult.warnings_count}
+                  <span className={`stat-value ${validationResult.warnings_count > 0 ? 'warning' : 'success'}`}>
+                    {validationResult.warnings_count > 0 ? 'warning' : 'success'}
                   </span>
                 </div>
               </div>

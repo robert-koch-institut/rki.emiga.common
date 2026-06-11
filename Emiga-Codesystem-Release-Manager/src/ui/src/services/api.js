@@ -33,6 +33,24 @@ export async function fetchResources(token) {
   return handleResponse(response);
 }
 
+export async function fetchFshCodeSystems(token) {
+  const response = await fetch(`${API_BASE}/api/v1/fsh-codesystems`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return handleResponse(response);
+}
+
+export async function importFshCodeSystem(token, resourceId) {
+  const response = await fetch(`${API_BASE}/api/v1/fsh-codesystems/import/${resourceId}`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+  });
+  return handleResponse(response);
+}
+
 export async function updateResource(token, resourceId, data) {
   const response = await fetch(`${API_BASE}/api/v1/resources/${resourceId}`, {
     method: 'PUT',

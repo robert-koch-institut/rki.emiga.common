@@ -38,22 +38,16 @@ def init_db():
     Base.metadata.create_all(bind=engine)
 
     with SessionLocal() as db:
-        # Add the new ownership column if the table already exists without it
-        result = db.execute(text("PRAGMA table_info(resources)"))
-        columns = [row[1] for row in result]
+        columns = [row[1] for row in db.execute(text("PRAGMA table_info(resources)"))]
         if "user_id" not in columns:
             db.execute(text("ALTER TABLE resources ADD COLUMN user_id INTEGER"))
             db.commit()
 
-            admin_user = db.query(User).filter(User.username == "admin").first()
-            if admin_user:
-                db.execute(
-                    text("UPDATE resources SET user_id = :user_id"),
-                    {"user_id": admin_user.id},
-                )
-                db.commit()
-
-        created = False
+        if "resource_id" not in columns:
+            db.execute(text("ALTER TABLE resources ADD COLUMN resource_id TEXT"))
+            db.commit()
+            db.execute(text("UPDATE resources SET resource_id = id"))
+            db.commit()
 
         if not db.query(User).filter(User.username == "admin").first():
             db.add(
@@ -63,7 +57,6 @@ def init_db():
                     role="admin",
                 )
             )
-            created = True
 
         if not db.query(User).filter(User.username == "editor").first():
             db.add(
@@ -73,16 +66,18 @@ def init_db():
                     role="editor",
                 )
             )
-            created = True
 
-        if created:
-            db.commit()
+        db.commit()
 
         admin_user = db.query(User).filter(User.username == "admin").first()
-        if admin_user and not db.query(CodeSystemResource).filter(CodeSystemResource.id == "cs-001").first():
+        if admin_user and not db.query(CodeSystemResource).filter(
+            CodeSystemResource.resource_id == "cs-001",
+            CodeSystemResource.user_id == admin_user.id,
+        ).first():
             db.add(
                 CodeSystemResource(
-                    id="cs-001",
+                    id=f"{admin_user.id}:cs-001",
+                    resource_id="cs-001",
                     url="http://example.com/codesystems/cs-001",
                     name="ExampleCodeSystem",
                     status="active",

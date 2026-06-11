@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, UniqueConstraint
 from sqlalchemy.types import JSON
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
@@ -21,8 +21,10 @@ class User(Base):
 
 class CodeSystemResource(Base):
     __tablename__ = "resources"
+    __table_args__ = (UniqueConstraint("resource_id", "user_id", name="uq_resource_user"),)
 
-    id = Column(String(100), primary_key=True, index=True)
+    id = Column(String(150), primary_key=True, index=True)
+    resource_id = Column(String(100), index=True, nullable=False)
     url = Column(String(255), nullable=False)
     name = Column(String(255), nullable=False)
     status = Column(String(50), nullable=False)
@@ -40,7 +42,7 @@ class UserEdit(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
-    resource_id = Column(String(100), ForeignKey("resources.id"), nullable=False)
+    resource_id = Column(String(100), ForeignKey("resources.resource_id"), nullable=False)
     action = Column(String(100), nullable=False)
     payload = Column(JSON, nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
