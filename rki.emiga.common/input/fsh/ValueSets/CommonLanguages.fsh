@@ -549,6 +549,12 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#et ^designation[=].use = $HL7DesignationUse#display
 * $bcp47#et ^designation[=].value = "Estnisch"
 
+* $bcp47#fa "Persian"
+* $bcp47#fa ^designation[0].language = #de
+* $bcp47#fa ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#fa ^designation[=].use = $HL7DesignationUse#display
+* $bcp47#fa ^designation[=].value = "Persisch"
+
 * $bcp47#fi "Finnish"
 * $bcp47#fi ^designation[0].language = #en
 * $bcp47#fi ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
@@ -767,6 +773,12 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#hr ^designation[=].use = $HL7DesignationUse#display
 * $bcp47#hr ^designation[=].value = "Kroatisk"
 
+* $bcp47#is "Icelandic"
+* $bcp47#is ^designation[0].language = #de
+* $bcp47#is ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#is ^designation[=].use = $HL7DesignationUse#display
+* $bcp47#is ^designation[=].value = "Isländisch"
+
 * $bcp47#it "Italian"
 * $bcp47#it ^designation[0].language = #en
 * $bcp47#it ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
@@ -869,6 +881,12 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#ja ^designation[=].use = $HL7DesignationUse#display
 * $bcp47#ja ^designation[=].value = "Japansk"
 
+* $bcp47#ka "Georgian"
+* $bcp47#ka ^designation[0].language = #de
+* $bcp47#ka ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#ka ^designation[=].use = $HL7DesignationUse#display
+* $bcp47#ka ^designation[=].value = "Georgisch"
+
 * $bcp47#ko "Korean"
 * $bcp47#ko ^designation[0].language = #en
 * $bcp47#ko ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
@@ -906,6 +924,12 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#lv ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
 * $bcp47#lv ^designation[=].use = $HL7DesignationUse#display
 * $bcp47#lv ^designation[=].value = "Lettisch"
+
+* $bcp47#mk "Macedonian"
+* $bcp47#mk ^designation[0].language = #de
+* $bcp47#mk ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#mk ^designation[=].use = $HL7DesignationUse#display
+* $bcp47#mk ^designation[=].value = "Mazedonisch"
 
 * $bcp47#nl "Dutch"
 * $bcp47#nl ^designation[0].language = #en
@@ -1286,6 +1310,12 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#sv-SE ^designation[=].use = $HL7DesignationUse#display
 * $bcp47#sv-SE ^designation[=].value = "Svensk (Sverige)"
 
+* $bcp47#ta "Tamil"
+* $bcp47#ta ^designation[0].language = #de
+* $bcp47#ta ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#ta ^designation[=].use = $HL7DesignationUse#display
+* $bcp47#ta ^designation[=].value = "Tamil"
+
 * $bcp47#te "Telegu"
 * $bcp47#te ^designation[0].language = #en
 * $bcp47#te ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
@@ -1311,6 +1341,12 @@ Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.iet
 * $bcp47#te ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
 * $bcp47#te ^designation[=].use = $HL7DesignationUse#display
 * $bcp47#te ^designation[=].value = "Telugu"
+
+* $bcp47#th "Thai"
+* $bcp47#th ^designation[0].language = #de
+* $bcp47#th ^designation[=].use.system = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* $bcp47#th ^designation[=].use = $HL7DesignationUse#display
+* $bcp47#th ^designation[=].value = "Thai"
 
 * $bcp47#tr "Turkish"
 * $bcp47#tr ^designation[0].language = #de
