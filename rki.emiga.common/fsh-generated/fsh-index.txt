@@ -47,6 +47,7 @@ StructureDefinition-Salutation.json                                 Salutation  
 ValueSet-AnnotationCategoryVS.json                                  AnnotationCategoryVS                 ValueSet    ValueSets\AnnotationCategoryVS.fsh                                  1 - 10
 ValueSet-AnnotationResourceVisibilityType.json                      AnnotationResourceVisibilityType     ValueSet    ValueSets\AnnotationResourceVisibilityTypeVS.fsh                    1 - 11
 ValueSet-CommonLanguages.json                                       CommonLanguages                      ValueSet    ValueSets\CommonLanguages.fsh                                       1 - 1498
+ValueSet-CommonOrganizationTypeVS.json                              CommonOrganizationTypeVS             ValueSet    ValueSets\CommonOrganizationTypeVS.fsh                              1 - 214
 ValueSet-ConceptDesignationUse.json                                 ConceptDesignationUse                ValueSet    ValueSets\ConceptDesignationUse.fsh                                 1 - 9
 ValueSet-CountryCodes.json                                          CountryCodes                         ValueSet    ValueSets\CountryCodes.fsh                                          1 - 23
 ValueSet-CountyVS.json                                              CountyVS                             ValueSet    ValueSets\CountyVS.fsh                                              1 - 422

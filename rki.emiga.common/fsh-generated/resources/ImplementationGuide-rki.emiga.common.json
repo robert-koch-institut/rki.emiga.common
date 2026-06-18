@@ -353,6 +353,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/CommonOrganizationTypeVS"
+        },
+        "name": "Gemeinsame Organisationstypen ohne ÖGD-Organisationen",
+        "description": "Werteliste mit Konzepten, die die Art/den Typ einer gemeinsamen Organisation aus Sicht des ÖGD grob charakterisieren.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/CommonLanguages"
         },
         "name": "häufige Sprachen",
