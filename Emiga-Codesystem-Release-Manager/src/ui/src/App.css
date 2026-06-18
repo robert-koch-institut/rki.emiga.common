@@ -40,13 +40,13 @@ body {
 }
 
 .login-card {
-  background: var(--surface);
+  background: var(--card-bg);
   color: var(--text);
-  border-radius: 16px;
-  padding: 2.5rem;
-  width: 100%;
-  max-width: 420px;
-  box-shadow: 0 20px 60px rgba(15, 118, 110, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 420px;
+  max-width: calc(100% - 2rem);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
 }
 
 .login-card h1 {
@@ -82,13 +82,13 @@ body {
 }
 
 .form-group input {
-  padding: 0.9rem 1rem;
-  border: 2px solid var(--border);
-  border-radius: 8px;
-  font-size: 0.95rem;
-  transition: all 0.2s ease;
   background: var(--input-bg);
   color: var(--text);
+  border: 1px solid rgba(226,232,240,0.12);
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  width: 100%;
+  transition: all 0.2s ease;
 }
 
 .form-group input:focus {
@@ -180,11 +180,10 @@ body {
 }
 
 .sidebar-logo {
-  font-size: 1.4rem;
   font-weight: 700;
-  color: #0f766e;
-  margin-bottom: 2rem;
-  letter-spacing: -0.5px;
+  font-size: 1.05rem;
+  color: #2dd4bf;
+  padding: 1rem 1.2rem;
   display: flex;
   align-items: center;
   gap: 0.7rem;
@@ -672,95 +671,61 @@ body {
   margin-right: 8px;
 }
 
-:root.theme-light {
-  --bg: #f7f8fb;
-  --text: #1f2937;
-  --surface: #ffffff;
-  --border: #d1d5db;
-  --accent: #2563eb;
-  --accent-text: #ffffff;
+/* Theme variables and login card fixes */
+:root[data-theme='light']{
+  --bg: #f3f4f6;
+  --text: #0f172a;
+  --muted: #64748b;
+  --card-bg: #ffffff;
   --input-bg: #ffffff;
+  --sidebar-bg: #0b1320;
 }
 
-:root.theme-dark {
-  --bg: #071014;
-  --text: #e6eef3;
-  --surface: #0b1619;
-  --border: #152026;
-  --accent: #12b6a2;
-  --accent-text: #ffffff;
-  --input-bg: #081217;
-  --muted: #9fb0b6;
-  --success: #16a34a;
-  --warning: #d97706;
-  --error: #ff6b6b;
-  --panel-shadow: 0 8px 30px rgba(2,6,9,0.6);
+:root[data-theme='dark']{
+  --bg: #07141a;
+  --text: #d1e7e0;
+  --muted: #94a3b8;
+  --card-bg: #0f1720;
+  --input-bg: #0b1220;
+  --sidebar-bg: #07131a;
 }
 
-/* stronger panel contrast and readable text */
-:root.theme-dark .dashboard-sidebar,
-:root.theme-dark .app-header,
-:root.theme-dark .panel,
-:root.theme-dark .login-card,
-:root.theme-dark .settings-section {
-  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent), var(--surface);
-  border-color: var(--border);
-  box-shadow: var(--panel-shadow);
+body {
+  background: var(--bg);
   color: var(--text);
 }
 
-/* readable muted labels and headings */
-:root.theme-dark .form-group label,
-:root.theme-dark .dashboard-header p,
-:root.theme-dark .user-info,
-:root.theme-dark .empty-state-text,
-:root.theme-dark .resource-table th {
-  color: var(--muted);
+/* Login card visible and inputs readable */
+.login-card {
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  width: 420px;
+  max-width: calc(100% - 2rem);
 }
 
-/* inputs / selects */
-:root.theme-dark .form-group input,
-:root.theme-dark .settings-field select {
+.form-group input {
   background: var(--input-bg);
-  border-color: rgba(255,255,255,0.04);
+  color: var(--text);
+  border: 1px solid rgba(226,232,240,0.12);
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Sidebar logo text size */
+.sidebar-logo {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #2dd4bf;
+  padding: 1rem 1.2rem;
+}
+
+/* Buttons and selects inherit theme colors */
+select, .btn {
   color: var(--text);
 }
 
-/* alerts and hints with better contrast */
-:root.theme-dark .error {
-  background: rgba(239,68,68,0.08);
-  border-color: rgba(239,68,68,0.22);
-  color: var(--error);
-}
-
-:root.theme-dark .hint {
-  background: rgba(20,184,166,0.04);
-  color: #bdeee5;
-  border-left-color: rgba(20,184,166,0.28);
-}
-
-:root.theme-dark .validation-result {
-  background: rgba(16,185,129,0.02);
-  border-left-color: rgba(16,185,129,0.18);
-  color: var(--text);
-}
-
-/* table rows */
-:root.theme-dark .resource-table thead { background: transparent; border-bottom-color: rgba(255,255,255,0.04); }
-:root.theme-dark .resource-table td { border-bottom-color: rgba(255,255,255,0.03); color: var(--text); }
-
-/* ensure primary buttons remain visible */
-:root.theme-dark .login-card button,
-:root.theme-dark .btn-primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #0b7f79 100%);
-  color: var(--accent-text);
-  box-shadow: 0 6px 18px rgba(11,17,21,0.6);
-}
-
-/* revert Sign Out to light-mode red for visibility in dark theme */
-:root.theme-dark .logout-btn {
-  background: #fee2e2;
-  color: #dc2626;
-  box-shadow: none;
-  border: none;
-}
+/* ...existing code... */

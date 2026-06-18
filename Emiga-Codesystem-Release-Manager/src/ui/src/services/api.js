@@ -62,3 +62,15 @@ export async function updateResource(token, resourceId, data) {
   });
   return handleResponse(response);
 }
+
+export async function logout(token) {
+  try {
+    await fetch(`${API_BASE}/api/v1/auth/logout`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}` },
+    });
+  } catch (err) {
+    // ignore network errors; still clear client state
+    console.warn('logout API failed', err);
+  }
+}

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResource } from '../services/api';
+import { useEffect, useState } from 'react';
+import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResource, logout as apiLogout } from '../services/api';
 import Settings from './Settings';
 
 export default function Dashboard({ token, user, onLogout, theme, onThemeChange }) {
@@ -28,7 +28,6 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
   const loadResources = async () => {
     setLoading(true);
     setError('');
-
     try {
       const items = await fetchResources(token);
       setResources(items);
@@ -55,7 +54,6 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
     }
     setError('');
     setImporting(true);
-
     try {
       const imported = await importFshCodeSystem(token, selectedFshId);
       setResources((prev) => [...prev, imported]);
@@ -70,7 +68,6 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
   const handleValidate = async (resource) => {
     setError('');
     setValidatingId(resource.id);
-
     try {
       const response = await fetch('http://localhost:5000/validate', {
         method: 'POST',
@@ -85,8 +82,8 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
       });
 
       if (!response.ok) {
-        const body = await response.json();
-        throw new Error(body.detail || 'Validation failed');
+        const body = await response.json().catch(() => null);
+        throw new Error(body?.detail || 'Validation failed');
       }
 
       const payload = await response.json();
@@ -116,7 +113,6 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
 
   const handleSave = async () => {
     if (!editingResource) return;
-
     setError('');
     try {
       const existing = resources.find((r) => r.id === editingResource);
@@ -137,27 +133,34 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
     }
   };
 
-  const getStatusBadge = (status) => {
-    return `badge-${status}`;
+  const handleSignOut = async () => {
+    try {
+      await apiLogout(token);
+    } catch (e) {
+      console.warn('Logout error', e);
+    }
+    onLogout();
   };
+
+  const getStatusBadge = (status) => `badge-${status}`;
 
   return (
     <div className="dashboard">
-      <aside className="dashboard-sidebar">
-        <div className="sidebar-logo">🏥 ECUM</div>
+      <div className="dashboard-sidebar">
+        <div className="sidebar-logo">ECRM</div>
 
         <nav className="sidebar-nav">
-          <button
-            className={activeTab === 'dashboard' ? 'active' : ''}
-            onClick={() => setActiveTab('dashboard')}
-          >
-            Dashboard
+          <button type="button" className={activeTab === 'dashboard' ? 'active' : ''} onClick={() => setActiveTab('dashboard')}>
+            📊 Dashboard
           </button>
-          <button
-            className={activeTab === 'settings' ? 'active' : ''}
-            onClick={() => setActiveTab('settings')}
-          >
-            Settings
+          <button type="button" className={activeTab === 'resources' ? 'active' : ''} onClick={() => setActiveTab('resources')}>
+            📋 Resources
+          </button>
+          <button type="button" className={activeTab === 'releases' ? 'active' : ''} onClick={() => setActiveTab('releases')}>
+            📦 Releases
+          </button>
+          <button type="button" className={activeTab === 'settings' ? 'active' : ''} onClick={() => setActiveTab('settings')}>
+            ⚙️ Settings
           </button>
         </nav>
 
@@ -166,31 +169,31 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
             <div className="user-name">{user?.username}</div>
             <div className="user-role">{user?.role}</div>
           </div>
-          <button className="logout-btn" onClick={onLogout}>Sign Out</button>
+          <button type="button" className="logout-btn" onClick={handleSignOut}>
+            Sign Out
+          </button>
         </div>
-      </aside>
+      </div>
 
-      <main className="dashboard-content">
+      <div className="dashboard-content">
+        <div className="dashboard-header">
+          <h1>Dashboard</h1>
+          <p>Manage and validate FHIR CodeSystem resources</p>
+        </div>
+
         {activeTab === 'settings' ? (
           <Settings currentTheme={theme} onThemeChange={onThemeChange} />
         ) : (
           <div className="dashboard-main">
-            <div className="dashboard-header">
-              <h1>Dashboard</h1>
-              <p>Manage and validate FHIR CodeSystem resources</p>
-            </div>
-
             {error && (
               <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}>
                 <strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}
               </div>
             )}
 
+            {/* import panel */}
             <div className="panel">
-              <h2>
-                <div className="panel-icon">🔎</div>
-                Select CodeSystem to Import
-              </h2>
+              <h2><div className="panel-icon">🔎</div>Select CodeSystem to Import</h2>
 
               <div className="form-group">
                 <label htmlFor="fsh-select">Choose a CodeSystem</label>
@@ -203,7 +206,8 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
                     padding: '0.9rem 1rem',
                     borderRadius: '8px',
                     border: '1px solid #e2e8f0',
-                    background: '#f8fafc',
+                    background: 'var(--input-bg)',
+                    color: 'var(--text)',
                     fontSize: '0.95rem',
                   }}
                 >
@@ -227,12 +231,9 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
               </div>
             </div>
 
+            {/* resources panel */}
             <div className="panel">
-              <h2>
-                <div className="panel-icon">📋</div>
-                CodeSystem Resources
-              </h2>
-
+              <h2><div className="panel-icon">📋</div>CodeSystem Resources</h2>
               {loading ? (
                 <div className="empty-state">
                   <div className="loading-spinner"></div>
@@ -248,12 +249,7 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
                 <table className="resource-table">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Name</th>
-                      <th>Status</th>
-                      <th>Version</th>
-                      <th>Concepts</th>
-                      <th>Actions</th>
+                      <th>ID</th><th>Name</th><th>Status</th><th>Version</th><th>Concepts</th><th>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -261,28 +257,15 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
                       <tr key={resource.id}>
                         <td><strong>{resource.id}</strong></td>
                         <td>{resource.name}</td>
-                        <td>
-                          <span className={`resource-badge ${getStatusBadge(resource.status)}`}>
-                            {resource.status}
-                          </span>
-                        </td>
+                        <td><span className={`resource-badge ${getStatusBadge(resource.status)}`}>{resource.status}</span></td>
                         <td>{resource.version}</td>
                         <td>{resource.concepts?.length || 0}</td>
                         <td>
                           <div className="action-buttons">
-                            <button
-                              className="btn btn-primary"
-                              onClick={() => handleValidate(resource)}
-                              disabled={validatingId === resource.id}
-                            >
+                            <button className="btn btn-primary" onClick={() => handleValidate(resource)} disabled={validatingId === resource.id}>
                               {validatingId === resource.id ? '⊙ Validating' : '✓ Validate'}
                             </button>
-                            <button
-                              className="btn btn-secondary"
-                              onClick={() => handleEdit(resource)}
-                            >
-                              ✎ Edit
-                            </button>
+                            <button className="btn btn-secondary" onClick={() => handleEdit(resource)}>✎ Edit</button>
                           </div>
                         </td>
                       </tr>
@@ -292,6 +275,7 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
               )}
             </div>
 
+            {/* edit & validation result panels (unchanged) */}
             {editingResource && (
               <div className="panel">
                 <h2>
@@ -387,7 +371,7 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
             )}
           </div>
         )}
-      </main>
+      </div>
     </div>
   );
 }
