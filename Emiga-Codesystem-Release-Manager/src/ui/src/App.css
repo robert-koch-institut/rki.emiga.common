@@ -15,7 +15,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f0f4f8;
+  background: var(--bg, #f0f4f8);
+  color: var(--text, #1f2937);
   min-height: 100vh;
 }
 
@@ -23,6 +24,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* LOGIN PAGE */
@@ -36,7 +40,8 @@ body {
 }
 
 .login-card {
-  background: white;
+  background: var(--surface);
+  color: var(--text);
   border-radius: 16px;
   padding: 2.5rem;
   width: 100%;
@@ -78,11 +83,12 @@ body {
 
 .form-group input {
   padding: 0.9rem 1rem;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--border);
   border-radius: 8px;
   font-size: 0.95rem;
   transition: all 0.2s ease;
-  background: #f8fafc;
+  background: var(--input-bg);
+  color: var(--text);
 }
 
 .form-group input:focus {
@@ -158,12 +164,13 @@ body {
   flex: 1;
   min-height: 100vh;
   overflow: hidden;
+  background: var(--bg);
 }
 
 .dashboard-sidebar {
   width: 260px;
-  background: #ffffff;
-  border-right: 1px solid #e2e8f0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
   padding: 1.5rem;
   overflow-y: auto;
   display: flex;
@@ -259,8 +266,9 @@ body {
   flex: 1;
   padding: 2rem;
   overflow-y: auto;
-  background: #f8fafc;
+  background: var(--bg);
   height: 100vh;
+  color: var(--text);
 }
 
 .dashboard-header {
@@ -281,12 +289,12 @@ body {
 
 /* PANELS */
 .panel {
-  background: white;
+  background: var(--surface);
   border-radius: 12px;
   padding: 1.8rem;
   margin-bottom: 2rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
 
@@ -325,8 +333,8 @@ body {
 }
 
 .resource-table thead {
-  background: #f0fdf4;
-  border-bottom: 2px solid #d1fae5;
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
 }
 
 .resource-table th {
@@ -342,7 +350,7 @@ body {
 .resource-table td {
   padding: 1rem;
   border-bottom: 1px solid #e2e8f0;
-  color: #1e293b;
+  color: var(--text);
   font-size: 0.95rem;
 }
 
@@ -484,8 +492,8 @@ body {
 
 .issue-item {
   padding: 0.8rem;
-  background: white;
-  border-left: 3px solid #64748b;
+  background: var(--surface);
+  border-left: 3px solid var(--border);
   border-radius: 4px;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
@@ -601,4 +609,158 @@ body {
   .validation-stats {
     grid-template-columns: 1fr;
   }
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.app-nav button {
+  margin-left: 12px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.app-nav button.active {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.settings-page {
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.settings-section {
+  margin-bottom: 24px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.settings-field {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.settings-field select {
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+.checkbox-field input {
+  margin-right: 8px;
+}
+
+:root.theme-light {
+  --bg: #f7f8fb;
+  --text: #1f2937;
+  --surface: #ffffff;
+  --border: #d1d5db;
+  --accent: #2563eb;
+  --accent-text: #ffffff;
+  --input-bg: #ffffff;
+}
+
+:root.theme-dark {
+  --bg: #071014;
+  --text: #e6eef3;
+  --surface: #0b1619;
+  --border: #152026;
+  --accent: #12b6a2;
+  --accent-text: #ffffff;
+  --input-bg: #081217;
+  --muted: #9fb0b6;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #ff6b6b;
+  --panel-shadow: 0 8px 30px rgba(2,6,9,0.6);
+}
+
+/* stronger panel contrast and readable text */
+:root.theme-dark .dashboard-sidebar,
+:root.theme-dark .app-header,
+:root.theme-dark .panel,
+:root.theme-dark .login-card,
+:root.theme-dark .settings-section {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent), var(--surface);
+  border-color: var(--border);
+  box-shadow: var(--panel-shadow);
+  color: var(--text);
+}
+
+/* readable muted labels and headings */
+:root.theme-dark .form-group label,
+:root.theme-dark .dashboard-header p,
+:root.theme-dark .user-info,
+:root.theme-dark .empty-state-text,
+:root.theme-dark .resource-table th {
+  color: var(--muted);
+}
+
+/* inputs / selects */
+:root.theme-dark .form-group input,
+:root.theme-dark .settings-field select {
+  background: var(--input-bg);
+  border-color: rgba(255,255,255,0.04);
+  color: var(--text);
+}
+
+/* alerts and hints with better contrast */
+:root.theme-dark .error {
+  background: rgba(239,68,68,0.08);
+  border-color: rgba(239,68,68,0.22);
+  color: var(--error);
+}
+
+:root.theme-dark .hint {
+  background: rgba(20,184,166,0.04);
+  color: #bdeee5;
+  border-left-color: rgba(20,184,166,0.28);
+}
+
+:root.theme-dark .validation-result {
+  background: rgba(16,185,129,0.02);
+  border-left-color: rgba(16,185,129,0.18);
+  color: var(--text);
+}
+
+/* table rows */
+:root.theme-dark .resource-table thead { background: transparent; border-bottom-color: rgba(255,255,255,0.04); }
+:root.theme-dark .resource-table td { border-bottom-color: rgba(255,255,255,0.03); color: var(--text); }
+
+/* ensure primary buttons remain visible */
+:root.theme-dark .login-card button,
+:root.theme-dark .btn-primary {
+  background: linear-gradient(135deg, var(--accent) 0%, #0b7f79 100%);
+  color: var(--accent-text);
+  box-shadow: 0 6px 18px rgba(11,17,21,0.6);
+}
+
+/* revert Sign Out to light-mode red for visibility in dark theme */
+:root.theme-dark .logout-btn {
+  background: #fee2e2;
+  color: #dc2626;
+  box-shadow: none;
+  border: none;
 }

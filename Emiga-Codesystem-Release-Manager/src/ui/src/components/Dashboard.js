@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResource } from '../services/api';
+import Settings from './Settings';
 
-export default function Dashboard({ token, user, onLogout }) {
+export default function Dashboard({ token, user, onLogout, theme, onThemeChange }) {
   const [resources, setResources] = useState([]);
   const [loading, setLoading] = useState(true);
   const [validationResult, setValidationResult] = useState(null);
@@ -17,6 +18,7 @@ export default function Dashboard({ token, user, onLogout }) {
   const [fshCodeSystems, setFshCodeSystems] = useState([]);
   const [selectedFshId, setSelectedFshId] = useState('');
   const [importing, setImporting] = useState(false);
+  const [activeTab, setActiveTab] = useState('dashboard');
 
   useEffect(() => {
     loadResources();
@@ -141,14 +143,22 @@ export default function Dashboard({ token, user, onLogout }) {
 
   return (
     <div className="dashboard">
-      <div className="dashboard-sidebar">
+      <aside className="dashboard-sidebar">
         <div className="sidebar-logo">🏥 ECUM</div>
 
         <nav className="sidebar-nav">
-          <a href="#dashboard" className="active">📊 Dashboard</a>
-          <a href="#resources">📋 Resources</a>
-          <a href="#releases">📦 Releases</a>
-          <a href="#settings">⚙️ Settings</a>
+          <button
+            className={activeTab === 'dashboard' ? 'active' : ''}
+            onClick={() => setActiveTab('dashboard')}
+          >
+            Dashboard
+          </button>
+          <button
+            className={activeTab === 'settings' ? 'active' : ''}
+            onClick={() => setActiveTab('settings')}
+          >
+            Settings
+          </button>
         </nav>
 
         <div className="sidebar-user">
@@ -158,220 +168,226 @@ export default function Dashboard({ token, user, onLogout }) {
           </div>
           <button className="logout-btn" onClick={onLogout}>Sign Out</button>
         </div>
-      </div>
+      </aside>
 
-      <div className="dashboard-content">
-        <div className="dashboard-header">
-          <h1>Dashboard</h1>
-          <p>Manage and validate FHIR CodeSystem resources</p>
-        </div>
-
-        {error && (
-          <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}>
-            <strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}
-          </div>
-        )}
-
-        <div className="panel">
-          <h2>
-            <div className="panel-icon">🔎</div>
-            Select CodeSystem to Import
-          </h2>
-
-          <div className="form-group">
-            <label htmlFor="fsh-select">Choose a CodeSystem</label>
-            <select
-              id="fsh-select"
-              value={selectedFshId}
-              onChange={(e) => setSelectedFshId(e.target.value)}
-              style={{
-                width: '100%',
-                padding: '0.9rem 1rem',
-                borderRadius: '8px',
-                border: '1px solid #e2e8f0',
-                background: '#f8fafc',
-                fontSize: '0.95rem',
-              }}
-            >
-              <option value="">Select a CodeSystem</option>
-              {fshCodeSystems.map((item) => (
-                <option key={item.id} value={item.id}>
-                  {item.name || item.id} — {item.version || 'no version'}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div className="action-buttons" style={{ marginTop: '1rem' }}>
-            <button
-              className="btn btn-primary"
-              onClick={handleImportCodeSystem}
-              disabled={!selectedFshId || importing}
-            >
-              {importing ? 'Importing…' : 'Import selected CodeSystem'}
-            </button>
-          </div>
-        </div>
-
-        <div className="panel">
-          <h2>
-            <div className="panel-icon">📋</div>
-            CodeSystem Resources
-          </h2>
-
-          {loading ? (
-            <div className="empty-state">
-              <div className="loading-spinner"></div>
-              <p style={{ marginTop: '1rem' }}>Loading resources...</p>
+      <main className="dashboard-content">
+        {activeTab === 'settings' ? (
+          <Settings currentTheme={theme} onThemeChange={onThemeChange} />
+        ) : (
+          <div className="dashboard-main">
+            <div className="dashboard-header">
+              <h1>Dashboard</h1>
+              <p>Manage and validate FHIR CodeSystem resources</p>
             </div>
-          ) : resources.length === 0 ? (
-            <div className="empty-state">
-              <div className="empty-state-icon">📭</div>
-              <div className="empty-state-title">No resources found</div>
-              <div className="empty-state-text">Import a CodeSystem to start editing.</div>
-            </div>
-          ) : (
-            <table className="resource-table">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Status</th>
-                  <th>Version</th>
-                  <th>Concepts</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                {resources.map((resource) => (
-                  <tr key={resource.id}>
-                    <td><strong>{resource.id}</strong></td>
-                    <td>{resource.name}</td>
-                    <td>
-                      <span className={`resource-badge ${getStatusBadge(resource.status)}`}>
-                        {resource.status}
-                      </span>
-                    </td>
-                    <td>{resource.version}</td>
-                    <td>{resource.concepts?.length || 0}</td>
-                    <td>
-                      <div className="action-buttons">
-                        <button
-                          className="btn btn-primary"
-                          onClick={() => handleValidate(resource)}
-                          disabled={validatingId === resource.id}
-                        >
-                          {validatingId === resource.id ? '⊙ Validating' : '✓ Validate'}
-                        </button>
-                        <button
-                          className="btn btn-secondary"
-                          onClick={() => handleEdit(resource)}
-                        >
-                          ✎ Edit
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
-        </div>
 
-        {editingResource && (
-          <div className="panel">
-            <h2>
-              <div className="panel-icon">✎</div>
-              Edit Resource
-            </h2>
+            {error && (
+              <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}>
+                <strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}
+              </div>
+            )}
 
-            <div className="validation-result">
+            <div className="panel">
+              <h2>
+                <div className="panel-icon">🔎</div>
+                Select CodeSystem to Import
+              </h2>
+
               <div className="form-group">
-                <label htmlFor="resource-name">Name</label>
-                <input
-                  id="resource-name"
-                  type="text"
-                  value={editForm.name}
-                  onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="resource-status">Status</label>
-                <input
-                  id="resource-status"
-                  type="text"
-                  value={editForm.status}
-                  onChange={(e) => setEditForm({ ...editForm, status: e.target.value })}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="resource-version">Version</label>
-                <input
-                  id="resource-version"
-                  type="text"
-                  value={editForm.version}
-                  onChange={(e) => setEditForm({ ...editForm, version: e.target.value })}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="resource-url">URL</label>
-                <input
-                  id="resource-url"
-                  type="text"
-                  value={editForm.url}
-                  onChange={(e) => setEditForm({ ...editForm, url: e.target.value })}
-                />
+                <label htmlFor="fsh-select">Choose a CodeSystem</label>
+                <select
+                  id="fsh-select"
+                  value={selectedFshId}
+                  onChange={(e) => setSelectedFshId(e.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '0.9rem 1rem',
+                    borderRadius: '8px',
+                    border: '1px solid #e2e8f0',
+                    background: '#f8fafc',
+                    fontSize: '0.95rem',
+                  }}
+                >
+                  <option value="">Select a CodeSystem</option>
+                  {fshCodeSystems.map((item) => (
+                    <option key={item.id} value={item.id}>
+                      {item.name || item.id} — {item.version || 'no version'}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div className="action-buttons" style={{ marginTop: '1rem' }}>
-                <button className="btn btn-primary" onClick={handleSave}>
-                  Save Changes
-                </button>
-                <button className="btn btn-secondary" onClick={handleCancelEdit}>
-                  Cancel
+                <button
+                  className="btn btn-primary"
+                  onClick={handleImportCodeSystem}
+                  disabled={!selectedFshId || importing}
+                >
+                  {importing ? 'Importing…' : 'Import selected CodeSystem'}
                 </button>
               </div>
             </div>
-          </div>
-        )}
 
-        {validationResult && (
-          <div className="panel">
-            <h2>
-              <div className="panel-icon">✓</div>
-              Validation Result
-            </h2>
+            <div className="panel">
+              <h2>
+                <div className="panel-icon">📋</div>
+                CodeSystem Resources
+              </h2>
 
-            <div className="validation-result">
-              <h3>Resource: <strong>{validationResult.resource_id}</strong></h3>
-              <div className="validation-stats">
-                <div className="stat">
-                  <span className="stat-label">Status</span>
-                  <span className={`stat-value ${validationResult.valid ? 'success' : 'error'}`}>
-                    {validationResult.valid ? '✓ Valid' : '✗ Invalid'}
-                  </span>
+              {loading ? (
+                <div className="empty-state">
+                  <div className="loading-spinner"></div>
+                  <p style={{ marginTop: '1rem' }}>Loading resources...</p>
                 </div>
-                <div className="stat">
-                  <span className="stat-label">Total Issues</span>
-                  <span className="stat-value">{validationResult.issues_count}</span>
+              ) : resources.length === 0 ? (
+                <div className="empty-state">
+                  <div className="empty-state-icon">📭</div>
+                  <div className="empty-state-title">No resources found</div>
+                  <div className="empty-state-text">Import a CodeSystem to start editing.</div>
                 </div>
-                <div className="stat">
-                  <span className="stat-label">Errors</span>
-                  <span className={`stat-value ${validationResult.errors_count > 0 ? 'error' : 'success'}`}>
-                    {validationResult.errors_count}
-                  </span>
-                </div>
-                <div className="stat">
-                  <span className="stat-label">Warnings</span>
-                  <span className={`stat-value ${validationResult.warnings_count > 0 ? 'warning' : 'success'}`}>
-                    {validationResult.warnings_count > 0 ? 'warning' : 'success'}
-                  </span>
+              ) : (
+                <table className="resource-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Status</th>
+                      <th>Version</th>
+                      <th>Concepts</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {resources.map((resource) => (
+                      <tr key={resource.id}>
+                        <td><strong>{resource.id}</strong></td>
+                        <td>{resource.name}</td>
+                        <td>
+                          <span className={`resource-badge ${getStatusBadge(resource.status)}`}>
+                            {resource.status}
+                          </span>
+                        </td>
+                        <td>{resource.version}</td>
+                        <td>{resource.concepts?.length || 0}</td>
+                        <td>
+                          <div className="action-buttons">
+                            <button
+                              className="btn btn-primary"
+                              onClick={() => handleValidate(resource)}
+                              disabled={validatingId === resource.id}
+                            >
+                              {validatingId === resource.id ? '⊙ Validating' : '✓ Validate'}
+                            </button>
+                            <button
+                              className="btn btn-secondary"
+                              onClick={() => handleEdit(resource)}
+                            >
+                              ✎ Edit
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+            </div>
+
+            {editingResource && (
+              <div className="panel">
+                <h2>
+                  <div className="panel-icon">✎</div>
+                  Edit Resource
+                </h2>
+
+                <div className="validation-result">
+                  <div className="form-group">
+                    <label htmlFor="resource-name">Name</label>
+                    <input
+                      id="resource-name"
+                      type="text"
+                      value={editForm.name}
+                      onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="resource-status">Status</label>
+                    <input
+                      id="resource-status"
+                      type="text"
+                      value={editForm.status}
+                      onChange={(e) => setEditForm({ ...editForm, status: e.target.value })}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="resource-version">Version</label>
+                    <input
+                      id="resource-version"
+                      type="text"
+                      value={editForm.version}
+                      onChange={(e) => setEditForm({ ...editForm, version: e.target.value })}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="resource-url">URL</label>
+                    <input
+                      id="resource-url"
+                      type="text"
+                      value={editForm.url}
+                      onChange={(e) => setEditForm({ ...editForm, url: e.target.value })}
+                    />
+                  </div>
+
+                  <div className="action-buttons" style={{ marginTop: '1rem' }}>
+                    <button className="btn btn-primary" onClick={handleSave}>
+                      Save Changes
+                    </button>
+                    <button className="btn btn-secondary" onClick={handleCancelEdit}>
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
+
+            {validationResult && (
+              <div className="panel">
+                <h2>
+                  <div className="panel-icon">✓</div>
+                  Validation Result
+                </h2>
+
+                <div className="validation-result">
+                  <h3>Resource: <strong>{validationResult.resource_id}</strong></h3>
+                  <div className="validation-stats">
+                    <div className="stat">
+                      <span className="stat-label">Status</span>
+                      <span className={`stat-value ${validationResult.valid ? 'success' : 'error'}`}>
+                        {validationResult.valid ? '✓ Valid' : '✗ Invalid'}
+                      </span>
+                    </div>
+                    <div className="stat">
+                      <span className="stat-label">Total Issues</span>
+                      <span className="stat-value">{validationResult.issues_count}</span>
+                    </div>
+                    <div className="stat">
+                      <span className="stat-label">Errors</span>
+                      <span className={`stat-value ${validationResult.errors_count > 0 ? 'error' : 'success'}`}>
+                        {validationResult.errors_count}
+                      </span>
+                    </div>
+                    <div className="stat">
+                      <span className="stat-label">Warnings</span>
+                      <span className={`stat-value ${validationResult.warnings_count > 0 ? 'warning' : 'success'}`}>
+                        {validationResult.warnings_count > 0 ? 'warning' : 'success'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
-      </div>
+      </main>
     </div>
   );
 }
