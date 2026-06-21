@@ -44,7 +44,7 @@ Usage: #inline
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 
 * meta.security[visibility].system = $ResourceVisibilityType
-* meta.security[visibility].code = #inAgency 
+* meta.security[visibility].code = #inPublicHealthService
 * meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
@@ -198,7 +198,7 @@ Usage: #inline
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 
 * meta.security[visibility].system = $ResourceVisibilityType
-* meta.security[visibility].code = #inAgency 
+* meta.security[visibility].code = #inPublicHealthService
 * meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
@@ -324,7 +324,7 @@ Usage: #inline
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
 
 * meta.security[visibility].system = $ResourceVisibilityType
-* meta.security[visibility].code = #inAgency 
+* meta.security[visibility].code = #inPublicHealthService
 * meta.security[visibility].display =  "Eigene ÖGD-Stelle"
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
