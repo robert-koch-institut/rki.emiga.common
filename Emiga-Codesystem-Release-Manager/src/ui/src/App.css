@@ -6,7 +6,10 @@
 
 html, body, #root {
   height: 100%;
-  width: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
 }
 
 body {
@@ -42,11 +45,11 @@ body {
 .login-card {
   background: var(--card-bg);
   color: var(--text);
-  border-radius: 10px;
   padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
   width: 420px;
   max-width: calc(100% - 2rem);
-  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
 }
 
 .login-card h1 {
@@ -81,10 +84,10 @@ body {
   font-size: 0.95rem;
 }
 
-.form-group input {
+.form-group input, select {
   background: var(--input-bg);
   color: var(--text);
-  border: 1px solid rgba(226,232,240,0.12);
+  border: 1px solid rgba(226,232,240,0.06);
   padding: 0.6rem 0.9rem;
   border-radius: 6px;
   width: 100%;
@@ -168,9 +171,11 @@ body {
 }
 
 .dashboard-sidebar {
-  width: 260px;
-  background: var(--surface);
-  border-right: 1px solid var(--border);
+  width: 220px;
+  background: var(--sidebar-bg);
+  color: var(--text);
+  min-height: 100vh;
+  position: fixed;
   padding: 1.5rem;
   overflow-y: auto;
   display: flex;
@@ -182,11 +187,25 @@ body {
 .sidebar-logo {
   font-weight: 700;
   font-size: 1.05rem;
-  color: #2dd4bf;
+  color: var(--accent);
   padding: 1rem 1.2rem;
   display: flex;
   align-items: center;
   gap: 0.7rem;
+}
+
+/* Sidebar nav buttons */
+.sidebar-nav button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  text-align: left;
+}
+.sidebar-nav button.active {
+  background: rgba(255,255,255,0.03);
 }
 
 .sidebar-nav {
@@ -263,7 +282,8 @@ body {
 /* MAIN CONTENT */
 .dashboard-content {
   flex: 1;
-  padding: 2rem;
+  margin-left: 220px;
+  padding: 1.6rem;
   overflow-y: auto;
   background: var(--bg);
   height: 100vh;
@@ -288,11 +308,12 @@ body {
 
 /* PANELS */
 .panel {
-  background: var(--surface);
-  border-radius: 12px;
-  padding: 1.8rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 14px rgba(2,6,23,0.45);
   border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
@@ -388,9 +409,9 @@ body {
 }
 
 .btn {
-  padding: 0.6rem 1rem;
-  border: none;
+  padding: 0.5rem 0.9rem;
   border-radius: 6px;
+  border: 0;
   cursor: pointer;
   font-weight: 600;
   font-size: 0.85rem;
@@ -399,8 +420,8 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #0f766e 0%, #164e63 100%);
-  color: white;
+  background: var(--accent);
+  color: #011;
 }
 
 .btn-primary:hover {
@@ -414,12 +435,8 @@ body {
 }
 
 .btn-secondary {
-  background: #e2e8f0;
-  color: #1e293b;
-}
-
-.btn-secondary:hover {
-  background: #cbd5e0;
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
 }
 
 .btn-danger {
@@ -679,6 +696,7 @@ body {
   --card-bg: #ffffff;
   --input-bg: #ffffff;
   --sidebar-bg: #0b1320;
+  --accent: #059669;
 }
 
 :root[data-theme='dark']{
@@ -688,44 +706,5 @@ body {
   --card-bg: #0f1720;
   --input-bg: #0b1220;
   --sidebar-bg: #07131a;
+  --accent: #14b8a6;
 }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-}
-
-/* Login card visible and inputs readable */
-.login-card {
-  background: var(--card-bg);
-  color: var(--text);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
-  width: 420px;
-  max-width: calc(100% - 2rem);
-}
-
-.form-group input {
-  background: var(--input-bg);
-  color: var(--text);
-  border: 1px solid rgba(226,232,240,0.12);
-  padding: 0.6rem 0.9rem;
-  border-radius: 6px;
-  width: 100%;
-}
-
-/* Sidebar logo text size */
-.sidebar-logo {
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: #2dd4bf;
-  padding: 1rem 1.2rem;
-}
-
-/* Buttons and selects inherit theme colors */
-select, .btn {
-  color: var(--text);
-}
-
-/* ...existing code... */

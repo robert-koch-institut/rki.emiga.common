@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResource, logout as apiLogout } from '../services/api';
 import Settings from './Settings';
+import About from './About';
 
 export default function Dashboard({ token, user, onLogout, theme, onThemeChange }) {
   const [resources, setResources] = useState([]);
@@ -8,138 +9,45 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
   const [validationResult, setValidationResult] = useState(null);
   const [validatingId, setValidatingId] = useState(null);
   const [editingResource, setEditingResource] = useState(null);
-  const [editForm, setEditForm] = useState({
-    name: '',
-    status: '',
-    version: '',
-    url: '',
-  });
+  const [editForm, setEditForm] = useState({ name: '', status: '', version: '', url: '' });
   const [error, setError] = useState('');
   const [fshCodeSystems, setFshCodeSystems] = useState([]);
   const [selectedFshId, setSelectedFshId] = useState('');
   const [importing, setImporting] = useState(false);
   const [activeTab, setActiveTab] = useState('dashboard');
 
-  useEffect(() => {
-    loadResources();
-    loadFshCodeSystems();
-  }, [token]);
+  useEffect(() => { loadResources(); loadFshCodeSystems(); }, [token]);
 
   const loadResources = async () => {
-    setLoading(true);
-    setError('');
-    try {
-      const items = await fetchResources(token);
-      setResources(items);
-    } catch (err) {
-      setError(err.message || 'Failed to load resources');
-    } finally {
-      setLoading(false);
-    }
+    setLoading(true); setError('');
+    try { const items = await fetchResources(token); setResources(items); } catch (err) { setError(err.message || 'Failed to load resources'); }
+    setLoading(false);
   };
 
   const loadFshCodeSystems = async () => {
-    try {
-      const list = await fetchFshCodeSystems(token);
-      setFshCodeSystems(list);
-    } catch (err) {
-      console.warn('Unable to load FSH codesystems', err);
-    }
+    try { const list = await fetchFshCodeSystems(token); setFshCodeSystems(list); } catch (err) { console.warn(err); }
   };
 
   const handleImportCodeSystem = async () => {
-    if (!selectedFshId) {
-      setError('Select a CodeSystem first');
-      return;
-    }
-    setError('');
-    setImporting(true);
-    try {
-      const imported = await importFshCodeSystem(token, selectedFshId);
-      setResources((prev) => [...prev, imported]);
-      setSelectedFshId('');
-    } catch (err) {
-      setError(err.message || 'Unable to import CodeSystem');
-    } finally {
-      setImporting(false);
-    }
+    if (!selectedFshId) { setError('Select a CodeSystem first'); return; }
+    setError(''); setImporting(true);
+    try { const imported = await importFshCodeSystem(token, selectedFshId); setResources((p)=>[...p, imported]); setSelectedFshId(''); }
+    catch (err) { setError(err.message || 'Unable to import CodeSystem'); }
+    setImporting(false);
   };
 
-  const handleValidate = async (resource) => {
-    setError('');
-    setValidatingId(resource.id);
-    try {
-      const response = await fetch('http://localhost:5000/validate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          resource: {
-            ...resource,
-            resourceType: 'CodeSystem',
-            concept: resource.concepts,
-          },
-        }),
-      });
+  const handleSignOut = async () => { try { await apiLogout(token).catch(()=>{}); } catch {} finally { onLogout(); } };
 
-      if (!response.ok) {
-        const body = await response.json().catch(() => null);
-        throw new Error(body?.detail || 'Validation failed');
-      }
-
-      const payload = await response.json();
-      setValidationResult(payload);
-    } catch (err) {
-      setError(err.message || 'Validation request failed');
-    } finally {
-      setValidatingId(null);
-    }
-  };
-
-  const handleEdit = (resource) => {
-    setEditingResource(resource.id);
-    setEditForm({
-      name: resource.name,
-      status: resource.status,
-      version: resource.version,
-      url: resource.url,
-    });
-    setValidationResult(null);
-  };
-
-  const handleCancelEdit = () => {
-    setEditingResource(null);
-    setEditForm({ name: '', status: '', version: '', url: '' });
-  };
-
+  const handleEdit = (resource) => { setEditingResource(resource.id); setEditForm({ name: resource.name, status: resource.status, version: resource.version, url: resource.url }); setValidationResult(null); };
+  const handleCancelEdit = () => { setEditingResource(null); setEditForm({ name: '', status: '', version: '', url: '' }); };
   const handleSave = async () => {
     if (!editingResource) return;
-    setError('');
     try {
-      const existing = resources.find((r) => r.id === editingResource);
-      const updated = await updateResource(token, editingResource, {
-        id: editingResource,
-        name: editForm.name,
-        status: editForm.status,
-        version: editForm.version,
-        url: editForm.url,
-        concepts: existing?.concepts || [],
-      });
-      setResources((prev) =>
-        prev.map((resource) => (resource.id === editingResource ? updated : resource))
-      );
+      const existing = resources.find((r)=>r.id===editingResource);
+      const updated = await updateResource(token, editingResource, { id: editingResource, name: editForm.name, status: editForm.status, version: editForm.version, url: editForm.url, concepts: existing?.concepts || [] });
+      setResources((prev)=>prev.map((r)=>r.id===editingResource?updated:r));
       setEditingResource(null);
-    } catch (err) {
-      setError(err.message || 'Unable to save resource');
-    }
-  };
-
-  const handleSignOut = async () => {
-    try {
-      await apiLogout(token);
-    } catch (e) {
-      console.warn('Logout error', e);
-    }
-    onLogout();
+    } catch (err) { setError(err.message || 'Unable to save resource'); }
   };
 
   const getStatusBadge = (status) => `badge-${status}`;
@@ -150,226 +58,73 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
         <div className="sidebar-logo">ECRM</div>
 
         <nav className="sidebar-nav">
-          <button type="button" className={activeTab === 'dashboard' ? 'active' : ''} onClick={() => setActiveTab('dashboard')}>
-            📊 Dashboard
-          </button>
-          <button type="button" className={activeTab === 'resources' ? 'active' : ''} onClick={() => setActiveTab('resources')}>
-            📋 Resources
-          </button>
-          <button type="button" className={activeTab === 'releases' ? 'active' : ''} onClick={() => setActiveTab('releases')}>
-            📦 Releases
-          </button>
-          <button type="button" className={activeTab === 'settings' ? 'active' : ''} onClick={() => setActiveTab('settings')}>
-            ⚙️ Settings
-          </button>
+          <button type="button" className={activeTab==='dashboard'?'active':''} onClick={()=>setActiveTab('dashboard')}>📊 Dashboard</button>
+          <button type="button" className={activeTab==='resources'?'active':''} onClick={()=>setActiveTab('resources')}>📋 Resources</button>
+          <button type="button" className={activeTab==='releases'?'active':''} onClick={()=>setActiveTab('releases')}>📦 Releases</button>
+          <button type="button" className={activeTab==='settings'?'active':''} onClick={()=>setActiveTab('settings')}>⚙️ Settings</button>
+          <button type="button" className={activeTab==='about'?'active':''} onClick={()=>setActiveTab('about')}>ℹ️ About</button>
         </nav>
 
         <div className="sidebar-user">
-          <div className="user-info">
-            <div className="user-name">{user?.username}</div>
-            <div className="user-role">{user?.role}</div>
-          </div>
-          <button type="button" className="logout-btn" onClick={handleSignOut}>
-            Sign Out
-          </button>
+          <div className="user-info"><div className="user-name">{user?.username}</div><div className="user-role">{user?.role}</div></div>
+          <button type="button" className="logout-btn" onClick={handleSignOut}>Sign Out</button>
         </div>
       </div>
 
       <div className="dashboard-content">
-        <div className="dashboard-header">
-          <h1>Dashboard</h1>
-          <p>Manage and validate FHIR CodeSystem resources</p>
-        </div>
+        <div className="dashboard-header"><h1>Dashboard</h1><p>Manage and validate FHIR CodeSystem resources</p></div>
 
         {activeTab === 'settings' ? (
-          <Settings currentTheme={theme} onThemeChange={onThemeChange} />
+          <Settings currentTheme={theme} onThemeChange={onThemeChange} user={user} />
+        ) : activeTab === 'about' ? (
+          <About />
         ) : (
-          <div className="dashboard-main">
-            {error && (
-              <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}>
-                <strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}
-              </div>
-            )}
+          <>
+            {error && <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}><strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}</div>}
 
-            {/* import panel */}
             <div className="panel">
               <h2><div className="panel-icon">🔎</div>Select CodeSystem to Import</h2>
-
               <div className="form-group">
-                <label htmlFor="fsh-select">Choose a CodeSystem</label>
-                <select
-                  id="fsh-select"
-                  value={selectedFshId}
-                  onChange={(e) => setSelectedFshId(e.target.value)}
-                  style={{
-                    width: '100%',
-                    padding: '0.9rem 1rem',
-                    borderRadius: '8px',
-                    border: '1px solid #e2e8f0',
-                    background: 'var(--input-bg)',
-                    color: 'var(--text)',
-                    fontSize: '0.95rem',
-                  }}
-                >
+                <label>Choose a CodeSystem</label>
+                <select value={selectedFshId} onChange={(e)=>setSelectedFshId(e.target.value)} style={{ width:'100%' }}>
                   <option value="">Select a CodeSystem</option>
-                  {fshCodeSystems.map((item) => (
-                    <option key={item.id} value={item.id}>
-                      {item.name || item.id} — {item.version || 'no version'}
-                    </option>
-                  ))}
+                  {fshCodeSystems.map((item)=> (<option key={item.id} value={item.id}>{item.name || item.id} — {item.version || 'no version'}</option>))}
                 </select>
               </div>
-
-              <div className="action-buttons" style={{ marginTop: '1rem' }}>
-                <button
-                  className="btn btn-primary"
-                  onClick={handleImportCodeSystem}
-                  disabled={!selectedFshId || importing}
-                >
-                  {importing ? 'Importing…' : 'Import selected CodeSystem'}
-                </button>
+              <div style={{ marginTop:'1rem' }}>
+                <button className="btn btn-primary" onClick={handleImportCodeSystem} disabled={!selectedFshId || importing}>{importing ? 'Importing…' : 'Import selected CodeSystem'}</button>
               </div>
             </div>
 
-            {/* resources panel */}
             <div className="panel">
               <h2><div className="panel-icon">📋</div>CodeSystem Resources</h2>
-              {loading ? (
-                <div className="empty-state">
-                  <div className="loading-spinner"></div>
-                  <p style={{ marginTop: '1rem' }}>Loading resources...</p>
-                </div>
-              ) : resources.length === 0 ? (
-                <div className="empty-state">
-                  <div className="empty-state-icon">📭</div>
-                  <div className="empty-state-title">No resources found</div>
-                  <div className="empty-state-text">Import a CodeSystem to start editing.</div>
-                </div>
-              ) : (
-                <table className="resource-table">
-                  <thead>
-                    <tr>
-                      <th>ID</th><th>Name</th><th>Status</th><th>Version</th><th>Concepts</th><th>Actions</th>
+              {loading ? <div className="empty-state"><p>Loading resources...</p></div> : resources.length===0 ? <div className="empty-state"><div>No resources</div></div> : (
+                <table className="resource-table"><thead><tr><th>ID</th><th>Name</th><th>Status</th><th>Version</th><th>Concepts</th><th>Actions</th></tr></thead>
+                  <tbody>{resources.map((resource)=>(
+                    <tr key={resource.id}>
+                      <td><strong>{resource.id}</strong></td>
+                      <td>{resource.name}</td>
+                      <td><span className={`resource-badge ${getStatusBadge(resource.status)}`}>{resource.status}</span></td>
+                      <td>{resource.version}</td>
+                      <td>{resource.concepts?.length || 0}</td>
+                      <td><div className="action-buttons"><button className="btn btn-primary" onClick={()=>{}}>✓ Validate</button><button className="btn btn-secondary" onClick={()=>handleEdit(resource)}>✎ Edit</button></div></td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    {resources.map((resource) => (
-                      <tr key={resource.id}>
-                        <td><strong>{resource.id}</strong></td>
-                        <td>{resource.name}</td>
-                        <td><span className={`resource-badge ${getStatusBadge(resource.status)}`}>{resource.status}</span></td>
-                        <td>{resource.version}</td>
-                        <td>{resource.concepts?.length || 0}</td>
-                        <td>
-                          <div className="action-buttons">
-                            <button className="btn btn-primary" onClick={() => handleValidate(resource)} disabled={validatingId === resource.id}>
-                              {validatingId === resource.id ? '⊙ Validating' : '✓ Validate'}
-                            </button>
-                            <button className="btn btn-secondary" onClick={() => handleEdit(resource)}>✎ Edit</button>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
+                  ))}</tbody>
                 </table>
               )}
             </div>
 
-            {/* edit & validation result panels (unchanged) */}
             {editingResource && (
               <div className="panel">
-                <h2>
-                  <div className="panel-icon">✎</div>
-                  Edit Resource
-                </h2>
-
-                <div className="validation-result">
-                  <div className="form-group">
-                    <label htmlFor="resource-name">Name</label>
-                    <input
-                      id="resource-name"
-                      type="text"
-                      value={editForm.name}
-                      onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="resource-status">Status</label>
-                    <input
-                      id="resource-status"
-                      type="text"
-                      value={editForm.status}
-                      onChange={(e) => setEditForm({ ...editForm, status: e.target.value })}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="resource-version">Version</label>
-                    <input
-                      id="resource-version"
-                      type="text"
-                      value={editForm.version}
-                      onChange={(e) => setEditForm({ ...editForm, version: e.target.value })}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="resource-url">URL</label>
-                    <input
-                      id="resource-url"
-                      type="text"
-                      value={editForm.url}
-                      onChange={(e) => setEditForm({ ...editForm, url: e.target.value })}
-                    />
-                  </div>
-
-                  <div className="action-buttons" style={{ marginTop: '1rem' }}>
-                    <button className="btn btn-primary" onClick={handleSave}>
-                      Save Changes
-                    </button>
-                    <button className="btn btn-secondary" onClick={handleCancelEdit}>
-                      Cancel
-                    </button>
-                  </div>
-                </div>
+                <h2><div className="panel-icon">✎</div>Edit Resource</h2>
+                <div className="form-group"><label>Name</label><input value={editForm.name} onChange={(e)=>setEditForm({...editForm, name: e.target.value})} /></div>
+                <div className="form-group"><label>Status</label><input value={editForm.status} onChange={(e)=>setEditForm({...editForm, status: e.target.value})} /></div>
+                <div className="form-group"><label>Version</label><input value={editForm.version} onChange={(e)=>setEditForm({...editForm, version: e.target.value})} /></div>
+                <div className="form-group"><label>URL</label><input value={editForm.url} onChange={(e)=>setEditForm({...editForm, url: e.target.value})} /></div>
+                <div style={{ marginTop:'1rem' }}><button className="btn btn-primary" onClick={handleSave}>Save Changes</button><button className="btn btn-secondary" onClick={handleCancelEdit} style={{ marginLeft: '0.6rem' }}>Cancel</button></div>
               </div>
             )}
-
-            {validationResult && (
-              <div className="panel">
-                <h2>
-                  <div className="panel-icon">✓</div>
-                  Validation Result
-                </h2>
-
-                <div className="validation-result">
-                  <h3>Resource: <strong>{validationResult.resource_id}</strong></h3>
-                  <div className="validation-stats">
-                    <div className="stat">
-                      <span className="stat-label">Status</span>
-                      <span className={`stat-value ${validationResult.valid ? 'success' : 'error'}`}>
-                        {validationResult.valid ? '✓ Valid' : '✗ Invalid'}
-                      </span>
-                    </div>
-                    <div className="stat">
-                      <span className="stat-label">Total Issues</span>
-                      <span className="stat-value">{validationResult.issues_count}</span>
-                    </div>
-                    <div className="stat">
-                      <span className="stat-label">Errors</span>
-                      <span className={`stat-value ${validationResult.errors_count > 0 ? 'error' : 'success'}`}>
-                        {validationResult.errors_count}
-                      </span>
-                    </div>
-                    <div className="stat">
-                      <span className="stat-label">Warnings</span>
-                      <span className={`stat-value ${validationResult.warnings_count > 0 ? 'warning' : 'success'}`}>
-                        {validationResult.warnings_count > 0 ? 'warning' : 'success'}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+          </>
         )}
       </div>
     </div>
