@@ -84,12 +84,13 @@ body {
   font-size: 0.95rem;
 }
 
-.form-group input, select {
-  background: var(--input-bg);
+.form-group input,
+.form-group select {
+  background: var(--field-bg);
   color: var(--text);
-  border: 1px solid rgba(226,232,240,0.06);
-  padding: 0.6rem 0.9rem;
-  border-radius: 6px;
+  border: 1px solid var(--field-border);
+  padding: 0.65rem 0.95rem;
+  border-radius: 8px;
   width: 100%;
   transition: all 0.2s ease;
 }
@@ -291,7 +292,11 @@ body {
 }
 
 .dashboard-header {
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .dashboard-header h1 {
@@ -588,6 +593,46 @@ body {
   color: #64748b;
 }
 
+/* About page formatting */
+.about-panel {
+  max-width: 900px;
+  word-wrap: break-word;
+  line-height: 1.7;
+}
+
+.about-panel h2 {
+  margin-bottom: 1rem;
+}
+
+.about-panel section {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-panel section:last-child {
+  border-bottom: none;
+}
+
+.about-panel h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.about-panel p,
+.about-panel li {
+  margin: 0.5rem 0;
+}
+
+.about-panel ul,
+.about-panel ol {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding-left: 0.75rem;
+}
+
+.about-panel li {
+  margin-bottom: 0.5rem;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .dashboard {
@@ -695,6 +740,8 @@ body {
   --muted: #64748b;
   --card-bg: #ffffff;
   --input-bg: #ffffff;
+  --field-bg: #f8fafc;
+  --field-border: #cbd5e1;
   --sidebar-bg: #0b1320;
   --accent: #059669;
 }
@@ -705,6 +752,24 @@ body {
   --muted: #94a3b8;
   --card-bg: #0f1720;
   --input-bg: #0b1220;
+  --field-bg: #111827;
+  --field-border: #334155;
   --sidebar-bg: #07131a;
   --accent: #14b8a6;
+}
+
+.time-display {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--muted);
+  font-size: 0.95rem;
+  gap: 0.15rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+}
+
+.settings-buttons button {
+  min-width: 90px;
 }

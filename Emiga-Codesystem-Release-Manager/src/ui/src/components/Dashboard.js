@@ -3,7 +3,7 @@ import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResourc
 import Settings from './Settings';
 import About from './About';
 
-export default function Dashboard({ token, user, onLogout, theme, onThemeChange }) {
+export default function Dashboard({ token, user, onLogout, theme, onThemeChange, timezone, onTimezoneChange }) {
   const [resources, setResources] = useState([]);
   const [loading, setLoading] = useState(true);
   const [validationResult, setValidationResult] = useState(null);
@@ -15,42 +15,133 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
   const [selectedFshId, setSelectedFshId] = useState('');
   const [importing, setImporting] = useState(false);
   const [activeTab, setActiveTab] = useState('dashboard');
+  const [localTime, setLocalTime] = useState(() => formatTime(new Date(), timezone));
 
-  useEffect(() => { loadResources(); loadFshCodeSystems(); }, [token]);
+  useEffect(() => {
+    loadResources();
+    loadFshCodeSystems();
+  }, [token]);
+
+  useEffect(() => {
+    const updateClock = () => setLocalTime(formatTime(new Date(), timezone));
+    updateClock();
+    const timer = setInterval(updateClock, 1000);
+    return () => clearInterval(timer);
+  }, [timezone]);
 
   const loadResources = async () => {
-    setLoading(true); setError('');
-    try { const items = await fetchResources(token); setResources(items); } catch (err) { setError(err.message || 'Failed to load resources'); }
-    setLoading(false);
+    setLoading(true);
+    setError('');
+    try {
+      const items = await fetchResources(token);
+      setResources(items);
+    } catch (err) {
+      setError(err.message || 'Failed to load resources');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const loadFshCodeSystems = async () => {
-    try { const list = await fetchFshCodeSystems(token); setFshCodeSystems(list); } catch (err) { console.warn(err); }
+    try {
+      const list = await fetchFshCodeSystems(token);
+      setFshCodeSystems(list);
+    } catch (err) {
+      console.warn('Unable to load FSH codesystems', err);
+    }
   };
 
   const handleImportCodeSystem = async () => {
-    if (!selectedFshId) { setError('Select a CodeSystem first'); return; }
-    setError(''); setImporting(true);
-    try { const imported = await importFshCodeSystem(token, selectedFshId); setResources((p)=>[...p, imported]); setSelectedFshId(''); }
-    catch (err) { setError(err.message || 'Unable to import CodeSystem'); }
-    setImporting(false);
+    if (!selectedFshId) {
+      setError('Select a CodeSystem first');
+      return;
+    }
+    setError('');
+    setImporting(true);
+    try {
+      const imported = await importFshCodeSystem(token, selectedFshId);
+      setResources((prev) => [...prev, imported]);
+      setSelectedFshId('');
+    } catch (err) {
+      setError(err.message || 'Unable to import CodeSystem');
+    } finally {
+      setImporting(false);
+    }
   };
 
-  const handleSignOut = async () => { try { await apiLogout(token).catch(()=>{}); } catch {} finally { onLogout(); } };
+  const handleSignOut = async () => {
+    try {
+      await apiLogout(token);
+    } catch (e) {
+      console.warn('Logout error', e);
+    }
+    onLogout();
+  };
 
-  const handleEdit = (resource) => { setEditingResource(resource.id); setEditForm({ name: resource.name, status: resource.status, version: resource.version, url: resource.url }); setValidationResult(null); };
-  const handleCancelEdit = () => { setEditingResource(null); setEditForm({ name: '', status: '', version: '', url: '' }); };
+  const handleEdit = (resource) => {
+    setEditingResource(resource.id);
+    setEditForm({
+      name: resource.name,
+      status: resource.status,
+      version: resource.version,
+      url: resource.url,
+    });
+    setValidationResult(null);
+  };
+
+  const handleCancelEdit = () => {
+    setEditingResource(null);
+    setEditForm({ name: '', status: '', version: '', url: '' });
+  };
+
   const handleSave = async () => {
     if (!editingResource) return;
+    setError('');
     try {
-      const existing = resources.find((r)=>r.id===editingResource);
-      const updated = await updateResource(token, editingResource, { id: editingResource, name: editForm.name, status: editForm.status, version: editForm.version, url: editForm.url, concepts: existing?.concepts || [] });
-      setResources((prev)=>prev.map((r)=>r.id===editingResource?updated:r));
+      const existing = resources.find((r) => r.id === editingResource);
+      const updated = await updateResource(token, editingResource, {
+        id: editingResource,
+        name: editForm.name,
+        status: editForm.status,
+        version: editForm.version,
+        url: editForm.url,
+        concepts: existing?.concepts || [],
+      });
+      setResources((prev) =>
+        prev.map((resource) => (resource.id === editingResource ? updated : resource))
+      );
       setEditingResource(null);
-    } catch (err) { setError(err.message || 'Unable to save resource'); }
+    } catch (err) {
+      setError(err.message || 'Unable to save resource');
+    }
   };
 
   const getStatusBadge = (status) => `badge-${status}`;
+
+  const tabInfo = {
+    dashboard: {
+      title: 'Dashboard',
+      subtitle: 'Manage and validate FHIR CodeSystem resources',
+    },
+    resources: {
+      title: 'Resources',
+      subtitle: 'View and manage imported CodeSystem resources',
+    },
+    releases: {
+      title: 'Releases',
+      subtitle: 'Prepare and review release packages',
+    },
+    settings: {
+      title: 'Settings',
+      subtitle: 'Personalize your preferences and appearance',
+    },
+    about: {
+      title: 'About',
+      subtitle: 'Learn more about ECRM and how it works',
+    },
+  };
+
+  const currentTab = tabInfo[activeTab] || tabInfo.dashboard;
 
   return (
     <div className="dashboard">
@@ -72,10 +163,19 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
       </div>
 
       <div className="dashboard-content">
-        <div className="dashboard-header"><h1>Dashboard</h1><p>Manage and validate FHIR CodeSystem resources</p></div>
+        <div className="dashboard-header">
+          <div>
+            <h1>{currentTab.title}</h1>
+            <p>{currentTab.subtitle}</p>
+          </div>
+          <div className="time-display">
+            <div>{localTime}</div>
+            <small>{timezone}</small>
+          </div>
+        </div>
 
         {activeTab === 'settings' ? (
-          <Settings currentTheme={theme} onThemeChange={onThemeChange} user={user} />
+          <Settings currentTheme={theme} onThemeChange={onThemeChange} currentTimezone={timezone} onTimezoneChange={onTimezoneChange} user={user} />
         ) : activeTab === 'about' ? (
           <About />
         ) : (
@@ -129,4 +229,32 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange 
       </div>
     </div>
   );
+}
+
+function formatTime(date, tz) {
+  return new Intl.DateTimeFormat('en-GB', {
+    timeZone: tz,
+    hour12: false,
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  }).format(date);
+}
+
+function formatTimezoneLabel(timezone) {
+  const date = new Date();
+  const formatted = new Intl.DateTimeFormat('en-GB', {
+    timeZone: timezone,
+    timeZoneName: 'shortOffset',
+  }).format(date);
+
+  const match = formatted.match(/GMT([+-]\d{1,2})(?::?(\d{2}))?/);
+  if (!match) return timezone;
+
+  const hours = match[1].padStart(3, '0');
+  const minutes = match[2] ? match[2].padStart(2, '0') : '00';
+  return `UTC${hours}:${minutes} ${timezone}`;
 }
