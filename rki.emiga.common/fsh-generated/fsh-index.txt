@@ -5,7 +5,7 @@ CodeSystem-ConceptDesignationUse.json                               ConceptDesig
 CodeSystem-DuplicateMatchCriteria.json                              DuplicateMatchCriteria               CodeSystem  CodeSystem\DuplicateMatchCriteria.fsh                               1 - 22
 CodeSystem-DuplicateMatchTriggerReasons.json                        DuplicateMatchTriggerReasons         CodeSystem  CodeSystem\DuplicateMatchTriggerReasons.fsh                         1 - 15
 CodeSystem-FacilityAssociationType.json                             FacilityAssociationType              CodeSystem  CodeSystem\FacilityAssociationType.fsh                              1 - 15
-CodeSystem-OrganizationType.json                                    OrganizationType                     CodeSystem  CodeSystem\OrganizationType.fsh                                     1 - 334
+CodeSystem-OrganizationType.json                                    OrganizationType                     CodeSystem  CodeSystem\OrganizationType.fsh                                     1 - 335
 CodeSystem-PersonalInformation.json                                 PersonalInformation                  CodeSystem  CodeSystem\PersonalInformation.fsh                                  1 - 15
 CodeSystem-ProcessingStatus.json                                    ProcessingStatus                     CodeSystem  CodeSystem\ProcessingStatus.fsh                                     1 - 24
 CodeSystem-RegionKeys.json                                          RegionKeys                           CodeSystem  CodeSystem\RegionKeys.fsh                                           1 - 11295
