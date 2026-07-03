@@ -1,5 +1,5 @@
-ValueSet: PersonOrganizationTypeVS
-Id: PersonOrganizationTypeVS
+ValueSet: PersonToOrganizationTypeVS
+Id: PersonToOrganizationTypeVS
 Title: "Werteliste für die die Personen-zu-Organisation-Zuordnung."
 Description: "Enthält alle Organisationen für die Personen-zu-Organisation-Zuordnung. Es kombiniert die Value Sets für Krankenhäuser und generische Organisationen, ausgenommen davon sind ÖGD-Organisationen (GA, LB, RKI, BW)."
 * insert MetadataTerminology
@@ -20,10 +20,7 @@ Description: "Enthält alle Organisationen für die Personen-zu-Organisation-Zuo
 * $DemisOrgType#medFacPHA "Medizinische Einrichtung des ÖGDs"
 * $DemisOrgType#emResServ "Rettungsdienst"
 * $DemisOrgType#civDisFacility "Einrichtungen des Zivil- und Katastrophenschutzes"
-
 * $DemisOrgType#hospital "Krankenhaus"
-
-
 * $DemisOrgType#childCareFacility "Gemeinschaftseinrichtung"
 * $DemisOrgType#kindergarten "Kindertageseinrichtung (z. B. Kita)"
 * $DemisOrgType#childDayNursery "Kindertagespflege"
@@ -33,32 +30,25 @@ Description: "Enthält alle Organisationen für die Personen-zu-Organisation-Zuo
 * $DemisOrgType#childDayCare "Kinderhort"
 * $DemisOrgType#othEdFac "sonstige Ausbildungseinrichtung"
 * $DemisOrgType#othChildCareFac "Sonstige Kinderbetreuungseinrichtung" 
-
 * $DemisOrgType#housingFacility "Gemeinschaftsunterkunft" 
 * $DemisOrgType#homelessShelter "Obdachlosenunterkunft"
 * $DemisOrgType#migrantAccom "Migrantenunterkunft"
 * $DemisOrgType#prison "Justizvollzugsanstalt"
 * $DemisOrgType#othMassAccom "Sonstige Massenunterkunft"
-
 * $DemisOrgType#nursingHome "voll- oder teilstationäre Einrichtung und besondere Wohnform zur Betreuung und Unterbringung"
 * $DemisOrgType#elderlyCareHome "Einrichtung zur Betreuung/Unterbringung älterer Menschen"
 * $DemisOrgType#disabledCareHome "Einrichtung zur Betreuung/Unterbringung behinderter Menschen"
 * $DemisOrgType#assistedCareHome "Einrichtung zur Betreuung/Unterbringung pflegebedürftiger Menschen"
 * $DemisOrgType#outpatICServ "Ambulanter Intensivpflegedienst"
 * $DemisOrgType#othOutpatCareS "Sonstiger ambulanter Pflegedienst"
-
 * $DemisOrgType#othBloodRiskFac "Sonstige Einrichtung mit Blutübertragungsrisiko"
-
 * $DemisOrgType#othHygRelFacility "Sonstige hygienerelevante Einrichtung"
-
 * $DemisOrgType#othAccom "Andere Unterkunft"
 * $DemisOrgType#hotel "Hotel o.ä."
 * $DemisOrgType#holidayHome "Ferienwohnung"
 * $DemisOrgType#camping "Campingplatz o.ä."
 * $DemisOrgType#ship "Schiff o.ä."
-
 * $DemisOrgType#foodEstablmt "Lebensmittelbetrieb"
-
 * $DemisOrgType#laboratory "Erregerdiagnostische Untersuchungsstelle"
 * $DemisOrgType#publicHealthLab "Medizinaluntersuchungsamt"
 * $DemisOrgType#refLab "Einrichtung der Spezialdiagnostik"
@@ -66,40 +56,19 @@ Description: "Enthält alle Organisationen für die Personen-zu-Organisation-Zuo
 * $DemisOrgType#pathology "Pathologisch-anatomische Einrichtung"
 * $DemisOrgType#othPublicLab "Sonstige öffentliche Untersuchungsstelle"
 * $DemisOrgType#othPrivatLab "Sonstige private Untersuchungsstelle"
-
 * $OrganizationType#authority "Behörde"
-
-
 * $OrganizationType#sepFedAut "Oberste Bundesbehörde"
-
-
 * $OrganizationType#hiFedAut "Bundesoberbehörde"
-
-
 * $OrganizationType#fedInsti "Bundesanstalt"
-
 * $OrganizationType#supFedStaAut "Oberste Landesbehörde"
-
-
 * $OrganizationType#otherAutFed "Sonstige Behörde auf Bundesebene"
-
 * $OrganizationType#otherAutState "Sonstige Behörde auf Landesebene"
-
-
 * $OrganizationType#intOrg "Internationale Organisation"
-
 * $OrganizationType#resFacility "Forschungseinrichtung"
-
-
 * $OrganizationType#otherOrg "sonstige Einrichtung"
-
-
 * $OrganizationType#transport "Transport"
-
 * $OrganizationType#airport "Flughafen"
-
 * $OrganizationType#harbor "Hafen"
-
 * $OrganizationType#barracks "Kaserne"
 * $OrganizationType#carWash "Autowaschanlage"
 * $OrganizationType#cemetery "Friedhof"
