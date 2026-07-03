@@ -197,14 +197,23 @@ body {
 
 /* Sidebar nav buttons */
 .sidebar-nav button {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
   width: 100%;
   padding: 0.8rem 1.2rem;
   background: transparent;
-  border: 0;
+  border: none;
   color: var(--text);
   text-align: left;
 }
+
+.sidebar-nav button .nav-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
 .sidebar-nav button.active {
   background: rgba(255,255,255,0.03);
 }

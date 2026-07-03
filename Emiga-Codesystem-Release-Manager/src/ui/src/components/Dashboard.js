@@ -3,6 +3,12 @@ import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResourc
 import Settings from './Settings';
 import About from './About';
 
+import dashboardIcon from '../images/icons/dashboard.png';
+import resourcesIcon from '../images/icons/resources.png';
+import releasesIcon from '../images/icons/releases2.png';
+import settingsIcon from '../images/icons/settings.png';
+import aboutIcon from '../images/icons/about.png';
+
 export default function Dashboard({ token, user, onLogout, theme, onThemeChange, timezone, onTimezoneChange }) {
   const [resources, setResources] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -149,11 +155,46 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange,
         <div className="sidebar-logo">ECRM</div>
 
         <nav className="sidebar-nav">
-          <button type="button" className={activeTab==='dashboard'?'active':''} onClick={()=>setActiveTab('dashboard')}>📊 Dashboard</button>
-          <button type="button" className={activeTab==='resources'?'active':''} onClick={()=>setActiveTab('resources')}>📋 Resources</button>
-          <button type="button" className={activeTab==='releases'?'active':''} onClick={()=>setActiveTab('releases')}>📦 Releases</button>
-          <button type="button" className={activeTab==='settings'?'active':''} onClick={()=>setActiveTab('settings')}>⚙️ Settings</button>
-          <button type="button" className={activeTab==='about'?'active':''} onClick={()=>setActiveTab('about')}>ℹ️ About</button>
+          <button
+            type="button"
+            className={activeTab === 'dashboard' ? 'active' : ''}
+            onClick={() => setActiveTab('dashboard')}
+          >
+            <img className="nav-icon" src={dashboardIcon} alt="Dashboard" />
+            <span>Dashboard</span>
+          </button>
+          <button
+            type="button"
+            className={activeTab === 'resources' ? 'active' : ''}
+            onClick={() => setActiveTab('resources')}
+          >
+            <img className="nav-icon" src={resourcesIcon} alt="Resources" />
+            <span>Resources</span>
+          </button>
+          <button
+            type="button"
+            className={activeTab === 'releases' ? 'active' : ''}
+            onClick={() => setActiveTab('releases')}
+          >
+            <img className="nav-icon" src={releasesIcon} alt="Releases" />
+            <span>Releases</span>
+          </button>
+          <button
+            type="button"
+            className={activeTab === 'settings' ? 'active' : ''}
+            onClick={() => setActiveTab('settings')}
+          >
+            <img className="nav-icon" src={settingsIcon} alt="Settings" />
+            <span>Settings</span>
+          </button>
+          <button
+            type="button"
+            className={activeTab === 'about' ? 'active' : ''}
+            onClick={() => setActiveTab('about')}
+          >
+            <img className="nav-icon" src={aboutIcon} alt="About" />
+            <span>About</span>
+          </button>
         </nav>
 
         <div className="sidebar-user">
@@ -183,7 +224,12 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange,
             {error && <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}><strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}</div>}
 
             <div className="panel">
-              <h2><div className="panel-icon">🔎</div>Select CodeSystem to Import</h2>
+              <h2>
+                      <div className="panel-icon">
+                        <img src={dashboardIcon} style={{ width: 20, height: 20 }} />
+                      </div>
+                      Select Codesystem to Import
+                    </h2>
               <div className="form-group">
                 <label>Choose a CodeSystem</label>
                 <select value={selectedFshId} onChange={(e)=>setSelectedFshId(e.target.value)} style={{ width:'100%' }}>
@@ -197,7 +243,12 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange,
             </div>
 
             <div className="panel">
-              <h2><div className="panel-icon">📋</div>CodeSystem Resources</h2>
+              <h2>
+                      <div className="panel-icon">
+                        <img src={resourcesIcon} style={{ width: 20, height: 20 }} />
+                      </div>
+                      Codesystem Resources
+                    </h2>
               {loading ? <div className="empty-state"><p>Loading resources...</p></div> : resources.length===0 ? <div className="empty-state"><div>No resources</div></div> : (
                 <table className="resource-table"><thead><tr><th>ID</th><th>Name</th><th>Status</th><th>Version</th><th>Concepts</th><th>Actions</th></tr></thead>
                   <tbody>{resources.map((resource)=>(

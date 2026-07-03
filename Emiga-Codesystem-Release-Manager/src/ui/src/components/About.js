@@ -1,9 +1,15 @@
 import React from 'react';
+import aboutIcon from '../images/icons/about.png';
 
 export default function About() {
   return (
     <div className="panel about-panel">
-      <h2><div className="panel-icon">ℹ️</div>About ECRM</h2>
+      <h2>
+        <div className="panel-icon">
+          <img src={aboutIcon} alt="About" style={{ width: 20, height: 20 }} />
+        </div>
+        About ECRM
+      </h2>
 
       <p><strong>Emiga Codesystem Release Manager (ECRM)</strong> — prototype release manager for FHIR CodeSystem changes.</p>
 

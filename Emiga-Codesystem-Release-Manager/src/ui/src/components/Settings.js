@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import settingsIcon from '../images/icons/settings.png';
+
 
 const DEFAULT_SETTINGS = {
   fullName: '',
@@ -101,7 +103,12 @@ export default function Settings({ currentTheme, onThemeChange, currentTimezone,
 
   return (
     <div className="panel settings-panel">
-      <h2><div className="panel-icon">⚙️</div>Settings</h2>
+      <h2>
+        <div className="panel-icon">
+          <img src={settingsIcon} alt="Settings" style={{ width: 20, height: 20 }} />
+        </div>
+        Settings
+      </h2>
 
       <form onSubmit={handleSave}>
         <section className="settings-section">
