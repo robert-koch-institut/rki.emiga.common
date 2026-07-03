@@ -47,12 +47,18 @@ export default function Settings({ currentTheme, onThemeChange, currentTimezone,
   const [settings, setSettings] = useState(DEFAULT_SETTINGS);
   const [status, setStatus] = useState('');
 
+  const settingsKey = (u) => `ecrm_settings_${u?.username || 'anonymous'}`;
+
   useEffect(() => {
-    const stored = localStorage.getItem('ecrm_settings');
+    const key = settingsKey(user);
+    const stored = localStorage.getItem(key);
     if (stored) {
       setSettings((prev) => ({ ...prev, ...JSON.parse(stored) }));
+    } else {
+      // keep defaults but ensure theme/timezone from props are applied
+      setSettings((prev) => ({ ...prev, theme: currentTheme || prev.theme, timezone: currentTimezone || prev.timezone }));
     }
-  }, []);
+  }, [user]);
 
   useEffect(() => {
     if (currentTheme) {
@@ -86,7 +92,9 @@ export default function Settings({ currentTheme, onThemeChange, currentTimezone,
 
   const handleSave = (e) => {
     e.preventDefault();
-    localStorage.setItem('ecrm_settings', JSON.stringify(settings));
+    // persist settings only for the current user
+    const key = settingsKey(user);
+    localStorage.setItem(key, JSON.stringify(settings));
     setStatus('Settings saved');
     setTimeout(() => setStatus(''), 2200);
   };
