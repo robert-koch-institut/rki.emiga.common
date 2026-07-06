@@ -360,6 +360,13 @@ def root():
     }
 
 
+@app.post("/api/v1/auth/logout")
+def logout(current_user: Dict[str, Any] = Depends(get_current_user), authorization: Optional[str] = Header(None)):
+    if authorization and authorization.startswith("Bearer "):
+        token = authorization.split(" ", 1)[1]
+        TOKEN_STORE.pop(token, None)
+    return {"message": "Logged out"}
+
 @app.post("/api/v1/auth/login", response_model=AuthResponse)
 def login(req: AuthRequest, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.username == req.username).first()
