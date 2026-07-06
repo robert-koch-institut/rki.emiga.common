@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchResources, fetchFshCodeSystems, importFshCodeSystem, updateResource, logout as apiLogout } from '../services/api';
 import Settings from './Settings';
 import About from './About';
+import Resources from './Resources';
 
 import dashboardIcon from '../images/icons/dashboard.png';
 import resourcesIcon from '../images/icons/resources.png';
@@ -216,9 +217,17 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange,
         </div>
 
         {activeTab === 'settings' ? (
-          <Settings currentTheme={theme} onThemeChange={onThemeChange} currentTimezone={timezone} onTimezoneChange={onTimezoneChange} user={user} />
+          <Settings
+            currentTheme={theme}
+            onThemeChange={onThemeChange}
+            currentTimezone={timezone}
+            onTimezoneChange={onTimezoneChange}
+            user={user}
+          />
         ) : activeTab === 'about' ? (
           <About />
+        ) : activeTab === 'resources' ? (
+          <Resources resources={resources} loading={loading} />
         ) : (
           <>
             {error && <div className="panel" style={{ background: '#fef2f2', borderLeft: '4px solid #dc2626' }}><strong style={{ color: '#dc2626' }}>⚠️ Error:</strong> {error}</div>}
@@ -258,7 +267,7 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange,
                       <td><span className={`resource-badge ${getStatusBadge(resource.status)}`}>{resource.status}</span></td>
                       <td>{resource.version}</td>
                       <td>{resource.concepts?.length || 0}</td>
-                      <td><div className="action-buttons"><button className="btn btn-primary" onClick={()=>{}}>✓ Validate</button><button className="btn btn-secondary" onClick={()=>handleEdit(resource)}>✎ Edit</button></div></td>
+                      <td><div className="action-buttons"><button className="btn btn-secondary" onClick={()=>handleEdit(resource)}>✎ Edit</button><button className="btn btn-primary" onClick={()=>{}}>✓ Validate</button></div></td>
                     </tr>
                   ))}</tbody>
                 </table>
