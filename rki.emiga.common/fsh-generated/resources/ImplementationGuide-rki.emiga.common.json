@@ -561,6 +561,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/PersonToOrganizationTypeVS"
+        },
+        "name": "Werteliste für die die Personen-zu-Organisation-Zuordnung.",
+        "description": "Enthält alle Organisationen für die Personen-zu-Organisation-Zuordnung. Es kombiniert die Value Sets für Krankenhäuser und generische Organisationen, ausgenommen davon sind ÖGD-Organisationen (GA, LB, RKI, BW).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/LastModifiedBy"
         },
         "name": "Zuletzt editiert von",
