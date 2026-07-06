@@ -382,7 +382,7 @@ def signup(req: AuthRequest, db: Session = Depends(get_db)):
 
     new_user = User(
         username=req.username,
-        hashed_password=get_password_hash(req.password),
+        password_hash=get_password_hash(req.password),
         role="user",  # default role
     )
     db.add(new_user)
