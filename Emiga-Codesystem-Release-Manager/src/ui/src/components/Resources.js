@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import resourcesIcon from '../images/icons/resources.png';
+import emptyStateIcon from '../images/icons/empty-state.png';
 
 export default function Resources({ resources = [], loading }) {
   const [search, setSearch] = useState('');
@@ -47,7 +48,12 @@ export default function Resources({ resources = [], loading }) {
         </div>
       ) : filteredResources.length === 0 ? (
         <div className="empty-state">
-          <div className="empty-state-icon">📭</div>
+          <img
+            src={emptyStateIcon}
+            alt="No resources"
+            className="empty-state-icon"
+            style={{ width: 48, height: 48 }}
+          />
           <div className="empty-state-title">No resources found</div>
           <div className="empty-state-text">Use the Dashboard tab to import CodeSystem resources first.</div>
         </div>
