@@ -72,6 +72,13 @@ body {
   gap: 1.2rem;
 }
 
+.form-value {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f8f8f8;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

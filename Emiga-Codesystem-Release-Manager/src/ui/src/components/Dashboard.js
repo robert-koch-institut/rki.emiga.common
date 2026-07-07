@@ -277,10 +277,10 @@ export default function Dashboard({ token, user, onLogout, theme, onThemeChange,
             {editingResource && (
               <div className="panel">
                 <h2><div className="panel-icon">✎</div>Edit Resource</h2>
-                <div className="form-group"><label>Name</label><input value={editForm.name} onChange={(e)=>setEditForm({...editForm, name: e.target.value})} /></div>
-                <div className="form-group"><label>Status</label><input value={editForm.status} onChange={(e)=>setEditForm({...editForm, status: e.target.value})} /></div>
-                <div className="form-group"><label>Version</label><input value={editForm.version} onChange={(e)=>setEditForm({...editForm, version: e.target.value})} /></div>
-                <div className="form-group"><label>URL</label><input value={editForm.url} onChange={(e)=>setEditForm({...editForm, url: e.target.value})} /></div>
+                <div className="form-group"><label>Name</label><div className="form-value">{editForm.name}</div></div>
+                <div className="form-group"><label>Status</label><div className="form-value">{editForm.status}</div></div>
+                <div className="form-group"><label>Version</label><div className="form-value">{editForm.version}</div></div>
+                <div className="form-group"><label>URL</label><div className="form-value">{editForm.url}</div></div>
                 <div style={{ marginTop:'1rem' }}><button className="btn btn-primary" onClick={handleSave}>Save Changes</button><button className="btn btn-secondary" onClick={handleCancelEdit} style={{ marginLeft: '0.6rem' }}>Cancel</button></div>
               </div>
             )}
