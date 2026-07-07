@@ -5,5 +5,8 @@
     "scripts": {
         "start": "echo \"starting app\"",
         "test": "echo \"no tests\""
+    },
+    "dependencies": {
+        "ogl": "^1.0.11"
     }
 }

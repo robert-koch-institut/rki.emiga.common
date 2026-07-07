@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import Particles from './Particles';
 
 function App() {
   const [auth, setAuth] = useState(() => {
@@ -11,7 +12,7 @@ function App() {
     if (userJson) {
       try {
         user = JSON.parse(userJson);
-      } catch {}
+      } catch { }
     }
     return token ? { token, user } : { token: null, user: null };
   });
@@ -44,18 +45,36 @@ function App() {
   const handleThemeChange = (newTheme) => setTheme(newTheme);
   const handleTimezoneChange = (newTimezone) => setTimezone(newTimezone);
 
-  return auth.token ? (
-    <Dashboard
-      token={auth.token}
-      user={auth.user}
-      onLogout={handleLogout}
-      theme={theme}
-      onThemeChange={handleThemeChange}
-      timezone={timezone}
-      onTimezoneChange={handleTimezoneChange}
-    />
-  ) : (
-    <Login onLogin={handleLogin} />
+  return (
+    <>
+      <Particles
+        particleColors={["#a9a1a1"]}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={false}
+        alphaParticles={false}
+        disableRotation={false}
+        pixelRatio={1}
+
+      />
+      <div className="app-content">
+        {auth.token ? (
+          <Dashboard
+            token={auth.token}
+            user={auth.user}
+            onLogout={handleLogout}
+            theme={theme}
+            onThemeChange={handleThemeChange}
+            timezone={timezone}
+            onTimezoneChange={handleTimezoneChange}
+          />
+        ) : (
+          <Login onLogin={handleLogin} />
+        )}
+      </div>
+    </>
   );
 }
 

@@ -7,6 +7,7 @@
 html, body, #root {
   height: 100%;
   margin: 0;
+  position: relative;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: var(--bg);
   color: var(--text);
@@ -21,6 +22,12 @@ body {
   background: var(--bg, #f0f4f8);
   color: var(--text, #1f2937);
   min-height: 100vh;
+}
+
+.app-content {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
 }
 
 .app-shell {
@@ -175,7 +182,7 @@ body {
   flex: 1;
   min-height: 100vh;
   overflow: hidden;
-  background: var(--bg);
+  background: transparent;
 }
 
 .dashboard-sidebar {
@@ -235,7 +242,7 @@ body {
 .sidebar-nav a,
 .sidebar-nav button {
   padding: 0.8rem 1rem;
-  color: #64748b;
+  color: #cbd3dd;
   background: none;
   border: none;
   text-align: left;
@@ -272,7 +279,7 @@ body {
 
 .user-name {
   font-weight: 600;
-  color: #1e293b;
+  color: #d2dbe9;
 }
 
 .user-role {
@@ -283,8 +290,8 @@ body {
 .logout-btn {
   width: 100%;
   padding: 0.8rem;
-  background: #fee2e2;
-  color: #dc2626;
+  background: #dc2626;
+  color: #fee2e2;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -293,7 +300,7 @@ body {
 }
 
 .logout-btn:hover {
-  background: #fecaca;
+  background: #f04f4f;
 }
 
 /* MAIN CONTENT */
@@ -302,7 +309,7 @@ body {
   margin-left: 220px;
   padding: 1.6rem;
   overflow-y: auto;
-  background: var(--bg);
+  background: color-mix(in srgb, var(--bg) 5%, transparent);
   height: 100vh;
   color: var(--text);
 }
@@ -788,4 +795,11 @@ body {
 
 .settings-buttons button {
   min-width: 90px;
+}
+
+
+.particles-container {
+
+  width: 100%;
+  height: 100%;
 }
