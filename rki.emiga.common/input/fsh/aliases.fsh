@@ -69,7 +69,6 @@ Alias: $sct = http://snomed.info/sct
 Alias: $DemisNoCountry = https://demis.rki.de/fhir/CodeSystem/noCountry
 Alias: $GeographicRegion = https://demis.rki.de/fhir/CodeSystem/geographicRegion
 Alias: $DemisOrgType = https://demis.rki.de/fhir/CodeSystem/organizationType
-Alias: $AddressUse = https://demis.rki.de/fhir/StructureDefinition/AddressUse
 
 // Weitere
 Alias: $bcp47 = urn:ietf:bcp:47
