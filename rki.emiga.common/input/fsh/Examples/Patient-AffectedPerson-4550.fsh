@@ -96,8 +96,8 @@ Usage: #example
 
 * deceasedDateTime = "2025-04-11T10:00:00+01:00"
 
-* address[0].extension[addressUse].url = "https://demis.rki.de/fhir/StructureDefinition/AddressUse"
-* address[0].extension[addressUse].valueCoding.system = "https://demis.rki.de/fhir/CodeSystem/addressUse"
+* address[0].extension[addressUse].url = "https://emiga.rki.de/fhir/common/Extension/AddressUse"
+* address[0].extension[addressUse].valueCoding.system = "https://emiga.rki.de/fhir/CodeSystem/AddressUseCS"
 * address[0].extension[addressUse].valueCoding.code = #primary
 * address[0].extension[addressUse].valueCoding.display = "Hauptwohnsitz"
 
@@ -132,8 +132,8 @@ Usage: #example
 
 
 
-* address[1].extension[addressUse].url = "https://demis.rki.de/fhir/StructureDefinition/AddressUse"
-* address[1].extension[addressUse].valueCoding.system = "https://demis.rki.de/fhir/CodeSystem/addressUse"
+* address[1].extension[addressUse].url = "https://emiga.rki.de/fhir/common/Extension/AddressUse"
+* address[1].extension[addressUse].valueCoding.system = "https://emiga.rki.de/fhir/CodeSystem/AddressUseCS"
 * address[1].extension[addressUse].valueCoding.code = #current
 * address[1].extension[addressUse].valueCoding.display = "Derzeitiger Aufenthaltsort"
 

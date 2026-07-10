@@ -51,6 +51,30 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/AddressUse"
+        },
+        "name": "Adressnutzung",
+        "description": "Über die Adressnutzung kann die Art des Aufenthaltsortes der Betroffenen Person angegeben werden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/AddressUseVS"
+        },
+        "name": "Adressnutzungskategorien",
+        "description": "Werteliste mit Konzepten, die die Art der Adressnutzung bestimmen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/AddressUseCS"
+        },
+        "name": "Adressnutzungskategorien",
+        "description": "Das CodeSystem AddressUse enthält die Codes für die verschiedenen Arten von Adressnutzungskategorien.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AttachmentDocumentReference"
         },
         "name": "Anhang-Entität",

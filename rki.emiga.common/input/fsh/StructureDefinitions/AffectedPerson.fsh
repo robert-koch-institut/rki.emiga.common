@@ -107,7 +107,7 @@ Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
 
 * address MS
 * address only $address-de-basis
-* address.extension contains $AddressUse named addressUse 0..* MS and
+* address.extension contains AddressUse named addressUse 0..* MS and
     $Geolocation named geolocation 0..* MS and
     $RegionalKey named regionalKey 0..1 MS
 

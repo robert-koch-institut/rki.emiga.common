@@ -1,5 +1,6 @@
 Output File                                                         Name                                 Type        FSH File                                                            Lines
 Bundle-ExamplePatientMatchOutputBundle.json                         ExamplePatientMatchOutputBundle      Instance    Examples\ExamplePatientMatchOutputBundle.fsh                        1 - 107
+CodeSystem-AddressUseCS.json                                        AddressUseCS                         CodeSystem  CodeSystem\AddressUseCS.fsh                                         1 - 18
 CodeSystem-AnnotationCategory.json                                  AnnotationCategory                   CodeSystem  CodeSystem\AnnotationCategory.fsh                                   1 - 18
 CodeSystem-ConceptDesignationUse.json                               ConceptDesignationUse                CodeSystem  CodeSystem\ConceptDesignationUse.fsh                                1 - 17
 CodeSystem-DuplicateMatchCriteria.json                              DuplicateMatchCriteria               CodeSystem  CodeSystem\DuplicateMatchCriteria.fsh                               1 - 22
@@ -27,6 +28,7 @@ Practitioner-EmigaUser-001.json                                     EmigaUser-00
 RelatedPerson-RelatedPerson4551.json                                RelatedPerson4551                    Instance    Examples\RelatedPerson-4551.fsh                                     1 - 30
 StructureDefinition-AdditionalPropertiesQuestionnaire.json          AdditionalPropertiesQuestionnaire    Profile     StructureDefinitions\AdditionalPropertiesQuestionnaire.fsh          1 - 20
 StructureDefinition-AdditionalPropertiesQuestionnaireResponse.json  OutbreakQuestionnaireResponseCommon  Profile     StructureDefinitions\AdditionalPropertiesQuestionnaireResponse.fsh  1 - 46
+StructureDefinition-AddressUse.json                                 AddressUse                           Extension   Extensions\ExtensionAdressUse.fsh                                   1 - 18
 StructureDefinition-AffectedPerson.json                             AffectedPerson                       Profile     StructureDefinitions\AffectedPerson.fsh                             2 - 212
 StructureDefinition-AffectedPersonRelatedPerson.json                AffectedPersonRelatedPerson          Profile     StructureDefinitions\AffectedPersonRelatedPerson.fsh                1 - 26
 StructureDefinition-AnnotationCommunication.json                    AnnotationCommunication              Profile     StructureDefinitions\AnnotationCommunication.fsh                    1 - 144
@@ -45,6 +47,7 @@ StructureDefinition-NullFlavor.json                                 NullFlavor  
 StructureDefinition-ProcessingStatus.json                           ProcessingStatus                     Extension   Extensions\ExtensionProcessingStatus.fsh                            1 - 21
 StructureDefinition-RegionalKey.json                                RegionalKey                          Extension   Extensions\ExtensionRegionalKey.fsh                                 1 - 29
 StructureDefinition-Salutation.json                                 Salutation                           Extension   Extensions\ExtensionSalutation.fsh                                  1 - 20
+ValueSet-AddressUseVS.json                                          AddressUseVS                         ValueSet    ValueSets\AddressUseVS.fsh                                          1 - 16
 ValueSet-AnnotationCategoryVS.json                                  AnnotationCategoryVS                 ValueSet    ValueSets\AnnotationCategoryVS.fsh                                  1 - 10
 ValueSet-AnnotationResourceVisibilityType.json                      AnnotationResourceVisibilityType     ValueSet    ValueSets\AnnotationResourceVisibilityTypeVS.fsh                    1 - 11
 ValueSet-CommonLanguages.json                                       CommonLanguages                      ValueSet    ValueSets\CommonLanguages.fsh                                       1 - 1498
