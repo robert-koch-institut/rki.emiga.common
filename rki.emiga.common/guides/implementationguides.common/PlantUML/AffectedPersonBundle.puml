@@ -17,4 +17,5 @@ TransactionBundle ..> EmigaUserPractitioner : entry[1]
 TransactionBundle ..> AffectedPersonRelatedPerson : entry[2]
 
 
+
 @enduml
