@@ -3,6 +3,7 @@ Alias: $AnnotationCategoryCS = https://emiga.rki.de/fhir/CodeSystem/AnnotationCa
 Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
 Alias: $DuplicateMatchCriteriaCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchCriteria
 Alias: $DuplicateMatchTriggerReasonsCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchTriggerReasons
+Alias: $OrganizationType = https://emiga.rki.de/fhir/vzd/CodeSystem/OrganizationType
 Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
 Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
 Alias: $RelevanceCS = https://emiga.rki.de/fhir/common/CodeSystem/Relevance
@@ -67,6 +68,7 @@ Alias: $sct = http://snomed.info/sct
 // DEMIS
 Alias: $DemisNoCountry = https://demis.rki.de/fhir/CodeSystem/noCountry
 Alias: $GeographicRegion = https://demis.rki.de/fhir/CodeSystem/geographicRegion
+Alias: $DemisOrgType = https://demis.rki.de/fhir/CodeSystem/organizationType
 Alias: $AddressUse = https://demis.rki.de/fhir/StructureDefinition/AddressUse
 
 // Weitere
