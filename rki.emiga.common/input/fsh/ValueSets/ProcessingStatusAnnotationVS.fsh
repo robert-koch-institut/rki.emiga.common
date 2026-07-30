@@ -3,8 +3,8 @@ Id: ProcessingStatusAnnotation
 Title: "Bearbeitungsstatus Annotation"
 Description: "Werteliste mit möglichen Bearbeitungsstatus für Annotationen."
 * insert MetadataTerminology
-* ^version = "0.1.0"
-* ^date = "2025-11-06"
+* ^version = "0.1.1"
+* ^date = "2026-07-30"
 * ^url = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation"
 
 * $ProcessingStatusCS#inprogress "In Bearbeitung"

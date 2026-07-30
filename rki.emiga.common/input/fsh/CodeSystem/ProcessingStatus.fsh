@@ -5,11 +5,11 @@ Description: "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs ode
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"
-* ^version = "0.5.1"
-* ^date = "2026-03-24"
+* ^version = "0.5.2"
+* ^date = "2026-07-30"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 11
+* ^count = 12
 
 * #open "Offen" "Der Vorgang ist offen und wurde noch nicht bearbeitet."
 * #inprogress "In Bearbeitung" "Der Vorgang oder die betroffene Person ist in Bearbeitung."
@@ -22,3 +22,4 @@ Description: "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs ode
 * #finishedProcessing "Fertig bearbeitet" "Der Vorgang wurde vollständig bearbeitet."
 * #noFurtherProcessing "Keine weitere Bearbeitung notwendig" "Für den Vorgang ist keine weitere Bearbeitung notwendig."
 * #started "Begonnen" "Die Bearbeitung des Vorgangs wurde begonnen."
+* #personaldatadeleted "Personendaten gelöscht."
