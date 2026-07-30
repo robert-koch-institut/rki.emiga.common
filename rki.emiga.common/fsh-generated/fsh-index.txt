@@ -59,7 +59,7 @@ ValueSet-PersonResourceVisibilityType.json                          PersonResour
 ValueSet-PersonToOrganizationTypeVS.json                            PersonToOrganizationTypeVS           ValueSet    ValueSets\PersonToOrganizationTypeVS.fsh                            1 - 109
 ValueSet-PersonalInformation.json                                   PersonalInformation                  ValueSet    ValueSets\PersonalInformation.fsh                                   1 - 10
 ValueSet-ProcessingStatusAffectedPerson.json                        ProcessingStatusAffectedPerson       ValueSet    ValueSets\ProcessingStatusAffectedPerson.fsh                        1 - 12
-ValueSet-ProcessingStatusAnnotation.json                            ProcessingStatusAnnotation           ValueSet    ValueSets\ProcessingStatusAnnotationVS.fsh                          1 - 16
+ValueSet-ProcessingStatusAnnotation.json                            ProcessingStatusAnnotation           ValueSet    ValueSets\ProcessingStatusAnnotationVS.fsh                          1 - 17
 ValueSet-ProcessingStatusVS.json                                    ProcessingStatusVS                   ValueSet    ValueSets\ProcessingStatusVS.fsh                                    1 - 10
 ValueSet-RegionKeys.json                                            RegionKeys                           ValueSet    ValueSets\RegionKeys.fsh                                            1 - 21
 ValueSet-RelatedPersonRelationshipTypeVS.json                       RelatedPersonRelationshipTypeVS      ValueSet    ValueSets\RelatedPersonRelationshipTypeVS.fsh                       1 - 10
