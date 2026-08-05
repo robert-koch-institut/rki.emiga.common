@@ -3,6 +3,9 @@
 ## Über EMIGA
 {{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
 
+<!-- #TODO: Text über EMIGA von Case kopieren -->
+<!-- #TODO: Einrichtungsverzeichnis-Absatzen wo andershin -->
+
 Die COVID-19-Pandemie hat verdeutlicht, wie essenziell effiziente digitale Werkzeuge für die 
 Überwachung und Eindämmung übertragbarer Krankheiten sind. Doch nicht nur in Krisenzeiten, sondern 
 auch im Alltag unterstützt der Öffentliche Gesundheitsdienst (**ÖGD**) den Infektionsschutz in 
@@ -25,6 +28,16 @@ Infektionsschutz und Meldewesen unterstützen.
 - **Interoperabilität:** EMIGA setzt auf internationale Standards und Klassifikationssysteme. Schnittstellen und Spezifikationen zur Anbindung werden öffentlich verfügbar sein, um eine nahtlose Integration zu gewährleisten.
 - **Zentraler Datenzugriff:** Epidemiologische Daten werden zentral bereitgestellt und durch ein Rollen- und Rechtekonzept geschützt. Dies sorgt für eine gleichmäßige Verfügbarkeit und erhöhte Datensicherheit.
 - **Förderung der Digitalisierung des ÖGD:** EMIGA ist Teil der bundesweiten Zukunftsplattform **ÖGDnet** und bildet das zentrale Modul für Infektionsschutz und Meldewesen.
+<br>&nbsp;<br>
+
+### Einrichtungsverzeichnis als zentraler Bestandteil
+Ein wesentlicher Bestandteil von EMIGA ist das **Einrichtungsverzeichnis**. Dieses Verzeichnis ermöglicht es, 
+Organisationen und Behörden des ÖGD schnell und einfach zu finden. Nutzer können wichtige Informationen 
+wie Kontaktpersonen, Kontaktdaten und Zuständigkeiten einsehen.
+
+Ziel des Einrichtungsverzeichnisses ist es, die Zusammenarbeit und Kommunikation innerhalb des ÖGD zu 
+verbessern, indem relevante Informationen zentral und übersichtlich bereitgestellt werden. Dies trägt dazu bei, 
+Kommunikationswege zu verkürzen und Doppelarbeiten zu vermeiden.
 <br>&nbsp;<br>
 
 UML-Diagramme zur Darstellung der unterschiedlichen Anwendungsfälle sind im Kapitel Anwendungsfälle zu finden.
