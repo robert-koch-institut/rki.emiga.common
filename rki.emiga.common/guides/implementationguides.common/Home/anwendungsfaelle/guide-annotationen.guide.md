@@ -1,6 +1,7 @@
 # {{page-title}}
 
-Das Modul Annotationen dient dazu, fachliche Entitäten wie Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren, Nachrichten und Anhängen zu versehen. Zusätzlich können Annotationen ohne direkten Entitätsbezug geführt werden, wenn sie als allgemeine organisatorische Notiz oder Dokumentation benötigt werden.
+Das Modul Annotationen dient dazu, fachliche Entitäten wie Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren, Aufgabe und Anhängen zu versehen. Zusätzlich können Annotationen ohne direkten Entitätsbezug geführt werden, wenn sie als allgemeine organisatorische Notiz oder Dokumentation benötigt werden.
+<!--Todo: oben habe Nachrichten mit Aufgabe ersetzt, to be checked. -->
 
 Die fachliche Annotation wird in EMIGA als FHIR-`Communication` im Profil `AnnotationCommunication` abgebildet. Für Erstellung, Änderung und Übertragung werden die beteiligten Ressourcen in einem FHIR-`Bundle` mit `type = transaction` zusammengeführt. Anhänge werden als `DocumentReference` im Profil `AttachmentDocumentReference` referenziert. Ergänzende zusätzliche Eigenschaften können über `AdditionalPropertiesQuestionnaireResponse` mitgeführt werden.
 
@@ -8,13 +9,14 @@ Die fachliche Annotation wird in EMIGA als FHIR-`Communication` im Profil `Annot
 
 {{render:guides/implementationguides.common/PlantUML/PNGs/AnnotationBundle.png}}
 
-Ein FHIR-`Bundle` mit `type = transaction` bildet die technische Klammer für eine Annotation. Die erste fachliche Ressource ist die eigentliche `AnnotationCommunication`. Weitere Einträge stellen die für die Interpretation benötigten Begleitressourcen bereit, insbesondere die erstellende Person (`EmigaUserPractitioner`), optionale Anhänge (`AttachmentDocumentReference`) und optionale zusätzliche Eigenschaften (`AdditionalPropertiesQuestionnaireResponse`).
+Ein FHIR-`Bundle` mit `type = transaction` dient als technischer Container für eine Annotation. Die erste fachliche Ressource ist die eigentliche `AnnotationCommunication`. Weitere Einträge stellen die für die Interpretation benötigten Begleitressourcen bereit, insbesondere die erstellende Person (`EmigaUserPractitioner`), optionale Anhänge (`AttachmentDocumentReference`) und optionale zusätzliche Eigenschaften (`AdditionalPropertiesQuestionnaireResponse`).
 
 ## Fachlicher Ablauf
 
 Ein Client erzeugt zunächst bei Bedarf ein neues EMIGA-Aktenzeichen für Annotationen. Anschließend wird die Annotation als FHIR-Transaktionsbundle an den Annotationsdienst übergeben. Der Dienst speichert die enthaltenen Ressourcen, vergibt bzw. verwaltet technische Ressourcen-IDs und liefert ein Bundle mit dem gespeicherten Stand zurück.
 
-Für die Anzeige und Weiterbearbeitung stehen Such-, Detail- und Historienoperationen zur Verfügung. Änderungen an einer bestehenden Annotation werden als neue Version gespeichert. Dadurch bleibt nachvollziehbar, welcher Stand zu welchem Zeitpunkt gültig war. Eine gelöschte oder verworfene Annotation wird über die entsprechende Operation bzw. den Bearbeitungsstatus dokumentiert; der fachliche Status der `Communication` bleibt dabei auf `completed`, während der eigentliche Bearbeitungsstatus über die Extension `ProcessingStatus` geführt wird.
+Für die Anzeige und Weiterbearbeitung stehen Such-, Detail- und Historienoperationen zur Verfügung. 
+Änderungen an einer bestehenden Annotation werden als neue Version der Annotation gespeichert. Dadurch bleibt nachvollziehbar, welcher Stand zu welchem Zeitpunkt gültig war. Eine gelöschte oder verworfene Annotation wird über die entsprechende Operation bzw. den Bearbeitungsstatus dokumentiert; der fachliche Status der `Communication` bleibt dabei auf `completed`, während der eigentliche Bearbeitungsstatus über die Extension `ProcessingStatus` geführt wird.
 
 ## Annotation
 
@@ -29,19 +31,21 @@ Die Ressource `AnnotationCommunication` enthält den fachlichen Inhalt der Annot
 | `meta.tag` | Kennzeichnung personenbezogener Daten, z.B. `ContainsPersonalInformation`. |
 | `extension:ProcessingStatus` | Bearbeitungsstatus der Annotation, z.B. `inprogress`, `closed`, `cancelled`, `handedover`, `inhandover`, `intakeover` oder `forinformation`. |
 | `extension:DateCreated` | Zeitpunkt der initialen Erstellung. |
-| `category` | Kategorie der Annotation, z.B. Kommentar oder Nachricht. |
+| `category` | Kategorie der Annotation, z.B. Kommentar oder Notizen. |
 | `topic.text` | Betreff der Annotation. |
 | `about` | Referenz auf die fachliche Bezugsentität. |
-| `sent` | Fachliches Datum der Annotation. |
+| `sent` | Fachlicher Versandzeitpunkt der Annotation. |
 | `sender` | Erstellende Person als Referenz auf `EmigaUserPractitioner`. |
 | `payload.contentString` | Textueller Inhalt der Annotation. |
-| `payload.contentReference` | Referenz auf einen Anhang im Profil `AttachmentDocumentReference`. |
+| `payload.contentReference` | Referenz auf einen Anhang in Form einer `AttachmentDocumentReference`-Ressource. |
+
 
 ## Anhang
 
 {{render:guides/implementationguides.common/PlantUML/PNGs/AttachmentDocumentReference.png}}
 
-Anhänge werden nicht direkt in der Annotation eingebettet, sondern als `AttachmentDocumentReference` beschrieben und aus der Annotation heraus referenziert. Dadurch können Metadaten zum Dokument, technische Prüfinformationen und Zugriffssteuerung getrennt vom eigentlichen Annotationstext geführt werden.
+Anhänge liegen als `AttachmentDocumentReference`-Ressourcen vor und werden aus der Annotation heraus referenziert. 
+Dadurch können Metadaten zum Dokument, technische Prüfinformationen und Zugriffssteuerungsinformationen getrennt vom eigentlichen Annotationsinhalt verwaltet werden.
 
 Für Anhänge sind insbesondere folgende Angaben relevant:
 
@@ -49,8 +53,8 @@ Für Anhänge sind insbesondere folgende Angaben relevant:
 | --- | --- |
 | `status` | Fester Status `current`. |
 | `identifier` | Fachliche Identifikatoren des Anhangs. |
-| `date` | Zeitpunkt, zu dem der Anhang in EMIGA erstellt wurde. |
-| `author` | Erstellende Person des Anhangs als `EmigaUserPractitioner`. |
+| `date` | Erstellungszeitpunkt des Anhangs in EMIGA. |
+| `author` | Erstellende Person des Anhangs als Referenz auf `EmigaUserPractitioner`. |
 | `content.attachment.contentType` | MIME-Type des Dokuments. |
 | `content.attachment.url` | URI des abgelegten Dokuments. |
 | `content.attachment.size` | Dateigröße in Byte. |
@@ -60,7 +64,8 @@ Für Anhänge sind insbesondere folgende Angaben relevant:
 
 ## Schnittstellenoperationen
 
-Der Annotationsdienst stellt FHIR-Operationen auf Ebene von `Bundle` und `Identifier` bereit. Die Operationen werden mit `application/fhir+json` oder `application/fhir+xml` verwendet und sind per Bearer Token abgesichert.
+Der Annotationsdienst stellt FHIR-Operationen auf Ebene von `Bundle` und `Identifier` bereit. 
+Die Operationen verarbeiten FHIR-Ressourcen in den Formaten `application/fhir+json` oder `application/fhir+xml` und sind über Bearer Token abgesichert.
 
 | Operation | Methode | Zweck | Ergebnis |
 | --- | --- | --- | --- |
@@ -71,30 +76,29 @@ Der Annotationsdienst stellt FHIR-Operationen auf Ebene von `Bundle` und `Identi
 | `/Bundle/{id}/$annotation-details` | `GET`, `POST` | Liefert den aktuellen Detailstand einer Annotation anhand der Bundle- bzw. Datensatz-ID. | FHIR-`Bundle` |
 | `/Bundle/{id}/$search-annotation-history` | `GET`, `POST` | Liefert die Versionshistorie einer Annotation. Unterstützt Filter-, Sortier-, Zeitraum- und Suchparameter. | Paginierter `Bundle` |
 | `/Bundle/{id}/$annotation-version-details` | `GET`, `POST` | Liefert eine konkrete Version einer Annotation anhand von `versionNo` oder `versionId`. | FHIR-`Bundle` |
-| `/Bundle/{id}/$delete-annotation` | `POST` | Löscht bzw. entfernt die angegebene Annotation fachlich aus dem aktiven Bestand. | `OperationOutcome` |
+| `/Bundle/{id}/$delete-annotation` | `POST` | Entfernt die angegebene Annotation aus dem aktiven Bestand, ohne sie physisch zu löschen.| `OperationOutcome` |
 | `/OperationDefinition/{id}` | `GET` | Liest die technische Beschreibung einer Operation. | `OperationDefinition` |
 
-Für paginierte Suchoperationen werden die FHIR-üblichen Parameter `_count` und `_offset` verwendet. Die Historienoperation unterstützt zusätzlich fachliche Filter wie `_filter`, `_sort`, `_startDate`, `_endDate` und `_search`.
+
 
 ## Erstellung und Versionierung
 
 Beim Erstellen einer Annotation wird ein FHIR-`Bundle` mit `type = transaction` an `/Bundle/$create-annotation` gesendet. Das Bundle muss die `AnnotationCommunication` als ersten fachlichen Eintrag enthalten. Die erstellende Person wird als `EmigaUserPractitioner` mitgeführt. Wenn Anhänge oder zusätzliche Eigenschaften Bestandteil der Annotation sind, werden diese als weitere Bundle-Einträge aufgenommen und aus der `Communication` heraus referenziert.
 
-Wird eine bestehende Annotation geändert, erzeugt der Dienst eine neue Version. Die aktuelle Version kann über `$annotation-details` gelesen werden. Frühere Stände werden über `$search-annotation-history` gefunden und über `$annotation-version-details` gezielt abgerufen. Die Version kann dabei über `versionNo` oder `versionId` adressiert werden.
+Wird eine bestehende Annotation geändert, erzeugt der Dienst eine neue Version. Die aktuelle Version kann über `$annotation-details` gelesen werden. Frühere Stände können über `$search-annotation-history` gefunden und über `$annotation-version-details` gezielt abgerufen werden. Die Version kann dabei über `versionNo` oder `versionId` adressiert werden.
 
 ## Suche und Anzeige
+Für paginierte Suchoperationen werden die FHIR-üblichen Parameter `_count` und `_offset` verwendet. Die Historienoperation unterstützt zusätzlich fachliche Filter wie `_filter`, `_sort`, `_startDate`, `_endDate` und `_search`.
 
 Die Suche nach Annotationen erfolgt über `/Bundle/$search-annotation` und liefert ein FHIR-`Bundle` vom Typ `searchset`. Jeder Treffer enthält ein FHIR-Bundle mit den Ressourcen, die für die Anzeige des Treffers benötigt werden. Clients sollen die Pagination über `_count` und `_offset` auswerten und die vom Server gelieferten Bundle-Links berücksichtigen.
 
-Für eine Detailansicht soll nicht ausschließlich der Suchtreffer verwendet werden. Stattdessen wird der aktuelle Stand über `/Bundle/{id}/$annotation-details` geladen, damit Text, Betreff, Status, Sichtbarkeit, Ersteller, Anhänge und zusätzliche Eigenschaften konsistent aus einem vollständigen Bundle interpretiert werden.
+Für eine Detailansicht soll nicht ausschließlich der Suchtreffer verwendet werden. Stattdessen ist der aktuelle Stand über `/Bundle/{id}/$annotation-details` abzurufen, damit Text, Betreff, Status, Sichtbarkeit, Ersteller, Anhänge und zusätzliche Eigenschaften konsistent aus einem vollständigen Bundle interpretiert werden.
 
 ## Interoperabilitätshinweise
+Der Bearbeitungsstatus ist ausschließlich der Extension `ProcessingStatus` zu entnehmen. `Communication.status` ist im Profil auf completed festgelegt und sollte hierfür nicht herangezogen werden.
 
-Clients sollen den Bearbeitungsstatus aus der Extension `ProcessingStatus` auswerten und nicht aus `Communication.status` ableiten. `Communication.status` ist im Profil auf `completed` festgelegt.
+Die Sichtbarkeit einer Annotation oder eines Anhangs wird über `meta.security` gekennzeichnet. Für Annotationen sind insbesondere die Codes `inAgency` und `transferable` relevant. Diese dienen der Zugriffssteuerung und der Entscheidung, ob eine Ressource innerhalb der eigenen ÖGD-Stelle verbleibt oder übermittelt werden darf.
 
-Die Sichtbarkeit einer Annotation oder eines Anhangs wird über `meta.security` beschrieben. Für Annotationen sind insbesondere die Codes `inAgency` und `transferable` relevant. Diese Angaben dienen der Zugriffssteuerung und der Entscheidung, ob eine Ressource innerhalb der eigenen ÖGD-Stelle verbleibt oder übermittelt werden darf.
+Annotationen können personenbezogene Daten im Sinne der DSGVO enthalten. Die Kennzeichnung erfolgt über `meta.tag` mit dem CodeSystem `PersonalInformation`. Clients müssen diese Kennzeichnung bei Anzeige, Übermittlung, Export und Protokollierung berücksichtigen.
 
-Annotationen können personenbezogene Daten enthalten. Die Kennzeichnung erfolgt über `meta.tag` mit dem CodeSystem `PersonalInformation`. Clients müssen diese Kennzeichnung bei Anzeige, Übermittlung, Export und Protokollierung berücksichtigen.
-
-Anhänge sollen über `AttachmentDocumentReference.content.attachment.url` referenziert werden. Binärdaten werden in diesem Profil nicht direkt in `content.attachment.data` geführt. Integrität und Nachvollziehbarkeit werden über Dateigröße, Hashwert, Titel, MIME-Type und Erstellungszeitpunkt unterstützt.
-
+Anhänge sollen über `AttachmentDocumentReference.content.attachment.url` referenziert werden. Binärdaten werden in diesem Profil nicht direkt in `content.attachment.data` geführt. Integrität und Nachvollziehbarkeit werden durch Informationen wie Dateigröße, Hashwert, Titel, MIME-Type und Erstellungszeitpunkt unterstützt.
