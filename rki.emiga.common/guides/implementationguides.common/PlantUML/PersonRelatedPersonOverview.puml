@@ -1,3 +1,4 @@
+/'
 @startuml
 
 title RelatedPerson 
@@ -17,5 +18,22 @@ AffectedPerson --> AffectedPersonRelatedPerson: Link
 
 AffectedPersonRelatedPerson --> Patient: Bezugsperson
 AffectedPersonRelatedPerson --> Relationship: Beziehung zur betroffenen Person
+
+@enduml
+'/
+
+@startuml
+
+title RelatedPerson
+
+class AffectedPerson {
+}
+class AffectedPersonRelatedPerson {
+}
+class Relationship {
+}
+
+AffectedPerson --> AffectedPersonRelatedPerson : Bezugsperson
+AffectedPersonRelatedPerson --> Relationship : Beziehung zur betroffenen Person
 
 @enduml
