@@ -54,3 +54,5 @@ select
 	Feldname: id, Kurzbeschreibung: short, Beschreibung: definition, Hinweise: comment
 </fql>
 <br>&nbsp;<br>
+
+<TODO> Resource.extension.processingStatus

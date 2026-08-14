@@ -42,6 +42,9 @@ Die Ressource `AnnotationCommunication` enthält den fachlichen Inhalt der Annot
 
 ## Anhang
 
+Mit Anhängen besteht die Möglichkeit, Dokumente, einschließlich aus Anschreiben-Vorlagen, an Annotationen anzuhängen. Dadurch können unterschiedliche Dateien strukturiert und nachvollziehbar an Entitäten oder organisationsbezogen hinterlegt werden.
+Anhänge werden als eigenständige Ressource abgebildet, um eine unabhängige Versionierung der Anhänge zu ermöglichen.
+
 {{render:guides/implementationguides.common/PlantUML/PNGs/AttachmentDocumentReference.png}}
 
 Anhänge liegen als `AttachmentDocumentReference`-Ressourcen vor und werden aus der Annotation heraus referenziert. 
@@ -86,6 +89,14 @@ Die Operationen verarbeiten FHIR-Ressourcen in den Formaten `application/fhir+js
 Beim Erstellen einer Annotation wird ein FHIR-`Bundle` mit `type = transaction` an `/Bundle/$create-annotation` gesendet. Das Bundle muss die `AnnotationCommunication` als ersten fachlichen Eintrag enthalten. Die erstellende Person wird als `EmigaUserPractitioner` mitgeführt. Wenn Anhänge oder zusätzliche Eigenschaften Bestandteil der Annotation sind, werden diese als weitere Bundle-Einträge aufgenommen und aus der `Communication` heraus referenziert.
 
 Wird eine bestehende Annotation geändert, erzeugt der Dienst eine neue Version. Die aktuelle Version kann über `$annotation-details` gelesen werden. Frühere Stände können über `$search-annotation-history` gefunden und über `$annotation-version-details` gezielt abgerufen werden. Die Version kann dabei über `versionNo` oder `versionId` adressiert werden.
+
+<TODO>
+Ein Anhang wird als neuer Anhang betrachtet und erhält eine neue ID, wenn er unter einem neuen Namen bzw. Betreff (title) gespeichert wird. Dies gilt auch dann, wenn der Inhalt gegenüber einem bereits vorhandenen Anhang unverändert ist. Wird ein bestehender Anhang bearbeitet und unter demselben Namen bzw. Betreff gespeichert, behält er seine ID und erhält stattdessen eine neue Version.
+
+Die Versionierung von Anhang und zugehöriger Annotation erfolgt unabhängig voneinander:
+- Wird der Annotation ein neuer Anhang hinzugefügt, entsteht eine neue Version der Annotation.
+- Entsteht lediglich eine neue Version eines bereits referenzierten Anhangs, bleibt die Version der Annotation unverändert.
+
 
 ## Suche und Anzeige
 Für paginierte Suchoperationen werden die FHIR-üblichen Parameter `_count` und `_offset` verwendet. Die Historienoperation unterstützt zusätzlich fachliche Filter wie `_filter`, `_sort`, `_startDate`, `_endDate` und `_search`.

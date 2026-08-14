@@ -16,7 +16,7 @@ Diese Ressourcen sind zentral für die Abbildung von Organisationen, Personen un
 
 | **Profil**                                      | **Beschreibung**                                                                                         |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Anhang (AttachmentAnnotation) | Attachment Profil für EMIGA Anhänge. |
+| Anhang (AttachmentAnnotation) | Attachment Profil für EMIGA Anhänge. Anhänge werden als eigenständige Ressource abgebildet, um eine unabhängige Versionierung der Anhänge zu ermöglichen. |
 | Anhang-Entität (AttachmentDocumentReference) | Ermöglicht das strukturierte Hinterlegen von Dokumenten und anderen Dateien, z. B. aus Anschreiben-Vorlagen, als Anhang zu einer Annotation. Dadurch können Dateien nachvollziehbar einem fachlichen Objekt in EMIGA zugeordnet werden. |
 | Annotation (AnnotationCommunication) | Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen. |
 | Annotation Bundle (AnnotationBundle) | Dieses Profil bildet ein Annotations-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Annotationen (z.B. Notizen, Kommentaren und zugehörigen Ressourcen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs.|
