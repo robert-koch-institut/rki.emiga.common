@@ -6,17 +6,29 @@
 
 ---
 ## Anwendungsfälle Überblick
-Dieser Abschnitt bietet eine Übersicht über in diesem Implementierungsleitfaden definierten **Anwendungsfälle**, die in Form von UML-Diagrammen dargestellt werden und die für dieses Modul relevanten Anwendungsfälle in komprimierter Form abbilden. Der Schwerpunkt liegt auf den zentralen Use Cases und den dafür erforderlichen Funktionen, um eine klare und gut nachvollziehbare Übersicht zu gewährleisten.
+Dieser Abschnitt beschreibt die zentralen fachlichen Anwendungsfälle des Moduls, insbesondere Annotationen und Personen, und ordnet die dafür verwendeten FHIR-Profile ein. Die UML-Diagramme stellen die wesentlichen Ressourcen, ihre Beziehungen und ihr Zusammenspiel in den jeweiligen Anwendungsfällen in komprimierter Form dar.
 <br>&nbsp;<br>
 
 #### Enthaltene Anwendungsfälle:
 
 1. **Annotationen, Anhänge und zusätzliche Eigenschaften**  
-   Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen. Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen. <TODO> <zus. Eigenschaften Beschreiben>
+   Annotationen dienen dazu, fachliche Entitäten wie Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente auch ohne Entitätsbezug zu hinterlegen <TODO: bei dem Fall an Org gehängt?)>.
+
+   Anhänge ermöglichen es, Dokumente, einschließlich Dokumenten aus Anschreiben-Vorlagen, strukturiert und nachvollziehbar an Annotationen zu hinterlegen. Sie werden als eigenständige Ressourcen geführt und aus Annotationen referenziert, sodass sie unabhängig versioniert werden können.
+
+   Zusätzliche Eigenschaften ermöglichen darüber hinaus die strukturierte Abbildung fachlicher Zusatzinformationen, die nicht unmittelbar durch die übrigen Profile des Moduls abgedeckt werden.
 
 2. **Personen und Bezugspersonen**  
    <TODO> <Bezugspersonen Beschreiben>
-   Die betroffene Person enthält die für EMIGA relevanten Angaben zu einer Person, beispielsweise Name, Geburtsdatum, Anschrift, Kontaktdaten und weitere personenbezogene Informationen. Eine betroffene Person kann dabei abhängig vom fachlichen Kontext unterschiedliche Rollen einnehmen, beispielsweise als Fall- oder Kontaktperson. Zusätzlich können Bezugspersonen abgebildet und mit der betroffenen Person verknüpft werden. Die Beziehung beschreibt, in welchem Verhältnis die Bezugsperson zur betroffenen Person steht, beispielsweise als Erziehungsberechtigte, rechtliche Betreuung oder Familienangehörige. Dadurch können Personen unabhängig voneinander geführt und ihre Beziehungen zueinander nachvollziehbar dargestellt werden.
+   Die betroffene Person enthält die für EMIGA relevanten Angaben zu einer Person, beispielsweise Name, Geburtsdatum und Anschrift. 
+   
+   Eine betroffene Person kann dabei abhängig vom fachlichen Kontext unterschiedliche Rollen einnehmen, beispielsweise als Fall- oder Kontaktperson.<TODO check>
+   
+   Zusätzlich können Bezugspersonen, beispielsweise Erziehungsberechtigte, rechtliche Betreuende oder Familienangehörige, abgebildet und mit der betroffenen Person verknüpft werden. 
+   
+   Dadurch können Personen unabhängig voneinander geführt und ihre Beziehungen zueinander nachvollziehbar dargestellt werden.
+
+
 
 <TODO>#### Anlegen einer betroffenen Person
 Beim Anlegen einer **betroffenen Person** wird eine neue `AffectedPerson`-Ressource erstellt. Die Erstellung erfolgt im Rahmen eines `TransactionBundle`, das alle für den Vorgang benötigten Ressourcen gemeinsam an das System übermittelt.

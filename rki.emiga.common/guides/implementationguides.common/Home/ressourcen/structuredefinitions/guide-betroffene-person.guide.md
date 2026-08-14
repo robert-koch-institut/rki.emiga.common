@@ -16,34 +16,34 @@ select
 
 <br>&nbsp;<br>
 
-<TODO>Im EMIGA unterscheidet sich zwei unterschiedliche FHIR-Profile zur Abbildung von Personen: 1) Die **betroffe Person (affectedPerson)** und 2) **Practitioner** die sich im package *rki.emiga.vzd* sich befinden. In dem Fall dass die gleiche physische Person als Practioner und als affected Person werden nicht direkt refernziert oder verknüfpt, sondern ein neue Instanz erzeugt.
+Das Profil `AffectedPerson` basiert auf der FHIR-Ressource `Patient` und bildet eine betroffene Person im fachlichen Kontext von EMIGA ab. Ob die Person in einem konkreten Vorgang beispielsweise Fall- oder Kontaktperson ist, wird nicht durch das Profil selbst festgelegt, sondern ergibt sich aus dem jeweiligen fachlichen Kontext und den Verknüpfungen zu weiteren Ressourcen.
 
-<TODO>Mit Betroffene Person werden sowohl Fallperson, aka Patien (die Person der Fall hat), als auch die Kontaktperson des Fall. Ob eine Person bei einem konkreten Fall beispielsweise als Fallperson oder Kontaktperson auftritt, wird nicht allein durch das Profil `AffectedPerson` bestimmt, sondern ergibt sich aus dem jeweiligen fachlichen Kontext und den Verknüpfungen zu weiteren Ressourcen.
-
-<TODO> AffectedPersonRelatedPerson is ein Instanc von AffectedPerson mit dem Relation und Verweiss auf die Fallperson?
+Eine physische Person kann in unterschiedlichen FHIR-Kontexten durch unterschiedliche Ressourceninstanzen repräsentiert werden. Das Profil stellt hierfür die Slices `link.relatedPersonLink` und `link.patientLink` bereit, über die Repräsentationen derselben Person miteinander verknüpft werden können. Bezugspersonen einer betroffenen Person werden mit dem Profil `AffectedPersonRelatedPerson` abgebildet.
 
 ### Fachliche Abbildung ausgewählter Attribute
 
 | Attribut | FHIR-Abbildung | Bemerkung |
 |---|---|---|
-| Titel / Anrede | `name.extension[salutation]` | Für die Anrede ist die Extension `salutation` vorgesehen. Namenspräfixe und -suffixe sind durch das verwendete HumanName-Profil grundsätzlich Teil der Namensstruktur, werden im `AffectedPerson`-Profil jedoch nicht zusätzlich profiliert. |
-| Geburtsname | `name.use = #maiden` und `name.family` | Der Geburtsname wird über einen Namenseintrag mit `use = maiden` abgebildet. Bei `maiden` darf gemäß Invariante `maidenNameOnlyFamily` nur `family` befüllt sein. |
+| Anrede | `name.extension[salutation]` | Für die Anrede ist die Extension `salutation` vorgesehen. |
+| Geburtsname | `name.use = #maiden` und `name.family` | Bei `use = maiden` darf gemäß Invariante `maidenNameOnlyFamily` nur `family` befüllt sein. |
 | Kurzname | `name.use = #nickname` | Der Kurzname wird über einen eigenen Namenseintrag mit `use = nickname` abgebildet. |
-| Straße | `address.line.extension[Strasse].valueString` | Die Straße wird innerhalb von `address.line` über die Extension `Strasse` abgebildet. |
-| Hausnummer | `address.line.extension[Hausnummer].valueString` | Für die Hausnummer ist eine eigene Extension innerhalb von `address.line` vorgesehen. |
-| Adresszusatz | `address.line.extension[Adresszusatz].valueString` | Optionaler Adresszusatz innerhalb von `address.line`. |
-| Postfach | `address.line.extension[Postfach].valueString` | Postfachangaben werden innerhalb von `address.line` über eine eigene Extension abgebildet. |
-| Ort | `address.city` | Abbildung der Stadt bzw. des Ortes. |
-| Land | `address.country` | Das Land ist im Profil vorgesehen und an das ValueSet `iso3166-1-2` mit Bindungsstärke `extensible` gebunden. |
-| Geo-Koordinaten | `address.extension[geolocation]` | Die Geolocation-Extension enthält die Must-Support-Elemente `latitude` und `longitude`. Ob die Werte fachlich eingegeben oder technisch ermittelt werden, wird durch das Profil nicht festgelegt. |
-| Regionalschlüssel | `address.extension[regionalKey].extension[regionKey].valueString` | Der Regionalschlüssel ist als Bestandteil der Extension `regionalKey` modelliert. Das Profil legt an dieser Stelle kein ValueSet fest. |
-| Regionales Bezugssystem | `address.extension[regionalKey].extension[regionReferenceSystem].valueString` | Das regionale Bezugssystem ist gemeinsam mit dem Regionalschlüssel innerhalb der Extension `regionalKey` modelliert. |
-| betreut in / Einrichtungsbezug | `extension[facilityAssociation]` | Über die Extension `facilityAssociation` kann eine Zuordnung zu einer Einrichtung abgebildet werden. |
-| Name des Erziehungsberechtigten | derzeit keine spezifische Abbildung im Profil | Im aktuellen `AffectedPerson`-Profil ist hierfür kein eigener Slice bzw. keine explizite Beziehung modelliert. Eine fachliche Abbildung über `RelatedPerson` wäre separat zu definieren. |
-| Rechtlicher Betreuer | derzeit keine spezifische Abbildung im Profil | Im aktuellen `AffectedPerson`-Profil ist hierfür kein eigener Slice bzw. keine explizite Beziehung modelliert. Eine fachliche Abbildung über `RelatedPerson` wäre separat zu definieren. |
-| Geburtsstaat / Geburtsland | `extension[landOfBirth].valueCoding` | Der Geburtsort bzw. das Geburtsland wird über die Extension `landOfBirth` auf Basis der Patient-BirthPlace-Extension abgebildet. `valueCoding` ist Must Support. |
-| Sprachkenntnisse | `communication.language` | Die Sprachkenntnisse sind an das ValueSet `CommonLanguages` mit Bindungsstärke `extensible` gebunden. |
-| Fax | `telecom[Fax]` | Der Slice `Fax` verwendet `system = #fax`; `value` ist Must Support und wird durch die Invariante `validFaxNumber` validiert. |
+| Straße | `address.line.extension[Strasse].valueString` | Straße innerhalb der deutschen Basisadresse. |
+| Hausnummer | `address.line.extension[Hausnummer].valueString` | Hausnummer innerhalb der deutschen Basisadresse. |
+| Adresszusatz | `address.line.extension[Adresszusatz].valueString` | Optionaler Adresszusatz. |
+| Postfach | `address.line.extension[Postfach].valueString` | Postfachangabe. |
+| Ort | `address.city` | Stadt bzw. Ort. |
+| Land | `address.country` | Bindung an `iso3166-1-2` mit Bindungsstärke `extensible`. |
+| Geo-Koordinaten | `address.extension[geolocation]` | Die Extension unterstützt `latitude` und `longitude`. Das Profil legt nicht fest, ob die Werte manuell oder technisch ermittelt werden. |
+| Regionalschlüssel | `address.extension[regionalKey].extension[regionKey].valueString` | Bestandteil der Extension `regionalKey`. |
+| Regionales Bezugssystem | `address.extension[regionalKey].extension[regionReferenceSystem].valueString` | Bezugssystem des Regionalschlüssels. |
+| Einrichtungsbezug | `extension[facilityAssociation]` | Zuordnung der betroffenen Person zu einer Einrichtung. Die Extension liegt direkt auf der Patient-Ressource, nicht auf `address`. |
+| Geburtsland | `extension[landOfBirth].valueCoding` | Abbildung über die profilierte BirthPlace-Extension; `valueCoding` ist Must Support. |
+| Staatsangehörigkeit | `extension[citizenship]` | Abbildung über die HL7 Patient-Citizenship-Extension und `CountryCodes`. |
+| Sprachkenntnisse | `communication.language` | Bindung an `CommonLanguages` mit Bindungsstärke `extensible`. |
+| Fax | `telecom[Fax]` | `system = #fax`; der Wert wird durch `validFaxNumber` validiert. |
+| Behandelnde Person | `generalPractitioner` | Referenz auf die behandelnde Person. |
+| Bezug zu einer `RelatedPerson`-Repräsentation derselben Person | `link[relatedPersonLink]` | Verknüpft dieselbe physische Person mit einer `RelatedPerson`-Repräsentation. |
+| Bezug zu einer weiteren `Patient`-Repräsentation derselben Person | `link[patientLink]` | Verknüpft dieselbe physische Person mit einer weiteren `Patient`-Repräsentation. |
 
 <br>&nbsp;<br>
 

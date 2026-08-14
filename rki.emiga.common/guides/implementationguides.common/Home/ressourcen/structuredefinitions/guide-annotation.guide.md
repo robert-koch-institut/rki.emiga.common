@@ -15,6 +15,10 @@ select
 </fql>
 
 <br>&nbsp;<br>
+Das Profil `AnnotationCommunication` basiert auf der FHIR-Ressource `Communication` und bildet eine Annotation in EMIGA ab. Eine Annotation kann sich über `about` auf eine fachliche Entität beziehen und enthält einen Betreff (`topic.text`) sowie optional textuelle Inhalte oder Referenzen auf Anhänge im `payload`. Die erstellende Person wird über `sender` als `EmigaUserPractitioner` referenziert.
+
+Der FHIR-Status ist fest auf `completed` gesetzt. Der fachliche Bearbeitungsstatus wird unabhängig davon über `extension[processingStatus]` geführt. Anhänge werden nicht innerhalb der Annotation gespeichert, sondern als eigenständige `AttachmentDocumentReference`-Ressourcen angelegt und über `payload.contentReference` referenziert. Dadurch können Anhänge unabhängig von der Annotation versioniert werden.
+
 
 ## Profil
 ### Metadaten

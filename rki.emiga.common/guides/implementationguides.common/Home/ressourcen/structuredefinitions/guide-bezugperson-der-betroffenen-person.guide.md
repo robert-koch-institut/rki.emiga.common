@@ -15,6 +15,11 @@ select
 </fql>
 
 <br>&nbsp;<br>
+Das Profil `AffectedPersonRelatedPerson` basiert auf der FHIR-Ressource `RelatedPerson` und bildet eine Bezugsperson einer betroffenen Person ab. Die Ressource selbst repräsentiert die Bezugsperson; die betroffene Person wird über `patient` referenziert.
+
+Die Art der Beziehung wird über `relationship` angegeben. Mindestens eine Beziehung ist erforderlich; die zulässigen Ausprägungen werden durch das ValueSet `RelatedPersonRelationshipTypeVS` festgelegt. Damit können persönliche oder rechtliche Beziehungen zur betroffenen Person strukturiert beschrieben werden.
+
+Eine `AffectedPerson` kann über `link.relatedPersonLink` zusätzlich auf eine `AffectedPersonRelatedPerson` verweisen, wenn beide Ressourcen dieselbe physische Person in unterschiedlichen FHIR-Kontexten repräsentieren. Dieser Link ist von der fachlichen Beziehung zu unterscheiden, die über `patient` und `relationship` der `RelatedPerson` beschrieben wird.
 
 ## Profil
 ### Metadaten

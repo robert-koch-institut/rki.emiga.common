@@ -5,7 +5,10 @@
     "\\rki.emiga.common\\guides",
     "\\rki.emiga.common\\guides\\implementationguides.common",
     "\\rki.emiga.common\\guides\\implementationguides.common\\Home",
-    "\\rki.emiga.common\\guides\\implementationguides.common\\Home\\anwendungsfaelle"
+    "\\rki.emiga.common\\guides\\implementationguides.common\\Home\\anwendungsfaelle",
+    "\\rki.emiga.common\\guides\\implementationguides.common\\images",
+    "\\rki.emiga.common\\guides\\implementationguides.common\\PlantUML",
+    "\\rki.emiga.common\\guides\\implementationguides.common\\PlantUML\\PNGs"
   ],
   "PreviewInSolutionExplorer": false
 }

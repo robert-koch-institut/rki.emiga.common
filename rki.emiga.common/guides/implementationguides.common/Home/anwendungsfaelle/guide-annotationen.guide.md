@@ -91,7 +91,7 @@ Beim Erstellen einer Annotation wird ein FHIR-`Bundle` mit `type = transaction` 
 Wird eine bestehende Annotation geändert, erzeugt der Dienst eine neue Version. Die aktuelle Version kann über `$annotation-details` gelesen werden. Frühere Stände können über `$search-annotation-history` gefunden und über `$annotation-version-details` gezielt abgerufen werden. Die Version kann dabei über `versionNo` oder `versionId` adressiert werden.
 
 <TODO>
-Ein Anhang wird als neuer Anhang betrachtet und erhält eine neue ID, wenn er unter einem neuen Namen bzw. Betreff (title) gespeichert wird. Dies gilt auch dann, wenn der Inhalt gegenüber einem bereits vorhandenen Anhang unverändert ist. Wird ein bestehender Anhang bearbeitet und unter demselben Namen bzw. Betreff gespeichert, behält er seine ID und erhält stattdessen eine neue Version.
+Ein Anhang wird als neuer Anhang betrachtet und erhält eine neue ID, wenn er unter einem neuen Namen bzw. Betreff (content.attachment.title) gespeichert wird. Dies gilt auch dann, wenn der Inhalt gegenüber einem bereits vorhandenen Anhang unverändert ist. Wird ein bestehender Anhang bearbeitet und unter demselben Namen bzw. Betreff gespeichert, behält er seine ID und erhält stattdessen eine neue Version.
 
 Die Versionierung von Anhang und zugehöriger Annotation erfolgt unabhängig voneinander:
 - Wird der Annotation ein neuer Anhang hinzugefügt, entsteht eine neue Version der Annotation.

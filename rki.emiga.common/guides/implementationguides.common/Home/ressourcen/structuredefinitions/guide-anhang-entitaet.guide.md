@@ -16,6 +16,22 @@ select
 
 <br>&nbsp;<br>
 
+Das Profil `AttachmentDocumentReference` basiert auf der FHIR-Ressource `DocumentReference` und bildet Anhänge als eigenständige Ressourcen ab. Dokumente, einschließlich Dokumenten aus Anschreiben-Vorlagen, können dadurch strukturiert an Annotationen angebunden und unabhängig von der Annotation verwaltet und versioniert werden.
+
+Der eigentliche Dateiinhalt wird nicht inline übertragen (`content.attachment.data` ist ausgeschlossen), sondern über `content.attachment.url` referenziert. Zusätzlich werden Dateiformat, Größe, Hashwert, Titel und Erstellungszeitpunkt des referenzierten Dokuments angegeben. `date` bezeichnet dagegen den Zeitpunkt, zu dem der Anhang in EMIGA erstellt wurde; `author` bezeichnet die Person, die den Anhang in EMIGA erstellt hat.
+
+### Versionierung
+
+Ein Anhang gilt als **neuer Anhang** und erhält eine neue Ressourcen-ID, wenn er unter einem neuen Namen bzw. Betreff (`content.attachment.title`) gespeichert wird. Dies gilt auch dann, wenn der Dateiinhalt gegenüber einem bereits vorhandenen Anhang unverändert ist.
+
+Wird ein bestehender Anhang bearbeitet und unter demselben Namen bzw. Betreff gespeichert, behält er seine Ressourcen-ID und erhält eine **neue Version**.
+
+Die Versionierung von Anhang und Annotation erfolgt unabhängig voneinander:
+
+- Wird einer Annotation ein **neuer Anhang** hinzugefügt, entsteht eine neue Version der Annotation, da sich deren Referenzen ändern.
+- Entsteht lediglich eine **neue Version eines bereits referenzierten Anhangs**, bleibt die Version der Annotation unverändert.
+
+
 ## Profil
 ### Metadaten
 <fql output="transpose" headers="true">

@@ -4,6 +4,22 @@ skinparam linetype ortho
 title AttachmentDocumentReference (Profile of DocumentReference) 
 
 ' Main Class
+' Cardinalität noch mal kontorlieren
+' in Meta:
+'<b>+</b> meta.security:responsibility: Coding [0..1]
+'<b>+</b> meta.security:visibility: Coding [0..1]
+'in Inentifier:
+'<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [1..1]
+'<b>+</b> identifier:EmigaID: IdentifierEmigaID [1..1]
+' in Content:
+'<b>+</b> content: BackboneElement [1..*]
+'<b>+</b> content.attachment.contentType: code [1..1]
+'<b>+</b> content.attachment.url: url [0..1]
+'<b>+</b> content.attachment.size: unsignedInt [1..1]
+'<b>+</b> content.attachment.hash: base64Binary [1..1]
+'<b>+</b> content.attachment.title: string [1..1]
+'<b>+</b> content.attachment.creation: dateTime [1..1]
+
 class AttachmentDocumentReference{
 -- Meta --
 <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
