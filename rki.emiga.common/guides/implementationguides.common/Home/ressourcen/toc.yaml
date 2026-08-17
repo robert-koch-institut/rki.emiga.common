@@ -8,3 +8,5 @@
   filename: terminologien
 - name: Extensions
   filename: extensions
+ - name: Examples
+  filename: examples

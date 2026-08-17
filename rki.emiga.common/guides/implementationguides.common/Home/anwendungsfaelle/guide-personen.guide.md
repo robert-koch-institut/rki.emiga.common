@@ -1,9 +1,24 @@
 # {{page-title}}
 
-Dieser Abschnitt beschreibt die Anwendungsfälle zur Abbildung betroffener Personen und ihrer Bezugspersonen. Die betroffene Person wird als `Patient`-Ressourceninstanz gemäß dem Profil `AffectedPerson` abgebildet. Eine Bezugsperson wird als eigenständige `RelatedPerson`-Ressourceninstanz gemäß dem Profil `AffectedPersonRelatedPerson` geführt.
+Dieser Abschnitt beschreibt die Anwendungsfälle zur Abbildung betroffener Personen und ihrer Bezugspersonen in EMIGA.
+
+Eine betroffene Person wird als `Patient`-Ressourceninstanz gemäß dem Profil `AffectedPerson` abgebildet. Eine Bezugsperson wird als eigenständige `RelatedPerson`-Ressourceninstanz gemäß dem Profil `AffectedPersonRelatedPerson` geführt. EMIGA-nutzende Personen werden als `EmigaUserPractitioner` abgebildet und können beispielsweise als bearbeitende Personen referenziert werden.
+
+Die folgende Übersicht zeigt die für diese Anwendungsfälle relevanten Profile sowie ihre wesentlichen Beziehungen zueinander.
+
+{{render:guides/implementationguides.common/PlantUML/PNGs/uml-personen-und-bezugspersonen.png}}
+
+Dabei sind insbesondere zwei unterschiedliche Arten von Personenbeziehungen zu unterscheiden:
+
+* `AffectedPersonRelatedPerson.patient` beschreibt die **fachliche Beziehung einer Bezugsperson zu einer betroffenen Person**.
+* `AffectedPerson.link[relatedPersonLink]` bzw. `AffectedPerson.link[patientLink]` dienen der **Verknüpfung unterschiedlicher FHIR-Repräsentationen derselben physischen Person**.
 
 ## Überblick
+
+Die folgende Darstellung zeigt die Ressourcen, die beim gemeinsamen Anlegen bzw. Verarbeiten einer betroffenen Person in einem FHIR-Transaction-Bundle übermittelt werden können.
+
 {{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPersonBundle.png}}
+
 ### Anlegen einer betroffenen Person
 
 Beim Anlegen einer **betroffenen Person** wird eine neue `Patient`-Ressourceninstanz gemäß dem Profil `AffectedPerson` erstellt. Die für einen gemeinsamen Verarbeitungsvorgang benötigten Ressourcen können in einem FHIR-`Bundle` mit `type = transaction` übermittelt werden.

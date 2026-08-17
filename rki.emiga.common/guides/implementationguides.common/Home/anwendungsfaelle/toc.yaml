@@ -4,3 +4,5 @@
   filename: guide-annotationen.guide.md
 - name: Personen
   filename: guide-personen.guide.md
+- name: Zusätzliche Eigenschaften
+  filename: guide-zusaetzliche-eigenschaft.guide.md

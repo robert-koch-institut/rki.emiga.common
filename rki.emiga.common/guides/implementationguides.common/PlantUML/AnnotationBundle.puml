@@ -1,7 +1,7 @@
 @startuml
 skinparam linetype ortho
 
-title Create Annotation - Class Diagram
+title Create Annotation
 
 class Bundle{
     <b>+</b> type: FixedValue ('transaction') [1..1]
