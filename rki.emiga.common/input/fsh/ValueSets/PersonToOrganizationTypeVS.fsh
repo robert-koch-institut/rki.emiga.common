@@ -1,7 +1,7 @@
 ValueSet: PersonToOrganizationTypeVS
 Id: PersonToOrganizationTypeVS
 Title: "Werteliste für die die Personen-zu-Organisation-Zuordnung."
-Description: "Enthält alle Organisationen für die Personen-zu-Organisation-Zuordnung. Es kombiniert die Value Sets für Krankenhäuser und generische Organisationen, ausgenommen davon sind ÖGD-Organisationen (GA, LB, RKI, BW)."
+Description: "Werteliste mit Konzepten, die Organisationen für die Personen-zu-Organisation-Zuordnung darstellen. Sie kombiniert die Value Sets für Krankenhäuser und generische Organisationen, ausgenommen davon sind ÖGD-Organisationen (GA, LB, RKI, BW)."
 * insert MetadataTerminology
 * ^version = "0.2.0"
 * ^date = "2026-07-03"

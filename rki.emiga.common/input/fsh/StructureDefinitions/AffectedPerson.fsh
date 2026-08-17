@@ -1,17 +1,14 @@
-//BasePatient emiga Profile harmonisiert mit Demis Betr. Person
 Profile: AffectedPerson
 Parent: Patient
 Id: AffectedPerson
 Title: "Betroffene Person"
-Description: "Die betroffene Person enthält relevante Angaben zum Patienten"
-
+Description: "Die betroffene Person enthält relevante Angaben zum Patienten."
+* ^version = "0.5.0"
+* ^date = "2026-05-18"
+* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 
 * insert ProfileMetaProfileTags
 * insert MetadataProfile
-* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-* ^version = "0.5.0"
-* ^date = "2026-05-18"
-
 * insert ProfileResourceCommon
 //* insert ProfileDomainResourceCommon
 * insert ProfileSecurityTagsPerson

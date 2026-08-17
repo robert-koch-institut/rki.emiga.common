@@ -1,7 +1,7 @@
 Extension: NullFlavor
 Id: NullFlavor
 Title: "Null flavor"
-Description: "If the value is not a proper value, indicates the reason."
+Description: "Die Extension gibt an, aus welchem Grund für das betreffende Element kein regulärer Wert vorliegt."
 Context: Element
 * insert MetadataProfile
 
@@ -19,4 +19,3 @@ Context: Element
 * value[x].version MS
 * value[x].code 1.. MS
 * value[x].display MS
-

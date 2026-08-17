@@ -3,7 +3,6 @@ Parent: QuestionnaireResponse
 Id: AdditionalPropertiesQuestionnaireResponse
 Title: "Zusätzliche Eigenschaften Fragebogen-Antworten"
 Description: "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen."
-
 * ^version = "0.3.0"
 * ^date = "2026-04-24"
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
@@ -44,4 +43,3 @@ Description: "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften 
 
 * item 1..* MS
 * item ^short = "The questions and their answers"
-

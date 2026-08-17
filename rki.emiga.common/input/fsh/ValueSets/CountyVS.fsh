@@ -1,9 +1,7 @@
 ValueSet: CountyVS
 Id: CountyVS
-
-
 Title: "Landkreis-Werteliste"
-Description: "Die Wertemenge 'CountyVS' definiert Konzepte, die den Landkreis charakterisieren."
+Description: "Werteliste mit Konzepten, die den Landkreis definieren."
 * insert MetadataTerminology
 * ^version = "0.1.0"
 * ^date = "2026-03-23"

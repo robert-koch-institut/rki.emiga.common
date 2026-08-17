@@ -1,7 +1,7 @@
 CodeSystem: DuplicateMatchTriggerReasons
 Id: DuplicateMatchTriggerReasons
 Title: "Dublettenprüfungsgründe"
-Description: "Die Kodiersystematik 'DuplicateMatchTriggerReasons' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Gründen für Dublettenprüfungen zu unterscheiden."
+Description: "Das CodeSystem 'DuplicateMatchTriggerReasons' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Auslösern für Dublettenprüfungen zu unterscheiden."
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchTriggerReasons"
 * ^version = "0.1.0"

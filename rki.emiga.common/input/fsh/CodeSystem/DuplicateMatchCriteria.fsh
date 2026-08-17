@@ -1,7 +1,7 @@
 CodeSystem: DuplicateMatchCriteria
 Id: DuplicateMatchCriteria
 Title: "Dublettenprüfungs-Kriterien"
-Description: "Die Kodiersystematik 'DuplicateMatchCriteria' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Dublettenprüfungs-Kriterien zu unterscheiden."
+Description: "Das CodeSystem 'DuplicateMatchCriteria' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Dublettenprüfungs-Kriterien zu unterscheiden."
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchCriteria"
 * ^version = "0.1.0"

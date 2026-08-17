@@ -1,7 +1,7 @@
 Instance: AffectedPerson-4551
 InstanceOf: AffectedPerson
 Title: "Beispiel Betroffene Person"
-Description: "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil."
+Description: "Eine Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil."
 Usage: #example
 * id = "AffectedPerson-4551"
 

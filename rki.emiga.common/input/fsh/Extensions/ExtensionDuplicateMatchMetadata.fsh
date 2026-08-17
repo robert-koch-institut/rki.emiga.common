@@ -1,7 +1,7 @@
 Extension: DuplicateMatchMetadata
 Id: DuplicateMatchMetadata
 Title: "Dublettenprüfung Metadaten"
-Description: "Metadaten zur Dublettenprüfung einer Resource."
+Description: "Extension für die Metadaten für die Dublettenprüfung einer Ressource."
 Context: Bundle.entry.search
 * insert MetadataProfile
 

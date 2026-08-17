@@ -1,11 +1,11 @@
 ValueSet: FacilityAssociationTypeVS
 Id: FacilityAssociationTypeVS
 Title: "Verbindungs-Qualifikation"
-Description: "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen."
-* ^url = "https://emiga.rki.de/fhir/ValueSet/FacilityAssociationTypeVS"
+Description: "Werteliste mit Konzepten, die die Art der Verbindungen zwischen Einrichtungen bestimmen."
 * insert MetadataTerminology
 * ^version = "0.2.0"
 * ^date = "2025-12-12"
+* ^url = "https://emiga.rki.de/fhir/ValueSet/FacilityAssociationTypeVS"
 
 * include codes from system FacilityAssociationType
 * include codes from system https://demis.rki.de/fhir/CodeSystem/organizationAssociation

@@ -1,7 +1,7 @@
 CodeSystem: PersonalInformation
 Id: PersonalInformation
 Title: "Personenbezug"
-Description: "Die Kodiersystematik PersonalInformation definiert Konzepte, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen."
+Description: "Das CodeSystem 'PersonalInformation' definiert Konzepte, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen."
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation"
 * insert MetadataTerminology
 * ^version = "0.1.1"

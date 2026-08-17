@@ -1,7 +1,7 @@
 Extension: LandOfBirth
 Id: LandOfBirth
 Title: "Geburtsland"
-Description: "Geburtsland der betroffenen Person."
+Description: "Extension für das Geburtsland der betroffenen Person."
 Context: Patient
 * insert MetadataProfile
 
@@ -21,4 +21,3 @@ Context: Patient
 * value[x].code 1..1 MS
 * value[x].display ^mustSupport = true
 * value[x].version MS
-

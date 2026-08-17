@@ -142,4 +142,3 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * payload.contentString ^short = "Beschreibung - Inhalt der Annotation"
 * payload.contentReference MS
 * payload.contentReference ^short = "Anhang - Hier wird der Anhang der Annotation referenziert"
-

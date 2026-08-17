@@ -1,7 +1,7 @@
 CodeSystem: ResourceResponsibility
 Id: ResourceResponsibility
 Title: "ResourceResponsibility"
-Description: "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, die für die Auszeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann."
+Description: "Das CodeSystem 'ResourceResponsibility' definiert Konzepte, die für die Kennzeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann."
 * insert MetadataTerminology
 * ^version = "1.1.0"
 * ^date = "2025-05-05"

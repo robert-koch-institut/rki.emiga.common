@@ -1,7 +1,7 @@
 CodeSystem: ProcessingStatus
 Id: ProcessingStatus
 Title: "Bearbeitungsstatus"
-Description: "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person."
+Description: "Das CodeSystem 'ProcessingStatus' dient der Abbildung von Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person."
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus"
 * ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"

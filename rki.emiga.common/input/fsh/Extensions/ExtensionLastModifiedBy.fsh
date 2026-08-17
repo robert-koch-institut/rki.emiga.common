@@ -1,7 +1,7 @@
 Extension: LastModifiedBy
 Id: LastModifiedBy
 Title: "Zuletzt editiert von"
-Description: "Extension um der letzten Nutzende Person zu referenzieren, die eine Ressource editiert hat."
+Description: "Extension um die Person zu referenzieren, die als letztes eine Ressource editiert hat."
 Context: Resource.meta
 * insert MetadataProfile
 
