@@ -63,12 +63,14 @@ Usage: #inline
 * payload.contentString = "Das ist ein Test Beschreibung"
 
 Instance: EMIGA-USER-002
-InstanceOf: Practitioner
+InstanceOf: EmigaUserPractitioner
 Usage: #inline
 * id = "EMIGA-USER-002"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
-//* meta.security[visibility] = $ResourceVisibilityType#inAgency
-//* meta.security[responsibility] = $ResourceResponsibility#1.
+
+* meta.security[visibility] = $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle"
+* meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
+
 * identifier.value = "testuser@emiga.rki.de"
 * active = true
 //* name.family = "Muster"

@@ -1,6 +1,9 @@
 // rki.emiga.common
 Alias: $AnnotationCategoryCS = https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory
 Alias: $ConceptDesignationUse = https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse
+Alias: $DuplicateMatchCriteriaCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchCriteria
+Alias: $DuplicateMatchTriggerReasonsCS = https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchTriggerReasons
+Alias: $OrganizationType = https://emiga.rki.de/fhir/vzd/CodeSystem/OrganizationType
 Alias: $ProcessingStatusCS = https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus
 Alias: $PersonalInformationCS = https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
 Alias: $RelevanceCS = https://emiga.rki.de/fhir/common/CodeSystem/Relevance
@@ -8,9 +11,11 @@ Alias: $ResourceResponsibility = https://emiga.rki.de/fhir/common/CodeSystem/Res
 Alias: $ResourceVisibilityType = https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType
 Alias: $PatCitizenship = https://emiga.rki.de/fhir/common/Extension/Citizenship
 Alias: $DateCreated = https://emiga.rki.de/fhir/common/Extension/DateCreated
+Alias: $DuplicateMatchMetadata = https://emiga.rki.de/fhir/common/StructureDefinition/DuplicateMatchMetadata
 Alias: $Facility = https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson
 Alias: $PatBirthPlace = https://emiga.rki.de/fhir/common/Extension/LandOfBirth
 Alias: $LastModifiedBy = https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
+Alias: $MatchGrade = http://hl7.org/fhir/StructureDefinition/match-grade
 Alias: $ExtensionNullFlavor = https://emiga.rki.de/fhir/common/Extension/NullFlavor
 Alias: $ProcessingStatus = https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
 Alias: $ProcessingStatusAffectedPersonExt = https://emiga.rki.de/fhir/common/Extension/ProcessingStatusAffectedPerson
@@ -36,6 +41,9 @@ Alias: $ProcessingStatusAnnotation = https://emiga.rki.de/fhir/common/ValueSet/P
 Alias: $RelevanceVS = https://emiga.rki.de/fhir/common/ValueSet/Relevance
 Alias: $ResourceResponsibilityVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility
 Alias: $ResourceVisibilityTypeVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType
+Alias: $MatchOutputBundle = https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle
+
+
 
 
 // deutsches Basisprofil
@@ -60,6 +68,7 @@ Alias: $sct = http://snomed.info/sct
 // DEMIS
 Alias: $DemisNoCountry = https://demis.rki.de/fhir/CodeSystem/noCountry
 Alias: $GeographicRegion = https://demis.rki.de/fhir/CodeSystem/geographicRegion
+Alias: $DemisOrgType = https://demis.rki.de/fhir/CodeSystem/organizationType
 Alias: $AddressUse = https://demis.rki.de/fhir/StructureDefinition/AddressUse
 
 // Weitere
