@@ -3,9 +3,11 @@ Id: RegionalKey
 Title: "Regionalschlüssel und Regionalbezugsystem"
 Description: "Extension zur Darstellung des Regionalschlüssels und des Regionalbezugsystems."
 Context: Patient.address
+
 * ^url = "https://emiga.rki.de/fhir/common/Extension/RegionalKey"
-* ^version = "0.2.0"
-* ^date = "2026-05-19"
+* ^version = "0.2.1"
+* ^date = "2026-08-18"
+
 * insert MetadataProfile
 
 * extension ^slicing.discriminator.type = #value

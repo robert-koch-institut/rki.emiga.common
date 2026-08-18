@@ -3,9 +3,10 @@ Parent: RelatedPerson
 Id: AffectedPersonRelatedPerson
 Title: "Bezugsperson der betroffenen Person"
 Description: "Dieses Profil bildet eine Bezugsperson der betroffenen Person ab. Es dient der strukturierten Darstellung von Personen, die in einer persönlichen oder rechtlichen Beziehung zur betroffenen Person stehen und im Rahmen der fachlichen Prozesse berücksichtigt werden müssen."
-* ^version = "0.5.0"
-* ^date = "2026-04-24"
+
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
+* ^version = "0.5.1"
+* ^date = "2026-08-18"
 
 * insert ProfileMetaProfileTags
 * insert MetadataProfile

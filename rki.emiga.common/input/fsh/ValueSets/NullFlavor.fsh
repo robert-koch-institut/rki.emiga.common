@@ -2,10 +2,11 @@ ValueSet: NullFlavor
 Id: NullFlavor
 Title: "Nicht ermittelbar, Nicht erhoben Antworten"
 Description: "Werteliste mit Konzepten, die den Grund für das Fehlen eines regulären Wertes angeben."
-* insert MetadataTerminology
-* ^version = "1.0.0"
-* ^date = "2025-09-08"
 * ^url = "https://emiga.rki.de/fhir/ValueSet/NullFlavor"
+* ^version = "1.0.1"
+* ^date = "2026-08-18"
+
+* insert MetadataTerminology
 
 * $v3-NullFlavor#ASKU "asked but unknown" // nicht ermittelbar
 * $v3-NullFlavor#ASKU ^designation[0].use = $HL7DesignationUse#display

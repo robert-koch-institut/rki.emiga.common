@@ -3,9 +3,11 @@ Parent: Identifier
 Id: IdentifierEmigaFileNumber
 Title: "EMIGA Aktenzeichen Identifier"
 Description: "Eindeutiger fachlicher Identifier für EMIGA-Entitäten."
+
+* ^version = "0.1.1"
+* ^date = "2026-08-18"
+
 * insert MetadataProfile
-* ^version = "0.1.0"
-* ^date = "2025-09-26"
 
 * type = $v2-0203#XX "Organization identifier"
 * type ^short = "Art des Identifiers"

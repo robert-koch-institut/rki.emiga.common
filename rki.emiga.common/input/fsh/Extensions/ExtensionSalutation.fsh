@@ -3,11 +3,14 @@ Id: Salutation
 Title: "Anrede"
 Description: "Extension für die Anrede einer Person. Diese wird bei Anschreiben verwendet."
 Context: Patient.name
-* insert MetadataProfile
+
 * ^url = "https://emiga.rki.de/fhir/common/Extension/Salutation"
-* ^version = "0.1.0"
-* ^date = "2024-11-07"
 * url = "https://emiga.rki.de/fhir/common/Extension/Salutation" (exactly)
+* ^version = "0.1.1"
+* ^date = "2026-08-18"
+
+* insert MetadataProfile
+
 * value[x] 1.. MS
 * value[x] only Coding
   * insert StrictCoding

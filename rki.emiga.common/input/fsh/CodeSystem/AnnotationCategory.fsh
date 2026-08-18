@@ -2,15 +2,16 @@ CodeSystem: AnnotationCategory
 Id: AnnotationCategory
 Title: "Annotationskategorien"
 Description: "Das CodeSystem 'AnnotationCategory' enthält die Codes für die verschiedenen Arten von Annotationen."
-* insert MetadataTerminology
 * ^version = "0.1.2"
+* ^date = "2026-08-18"
 * ^status = #active
-* ^date = "2026-03-24"
 * ^caseSensitive = true
-* ^url = "https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory"
 * ^content = #complete
 * ^count = 3
+* ^url = "https://emiga.rki.de/fhir/CodeSystem/AnnotationCategory"
 * ^valueSet = "https://emiga.rki.de/fhir/ValueSet/AnnotationCategoryVS"
+
+* insert MetadataTerminology
 
 * #comment "Kommentar" "Annotationen mit zusätzlichen Attributen und ohne Anhänge."
 * #attachment "Anhang" "Annotationen mit Anhängen und ohne zusätzliche Attribute."

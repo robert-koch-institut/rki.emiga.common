@@ -2,15 +2,15 @@ CodeSystem: RegionKeys
 Id: RegionKeys
 Title: "Regionalschlüssel"
 Description: "Das CodeSystem 'RegionKeys' definiert die Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS). Die Versionsnummer ist hierbei analog zu der Versionsnummer des verwendeten Stands der Regionalschlüssel von Destatis. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/"
-* ^url = "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs"
-* ^version = "2026-03-31"
-* ^date = "2026-03-31"
+* ^version = "1.0.1"
+* ^date = "2026-08-18"
 * ^status = #active
 * ^content = #complete
 * ^publisher = "Statistisches Bundesamt, Wiesbaden"
 * ^experimental = false
 * ^count = 11240
 * ^caseSensitive = true
+* ^url = "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs"
 
 * ^property[0].code = #status
 * ^property[0].uri = "http://hl7.org/fhir/concept-properties#status"

@@ -3,10 +3,13 @@ Id: FacilityAddressAffectedPerson
 Title: "Einrichtungsadresse Betroffene Person"
 Description: "Extension für Abbildung der Einrichtungsadresse. Über eine Einrichtungsadresse kann eine Einrichtung als Aufenthaltsort für die Betroffene Person angegeben werden."
 Context: Patient
+
 * ^url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson"
-* ^version = "0.1.0"
-* ^date = "2025-09-03"
+* ^version = "0.1.1"
+* ^date = "2026-08-18"
+
 * insert MetadataProfile
+
 * url = "https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson" (exactly)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

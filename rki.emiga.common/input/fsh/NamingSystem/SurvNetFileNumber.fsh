@@ -4,7 +4,7 @@ Title: "SurvNet Aktenzeichen"
 Description: "Das NamingSystem 'SurvNetFileNumber' definiert das Identifikationssystem für das SurvNet Aktenzeichen. Das SurvNet Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe."
 Usage: #definition
 * publisher = "Robert Koch-Institut"
-* date = "2025-09-26"
+* date = "2026-08-18"
 * name = "SurvNetFileNumber"
 * status = #active
 * kind = #identifier

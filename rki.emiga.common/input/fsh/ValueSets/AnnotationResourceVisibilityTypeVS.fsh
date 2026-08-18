@@ -2,10 +2,11 @@ ValueSet: AnnotationResourceVisibilityType
 Id: AnnotationResourceVisibilityType
 Title: "Ressourcensichtbarkeit"
 Description: "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben."
-* insert MetadataTerminology
-* ^version = "2.0.0"
-* ^date = "2025-09-26"
 * ^url = "https://emiga.rki.de/fhir/common/ValueSet/AnnotationResourceVisibilityType"
+* ^version = "2.0.1"
+* ^date = "2026-08-18"
+
+* insert MetadataTerminology
 
 * $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle" 
 * $ResourceVisibilityType#transferable "übermittelbar"

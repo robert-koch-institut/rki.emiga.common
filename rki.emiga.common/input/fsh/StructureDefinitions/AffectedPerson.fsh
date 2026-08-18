@@ -3,9 +3,10 @@ Parent: Patient
 Id: AffectedPerson
 Title: "Betroffene Person"
 Description: "Die betroffene Person enthält relevante Angaben zum Patienten."
-* ^version = "0.5.0"
-* ^date = "2026-05-18"
+
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
+* ^version = "0.5.1"
+* ^date = "2026-08-18"
 
 * insert ProfileMetaProfileTags
 * insert MetadataProfile

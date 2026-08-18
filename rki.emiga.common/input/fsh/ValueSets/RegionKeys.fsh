@@ -3,9 +3,10 @@ Id: RegionKeys
 Title: "Regionalschlüssel (Werteliste)"
 Description: "Werteliste mit Regionalschlüsseln (Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS))."
 * ^url = "https://emiga.rki.de/fhir/ValueSet/RegionKeys"
+* ^version = "1.0.1"
+* ^date = "2026-08-18"
+
 * insert MetadataTerminology
-* ^version = "1.0.0"
-* ^date = "2025-09-08"
 
 * include codes from system RegionKeys
 

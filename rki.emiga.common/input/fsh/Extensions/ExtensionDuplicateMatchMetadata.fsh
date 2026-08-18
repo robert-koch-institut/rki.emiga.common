@@ -3,12 +3,12 @@ Id: DuplicateMatchMetadata
 Title: "Dublettenprüfung Metadaten"
 Description: "Extension für die Metadaten für die Dublettenprüfung einer Ressource."
 Context: Bundle.entry.search
-* insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/DuplicateMatchMetadata"
-* ^version = "0.1.0"
-* ^date = "2026-05-12"
+* ^version = "0.1.1"
+* ^date = "2026-08-18"
 
+* insert MetadataProfile
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
