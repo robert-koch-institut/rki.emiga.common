@@ -455,3 +455,15 @@ Das Beispiel veranschaulicht damit insbesondere:
 
 <!-- {{json: Communication/441557618}} -->
 
+<TODO>Note for me:
+- annotation meta.reference: Person, die das Event als letzes bearbeite hab
+- status: in FHIR muss ein Status angegeben werden. dieser wird bei EMIGA standardmäßig auf "final" gesetzt. Feld nicht aktiv benutzt.
+- code: ebenfalls: in FHIR ist "type" must-support. diese wird standardmäßig auf "Note" gesetzt.
+- Gender: bei Geschlcht der Person sind Werte male, female, other und Divers zur Wahl.
+- Annotation.status: ebenfalls ein modelbedingte Angabe. wird immer mit der Wert "completed" belegt.
+- Annotation.sent: das hier ist ein frei wählbares Datum"
+- Annotation.creation (von attachment): Datum des Hochladens des Anhangs (??)
+- Anhang.date: Zeitpunkt der Erstellung des anhangs. Dies ist nicht der Zeitpunkt der Erstellung des Anhangdokuments, sondern der Zeitpunkt, wann der Anhang erstellt wurde.
+- Person: anscheinend ist Person die übergeordnete/generische Class. daraus kann über "link" sowhol RelatedPerson als auch Patient dargestellt werden:
+    - Link zu einer Bezugsperson (Related Person) Resource die die selbe Person darstellt.
+    - Link zu einer betroffenen Person (Patient) Resource die die selbe Person darstellt.
