@@ -3,8 +3,8 @@ Id: ProcessingStatusAffectedPerson
 Title: "Bearbeitungsstatus betroffene Person"
 Description: "Werteliste mit möglichen Bearbeitungsstatus einer betroffenen Person."
 * ^url = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAffectedPerson"
-* ^version = "0.2.1"
-* ^date = "2026-08-18"
+* ^version = "0.2.0"
+* ^date = "2025-11-06"
 
 * insert MetadataTerminology
 

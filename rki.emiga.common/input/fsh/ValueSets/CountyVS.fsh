@@ -1,7 +1,7 @@
 ValueSet: CountyVS
 Id: CountyVS
 Title: "Landkreis-Werteliste"
-Description: "Werteliste mit Konzepten, die den Landkreis definieren."
+Description: "Werteliste mit Werten, die den Landkreis definieren."
 * ^url = "https://emiga.rki.de/fhir/ValueSet/CountyVS"
 * ^version = "0.1.1"
 * ^date = "2026-08-18"

@@ -5,8 +5,8 @@ Title: "Annotation"
 Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
-* ^version = "0.9.1"
-* ^date = "2026-08-18"
+* ^version = "0.9.0"
+* ^date = "2026-05-18"
 
 * insert MetadataProfile
 * insert ProfileSecurityTagsAnnotation

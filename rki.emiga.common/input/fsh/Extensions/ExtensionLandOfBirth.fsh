@@ -1,7 +1,7 @@
 Extension: LandOfBirth
 Id: LandOfBirth
 Title: "Geburtsland"
-Description: "Extension für das Geburtsland der betroffenen Person."
+Description: "Extension für die Angabe des Geburtslandes der betroffenen Person."
 Context: Patient
 
 * ^url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"

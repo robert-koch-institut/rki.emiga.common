@@ -4,8 +4,8 @@ Id: IdentifierEmigaID
 Title: "EMIGA-ID Identifier"
 Description: "Technischer Indentifikator für EMIGA-Entitäten."
 
-* ^version = "0.2.1"
-* ^date = "2026-08-18"
+* ^version = "0.2.0"
+* ^date = "2025-09-26"
 
 * insert MetadataProfile
 

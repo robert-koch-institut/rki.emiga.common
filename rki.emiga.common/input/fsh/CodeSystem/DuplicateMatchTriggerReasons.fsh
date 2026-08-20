@@ -1,7 +1,7 @@
 CodeSystem: DuplicateMatchTriggerReasons
 Id: DuplicateMatchTriggerReasons
 Title: "Dublettenprüfungsgründe"
-Description: "Das CodeSystem 'DuplicateMatchTriggerReasons' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Auslösern für Dublettenprüfungen zu unterscheiden."
+Description: "Das CodeSystem 'DuplicateMatchTriggerReasons' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Auslösern für eine Dublettenprüfungen zu unterscheiden."
 * ^version = "0.1.1"
 * ^date = "2026-08-18"
 * ^caseSensitive = true

@@ -1,7 +1,7 @@
 Extension: Salutation
 Id: Salutation
 Title: "Anrede"
-Description: "Extension für die Anrede einer Person. Diese wird bei Anschreiben verwendet."
+Description: "Extension für die Art der Anrede einer Person. Diese wird bei Anschreiben verwendet."
 Context: Patient.name
 
 * ^url = "https://emiga.rki.de/fhir/common/Extension/Salutation"

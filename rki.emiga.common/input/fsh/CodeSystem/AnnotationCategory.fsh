@@ -2,7 +2,7 @@ CodeSystem: AnnotationCategory
 Id: AnnotationCategory
 Title: "Annotationskategorien"
 Description: "Das CodeSystem 'AnnotationCategory' enthält die Codes für die verschiedenen Arten von Annotationen."
-* ^version = "0.1.2"
+* ^version = "0.1.3"
 * ^date = "2026-08-18"
 * ^status = #active
 * ^caseSensitive = true

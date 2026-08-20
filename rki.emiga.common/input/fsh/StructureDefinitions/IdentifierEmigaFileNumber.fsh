@@ -4,8 +4,8 @@ Id: IdentifierEmigaFileNumber
 Title: "EMIGA Aktenzeichen Identifier"
 Description: "Eindeutiger fachlicher Identifier für EMIGA-Entitäten."
 
-* ^version = "0.1.1"
-* ^date = "2026-08-18"
+* ^version = "0.1.0"
+* ^date = "2025-09-26"
 
 * insert MetadataProfile
 

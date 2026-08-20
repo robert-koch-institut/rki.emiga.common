@@ -1,7 +1,7 @@
 CodeSystem: ProcessingStatus
 Id: ProcessingStatus
 Title: "Bearbeitungsstatus"
-Description: "Das CodeSystem 'ProcessingStatus' dient der Abbildung von Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person."
+Description: "Das CodeSystem 'ProcessingStatus' dient der Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person."
 * ^version = "0.5.2"
 * ^date = "2026-08-18"
 * ^caseSensitive = true

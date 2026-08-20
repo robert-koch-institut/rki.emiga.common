@@ -115,7 +115,7 @@ Instance: ExampleDuplicateCandidatePatientOne
 InstanceOf: AffectedPerson
 Usage: #inline
 Title: "Example Duplicate Candidate Patient One"
-Description: "Erstes Beispiel einer Patient-Ressource als möglicher Duplikatkandidat."
+Description: "Ein Beispiel einer Patient-Ressource als möglicher Duplikatkandidat."
 
 * meta.profile[+] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 * id = "example-duplicate-candidate-patient-one"
@@ -156,7 +156,7 @@ Instance: ExampleDuplicateCandidatePatientTwo
 InstanceOf: AffectedPerson
 Usage: #inline
 Title: "Example Duplicate Candidate Patient Two"
-Description: "Zweites Beispiel einer Patient-Ressource als möglicher Duplikatkandidat."
+Description: "Ein Beispiel einer Patient-Ressource als möglicher Duplikatkandidat."
 
 * meta.profile[+] = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
 * id = "example-duplicate-candidate-patient-two"
