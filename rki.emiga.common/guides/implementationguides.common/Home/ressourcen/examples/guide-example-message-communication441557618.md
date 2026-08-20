@@ -182,3 +182,91 @@ Dieses Beispiel zeigt eine vollständige Annotation-Kommunikation mit:
 * Security Labels zur Steuerung von Zugriff und Weitergabe
 
 Die Ressource dient damit als standardisierte Möglichkeit, zusätzliche fachliche Informationen innerhalb des EMIGA-FHIR-Kontextes auszutauschen.
+
+--- andere Version-to be merged---
+
+## Beispiel / Annotation
+Das folgende Beispiel zeigt eine Annotation, die als eigenständige `Communication`-Ressource innerhalb von EMIGA verwaltet wird.
+
+Die Annotation besitzt den Betreff:
+
+```text
+Test Betreff
+```
+
+und enthält als textuellen Inhalt:
+
+```text
+Das ist ein Test Beschreibung
+```
+
+Über:
+
+```text
+Communication.about
+```
+
+wird die Annotation mit:
+
+```text
+Composition/example
+```
+
+in einen fachlichen Kontext gestellt.
+
+Als Ersteller wird über `Communication.sender` der EMIGA-Benutzer:
+
+```text
+Practitioner/EmigaUser-001
+```
+
+referenziert.
+
+Die Annotation ist fachlich als:
+
+```text
+comment – Kommentar
+```
+
+klassifiziert und besitzt den Bearbeitungsstatus:
+
+```text
+forinformation – Zur Kenntnis
+```
+
+Zusätzlich zum textuellen Inhalt enthält die Annotation eine Referenz auf einen Anhang:
+
+```text
+DocumentReference/Attachment-4691067
+```
+
+Der Anhang wird als eigenständige `AttachmentDocumentReference` verwaltet und über `payload.contentReference` referenziert.
+
+Das Beispiel veranschaulicht damit insbesondere:
+
+* die  Abbildung einer Annotation als `Communication`,
+* die Zuordnung einer Annotation zu einer fachlichen Entität über `about`,
+* die Angabe eines Betreffs über `topic.text`,
+* die Abbildung eines textuellen Inhalts über `payload.contentString`,
+* die Referenzierung eines eigenständigen Anhangs über `payload.contentReference`,
+* die Referenz auf den erstellenden EMIGA-Nutzende über `sender`,
+* die Trennung zwischen FHIR-Status (not used) und fachlichem Bearbeitungsstatus,
+* die Kennzeichnung personenbezogener Inhalte über tag,
+* sowie die Steuerung von Sichtbarkeit und Verantwortlichkeit über `meta.security`.
+
+<tabs>
+    <tab title="Übersicht">      
+        {{render:Communication441557618.json}}
+    </tab>
+    <tab title="XML">      
+        {{xml:Communication441557618.json}}
+    </tab>
+    <tab title="JSON">
+        {{json:Communication441557618.json}}
+    </tab>
+    <tab title="Link">
+        {{link:Communication441557618.json}}
+    </tab>
+</tabs>
+
+<!-- {{json: Communication/441557618}} -->

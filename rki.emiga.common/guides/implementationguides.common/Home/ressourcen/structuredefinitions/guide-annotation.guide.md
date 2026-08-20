@@ -17,7 +17,7 @@ select
 <br>&nbsp;<br>
 Das Profil `AnnotationCommunication` basiert auf der FHIR-Ressource `Communication` und dient der Abbildung einer **Annotation zu einer fachlichen Entität innerhalb von EMIGA**.
 
-Eine Annotation ermöglicht es, ergänzende fachliche Informationen, Hinweise oder Kommentare zu einem bestehenden fachlichen Kontext zu erfassen. Sie wird als eigenständige FHIR-Ressource verwaltet und kann neben einem Betreff und textuellen Inhalten auch Referenzen auf Anhänge enthalten.
+Eine Annotation ermöglicht es, ergänzende fachliche Informationen, Hinweise oder Kommentare zu einem bestehenden fachlichen EMIGA-Entität zu erfassen. Eine Annotation wird als eigenständige FHIR-Ressource verwaltet und kann neben einem Betreff und textuellen Inhalten auch Referenzen auf Anhänge enthalten.
 
 Die grundlegende Struktur einer Annotation ist:
 
@@ -46,11 +46,9 @@ AnnotationCommunication
 Communication.about
 ```
 
-wird angegeben, **auf welche fachliche Entität sich die Annotation bezieht**.
+wird angegeben, **auf welche fachliche Entität sich die Annotation bezieht** (die fachliche Verknüpfung zum Gegenstand der Annotation).
 
-Die Annotation bleibt dabei eine eigenständige Ressource. `about` stellt lediglich die fachliche Verknüpfung zum Gegenstand der Annotation her.
-
-Damit kann beispielsweise ein Kommentar oder Hinweis einem bestehenden fachlichen Vorgang zugeordnet werden, ohne dass der Inhalt der Annotation unmittelbar Bestandteil der referenzierten Ressource werden muss.
+Damit kann beispielsweise ein Kommentar oder Hinweis einem bestehenden fachlichen Vorgang zugeordnet werden, ohne dass der Inhalt der Annotation unmittelbar Bestandteil der referenzierten Ressource sein muss.
 
 ### Betreff
 
@@ -72,47 +70,16 @@ Test Betreff
 
 ### Inhalt der Annotation
 
-Der eigentliche Inhalt einer Annotation wird über:
-
-```text
-Communication.payload
-```
-
-abgebildet.
+Der eigentliche Inhalt einer Annotation wird über `Communication.payload` abgebildet.
 
 Dabei können insbesondere zwei Arten von Inhalten unterschieden werden.
 
 #### Textueller Inhalt
 
-Ein textueller Kommentar wird über:
-
-```text
-Communication.payload.contentString
-```
-
-angegeben.
-
-Damit können beispielsweise fachliche Hinweise, Kommentare oder ergänzende Informationen unmittelbar innerhalb der Annotation dokumentiert werden.
+Ein textueller Kommentar wird über `Communication.payload.contentString` angegeben.
 
 #### Anhänge
-
-Dateien werden nicht unmittelbar innerhalb der Annotation gespeichert.
-
-Ein Anhang wird als eigenständige Ressource des Profils:
-
-```text
-AttachmentDocumentReference
-```
-
-angelegt und über:
-
-```text
-Communication.payload.contentReference
-```
-
-referenziert.
-
-Die Annotation enthält somit nur die Referenz auf den zugehörigen Anhang:
+Eine Anhang-Datei wird nicht unmittelbar innerhalb der Annotation gespeichert, sondern als eigenständige Ressource des Profils `AttachmentDocumentReference` angelegt und über `Communication.payload.contentReference` aus einer Annotation referenziert.
 
 ```text
 AnnotationCommunication
@@ -126,7 +93,7 @@ AttachmentDocumentReference
      Dateiinhalt
 ```
 
-Durch diese Trennung können Annotation und Anhang als eigenständige Ressourcen verwaltet und unabhängig voneinander versioniert werden.
+Durch diese Trennung können Annotation und Anhang jeweils als eigenständige Ressourcen verwaltet und unabhängig voneinander versioniert werden.
 
 ### Kategorie
 
@@ -152,11 +119,7 @@ Communication.sender
 
 referenziert.
 
-Die Referenz verweist auf einen `EmigaUserPractitioner`.
-
-Damit wird nicht die Person beschrieben, **über die** eine fachliche Information vorliegt, sondern die handelnde Person, die die Annotation innerhalb von EMIGA erstellt hat.
-
-Beispiel:
+Die Referenz verweist auf einen `EmigaUserPractitioner`, und wurde erstellt von
 
 ```text
 Practitioner/EmigaUser-001
@@ -172,29 +135,17 @@ https://emiga.rki.de/fhir/common/Extension/DateCreated
 
 angegeben.
 
-Davon zu unterscheiden ist `Communication.sent`. Dieses Element beschreibt den Zeitpunkt, zu dem die Kommunikation gesendet beziehungsweise fachlich bereitgestellt wurde.
+### Sendezeitpunkt
+Davon zu unterscheiden ist `Communication.sent`. Dieses Element beschreibt in EMIGA den Zeitpunkt, zu dem die Annotation fachlich bereitgestellt wurde.
+Die beiden Zeitangaben beschreiben damit unterschiedliche Aspekte im Lebenszyklus einer Annotation.
 
-Sofern beide Angaben vorhanden sind, beschreiben sie unterschiedliche Aspekte des Lebenszyklus der Annotation.
-
-### FHIR-Status und fachlicher Bearbeitungsstatus
-
+### Fachlicher Bearbeitungsstatus vs. "FHIR-Status"
 Bei einer Annotation sind der technische FHIR-Status und der fachliche Bearbeitungsstatus voneinander zu unterscheiden.
 
-Der FHIR-Status:
+Der FHIR-Status `Communication.status` ist im Profil fest auf `text
+completed` gesetzt.
 
-```text
-Communication.status
-```
-
-ist im Profil fest auf:
-
-```text
-completed
-```
-
-gesetzt.
-
-Dieser Status beschreibt den Zustand der `Communication` als FHIR-Ressource und wird nicht zur Abbildung des fachlichen Bearbeitungszustands der Annotation verwendet.
+Dieser Status beschreibt den Zustand der `Communication` als FHIR-Ressource und wird <u>nicht</u> zur Abbildung des fachlichen Bearbeitungszustands der Annotation verwendet.
 
 Der fachliche Bearbeitungsstatus wird stattdessen über die EMIGA-Extension:
 
@@ -204,38 +155,28 @@ https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
 
 geführt.
 
-Damit gilt:
 
-| Element                | Bedeutung                                    |
-| ---------------------- | -------------------------------------------- |
-| `Communication.status` | technischer Status der FHIR-Communication    |
-| `ProcessingStatus`     | fachlicher Bearbeitungsstatus der Annotation |
+| Element                | Bedeutung                                    | Bemerkung |
+| ---------------------- | -------------------------------------------- | --------- |
+| `Communication.status` | technischer Status der FHIR-Communication    | immer fest, not used |
+| `ProcessingStatus`     | fachlicher Bearbeitungsstatus der Annotation | wird genutzt |
 
-Im Beispiel lautet der fachliche Bearbeitungsstatus:
+Im Beispiel lautet der fachliche Bearbeitungsstatus `forinformation – Zur Kenntnis`.
 
-```text
-forinformation – Zur Kenntnis
-```
-
-Die Annotation ist damit technisch abgeschlossen (`completed`), während `forinformation` ihre fachliche Einordnung beziehungsweise den vorgesehenen Umgang mit der Annotation beschreibt.
+> Note: Status "zur Kenntnis" als ProcessingStatus ist doch komisch, oder? gibt es dan auch Status "z. K. genommen"??
 
 ### Identifikation
 
-Eine Annotation kann über `Communication.identifier` mit EMIGA-spezifischen und weiteren fachlichen Identifiern versehen werden.
+Eine Annotation kann über `Communication.identifier` mit EMIGA-spezifischen und weiteren fachlichen Identifiern versehen werden, damit sie eindeutig identifiziert und unter unterschiedlichen Verarbeitungskontexten zugeordnet werden.
 
-Damit kann die Annotation eindeutig identifiziert und unterschiedlichen Verarbeitungskontexten zugeordnet werden.
-
-Im Beispiel werden Identifier aus folgenden Namensräumen verwendet:
+Im Beispiel werden Identifier aus folgenden Name Space verwendet:
 
 * `EmigaID`
 * `EmigaFileNumber`
 * `SurvNetFileNumber`
 
-Die Identifier beziehen sich auf die Annotation selbst.
-
 ### Personenbezogene Daten
-
-Über `Communication.meta.tag` kann gekennzeichnet werden, dass eine Annotation personenbezogene Informationen enthält.
+Über `Communication.meta.tag` kann gekennzeichnet werden, dass eine Annotation personenbezogene Informationen in Sinne von DSGVO enthält.
 
 Im Beispiel wird hierfür folgende Kennzeichnung verwendet:
 
@@ -260,21 +201,15 @@ Hierüber kann insbesondere festgelegt werden,
 * in welchem organisatorischen Kontext die Annotation sichtbar beziehungsweise übertragbar ist und
 * welche Stelle für die Ressource verantwortlich ist.
 
-Im Beispiel ist die Annotation über den `ResourceVisibilityType` als:
-
-```text
-transferable
-```
-
-gekennzeichnet.
+Im Beispiel ist die Annotation über den `ResourceVisibilityType` als `transferable` (übermittlungfähig) gekennzeichnet.
 
 Die Security Labels sind bei der Verarbeitung der Annotation sowie der von ihr referenzierten Ressourcen zu berücksichtigen.
 
 ### Versionierung von Annotation und Anhängen
 
-Annotationen und ihre Anhänge werden als eigenständige FHIR-Ressourcen verwaltet und daher unabhängig voneinander versioniert.
+Annotationen und ihre Anhänge werden jeweils als eigenständige FHIR-Ressourcen verwaltet und daher unabhängig voneinander versioniert.
 
-Wird der textuelle Inhalt, der Betreff oder eine andere Information der Annotation geändert, entsteht eine neue Version der `Communication`.
+Wird der textuelle Inhalt, der Betreff (Frage: Betriff ist also nicht Titel?) oder eine andere Information der Annotation geändert, entsteht eine neue Version der `Communication`.
 
 Wird einer Annotation ein neuer Anhang hinzugefügt oder eine bestehende Referenz entfernt, ändert sich `Communication.payload`. Dadurch entsteht ebenfalls eine neue Version der Annotation.
 
@@ -291,7 +226,6 @@ Vereinfacht:
 | Referenz auf einen anderen Anhang geändert            | ja                          |
 | neue Version desselben bereits referenzierten Anhangs | nein                        |
 
-Damit können Annotation und Anhang unabhängig voneinander fortgeschrieben werden.
 ## Profil
 ### Metadaten
 <fql output="transpose" headers="true">
@@ -369,101 +303,15 @@ select
 </fql>
 <br>&nbsp;<br>
 
-## Beispiel
-Das folgende Beispiel zeigt eine Annotation, die als eigenständige `Communication`-Ressource innerhalb von EMIGA verwaltet wird.
-
-Die Annotation besitzt den Betreff:
-
-```text
-Test Betreff
-```
-
-und enthält als textuellen Inhalt:
-
-```text
-Das ist ein Test Beschreibung
-```
-
-Über:
-
-```text
-Communication.about
-```
-
-wird die Annotation mit:
-
-```text
-Composition/example
-```
-
-in einen fachlichen Kontext gestellt.
-
-Als Ersteller wird über `Communication.sender` der EMIGA-Benutzer:
-
-```text
-Practitioner/EmigaUser-001
-```
-
-referenziert.
-
-Die Annotation ist fachlich als:
-
-```text
-comment – Kommentar
-```
-
-klassifiziert und besitzt den Bearbeitungsstatus:
-
-```text
-forinformation – Zur Kenntnis
-```
-
-Zusätzlich zum textuellen Inhalt enthält die Annotation eine Referenz auf einen Anhang:
-
-```text
-DocumentReference/Attachment-4691067
-```
-
-Der Anhang wird nicht innerhalb der Annotation gespeichert, sondern als eigenständige `AttachmentDocumentReference` verwaltet und über `payload.contentReference` referenziert.
-
-Das Beispiel veranschaulicht damit insbesondere:
-
-* die eigenständige Abbildung einer Annotation als `Communication`,
-* die Zuordnung zu einer fachlichen Entität über `about`,
-* die Angabe eines Betreffs über `topic.text`,
-* die Abbildung eines textuellen Inhalts über `payload.contentString`,
-* die Referenzierung eines eigenständigen Anhangs über `payload.contentReference`,
-* die Referenz auf den erstellenden EMIGA-Benutzer über `sender`,
-* die Trennung zwischen FHIR-Status und fachlichem Bearbeitungsstatus,
-* die Kennzeichnung personenbezogener Inhalte,
-* sowie die Steuerung von Sichtbarkeit und Verantwortlichkeit über `meta.security`.
-
-<tabs>
-    <tab title="Übersicht">      
-        {{render:Communication441557618.json}}
-    </tab>
-    <tab title="XML">      
-        {{xml:Communication441557618.json}}
-    </tab>
-    <tab title="JSON">
-        {{json:Communication441557618.json}}
-    </tab>
-    <tab title="Link">
-        {{link:Communication441557618.json}}
-    </tab>
-</tabs>
-
-<!-- {{json: Communication/441557618}} -->
 
 <TODO>Note for me:
 - annotation meta.reference: Person, die das Event als letzes bearbeite hab
-- status: in FHIR muss ein Status angegeben werden. dieser wird bei EMIGA standardmäßig auf "final" gesetzt. Feld nicht aktiv benutzt.
+
 - code: ebenfalls: in FHIR ist "type" must-support. diese wird standardmäßig auf "Note" gesetzt.
-- Gender: bei Geschlcht der Person sind Werte male, female, other und Divers zur Wahl.
 - Annotation.status: ebenfalls ein modelbedingte Angabe. wird immer mit der Wert "completed" belegt.
-- Annotation.sent: das hier ist ein frei wählbares Datum"
+- Annotation.sent: das hier ist ein frei wählbares Datum" (warum freiwähbar??)
 - Annotation.creation (von attachment): Datum des Hochladens des Anhangs (??)
-- Anhang.date: Zeitpunkt der Erstellung des anhangs. Dies ist nicht der Zeitpunkt der Erstellung des Anhangdokuments, sondern der Zeitpunkt, wann der Anhang erstellt wurde.
-- Person: anscheinend ist Person die übergeordnete/generische Class. daraus kann über "link" sowhol RelatedPerson als auch Patient dargestellt werden:
+- Anhang.date: Zeitpunkt der Erstellung des Anhangs. Dies ist <u>nicht</u> der Zeitpunkt der Erstellung des Anhangdokuments, sondern der Zeitpunkt, wanndas Dokument als Anhang erstellt wurde.
+- Person: anscheinend ist Person die übergeordnete/generische Class. daraus kann über "link" sowhol RelatedPerson als auch Patient dargestellt werden (<TODO: stimmt es>):
     - Link zu einer Bezugsperson (Related Person) Resource die die selbe Person darstellt.
     - Link zu einer betroffenen Person (Patient) Resource die die selbe Person darstellt.

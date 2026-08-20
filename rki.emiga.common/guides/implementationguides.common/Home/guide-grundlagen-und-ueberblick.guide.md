@@ -1,43 +1,28 @@
 # {{page-title}}
+<#TODO> harmonize this page for all packages, am besten use the same file. Currently. Case is "main branch".
 
 ## Über EMIGA
-{{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
+{{render:guides/implementationguides.case/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
 
-<!-- #TODO: Text über EMIGA von Case kopieren -->
-<!-- #TODO: Einrichtungsverzeichnis-Absatzen wo andershin -->
-
-Die COVID-19-Pandemie hat verdeutlicht, wie essenziell effiziente digitale Werkzeuge für die 
-Überwachung und Eindämmung übertragbarer Krankheiten sind. Doch nicht nur in Krisenzeiten, sondern 
-auch im Alltag unterstützt der Öffentliche Gesundheitsdienst (**ÖGD**) den Infektionsschutz in 
-Deutschland.
-
-Die Software **EMIGA** (Elektronisches Melde- und Informationssystem für Gesundheitsämter) wird im Auftrag 
-des Bundesministeriums für Gesundheit (BMG) am Robert Koch-Institut (RKI) entwickelt. Ziel ist es, den 
-ÖGD durch digitale Lösungen im Bereich Infektionsschutz zu entlasten und zu stärken. EMIGA soll die 
-Vorbereitung auf endemische und pandemische Ausnahmesituationen sowie die Bewältigung neuer Aufgaben im 
-Infektionsschutz und Meldewesen unterstützen.
+Die Software **EMIGA** (*Elektronisches Melde- und Informationssystem für Gesundheitsämter*) wird gemäß § 14 Infektionsschutzgesetz (IfSG) im Auftrag des Bundesministeriums für Gesundheit (BMG) am Robert Koch-Institut (RKI) entwickelt. Ziel ist es, den Öffentlichen Gesundheitsdienst (ÖGD) durch moderne digitale Lösungen im Infektionsschutz zu entlasten und zu unterstützen. EMIGA soll den ÖGD nachhaltig bei der Wahrnehmung seiner Aufgaben im Melde- und Fallmanagement stärken und zugleich die Vorbereitung auf endemische und pandemische Ausnahmesituationen verbessern.
 <br>&nbsp;<br>
 
-## Projektübersicht
+## Projektziele
+EMIGA verfolgt im Rahmen seiner Entwicklung insbesondere folgende Projektziele:
+**Effektiverer Infektionsschutz:** 
+Als moderne, webbasierte Softwarelösung für den ÖGD ermöglicht EMIGA nutzungsfreundliche und effiziente Arbeitsabläufe im Infektionsschutz. Automatisierte Prozesse tragen dazu bei, den administrativen Aufwand zu reduzieren und die tägliche Arbeit der ÖGD-Stellen zu erleichtern.
 
-### Projektziele
+**Optimierte Zusammenarbeit:** 
+EMIGA unterstützt die Zusammenarbeit und Kommunikation innerhalb des ÖGD sowie mit weiteren beteiligten Einrichtungen. Sichere Datenübertragung und standardisierte Schnittstellen ermöglichen einen strukturierten und medienbrucharmen Informationsaustausch zwischen den beteiligten Stellen.
 
-- **Effektiverer Infektionsschutz:** EMIGA verbessert die Arbeitsabläufe im ÖGD durch nutzungsfreundliche und effiziente digitale Lösungen. Die Software baut auf SurvNet@RKI auf und erweitert die Kommunikations- und Kooperationsmöglichkeiten.
-- **Optimierte Zusammenarbeit:** EMIGA fördert die Zusammenarbeit zwischen Behörden und anderen Institutionen im Bereich Infektionsschutz und Meldewesen. Schnittstellen zu Fachanwendungen und automatisierte Prozesse reduzieren den administrativen Aufwand.
-- **Einheitliche Datenerfassung:** Durch bundesweit einheitliche Standards, zentrale Datenhaltung und enge Anbindung an DEMIS (Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz) wird die Datenerfassung vereinheitlicht.
-- **Interoperabilität:** EMIGA setzt auf internationale Standards und Klassifikationssysteme. Schnittstellen und Spezifikationen zur Anbindung werden öffentlich verfügbar sein, um eine nahtlose Integration zu gewährleisten.
-- **Zentraler Datenzugriff:** Epidemiologische Daten werden zentral bereitgestellt und durch ein Rollen- und Rechtekonzept geschützt. Dies sorgt für eine gleichmäßige Verfügbarkeit und erhöhte Datensicherheit.
-- **Förderung der Digitalisierung des ÖGD:** EMIGA ist Teil der bundesweiten Zukunftsplattform **ÖGDnet** und bildet das zentrale Modul für Infektionsschutz und Meldewesen.
+**Einheitliche Datenerfassung:** 
+EMIGA unterstützt eine bundesweit einheitliche Datenerfassung durch standardisierte Datenmodelle, eine zentrale Datenhaltung und die enge Anbindung an DEMIS (*Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz*).
+
+**Interoperabilität** 
+EMIGA setzt auf internationale Standards wie *FHIR (Fast Healthcare Interoperability Resources)* und etablierte medizinische Terminologien wie SNOMED CT. Standardisierte und öffentlich spezifizierte Schnittstellen ermöglichen einen interoperablen Datenaustausch und die Anbindung externer Fachanwendungen.
+
+**Zentraler Datenzugriff:** 
+EMIGA stellt epidemiologische Daten zentral bereit. Ein Rollen- und Rechtekonzept gewährleistet, dass Daten nur entsprechend der jeweiligen Zugriffsberechtigungen eingesehen und bearbeitet werden können.
+
+EMIGA soll allen Ebenen des ÖGD einen Mehrwert bieten. Um die Anforderungen der unterschiedlichen ÖGD-Ebenen angemessen zu berücksichtigen, werden Vertreterinnen und Vertreter der Gesundheitsämter, der Landesbehörden und des RKI über alle Entwicklungsphasen hinweg, von der Anforderungserhebung bis zur Erprobung, einbezogen.
 <br>&nbsp;<br>
-
-### Einrichtungsverzeichnis als zentraler Bestandteil
-Ein wesentlicher Bestandteil von EMIGA ist das **Einrichtungsverzeichnis**. Dieses Verzeichnis ermöglicht es, 
-Organisationen und Behörden des ÖGD schnell und einfach zu finden. Nutzer können wichtige Informationen 
-wie Kontaktpersonen, Kontaktdaten und Zuständigkeiten einsehen.
-
-Ziel des Einrichtungsverzeichnisses ist es, die Zusammenarbeit und Kommunikation innerhalb des ÖGD zu 
-verbessern, indem relevante Informationen zentral und übersichtlich bereitgestellt werden. Dies trägt dazu bei, 
-Kommunikationswege zu verkürzen und Doppelarbeiten zu vermeiden.
-<br>&nbsp;<br>
-
-UML-Diagramme zur Darstellung der unterschiedlichen Anwendungsfälle sind im Kapitel Anwendungsfälle zu finden.
