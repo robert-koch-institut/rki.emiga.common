@@ -1,6 +1,7 @@
 # {{page-title}}
 
-Diese Seite verlinkt Inhalte, die den Lesern/Leserinnen dieses Implementierungsleitfadens weiterführende Informationen zu EMIGA-Basismeldeinhalten bereitstellen.
+Diese Seite verlinkt Inhalte, die den Lesern/Leserinnen dieses Implementierungsleitfadens weiterführende Informationen zu EMIGA-Basisinhalten bereitstellen.
+
 <br>&nbsp;<br>
 
 

@@ -86,16 +86,16 @@ Im Folgenden wird ein Beispiel für eine Annotation dargestellt.
 
 <tabs>
     <tab title="Übersicht">      
-        {{render:Communication-441557618.json}}
+        {{render:Communication441557618.json}}
     </tab>
     <tab title="XML">      
-        {{xml:Communication-441557618.json}}
+        {{xml:Communication441557618.json}}
     </tab>
     <tab title="JSON">
-        {{json:Communication-441557618.json}}
+        {{json:Communication441557618.json}}
     </tab>
     <tab title="Link">
-        {{link:Communication-441557618.json}}
+        {{link:Communication441557618.json}}
     </tab>
 </tabs>
 
