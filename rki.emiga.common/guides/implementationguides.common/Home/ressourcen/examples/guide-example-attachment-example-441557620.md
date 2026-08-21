@@ -70,7 +70,7 @@ Das Beispiel veranschaulicht damit insbesondere:
 
 Dieses Beispiel zeigt eine `DocumentReference`-Ressource zur Verwaltung eines Dokuments als Bestandteil eines EMIGA-Fachvorgangs.
 
-Die Ressource beschreibt einen Anhang und stellt die zugehörigen Metadaten bereit. Die eigentlichen Dateiinhalte werden nicht direkt in der `DocumentReference` gespeichert, sondern über die Elemente unter `DocumentReference.content.attachment` beschrieben.
+Die Ressource `DocumentReference` beschreibt einen Anhang und stellt die zugehörigen Metadaten bereit. Die eigentlichen Dateiinhalte werden nicht direkt in der `DocumentReference` gespeichert, sondern über die Elemente unter `DocumentReference.content.attachment` beschrieben.
 
 Die Ressource verwendet das Profil:
 
@@ -92,13 +92,7 @@ Die Datei wurde am **13.01.2026 um 14:22:43 Uhr** erstellt.
 
 Die Dokumentreferenz wurde am **01.10.2023 um 12:00:00 Uhr** angelegt und durch einen EMIGA-Benutzer erstellt.
 
-## Fachlicher Kontext
-
-Diese Form der `DocumentReference` dient zur Beschreibung eines fachlich zugeordneten Dokuments.
-
 Die Ressource enthält mehrere Identifier, um die Zuordnung zu unterschiedlichen Fachkontexten und bestehenden Vorgängen zu ermöglichen.
-
-Dadurch kann das Dokument beispielsweise über verschiedene interne oder fachliche Referenznummern wiedergefunden werden.
 
 ## Identifikation
 
@@ -109,8 +103,6 @@ Das Dokument wird über mehrere Identifier beschrieben:
 | EMIGA ID            | `DEFG-123456789`               |
 | EMIGA File Number   | `ABCD-987654321`               |
 | SurvNet File Number | `Attachment-SURVNET-987654321` |
-
-Die Identifier dienen der eindeutigen Zuordnung des Dokuments innerhalb verschiedener Verarbeitungskontexte.
 
 ## Status
 

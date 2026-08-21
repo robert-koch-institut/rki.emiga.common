@@ -56,8 +56,6 @@ Ein solcher Datei-Anhang kann durch andere FHIR-Ressourcen referenziert werden.
 
 Beispielsweise kann eine fachliche Information auf dieses Dokument verweisen, indem die `DocumentReference` als Referenz genutzt wird.
 
-Dadurch bleibt die Datei als eigenständige Ressource verwaltbar.
-
 ## Status
 
 Der aktuelle Zustand der Dokumentreferenz wird über:

@@ -15,19 +15,16 @@ select
 </fql>
 
 <br>&nbsp;<br>
-Das Profil `EmigaUserPractitioner` basiert auf der FHIR-Ressource `Practitioner` und dient der Abbildung einer **handelnden Person bzw. eines EMIGA-Benutzers**.
+Das Profil `EmigaUserPractitioner` basiert auf der FHIR-Ressource `Practitioner` und dient der Abbildung einer handelnden Person bzw. eines EMIGA-Nutzende innerhalb des EMIGA-Kontexts. Es beschreibt natürliche Personen, die fachliche oder administrative Handlungen im System ausführen und dabei eine definierte Rolle oder Funktion wahrnehmen.
 
-Die Ressource repräsentiert damit nicht die Person, auf die sich ein fachlicher Vorgang bezieht, sondern eine Person, die innerhalb von EMIGA fachliche oder administrative Aktionen ausführt.
-
-Ein `EmigaUserPractitioner` kann beispielsweise als Ersteller, Absender oder zuletzt ändernde Person einer anderen Ressource referenziert werden.
+Ein `EmigaUserPractitioner` kann beispielsweise als Ersteller, Absender oder zuletzt ändernde Person einer EMIGA-Ressource referenziert werden.
 
 Typische Verwendungen sind unter anderem:
 
 * `Communication.sender` bei Annotationen,
 * `DocumentReference.author` bei Anhängen,
-* `meta.extension[lastModifiedBy]` bei Ressourcen, deren letzte Änderung einem Benutzer zugeordnet werden soll.
+* `meta.extension[lastModifiedBy]` bei Ressourcen, deren letzte Änderung einem Nutzende zugeordnet werden soll.
 
-Die grundlegende Rolle lässt sich vereinfacht wie folgt darstellen:
 
 ```text
 EmigaUserPractitioner
@@ -43,23 +40,18 @@ EmigaUserPractitioner
 
 Im EMIGA-Datenmodell können natürliche Personen abhängig von ihrer fachlichen Rolle durch unterschiedliche FHIR-Ressourcen repräsentiert werden.
 
+<#TODO check redundancy>
+
+
 | Ressource       | EMIGA-Profil                  | Fachliche Rolle                                        |
 | --------------- | ----------------------------- | ------------------------------------------------------ |
 | `Patient`       | `AffectedPerson`              | Person, die von einem fachlichen Vorgang betroffen ist |
 | `RelatedPerson` | `AffectedPersonRelatedPerson` | Bezugsperson einer betroffenen Person                  |
-| `Practitioner`  | `EmigaUserPractitioner`       | handelnde Person bzw. EMIGA-Benutzer                   |
+| `Practitioner`  | `EmigaUserPractitioner`       | handelnde Person bzw. EMIGA-Nutzende                   |
 
-Der wesentliche Unterschied liegt somit in der fachlichen Rolle:
+### Identifikation des Nutzende
 
-* Eine `AffectedPerson` beschreibt die betroffene Person.
-* Eine `AffectedPersonRelatedPerson` beschreibt eine Person, die in Beziehung zu einer betroffenen Person steht.
-* Ein `EmigaUserPractitioner` beschreibt eine Person, die innerhalb von EMIGA handelt.
-
-Ein `Practitioner` ist daher nicht als Ersatz für eine `Patient`- oder `RelatedPerson`-Ressource zu verwenden.
-
-### Identifikation des Benutzers
-
-Ein EMIGA-Benutzer kann über:
+Ein EMIGA-Nutzende kann über:
 
 ```text
 Practitioner.identifier
@@ -68,8 +60,6 @@ Practitioner.identifier
 identifiziert werden.
 
 Im Beispiel wird als Identifier eine beispielhafte E-Mail-Adresse verwendet.
-
-Die konkrete fachliche Bedeutung und das verwendete Identifier-System richten sich nach den Vorgaben des Profils und der jeweiligen EMIGA-Implementierung.
 
 ### Aktivitätsstatus
 
@@ -81,19 +71,11 @@ Practitioner.active
 
 wird angegeben, ob die repräsentierte Person aktuell als Practitioner aktiv ist.
 
-Ein Wert von:
-
-```text
-true
-```
-
-kennzeichnet einen aktiven EMIGA-Benutzer.
-
 Der Aktivitätsstatus beschreibt damit, ob die Ressource aktuell für die Verwendung als handelnde Person vorgesehen ist.
 
 ### Name
 
-Der Name des EMIGA-Benutzers wird über:
+Der Name des EMIGA-Nutzende wird über:
 
 ```text
 Practitioner.name
@@ -102,8 +84,6 @@ Practitioner.name
 abgebildet.
 
 Hier können insbesondere Vor- und Familienname angegeben werden.
-
-Im Gegensatz zu einer `AffectedPerson` stehen bei diesem Profil nicht umfangreiche demografische Angaben im Vordergrund, sondern die eindeutige Identifikation der handelnden Person.
 
 ### Verwendung als Referenz
 
@@ -119,7 +99,7 @@ Beispiele:
 Communication.sender
 ```
 
-kann angegeben werden, welcher EMIGA-Benutzer eine Annotation erstellt bzw. gesendet hat.
+kann angegeben werden, welcher EMIGA-Nutzende eine Annotation erstellt bzw. gesendet hat.
 
 #### Autor eines Anhangs
 
@@ -129,7 +109,7 @@ kann angegeben werden, welcher EMIGA-Benutzer eine Annotation erstellt bzw. gese
 DocumentReference.author
 ```
 
-kann angegeben werden, welcher EMIGA-Benutzer einen Anhang erstellt hat.
+kann angegeben werden, welcher EMIGA-Nutzende einen Anhang erstellt hat.
 
 #### Letzte Änderung einer Ressource
 
@@ -139,11 +119,11 @@ kann angegeben werden, welcher EMIGA-Benutzer einen Anhang erstellt hat.
 meta.extension[lastModifiedBy]
 ```
 
-kann dokumentiert werden, welcher Benutzer eine Ressource zuletzt geändert hat.
-
-Die Referenz verweist dabei auf eine `Practitioner`-Ressource mit dem Profil `EmigaUserPractitioner`.
+kann dokumentiert werden, welcher Nutzende eine Ressource zuletzt geändert hat.
 
 ### Sicherheit, Sichtbarkeit und Verantwortlichkeit
+
+<#TODO: Redundant>
 
 Über `Practitioner.meta.security` werden die Sichtbarkeit und Verantwortlichkeit der Ressource beschrieben.
 
@@ -156,22 +136,19 @@ verwendet.
 
 Damit kann festgelegt werden, in welchem organisatorischen Kontext die Practitioner-Ressource sichtbar ist und welcher Stelle sie zugeordnet ist.
 
-Die Security Labels beziehen sich auf die Ressource selbst und sind unabhängig von den fachlichen Rollen zu betrachten, in denen der Practitioner von anderen Ressourcen referenziert wird.
+Die Security Labels beziehen sich auf die Ressource Practioner selbst und sind unabhängig von den fachlichen Rollen zu betrachten, in denen der Practitioner von anderen Ressourcen referenziert wird.
 
 ### Fachlicher Schwerpunkt
 
-Der Schwerpunkt des Profils liegt auf einer schlanken und eindeutig referenzierbaren Abbildung eines EMIGA-Benutzers.
+Der Schwerpunkt des Profils liegt auf einer schlanken und eindeutig referenzierbaren Abbildung eines EMIGA-Nutzende.
 
 Typischerweise stehen dabei folgende Informationen im Vordergrund:
 
-* Identifikation des Benutzers,
+* Identifikation des Nutzende,
 * Name,
 * Aktivitätsstatus,
 * Sichtbarkeit,
-* Verantwortlichkeit,
-* sowie die Referenzierbarkeit aus anderen Ressourcen.
-
-Demografische oder fachlich personenbezogene Angaben wie Geburtsdatum, Staatsangehörigkeit, Wohnadresse oder Aufenthaltsort stehen bei diesem Profil nicht im Vordergrund.
+* Verantwortlichkeit
 
 ## Profil
 ### Metadaten
@@ -251,79 +228,4 @@ select
 <br>&nbsp;<br>
 
 ## Beispiel
-Das folgende Beispiel zeigt einen aktiven EMIGA-Benutzer als `Practitioner`.
-
-Die Beispielperson:
-
-```text
-Erika Musterfrau
-```
-
-wird über das Profil:
-
-```text
-https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner
-```
-
-abgebildet.
-
-Als Identifier wird im Beispiel folgende beispielhafte Benutzerkennung verwendet:
-
-```text
-testemail@example.com
-```
-
-Der Practitioner ist mit:
-
-```text
-active = true
-```
-
-als aktiv gekennzeichnet.
-
-Über `meta.security` wird die Ressource außerdem hinsichtlich Sichtbarkeit und Verantwortlichkeit eingeordnet.
-
-Im Beispiel ist die Sichtbarkeit:
-
-```text
-inAgency – Eigene ÖGD-Stelle
-```
-
-und als verantwortliche Stelle ist angegeben:
-
-```text
-1. – Robert Koch-Institut
-```
-
-Der dargestellte Practitioner kann von anderen Ressourcen referenziert werden, beispielsweise als:
-
-* Absender einer Annotation,
-* Autor eines Anhangs,
-* oder zuletzt ändernde Person einer Ressource.
-
-Das Beispiel veranschaulicht damit insbesondere:
-
-* die Abbildung eines EMIGA-Benutzers als `Practitioner`,
-* die Identifikation des Benutzers,
-* die Angabe von Vor- und Familienname,
-* den Aktivitätsstatus,
-* die Verwendung von Security Labels,
-* sowie die Referenzierbarkeit als handelnde Person aus anderen EMIGA-Ressourcen.
-
-
-<tabs>
-    <tab title="Übersicht">      
-        {{render:Practitioner-EmigaUser-001.json}}
-    </tab>
-    <tab title="XML">      
-        {{xml:Practitioner-EmigaUser-001.json}}
-    </tab>
-    <tab title="JSON">
-        {{json:Practitioner-EmigaUser-001.json}}
-    </tab>
-    <tab title="Link">
-        {{link:Practitioner-EmigaUser-001.json}}
-    </tab>
-</tabs>
-
-<!-- {{json: Practitioner/EmigaUser-001}} -->
+(verweisen)

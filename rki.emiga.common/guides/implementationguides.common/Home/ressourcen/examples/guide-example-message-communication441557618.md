@@ -4,7 +4,7 @@
 
 Dieses Beispiel zeigt eine `Communication`-Ressource zur Übermittlung einer Annotation bzw. eines Kommentars innerhalb von EMIGA.
 
-Die Ressource repräsentiert eine fachliche Information zu einem bestehenden Vorgang. Eine Annotation kann beispielsweise genutzt werden, um Hinweise, Kommentare oder ergänzende Informationen zu einem Fall bereitzustellen.
+Eine Annotation kann beispielsweise genutzt werden, um Hinweise, Kommentare oder ergänzende Informationen zu einem Fall bereitzustellen.
 
 Die Ressource verwendet das Profil:
 
@@ -57,7 +57,7 @@ Im Beispiel besitzt die Annotation den Status:
 }
 ```
 
-Dies bedeutet, dass die Information zur Kenntnisnahme bereitgestellt wird und keine weitere Verarbeitung durch den Empfänger erwartet wird.
+Dies besagt, dass die Information zur Kenntnisnahme bereitgestellt wird und keine weitere Verarbeitung durch den Empfänger erwartet wird.
 
 Das Erstellungsdatum wird über die Extension:
 
@@ -102,7 +102,7 @@ Beispiel:
 
 ## Bezug zu einem Vorgang
 
-Die Annotation kann über `Communication.about` mit einem fachlichen Kontext verknüpft werden.
+Die Annotation kann über `Communication.about` mit einem fachlichen Vorgang verknüpft werden.
 
 Im Beispiel verweist die Annotation auf:
 
@@ -114,7 +114,7 @@ Damit kann die Annotation einem bestehenden Dokument oder Fallkontext zugeordnet
 
 ## Absender
 
-Die Annotation wurde von einem EMIGA-Benutzer erstellt.
+Die Annotation wurde von einem EMIGA-Nutzende erstellt.
 
 Der Absender wird über `Communication.sender` referenziert:
 
@@ -123,10 +123,7 @@ Practitioner/EmigaUser-001
 ```
 
 ## Inhalt der Annotation
-
-Die Ressource kann einen oder mehrere Inhalte enthalten.
-
-Im Beispiel werden zwei Payloads übertragen:
+Als Inhalt enthält die Annotation im Beispiel zwei Payloads:
 
 ### Textuelle Beschreibung
 
@@ -181,7 +178,6 @@ Dieses Beispiel zeigt eine vollständige Annotation-Kommunikation mit:
 * optionaler Dokumentreferenz
 * Security Labels zur Steuerung von Zugriff und Weitergabe
 
-Die Ressource dient damit als standardisierte Möglichkeit, zusätzliche fachliche Informationen innerhalb des EMIGA-FHIR-Kontextes auszutauschen.
 
 --- andere Version-to be merged---
 
@@ -214,7 +210,7 @@ Composition/example
 
 in einen fachlichen Kontext gestellt.
 
-Als Ersteller wird über `Communication.sender` der EMIGA-Benutzer:
+Als Ersteller wird über `Communication.sender` der EMIGA-Nutzende:
 
 ```text
 Practitioner/EmigaUser-001

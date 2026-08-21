@@ -10,9 +10,7 @@ Die Ressource verwendet das EMIGA-Profil:
 https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson
 ```
 
-Das Beispiel dient insbesondere dazu, die Abbildung einer Person mit mehreren Namen und Adressen sowie zusätzlichen Angaben wie Geburtsland, Staatsangehörigkeit, amtlichem Geschlecht, Bearbeitungsstatus und einer zugeordneten Einrichtung zu veranschaulichen.
-
-Alle verwendeten Personen-, Kontakt- und Adressdaten sind Beispieldaten.
+Das Beispiel dient insbesondere dazu, die Abbildung einer betroffene Person mit mehreren Namen und Adressen sowie zusätzlichen Angaben wie Geburtsland, Staatsangehörigkeit, amtlichem Geschlecht, Bearbeitungsstatus und einer zugeordneten Einrichtung zu veranschaulichen.
 
 ## Beispiel-Szenario
 
@@ -79,7 +77,7 @@ das amtliche Geschlecht angegeben:
 D – divers
 ```
 
-Damit werden der FHIR-Basiswert und die für den deutschen Kontext spezifischere amtliche Angabe gemeinsam abgebildet.
+Damit werden sowohl der FHIR-Basiswert als auch die für den deutschen Kontext spezifischere amtliche Angabe gemeinsam abgebildet.
 
 ## Geburtsdatum und Geburtsland
 
@@ -129,14 +127,12 @@ Auch hierfür wird das DEÜV-CodeSystem für Länderkennzeichen verwendet.
 
 ## Kontaktdaten
 
-Für die Beispielperson sind sowohl eine E-Mail-Adresse als auch eine Telefonnummer hinterlegt:
+Für die Beispielperson sind sowohl eine E-Mail-Adresse als auch eine Telefonnummer über `Patient.telecom` hinterlegt:
 
 | Kontaktart | Beispielwert               |
 | ---------- | -------------------------- |
 | E-Mail     | `mary.poppins@example.com` |
 | Telefon    | `+49301234567`             |
-
-Die Angaben werden über `Patient.telecom` übermittelt.
 
 ## Hauptwohnsitz
 
@@ -186,16 +182,7 @@ Im Beispiel lautet die Adresse:
 > 54321 Blumenland
 > Deutschland
 
-Das Beispiel verdeutlicht damit insbesondere, dass der **melderechtliche beziehungsweise primäre Wohnsitz und der aktuelle Aufenthaltsort einer Person voneinander abweichen können** und als getrennte `Patient.address`-Einträge übermittelt werden.
-
-Bei dieser Adresse werden Straße und Hausnummer zusätzlich strukturiert über die FHIR-Extensions
-
-```text
-http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
-http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
-```
-
-abgebildet.
+Das Beispiel verdeutlicht damit insbesondere, dass der **melderechtliche beziehungsweise primäre Wohnsitz und der aktuelle Aufenthaltsort einer Person voneinander abweichen können** und als getrennte `Patient.address`-Einträge übermittelt werden können.
 
 ## Geolokation
 
@@ -211,7 +198,7 @@ verwendet.
 
 Sie enthält die Elemente `latitude` und `longitude`.
 
-Die Geokoordinaten ergänzen die postalische Adresse und ermöglichen eine geografische Verortung der angegebenen Adresse.
+Die Geokoordinaten ermöglichen eine geografische Verortung der angegebenen Adresse.
 
 ## Zugeordnete Einrichtung
 
@@ -293,7 +280,7 @@ Dieses wird über `Patient.deceasedDateTime` angegeben und dokumentiert, dass di
 
 ## Änderungshistorie
 
-Über die Extension `LastModifiedBy` in `Patient.meta` wird der Benutzer referenziert, der die Ressource zuletzt geändert hat.
+Über die Extension `LastModifiedBy` in `Patient.meta` wird der Nutzende referenziert, der die Ressource zuletzt geändert hat.
 
 Im Beispiel:
 
@@ -307,10 +294,9 @@ Die verwendete Extension lautet:
 https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
 ```
 
-Damit kann die letzte Änderung der Ressource einem EMIGA-Benutzer zugeordnet werden.
+Damit kann die letzte Änderung der Datensatz einem EMIGA-Nutzende zugeordnet werden.
 
 ## Sicherheit, Sichtbarkeit und Verantwortlichkeit
-
 Über `Patient.meta.security` werden die Sichtbarkeit und die fachliche Verantwortlichkeit der Ressource angegeben.
 
 Im Beispiel ist die Sichtbarkeit auf:
@@ -321,15 +307,13 @@ inAgency – Eigene ÖGD-Stelle
 
 gesetzt.
 
-Die Ressource ist damit für die eigene ÖGD-Stelle vorgesehen.
+Die Ressource ist damit ausschließlich für die eigene ÖGD-Stelle vorgesehen.
 
 Als verantwortliche Stelle wird über `ResourceResponsibility` angegeben:
 
 ```text
 1. – Robert Koch-Institut
 ```
-
-Die Security Labels ermöglichen damit die Steuerung der organisatorischen Sichtbarkeit und Verantwortlichkeit der betroffenen Person innerhalb von EMIGA.
 
 ## Zusammenfassung
 
@@ -338,7 +322,7 @@ Dieses Beispiel zeigt eine umfangreich beschriebene betroffene Person und verans
 * Identifikation über EMIGA-spezifische Identifier
 * offiziellen Namen, Geburtsnamen und weiteren Namen
 * Anrede
-* FHIR-Geschlecht und amtliches Geschlecht
+* Geschlecht gemäß FHIR-Basisressource und amtliches Geschlecht
 * Geburtsdatum und Geburtsland
 * Staatsangehörigkeit
 * E-Mail-Adresse und Telefonnummer
@@ -348,7 +332,5 @@ Dieses Beispiel zeigt eine umfangreich beschriebene betroffene Person und verans
 * Bearbeitungsstatus
 * Kommunikationssprache
 * Sterbedatum
-* Dokumentation des zuletzt ändernden Benutzers
+* Dokumentation des zuletzt ändernden Nutzende
 * Sichtbarkeit und organisatorische Verantwortlichkeit
-
-Das Beispiel verdeutlicht damit, wie unterschiedliche demografische und administrative Informationen einer betroffenen Person im EMIGA-Profil `AffectedPerson` gemeinsam abgebildet werden können.

@@ -16,9 +16,8 @@ select
 
 <br>&nbsp;<br>
 
-Das Profil `AdditionalPropertiesQuestionnaireResponse` basiert auf der FHIR-Ressource `QuestionnaireResponse` und enthält die konkreten Werte zu zusätzlichen Eigenschaften. Über `questionnaire` wird verpflichtend auf den zugrunde liegenden Fragebogen verwiesen; die Antworten werden in mindestens einem `item` abgebildet.
+Das Profil `AdditionalPropertiesQuestionnaireResponse` refletiert die FHIR-Ressource `QuestionnaireResponse` und enthält die konkreten Werte zu zusätzlichen Eigenschaften. Die Antworten werden in mindestens einem `item` abgebildet.
 
-Das Profil ergänzt damit `AdditionalPropertiesQuestionnaire`: Der Fragebogen beschreibt die Struktur und Bedeutung der zusätzlichen Eigenschaften, während die QuestionnaireResponse die zugehörigen fachlichen Werte enthält.
 ## Profil
 ### Metadaten
 <fql output="transpose" headers="true">
@@ -85,7 +84,9 @@ select
 <br>&nbsp;<br>
 
 ## Beispiel
-Im Folgenden wird ein Beispiel für eine Fragebogen-Antwort dargestellt.
+Im Folgenden wird ein Beispiel für eine Fragebogen-Antwort dargestellt. <TODO gib noch keine>
+
+Der Fragebogen beschreibt die Struktur und Bedeutung der zusätzlichen Eigenschaften, während die QuestionnaireResponse die zugehörigen fachlichen Werte enthält.
 
 <tabs>
     <tab title="Übersicht">      

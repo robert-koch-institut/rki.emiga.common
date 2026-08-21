@@ -26,6 +26,7 @@ Die Patient-Ressourcen enthalten die für das Matching relevanten personenbezoge
 * Geschlecht
 * Geburtsdatum
 * Adresse
+* Security Labels zur Steuerung von Sichtbarkeit und Verantwortlichkeit
 
 Beispielhaft enthält der erste Kandidat die Identifikatoren `EmigaID` und `EmigaFileNumber`, den Namen "Max Mustermann", das Geburtsdatum `1980-01-01` sowie eine Adresse in Berlin.
 
@@ -101,7 +102,6 @@ Beim zweiten Kandidaten erfolgte das Matching unter anderem über:
 | `postalCodeExact`  | Postleitzahl exakt übereinstimmend |
 
 ## Nicht übereinstimmende Kriterien
-
 Neben erfüllten Kriterien können auch nicht erfüllte Kriterien dokumentiert werden.
 
 Beispiele:
@@ -113,13 +113,12 @@ Diese Informationen ermöglichen eine transparente Bewertung der Match-Entscheid
 
 
 
-
 -------------------
 -------------------
 
 ### Übersicht
 
-Das Beispielprofil **Patient Match Output Bundle** beschreibt die Rückgabe einer `$match`-Operation zur Identifikation möglicher Dubletten einer Person.
+Das Beispielprofil **Patient Match Output Bundle** beschreibt die Rückgabe einer `$match`-Operation zur Identifikation möglicher Ressource-Dubletten (Datensatz-Dubletten) einer Person.
 Die Antwort wird als FHIR `Bundle` vom Typ `searchset` zurückgegeben. Jede `Bundle.entry` enthält einen gefundenen möglichen Dubletten-Kandidaten als `Patient`-Ressource. Die zugehörigen Such- und Matching-Informationen werden in `Bundle.entry.search` übermittelt.
 Das Bundle verwendet das Profil:
 
@@ -140,122 +139,6 @@ Das Beispiel-Bundle enthält zwei gefundene Person-Kandidaten:
 | `Bundle.entry.search.score`     | numerischer Match-Score                       |
 | `Bundle.entry.search.extension` | zusätzliche Informationen zur Match-Bewertung |
 
-Beispiel:
-
-```json
-{
-  "resourceType": "Bundle",
-  "type": "searchset",
-  "total": 2
-}
-```
-
-### Match-Kandidaten
-
-Jeder Kandidat wird als `Patient`-Ressource zurückgegeben.
-
-Die Patient-Ressource verwendet das Profil:
-
-```
-https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson
-```
-
-Die Ressource enthält unter anderem:
-
-* EMIGA-interne Identifikatoren
-* Name
-* Geschlecht
-* Geburtsdatum
-* Adresse
-* Security Labels zur Steuerung von Sichtbarkeit und Verantwortlichkeit
-
-Beispiel:
-
-```json
-{
-  "resourceType": "Patient",
-  "meta": {
-    "profile": [
-      "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
-    ]
-  },
-  "birthDate": "1980-01-01"
-}
-```
-
-### Match-Ergebnisinformationen
-
-Die Match-Bewertung wird über `Bundle.entry.search` angegeben.
-
-#### Match-Modus
-
-Jeder Eintrag verwendet:
-
-```json
-{
-  "mode": "match"
-}
-```
-
-Dies kennzeichnet die Ressource als Ergebnis einer Matching-Anfrage.
-
-#### Match-Score
-
-Der numerische Score beschreibt die Ähnlichkeit zwischen der angefragten Person und dem gefundenen Kandidaten.
-
-Beispiel:
-
-```json
-{
-  "score": 0.92
-}
-```
-
-Der Score liegt im Wertebereich der verwendeten Matching-Implementierung und dient der Priorisierung der Treffer.
-
-### Match-Grade
-
-Zusätzlich zum numerischen Score wird der qualitative Match-Grad über die FHIR-Standard-Extension `match-grade` angegeben:
-
-```
-http://hl7.org/fhir/StructureDefinition/match-grade
-```
-
-Mögliche Werte:
-
-| Wert       | Bedeutung                |
-| ---------- | ------------------------ |
-| `probable` | wahrscheinlicher Treffer |
-| `possible` | möglicher Treffer        |
-
-Beispiel:
-
-```json
-{
-  "url": "http://hl7.org/fhir/StructureDefinition/match-grade",
-  "valueCode": "probable"
-}
-```
-
-### Duplicate Match Metadata
-
-Zusätzliche Informationen zur Ermittlung des Match-Ergebnisses werden über die Extension:
-
-```
-https://emiga.rki.de/fhir/common/StructureDefinition/DuplicateMatchMetadata
-```
-
-bereitgestellt.
-
-Die Extension enthält Informationen über:
-
-* verwendeten Matching-Algorithmus
-* Algorithmus-Version
-* Auslösegrund des Matches
-* übereinstimmende Kriterien
-* nicht übereinstimmende Kriterien
-* berechneten Match-Score
-
 Struktur:
 
 ```text
@@ -268,16 +151,9 @@ DuplicateMatchMetadata
  └── nonMatchedCriteria
 ```
 
-### Matching-Algorithmus
+### Matching-Algorithmus   |
 
-Das verwendete Verfahren wird über folgende Elemente dokumentiert:
-
-| Element            | Beispielwert       |
-| ------------------ | ------------------ |
-| `algorithm`        | `person-duplicate` |
-| `algorithmVersion` | `v1`               |
-
-Beispiel:
+Beispiel Match-Algorithmus:
 
 ```json
 {
@@ -391,4 +267,4 @@ Beispiel:
 }
 ```
 
-Damit wird sichergestellt, dass Match-Ergebnisse nur innerhalb der vorgesehenen fachlichen und organisatorischen Grenzen verarbeitet werden.
+Damit wird gekennzeichnet, dass Match-Ergebnisse nur innerhalb der vorgesehenen fachlichen und organisatorischen Grenzen verarbeitet werden.

@@ -120,7 +120,7 @@ Damit kann eine Bezugsperson innerhalb von EMIGA eigenständig identifiziert und
 
 ## Unterschied zwischen RelatedPerson und Patient
 
-`Patient` und `RelatedPerson` können beide natürliche Personen repräsentieren, erfüllen im fachlichen Modell jedoch unterschiedliche Aufgaben.
+`Patient` und `RelatedPerson` sind beide von Class Personen, erfüllen im fachlichen Modell jedoch unterschiedliche Aufgaben. <#TODO check correctness>
 
 | Aspekt                             | Patient (`AffectedPerson`)       | RelatedPerson (`AffectedPersonRelatedPerson`)                 |
 | ---------------------------------- | -------------------------------- | ------------------------------------------------------------- |
@@ -137,20 +137,15 @@ Der wesentliche Unterschied besteht somit in der **fachlichen Rolle der Person**
 Eine `Patient`-Ressource beschreibt die betroffene Person selbst. Eine `RelatedPerson` beschreibt dagegen eine weitere natürliche Person, deren Bedeutung sich aus ihrer Beziehung zu dieser betroffenen Person ergibt.
 
 ## Unterschied zum Practitioner
-
-Auch eine `RelatedPerson` und ein `Practitioner` repräsentieren natürliche Personen, unterscheiden sich jedoch deutlich in ihrer fachlichen Funktion.
-
-Ein `Practitioner` repräsentiert eine handelnde Fachperson beziehungsweise einen EMIGA-Benutzer, beispielsweise einen Bearbeiter einer Ressource.
+Ein `Practitioner` repräsentiert eine handelnde Fachperson beziehungsweise einen EMIGA-Nutzende, beispielsweise einen Bearbeiter einer Ressource.
 
 Eine `RelatedPerson` ist dagegen eine Person aus dem **persönlichen oder fachlich relevanten Umfeld der betroffenen Person**.
-
-Vereinfacht lassen sich die Rollen wie folgt unterscheiden:
 
 | Ressource       | Rolle im EMIGA-Kontext                                   |
 | --------------- | -------------------------------------------------------- |
 | `Patient`       | Person, die vom fachlichen Vorgang betroffen ist         |
 | `RelatedPerson` | Person, die in Beziehung zur betroffenen Person steht    |
-| `Practitioner`  | Person, die fachlich bzw. als Benutzer im System handelt |
+| `Practitioner`  | Person, die fachlich bzw. als Nutzende im System handelt |
 
 ## Sicherheit, Sichtbarkeit und Verantwortlichkeit
 
@@ -181,13 +176,13 @@ Besonders veranschaulicht werden:
 * die Referenz auf die betroffene Person über `RelatedPerson.patient`,
 * die Beschreibung der Beziehung über `RelatedPerson.relationship`,
 * mehrere Beziehungen innerhalb derselben Ressource,
-* sowie Security Labels für Sichtbarkeit und Verantwortlichkeit.
+* Security Labels für Sichtbarkeit und Verantwortlichkeit.
 
 ## Zusammenfassung
 
 Dieses Beispiel zeigt eine EMIGA-konforme `RelatedPerson`, die mit einer betroffenen Person verknüpft ist.
 
-Die Bezugsperson wird über eigene EMIGA-Identifier identifiziert und verweist über:
+Die Bezugsperson ist über eigene EMIGA-Identifier zuordnenbar und verweist über:
 
 ```text
 RelatedPerson.patient
@@ -201,7 +196,7 @@ Patient/AffectedPerson4550
 
 Die fachliche Beziehung zur betroffenen Person wird über `RelatedPerson.relationship` beschrieben.
 
-Damit ermöglicht das Profil `AffectedPersonRelatedPerson`, **Personen aus dem relevanten Umfeld einer betroffenen Person eigenständig abzubilden und ihre Beziehung zur betroffenen Person explizit zu dokumentieren**, ohne diese Personen selbst als `Patient` oder `Practitioner` modellieren zu müssen.
+Damit ermöglicht das Profil `AffectedPersonRelatedPerson`, **Personen aus dem relevanten Umfeld einer betroffenen Person abzubilden und ihre Beziehung zur betroffenen Person explizit zu dokumentieren**.
 
 
 ---- alter Version to merge ----

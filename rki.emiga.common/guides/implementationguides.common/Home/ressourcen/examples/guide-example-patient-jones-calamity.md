@@ -2,7 +2,7 @@
 
 ## Beschreibung
 
-Dieses Beispiel zeigt eine betroffene Person (`Patient`) im EMIGA-Kontext mit grundlegenden demografischen und administrativen Angaben sowie einer Verknüpfung zu einer zugehörigen `RelatedPerson`.
+Dieses Beispiel zeigt eine betroffene Person (`Patient`) im EMIGA-Kontext mit demografischen und administrativen Angaben sowie einer Verknüpfung zu einer zugehörigen `RelatedPerson`.
 
 Die Ressource verwendet das EMIGA-Profil:
 
@@ -17,7 +17,7 @@ Das Beispiel veranschaulicht insbesondere:
 * Staatsangehörigkeit und Geburtsland,
 * amtliches Geschlecht,
 * Hauptwohnsitz mit strukturierter Adresse und Geokoordinaten,
-* Bearbeitungsstatus,
+* Bearbeitungsstatus der Datensatz
 * Kommunikationssprache,
 * sowie die Verknüpfung zu einer weiteren Person über `Patient.link`.
 
@@ -51,6 +51,8 @@ Der offizielle Name der Beispielperson lautet:
 > Jones Calamity
 
 Über die Extension `Salutation` ist zusätzlich die Anrede:
+
+<#TODO sollte hier nicht Herr sein>
 
 > Sehr geehrte Frau
 
@@ -225,8 +227,6 @@ http://hl7.org/fhir/StructureDefinition/geolocation
 
 Im Beispiel werden Breiten- und Längengrad über `latitude` und `longitude` angegeben.
 
-Die Geokoordinaten ergänzen die postalische Adresse um eine maschinenverarbeitbare geografische Position.
-
 ## Bearbeitungsstatus
 
 Der fachliche Bearbeitungsstatus wird über die EMIGA-Extension:
@@ -299,7 +299,7 @@ Die konkrete fachliche Beziehung der `RelatedPerson` zur betroffenen Person wird
 https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
 ```
 
-in `Patient.meta` wird der Benutzer angegeben, der die Ressource zuletzt geändert hat.
+in `Patient.meta` wird der Nutzende angegeben, der die Ressource zuletzt geändert hat.
 
 Im Beispiel:
 
@@ -307,7 +307,7 @@ Im Beispiel:
 Practitioner/EmigaUser-001
 ```
 
-Damit kann die letzte Änderung einer betroffenen Person einem EMIGA-Benutzer zugeordnet werden.
+Damit kann die letzte Änderung einer betroffenen Person einem EMIGA-Nutzende zugeordnet werden.
 
 ## Sicherheit, Sichtbarkeit und Verantwortlichkeit
 
