@@ -5,7 +5,7 @@
   "name": "ResourceVisibilityType",
   "id": "ResourceVisibilityType",
   "title": "Ressourcensichtbarkeit",
-  "description": "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll, oder nicht.",
+  "description": "Das CodeSystem 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll oder nicht.",
   "url": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType",
   "concept": [
     {
@@ -64,6 +64,10 @@
       "definition": "Ressourcen, die entsprechend ausgezeichnet sind, werden an die Bundesstelle und das RKI übermittelt."
     }
   ],
+  "version": "2.0.3",
+  "date": "2026-08-18",
+  "caseSensitive": true,
+  "count": 7,
   "language": "de-DE",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
@@ -78,10 +82,6 @@
       ]
     }
   ],
-  "version": "2.0.2",
-  "date": "2026-03-26",
-  "caseSensitive": true,
-  "count": 7,
   "property": [
     {
       "code": "status",

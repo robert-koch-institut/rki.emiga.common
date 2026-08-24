@@ -2,14 +2,14 @@
   "resourceType": "StructureDefinition",
   "id": "DateCreated",
   "url": "https://emiga.rki.de/fhir/common/Extension/DateCreated",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "DateCreated",
   "title": "Erstellungsdatum",
   "status": "active",
   "experimental": false,
-  "date": "2025-11-07",
+  "date": "2026-08-18",
   "publisher": "Robert Koch-Institut",
-  "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
+  "description": "Extension zur Abbildung des Erstellungsdatums einer Ressource.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -28,7 +28,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Erstellungsdatum",
-        "definition": "Extension zur Abbildung der Erstellungsdatum eine Resource."
+        "definition": "Extension zur Abbildung des Erstellungsdatums einer Ressource."
       },
       {
         "id": "Extension.extension",

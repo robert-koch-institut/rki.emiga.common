@@ -5,7 +5,7 @@
   "name": "ResourceResponsibility",
   "id": "ResourceResponsibility",
   "title": "ResourceResponsibility",
-  "description": "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, die für die Auszeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann.",
+  "description": "Das CodeSystem 'ResourceResponsibility' definiert Konzepte, die für die Kennzeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann.",
   "url": "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility",
   "concept": [
     {
@@ -1625,6 +1625,11 @@
       "display": "ÜbwSt ÖRA West (für HE, NW, RP, SL)"
     }
   ],
+  "version": "1.1.1",
+  "date": "2026-08-18",
+  "caseSensitive": true,
+  "count": 404,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility",
   "language": "de-DE",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
@@ -1638,10 +1643,5 @@
         }
       ]
     }
-  ],
-  "version": "1.1.0",
-  "date": "2025-05-05",
-  "caseSensitive": true,
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility",
-  "count": 404
+  ]
 }

@@ -5,7 +5,7 @@
   "name": "ConceptDesignationUse",
   "id": "ConceptDesignationUse",
   "title": "Nutzungszwecke für Anzeigetexte",
-  "description": "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'.",
+  "description": "Das CodeSystem 'ConceptDesignationUse' definiert Konzepte, die genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'.",
   "url": "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse",
   "concept": [
     {
@@ -29,6 +29,11 @@
       "definition": "Langform des Anzeigetextes - Diese Form der Darstellung kann genutzt werden, wenn viel Platz vorhanden ist und ggf. mehr Informationen als in der Normalform transortiert werden müssen."
     }
   ],
+  "version": "1.0.2",
+  "date": "2026-08-18",
+  "caseSensitive": true,
+  "count": 4,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse",
   "language": "de-DE",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
@@ -42,10 +47,5 @@
         }
       ]
     }
-  ],
-  "version": "1.0.1",
-  "date": "2026-03-24",
-  "caseSensitive": true,
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse",
-  "count": 4
+  ]
 }

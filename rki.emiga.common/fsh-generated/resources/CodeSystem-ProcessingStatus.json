@@ -5,7 +5,7 @@
   "name": "ProcessingStatus",
   "id": "ProcessingStatus",
   "title": "Bearbeitungsstatus",
-  "description": "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person.",
+  "description": "Das CodeSystem 'ProcessingStatus' dient der Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person.",
   "url": "https://emiga.rki.de/fhir/common/CodeSystem/ProcessingStatus",
   "concept": [
     {
@@ -68,6 +68,11 @@
       "display": "Personendaten gelöscht."
     }
   ],
+  "version": "0.5.3",
+  "date": "2026-08-24",
+  "caseSensitive": true,
+  "count": 12,
+  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
   "language": "de-DE",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
@@ -81,10 +86,5 @@
         }
       ]
     }
-  ],
-  "valueSet": "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS",
-  "version": "0.5.2",
-  "date": "2026-07-30",
-  "caseSensitive": true,
-  "count": 12
+  ]
 }

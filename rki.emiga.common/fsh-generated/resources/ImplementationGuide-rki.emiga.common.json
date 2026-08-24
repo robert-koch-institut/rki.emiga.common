@@ -54,7 +54,7 @@
           "reference": "StructureDefinition/AttachmentDocumentReference"
         },
         "name": "Anhang-Entität",
-        "description": "Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.",
+        "description": "Mit dem Anhang hat man die Möglichkeit Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisationen zu hinterlegen.",
         "exampleBoolean": false
       },
       {
@@ -78,7 +78,7 @@
           "reference": "CodeSystem/AnnotationCategory"
         },
         "name": "Annotationskategorien",
-        "description": "Das CodeSystem AnnotationCategory enthält die Codes für die verschiedenen Arten von Annotationen.",
+        "description": "Das CodeSystem 'AnnotationCategory' enthält die Codes für die verschiedenen Arten von Annotationen.",
         "exampleBoolean": false
       },
       {
@@ -86,7 +86,7 @@
           "reference": "StructureDefinition/Salutation"
         },
         "name": "Anrede",
-        "description": "Für die Betroffene Person kann eine Anrede angegeben werden. Diese wird bei Anschreiben verwendet.",
+        "description": "Extension für die Art der Anrede einer Person. Diese wird bei Anschreiben verwendet.",
         "exampleBoolean": false
       },
       {
@@ -102,7 +102,7 @@
           "reference": "CodeSystem/Salutation"
         },
         "name": "Anrede",
-        "description": "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen.",
+        "description": "Das CodeSystem 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen.",
         "exampleBoolean": false
       },
       {
@@ -110,7 +110,7 @@
           "reference": "DocumentReference/Attachment-441557620"
         },
         "name": "Attachment-441557620",
-        "description": "Test Attachment DocumentReference Example with image reference",
+        "description": "Ein Beispiel für einen Anhang vom Typ DocumentReference mit Bildreferenz.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
       },
       {
@@ -125,7 +125,7 @@
           "reference": "StructureDefinition/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
-        "description": "Extension zur Abbildung der Bearbeitungsstatus eines Vorgangs.",
+        "description": "Extension zur Abbildung des Bearbeitungsstatus eines Vorgangs.",
         "exampleBoolean": false
       },
       {
@@ -133,7 +133,7 @@
           "reference": "ValueSet/ProcessingStatusVS"
         },
         "name": "Bearbeitungsstatus",
-        "description": "Dieses ValueSet umfasst die Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden.",
+        "description": "Werteliste mit Konzepten, die den Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person definieren.",
         "exampleBoolean": false
       },
       {
@@ -141,7 +141,7 @@
           "reference": "CodeSystem/ProcessingStatus"
         },
         "name": "Bearbeitungsstatus",
-        "description": "CodeSystem zur Abbildung der Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person.",
+        "description": "Das CodeSystem 'ProcessingStatus' dient der Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person.",
         "exampleBoolean": false
       },
       {
@@ -165,7 +165,7 @@
           "reference": "Patient/AffectedPerson4550"
         },
         "name": "Beispiel Betroffene Person",
-        "description": "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
+        "description": "Eine Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
       },
       {
@@ -173,7 +173,7 @@
           "reference": "Patient/AffectedPerson-4551"
         },
         "name": "Beispiel Betroffene Person",
-        "description": "Ein Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
+        "description": "Eine Beispielinstanz einer Patient-Ressource basierend auf dem AffectedPerson-Profil.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson"
       },
       {
@@ -181,7 +181,7 @@
           "reference": "RelatedPerson/RelatedPerson4551"
         },
         "name": "Beispiel Bezugsperson der betroffenen Person",
-        "description": "Ein Beispielinstanz einer Bezugsperson-Ressource. ",
+        "description": "Eine Beispielinstanz einer Bezugsperson-Ressource. ",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"
       },
       {
@@ -189,7 +189,7 @@
           "reference": "Practitioner/EmigaUser-001"
         },
         "name": "Beispiel EMIGA Nutzende Person",
-        "description": "Ein Beispielinstanz einer Practitioner-Ressource basierend auf dem EmigaUserPractitioner-Profil.",
+        "description": "Eine Beispielinstanz einer Practitioner-Ressource basierend auf dem EmigaUserPractitioner-Profil.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
       },
       {
@@ -197,7 +197,7 @@
           "reference": "StructureDefinition/AffectedPerson"
         },
         "name": "Betroffene Person",
-        "description": "Die betroffene Person enthält relevante Angaben zum Patienten",
+        "description": "Die betroffene Person enthält relevante Angaben zum Patienten.",
         "exampleBoolean": false
       },
       {
@@ -205,7 +205,7 @@
           "reference": "ValueSet/RelatedPersonRelationshipTypeVS"
         },
         "name": "Beziehungen zu anderen Personen",
-        "description": "Werteliste mit Konzepten, die die Art der Beziehungen bestimmen.",
+        "description": "Werteliste mit Konzepten, die die Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen bestimmen.",
         "exampleBoolean": false
       },
       {
@@ -213,7 +213,7 @@
           "reference": "CodeSystem/RelatedPersonRelationshipType"
         },
         "name": "Beziehungen zu anderen Personen",
-        "description": "Die Kodiersystematik 'RelatedPersonRelationship' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen zu unterscheiden.",
+        "description": "Das CodeSystem 'RelatedPersonRelationship' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen zu unterscheiden.",
         "exampleBoolean": false
       },
       {
@@ -229,7 +229,7 @@
           "reference": "Communication/Communication441557618"
         },
         "name": "Communication441557618",
-        "description": "Test Annotation Example including attachment",
+        "description": "Ein Beispiel für eine Anntotation inkl. Anhang.",
         "exampleCanonical": "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
       },
       {
@@ -237,7 +237,7 @@
           "reference": "ConceptMap/AdminGenderEngToGenderAmtDe"
         },
         "name": "ConceptMap AdministrativeGender (Eng) to GenderAmtlichDE",
-        "description": "ConceptMap zur Übersetzung von AdministrativeGender (englisch) zu GenderAmtlichDE (deutsch).",
+        "description": "Die ConceptMap 'AdminGenderEngToGenderAmtDe' dient der Übersetzung von AdministrativeGender (englisch) zu GenderAmtlichDE (deutsch).",
         "exampleBoolean": false
       },
       {
@@ -245,7 +245,7 @@
           "reference": "StructureDefinition/DuplicateMatchMetadata"
         },
         "name": "Dublettenprüfung Metadaten",
-        "description": "Metadaten zur Dublettenprüfung einer Resource.",
+        "description": "Extension für die Metadaten zur Dublettenprüfung einer Ressource.",
         "exampleBoolean": false
       },
       {
@@ -253,7 +253,7 @@
           "reference": "CodeSystem/DuplicateMatchCriteria"
         },
         "name": "Dublettenprüfungs-Kriterien",
-        "description": "Die Kodiersystematik 'DuplicateMatchCriteria' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Dublettenprüfungs-Kriterien zu unterscheiden.",
+        "description": "Das CodeSystem 'DuplicateMatchCriteria' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Dublettenprüfungs-Kriterien zu unterscheiden.",
         "exampleBoolean": false
       },
       {
@@ -269,7 +269,7 @@
           "reference": "CodeSystem/DuplicateMatchTriggerReasons"
         },
         "name": "Dublettenprüfungsgründe",
-        "description": "Die Kodiersystematik 'DuplicateMatchTriggerReasons' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Gründen für Dublettenprüfungen zu unterscheiden.",
+        "description": "Das CodeSystem 'DuplicateMatchTriggerReasons' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Auslösern für eine Dublettenprüfungen zu unterscheiden.",
         "exampleBoolean": false
       },
       {
@@ -285,7 +285,7 @@
           "reference": "StructureDefinition/FacilityAddressAffectedPerson"
         },
         "name": "Einrichtungsadresse Betroffene Person",
-        "description": "Über Einrichtungsadresse kann eine Einrichtung als Aufenthaltsort für die Betroffene Person angegeben werden.",
+        "description": "Extension für die Abbildung der Einrichtungsadresse. Über eine Einrichtungsadresse kann eine Einrichtung als Aufenthaltsort für die Betroffene Person angegeben werden.",
         "exampleBoolean": false
       },
       {
@@ -293,7 +293,7 @@
           "reference": "NamingSystem/EmigaFileNumber"
         },
         "name": "EMIGA Aktenzeichen",
-        "description": "EMIGA Aktenzeichen für die Verwendung in Identifiers",
+        "description": "Das NamingSystem 'EmigaFileNumber' definiert das Identifikationssystem für das EMIGA-Aktenzeichen.",
         "exampleBoolean": false
       },
       {
@@ -301,7 +301,7 @@
           "reference": "StructureDefinition/IdentifierEmigaFileNumber"
         },
         "name": "EMIGA Aktenzeichen Identifier",
-        "description": "Eindeutiger fachlicher Identifier für EMIGA-Entitäten",
+        "description": "Eindeutiger fachlicher Identifier für EMIGA-Entitäten.",
         "exampleBoolean": false
       },
       {
@@ -309,7 +309,7 @@
           "reference": "NamingSystem/EmigaID"
         },
         "name": "EMIGA ID",
-        "description": "EMIGA ID für die Verwendung in Identifiers",
+        "description": "Das NamingSystem 'EmigaID' definiert das Identifikationssystem für die EMIGA-ID.",
         "exampleBoolean": false
       },
       {
@@ -317,7 +317,7 @@
           "reference": "StructureDefinition/EmigaUserPractitioner"
         },
         "name": "Emiga Nutzende Person",
-        "description": "Ist eine EMIGA nutzende Person, also jemand mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet.",
+        "description": "Dieses Profil stelle eine EMIGA nutzende Person dar. Eine EMIGA nutzende Person, ist eine Person mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet.",
         "exampleBoolean": false
       },
       {
@@ -333,7 +333,7 @@
           "reference": "StructureDefinition/DateCreated"
         },
         "name": "Erstellungsdatum",
-        "description": "Extension zur Abbildung der Erstellungsdatum eine Resource.",
+        "description": "Extension zur Abbildung des Erstellungsdatums einer Ressource.",
         "exampleBoolean": false
       },
       {
@@ -348,7 +348,7 @@
           "reference": "StructureDefinition/LandOfBirth"
         },
         "name": "Geburtsland",
-        "description": "Geburtsland der betroffenen Person.",
+        "description": "Extension für die Angabe des Geburtslandes der betroffenen Person.",
         "exampleBoolean": false
       },
       {
@@ -356,7 +356,7 @@
           "reference": "ValueSet/CommonLanguages"
         },
         "name": "häufige Sprachen",
-        "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)",
+        "description": "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47) für die Darstellung von Sprachen.",
         "exampleBoolean": false
       },
       {
@@ -364,7 +364,7 @@
           "reference": "ValueSet/YesNoNullFlavor"
         },
         "name": "Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten",
-        "description": "Werteliste mit Ja, Nein, nicht ermittelbar und nicht erhoben.",
+        "description": "Werteliste mit Konzepten, die binäre Antworten sowie Angaben zu nicht verfügbaren oder nicht erhobenen Informationen abbilden.",
         "exampleBoolean": false
       },
       {
@@ -372,7 +372,7 @@
           "reference": "ValueSet/CountyVS"
         },
         "name": "Landkreis-Werteliste",
-        "description": "Die Wertemenge 'CountyVS' definiert Konzepte, die den Landkreis charakterisieren.",
+        "description": "Werteliste mit Werten, die den Landkreis definieren.",
         "exampleBoolean": false
       },
       {
@@ -396,7 +396,7 @@
           "reference": "ValueSet/NullFlavor"
         },
         "name": "Nicht ermittelbar, Nicht erhoben Antworten",
-        "description": "Werteliste mit nicht ermittelbar und nicht erhoben Antworten.",
+        "description": "Werteliste mit Konzepten, die den Grund für das Fehlen eines regulären Wertes angeben.",
         "exampleBoolean": false
       },
       {
@@ -404,7 +404,7 @@
           "reference": "StructureDefinition/NullFlavor"
         },
         "name": "Null flavor",
-        "description": "If the value is not a proper value, indicates the reason.",
+        "description": "Die Extension gibt an, aus welchem Grund für das betreffende Element kein regulärer Wert vorliegt.",
         "exampleBoolean": false
       },
       {
@@ -420,7 +420,7 @@
           "reference": "CodeSystem/ConceptDesignationUse"
         },
         "name": "Nutzungszwecke für Anzeigetexte",
-        "description": "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'.",
+        "description": "Das CodeSystem 'ConceptDesignationUse' definiert Konzepte, die genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'.",
         "exampleBoolean": false
       },
       {
@@ -428,7 +428,7 @@
           "reference": "CodeSystem/OrganizationType"
         },
         "name": "Organizationstyp",
-        "description": "Die Kodiersystematik 'OrganizationType' definiert Konzepte, die die Art/den Typ einer Organisation aus Sicht des ÖGD grob charakterisieren.",
+        "description": "Das CodeSystem 'OrganizationType' definiert Konzepte, die die Art bzw. den Typ einer Organisation aus Sicht des ÖGD grob charakterisieren.",
         "exampleBoolean": false
       },
       {
@@ -452,7 +452,7 @@
           "reference": "CodeSystem/PersonalInformation"
         },
         "name": "Personenbezug",
-        "description": "Die Kodiersystematik PersonalInformation definiert Konzepte, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
+        "description": "Das CodeSystem 'PersonalInformation' definiert Konzepte, die den Personenbezug der Daten in relevanten Ressourcen kennzeichnen.",
         "exampleBoolean": false
       },
       {
@@ -460,7 +460,7 @@
           "reference": "CodeSystem/RegionKeys"
         },
         "name": "Regionalschlüssel",
-        "description": "Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) - Die Kodiersystematik würde in FHIR Format durch RKI publiziert im Rahmen des Projektes EMIGA. Die Versionsnummer ist hierbei analog zu der Versionsnummer des verwendeten Stands der Regionalschlüssel von Destatis. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/",
+        "description": "Das CodeSystem 'RegionKeys' definiert die Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS). Die Versionsnummer ist hierbei analog zu der Versionsnummer des verwendeten Stands der Regionalschlüssel von Destatis. Quelle: Statistisches Bundesamt, Wiesbaden. https://www.dcat-ap.de/def/politicalGeocoding/regionalKey/",
         "exampleBoolean": false
       },
       {
@@ -476,7 +476,7 @@
           "reference": "StructureDefinition/RegionalKey"
         },
         "name": "Regionalschlüssel und Regionalbezugsystem",
-        "description": "Erweiterung zur Darstellung des Regionalschlüssels und des Regionalbezugsystems",
+        "description": "Extension zur Darstellung des Regionalschlüssels und des Regionalbezugsystems.",
         "exampleBoolean": false
       },
       {
@@ -492,7 +492,7 @@
           "reference": "CodeSystem/Relevance"
         },
         "name": "Relevanz",
-        "description": "Die Kodiersystematik Relevance definiert Konzepte, die die für verschiedene Emiga Use Cases relevanten Ressourcen kennzeichnen.",
+        "description": "Das CodeSystem 'Relevance' definiert Konzepte, die die für verschiedene Emiga Use Cases relevanten Ressourcen kennzeichnen.",
         "exampleBoolean": false
       },
       {
@@ -500,7 +500,7 @@
           "reference": "ValueSet/ResourceResponsibility"
         },
         "name": "ResourceResponsibility",
-        "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen.",
+        "description": "Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen definieren.",
         "exampleBoolean": false
       },
       {
@@ -508,7 +508,7 @@
           "reference": "CodeSystem/ResourceResponsibility"
         },
         "name": "ResourceResponsibility",
-        "description": "Die Kodiersystematik 'ResourceResponsibility' definiert Konzepte, die für die Auszeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann.",
+        "description": "Das CodeSystem 'ResourceResponsibility' definiert Konzepte, die für die Kennzeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann.",
         "exampleBoolean": false
       },
       {
@@ -532,7 +532,7 @@
           "reference": "CodeSystem/ResourceVisibilityType"
         },
         "name": "Ressourcensichtbarkeit",
-        "description": "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll, oder nicht.",
+        "description": "Das CodeSystem 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll oder nicht.",
         "exampleBoolean": false
       },
       {
@@ -540,7 +540,7 @@
           "reference": "NamingSystem/SurvNetFileNumber"
         },
         "name": "SurvNet Aktenzeichen",
-        "description": "Das SurvNet-Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe.",
+        "description": "Das NamingSystem 'SurvNetFileNumber' definiert das Identifikationssystem für das SurvNet Aktenzeichen. Das SurvNet Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe.",
         "exampleBoolean": false
       },
       {
@@ -548,7 +548,7 @@
           "reference": "StructureDefinition/IdentifierSurvNetFileNumber"
         },
         "name": "SurvNet Aktenzeichen Identifier",
-        "description": "SurvNet Aktenzeichen Identifier-Profil",
+        "description": "SurvNet Aktenzeichen Identifier-Profil.",
         "exampleBoolean": false
       },
       {
@@ -556,7 +556,7 @@
           "reference": "ValueSet/FacilityAssociationTypeVS"
         },
         "name": "Verbindungs-Qualifikation",
-        "description": "Werteliste mit Konzepten, die die Art der Verbindungen bestimmen.",
+        "description": "Werteliste mit Konzepten, die die Art der Verbindungen zwischen Einrichtungen bestimmen.",
         "exampleBoolean": false
       },
       {
@@ -564,7 +564,7 @@
           "reference": "CodeSystem/FacilityAssociationType"
         },
         "name": "Verbindungs-Qualifikation",
-        "description": "Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung.",
+        "description": "Das CodeSystem 'FacilityAssociationType' enthält Codes für die verschiedenen Arten von Verbindungen einer Betroffenen Person zu einer Einrichtung.",
         "exampleBoolean": false
       },
       {
@@ -572,7 +572,7 @@
           "reference": "ValueSet/PersonToOrganizationTypeVS"
         },
         "name": "Werteliste für die die Personen-zu-Organisation-Zuordnung.",
-        "description": "Enthält alle Organisationen für die Personen-zu-Organisation-Zuordnung. Es kombiniert die Value Sets für Krankenhäuser und generische Organisationen, ausgenommen davon sind ÖGD-Organisationen (GA, LB, RKI, BW).",
+        "description": "Werteliste mit Konzepten, die Organisationen für die Personen-zu-Organisation-Zuordnung darstellen. Sie kombiniert die Value Sets für Krankenhäuser und generische Organisationen, ausgenommen davon sind ÖGD-Organisationen (GA, LB, RKI, BW).",
         "exampleBoolean": false
       },
       {
@@ -580,7 +580,7 @@
           "reference": "StructureDefinition/LastModifiedBy"
         },
         "name": "Zuletzt editiert von",
-        "description": "Extension um der letzten Nutzende Person zu referenzieren, die eine Ressource editiert hat.",
+        "description": "Extension um die Person zu referenzieren, die als letztes eine Ressource editiert hat.",
         "exampleBoolean": false
       },
       {
