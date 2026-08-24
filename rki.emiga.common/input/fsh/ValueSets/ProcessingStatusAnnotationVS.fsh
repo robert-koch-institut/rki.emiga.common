@@ -2,10 +2,11 @@ ValueSet: ProcessingStatusAnnotation
 Id: ProcessingStatusAnnotation
 Title: "Bearbeitungsstatus Annotation"
 Description: "Werteliste mit möglichen Bearbeitungsstatus für Annotationen."
-* insert MetadataTerminology
+* ^url = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation"
 * ^version = "0.1.1"
 * ^date = "2026-08-24"
-* ^url = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusAnnotation"
+
+* insert MetadataTerminology
 
 * $ProcessingStatusCS#inprogress "In Bearbeitung"
 * $ProcessingStatusCS#closed "Abgeschlossen"
