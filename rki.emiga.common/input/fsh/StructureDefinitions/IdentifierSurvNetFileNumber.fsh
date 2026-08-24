@@ -2,10 +2,13 @@ Profile: IdentifierSurvNetFileNumber
 Parent: Identifier
 Id: IdentifierSurvNetFileNumber
 Title: "SurvNet Aktenzeichen Identifier"
-Description: "SurvNet Aktenzeichen Identifier-Profil"
+Description: "SurvNet Aktenzeichen Identifier-Profil."
+
+* ^version = "0.1.1"
+* ^date = "2026-08-18"
+
 * insert MetadataProfile
-* ^version = "0.1.0"
-* ^date = "2025-09-26"
+
 * type = $v2-0203#XX "Organization identifier"
 * type MS
 * type ^short = "Art des Identifiers"

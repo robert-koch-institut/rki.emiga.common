@@ -1,15 +1,16 @@
 CodeSystem: ResourceVisibilityType
 Id: ResourceVisibilityType
 Title: "Ressourcensichtbarkeit"
-Description: "Die Kodiersystematik 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll, oder nicht."
-* insert MetadataTerminology
-* ^version = "2.0.2"
-* ^date = "2026-03-26"
+Description: "Das CodeSystem 'ResourceVisibilityType' definiert Konzepte, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. Die entsprechende Information kann herangezogen werden, um im Rahmen des Access Control Systems zu entscheiden, ob eine Information für bestimmte Nutzergruppen sichtbar gemacht werden soll oder nicht."
+* ^version = "2.0.3"
+* ^date = "2026-08-18"
 * ^caseSensitive = true
 * ^content = #complete
+* ^count = 7
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceVisibilityType"
 //* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType"
-* ^count = 7
+
+* insert MetadataTerminology
 
 * ^property[0].code = #status
 * ^property[0].uri = "http://hl7.org/fhir/concept-properties#status"

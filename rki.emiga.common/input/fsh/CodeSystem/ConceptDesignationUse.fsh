@@ -1,15 +1,16 @@
 CodeSystem: ConceptDesignationUse
 Id: ConceptDesignationUse
 Title: "Nutzungszwecke für Anzeigetexte"
-Description: "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'."
-* insert MetadataTerminology
-* ^version = "1.0.1"
-* ^date = "2026-03-24"
+Description: "Das CodeSystem 'ConceptDesignationUse' definiert Konzepte, die genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'."
+* ^version = "1.0.2"
+* ^date = "2026-08-18"
 * ^caseSensitive = true
 * ^content = #complete
-* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse"
-* ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
 * ^count = 4
+* ^url = "https://emiga.rki.de/fhir/common/CodeSystem/ConceptDesignationUse"
+* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ConceptDesignationUse"
+
+* insert MetadataTerminology
 
 * #abbreviation "Abkürzung" "Abkürzung für den Anzeigetext - Diese Darstellung repräsentiert eine maximal verkürzte Form des Anzeigetextes und kann beispielsweise zur platzsparenden Anzeige in Tabellen genutzt werden."
 * #short "Kurzform" "Kurzform des Anzeigetextes - Diese Form sollte üblicherweise weniger umfassend sein als die Normalform und wird immer dann genutzt, wenn ein weniger platzintensive Darstellung erforderlich ist."

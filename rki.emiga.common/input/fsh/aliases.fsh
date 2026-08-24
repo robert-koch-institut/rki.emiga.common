@@ -43,9 +43,6 @@ Alias: $ResourceResponsibilityVS = https://emiga.rki.de/fhir/common/ValueSet/Res
 Alias: $ResourceVisibilityTypeVS = https://emiga.rki.de/fhir/common/ValueSet/ResourceVisibilityType
 Alias: $MatchOutputBundle = https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle
 
-
-
-
 // deutsches Basisprofil
 Alias: $address-de-basis = http://fhir.de/StructureDefinition/address-de-basis
 Alias: $gender-amtlich-de = http://fhir.de/StructureDefinition/gender-amtlich-de

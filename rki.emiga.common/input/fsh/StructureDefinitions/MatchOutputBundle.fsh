@@ -3,12 +3,13 @@ Parent: Bundle
 Id: MatchOutputBundle
 Title: "Match Output Bundle"
 Description: "Dieses Profil bildet ein Match-Output-Bundle ab. Es dient der strukturierten Zusammenführung und gemeinsamen Übertragung von Match-Ergebnissen (z.B. Dublettenprüfungen) zu Fällen, Ausbrüchen, Personen oder anderen Entitäten innerhalb eines fachlichen Vorgangs."
-* insert ProfileMetaProfileTags
-* insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle"
 * ^version = "0.1.0"
 * ^date = "2026-05-12"
+
+* insert ProfileMetaProfileTags
+* insert MetadataProfile
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle"
 

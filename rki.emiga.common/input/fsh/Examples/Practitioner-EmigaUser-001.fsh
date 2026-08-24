@@ -1,7 +1,7 @@
 Instance: EmigaUser-001
 InstanceOf: EmigaUserPractitioner
 Title: "Beispiel EMIGA Nutzende Person"
-Description: "Ein Beispielinstanz einer Practitioner-Ressource basierend auf dem EmigaUserPractitioner-Profil."
+Description: "Eine Beispielinstanz einer Practitioner-Ressource basierend auf dem EmigaUserPractitioner-Profil."
 Usage: #example
 * id = "EmigaUser-001"
 
@@ -14,4 +14,3 @@ Usage: #example
 * meta.security[responsibility] = $ResourceResponsibility#1. "Robert Koch-Institut"
 
 * identifier.value = "testemail@example.com"
-

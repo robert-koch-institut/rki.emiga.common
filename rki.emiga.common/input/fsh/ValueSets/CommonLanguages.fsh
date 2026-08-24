@@ -1,12 +1,13 @@
 ValueSet: CommonLanguages
 Id: CommonLanguages
 Title: "häufige Sprachen"
-Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47)"
+Description: "Die Werteliste umfasst häufige Codes aus BCP-47 (http://tools.ietf.org/html/bcp47) für die Darstellung von Sprachen."
+* ^version = "0.2.1"
+* ^date = "2026-08-18"
+
+* insert MetadataTerminology
 
 * ^identifier.system = "urn:ietf:rfc:3986"
-* insert MetadataTerminology
-* ^version = "0.2.0"
-* ^date = "2026-06-17"
 
 * $bcp47#ar "Arabic"
 * $bcp47#ar ^designation[0].language = #da

@@ -3,9 +3,12 @@ Parent: Identifier
 Id: IdentifierEmigaID
 Title: "EMIGA-ID Identifier"
 Description: "Technischer Indentifikator für EMIGA-Entitäten."
-* insert MetadataProfile
+
 * ^version = "0.2.0"
 * ^date = "2025-09-26"
+
+* insert MetadataProfile
+
 * type = $v2-0203#XX "Organization identifier"
 * type MS
 * type ^short = "Art des Identifiers"
