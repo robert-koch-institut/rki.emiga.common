@@ -16,18 +16,12 @@ select
 
 <br>&nbsp;<br>
 
-Das Profil `AffectedPersonRelatedPerson` basiert auf der FHIR-Ressource `RelatedPerson` und dient der Abbildung einer **Bezugsperson zu einer betroffenen Person (`AffectedPerson`)**.
-Die `RelatedPerson` repräsentiert dabei die Bezugsperson selbst. Die betroffene Person, zu der die Beziehung besteht, wird über das Element `RelatedPerson.patient` referenziert.
+Das Profil `AffectedPersonRelatedPerson` basiert auf der FHIR-Ressource `RelatedPerson` und dient der Abbildung einer Bezugsperson zu einer betroffenen Person (`AffectedPerson`).
+Die betroffene Person, zu der die Beziehung besteht, wird über das Element `RelatedPerson.patient` referenziert.
 
 ### Beziehung zur betroffenen Person
-Die Art der Beziehung zwischen der Bezugsperson und der betroffenen Person wird über `RelatedPerson.relationship` beschrieben.
+Die Art der Beziehung zwischen der Bezugsperson und der betroffenen Person wird über `RelatedPerson.relationship` designiert.
 Mindestens eine Beziehung ist anzugeben. Die zulässigen Ausprägungen werden durch das ValueSet `RelatedPersonRelationshipTypeVS` festgelegt. Damit können insbesondere persönliche, familiäre oder rechtliche Beziehungen zur betroffenen Person strukturiert angegeben werden.
-
-Eine `AffectedPerson` kann über `link.relatedPersonLink` zusätzlich auf eine `AffectedPersonRelatedPerson` verweisen, wenn beide Ressourcen dieselbe physische Person in unterschiedlichen FHIR-Kontexten repräsentieren. 
-Dieser Verknüpfung ist von der fachlichen Beziehung zwischen zwei Personen zu unterscheiden, die über `AffectedPersonRelatedPerson.patient` und `AffectedPersonRelatedPerson.relationship` beschrieben wird.
-
-<TODO check start>
-
 Eine Bezugsperson kann mehrere Beziehungen zur selben betroffenen Person besitzen. In diesem Fall können mehrere Einträge in `RelatedPerson.relationship` angegeben werden.
 
 Die grundlegende Modellierung ist damit:
@@ -45,8 +39,6 @@ AffectedPersonRelatedPerson
  Art der Beziehung
 ```
 
-Dabei beantwortet die Frage **„Zu welcher betroffenen Person gehört diese Bezugsperson?“**, während `relationship` beschreibt, **„In welcher Beziehung steht die Bezugsperson zu dieser betroffenen Person?“**.
-
 ### Bezugsperson und betroffene Person als dieselbe physische Person
 
 In bestimmten fachlichen Konstellationen kann eine Person sowohl als `AffectedPerson` als auch als `AffectedPersonRelatedPerson` im Datenbestand repräsentiert sein.
@@ -55,9 +47,7 @@ Dies ist beispielsweise dann relevant, wenn eine Person in einem fachlichen Kont
 
 In diesem Fall kann die entsprechende Slice von `AffectedPerson.link` verwendet werden, um die beiden Ressourcen miteinander zu verknüpfen und kenntlich zu machen, dass sie **dieselbe physische Person in unterschiedlichen FHIR-Rollen** repräsentieren.
 
-Diese Verknüpfung ist von der eigentlichen Beziehung zwischen Bezugsperson und betroffener Person zu unterscheiden:
-
-`RelatedPerson.patient` und `RelatedPerson.relationship` beschreiben somit die **fachliche Beziehung zwischen zwei Personen**. Die Verknüpfung über `AffectedPerson.link` dient dagegen der **Identitätsverknüpfung zweier FHIR-Ressourcen**, die dieselbe physische Person repräsentieren.
+`RelatedPerson.patient` und `RelatedPerson.relationship` beschreiben die **fachliche Beziehung zwischen zwei Personen**. Die Verknüpfung über `AffectedPerson.link` dient dagegen der **Identitätsverknüpfung zweier FHIR-Ressourcen**, die dieselbe physische Person repräsentieren.
 <TODO check end>
 
 ## Profil

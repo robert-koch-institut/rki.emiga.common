@@ -15,7 +15,7 @@ select
 </fql>
 
 <br>&nbsp;<br>
-Das Profil `AnnotationCommunication` basiert auf der FHIR-Ressource `Communication` und dient der Abbildung einer **Annotation zu einer fachlichen Entität innerhalb von EMIGA**.
+Das Profil `AnnotationCommunication` basiert auf der FHIR-Ressource `Communication` und dient der Abbildung einer **Annotation** zu einer fachlichen Entität innerhalb von EMIGA.
 
 Eine Annotation ermöglicht es, ergänzende fachliche Informationen, Hinweise oder Kommentare zu einem bestehenden fachlichen EMIGA-Entität zu erfassen. Eine Annotation wird als eigenständige FHIR-Ressource verwaltet und kann neben einem Betreff und textuellen Inhalten auch Referenzen auf Anhänge enthalten.
 
@@ -47,8 +47,6 @@ Communication.about
 ```
 
 wird angegeben, **auf welche fachliche Entität sich die Annotation bezieht** (die fachliche Verknüpfung zum Gegenstand der Annotation).
-
-Damit kann beispielsweise ein Kommentar oder Hinweis einem bestehenden fachlichen Vorgang zugeordnet werden, ohne dass der Inhalt der Annotation unmittelbar Bestandteil der referenzierten Ressource sein muss.
 
 ### Betreff
 
@@ -163,8 +161,6 @@ geführt.
 
 Im Beispiel lautet der fachliche Bearbeitungsstatus `forinformation – Zur Kenntnis`.
 
-> Note: Status "zur Kenntnis" als ProcessingStatus ist doch komisch, oder? gibt es dan auch Status "z. K. genommen"??
-
 ### Identifikation
 
 Eine Annotation kann über `Communication.identifier` mit EMIGA-spezifischen und weiteren fachlichen Identifiern versehen werden, damit sie eindeutig identifiziert und unter unterschiedlichen Verarbeitungskontexten zugeordnet werden.
@@ -192,34 +188,21 @@ https://emiga.rki.de/fhir/common/CodeSystem/PersonalInformation
 
 Damit kann bereits auf Ressourcenebene kenntlich gemacht werden, dass bei der Verarbeitung der Annotation personenbezogene Informationen zu berücksichtigen sind.
 
-### Sicherheit und Verantwortlichkeit
-
-Über `Communication.meta.security` werden die Sichtbarkeit und Verantwortlichkeit der Annotation beschrieben.
-
-Hierüber kann insbesondere festgelegt werden,
-
-* in welchem organisatorischen Kontext die Annotation sichtbar beziehungsweise übertragbar ist und
-* welche Stelle für die Ressource verantwortlich ist.
-
-Im Beispiel ist die Annotation über den `ResourceVisibilityType` als `transferable` (übermittlungfähig) gekennzeichnet.
-
-Die Security Labels sind bei der Verarbeitung der Annotation sowie der von ihr referenzierten Ressourcen zu berücksichtigen.
-
 ### Versionierung von Annotation und Anhängen
 
 Annotationen und ihre Anhänge werden jeweils als eigenständige FHIR-Ressourcen verwaltet und daher unabhängig voneinander versioniert.
 
-Wird der textuelle Inhalt, der Betreff (Frage: Betriff ist also nicht Titel?) oder eine andere Information der Annotation geändert, entsteht eine neue Version der `Communication`.
+- Wird der textuelle Inhalt, der Betreff (Frage: Betriff ist also nicht Titel?) oder eine andere Information der Annotation geändert, entsteht eine neue Version der `Communication`.
 
-Wird einer Annotation ein neuer Anhang hinzugefügt oder eine bestehende Referenz entfernt, ändert sich `Communication.payload`. Dadurch entsteht ebenfalls eine neue Version der Annotation.
+- Wird einer Annotation ein neuer Anhang hinzugefügt oder eine bestehende Referenz entfernt, ändert sich `Communication.payload`. Dadurch entsteht ebenfalls eine neue Version der Annotation.
 
-Wird dagegen lediglich eine neue Version eines bereits referenzierten `AttachmentDocumentReference` erstellt und bleibt dessen Ressourcen-ID unverändert, muss die Annotation nicht geändert werden.
+- Wird dagegen lediglich eine neue Version eines bereits referenzierten `AttachmentDocumentReference` erstellt und bleibt dessen Ressourcen-ID unverändert, muss die Annotation nicht geändert werden.
 
 Vereinfacht:
 
 | Änderung                                              | Neue Version der Annotation |
 | ----------------------------------------------------- | --------------------------- |
-| Betreff geändert                                      | ja                          |
+| Betreff geändert                                      | ja <#TODO: check: correct?>          |
 | Textinhalt geändert                                   | ja                          |
 | neuer Anhang hinzugefügt                              | ja                          |
 | Anhang entfernt                                       | ja                          |
@@ -311,7 +294,3 @@ select
 - Annotation.status: ebenfalls ein modelbedingte Angabe. wird immer mit der Wert "completed" belegt.
 - Annotation.sent: das hier ist ein frei wählbares Datum" (warum freiwähbar??)
 - Annotation.creation (von attachment): Datum des Hochladens des Anhangs (??)
-- Anhang.date: Zeitpunkt der Erstellung des Anhangs. Dies ist <u>nicht</u> der Zeitpunkt der Erstellung des Anhangdokuments, sondern der Zeitpunkt, wanndas Dokument als Anhang erstellt wurde.
-- Person: anscheinend ist Person die übergeordnete/generische Class. daraus kann über "link" sowhol RelatedPerson als auch Patient dargestellt werden (<TODO: stimmt es>):
-    - Link zu einer Bezugsperson (Related Person) Resource die die selbe Person darstellt.
-    - Link zu einer betroffenen Person (Patient) Resource die die selbe Person darstellt.

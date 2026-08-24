@@ -10,17 +10,6 @@ Die Ressource verwendet das EMIGA-Profil:
 https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson
 ```
 
-Das Beispiel veranschaulicht insbesondere:
-
-* die Identifikation einer betroffenen Person über EMIGA-spezifische Identifier,
-* die Abbildung verschiedener Namensarten,
-* Staatsangehörigkeit und Geburtsland,
-* amtliches Geschlecht,
-* Hauptwohnsitz mit strukturierter Adresse und Geokoordinaten,
-* Bearbeitungsstatus der Datensatz
-* Kommunikationssprache,
-* sowie die Verknüpfung zu einer weiteren Person über `Patient.link`.
-
 Alle verwendeten Personen-, Kontakt- und Adressdaten sind Beispieldaten.
 
 ## Beispiel-Szenario
@@ -309,26 +298,6 @@ Practitioner/EmigaUser-001
 
 Damit kann die letzte Änderung einer betroffenen Person einem EMIGA-Nutzende zugeordnet werden.
 
-## Sicherheit, Sichtbarkeit und Verantwortlichkeit
-
-Über `Patient.meta.security` werden die Sichtbarkeit und Verantwortlichkeit der Ressource beschrieben.
-
-Die Sichtbarkeit lautet:
-
-```text
-inAgency – Eigene ÖGD-Stelle
-```
-
-Die Ressource ist damit für die eigene ÖGD-Stelle vorgesehen.
-
-Als verantwortliche Stelle wird angegeben:
-
-```text
-1. – Robert Koch-Institut
-```
-
-Die entsprechenden Security Labels ermöglichen die organisatorische Steuerung von Sichtbarkeit und Verantwortlichkeit innerhalb von EMIGA.
-
 ## Fachlicher Schwerpunkt des Beispiels
 
 Der Schwerpunkt dieses Beispiels liegt auf einer betroffenen Person mit einem vergleichsweise kompakten Satz an demografischen Informationen und einer zusätzlichen Personenverknüpfung.
@@ -342,24 +311,3 @@ Besonders veranschaulicht werden:
 * Staatsangehörigkeit und Geburtsland,
 * amtliches Geschlecht,
 * sowie die Referenz auf eine zugehörige `RelatedPerson` über `Patient.link`.
-
-## Zusammenfassung
-
-Dieses Beispiel zeigt eine EMIGA-konforme betroffene Person mit:
-
-* EMIGA-spezifischen Identifiern,
-* offiziellem Namen, Geburtsnamen und weiterem Namen,
-* Anrede,
-* FHIR-Geschlecht und amtlichem Geschlecht,
-* Geburtsdatum und Geburtsland,
-* Staatsangehörigkeit,
-* Kontaktinformationen,
-* Hauptwohnsitz,
-* strukturierter Adresse und Geolokation,
-* Bearbeitungsstatus,
-* Kommunikationssprache,
-* Änderungsinformation,
-* Security Labels,
-* sowie einer Verknüpfung zu einer `RelatedPerson`.
-
-Der besondere fachliche Schwerpunkt liegt auf der Modellierung einer zusätzlichen personenbezogenen Beziehung über `Patient.link`.

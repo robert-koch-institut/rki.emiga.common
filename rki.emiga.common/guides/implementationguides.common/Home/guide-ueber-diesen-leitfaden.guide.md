@@ -5,12 +5,5 @@ Dieser Implementierungsleitfaden beschreibt die FHIR-Spezifikation des EMIGA-Com
 Dieser Leitfaden richtet sich an Anwendende sowie Softwareherstellende von Informationssystemen, die die Daten gemäß der EMIGA-Spezifikation an EMIGA übermitteln, aus EMIGA empfangen oder innerhalb von EMIGA verarbeiten.
 
 ### Aufbau dieses Implementierungsleitfadens
-Dieser Leitfaden enthält Hinweise und Beispiele zur Anwendung dieser Ressourcen unter anderem:
-
-<#TODO: check>
-- die Definition grundlegender FHIR-Profile (*StructureDefinitions*)
-- Definitionen der verwendeten FHIR-*Extensions*
-- *semantische Vorgaben* in Form von ValueSets, CodeSystems und NamingSystems (siehe Abschnitt Terminologien)
-- *CapabilityStatements* zur Beschreibung der unterstützten FHIR-Schnittstellen (?)
-- Informationen zu den *Abhängigkeiten* von den zugrunde liegenden FHIR-Basisprofilen und externen Spezifikationen (z.B. DEMIS) (?)
-
+Dieser Leitfaden enthält Hinweise und Beispiele zur Anwendung dieser Ressourcen.
+Das Kapitel **Grundlagen und Überblick** vermittelt die fachlichen und technischen Grundlagen im EMIGA-Kontext, insbesondere in Bezug auf das Konzept eines Case (Falls, bzw. Erkrankungsfall), sowie die wesentlichen zugrunde liegenden Konzepte. Unter **Anwendungsfälle** werden die für die Ressourcen dieses Pakets relevanten Anwendungsszenarien anhand von UML-Diagrammen beispielhaft beschrieben. Das Kapitel **Ressourcen** enthält die im Rahmen dieses Leitfadens definierten FHIR-Ressourcen sowie zugehörige Beispielprofile. Unter **Implementierungshinweise** werden ergänzende Hinweise zur technischen Umsetzung und Verwendung der definierten Artefakte bereitgestellt. Ergänzende Hinweise und Weiterführende Informationen enthalten zusätzliche Erläuterungen sowie Verweise auf relevante weitere Dokumentationen.

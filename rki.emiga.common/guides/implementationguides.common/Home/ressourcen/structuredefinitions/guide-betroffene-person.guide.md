@@ -30,59 +30,6 @@ Das Profil `AffectedPerson` basiert auf der FHIR-Ressource `Patient` und dient d
 
 Eine `AffectedPerson` repräsentiert die Person, auf die sich ein fachlicher Vorgang (z.B. ein Fall) bezieht. Welche konkrete fachliche Rolle die Person innerhalb eines Vorgangs einnimmt – beispielsweise als Fallperson oder Kontaktperson – wird nicht durch das Profil `AffectedPerson` selbst festgelegt.
 
-Das Profil ermöglicht neben grundlegenden demografischen Angaben insbesondere die Abbildung von:
-
-* Identifikatoren,
-* unterschiedlichen Namensarten,
-* Kontaktinformationen,
-* amtlichem Geschlecht,
-* Geburtsdatum,
-* Geburtsland,
-* Staatsangehörigkeit,
-* Wohn- und Aufenthaltsadressen,
-* Geokoordinaten und regionalen Zuordnungen der Wohnort,
-* Einrichtungsbezügen, <TODO: woher, berechnet?>
-* Kommunikationssprachen,
-* behandelnden Personen sowie
-* Bearbeitungsinformationen.
-
-> Bemerkung: Dieselbe Person kann beispielsweise in einem Kontext selbst eine `AffectedPerson` und in einem anderen Kontext eine `RelatedPerson` einer weiteren betroffenen Person sein.
-
-Das Profil stellt hierfür entsprechende Slices von `Patient.link` bereit:
-
-| Slice                     | Zweck                                                                               |
-| ------------------------- | ----------------------------------------------------------------------------------- |
-| `link[relatedPersonLink]` | Verknüpfung mit einer `RelatedPerson`-Repräsentation derselben physischen Person    |
-| `link[patientLink]`       | Verknüpfung mit einer weiteren `Patient`-Repräsentation derselben physischen Person |
-
-```
-AffectedPerson ───── Patient.link ─────► RelatedPerson
-      │                                  │
-      └──── dieselbe physische Person ───┘
-
-
-Fachliche Beziehung:
-
-RelatedPerson
-      │
-      │ patient
-      ▼
-AffectedPerson
-      ▲
-      │
- relationship
-```
-
-### Identifikation
-
-Eine betroffene Person kann über `Patient.identifier` mit EMIGA-spezifischen Identifiern versehen werden.
-
-Hierzu zählen insbesondere:
-
-* `EmigaID`
-* `EmigaFileNumber`
-
-Die Identifier ermöglichen die eindeutige Identifikation und fachliche Zuordnung einer betroffenen Person innerhalb von EMIGA.
 
 ### Namen und Anrede
 
@@ -336,7 +283,7 @@ angegeben werden.
 
 Der Bearbeitungsstatus beschreibt den fachlichen Zustand der Person-Instanz beziehungsweise des damit verbundenen Verarbeitungskontexts entsprechend der hierfür vorgesehenen EMIGA-Terminologie. <TODO: welche codesystem? check out>
 
-### Bearbeitende EMIGA-Nutzende bei Änderungen
+### Bearbeitende EMIGA-Nutzende
 
 Über die Extension:
 
@@ -349,19 +296,6 @@ kann der EMIGA-Benutzer referenziert werden, der die Ressource zuletzt geändert
 Die Referenz verweist auf einen `EmigaUserPractitioner`.
 
 Damit kann nachvollzogen werden, welcher Benutzer die letzte Änderung an der betroffenen Person vorgenommen hat.
-
-### Sicherheit, Sichtbarkeit und Verantwortlichkeit
-
-Über `Patient.meta.security` werden die Sichtbarkeit und Verantwortlichkeit der Ressource gesteuert.
-
-Hierfür werden insbesondere die EMIGA-CodeSysteme für:
-
-* `ResourceVisibilityType`
-* `ResourceResponsibility`
-
-verwendet.
-
-Die Security Labels ermöglichen damit eine organisatorische Zuordnung der Ressource und steuern, in welchem Kontext die Informationen zur betroffenen Person sichtbar beziehungsweise weitergabefähig sind.
 
 ### Fachliche Abbildung ausgewählter Attribute
 Die folgende Übersicht fasst zentrale fachliche Attribute des Person-Ressource zusammen.
