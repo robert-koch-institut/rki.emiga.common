@@ -48,16 +48,16 @@ Das Beispiel veranschaulicht damit insbesondere:
 
 <tabs>
     <tab title="Übersicht">      
-        {{render:DocumentReference-441557620.json}}
+        {{render:DocumentReference-Attachment-441557620.json}}
     </tab>
     <tab title="XML">      
-        {{xml:DocumentReference-441557620.json}}
+        {{xml:DocumentReference-Attachment-441557620.json}}
     </tab>
     <tab title="JSON">
-        {{json:DocumentReference-441557620.json}}
+        {{json:DocumentReference-Attachment-441557620.json}}
     </tab>
     <tab title="Link">
-        {{link:DocumentReference-441557620.json}}
+        {{link:DocumentReference-Attachment-441557620.json}}
     </tab>
 </tabs>
 
