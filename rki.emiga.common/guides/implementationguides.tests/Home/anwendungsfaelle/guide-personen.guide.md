@@ -5,7 +5,7 @@ Dieser Abschnitt beschreibt die Anwendungsfälle zur Abbildung von **betroffenen
 Eine betroffene Person wird als `Patient`-Ressourceninstanz gemäß dem Profil `AffectedPerson` abgebildet. Eine Bezugsperson wird als eigenständige `RelatedPerson`-Ressourceninstanz gemäß dem Profil `AffectedPersonRelatedPerson` geführt. 
 
 
-{{render:guides/implementationguides.common/PlantUML/PNGs/uml-personen-und-bezugspersonen.png}}
+{{render:guides/implementationguides.tests/PlantUML/PNGs/uml-personen-und-bezugspersonen.png}}
 
 Dabei sind insbesondere zwei Arten von Referenzen bzw. Verknüpfungen zu unterscheiden:
 * `AffectedPersonRelatedPerson.patient` beschreibt die **fachliche Beziehung einer Bezugsperson zu einer betroffenen Person**.
@@ -14,10 +14,10 @@ Dabei sind insbesondere zwei Arten von Referenzen bzw. Verknüpfungen zu untersc
 ## Überblick
 Die folgende Darstellung zeigt die Ressourcen, die beim gemeinsamen Anlegen bzw. Verarbeiten einer betroffenen Person in einem FHIR-Transaction-Bundle übermittelt werden können.
 
-{{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPersonBundle.png}}
+{{render:guides/implementationguides.tests/PlantUML/PNGs/AffectedPersonBundle.png}}
 
 ## Betroffene Person
-{{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPerson.png}}
+{{render:guides/implementationguides.tests/PlantUML/PNGs/AffectedPerson.png}}
 
 Das Profil `AffectedPerson` enthält die für EMIGA relevanten personenbezogenen Angaben zu einer Fallperson (Patient). Dazu gehören insbesondere Identifikatoren, Name und Anrede, Kontakt- und Adressdaten, Geburtsdaten, Staatsangehörigkeit, Bearbeitungsstatus, Sprachkenntnisse sowie Angaben zu behandelnden Personen und Einrichtungsbezügen.
 
@@ -29,7 +29,7 @@ Unabhängig davon kann über `meta.extension:lastModifiedBy` die EMIGA-nutzende 
 ## Bezugsperson der betroffenen Person
 Eine **Bezugsperson** wird als Instanz des Profils `AffectedPersonRelatedPerson` abgebildet. Über `patient` wird die betroffene Person referenziert, auf die sich die Bezugsperson bezieht.
 
-{{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPersonRelatedPerson.png}}
+{{render:guides/implementationguides.tests/PlantUML/PNGs/AffectedPersonRelatedPerson.png}}
 
 Das Element `relationship` beschreibt die Art dieser Beziehung und ist an das ValueSet `RelatedPersonRelationshipTypeVS` gebunden.
 

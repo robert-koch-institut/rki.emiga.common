@@ -2,7 +2,7 @@
 <#TODO> harmonize this page for all packages, am besten use the same file. Currently. Case is "main branch".
 
 ## Über EMIGA
-{{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
+{{render:guides/implementationguides.tests/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
 
 Die Software **EMIGA** (*Elektronisches Melde- und Informationssystem für Gesundheitsämter*) wird gemäß § 14 Infektionsschutzgesetz (IfSG) im Auftrag des Bundesministeriums für Gesundheit (BMG) am Robert Koch-Institut (RKI) entwickelt.
 Ziel ist es, den Öffentlichen Gesundheitsdienst (ÖGD) durch moderne digitale Lösungen nachhaltig bei der Wahrnehmung seiner Aufgaben im Infektionsschutz, insbesondere im Melde- und Fallmanagement sowie bei der Vorbereitung auf endemische und pandemische Ausnahmesituationen, zu unterstützen.
