@@ -10,3 +10,4 @@ Description: "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Res
 
 * $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle" 
 * $ResourceVisibilityType#transferable "übermittelbar"
+
