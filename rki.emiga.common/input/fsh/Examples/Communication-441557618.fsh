@@ -1,6 +1,6 @@
 Instance: Communication441557618
 InstanceOf: AnnotationCommunication
-Description: "Test Annotation Example including attachment"
+Description: "Ein Beispiel für eine Anntotation inkl. Anhang."
 Usage: #example
 
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"

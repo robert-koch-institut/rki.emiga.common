@@ -1,7 +1,7 @@
 Instance: RelatedPerson4551
 InstanceOf: AffectedPersonRelatedPerson
 Title: "Beispiel Bezugsperson der betroffenen Person"
-Description: "Ein Beispielinstanz einer Bezugsperson-Ressource. "
+Description: "Eine Beispielinstanz einer Bezugsperson-Ressource. "
 Usage: #example
 * id = "RelatedPerson4551"
 * meta.profile = "https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRelatedPerson"

@@ -1,10 +1,11 @@
 ValueSet: ProcessingStatusVS
 Id: ProcessingStatusVS
 Title: "Bearbeitungsstatus"
-Description: "Dieses ValueSet umfasst die Codes aus dem CodeSystem „ProcessingStatus“, die zur Abbildung des Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person verwendet werden."
-* insert MetadataTerminology
-* ^version = "0.2.0"
-* ^date = "2025-12-12"
+Description: "Werteliste mit Konzepten, die den Bearbeitungsstatus eines Vorgangs oder einer betroffenen Person definieren."
 * ^url = "https://emiga.rki.de/fhir/common/ValueSet/ProcessingStatusVS"
+* ^version = "0.2.1"
+* ^date = "2026-08-18"
+
+* insert MetadataTerminology
 
 * include codes from system ProcessingStatus

@@ -1,11 +1,9 @@
-// Define the ConceptMap that maps AdministrativeGender (English) to GenderAmtlichDE (German)
 Instance: AdminGenderEngToGenderAmtDe
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "ConceptMap AdministrativeGender (Eng) to GenderAmtlichDE"
-Description: "ConceptMap zur Übersetzung von AdministrativeGender (englisch) zu GenderAmtlichDE (deutsch)."
+Description: "Die ConceptMap 'AdminGenderEngToGenderAmtDe' dient der Übersetzung von AdministrativeGender (englisch) zu GenderAmtlichDE (deutsch)."
 //* insert MetadataTerminology
-
 * url = "https://emiga.rki.de/fhir/ConceptMap/AdminGenderEngToGenderAmtDe"
 * version = "0.1.1"
 * name = "AdministrativeGenderToGenderAmtlichDE"

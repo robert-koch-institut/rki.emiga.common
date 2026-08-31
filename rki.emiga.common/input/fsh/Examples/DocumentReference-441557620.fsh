@@ -1,7 +1,7 @@
 Instance: Attachment-441557620
 InstanceOf: AttachmentDocumentReference
 Usage: #example
-Description: "Test Attachment DocumentReference Example with image reference"
+Description: "Ein Beispiel für einen Anhang vom Typ DocumentReference mit Bildreferenz."
 * meta.profile[emigaprofile] = "https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference"
 * meta.security[responsibility].system = "https://emiga.rki.de/fhir/common/CodeSystem/ResourceResponsibility"
 * meta.security[responsibility].code = #1.01.0.01.	

@@ -1,14 +1,16 @@
 Extension: NullFlavor
 Id: NullFlavor
 Title: "Null flavor"
-Description: "If the value is not a proper value, indicates the reason."
+Description: "Die Extension gibt an, aus welchem Grund für das betreffende Element kein regulärer Wert vorliegt."
 Context: Element
-* insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/Extension/NullFlavor"
-* ^version = "0.1.0"
-* ^date = "2025-09-08"
 * url = "https://emiga.rki.de/fhir/common/Extension/NullFlavor" (exactly)
+* ^version = "0.1.1"
+* ^date = "2026-08-18"
+
+* insert MetadataProfile
+
 * value[x] 1.. MS
 * value[x] only Coding
 * value[x] ^short = "Nicht ermittelbar oder nicht erhoben"
@@ -19,4 +21,3 @@ Context: Element
 * value[x].version MS
 * value[x].code 1.. MS
 * value[x].display MS
-
