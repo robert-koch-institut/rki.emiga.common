@@ -4,7 +4,7 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPersonRe
 ---
 
 # {{page-title}}
-## Beschreibung
+
 <fql output= "inline" headers="false">
 from 
     StructureDefinition
@@ -14,9 +14,7 @@ select
     description
 </fql>
 
-<br>&nbsp;<br>
-
-Das Profil `AffectedPersonRelatedPerson` basiert auf der FHIR-Ressource `RelatedPerson` und dient der Abbildung einer Bezugsperson zu einer betroffenen Person (`AffectedPerson`).
+Das hierfür verwendete Profil `AffectedPersonRelatedPerson` basiert auf der FHIR-Basisressource `RelatedPerson`.
 Die betroffene Person, zu der die Beziehung besteht, wird über das Element `RelatedPerson.patient` referenziert.
 
 ### Beziehung zur betroffenen Person
@@ -24,25 +22,9 @@ Die Art der Beziehung zwischen der Bezugsperson und der betroffenen Person wird 
 Mindestens eine Beziehung ist anzugeben. Die zulässigen Ausprägungen werden durch das ValueSet `RelatedPersonRelationshipTypeVS` festgelegt. Damit können insbesondere persönliche, familiäre oder rechtliche Beziehungen zur betroffenen Person strukturiert angegeben werden.
 Eine Bezugsperson kann mehrere Beziehungen zur selben betroffenen Person besitzen. In diesem Fall können mehrere Einträge in `RelatedPerson.relationship` angegeben werden.
 
-Die grundlegende Modellierung ist damit:
-
-```text
-AffectedPersonRelatedPerson
-        │
-        │ patient
-        ▼
-   AffectedPerson
-        │
-        ▲
-        │ relationship
-        │
- Art der Beziehung
-```
-
 ### Bezugsperson und betroffene Person als dieselbe physische Person
 
 In bestimmten fachlichen Konstellationen kann eine Person sowohl als `AffectedPerson` als auch als `AffectedPersonRelatedPerson` im Datenbestand repräsentiert sein.
-
 Dies ist beispielsweise dann relevant, wenn eine Person in einem fachlichen Kontext selbst betroffene Person ist und gleichzeitig als Bezugsperson einer weiteren betroffenen Person auftritt.
 
 In diesem Fall kann die entsprechende Slice von `AffectedPerson.link` verwendet werden, um die beiden Ressourcen miteinander zu verknüpfen und kenntlich zu machen, dass sie **dieselbe physische Person in unterschiedlichen FHIR-Rollen** repräsentieren.

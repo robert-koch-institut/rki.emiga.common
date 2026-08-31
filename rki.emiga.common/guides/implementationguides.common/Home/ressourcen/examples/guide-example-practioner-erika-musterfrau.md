@@ -1,5 +1,5 @@
-# Example: EMIGA User Practitioner
-Das folgende Beispiel zeigt einen aktiven EMIGA-Nutzende als `Practitioner`.
+# Beispiel: EMIGA-Nutzende
+Das folgende Beispiel zeigt die Abbildung einen aktiven EMIGA-Nutzende als `Practitioner`.
 
 Die Beispielperson:
 
@@ -42,16 +42,6 @@ und als verantwortliche Stelle ist angegeben:
 ```text
 1. – Robert Koch-Institut
 ```
-
-
-Das Beispiel veranschaulicht damit insbesondere:
-
-* die Abbildung eines EMIGA-Nutzende als EMIGA-`Practitioner`,
-* die Identifikation des Nutzende,
-* die Angabe von Vor- und Familienname,
-* den Aktivitätsstatus,
-* die Verwendung von Security Labels,
-* sowie die Referenzierbarkeit als handelnde Person aus anderen EMIGA-Ressourcen.
 
 
 <tabs>

@@ -1,4 +1,4 @@
-# Example: Annotation Communication
+# Beispiel: Annotation Communication
 
 ## Beschreibung
 

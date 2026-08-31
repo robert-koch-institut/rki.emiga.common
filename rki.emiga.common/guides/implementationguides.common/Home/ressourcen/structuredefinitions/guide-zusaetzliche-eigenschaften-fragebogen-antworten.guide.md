@@ -16,7 +16,7 @@ select
 
 <br>&nbsp;<br>
 
-Das Profil `AdditionalPropertiesQuestionnaireResponse` refletiert die FHIR-Ressource `QuestionnaireResponse` und enthält die konkreten Werte zu zusätzlichen Eigenschaften. Die Antworten werden in mindestens einem `item` abgebildet.
+Das Profil `AdditionalPropertiesQuestionnaireResponse` refletiert die FHIR-Ressource `QuestionnaireResponse` und enthält die konkreten Werte zu zusätzlichen Eigenschaften.
 
 ## Profil
 ### Metadaten

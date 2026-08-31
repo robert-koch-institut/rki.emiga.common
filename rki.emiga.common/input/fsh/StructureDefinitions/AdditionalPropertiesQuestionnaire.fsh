@@ -2,7 +2,7 @@ Profile:        AdditionalPropertiesQuestionnaire
 Parent:         Questionnaire
 Id:             AdditionalPropertiesQuestionnaire
 Title:          "Zusätzliche Eigenschaften"
-Description:    "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) für Fragebögen strukturiert abzubilden. Es dient dazu, erweiterte Konfigurations- und Steuerungsinformationen zu einem Fragebogen zu modellieren, die über den Standardumfang der Ressource hinausgehen."
+Description:    "Dieses Profil ermöglicht die strukturierte Abbildung zusätzlicher fachlicher Informationen über Fragebögen, die über den Standardumfang der jeweiligen FHIR-Ressource hinausgehen."
 
 * ^version = "0.4.0"
 * ^date = "2026-04-24"

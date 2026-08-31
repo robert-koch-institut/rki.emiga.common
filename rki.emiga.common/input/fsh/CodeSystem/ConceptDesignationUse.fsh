@@ -1,7 +1,7 @@
 CodeSystem: ConceptDesignationUse
 Id: ConceptDesignationUse
 Title: "Nutzungszwecke für Anzeigetexte"
-Description: "Die Kodiersystematik 'ConceptDesignationUse' definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'."
+Description: "Definiert Konzepte, welche genutzt werden können, um verschiedene Arten bzw. Nutzungszwecke von Anzeigetexten zu unterscheiden. Die Verwendung der Konzepte erfolgt im Kontext von 'designation.use'."
 * insert MetadataTerminology
 * ^version = "1.0.1"
 * ^date = "2026-03-24"

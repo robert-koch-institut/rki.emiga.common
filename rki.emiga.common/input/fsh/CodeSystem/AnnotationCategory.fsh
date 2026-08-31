@@ -1,7 +1,7 @@
 CodeSystem: AnnotationCategory
 Id: AnnotationCategory
 Title: "Annotationskategorien"
-Description: "Das CodeSystem AnnotationCategory enthält die Codes für die verschiedenen Arten von Annotationen."
+Description: "Enthält die Codes für die verschiedenen Arten von Annotationen."
 * insert MetadataTerminology
 * ^version = "0.1.2"
 * ^status = #active

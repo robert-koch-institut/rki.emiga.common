@@ -1,8 +1,9 @@
 # {{page-title}}
 
-## Überblick
-Eine **Annotation** wird in EMIGA durch das FHIR-Profil `AnnotationCommunication` abgebildet. Für die Erstellung, Änderung und Übertragung einer Annotation werden die zugehörigen Ressourcen in einem FHIR-`Bundle` vom Typ `transaction` zusammengeführt. Das Bundle dient dabei als technischer Container. Die zentrale fachliche Ressource ist die `AnnotationCommunication`, welche als erste Eintrag in dem Bundel plaziert wird, und die eigentliche Annotation repräsentiert.
+**Annotationen** dienen dazu, fachliche Entitäten wie Fälle, Ausbrüche oder Personen mit Notizen und Kommentaren zu versehen. Darüber hinaus können Annotation auch ohne direkten Bezug zu einer fachlichen Entität hinterlegt werden. <TODO: bei dem Fall an Org gehängt?>.
 
+Eine **Annotation** wird in EMIGA durch das FHIR-Profil `AnnotationCommunication` abgebildet. 
+Für die Erstellung, Änderung und Übertragung einer Annotation werden die zugehörigen Ressourcen in einem FHIR-`Bundle` vom Typ `transaction` zusammengeführt. Das Bundle dient als technischer Container für die Annotation und die von ihr referenzierten Anhänge. Die zentrale fachliche Ressource ist die `AnnotationCommunication`, welche die eigentliche Annotation repräsentiert. Sie muss obligatorisch als erster Eintrag im Bundle enthalten sein. Die referenzierten Anhänge werden als weitere Einträge in das Bundle aufgenommen.
 Weitere Einträge im Bundle stellen die für die Verarbeitung und Interpretation der Annotation benötigten Begleitressourcen bereit. Dazu gehören uter anderen:
 * die erstellende Person (`EmigaUserPractitioner`),
 * optionale Anhänge (`AttachmentDocumentReference`) und
@@ -11,73 +12,44 @@ Weitere Einträge im Bundle stellen die für die Verarbeitung und Interpretation
 **Anhänge** der Annotation werden über das Profil `AttachmentDocumentReference` abgebildet und i.d.R. einer Annotation zugeordnet.
 **Zusätzliche Eigenschaften** können über das Profil `AdditionalPropertiesQuestionnaireResponse` strukturiert mitgeführt und der Annotation zugeordnet werden.
 
-{{render:guides/implementationguides.common/PlantUML/PNGs/AnnotationBundle.png}}
+{{render:guides/implementationguides.common/PlantUML/PNGs/AnnotationCommunication.png}}
+
 
 ## Fachlicher Ablauf
 
 Ein Client erzeugt zunächst bei Bedarf ein neues EMIGA-Aktenzeichen für Annotationen. Anschließend wird die Annotation als FHIR-Transaktionsbundle an den Annotationsdienst übergeben. Der Dienst speichert die enthaltenen Ressourcen, vergibt bzw. verwaltet technische Ressourcen-IDs und liefert ein Bundle mit dem gespeicherten Stand zurück.
 
-Für die Anzeige und Weiterbearbeitung der Annotation-Bundel stehen Such-, Detail- und Historienoperationen zur Verfügung. 
-Änderungen an einer bestehenden Annotation werden als neue Version der Annotation gespeichert. Dadurch bleibt nachvollziehbar, welcher Stand zu jenem Zeitpunkt gültig war. Eine gelöschte oder verworfene Annotation wird über die entsprechende Operation bzw. den Bearbeitungsstatus dokumentiert.
-
-{{render:guides/implementationguides.common/PlantUML/PNGs/AnnotationCommunication.png}}
-
-## Erstellung und Versionierung
 Beim Erstellen einer Annotation wird ein FHIR-`Bundle` mit `type = transaction` an den Endpunkt `/Bundle/$create-annotation` gesendet. Das Bundle muss die `AnnotationCommunication` als ersten fachlichen Eintrag enthalten. Die erstellende Person wird als `EmigaUserPractitioner` mitgeführt. Wenn Anhänge oder `Zusätzliche Eigenschaften` Bestandteil der Annotation sind, werden diese als weitere Bundle-Einträge aufgenommen und aus der `Communication` heraus referenziert.
+Eine gelöschte oder verworfene Annotation wird über die entsprechende Operation bzw. den Bearbeitungsstatus dokumentiert.
 
-## Versionierung
+{{render:guides/implementationguides.common/PlantUML/PNGs/AnnotationBundle.png}}
+
 Wird eine bestehende Annotation geändert, erzeugt der Dienst eine neue Version für das Bundle. Die aktuelle Version kann über `$annotation-details` gelesen werden. Frühere Stände können über `$search-annotation-history` gefunden und über `$annotation-version-details` gezielt abgerufen werden. Die Version kann dabei über `versionNo` oder `versionId` adressiert werden.
 
 <TODO: check Richtigkeit>
-Die **Versionierung** einer Annotation und der zugehörigen Anhänge erfolgt unabhängig voneinander. Für die Versionierung von **Anhängen** gelten folgende Regeln:
+_Bemerkung:_ Die **Versionierung** einer Annotation und der zugehörigen Anhänge erfolgt unabhängig voneinander. Für die Versionierung von **Anhängen** gelten folgende Regeln:
 - Wird ein Anhang unter einem neuen Namen bzw. Titel (content.attachment.title) gespeichert, wird er als neuer Anhang behandelt und erhält eine neue ID. Dies gilt auch bei unverändertem Inhalt.
-- Wird ein bestehender Anhang unter demselben Namen bzw. Titel geändert, behält er seine ID und erhält eine neue Version.
+- Wird ein bestehender Anhang unter demselben Namen bzw. Titel geändert, erhält die Annotation eine neue Version.
 
 Änderungen an Anhängen wirken sich wie folgt auf die Versionierung der Annotation aus:
 - Wird einer Annotation ein neuer Anhang hinzugefügt, entsteht eine neue Version der Annotation.
 - Wird lediglich eine neue Version eines bereits referenzierten Anhangs erstellt, bleibt die Version der Annotation unverändert.
 
-## Suche und Anzeige von Annotation
+## Suchen von Annotation
 Die Suche nach Annotationen erfolgt über `/Bundle/$search-annotation` und liefert ein FHIR-`Bundle` vom Typ `searchset`. Jeder Treffer enthält ein FHIR-Bundle mit den Ressourcen, die für die Anzeige des Treffers benötigt werden. Für paginierte Suchoperationen werden die FHIR-üblichen Parameter `_count` und `_offset` verwendet. Die Historienoperation unterstützt zusätzlich fachliche Filter wie `_filter`, `_sort`, `_startDate`, `_endDate` und `_search`. Clients können die Pagination über `_count` und `_offset` auswerten und die vom Server gelieferten Bundle-Links berücksichtigen.
 
 Für eine Detailansicht soll nicht ausschließlich der Suchtreffer verwendet werden. Stattdessen ist der aktuelle Stand über `/Bundle/{id}/$annotation-details` abzurufen, damit Text, Betreff, Status, Sichtbarkeit, Ersteller, Anhänge und `Zusätzliche Eigenschaften` konsistent aus einem vollständigen Bundle interpretiert werden.
 
-## Interoperabilitätshinweise
-Der Bearbeitungsstatus ist ausschließlich der Extension `ProcessingStatus` zu entnehmen. `Communication.status` ist im Profil stets auf completed festgelegt und darf nicht zur Abbildung des fachlichen Bearbeitungsstatus herangezogen werden.
-
-Die Sichtweite einer Annotation oder eines Anhangs wird über `meta.security` gekennzeichnet. Für Annotationen sind insbesondere die Codes `inAgency` und `transferable` relevant. 
-Sie geben an, ob eine Annotation auf die eigene ÖGD-Stelle verbleibt  oder gemeinsam mit der zugehörigen Hauptentität (z. B. Fall oder Ausbruch) an andere Stellen übermittelt werden darf.
-
-Annotationen können personenbezogene Daten im Sinne der DSGVO enthalten. Die Kennzeichnung erfolgt über `meta.tag` mit dem CodeSystem `PersonalInformation`. Clients sollten diese Kennzeichnung bei Anzeige, Übermittlung, Export und Protokollierung berücksichtigen.
-
-Anhänge werden über `AttachmentDocumentReference.content.attachment.url` referenziert. Binärdaten werden in diesem Profil nicht direkt in `content.attachment.data` geführt. Integrität und Nachvollziehbarkeit des Anhangs werden durch Informationen wie Dateigröße, Hashwert, Titel, MIME-Type und Erstellungszeitpunkt unterstützt.
-
-Die Ressource `AnnotationCommunication` enthält den fachlichen Inhalt der Annotation:
-
-| Element | Bedeutung |
-| --- | --- |
-| `identifier` | Fachliche Identifikatoren der Annotation, beispielswese EMIGA-Aktenzeichen oder SurvNet-Aktenzeichen. |
-| `meta.security` | Verantwortlichkeit und Sichtbarkeit der Ressource, u.a. `ResourceResponsibility` und `ResourceVisibilityType`. |
-| `meta.tag` | Kennzeichnung personenbezogener Daten (z.B. `ContainsPersonalInformation`). |
-| `extension:ProcessingStatus` | Bearbeitungsstatus der Annotation, z.B. `inprogress`, `closed`, `cancelled`, `handedover`, `inhandover`, `intakeover` oder `forinformation`. |
-| `extension:DateCreated` | Zeitpunkt der initialen Erstellung der Annotation. |
-| `category` | Kategorie der Annotation, z.B. Kommentar oder Notizen. |
-| `topic.text` | Betreff der Annotation. |
-| `about` | Referenz auf die fachliche Bezugsentität. |
-| `sent` | Fachlicher Versandzeitpunkt der Annotation. |
-| `sender` | Erstellende Person als Referenz auf `EmigaUserPractitioner`. |
-| `payload.contentString` | Textueller Inhalt der Annotation. |
-| `payload.contentReference` | Referenz auf einen Anhang in Form einer `AttachmentDocumentReference`-Ressource. |
-
 
 ## Anhang
+**Anhänge** ermöglichen es, Dokumente, beispielweise Dokumenten aus Anschreiben-Vorlagen, strukturiert und nachvollziehbar <u>an Annotationen</u> zu hinterlegen. Anhänge werden als eigenständige Ressourcen geführt und aus Annotationen referenziert.
+
 Anhänge liegen als eigenständige  `AttachmentDocumentReference`-Ressourcen vor und werden aus der Annotation heraus referenziert. 
 Dadurch können Metadaten zum Dokument, technische Prüfinformationen und Zugriffssteuerungsinformationen getrennt vom eigentlichen Annotationsinhalt verwaltet werden.
 
 {{render:guides/implementationguides.common/PlantUML/PNGs/AttachmentDocumentReference.png}}
 
-
-Relevante Angaben zum Anhang :
+Relevante Angaben zum Anhang sind unter anderen:
 
 | Element | Bedeutung |
 | --- | --- |
@@ -92,10 +64,10 @@ Relevante Angaben zum Anhang :
 | `content.attachment.title` | Titel bzw. Bezeichnung des Dokuments. |
 | `content.attachment.creation` | Zeitpunkt, zu dem der Anhang der Annotation hinzugefügt wurde. |
 
-## Schnittstellenoperationen
+## Schnittstellenoperationen von Annotation
 
 Der Annotationsdienst stellt FHIR-Operationen auf Ebene von `Bundle` und `Identifier` bereit. 
-Die Operationen verarbeiten FHIR-Ressourcen in den Formaten `application/fhir+json` oder `application/fhir+xml` und sind über Bearer Token abgesichert.
+Die Operationen verarbeiten FHIR-Ressourcen in den Formaten `application/fhir+json` oder `application/fhir+xml` und sind über Bearer Token abgesichert. Die folgende Tabelle listet die relevanten Operationen auf:
 
 | Operation | Methode | Zweck | Ergebnis |
 | --- | --- | --- | --- |

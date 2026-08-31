@@ -1,7 +1,7 @@
 CodeSystem: Salutation
 Id: Salutation
 Title: "Anrede"
-Description: "Die Kodiersystematik 'Salutation' definiert Konzepte, die die Art der Anrede bestimmen."
+Description: "Definiert Konzepte, die die Art der Anrede bestimmen."
 * insert MetadataTerminology
 * ^version = "1.0.2"
 * ^date = "2024-03-26"

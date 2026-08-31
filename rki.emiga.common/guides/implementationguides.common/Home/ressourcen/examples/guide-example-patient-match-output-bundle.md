@@ -1,9 +1,9 @@
-## Example: Patient Match Output Bundle
-Dieses Beispiel zeigt die Rückgabe einer EMIGA-$match-Operation zur Identifikation möglicher Ressource-Dubletten (Datensatz-Dubletten) einer Person. Die Antwort wird als FHIR-Bundle vom Typ searchset gemäß dem Profil https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle zurückgegeben.
+## Beispiel: Patient Match Output Bundle
+Dieses Beispiel zeigt die Rückgabe einer EMIGA-$match-Operation zur Identifizierung möglicher Ressource-Dubletten (Datensatz-Dubletten) einer Person. Die Antwort wird als FHIR-Bundle vom Typ searchset gemäß dem Profil https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle zurückgegeben.
 
 Jede Bundle.entry enthält einen gefundenen Match-Kandidaten als Patient-Ressource; die zugehörigen Such- und Matching-Informationen werden über Bundle.entry.search übermittelt. Das Beispiel-Bundle enthält zwei Match-Kandidaten (Bundle.total = 2).
 
-## Match-Kandidaten
+### Match-Kandidaten
 
 Jeder gefundene Kandidat wird mit dem Profil:
 
@@ -11,20 +11,11 @@ Jeder gefundene Kandidat wird mit dem Profil:
 https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson
 ```
 
-bereitgestellt. Zusätzlich enthalten die Ressourcen Security Labels zur Beschreibung der Sichtbarkeit und Verantwortlichkeit der Daten. Im Beispiel wird die Sichtbarkeit auf die eigene ÖGD-Stelle eingeschränkt und die verantwortliche Stelle als Robert Koch-Institut angegeben.
-
-Die Patient-Ressourcen enthalten die für das Matching relevanten personenbezogenen Merkmale, unter anderem:
-
-* EMIGA-interne Identifikatoren
-* Name
-* Geschlecht
-* Geburtsdatum
-* Adresse
-* Security Labels zur Steuerung von Sichtbarkeit und Verantwortlichkeit
-
+bereitgestellt. 
 Beispielhaft enthält der erste Kandidat die Identifikatoren `EmigaID` und `EmigaFileNumber`, den Namen "Max Mustermann", das Geburtsdatum `1980-01-01` sowie eine Adresse in Berlin.
+Zusätzlich enthalten die Ressourcen Security Labels zur Beschreibung der Sichtbarkeit und Verantwortlichkeit der Daten. Im Beispiel wird die Sichtbarkeit auf die eigene ÖGD-Stelle eingeschränkt und die verantwortliche Stelle als Robert Koch-Institut angegeben.
 
-## Match-Bewertung
+### Match-Bewertung
 
 Die Bewertung eines Match-Kandidaten wird über das Element `Bundle.entry.search` beschrieben.
 
@@ -47,7 +38,7 @@ Im Beispiel werden folgende Werte verwendet:
 * `probable` für einen wahrscheinlichen Treffer
 * `possible` für einen möglichen Treffer
 
-## Duplicate Match Metadata
+### Duplicate Match Metadata
 
 Zusätzliche Informationen zur Nachvollziehbarkeit des Matching-Prozesses werden über die Extension:
 
@@ -66,7 +57,7 @@ Die Metadaten enthalten:
 * nicht übereinstimmende Kriterien (`nonMatchedCriteria`)
 
 
-## Übereinstimmende Kriterien
+#### Übereinstimmende Kriterien
 
 Die verwendeten Matching-Kriterien werden über das CodeSystem:
 
@@ -74,9 +65,7 @@ Die verwendeten Matching-Kriterien werden über das CodeSystem:
 https://emiga.rki.de/fhir/CodeSystem/DuplicateMatchCriteria
 ```
 
-referenziert.
-
-Beispiele für übereinstimmende Kriterien im ersten Match:
+referenziert. Beispiele für übereinstimmende Kriterien im ersten Match:
 
 | Kriterium         | Beschreibung                          |
 | ----------------- | ------------------------------------- |
@@ -93,10 +82,8 @@ Beim zweiten Kandidaten erfolgte das Matching unter anderem über:
 | `houseNumberExact` | Hausnummer exakt übereinstimmend   |
 | `postalCodeExact`  | Postleitzahl exakt übereinstimmend |
 
-## Nicht übereinstimmende Kriterien
-Neben erfüllten Kriterien können auch nicht erfüllte Kriterien dokumentiert werden.
-
-Beispiele:
+#### Nicht übereinstimmende Kriterien
+Neben erfüllten Kriterien werden die nicht erfüllte Kriterien ebenfalls dokumentiert. Beispiele:
 
 * `cityPhonetic` – Stadt phonetisch übereinstimmend (nicht erfüllt)
 * `birthNameFuzzy` – Geburtsname ungefähr übereinstimmend (nicht erfüllt)

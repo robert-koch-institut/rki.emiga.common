@@ -1,6 +1,4 @@
-# Example: Affected Person with Related Person Reference
-
-## Beschreibung
+# Beispiel: Affected Person with Related Person Reference
 
 Dieses Beispiel zeigt eine betroffene Person (`Patient`) im EMIGA-Kontext mit demografischen und administrativen Angaben sowie einer Verknüpfung zu einer zugehörigen `RelatedPerson`.
 
@@ -10,19 +8,15 @@ Die Ressource verwendet das EMIGA-Profil:
 https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson
 ```
 
-Alle verwendeten Personen-, Kontakt- und Adressdaten sind Beispieldaten.
-
-## Beispiel-Szenario
+### Beispiel-Szenario
 
 Die Beispielperson **Jones Calamity**, geborene **Doe**, wurde am **01.01.1980** geboren.
 
 Für die Person sind ein Hauptwohnsitz, Kontaktinformationen und Deutsch als Kommunikationssprache dokumentiert. Die Person besitzt die deutsche Staatsangehörigkeit; als Geburtsland ist Jugoslawien angegeben.
 
-Der Datensatz befindet sich im Bearbeitungsstatus **„In Bearbeitung“**.
+Zusätzlich ist die betroffene Person über `Patient.link` mit einer `RelatedPerson` verknüpft.
 
-Zusätzlich ist die betroffene Person über `Patient.link` mit einer `RelatedPerson` verknüpft. Damit kann eine weitere für den fachlichen Kontext relevante Person referenziert werden.
-
-## Identifikation
+### Identifikation
 
 Die betroffene Person wird über EMIGA-spezifische Identifier identifiziert:
 
@@ -33,7 +27,7 @@ Die betroffene Person wird über EMIGA-spezifische Identifier identifiziert:
 
 Die Identifier ermöglichen die eindeutige Identifikation und fachliche Zuordnung der Person innerhalb von EMIGA.
 
-## Name und Anrede
+### Name und Anrede
 
 Der offizielle Name der Beispielperson lautet:
 
@@ -57,7 +51,7 @@ Das Beispiel enthält mehrere Namensformen:
 
 Damit wird gezeigt, wie unterschiedliche Namensarten einer betroffenen Person über `Patient.name` abgebildet werden können.
 
-## Geschlecht
+### Geschlecht
 
 Für `Patient.gender` wird im Beispiel der FHIR-Wert:
 
@@ -79,9 +73,9 @@ das amtliche Geschlecht angegeben:
 D – divers
 ```
 
-Damit werden der FHIR-Basiswert und die spezifischere amtliche Geschlechtsangabe für den deutschen Kontext gemeinsam abgebildet.
+Damit werden der FHIR-Basiswert und die spezifischere amtliche Geschlechtsangabe für den deutschen Kontext nebeneinander abgebildet.
 
-## Geburtsdatum
+### Geburtsdatum
 
 Das Geburtsdatum der betroffenen Person lautet:
 
@@ -91,7 +85,7 @@ Das Geburtsdatum der betroffenen Person lautet:
 
 und wird über `Patient.birthDate` angegeben.
 
-## Geburtsland
+### Geburtsland
 
 Das Geburtsland wird über die EMIGA-Extension:
 
@@ -113,7 +107,7 @@ Die Kodierung erfolgt über:
 http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen
 ```
 
-## Staatsangehörigkeit
+### Staatsangehörigkeit
 
 Die Staatsangehörigkeit wird über die FHIR-Extension:
 
@@ -131,7 +125,7 @@ D – Deutschland
 
 Die Kodierung erfolgt ebenfalls über das DEÜV-CodeSystem für Länderkennzeichen.
 
-## Kontaktdaten
+### Kontaktdaten
 
 Für die betroffene Person sind eine E-Mail-Adresse und eine Telefonnummer hinterlegt:
 
@@ -142,7 +136,7 @@ Für die betroffene Person sind eine E-Mail-Adresse und eine Telefonnummer hinte
 
 Die Angaben werden über `Patient.telecom` übermittelt.
 
-## Hauptwohnsitz
+### Hauptwohnsitz
 
 Für die Person ist ein Hauptwohnsitz angegeben.
 
@@ -172,7 +166,7 @@ DE-BE
 
 angegeben.
 
-## Strukturierte Adresse
+### Strukturierte Adresse
 
 Neben der vollständigen Darstellung:
 
@@ -206,7 +200,7 @@ mit:
 
 Damit kann die Adresse sowohl menschenlesbar als auch strukturiert verarbeitet werden.
 
-## Geolokation
+### Geolokation
 
 Die Adresse enthält zusätzlich geografische Koordinaten über die Standard-FHIR-Extension:
 
@@ -216,7 +210,7 @@ http://hl7.org/fhir/StructureDefinition/geolocation
 
 Im Beispiel werden Breiten- und Längengrad über `latitude` und `longitude` angegeben.
 
-## Bearbeitungsstatus
+### Bearbeitungsstatus
 
 Der fachliche Bearbeitungsstatus wird über die EMIGA-Extension:
 
@@ -234,7 +228,7 @@ inprogress – In Bearbeitung
 
 Der Datensatz beziehungsweise der damit verbundene fachliche Vorgang befindet sich damit noch in Bearbeitung.
 
-## Kommunikationssprache
+### Kommunikationssprache
 
 Über `Patient.communication` wird Deutsch als Sprache angegeben:
 
@@ -248,7 +242,7 @@ Die Kodierung erfolgt entsprechend BCP 47 über:
 urn:ietf:bcp:47
 ```
 
-## Verknüpfung zu einer RelatedPerson
+### Verknüpfung zu einer RelatedPerson
 
 Eine Besonderheit dieses Beispiels ist die Verwendung von `Patient.link`.
 
@@ -278,9 +272,9 @@ Die Verknüpfung wird im Beispiel wie folgt dargestellt:
 }
 ```
 
-Die konkrete fachliche Beziehung der `RelatedPerson` zur betroffenen Person wird in der referenzierten `RelatedPerson`-Ressource beschrieben.
+Die konkrete fachliche Beziehung der `RelatedPerson` zur dieser betroffenen Person wird in der referenzierten `RelatedPerson`-Ressource beschrieben.
 
-## Änderungshistorie
+### Änderungshistorie
 
 Über die Extension:
 
@@ -297,17 +291,3 @@ Practitioner/EmigaUser-001
 ```
 
 Damit kann die letzte Änderung einer betroffenen Person einem EMIGA-Nutzende zugeordnet werden.
-
-## Fachlicher Schwerpunkt des Beispiels
-
-Der Schwerpunkt dieses Beispiels liegt auf einer betroffenen Person mit einem vergleichsweise kompakten Satz an demografischen Informationen und einer zusätzlichen Personenverknüpfung.
-
-Besonders veranschaulicht werden:
-
-* ein einzelner Hauptwohnsitz,
-* strukturierte Adressinformationen,
-* Geokoordinaten,
-* verschiedene Namensformen,
-* Staatsangehörigkeit und Geburtsland,
-* amtliches Geschlecht,
-* sowie die Referenz auf eine zugehörige `RelatedPerson` über `Patient.link`.

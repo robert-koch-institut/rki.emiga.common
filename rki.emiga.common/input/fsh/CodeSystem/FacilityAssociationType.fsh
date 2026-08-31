@@ -1,7 +1,7 @@
 CodeSystem: FacilityAssociationType
 Id: FacilityAssociationType
 Title: "Verbindungs-Qualifikation"
-Description: "Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung."
+Description: "Codes zur Beschreibung verschiedener Arten von Verbindungen einer betroffenen Person zu einer Einrichtung"
 * insert MetadataTerminology
 * ^version = "0.2.2"
 * ^status = #active

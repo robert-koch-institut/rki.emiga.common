@@ -5,7 +5,6 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractit
 
 # {{page-title}}
 
-## Beschreibung
 
 <fql output= "inline" headers="false">
 from 
@@ -20,31 +19,9 @@ select
 Das Profil `EmigaUserPractitioner` basiert auf der FHIR-Ressource `Practitioner` und dient der Abbildung einer handelnden Person bzw. eines EMIGA-Nutzende innerhalb des EMIGA-Kontexts. Es beschreibt natürliche Personen, die fachliche oder administrative Handlungen im System ausführen und dabei eine definierte Rolle oder Funktion wahrnehmen.
 Ein `EmigaUserPractitioner` kann beispielsweise als Ersteller, Absender oder zuletzt ändernde Person einer EMIGA-Ressource referenziert werden.
 
-### Abgrenzung zu anderen Personenressourcen
+Die Modellierung einer EMIGA-nutzenden Person ist hinsichtlich der erfassten Informationen bewusst schlank gehalten und auf die für den Anwendungskontext erforderlichen Angaben beschränkt. Sie umfasst die **Identifikator** der nutzenden Person, den **Namen**, den **Aktivitätsstatus** sowie Angaben zur **Sichtbarkeit** und **Verantwortlichkeit** (hier: die zugehörige ÖGD-Stelle).
 
-Im EMIGA-Datenmodell können natürliche Personen abhängig von ihrer fachlichen Rolle durch unterschiedliche FHIR-Ressourcen repräsentiert werden.
-
-<#TODO check redundancy>
-
-
-| Ressource       | EMIGA-Profil                  | Fachliche Rolle                                        |
-| --------------- | ----------------------------- | ------------------------------------------------------ |
-| `Patient`       | `AffectedPerson`              | Person, die von einem fachlichen Vorgang betroffen ist |
-| `RelatedPerson` | `AffectedPersonRelatedPerson` | Bezugsperson einer betroffenen Person                  |
-| `Practitioner`  | `EmigaUserPractitioner`       | handelnde Person bzw. EMIGA-Nutzende                   |
-
-Bemerkung: Ein `Patient` beschreibt eine Person, über die fachliche Informationen im Rahmen eines EMIGA-Vorgangs verarbeitet werden. Ein `Practitioner` beschreibt hingegen eine Person, die selbst als handelnde Person an einem fachlichen Prozess beteiligt ist. Wird eine als Practitioner abgebildete natürliche Person selbst zum Gegenstand eines EMIGA-Fachvorgangs, beispielsweise aufgrund einer meldepflichtigen Erkrankung, wird diese Person zusätzlich durch eine eigenständige und vom Practitioner unabhängige Patient-Ressource abgebildet.
-
-
-Der Schwerpunkt des Profils liegt auf einer schlanken und eindeutig referenzierbaren Abbildung eines EMIGA-Nutzende.
-
-Typischerweise stehen dabei folgende Informationen im Vordergrund:
-
-* Identifikation des Nutzende,
-* Name,
-* Aktivitätsstatus,
-* Sichtbarkeit,
-* Verantwortlichkeit
+_Bemerkung:_ Ein `Practitioner` beschreibt ausschließlich eine Person, die selbst als handelnde Person an einem fachlichen Prozess beteiligt ist. Wird eine als Practitioner abgebildete natürliche Person selbst zum Gegenstand eines EMIGA-Fachvorgangs, beispielsweise aufgrund einer meldepflichtigen Erkrankung, wird diese Person zusätzlich durch eine vom Practitioner unabhängige Patient-Ressource abgebildet.
 
 ## Profil
 ### Metadaten

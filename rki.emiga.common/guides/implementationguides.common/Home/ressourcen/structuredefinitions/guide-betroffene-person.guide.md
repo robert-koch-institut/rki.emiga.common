@@ -4,29 +4,17 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson
 ---
 
 # {{page-title}}
-## Beschreibung
 
 ### Abgrenzung zu anderen Personenressourcen
 Im EMIGA-Datenmodell können natürliche Personen abhängig von ihrer fachlichen Rolle durch unterschiedliche FHIR-Ressourcen repräsentiert werden.
 
 | Ressource       | EMIGA-Profil                  | Fachliche Rolle                                                             |
 | --------------- | ----------------------------- | --------------------------------------------------------------------------- |
-| `Betroffene Person`       | `AffectedPerson`        | Person, die vom fachlichen Vorgang betroffen ist (darunter Fallperson, Kontakperson ?)                            |
+| `Betroffene Person`       | `AffectedPerson`        | Person, die vom fachlichen Vorgang betroffen ist (darunter Fallperson, Kontakperson)                            |
 | `RelatedPerson` | `AffectedPersonRelatedPerson` | Person, die in einer fachlichen Beziehung zu einer betroffenen Person steht |
 | `Practitioner`  | `EmigaUserPractitioner`       | EMIGA-Nutzende                                    |
 
-<fql output= "inline" headers="false">
-from 
-    StructureDefinition
-where
-    url = %canonical
-select
-    description
-</fql>
-
-<br>&nbsp;<br>
-
-Das Profil `AffectedPerson` basiert auf der FHIR-Ressource `Patient` und dient der Abbildung einer **betroffenen Person im fachlichen Kontext von EMIGA**.
+Das Profil `AffectedPerson` basiert auf der FHIR-Basisressource `Patient` und dient der Abbildung einer **betroffenen Person im fachlichen Kontext von EMIGA**.
 
 Eine `AffectedPerson` repräsentiert die Person, auf die sich ein fachlicher Vorgang (z.B. ein Fall) bezieht. Welche konkrete fachliche Rolle die Person innerhalb eines Vorgangs einnimmt – beispielsweise als Fallperson oder Kontaktperson – wird nicht durch das Profil `AffectedPerson` selbst festgelegt.
 
@@ -72,7 +60,7 @@ abgebildet. Bei Geschlcht der Person sind Werte male, female, other und Divers z
 
 Zusätzlich kann das amtliche Geschlecht über die für den deutschen Kontext vorgesehene Extension angegeben werden.
 
-Dadurch können der FHIR-Basiswert und die spezifischere amtliche Geschlechtsangabe gemeinsam übermittelt werden.
+Dadurch können der FHIR-Basiswert und die spezifischere amtliche Geschlechtsangabe parallel übermittelt werden.
 
 ### Geburtsdatum und Geburtsland
 
@@ -111,8 +99,7 @@ extension[citizenship]
 abgebildet.
 
 Hierfür wird die HL7 Patient-Citizenship-Extension verwendet. Die Staatsangehörigkeit wird entsprechend der im Profil festgelegten Terminologie kodiert.
-
-Eine Person kann damit unabhängig vom Geburtsland eine oder mehrere fachlich relevante Angaben zur Staatsangehörigkeit erhalten.
+Eine Person kann unabhängig vom Geburtsland eine oder mehrere fachlich relevante Angaben zur Staatsangehörigkeit erhalten.
 
 ### Kontaktinformationen
 
@@ -155,7 +142,6 @@ abgebildet.
 Über die entsprechende `AddressUse`-Extension kann die fachliche Kontext einer Adresse genauer beschrieben werden.
 
 Damit können beispielsweise ein **Hauptwohnsitz** und ein davon abweichender **derzeitiger Aufenthaltsort** als getrennte Adresseinträge geführt werden.
-
 Dies ist insbesondere relevant, wenn sich die Person vorübergehend an einem anderen Ort als ihrem Hauptwohnsitz aufhält.
 
 ### Strukturierte Adressbestandteile
@@ -224,24 +210,12 @@ extension[facilityAssociation]
 
 verwendet.
 
-Die Extension befindet sich direkt unter dem `Patient`-Ressource und **nicht innerhalb von `Patient.address`**.
+Diese Extension befindet sich direkt unter dem `Patient`-Ressource und **nicht innerhalb von `Patient.address`**.
 
-Sie beschreibt eine weitere Adresse der Person, sondern eine fachliche Bezug zu der betroffenen Person und einer Einrichtung.
+Sie beschreibt _keine_ weitere Adresse der Person, sondern eine fachliche Bezug der betroffenen Person zu einer Einrichtung.
 
 Neben dieser Referenz auf die Einrichtung kann die Art des Bezugs angegeben werden, beispielsweise eine Betreuung.
 
-Die Modellierung lässt sich vereinfacht wie folgt darstellen:
-
-```text id="cghu36"
-AffectedPerson
-      │
-      │ facilityAssociation
-      ▼
- Organization
-      │
-      └── Art der Zuordnung
-          z. B. Betreuung
-```
 
 ### Kommunikationssprachen
 
@@ -259,8 +233,6 @@ Damit können für die Kommunikation mit der betroffenen Person relevante Sprach
 
 ### Behandelnde Person
 
-<TODO: nur Person oder auch behandelne Einrichtung?>
-
 Eine behandelnde Person kann über:
 
 ```text id="ym6c7v"
@@ -269,7 +241,7 @@ Patient.generalPractitioner
 
 referenziert werden.
 
-Die Referenz ermöglicht die Verknüpfung der betroffenen Person mit einer für die Behandlung beziehungsweise Versorgung relevanten Person oder Organisation entsprechend den im Profil zugelassenen Referenztypen.
+Die Referenz ermöglicht die Verknüpfung der betroffenen Person mit einer für die Behandlung beziehungsweise Versorgung relevanten Person.
 
 ### Fachlicher Bearbeitungsstatus des Person-Instanz
 
@@ -280,8 +252,6 @@ extension[processingStatus]
 ```
 
 angegeben werden.
-
-Der Bearbeitungsstatus beschreibt den fachlichen Zustand der Person-Instanz beziehungsweise des damit verbundenen Verarbeitungskontexts entsprechend der hierfür vorgesehenen EMIGA-Terminologie. <TODO: welche codesystem? check out>
 
 ### Bearbeitende EMIGA-Nutzende
 

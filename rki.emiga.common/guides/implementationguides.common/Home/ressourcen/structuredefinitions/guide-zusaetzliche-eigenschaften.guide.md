@@ -14,9 +14,7 @@ select
     description
 </fql>
 
-<br>&nbsp;<br>
-Das Profil `AdditionalPropertiesQuestionnaire` basiert auf der FHIR-Ressource `Questionnaire`. Es dient dazu, zusätzliche fachliche Eigenschaften strukturiert zu definieren, wenn diese nicht unmittelbar durch die übrigen Profile des Moduls abgebildet werden. Die zusätzlichen Eigenschaften werden als `item`-Elemente des Fragebogens beschrieben.
-
+Das Profil `AdditionalPropertiesQuestionnaire` basiert auf der FHIR-Ressource `Questionnaire`.
 
 ## Profil
 ### Metadaten

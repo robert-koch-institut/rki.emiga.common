@@ -17,14 +17,9 @@ select
 <br>&nbsp;<br>
 
 Das Profil `AttachmentDocumentReference` basiert auf der FHIR-Ressource `DocumentReference` und dient der Abbildung von **Anhängen** als eigenständige FHIR-Ressourcen innerhalb von EMIGA.
-Hierzu zählen beispielsweise hochgeladene Dateien, beispielsweise Dokumente, die auf Grundlage von Anschreiben-Vorlagen erzeugt wurden.
+Hierzu zählen beispielsweise hochgeladene Dateien, Dokumente, die auf Grundlage von Anschreiben-Vorlagen erzeugt wurden.
 
-Die eigenständige Modellierung von Anhänge als `DocumentReference` ermöglicht es, einen Anhang unabhängig von der Ressource zu verwalten, aus der auf ihn verwiesen wird.
-
-### Dateiinhalt und Dateimetadaten
-<#TODO> Redundancy checken
-
-Die `DocumentReference` enthält die fachlichen und technischen Metadaten des Anhangs. Der binäre Dateiinhalt wird nicht inline in der Ressource übertragen, sondern separat bereitgestellt und über `DocumentReference.content.attachment.url` referenziert.
+Die `DocumentReference` enthält die fachlichen und technischen Metadaten des Anhangs. Der binäre Dateiinhalt wird nicht inline mit der Ressource übertragen, sondern separat verwaltet und über `DocumentReference.content.attachment.url` referenziert.
 
 Über `content.attachment` können insbesondere folgende Informationen zum Dokument angegeben werden:
 
@@ -37,18 +32,19 @@ Die `DocumentReference` enthält die fachlichen und technischen Metadaten des An
 | `content.attachment.title`       | Name bzw. Betreff des Anhangs                                 |
 | `content.attachment.creation`    | Erstellungszeitpunkt des eigentlichen Dokuments               |
 
-**⚠ Hinweis:** Dabei ist zwischen dem Erstellungszeitpunkt des Dokuments und dem Erstellungszeitpunkt der `DocumentReference` zu unterscheiden.
+**⚠ Bemerkung:** 
 
-`content.attachment.creation` bezeichnet den **Erstellungszeitpunkt des referenzierten Dokuments**.
+Dabei ist zwischen dem Erstellungszeitpunkt des Dokuments und dem Erstellungszeitpunkt der Anhangsentität zu unterscheiden:
 
-`DocumentReference.date` bezeichnet den Zeitpunkt, zu dem der Anhang in EMIGA erstellt bzw. als `DocumentReference` angelegt wurde.
+- `content.attachment.creation` bezeichnet den **Erstellungszeitpunkt des referenzierten Dokuments**.
+
+- `DocumentReference.date` bezeichnet den Zeitpunkt, zu dem der Anhang in EMIGA erstellt bzw. als `DocumentReference` angelegt wurde.
 
 Über `DocumentReference.author` wird die Person referenziert, die den Anhang in EMIGA erstellt hat.
 
 ### Identifikation
 Ein Anhang kann über `DocumentReference.identifier` mit fachlichen oder technischen Identifiern versehen werden.
-
-Je nach Verwendungskontext können beispielsweise EMIGA-spezifische Identifier oder weitere fachliche Referenznummern zur Identifikation und Zuordnung eines Dokuments angefügt werden.
+Je nach Verwendungskontext können beispielsweise EMIGA-spezifische Identifier oder weitere fachliche Referenznummern zur Identifikation und Zuordnung des Dokuments angefügt werden.
 
 ## Profil
 ### Metadaten
@@ -109,6 +105,8 @@ for
 <br>&nbsp;<br>
 
 ## Anmerkungen zu Must-Support Elementen
+Die Must-Support-Kennzeichnungen ergeben sich zum Teil aus der zugrunde liegenden FHIR-Basisressource und werden zum Teil durch das jeweilige EMIGA-Profil festgelegt. Im Folgenden sind alle für dieses Profil geltenden Must-Support-Elemente aufgeführt:
+
 <fql>
 from
 	StructureDefinition

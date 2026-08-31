@@ -4,7 +4,11 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierSurvNe
 ---
 
 # {{page-title}}
-## Beschreibung
+
+Zur Sicherstellung der Kompatibilität mit SurvNet wird in EMIGA zusätzlich zum **EMIGA-Aktenzeichen** das **SurvNet-Aktenzeichen** abgebildet. Dies dient insbesondere der **Migration von Altdaten** sowie dem **Parallelbetrieb von SurvNet und EMIGA**.
+Das SurvNet-Aktenzeichen ist ebenfalls ein fachlicher, sprechender Identifikator. Es ist jedoch nicht als systemweit eindeutiger Identifikator zu verwenden.
+
+
 <fql output= "inline" headers="false">
 from 
     StructureDefinition

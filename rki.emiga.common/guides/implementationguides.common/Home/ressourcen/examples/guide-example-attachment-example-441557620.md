@@ -1,9 +1,6 @@
-# Example: Attachment DocumentReference – Fachlicher Dokumentanhang
+# Beispiel: Anhangsdokument 441557620
 
-## Beispiel (Attachment 441557620)
-Das folgende Beispiel zeigt einen Anhang, der als eigenständige `DocumentReference` in EMIGA verwaltet wird.
-
-Bei dem Beispieldokument handelt es sich um eine PNG-Datei mit dem Titel:
+Das folgende Beispiel zeigt die Abbildung eines Anhangs als eigenständige `DocumentReference`-Ressource in EMIGA. Der Anhang ist eine PNG-Datei mit dem Titel:
 
 ```text
 Sample Image
@@ -37,14 +34,7 @@ Die Ressource ist mit dem Status `current` als aktuell gültige Dokumentreferenz
 
 Über die Security Labels wird die Ressource außerdem als `transferable` gekennzeichnet und einer verantwortlichen ÖGD-Stelle zugeordnet.
 
-Das Beispiel veranschaulicht damit insbesondere:
-
-* die Abbildung eines Anhangs als `DocumentReference`,
-* die Identifikation-Vergabe über fachliche Identifier,
-* die Beschreibung der Datei über `content.attachment`,
-* die Angabe des Erstellers über `author`,
-* die Unterscheidung zwischen `DocumentReference.date` und `Attachment.creation`,
-* sowie die Steuerung von Sichtbarkeit und Verantwortlichkeit über `meta.security`.
+Das Beispiel veranschaulicht die Abbildung eines Anhangs als `DocumentReference`, die Vergabe fachlicher Identifikatoren sowie die Beschreibung der Datei über `content.attachment`. Darüber hinaus zeigt es die Angabe der erstellenden Person über `author`, die Unterscheidung zwischen dem Erstellungszeitpunkt der `DocumentReference` (`DocumentReference.date`) und dem Erstellungszeitpunkt des eigentlichen Dokuments (`Attachment.creation`) sowie die Steuerung von Sichtbarkeit und Verantwortlichkeit über `meta.security`.
 
 <tabs>
     <tab title="Übersicht">      

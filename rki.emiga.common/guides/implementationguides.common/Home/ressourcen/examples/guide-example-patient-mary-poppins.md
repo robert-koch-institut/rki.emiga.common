@@ -1,16 +1,12 @@
-# Example: Affected Person
+# Beispiel: Affected Person
 
-## Beschreibung
-
-Dieses Beispiel zeigt eine betroffene Person (`Patient`) mit unterschiedlichen demografischen, administrativen und kontaktbezogenen Angaben.
+Dieses Beispiel zeigt die Abbildung einer betroffenen Person (`Patient`) mit demografischen, administrativen und kontaktbezogenen Angaben.
 
 Die Ressource verwendet das EMIGA-Profil:
 
 ```text
 https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson
 ```
-
-Das Beispiel dient insbesondere dazu, die Abbildung einer betroffene Person mit mehreren Namen und Adressen sowie zusätzlichen Angaben wie Geburtsland, Staatsangehörigkeit, amtlichem Geschlecht, Bearbeitungsstatus und einer zugeordneten Einrichtung zu veranschaulichen.
 
 ## Beispiel-Szenario
 
@@ -20,9 +16,7 @@ Für die Person sind sowohl ein Hauptwohnsitz als auch ein davon abweichender de
 
 Die Person besitzt die deutsche Staatsangehörigkeit; als Geburtsland ist Jugoslawien angegeben. Als bevorzugte beziehungsweise dokumentierte Kommunikationssprache ist Deutsch hinterlegt.
 
-Der Datensatz befindet sich aktuell im Bearbeitungsstatus **„In Bearbeitung“**.
-
-## Identifikation
+### Identifikation
 
 Die Person wird über EMIGA-spezifische Identifier identifiziert:
 
@@ -33,7 +27,7 @@ Die Person wird über EMIGA-spezifische Identifier identifiziert:
 
 Die Identifier ermöglichen die eindeutige Identifikation und fachliche Zuordnung der Person innerhalb von EMIGA.
 
-## Name und Anrede
+### Name und Anrede
 
 Der offizielle Name der Beispielperson lautet:
 
@@ -55,7 +49,7 @@ Neben dem offiziellen Namen enthält das Beispiel weitere Namensangaben:
 
 Damit wird veranschaulicht, wie unterschiedliche Namensarten einer betroffenen Person über `Patient.name` abgebildet werden können.
 
-## Geschlecht
+### Geschlecht
 
 Für `Patient.gender` wird im Beispiel der FHIR-Wert:
 
@@ -77,9 +71,9 @@ das amtliche Geschlecht angegeben:
 D – divers
 ```
 
-Damit werden sowohl der FHIR-Basiswert als auch die für den deutschen Kontext spezifischere amtliche Angabe gemeinsam abgebildet.
+Damit werden sowohl der FHIR-Basiswert als auch die für den deutschen Kontext spezifischere amtliche Angabe nebeneinander abgebildet.
 
-## Geburtsdatum und Geburtsland
+### Geburtsdatum und Geburtsland
 
 Das Geburtsdatum der Person ist:
 
@@ -107,7 +101,7 @@ Die Kodierung erfolgt über:
 http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen
 ```
 
-## Staatsangehörigkeit
+### Staatsangehörigkeit
 
 Die Staatsangehörigkeit wird über die FHIR-Extension:
 
@@ -125,7 +119,7 @@ D – Deutschland
 
 Auch hierfür wird das DEÜV-CodeSystem für Länderkennzeichen verwendet.
 
-## Kontaktdaten
+### Kontaktdaten
 
 Für die Beispielperson sind sowohl eine E-Mail-Adresse als auch eine Telefonnummer über `Patient.telecom` hinterlegt:
 
@@ -134,7 +128,7 @@ Für die Beispielperson sind sowohl eine E-Mail-Adresse als auch eine Telefonnum
 | E-Mail     | `mary.poppins@example.com` |
 | Telefon    | `+49301234567`             |
 
-## Hauptwohnsitz
+### Hauptwohnsitz
 
 Die erste Adresse wird über die DEMIS-Extension `AddressUse` als:
 
@@ -150,8 +144,6 @@ Im Beispiel lautet der Hauptwohnsitz:
 > 12345 Berminghausen
 > Deutschland
 
-Zusätzlich enthält die Adresse eine Geolokation mit Breiten- und Längengrad.
-
 Die Klassifikation der Adresse erfolgt über:
 
 ```text
@@ -164,7 +156,7 @@ mit dem Code:
 primary
 ```
 
-## Derzeitiger Aufenthaltsort
+### Derzeitiger Aufenthaltsort
 
 Neben dem Hauptwohnsitz ist ein derzeitiger Aufenthaltsort angegeben.
 
@@ -182,9 +174,9 @@ Im Beispiel lautet die Adresse:
 > 54321 Blumenland
 > Deutschland
 
-Das Beispiel verdeutlicht damit insbesondere, dass der **melderechtliche beziehungsweise primäre Wohnsitz und der aktuelle Aufenthaltsort einer Person voneinander abweichen können** und als getrennte `Patient.address`-Einträge übermittelt werden können.
+Das Beispiel verdeutlicht damit insbesondere, dass der melderechtliche beziehungsweise primäre Wohnsitz und der aktuelle Aufenthaltsort einer Person voneinander abweichen können und als getrennte `Patient.address`-Einträge übermittelt werden können.
 
-## Geolokation
+### Geolokation
 
 Für die Adressen können zusätzlich geografische Koordinaten angegeben werden.
 
@@ -234,7 +226,7 @@ kodiert.
 
 Das Beispiel beschreibt somit eine Person, die einer Einrichtung im Kontext einer **Betreuung** zugeordnet ist.
 
-## Bearbeitungsstatus
+### Bearbeitungsstatus
 
 Der fachliche Bearbeitungsstatus der Person wird über die Extension:
 
@@ -252,7 +244,7 @@ inprogress – In Bearbeitung
 
 Damit wird ausgedrückt, dass die Bearbeitung des Datensatzes beziehungsweise des zugehörigen fachlichen Vorgangs noch nicht abgeschlossen ist.
 
-## Kommunikationssprache
+### Kommunikationssprache
 
 Über `Patient.communication` ist Deutsch als Sprache der Person angegeben:
 
@@ -268,7 +260,7 @@ urn:ietf:bcp:47
 
 kodiert.
 
-## Sterbedatum
+### Sterbedatum
 
 Das Beispiel enthält außerdem ein Sterbedatum:
 
@@ -278,7 +270,7 @@ Das Beispiel enthält außerdem ein Sterbedatum:
 
 Dieses wird über `Patient.deceasedDateTime` angegeben und dokumentiert, dass die betroffene Person verstorben ist.
 
-## Änderungshistorie
+### Änderungshistorie
 
 Über die Extension `LastModifiedBy` in `Patient.meta` wird der Nutzende referenziert, der die Ressource zuletzt geändert hat.
 
@@ -296,41 +288,4 @@ https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
 
 Damit kann die letzte Änderung der Datensatz einem EMIGA-Nutzende zugeordnet werden.
 
-## Sicherheit, Sichtbarkeit und Verantwortlichkeit
-Über `Patient.meta.security` werden die Sichtbarkeit und die fachliche Verantwortlichkeit der Ressource angegeben.
-
-Im Beispiel ist die Sichtbarkeit auf:
-
-```text
-inAgency – Eigene ÖGD-Stelle
-```
-
-gesetzt.
-
-Die Ressource ist damit ausschließlich für die eigene ÖGD-Stelle vorgesehen.
-
-Als verantwortliche Stelle wird über `ResourceResponsibility` angegeben:
-
-```text
-1. – Robert Koch-Institut
-```
-
-## Zusammenfassung
-
-Dieses Beispiel zeigt eine umfangreich beschriebene betroffene Person und veranschaulicht insbesondere:
-
-* Identifikation über EMIGA-spezifische Identifier
-* offiziellen Namen, Geburtsnamen und weiteren Namen
-* Anrede
-* Geschlecht gemäß FHIR-Basisressource und amtliches Geschlecht
-* Geburtsdatum und Geburtsland
-* Staatsangehörigkeit
-* E-Mail-Adresse und Telefonnummer
-* Hauptwohnsitz und davon abweichenden derzeitigen Aufenthaltsort
-* strukturierte Adressbestandteile und Geolokation
-* Zuordnung zu einer betreuenden Einrichtung
-* Bearbeitungsstatus
-* Kommunikationssprache
-* Sterbedatum
-* Dokumentation des zuletzt ändernden Nutzende
-* Sichtbarkeit und organisatorische Verantwortlichkeit
+Das Beispiel dient insbesondere dazu, die Abbildung einer betroffene Person mit mehreren Namen und Adressen sowie zusätzlichen Angaben wie Geburtsland, Staatsangehörigkeit, amtlichem Geschlecht, Bearbeitungsstatus und einer zugeordneten Einrichtung zu veranschaulichen.
