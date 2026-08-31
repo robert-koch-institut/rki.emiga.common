@@ -20,11 +20,11 @@ Description: "Typisches Beispiel einer Bezugsperson, die mit einer betroffenen P
 // -----------------------------------------------------------------------------
 
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
-* identifier[EmigaID].value = "RelatedPerson-PQRST-123456789"
+* identifier[EmigaID].value = "Bezugsperson-PQRST-123456789"
 * identifier[EmigaID].use = #official
 
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
-* identifier[EmigaFileNumber].value = "RelatedPerson-XYZ-987654321"
+* identifier[EmigaFileNumber].value = "Bezugsperson-XYZ-987654321"
 * identifier[EmigaFileNumber].use = #official
 
 // -----------------------------------------------------------------------------

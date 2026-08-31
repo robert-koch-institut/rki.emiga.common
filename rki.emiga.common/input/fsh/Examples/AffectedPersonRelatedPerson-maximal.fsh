@@ -19,15 +19,15 @@ Description: "Maximalbeispiel einer Bezugsperson, die mit einer betroffenen Pers
 //  Identifieren (EmigaID + EmigaFileNumber + SurvNetFileNumber)
 // -----------------------------------------------------------------------------
 * identifier[EmigaID].system = "https://emiga.rki.de/fhir/sid/EmigaID"
-* identifier[EmigaID].value = "RelatedPerson-PQRST-123456789"
+* identifier[EmigaID].value = "Bezugsperson-PQRST-123456789"
 * identifier[EmigaID].use = #official
 
 * identifier[EmigaFileNumber].system = "https://emiga.rki.de/fhir/sid/EmigaFileNumber"
-* identifier[EmigaFileNumber].value = "RelatedPerson-XYZ-987654321"
+* identifier[EmigaFileNumber].value = "Bezugsperson-XYZ-987654321"
 * identifier[EmigaFileNumber].use = #official
 
 * identifier[SurvNetFileNumber].system = "https://emiga.rki.de/fhir/sid/SurvNetFileNumber"
-* identifier[SurvNetFileNumber].value = "SURVNET-RelatedPerson-567890"
+* identifier[SurvNetFileNumber].value = "SURVNET-Bezugsperson-567890"
 * identifier[SurvNetFileNumber].use = #temp
 
 // -----------------------------------------------------------------------------
