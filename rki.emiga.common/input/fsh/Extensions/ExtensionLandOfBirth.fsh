@@ -1,14 +1,16 @@
 Extension: LandOfBirth
 Id: LandOfBirth
 Title: "Geburtsland"
-Description: "Geburtsland der betroffenen Person."
+Description: "Extension für die Angabe des Geburtslandes der betroffenen Person."
 Context: Patient
-* insert MetadataProfile
 
 * ^url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth"
-* ^version = "0.2.0"
-* ^date = "2025-09-12"
 * url = "https://emiga.rki.de/fhir/common/Extension/LandOfBirth" (exactly)
+* ^version = "0.2.1"
+* ^date = "2026-08-18"
+
+* insert MetadataProfile
+
 * value[x] only Coding
 * value[x] from CountryCodes (extensible)
 * value[x] 1.. MS
@@ -21,4 +23,3 @@ Context: Patient
 * value[x].code 1..1 MS
 * value[x].display ^mustSupport = true
 * value[x].version MS
-
