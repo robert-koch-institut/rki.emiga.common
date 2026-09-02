@@ -1,15 +1,18 @@
 CodeSystem: RelatedPersonRelationshipType
 Id: RelatedPersonRelationshipType
 Title: "Beziehungen zu anderen Personen"
-Description: "Definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen zu unterscheiden."
+Description: "Die Kodiersystematik 'RelatedPersonRelationship' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen zu unterscheiden."
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * ^version = "1.4.1"
 * ^date = "2026-03-24"
 * ^caseSensitive = true
 * ^content = #complete
-* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipTypeVS"
 * ^count = 6
+* ^url = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
+* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/RelatedPersonRelationshipTypeVS"
+
+* insert MetadataTerminology
 
 * #legalGuardian "Sorgeberechtigte Person" "Person mit elterlicher Sorge für ein Kind."
 * #legalRepresentative "Gesetzliche Vertretung" "Person mit gesetzlicher oder gerichtlich bestellter Vertretungsbefugnis im festgelegten Aufgabenkreis."

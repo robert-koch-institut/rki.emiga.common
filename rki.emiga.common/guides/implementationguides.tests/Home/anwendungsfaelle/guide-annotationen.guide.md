@@ -12,15 +12,16 @@ Weitere Einträge im Bundle stellen die für die Verarbeitung und Interpretation
 **Anhänge** der Annotation werden über das Profil `AttachmentDocumentReference` abgebildet und i.d.R. einer Annotation zugeordnet.
 **Zusätzliche Eigenschaften** können über das Profil `AdditionalPropertiesQuestionnaireResponse` strukturiert mitgeführt und der Annotation zugeordnet werden.
 
-{{render:guides/implementationguides.common/PlantUML/PNGs/AnnotationCommunication.png}}
-
+{{render:guides/implementationguides.tests/PlantUML/PNGs/AnnotationBundle.png}}
 
 ## Fachlicher Ablauf
 
 Ein Client erzeugt zunächst bei Bedarf ein neues EMIGA-Aktenzeichen für Annotationen. Anschließend wird die Annotation als FHIR-Transaktionsbundle an den Annotationsdienst übergeben. Der Dienst speichert die enthaltenen Ressourcen, vergibt bzw. verwaltet technische Ressourcen-IDs und liefert ein Bundle mit dem gespeicherten Stand zurück.
 
-Beim Erstellen einer Annotation wird ein FHIR-`Bundle` mit `type = transaction` an den Endpunkt `/Bundle/$create-annotation` gesendet. Das Bundle muss die `AnnotationCommunication` als ersten fachlichen Eintrag enthalten. Die erstellende Person wird als `EmigaUserPractitioner` mitgeführt. Wenn Anhänge oder `Zusätzliche Eigenschaften` Bestandteil der Annotation sind, werden diese als weitere Bundle-Einträge aufgenommen und aus der `Communication` heraus referenziert.
-Eine gelöschte oder verworfene Annotation wird über die entsprechende Operation bzw. den Bearbeitungsstatus dokumentiert.
+Für die Anzeige und Weiterbearbeitung der Annotation-Bundel stehen Such-, Detail- und Historienoperationen zur Verfügung. 
+Änderungen an einer bestehenden Annotation werden als neue Version der Annotation gespeichert. Dadurch bleibt nachvollziehbar, welcher Stand zu jenem Zeitpunkt gültig war. Eine gelöschte oder verworfene Annotation wird über die entsprechende Operation bzw. den Bearbeitungsstatus dokumentiert.
+
+{{render:guides/implementationguides.tests/PlantUML/PNGs/AnnotationCommunication.png}}
 
 {{render:guides/implementationguides.common/PlantUML/PNGs/AnnotationBundle.png}}
 
@@ -47,7 +48,7 @@ Für eine Detailansicht soll nicht ausschließlich der Suchtreffer verwendet wer
 Anhänge liegen als eigenständige  `AttachmentDocumentReference`-Ressourcen vor und werden aus der Annotation heraus referenziert. 
 Dadurch können Metadaten zum Dokument, technische Prüfinformationen und Zugriffssteuerungsinformationen getrennt vom eigentlichen Annotationsinhalt verwaltet werden.
 
-{{render:guides/implementationguides.common/PlantUML/PNGs/AttachmentDocumentReference.png}}
+{{render:guides/implementationguides.tests/PlantUML/PNGs/AttachmentDocumentReference.png}}
 
 Relevante Angaben zum Anhang sind unter anderen:
 

@@ -1,13 +1,12 @@
 ValueSet: CountyVS
 Id: CountyVS
-
-
 Title: "Landkreis-Werteliste"
-Description: "Die Wertemenge 'CountyVS' definiert Konzepte, die den Landkreis charakterisieren."
-* insert MetadataTerminology
-* ^version = "0.1.0"
-* ^date = "2026-03-23"
+Description: "Werteliste mit Werten, die den Landkreis definieren."
 * ^url = "https://emiga.rki.de/fhir/ValueSet/CountyVS"
+* ^version = "0.1.1"
+* ^date = "2026-08-18"
+
+* insert MetadataTerminology
 
 * $GeographicRegion#11001001 "SK Flensburg"
 * $GeographicRegion#11001002 "SK Kiel"

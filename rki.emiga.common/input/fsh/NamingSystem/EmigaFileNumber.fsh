@@ -1,10 +1,10 @@
 Instance: EmigaFileNumber
 InstanceOf: NamingSystem
 Title: "EMIGA Aktenzeichen"
-Description: "EMIGA Aktenzeichen für die Verwendung in Identifiers"
+Description: "Das NamingSystem 'EmigaFileNumber' definiert das Identifikationssystem für das EMIGA-Aktenzeichen."
 Usage: #definition
 * publisher = "Robert Koch-Institut"
-* date = "2025-09-15"
+* date = "2026-08-18"
 * name = "EmigaFileNumber"
 * status = #active
 * kind = #identifier

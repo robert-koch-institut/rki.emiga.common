@@ -2,10 +2,11 @@ Profile: AnnotationCommunication
 Parent: Communication
 Id: AnnotationCommunication
 Title: "Annotation"
-Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen auch ohne Entitätsbezug zu hinterlegen."
+Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen."
+
+* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 * ^version = "0.9.0"
 * ^date = "2026-05-18"
-* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AnnotationCommunication"
 
 * insert MetadataProfile
 * insert ProfileSecurityTagsAnnotation
@@ -142,4 +143,3 @@ Description: "Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche o
 * payload.contentString ^short = "Beschreibung - Inhalt der Annotation"
 * payload.contentReference MS
 * payload.contentReference ^short = "Anhang - Hier wird der Anhang der Annotation referenziert"
-

@@ -1,11 +1,13 @@
 ValueSet: PersonResourceVisibilityType
+Id: PersonResourceVisibilityType
 Title: "Personen-Ressourcensichtbarkeit"
 Description: "Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben."
-Id: PersonResourceVisibilityType
-* insert MetadataTerminology
+* ^url = "https://emiga.rki.de/fhir/common/ValueSet/PersonResourceVisibilityType"
 * ^version = "0.1.0"
 * ^date = "2025-11-10"
-* ^url = "https://emiga.rki.de/fhir/common/ValueSet/PersonResourceVisibilityType"
+
+* insert MetadataTerminology
 
 * $ResourceVisibilityType#inAgency "Eigene ÖGD-Stelle" 
 * $ResourceVisibilityType#transferable "übermittelbar"
+

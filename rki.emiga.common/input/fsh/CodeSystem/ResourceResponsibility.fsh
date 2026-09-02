@@ -1,14 +1,15 @@
 CodeSystem: ResourceResponsibility
 Id: ResourceResponsibility
 Title: "ResourceResponsibility"
-Description: "Codierung der für die jeweilige Ressource verantwortlichen ÖGD-Stelle."
-* insert MetadataTerminology
-* ^version = "1.1.0"
-* ^date = "2025-05-05"
+Description: "Das CodeSystem 'ResourceResponsibility' definiert Konzepte, die für die Kennzeichnung der Verantwortlichkeit für Ressourcen genutzt werden kann."
+* ^version = "1.1.1"
+* ^date = "2026-08-18"
 * ^caseSensitive = true
 * ^content = #complete
-* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
 * ^count = 404
+* ^valueSet = "https://emiga.rki.de/fhir/common/ValueSet/ResourceResponsibility"
+
+* insert MetadataTerminology
 
 * #0. "-kein-"
 * #1. "Robert Koch-Institut"

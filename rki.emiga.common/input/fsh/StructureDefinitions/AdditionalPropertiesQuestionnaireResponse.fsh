@@ -4,9 +4,9 @@ Id: AdditionalPropertiesQuestionnaireResponse
 Title: "Zusätzliche Eigenschaften Fragebogen-Antworten"
 Description: "Dieses Profil bietet die Möglichkeit, zusätzliche fachliche Zusatzinformationen zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden."
 
+* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
 * ^version = "0.3.0"
 * ^date = "2026-04-24"
-* ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
 
 * insert MetadataProfile
 * insert ProfileResourceCommon
@@ -44,4 +44,3 @@ Description: "Dieses Profil bietet die Möglichkeit, zusätzliche fachliche Zusa
 
 * item 1..* MS
 * item ^short = "The questions and their answers"
-
