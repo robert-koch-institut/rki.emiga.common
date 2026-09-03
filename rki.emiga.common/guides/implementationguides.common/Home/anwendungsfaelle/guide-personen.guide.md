@@ -5,7 +5,7 @@ Dieser Abschnitt beschreibt die möglichen Anwendungsfälle zur Abbildung von **
 Eine betroffene Person wird als `Patient`-Ressourceninstanz gemäß dem Profil `AffectedPerson` abgebildet. Eine Bezugsperson wird als eigenständige `RelatedPerson`-Ressourceninstanz gemäß dem Profil `AffectedPersonRelatedPerson` geführt. 
 
 
-{{render:guides/implementationguides.tests/PlantUML/PNGs/uml-personen-und-bezugspersonen.png}}
+{{render:guides/implementationguides.common/PlantUML/PNGs/uml-personen-und-bezugspersonen.png}}
 
 ### Anlegen einer betroffenen Person
 Das Profil `AffectedPerson` enthält die für EMIGA relevanten personenbezogenen Angaben zu einer Fallperson (Patient). Dazu gehören insbesondere Identifikatoren, Name und Anrede, Kontakt- und Adressdaten, Geburtsdaten, Staatsangehörigkeit, Bearbeitungsstatus, Sprachkenntnisse sowie Angaben zu behandelnden Personen und Einrichtungsbezügen. Das Element `relationship` beschreibt die Art dieser Beziehung und ist an das ValueSet `RelatedPersonRelationshipTypeVS` gebunden.
@@ -13,10 +13,10 @@ Mit Ausnahme der Identifikatoren sind in dieser Klasse keine weiteren Elemente a
 
 Beim Anlegen einer **betroffenen Person** wird eine neue Instance von `AffectedPerson`-Ressource erstellt. Die Erstellung erfolgt im Rahmen eines `TransactionBundle`, das alle für den Erstellungsvorgang benötigten Ressourcen gemeinsam an das System-Enpoint übermittelt.
 
-{{render:guides/implementationguides.tests/PlantUML/PNGs/AffectedPersonBundle.png}}
+{{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPersonBundle.png}}
 
 ## Betroffene Person
-{{render:guides/implementationguides.tests/PlantUML/PNGs/AffectedPerson.png}}
+{{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPerson.png}}
 
 ### Abbildung einer Bezugsperson
 Für eine **betroffene Person** können ihre Bezugspersonen über eine `AffectedPersonRelatedPerson`-Instanz abgebildet werden. Die betroffene Person (`AffectedPerson`) verweist hierzu über einen Link auf die entsprechende `AffectedPersonRelatedPerson`.
@@ -28,7 +28,7 @@ Auf diese Weise werden Bezugsperson und betroffene Person jeweils als eigenstän
 ## Bezugsperson der betroffenen Person
 Eine **Bezugsperson** wird als Instanz des Profils `AffectedPersonRelatedPerson` abgebildet. Über `patient` wird die betroffene Person referenziert, auf die sich die Bezugsperson bezieht.
 
-{{render:guides/implementationguides.tests/PlantUML/PNGs/AffectedPersonRelatedPerson.png}}
+{{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPersonRelatedPerson.png}}
 
 Das Element `relationship` beschreibt die Art dieser Beziehung und ist an das ValueSet `RelatedPersonRelationshipTypeVS` gebunden.
 

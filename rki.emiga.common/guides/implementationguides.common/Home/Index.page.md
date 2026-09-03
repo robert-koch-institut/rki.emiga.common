@@ -17,7 +17,7 @@
 
 ### Herausgeber
 
-{{render:guides/implementationguides.tests/images/RKI.png}}
+{{render:guides/implementationguides.common/images/RKI.png}}
 
 
 
@@ -33,7 +33,7 @@ Nordufer 20\
 
 ### Kontakt
 
-{{render:guides/implementationguides.tests/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
+{{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
 
 Sie erreichen uns über das EMIGA-Kontaktformular.
 
