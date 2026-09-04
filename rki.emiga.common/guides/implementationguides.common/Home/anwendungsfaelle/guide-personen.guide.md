@@ -1,9 +1,8 @@
 # {{page-title}}
 
-Dieser Abschnitt beschreibt die möglichen Anwendungsfälle zur Abbildung von **betroffenen Personen** und **Bezugspersonen** in EMIGA, beispielsweise eine Fallperson/Patient (Practitioner).
+Dieser Abschnitt beschreibt die möglichen Anwendungsfälle zur Abbildung von **betroffenen Personen** und **Bezugspersonen** in EMIGA.
 
 Eine betroffene Person wird als `Patient`-Ressourceninstanz gemäß dem Profil `AffectedPerson` abgebildet. Eine Bezugsperson wird als eigenständige `RelatedPerson`-Ressourceninstanz gemäß dem Profil `AffectedPersonRelatedPerson` geführt. 
-
 
 {{render:guides/implementationguides.common/PlantUML/PNGs/uml-personen-und-bezugspersonen.png}}
 

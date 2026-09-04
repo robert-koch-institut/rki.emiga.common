@@ -19,22 +19,17 @@ class AffectedPerson{
 <b>+</b> birthDate: date [0..1]
 <b>+</b> deceasedBoolean: boolean [0..1]
 <b>+</b> deceasedDateTime: dateTime [0..1]
-' <TODO>: Check whether deceased[x] should be represented as choice element
-' <b>+</b> deceased[x]: boolean | dateTime [0..1]
 <b>+</b> extension:citizenship: Complex [0..*]
 <b>+</b> extension:landOfBirth: Coding [0..1]
 <b>+</b> extension:processingStatus: Coding [0..1]
-' TODO: add <b>+</b> extension:facilityAssociation: Complex [0..*]
 <b>+</b> gender: code [0..1]
 <b>+</b> gender.extension:other-amtlich: Coding [0..1]
-' TODO: add <b>+</b> gender.extension:null-flavor: Coding [0..1]
 -- Communication --
 <b>+</b> address.city: string [0..1]
 <b>+</b> address.country: string [0..1]
 <b>+</b> address.extension:addressUse: Coding [0..*]
 <b>+</b> address.extension:facilityAssociation: Complex [0..*]
 <b>+</b> address.extension:geolocation: Complex [0..1]
-'TODO check: 0-*? <b>+</b> address.extension:geolocation: Complex [0..*]
 <b>+</b> address.extension:regionalKey: Complex [0..1]
 <b>+</b> address.extension:Stadtteil: String [0..1]
 <b>+</b> address.line.extension:Adresszusatz: String [0..1]
@@ -46,12 +41,8 @@ class AffectedPerson{
 <b>+</b> telecom:Email: ContactPoint [0..*]
 <b>+</b> telecom:Fax: ContactPoint [0..*]
 <b>+</b> telecom:Phone: ContactPoint [0..*]
-'TODO <b>+</b> communication.language: CodeableConcept [0..1]
-'-- Care --
-'<b>+</b> generalPractitioner: Reference [0..*]
 -- Links --
 <b>+</b> link:relatedPersonLink: Reference(RelatedPerson) [0..*]
-'TODO <b>+</b> link:patientLink: Reference(Patient) [0..*]
 }
 
 @enduml

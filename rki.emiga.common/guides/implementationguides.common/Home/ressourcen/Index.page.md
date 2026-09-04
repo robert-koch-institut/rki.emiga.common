@@ -16,11 +16,3 @@ Dieser Abschnitt bietet eine Übersicht über alle in diesem Implementierungslei
    
 **Extensions**  
    Extensions für die Abbildung zusätzlicher Informationen jenseits der FHIR-Basisstandard. Diese dienen dazu, FHIR-Ressourcen entsprechend den fachlichen Anforderungen von EMIGA und des ÖGD zu erweitern. Beispiele hierfür sind der Bearbeitungsstatus (ProcessingStatus) oder das Geburtsland (LandOfBirth).
-
-_Bemerkung:_ In der Regel enthalten alle Ressourcen Angaben zur **Sichtbarkeit** und **Verantwortlichkeit**, die einheitlich über `Resource.meta.security` abgebildet werden. Daher wird diese Abbildung im Folgenden generisch beschrieben. Hierfür sind mindestens zwei Security Labels vorgesehen:
-
-
-- `visibility` zur Angabe der Sichtbarkeit der Ressource
-responsibility zur Angabe der verantwortlichen ÖGD-Stelle
-
-- Die Sichtbarkeit wird über das CodeSystem `ResourceVisibilityType` kodiert und an ein entsprechendes ValueSet gebunden. Die Verantwortlichkeit wird über das CodeSystem `ResourceResponsibility` angegeben.

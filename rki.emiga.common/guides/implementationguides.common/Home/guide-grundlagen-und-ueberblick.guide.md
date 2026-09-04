@@ -1,5 +1,4 @@
 # {{page-title}}
-<TODO> harmonize this page for all packages, am besten use the same file. Currently. Case is "main branch".
 
 ## Über EMIGA
 {{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}

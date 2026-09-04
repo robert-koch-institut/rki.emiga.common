@@ -4,6 +4,34 @@ title Personen und Bezugspersonen
 skinparam shadowing false
 skinparam roundcorner 0
 skinparam linetype ortho
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+
+skinparam ArrowColor #555555
+skinparam classBorderColor #555555
+
+hide circle
+
+class "AffectedPerson" as AP #D9EAD3
+class "AffectedPersonRelatedPerson" as RP #FFF2CC
+class "EmigaUserPractitioner" as Practitioner #D9EAF7
+
+RP --> AP : patient
+AP --> RP : relatedPersonLink
+AP --> Practitioner : lastModifiedBy
+
+@enduml
+
+
+
+/'
+
+@startuml
+title Personen und Bezugspersonen
+
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
 skinparam classAttributeIconSize 0
 skinparam defaultFontName Arial
 skinparam defaultFontSize 11
@@ -64,3 +92,4 @@ AP "0..*" --> "0..*" AP : link[patientLink]\n«dieselbe physische Person»
 AP "0..*" --> "0..1" Practitioner : meta.extension[lastModifiedBy]
 
 @enduml
+'/

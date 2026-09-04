@@ -31,32 +31,14 @@ Für unterschiedliche Namensarten werden separate `HumanName`-Einträge verwende
 | Geburtsname      | `name.use = #maiden`   | Geburtsname der Person                  |
 | Kurzname         | `name.use = #nickname` | Kurzname bzw. weiterer informeller Name |
 
-Die Anrede wird über:
+Die Anrede wird über `name.extension[salutation]` abgebildet.
 
-```text id="9g7pka"
-name.extension[salutation]
-```
-
-abgebildet.
-
-Für einen Namenseintrag mit:
-
-```text id="axhdb3"
-name.use = #maiden
-```
-
-gilt die Invariante `maidenNameOnlyFamily`. Entsprechend darf bei diesem Namenseintrag nur `name.family` zur Abbildung des Geburtsnamens befüllt sein.
+Für einen Namenseintrag mit `name.use = #maiden` gilt die Invariante `maidenNameOnlyFamily`. Entsprechend darf bei diesem Namenseintrag nur `name.family` zur Abbildung des Geburtsnamens befüllt sein.
 
 ### Geschlecht
 
-Das Geschlecht wird grundsätzlich über:
-
-```text id="cz6fpc"
-Patient.gender
-```
-
+Das Geschlecht wird grundsätzlich über `Patient.gender` 
 abgebildet. Bei Geschlcht der Person sind Werte male, female, other und Divers zur Wahl.
-
 
 Zusätzlich kann das amtliche Geschlecht über die für den deutschen Kontext vorgesehene Extension angegeben werden.
 
@@ -64,38 +46,16 @@ Dadurch können der FHIR-Basiswert und die spezifischere amtliche Geschlechtsang
 
 ### Geburtsdatum und Geburtsland
 
-Das Geburtsdatum wird über:
+Das Geburtsdatum wird über `Patient.birthDate` angegeben.
 
-```text id="j90r55"
-Patient.birthDate
-```
+Das Geburtsland wird über die EMIGA-Extension `extension[landOfBirth]` abgebildet.
 
-angegeben.
-
-Das Geburtsland wird über die EMIGA-Extension:
-
-```text id="6ft8tw"
-extension[landOfBirth]
-```
-
-abgebildet.
-
-Die kodierte Angabe erfolgt über:
-
-```text id="mhf3fx"
-extension[landOfBirth].valueCoding
-```
-
+Die kodierte Angabe erfolgt über `extension[landOfBirth].valueCoding`.
 Damit wird das Geburtsland unabhängig von einer aktuellen oder früheren Adresse der Person als eigenes demografisches Merkmal geführt.
 
 ### Staatsangehörigkeit
 
-Die Staatsangehörigkeit wird über:
-
-```text id="v0vx4y"
-extension[citizenship]
-```
-
+Die Staatsangehörigkeit wird über `extension[citizenship]` 
 abgebildet.
 
 Hierfür wird die HL7 Patient-Citizenship-Extension verwendet. Die Staatsangehörigkeit wird entsprechend der im Profil festgelegten Terminologie kodiert.
@@ -103,41 +63,16 @@ Eine Person kann unabhängig vom Geburtsland eine oder mehrere fachlich relevant
 
 ### Kontaktinformationen
 
-Kontaktinformationen werden über:
-
-```text id="2ejjq4"
-Patient.telecom
-```
-
-abgebildet.
-
+Kontaktinformationen werden über `Patient.telecom`abgebildet.
 Hierzu können beispielsweise Telefonnummern, E-Mail-Adressen oder Faxnummern gehören.
 
-Für Faxnummern ist der entsprechende Slice:
-
-```text id="t5tbnk"
-telecom[Fax]
-```
-
-vorgesehen. Dabei ist:
-
-```text id="7ek9r4"
-system = #fax
-```
-
-festgelegt.
+Für Faxnummern ist der entsprechende Slice `telecom[Fax]` vorgesehen. Dabei ist `system = #fax` festgelegt.
 
 Der angegebene Wert wird durch die profilierte Validierungsregel `validFaxNumber` geprüft.
 
 ### Adressen und Aufenthaltsorte
 
-Adressen einer betroffenen Person werden über:
-
-```text id="nt87bg"
-Patient.address
-```
-
-abgebildet.
+Adressen einer betroffenen Person werden über `Patient.address` abgebildet.
 
 Über die entsprechende `AddressUse`-Extension kann die fachliche Kontext einer Adresse genauer beschrieben werden.
 
@@ -162,13 +97,7 @@ Durch die strukturierte Abbildung können Straße, Hausnummer und weitere Bestan
 
 ### Geokoordinaten
 
-Zusätzlich zur postalischen Adresse können über:
-
-```text id="41q3xk"
-address.extension[geolocation]
-```
-
-Geokoordinaten angegeben werden.
+Zusätzlich zur postalischen Adresse können über `address.extension[geolocation]` Geokoordinaten angegeben werden.
 
 Die Extension unterstützt:
 
@@ -180,52 +109,28 @@ Das Profil legt nicht fest, auf welchem Weg die Geokoordinaten ermittelt wurden.
 ### Regionale Zuordnung
 Für eine Adresse können zusätzlich regionale Schlüssel und deren Bezugssystem angegeben werden.
 
-Der Regionalschlüssel wird über:
+Der Regionalschlüssel wird über `address.extension[regionalKey].extension[regionKey].valueString` abgebildet.
 
-```text id="3uw58z"
-address.extension[regionalKey].extension[regionKey].valueString
-```
-
-abgebildet.
-
-Das zugehörige regionale Bezugssystem wird über:
-
-```text id="hnh5sj"
-address.extension[regionalKey].extension[regionReferenceSystem].valueString
-```
-
+Das zugehörige regionale Bezugssystem wird über `address.extension[regionalKey].extension[regionReferenceSystem].valueString` 
 angegeben.
-
 Damit kann eine postalische Adresse zusätzlich einer regionalen beziehungsweise administrativen Gebietssystematik zugeordnet werden.
 
 ### Einrichtungsbezug
 
 Eine betroffene Person kann einer Einrichtung zugeordnet sein.
 
-Hierfür wird die Extension:
-
-```text id="pgy4vq"
-extension[facilityAssociation]
-```
-
-verwendet.
+Hierfür wird die Extension `extension[facilityAssociation]` verwendet.
 
 Diese Extension befindet sich direkt unter dem `Patient`-Ressource und **nicht innerhalb von `Patient.address`**.
 
-Sie beschreibt _keine_ weitere Adresse der Person, sondern eine fachliche Bezug der betroffenen Person zu einer Einrichtung.
+Sie beschreibt keine weitere Adresse der Person, sondern eine fachliche Bezug der betroffenen Person zu einer Einrichtung.
 
 Neben dieser Referenz auf die Einrichtung kann die Art des Bezugs angegeben werden, beispielsweise eine Betreuung.
 
-
+<!--
 ### Kommunikationssprachen
 
-Sprachangaben werden über:
-
-```text id="wy6hka"
-Patient.communication.language
-```
-
-abgebildet.
+Sprachangaben werden über `Patient.communication.language` abgebildet.
 
 Für die Sprache besteht eine Bindung an `CommonLanguages` mit Bindungsstärke `extensible`.
 
@@ -233,35 +138,18 @@ Damit können für die Kommunikation mit der betroffenen Person relevante Sprach
 
 ### Behandelnde Person
 
-Eine behandelnde Person kann über:
-
-```text id="ym6c7v"
-Patient.generalPractitioner
-```
-
-referenziert werden.
+Eine behandelnde Person kann über `Patient.generalPractitioner` referenziert werden.
 
 Die Referenz ermöglicht die Verknüpfung der betroffenen Person mit einer für die Behandlung beziehungsweise Versorgung relevanten Person.
+-->
 
 ### Fachlicher Bearbeitungsstatus des Person-Instanz
 
-Der fachliche Bearbeitungsstatus einer Instanz "betroffenen Person" kann über die EMIGA-Extension:
-
-```text id="fzyj81"
-extension[processingStatus]
-```
-
-angegeben werden.
+Der fachliche Bearbeitungsstatus einer Instanz "betroffenen Person" kann über die EMIGA-Extension `extension[processingStatus]` angegeben werden.
 
 ### Bearbeitende EMIGA-Nutzende
 
-Über die Extension:
-
-```text id="m4ah7x"
-meta.extension[lastModifiedBy]
-```
-
-kann der EMIGA-Benutzer referenziert werden, der die Ressource zuletzt geändert hat.
+Über die Extension `meta.extension[lastModifiedBy]` kann der EMIGA-Benutzer referenziert werden, der die Ressource zuletzt geändert hat.
 
 Die Referenz verweist auf einen `EmigaUserPractitioner`.
 
@@ -269,8 +157,6 @@ Damit kann nachvollzogen werden, welcher Benutzer die letzte Änderung an der be
 
 ### Fachliche Abbildung ausgewählter Attribute
 Die folgende Übersicht fasst zentrale fachliche Attribute des Person-Ressource zusammen.
-
-<TODO: include some content in text into table>
 
 | Attribut                                        | FHIR-Abbildung                                                                | Bemerkung                                                            |
 | ----------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------- |

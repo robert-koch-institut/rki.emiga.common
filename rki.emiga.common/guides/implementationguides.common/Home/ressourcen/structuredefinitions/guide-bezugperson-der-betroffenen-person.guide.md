@@ -30,7 +30,7 @@ Dies ist beispielsweise dann relevant, wenn eine Person in einem fachlichen Kont
 In diesem Fall kann die entsprechende Slice von `AffectedPerson.link` verwendet werden, um die beiden Ressourcen miteinander zu verknüpfen und kenntlich zu machen, dass sie **dieselbe physische Person in unterschiedlichen FHIR-Rollen** repräsentieren.
 
 `RelatedPerson.patient` und `RelatedPerson.relationship` beschreiben die **fachliche Beziehung zwischen zwei Personen**. Die Verknüpfung über `AffectedPerson.link` dient dagegen der **Identitätsverknüpfung zweier FHIR-Ressourcen**, die dieselbe physische Person repräsentieren.
-<TODO check end>
+
 
 ## Profil
 ### Metadaten

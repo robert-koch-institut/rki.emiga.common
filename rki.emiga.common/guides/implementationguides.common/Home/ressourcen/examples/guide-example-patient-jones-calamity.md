@@ -35,8 +35,6 @@ Der offizielle Name der Beispielperson lautet:
 
 Über die Extension `Salutation` ist zusätzlich die Anrede:
 
-<#TODO sollte hier nicht Herr sein>
-
 > Sehr geehrte Frau
 
 hinterlegt.

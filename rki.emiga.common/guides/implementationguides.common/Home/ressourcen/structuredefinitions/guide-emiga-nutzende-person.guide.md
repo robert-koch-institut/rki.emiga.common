@@ -21,7 +21,7 @@ Ein `EmigaUserPractitioner` kann beispielsweise als Ersteller, Absender oder zul
 
 Die Modellierung einer EMIGA-nutzenden Person ist hinsichtlich der erfassten Informationen bewusst schlank gehalten und auf die für den Anwendungskontext erforderlichen Angaben beschränkt. Sie umfasst die **Identifikator** der nutzenden Person, den **Namen**, den **Aktivitätsstatus** sowie Angaben zur **Sichtbarkeit** und **Verantwortlichkeit** (hier: die zugehörige ÖGD-Stelle).
 
-_Bemerkung:_ Ein `Practitioner` beschreibt ausschließlich eine Person, die selbst als handelnde Person an einem fachlichen Prozess beteiligt ist. Wird eine als Practitioner abgebildete natürliche Person selbst zum Gegenstand eines EMIGA-Fachvorgangs, beispielsweise aufgrund einer meldepflichtigen Erkrankung, wird diese Person zusätzlich durch eine vom Practitioner unabhängige Patient-Ressource abgebildet.
+Bemerkung: Ein `Practitioner` beschreibt ausschließlich eine Person, die selbst als handelnde Person an einem fachlichen Prozess beteiligt ist. Wird eine als Practitioner abgebildete natürliche Person selbst zum Gegenstand eines EMIGA-Fachvorgangs, beispielsweise aufgrund einer meldepflichtigen Erkrankung, wird diese Person zusätzlich durch eine vom Practitioner unabhängige Patient-Ressource abgebildet.
 
 ## Profil
 ### Metadaten
@@ -101,4 +101,3 @@ select
 <br>&nbsp;<br>
 
 ## Beispiel
-(verweisen)

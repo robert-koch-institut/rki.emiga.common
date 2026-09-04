@@ -10,6 +10,19 @@
 Die ValueSets sind Sammlungen von Codes aus den oben genannten CodeSystems und dienen der Auswahl und Validierung von Werten in den FHIR-Ressourcen.
 <br>&nbsp;<br>
 
+<fql headers="true">
+from
+    ValueSet
+where
+    url.startsWith('https://emiga.rki.de/fhir/vzd/ValueSet/')
+    or
+    url.startsWith('https://emiga.rki.de/fhir/ValueSet/')
+select
+    ValueSet: title & ' (' & id & ')',
+    Beschreibung: description
+</fql>
+
+<!--
 | **ValueSet**                               | **Beschreibung**                                                                                       |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Annotationskategorien (AnnotationCategoryVS) | Werteliste mit Konzepten, die die Art der Annotation bestimmen. |
@@ -31,3 +44,5 @@ Die ValueSets sind Sammlungen von Codes aus den oben genannten CodeSystems und d
 | Ressourcen Sichtbarkeit (ResourceVisibilityType) |  Werteliste mit Konzepten, die die gewünschte Sichtbarkeit von Ressourcen beschreiben. |
 | Ressourcen Verantwortlichkeit (ResourceResponsibility) | Werteliste mit Konzepten, die die Verantwortlichkeit für Ressourcen auszeichnen. |
 | Verbindungs-Qulifikation (FacilityAssociationTypeVS) | Werteliste mit Konzepten, die die Art der Verbindungen bestimmen. |
+
+-->

@@ -5,6 +5,10 @@ canonical: https://emiga.rki.de/fhir/common/Extension/ProcessingStatus
 
 # {{page-title}}
 
+Die Extension `ProcessingStatus` dient zur Abbildung des Bearbeitungsstatus eines Vorgangs. Sie kann an einem FHIR-Element verwendet werden, für das der aktuelle Stand der Bearbeitung angegeben werden soll.
+
+Der Bearbeitungsstatus wird als `Coding` in `value[x]` angegeben. Dabei sind das Codesystem (`system`) und der Statuscode (`code`) verpflichtend anzugeben. Die zulässigen bzw. vorgesehenen Statuswerte werden durch das ValueSet `ProcessingStatusVS` beschrieben.
+
 ## Profil
 ### Metadaten
 <fql output="transpose" headers="true">
@@ -54,5 +58,3 @@ select
 	Feldname: id, Kurzbeschreibung: short, Beschreibung: definition, Hinweise: comment
 </fql>
 <br>&nbsp;<br>
-
-<TODO> Resource.extension.processingStatus

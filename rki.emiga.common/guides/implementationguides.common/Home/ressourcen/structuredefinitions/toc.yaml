@@ -6,8 +6,6 @@
   filename: guide-anhang-entitaet.guide.md
 - name: Annotation
   filename: guide-annotation.guide.md
-- name: Annotation-Bundle
-  filename: guide-annotation-bundle.guide.md
 - name: Betroffene Person
   filename: guide-betroffene-person.guide.md
 - name: Bezugperson der betroffenen Person
@@ -18,12 +16,6 @@
   filename: guide-emiga-id-identifier.guide.md
 - name: EMIGA Nutzende Person
   filename: guide-emiga-nutzende-person.guide.md
-- name: EMIGA Personen Transactionbundle
-  filename: guide-emiga-personen-transactionbundle.guide.md
-- name: EMIGA Personen Transactionbundle-Response
-  filename: guide-emiga-personen-transactionbundle-response.guide.md
-- name: Person Bundle
-  filename: guide-person-bundle.guide.md
 - name: SurvNet Aktenzeichen Identifier
   filename: guide-survnet-aktenzeichen-identifier.guide.md
 - name: Zusätzliche Eigenschaften

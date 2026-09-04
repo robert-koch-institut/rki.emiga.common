@@ -8,6 +8,19 @@
 
 ## CodeSystems Überblick
 
+<fql headers="true">
+from
+    CodeSystem
+where
+    url.startsWith('https://emiga.rki.de/fhir/vzd/CodeSystem/')
+    or
+    url.startsWith('https://emiga.rki.de/fhir/CodeSystem/')
+select
+    CodeSystem: title & ' (' & id & ')',
+    Beschreibung: description
+</fql>
+
+<!--
 | **CodeSystem**                             | **Beschreibung**                                                                                       |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Annotationskategorien (AnnotationCategory) | Das CodeSystem AnnotationCategory enthält die Codes für die verschiedenen Arten von Annotationen. |
@@ -21,3 +34,5 @@
 | Ressourcen Sichtbarkeit (ResourceVisibilityType) | Der ResourceVisiblityType unterscheidet zwischen den verschiedenen Sichtbarkeitsstuffen der Informationen. |
 | Ressourcen Verantwortlichkeit (ResourceResponsibility)| Codierung der verschiedenen Landrats und Gesundheitsämter.|
 | Verbindung zu Einrichtungen (FacilityAssociationType) | Das CodeSystem FacilityAssociationType enthält die Codes für die verschiedenen Arten von Verbindungen einer Betroffenen zu einer Einrichtung. |
+
+-->

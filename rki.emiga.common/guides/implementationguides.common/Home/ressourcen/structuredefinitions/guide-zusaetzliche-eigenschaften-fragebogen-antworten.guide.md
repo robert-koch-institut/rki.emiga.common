@@ -84,7 +84,7 @@ select
 <br>&nbsp;<br>
 
 ## Beispiel
-Im Folgenden wird ein Beispiel für eine Fragebogen-Antwort dargestellt. <TODO gib noch keine>
+Im Folgenden wird ein Beispiel für eine Fragebogen-Antwort dargestellt.
 
 Der Fragebogen beschreibt die Struktur und Bedeutung der zusätzlichen Eigenschaften, während die QuestionnaireResponse die zugehörigen fachlichen Werte enthält.
 

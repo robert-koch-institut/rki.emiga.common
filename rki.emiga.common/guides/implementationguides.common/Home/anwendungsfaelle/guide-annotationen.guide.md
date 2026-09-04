@@ -1,7 +1,6 @@
 # {{page-title}}
 
-**Annotationen** dienen dazu, fachliche Entitäten wie Fälle, Ausbrüche oder Personen mit Notizen und Kommentaren zu versehen. Darüber hinaus können Annotation auch ohne direkten Bezug zu einer fachlichen Entität hinterlegt werden. <TODO: bei dem Fall an Org gehängt?>.
-
+**Annotationen** dienen dazu, fachliche Entitäten wie Fälle, Ausbrüche oder Personen mit Notizen und Kommentaren zu versehen.
 Eine **Annotation** wird in EMIGA durch das FHIR-Profil `AnnotationCommunication` abgebildet. 
 Für die Erstellung, Änderung und Übertragung einer Annotation werden die zugehörigen Ressourcen in einem FHIR-`Bundle` vom Typ `transaction` zusammengeführt. Das Bundle dient als technischer Container für die Annotation und die von ihr referenzierten Anhänge. Die zentrale fachliche Ressource ist die `AnnotationCommunication`, welche die eigentliche Annotation repräsentiert. Sie muss obligatorisch als erster Eintrag im Bundle enthalten sein. Die referenzierten Anhänge werden als weitere Einträge in das Bundle aufgenommen.
 Weitere Einträge im Bundle stellen die für die Verarbeitung und Interpretation der Annotation benötigten Begleitressourcen bereit. Dazu gehören uter anderen:

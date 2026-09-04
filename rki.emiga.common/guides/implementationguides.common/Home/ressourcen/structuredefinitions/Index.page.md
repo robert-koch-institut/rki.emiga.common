@@ -10,6 +10,17 @@
 
 Dieser Abschnitt bietet eine Übersicht über die in diesem Implementierungsleitfaden definierten **FHIR-Profile und -Ressourcen**.
 
+<fql headers="true">
+from StructureDefinition
+where url.startsWith('https://emiga.rki.de/fhir/common/StructureDefinition/')
+   or url.startsWith('https://emiga.rki.de/fhir/StructureDefinition/')
+select
+    Profil: title & ' (' & id & ')',
+    Beschreibung: description
+</fql>
+
+<!--
+
 | **Profil**                                      | **Beschreibung**                                                                                         |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Annotation (AnnotationCommunication) | Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen. |
@@ -28,3 +39,13 @@ Bildet ein EMIGA-Personen-Transaction-Bundle ab. Es dient der gebündelten, tran
 | SurvNet Aktenzeichen Identifier (IdentifierSurvNetFileNumber) | SurvNet Aktenzeichen Identifier-Profil |
 | Zusätzliche Eigenschaften (AdditionalPropertiesQuestionnaire) | Ermöglicht die strukturierte Abbildung zusätzlicher Eigenschaften (Metadaten und fachlicher Zusatzinformationen) für Fragebögen. Das Profil dient der Modellierung von konfigurierbarer zusätzlicher fachlicher Informationen, die über den Standardumfang der FHIR-Ressource Questionnaire hinausgehen. |
 | Zusätzliche Eigenschaften Fragebogen-Antworten (AdditionalPropertiesQuestionnaireResponse) | Bietet die Möglichkeit, Antworten auf den Fragebogen `AdditionalPropertiesQuestionnaire` und damit zusätzliche Eigenschaften (fachliche Zusatzinformationen) strukturiert zu verwalten. |
+
+-->
+
+**Bemerkung:** In der Regel enthalten alle StructuredDefinition-Ressourcen Angaben zur **Sichtbarkeit** und **Verantwortlichkeit**, die einheitlich über `Resource.meta.security` abgebildet werden. Daher wird diese Abbildung im Folgenden generisch beschrieben. Hierfür sind mindestens zwei Security Labels vorgesehen:
+
+
+- `visibility` zur Angabe der Sichtbarkeit der Ressource
+responsibility zur Angabe der verantwortlichen ÖGD-Stelle
+
+- Die Sichtbarkeit wird über das CodeSystem `ResourceVisibilityType` kodiert und an ein entsprechendes ValueSet gebunden. Die Verantwortlichkeit wird über das CodeSystem `ResourceResponsibility` angegeben.
