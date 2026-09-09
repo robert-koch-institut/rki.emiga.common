@@ -44,4 +44,14 @@ Response "1" *-- "1..*" Answer : item
 
 Question ..> Answer : linkId
 
+legend 
+  *--  enthält
+  -->  referenziert
+  ..>  verknüpft über linkId
+endlegend
+
+
+skinparam legendBorderColor transparent
+skinparam legendBackgroundColor transparent
+
 @enduml

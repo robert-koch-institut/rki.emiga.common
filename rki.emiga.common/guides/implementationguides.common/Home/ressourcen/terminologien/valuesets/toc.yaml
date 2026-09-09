@@ -6,6 +6,8 @@
   filename: guide-anrede.guide.md
 - name: Anzeigetext Art
   filename: guide-anzeigetext-art.guide.md
+- name: Auslöser der Dublettenprüfung
+  filename: guide-duplicate-match-trigger-reason.guide.md
 - name: Bearbeitungsstatus
   filename: guide-bearbeitungsstatus.guide.md
 - name: Bearbeitungsstatus Annotation
@@ -17,7 +19,9 @@
 - name: Häufige Sprachen
   filename: guide-haeufige-sprachen.guide.md
 - name: Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten
-  filename: guide-ja-nein-nicht-ermittelbar-nicht-erhoben-antworten.guide.md
+  filename: guide-ja-nein-nicht-ermittelbar-nicht-erhoben-antworten.guide.md 
+- name: Kriterien zur Dublettenprüfung
+  filename: guide-duplicate-match-criteria.guide.md
 - name: Ländercodes
   filename: guide-laendercodes.guide.md
 - name: Nicht vorhanden
@@ -26,6 +30,8 @@
   filename: guide-personenbezug.guide.md
 - name: Personen-Ressourcensichtbarkeit
   filename: guide.personen-ressourcensichtbarkeit.guide.md
+- name: Person-Organisations-Beziehung
+  filename: guide-person-to-organization-type.guide.md
 - name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
 - name: Ressourcen Annotation Sichtbarkeit
@@ -38,3 +44,5 @@
   filename: guide-ressourcen-verantwortlichkeit.guide.md
 - name: Verbindungs-Qualifikation
   filename: guide-verbindungs-qualifikation.guide.md
+- name: Werteliste der Landkreise
+  filename: guide-landkreis-werteliste.guide.md

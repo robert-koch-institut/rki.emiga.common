@@ -14,19 +14,10 @@ Dieser Abschnitt beschreibt die **NamingSystems**, die zur eindeutigen Identifik
 from
     NamingSystem
 where
-    uniqueId.value.startsWith('https://emiga.rki.de/fhir/vzd/sid/')
+    uniqueId.value.startsWith('https://emiga.rki.de/fhir/common/sid/')
     or
     uniqueId.value.startsWith('https://emiga.rki.de/fhir/sid/')
 select
     NamingSystem: name & ' (' & id & ')',
     Beschreibung: description
 </fql>
-
-<!--
-| **NamingSystem**                               | **Beschreibung**                                                                                       |
-|--------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| EMIGA-Aktenzeichen (EmigaFileNumber) | EMIGA Aktenzeichen für die Verwendung in Identifier. |
-| EMIGA-ID (EmigaID) | EMIGA ID für die Verwendung in Identifier. |
-| SurvNet-Aktenzeichen (SurvNetFileNumber) | Das SurvNet-Aktenzeichen dient während der Übergangsphase als ergänzender Identifikator zur Gewährleistung der Kontinuität bestehender Arbeitsabläufe. |
-
--->

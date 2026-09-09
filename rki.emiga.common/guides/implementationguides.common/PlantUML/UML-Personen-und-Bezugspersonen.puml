@@ -4,34 +4,6 @@ title Personen und Bezugspersonen
 skinparam shadowing false
 skinparam roundcorner 0
 skinparam linetype ortho
-skinparam defaultFontName Arial
-skinparam defaultFontSize 11
-
-skinparam ArrowColor #555555
-skinparam classBorderColor #555555
-
-hide circle
-
-class "AffectedPerson" as AP #D9EAD3
-class "AffectedPersonRelatedPerson" as RP #FFF2CC
-class "EmigaUserPractitioner" as Practitioner #D9EAF7
-
-RP --> AP : patient
-AP --> RP : relatedPersonLink
-AP --> Practitioner : lastModifiedBy
-
-@enduml
-
-
-
-/'
-
-@startuml
-title Personen und Bezugspersonen
-
-skinparam shadowing false
-skinparam roundcorner 0
-skinparam linetype ortho
 skinparam classAttributeIconSize 0
 skinparam defaultFontName Arial
 skinparam defaultFontSize 11
@@ -45,7 +17,6 @@ hide circle
 
 class "TransactionBundle" as Bundle #E6E6E6 {
   type                  Code              1..1
-  --
   entry                 Resource          1..*
 }
 
@@ -55,10 +26,6 @@ class "AffectedPerson" as AP #D9EAD3 {
   birthDate             Date              0..1
   address               Address           0..*
   --
-  telecom               ContactPoint      0..*
-  gender                Code              0..1
-  communication         BackboneElement   0..*
-  processingStatus      CodeableConcept   0..1
   relatedPersonLink     Reference         0..*
   patientLink           Reference         0..*
   lastModifiedBy        Reference         0..1
@@ -74,22 +41,31 @@ class "AffectedPersonRelatedPerson" as RP #FFF2CC {
 class "EmigaUserPractitioner" as Practitioner #D9EAF7 {
   identifier            Identifier        0..*
   name                  HumanName         0..*
-  --
   active                Boolean           0..1
 }
 
 
-Bundle "1" -- "1..*" AP : entry
-Bundle "1" -- "0..*" RP : entry
-Bundle "1" -- "0..*" Practitioner : entry
+' --- Layout -------------------------------------------------
 
-RP "0..*" --> "1" AP : patient
+Bundle -[hidden]down-> AP
+RP -[hidden]right-> Practitioner
 
-AP "0..*" --> "0..*" RP : link[relatedPersonLink]\n«dieselbe physische Person»
 
-AP "0..*" --> "0..*" AP : link[patientLink]\n«dieselbe physische Person»
+' --- Bundle-Inhalte -----------------------------------------
 
-AP "0..*" --> "0..1" Practitioner : meta.extension[lastModifiedBy]
+Bundle "1" --> "1..*" AP
+Bundle "1" --> "0..*" RP
+Bundle "1" --> "0..*" Practitioner
+
+
+' --- Personenbeziehungen ------------------------------------
+
+RP "0..*" -up-> "1" AP
+
+AP "0..*" --down-> "0..*" RP : related\n PersonLink
+
+AP "0..*" --down-> "0..1" Practitioner : lastModifiedBy
+
+AP "0..*" -left-> "0..*" AP : patientLink\n«gleiche Person»
 
 @enduml
-'/

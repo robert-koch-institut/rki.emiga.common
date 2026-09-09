@@ -14,7 +14,7 @@ Die ValueSets sind Sammlungen von Codes aus den oben genannten CodeSystems und d
 from
     ValueSet
 where
-    url.startsWith('https://emiga.rki.de/fhir/vzd/ValueSet/')
+    url.startsWith('https://emiga.rki.de/fhir/common/ValueSet/')
     or
     url.startsWith('https://emiga.rki.de/fhir/ValueSet/')
 select

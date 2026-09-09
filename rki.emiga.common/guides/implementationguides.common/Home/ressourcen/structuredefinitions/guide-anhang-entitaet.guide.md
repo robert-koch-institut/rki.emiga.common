@@ -121,3 +121,139 @@ select
     Hinweise: comment
 </fql>
 <br>&nbsp;<br>
+
+# Beispie l: Anhangsdokument 4691067
+
+Dieses Beispiel zeigt eine `DocumentReference`-Ressource zur Verwaltung eines Datei-Anhangs innerhalb von EMIGA.
+Die Datei selbst wird nicht in der FHIR-Ressource gespeichert, sondern über `DocumentReference.content.attachment` referenziert.
+
+Die Ressource verwendet das Profil:
+
+```text
+https://emiga.rki.de/fhir/common/StructureDefinition/AttachmentDocumentReference
+```
+
+## Beispiel-Szenario
+
+Im Beispiel wird eine PDF-Datei als Anhang verwaltet.
+
+Die Datei trägt den Titel:
+
+> "test.pdf"
+
+und besitzt folgende Eigenschaften:
+
+* Dateiformat: PDF
+* Dateigröße: 16.577 Bytes
+* Erstellung der Datei: 13.01.2026 14:22:43 Uhr
+
+Die Dokumentreferenz wurde am **14.01.2026 um 18:34:42 Uhr** erstellt.
+
+Die Identifikation erfolgt über eine dedizierte Attachment-ID `4b5755cd-da8f-4b34-b78c-4b3ead465b39`. 
+Damit kann die Datei unabhängig von fachlichen Vorgängen eindeutig referenziert werden.
+
+## Status
+
+Der aktuelle Zustand der Dokumentreferenz wird über:
+
+```text
+DocumentReference.status
+```
+
+angegeben.
+
+Im Beispiel:
+
+```json
+{
+  "status": "current"
+}
+```
+
+Die Datei ist damit als aktuelle Dokumentreferenz verfügbar.
+
+## Autor
+
+Der Ersteller wird über `DocumentReference.author` angegeben.
+
+Beispiel:
+
+```text
+Practitioner/EmigaUser-001
+```
+
+## Dateiinformationen
+
+Die Dateimetadaten werden über:
+
+```text
+DocumentReference.content.attachment
+```
+
+bereitgestellt.
+
+Beispiel:
+
+| Element    | Wert                        |
+| ---------- | --------------------------- |
+| Dateityp   | `application/pdf`           |
+| Dateigröße | `16577` Bytes               |
+| Titel      | `test.pdf`                  |
+| Erstellung | `2026-01-13T14:22:43+00:00` |
+
+Zusätzlich wird ein Hashwert gespeichert, um die Integrität der Datei zu überprüfen.
+
+# Beispiel 2: Anhangsdokument 441557620
+
+Das folgende Beispiel zeigt die Abbildung eines Anhangs als eigenständige `DocumentReference`-Ressource in EMIGA. Der Anhang ist eine PNG-Datei mit dem Titel:
+
+```text
+Sample Image
+```
+
+Die technische Informationen wird über `DocumentReference.content.attachment` beschrieben. Neben dem MIME-Type `image/png` werden unter anderem die Dateigröße, ein Hashwert und der Erstellungszeitpunkt des Dokuments angegeben.
+
+Der Anhang besitzt zudem mehrere Identifier zur fachlichen Zuordnung:
+
+| Identifier          | Beispielwert                   |
+| ------------------- | ------------------------------ |
+| EMIGA ID            | `DEFG-123456789`               |
+| EMIGA File Number   | `ABCD-987654321`               |
+| SurvNet File Number | `Attachment-SURVNET-987654321` |
+
+Über:
+
+```text
+DocumentReference.author
+```
+
+wird mit:
+
+```text
+Practitioner/EmigaUser-001
+```
+
+der EMIGA-Benutzer referenziert, der den Anhang erstellt hat.
+
+Die Ressource ist mit dem Status `current` als aktuell gültige Dokumentreferenz gekennzeichnet.
+
+Über die Security Labels wird die Ressource außerdem als `transferable` gekennzeichnet und einer verantwortlichen ÖGD-Stelle zugeordnet.
+
+Das Beispiel veranschaulicht die Abbildung eines Anhangs als `DocumentReference`, die Vergabe fachlicher Identifikatoren sowie die Beschreibung der Datei über `content.attachment`. Darüber hinaus zeigt es die Angabe der erstellenden Person über `author`, die Unterscheidung zwischen dem Erstellungszeitpunkt der `DocumentReference` (`DocumentReference.date`) und dem Erstellungszeitpunkt des eigentlichen Dokuments (`Attachment.creation`) sowie die Steuerung von Sichtbarkeit und Verantwortlichkeit über `meta.security`.
+
+<tabs>
+    <tab title="Übersicht">      
+        {{render:DocumentReference-Attachment-441557620.json}}
+    </tab>
+    <tab title="XML">      
+        {{xml:DocumentReference-Attachment-441557620.json}}
+    </tab>
+    <tab title="JSON">
+        {{json:DocumentReference-Attachment-441557620.json}}
+    </tab>
+    <tab title="Link">
+        {{link:DocumentReference-Attachment-441557620.json}}
+    </tab>
+</tabs>
+
+<!-- {{json: DocumentReference/441557620}} -->

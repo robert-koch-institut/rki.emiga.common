@@ -101,3 +101,30 @@ select
 <br>&nbsp;<br>
 
 ## Beispiel
+Das folgende Beispiel zeigt die Abbildung einen aktiven EMIGA-Nutzende als `Practitioner`.
+
+Die Beispielperson `Erika Musterfrau` wird über das Profil `https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner` abgebildet.
+Als Identifier wird im Beispiel folgende Nutzendekennung verwendet `testemail@example.com`. Der Practitioner ist mit `active = true` als aktiv gekennzeichnet.
+
+Über `meta.security` wird die Ressource außerdem hinsichtlich Sichtbarkeit und Verantwortlichkeit eingeordnet.
+Im Beispiel ist die Sichtbarkeit `inAgency – Eigene ÖGD-Stelle` und als verantwortliche Stelle ist angegeben `1. – Robert Koch-Institut`.
+
+
+<tabs>
+    <tab title="Übersicht">      
+        {{render:Practitioner-EmigaUser-001.json}}
+    </tab>
+    <tab title="XML">      
+        {{xml:Practitioner-EmigaUser-001.json}}
+    </tab>
+    <tab title="JSON">
+        {{json:Practitioner-EmigaUser-001.json}}
+    </tab>
+    <tab title="Link">
+        {{link:Practitioner-EmigaUser-001.json}}
+    </tab>
+</tabs>
+
+<!-- {{json: Practitioner/EmigaUser-001}} -->
+
+

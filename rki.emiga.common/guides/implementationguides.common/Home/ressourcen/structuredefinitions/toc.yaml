@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: Anhang
-  filename: guide-anhang.guide.md
 - name: Anhang-Entität
   filename: guide-anhang-entitaet.guide.md
 - name: Annotation
@@ -16,6 +14,8 @@
   filename: guide-emiga-id-identifier.guide.md
 - name: EMIGA Nutzende Person
   filename: guide-emiga-nutzende-person.guide.md
+- name: Ergebnis der Dublettenprüfung
+  filename: guide-match-output-bundle.guide.md
 - name: SurvNet Aktenzeichen Identifier
   filename: guide-survnet-aktenzeichen-identifier.guide.md
 - name: Zusätzliche Eigenschaften

@@ -2,8 +2,12 @@
 
 **Annotationen** dienen dazu, fachliche Entitäten wie Fälle, Ausbrüche oder Personen mit Notizen und Kommentaren zu versehen.
 Eine **Annotation** wird in EMIGA durch das FHIR-Profil `AnnotationCommunication` abgebildet. 
-Für die Erstellung, Änderung und Übertragung einer Annotation werden die zugehörigen Ressourcen in einem FHIR-`Bundle` vom Typ `transaction` zusammengeführt. Das Bundle dient als technischer Container für die Annotation und die von ihr referenzierten Anhänge. Die zentrale fachliche Ressource ist die `AnnotationCommunication`, welche die eigentliche Annotation repräsentiert. Sie muss obligatorisch als erster Eintrag im Bundle enthalten sein. Die referenzierten Anhänge werden als weitere Einträge in das Bundle aufgenommen.
+Für die Erstellung, Änderung und Übertragung einer Annotation werden die zugehörigen Ressourcen in einem FHIR-`Bundle` vom Typ `transaction` zusammengeführt. 
+Das Bundle dient als technischer Container für die Annotation und die zugehörigen Begleitressourcen. 
+
+Die zentrale fachliche Ressource ist `AnnotationCommunication`, welche die eigentliche Annotation repräsentiert. Sie muss obligatorisch als erster Eintrag im Bundle enthalten sein. 
 Weitere Einträge im Bundle stellen die für die Verarbeitung und Interpretation der Annotation benötigten Begleitressourcen bereit. Dazu gehören uter anderen:
+
 * die erstellende Person (`EmigaUserPractitioner`),
 * optionale Anhänge (`AttachmentDocumentReference`) und
 * optionale zusätzliche Eigenschaften (`AdditionalPropertiesQuestionnaireResponse`).
@@ -26,8 +30,7 @@ Für die Anzeige und Weiterbearbeitung der Annotation-Bundel stehen Such-, Detai
 
 Wird eine bestehende Annotation geändert, erzeugt der Dienst eine neue Version für das Bundle. Die aktuelle Version kann über `$annotation-details` gelesen werden. Frühere Stände können über `$search-annotation-history` gefunden und über `$annotation-version-details` gezielt abgerufen werden. Die Version kann dabei über `versionNo` oder `versionId` adressiert werden.
 
-<TODO: check Richtigkeit>
-_Bemerkung:_ Die **Versionierung** einer Annotation und der zugehörigen Anhänge erfolgt unabhängig voneinander. Für die Versionierung von **Anhängen** gelten folgende Regeln:
+Bemerkung: Die **Versionierung** einer Annotation und der zugehörigen Anhänge erfolgt unabhängig voneinander. Für die Versionierung von **Anhängen** gelten folgende Regeln:
 - Wird ein Anhang unter einem neuen Namen bzw. Titel (content.attachment.title) gespeichert, wird er als neuer Anhang behandelt und erhält eine neue ID. Dies gilt auch bei unverändertem Inhalt.
 - Wird ein bestehender Anhang unter demselben Namen bzw. Titel geändert, erhält die Annotation eine neue Version.
 
