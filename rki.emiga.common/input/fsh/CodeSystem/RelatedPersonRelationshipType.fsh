@@ -5,7 +5,7 @@ Description: "Das CodeSystem 'RelatedPersonRelationship' definiert Konzepte, wel
 * insert MetadataTerminology
 * ^url = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * ^version = "1.4.2"
-* ^date = "2026-03-24"
+* ^date = "2026-08-18"
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 6
