@@ -59,6 +59,6 @@ RelatedPersonB --> PersonA : patient\n«Bezugsperson gehört zu»
 ' Identitätsverknüpfung derselben physischen Person
 ' ------------------------------------------------------------
 
-PersonB --> RelatedPersonB : link[relatedPersonLink]\n«dieselbe physische Person»
+PersonB --> RelatedPersonB : link[relatedPersonLink]
 
 @enduml
