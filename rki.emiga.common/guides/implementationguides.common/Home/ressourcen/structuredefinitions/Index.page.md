@@ -24,6 +24,6 @@ select
 
 
 - `visibility` zur Angabe der Sichtbarkeit der Ressource
-responsibility zur Angabe der verantwortlichen ÖGD-Stelle
+- `responsibility` zur Angabe der verantwortlichen ÖGD-Stelle
 
 - Die Sichtbarkeit wird über das CodeSystem `ResourceVisibilityType` kodiert und an ein entsprechendes ValueSet gebunden. Die Verantwortlichkeit wird über das CodeSystem `ResourceResponsibility` angegeben.

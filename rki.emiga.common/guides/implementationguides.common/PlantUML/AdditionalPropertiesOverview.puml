@@ -1,4 +1,5 @@
 @startuml
+
 title Definition und Erfassung zusätzlicher Eigenschaften
 
 skinparam shadowing false
@@ -36,20 +37,27 @@ class "QuestionnaireResponse.item" as Answer #FFF2CC {
   answer                BackboneElement   0..*
 }
 
+
 Questionnaire "1" *-- "0..*" Question : item
-
 Response "0..*" --> "1" Questionnaire : questionnaire
-
 Response "1" *-- "1..*" Answer : item
-
 Question ..> Answer : linkId
 
-legend 
-  *--  enthält
-  -->  referenziert
-  ..>  verknüpft über linkId
-endlegend
 
+' ==================================================
+' Kompakte Legende unten rechts
+' ==================================================
+
+legend right
+        enthält
+      ◆────────
+
+     referenziert
+      ────────▶
+
+verknüpft über linkId
+      ┄┄┄┄┄┄┄▶
+endlegend
 
 skinparam legendBorderColor transparent
 skinparam legendBackgroundColor transparent

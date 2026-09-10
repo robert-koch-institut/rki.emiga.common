@@ -6,7 +6,7 @@ Für die Erstellung, Änderung und Übertragung einer Annotation werden die zuge
 Das Bundle dient als technischer Container für die Annotation und die zugehörigen Begleitressourcen. 
 
 Die zentrale fachliche Ressource ist `AnnotationCommunication`, welche die eigentliche Annotation repräsentiert. Sie muss obligatorisch als erster Eintrag im Bundle enthalten sein. 
-Weitere Einträge im Bundle stellen die für die Verarbeitung und Interpretation der Annotation benötigten Begleitressourcen bereit. Dazu gehören uter anderen:
+Weitere Einträge im Bundle stellen die für die Verarbeitung und Interpretation der Annotation benötigten Begleitressourcen bereit. Dazu gehören unter anderen:
 
 * die erstellende Person (`EmigaUserPractitioner`),
 * optionale Anhänge (`AttachmentDocumentReference`) und

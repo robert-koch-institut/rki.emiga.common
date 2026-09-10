@@ -30,8 +30,8 @@
   filename: guide-personenbezug.guide.md
 - name: Personen-Ressourcensichtbarkeit
   filename: guide.personen-ressourcensichtbarkeit.guide.md
-- name: Person-Organisations-Beziehung
-  filename: guide-person-to-organization-type.guide.md
+- name: Personen-zu-Organisation-Zuordnung
+  filename: guide-personen-zu-organisation-zuordnung.guide.md
 - name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
 - name: Ressourcen Annotation Sichtbarkeit
@@ -44,5 +44,5 @@
   filename: guide-ressourcen-verantwortlichkeit.guide.md
 - name: Verbindungs-Qualifikation
   filename: guide-verbindungs-qualifikation.guide.md
-- name: Werteliste der Landkreise
-  filename: guide-landkreis-werteliste.guide.md
+- name: Landkreise
+  filename: guide-landkreise.guide.md

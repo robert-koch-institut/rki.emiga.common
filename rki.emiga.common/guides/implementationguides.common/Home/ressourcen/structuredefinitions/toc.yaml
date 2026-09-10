@@ -14,7 +14,7 @@
   filename: guide-emiga-id-identifier.guide.md
 - name: EMIGA Nutzende Person
   filename: guide-emiga-nutzende-person.guide.md
-- name: Ergebnis der Dublettenprüfung
+- name: Match Output Bundle
   filename: guide-match-output-bundle.guide.md
 - name: SurvNet Aktenzeichen Identifier
   filename: guide-survnet-aktenzeichen-identifier.guide.md
