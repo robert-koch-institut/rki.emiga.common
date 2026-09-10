@@ -2,7 +2,7 @@ Profile: OutbreakQuestionnaireResponseCommon
 Parent: QuestionnaireResponse
 Id: AdditionalPropertiesQuestionnaireResponse
 Title: "Zusätzliche Eigenschaften Fragebogen-Antworten"
-Description: "Dieses Profil bietet die Möglichkeit, zusätzliche fachliche Zusatzinformationen zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden."
+Description: "Dieses Profil bietet die Möglichkeit, zusätzliche Eigenschaften (Metadaten und fachliche Zusatzinformationen) zu Antworten auf den AdditionalPropertiesQuestionnaire Fragebogen strukturiert abzubilden. Es dient dazu, erweiterte Auswertungs-, Steuerungs- und Dokumentationsinformationen zu einer Fragebogen-Antwort zu modellieren, die über den Standardumfang der Ressource hinausgehen."
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/AdditionalPropertiesQuestionnaireResponse"
 * ^version = "0.3.0"
