@@ -1,11 +1,11 @@
 @startuml
 skinparam linetype ortho
 
-title AffectedPerson (Profile of Patient) - Class Diagram
+title AffectedPerson (Profile of Patient) 
 
 ' Main Class
 class AffectedPerson{
-<b>+</b> name: HumannameDeBasis [0..*]
+<b>+</b> name: HumanNameDeBasis [0..*]
 -- Meta --
 <b>+</b> meta.extension:lastModifiedBy: Reference(EmigaUserPractitioner) [0..1]
 <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]

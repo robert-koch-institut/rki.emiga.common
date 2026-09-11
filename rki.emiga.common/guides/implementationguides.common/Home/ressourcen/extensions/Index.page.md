@@ -10,7 +10,19 @@
 In diesem Abschnitt werden die **Extensions** beschrieben, die zur Erweiterung der Standard-FHIR-Ressourcen verwendet werden. Diese Extensions ermöglichen die Abbildung spezifischer Anforderungen des ÖGD, die nicht durch die Standardressourcen abgedeckt werden können.
 <br>&nbsp;<br>
 
+<fql headers="true">
+from
+    Extension
+where
+    url.startsWith('https://emiga.rki.de/fhir/vzd/Extension/')
+    or
+    url.startsWith('https://emiga.rki.de/fhir/Extension/')
+select
+    Extension: title & ' (' & id & ')',
+    Beschreibung: description
+</fql>
 
+<!--
 | **Extension**                                         | **Beschreibung**                                                                                       |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Anrede (Salutation) | Für die Betroffene Person kann eine Anrede angegeben werden. Diese wird bei Anschreiben verwendet. |
@@ -21,3 +33,5 @@ In diesem Abschnitt werden die **Extensions** beschrieben, die zur Erweiterung d
 | Geburtsland (LandOfBirth) | Geburtsland der betroffenen Person. |
 | Nicht vorhanden (NullFlavor) | If the value is not a proper value, indicates the reason. |
 | Regionalschlüssel (RegionalKey) | Erweiterung zur Darstellung des Regionalschlüssels und des Regionalbezugsystems. |
+
+-->

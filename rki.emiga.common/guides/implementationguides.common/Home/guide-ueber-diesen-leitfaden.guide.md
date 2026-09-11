@@ -1,10 +1,10 @@
 # {{page-title}}
-In diesem Implementierungsleitfaden werden die FHIR-Basis-Ressourcen strukturiert dargestellt, die in EMIGA gemäß dem definierten Datenmodell über die FHIR-Schnittstelle übergeben werden. Außerdem werden die in den EMIGA Paketen <a href="https://simplifier.net/rki.emiga.common"> rki.emiga.common </a> enthaltenen Inhalte beschrieben.
+Dieser Implementierungsleitfaden beschreibt die FHIR-Spezifikation des EMIGA-Common-Pakets <a href="https://simplifier.net/rki.emiga.common">rki.emiga.common</a>. Er umfasst die grundlegenden FHIR-Profile, Terminologien und weiteren Artefakte, die paketübergreifend in EMIGA verwendet werden und die Basis für den standardisierten Austausch und die Verarbeitung von Daten über die FHIR-Schnittstelle gemäß dem definierten Datenmodell bilden. Dazu gehören unter anderem die Modellierung der *Identifier*, *Person*, *Annotation* sowie *zusätzliche Eigenschaften*. Zusammen mit den weiteren EMIGA-Implementierungsleitfäden bildet dieser die Grundlage für einen interoperablen und standardisierten Datenaustausch im Rahmen von EMIGA.
 
 ### Zielgruppe
-Dieser Leitfaden richtet sich an Anwendende und Softwareherstellende von Informationssystemen, die die Daten aus dem Einrichtungsverzeichnis EMIGA über die FHIR-Schnittstelle in ihre Systeme einbinden möchten.
+Dieser Leitfaden richtet sich an Anwendende sowie Softwareherstellende von Informationssystemen, die die Daten gemäß der EMIGA-Spezifikation an EMIGA übermitteln, aus EMIGA empfangen oder innerhalb von EMIGA verarbeiten.
 
 ### Aufbau dieses Implementierungsleitfadens
-Dieser Leitfaden enthält:
+Das Kapitel **Grundlagen und Überblick** vermittelt die fachlichen und technischen Grundlagen im EMIGA-Kontext sowie die wesentlichen Konzepte, die dem FHIR-Paket `rki.emiga.common` zugrunde liegen. Unter **Anwendungsfallbeispiele** werden relevante Anwendungsszenarien für die Ressourcen dieses Pakets exemplarisch anhand von UML-Diagrammen beschrieben.
 
-- Semantische Vorgaben in Form von CodeSystems und ValueSets (siehe Abschnitt Terminologien)
+Das Kapitel **Ressourcen** enthält die Beschreibung zu den im Rahmen dieses Leitfadens definierten FHIR-Ressourcen sowie zugehörige Beispielprofile. Unter **Implementierungshinweise** werden ergänzende Hinweise zur technischen Umsetzung und Verwendung der definierten Artefakte bereitgestellt. **Ergänzende Hinweise** und **Weiterführende Informationen** enthalten zusätzliche Erläuterungen sowie Verweise auf relevante weitere Dokumentationen.

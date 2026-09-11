@@ -14,10 +14,16 @@
   filename: guide-bearbeitungsstatus-betroffene-person.guide.md
 - name: Beziehungen
   filename: guide-beziehungen.guide.md
+- name: Dublettenprüfungs-Kriterien
+  filename: guide-dublettenpruefungs-kriterien.guide.md
+- name: Dublettenprüfungsgründe
+  filename: guide-dublettenpruefungsgruende.guide.md
 - name: Häufige Sprachen
   filename: guide-haeufige-sprachen.guide.md
 - name: Ja, Nein, Nicht ermittelbar, Nicht erhoben Antworten
-  filename: guide-ja-nein-nicht-ermittelbar-nicht-erhoben-antworten.guide.md
+  filename: guide-ja-nein-nicht-ermittelbar-nicht-erhoben-antworten.guide.md 
+- name: Landkreise
+  filename: guide-landkreise.guide.md
 - name: Ländercodes
   filename: guide-laendercodes.guide.md
 - name: Nicht vorhanden
@@ -26,6 +32,8 @@
   filename: guide-personenbezug.guide.md
 - name: Personen-Ressourcensichtbarkeit
   filename: guide.personen-ressourcensichtbarkeit.guide.md
+- name: Personen-zu-Organisation-Zuordnung
+  filename: guide-personen-zu-organisation-zuordnung.guide.md
 - name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
 - name: Ressourcen Annotation Sichtbarkeit

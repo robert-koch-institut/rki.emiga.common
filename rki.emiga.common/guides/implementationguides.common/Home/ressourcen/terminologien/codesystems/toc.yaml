@@ -10,6 +10,12 @@
   filename: guide-bearbeitungsstatus.guide.md
 - name: Beziehungen
   filename: guide-beziehungen.guide.md
+- name: Organisationstyp
+  filename: guide-organisationstyp.guide.md
+- name: Dublettenprüfungs-Kriterien
+  filename: guide-dublettenpruefungs-kriterien.guide.md
+- name: Dublettenprüfungsgründe
+  filename: guide-dublettenpruefungsgruende.guide.md
 - name: Personenbezug
   filename: guide-personenbezug.guide.md
 - name: Regionalschlüssel

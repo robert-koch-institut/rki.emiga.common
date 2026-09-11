@@ -1,7 +1,9 @@
 CodeSystem: RelatedPersonRelationshipType
 Id: RelatedPersonRelationshipType
 Title: "Beziehungen zu anderen Personen"
-Description: "Das CodeSystem 'RelatedPersonRelationship' definiert Konzepte, die genutzt werden können, um verschiedene Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen zu unterscheiden."
+Description: "Das CodeSystem 'RelatedPersonRelationship' definiert Konzepte, welche genutzt werden können, um verschiedene Arten von Beziehungen zwischen einer betroffenen Person und anderen Personen zu unterscheiden."
+* insert MetadataTerminology
+* ^url = "https://emiga.rki.de/fhir/common/CodeSystem/RelatedPersonRelationshipType"
 * ^version = "1.4.2"
 * ^date = "2026-08-18"
 * ^caseSensitive = true

@@ -1,0 +1,71 @@
+@startuml
+title Personen und Bezugspersonen
+
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam classAttributeFontName Monospaced
+
+skinparam ArrowColor #555555
+skinparam classBorderColor #555555
+
+hide circle
+
+
+class "TransactionBundle" as Bundle #E6E6E6 {
+  type                  Code              1..1
+  entry                 Resource          1..*
+}
+
+class "AffectedPerson" as AP #D9EAD3 {
+  identifier            Identifier        0..*
+  name                  HumanName         0..*
+  birthDate             Date              0..1
+  address               Address           0..*
+  --
+  relatedPersonLink     Reference         0..*
+  patientLink           Reference         0..*
+  lastModifiedBy        Reference         0..1
+}
+
+class "AffectedPersonRelatedPerson" as RP #FFF2CC {
+  patient               Reference         1..1
+  relationship          CodeableConcept   1..*
+  --
+  identifier            Identifier        0..*
+}
+
+class "EmigaUserPractitioner" as Practitioner #D9EAF7 {
+  identifier            Identifier        0..*
+  name                  HumanName         0..*
+  active                Boolean           0..1
+}
+
+
+' --- Layout -------------------------------------------------
+
+Bundle -[hidden]down-> AP
+RP -[hidden]right-> Practitioner
+
+
+' --- Bundle-Inhalte -----------------------------------------
+
+Bundle "1" --> "1..*" AP
+Bundle "1" --> "0..*" RP
+Bundle "1" --> "0..*" Practitioner
+
+
+' --- Personenbeziehungen ------------------------------------
+
+RP "0..*" -up-> "1" AP
+
+AP "0..*" --down-> "0..*" RP : related\n PersonLink
+
+AP "0..*" --down-> "0..1" Practitioner : lastModifiedBy
+
+AP "0..*" -left-> "0..*" AP : patientLink\n«gleiche Person»
+
+@enduml

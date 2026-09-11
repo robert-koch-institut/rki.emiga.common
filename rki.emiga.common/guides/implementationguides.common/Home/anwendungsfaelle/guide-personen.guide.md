@@ -1,12 +1,39 @@
 # {{page-title}}
-Im Folgenden werden UML-Diagramme für Personen dargestellt, die die für dieses Modul relevanten Anwendungsfälle in komprimierter Form abbilden. Der Schwerpunkt liegt auf den zentralen Use Cases und den dafür erforderlichen Funktionen, um eine klare und gut nachvollziehbare Übersicht zu gewährleisten.
 
-## Überblick
-{{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPersonBundle.png}}
-{{render:guides/implementationguides.common/PlantUML/PNGs/PersonRelatedPersonOverview.png}}
+Dieser Abschnitt beschreibt die möglichen Anwendungsfälle zur Abbildung von **betroffenen Personen** und **Bezugspersonen** in EMIGA.
 
-## Betroffene Person
+Eine betroffene Person wird als `Patient`-Ressourceninstanz gemäß dem Profil `AffectedPerson` abgebildet. Eine Bezugsperson wird als eigenständige `RelatedPerson`-Ressourceninstanz gemäß dem Profil `AffectedPersonRelatedPerson` geführt. 
+
+{{render:guides/implementationguides.common/PlantUML/PNGs/Personen-und-bezugspersonen.png}}
+
+## Anlegen einer betroffenen Person
+Das Profil `AffectedPerson` enthält die für EMIGA relevanten personenbezogenen Angaben zu einer Fallperson (Patient). Dazu gehören insbesondere Identifikatoren, Name und Anrede, Kontakt- und Adressdaten, Geburtsdaten, Staatsangehörigkeit, Bearbeitungsstatus, Sprachkenntnisse sowie Angaben zu behandelnden Personen und Einrichtungsbezügen. Das Element `relationship` beschreibt die Art dieser Beziehung und ist an das ValueSet `RelatedPersonRelationshipTypeVS` gebunden.
+Mit Ausnahme der Identifikatoren sind in dieser Klasse keine weiteren Elemente als Must Support gekennzeichnet.
+
+Beim Anlegen einer **betroffenen Person** wird eine neue Instance von `AffectedPerson`-Ressource erstellt. Die Erstellung erfolgt im Rahmen eines `TransactionBundle`, das alle für den Erstellungsvorgang benötigten Ressourcen gemeinsam an das System-Enpoint übermittelt.
+
 {{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPerson.png}}
 
+### Abbildung einer Bezugsperson
+Für eine **betroffene Person** können ihre Bezugspersonen über eine `AffectedPersonRelatedPerson`-Instanz abgebildet werden. Die betroffene Person (`AffectedPerson`) verweist hierzu über einen Link auf die entsprechende `AffectedPersonRelatedPerson`.
+
+Die `AffectedPersonRelatedPerson` stellt die Beziehung zwischen der betroffenen Person und einer weiteren Person her. Sie referenziert die Bezugsperson als `Patient` und beschreibt über `Relationship` die **Art der Beziehung zur betroffenen Person**, beispielsweise eine familiäre oder betreuende Beziehung.
+
+Auf diese Weise werden Bezugsperson und betroffene Person jeweils als eigenständige Personeninstanzen geführt und ihre Beziehung zueinander explizit modelliert werden.
+
 ## Bezugsperson der betroffenen Person
+Eine **Bezugsperson** wird als Instanz des Profils `AffectedPersonRelatedPerson` abgebildet. Über `patient` wird die betroffene Person referenziert, auf die sich die Bezugsperson bezieht.
+
 {{render:guides/implementationguides.common/PlantUML/PNGs/AffectedPersonRelatedPerson.png}}
+
+Das Element `relationship` beschreibt die Art dieser Beziehung und ist an das ValueSet `RelatedPersonRelationshipTypeVS` gebunden.
+
+## Unterschiedliche Repräsentationen derselben Person
+Bei dem Fall, in denen dieselbe physische Person sowohl als betroffene Person als auch als Bezugsperson einer anderen betroffenen Person auftritt, wird sie in unterschiedlichen fachlichen Kontexten durch eine `AffectedPerson`- und eine `AffectedPersonRelatedPerson`-Instanz repräsentiert.
+Die `AffectedPerson` kann über `link.relatedPersonLink` mit der entsprechenden `AffectedPersonRelatedPerson`-Instanz verknüpft werden. Der Link kennzeichnet, dass beide Ressourcen dieselbe physische Person repräsentieren.
+
+Dabei sind insbesondere zwei Arten von Referenzen bzw. Verknüpfungen zu unterscheiden:
+* `AffectedPersonRelatedPerson.patient` beschreibt die **fachliche Beziehung einer Bezugsperson zu einer betroffenen Person**. Über diese Referenz wird festgelegt, zu welcher betroffenen Person die jeweilige Bezugsperson gehört.
+* `AffectedPerson.link[relatedPersonLink]` bzw. `AffectedPerson.link[patientLink]` dienen dagegen der **Verknüpfung unterschiedlicher FHIR-Repräsentationen <u>derselben</u> physischen Person**.
+
+{{render:guides/implementationguides.common/PlantUML/PNGs/same-person-different-roles.png}}

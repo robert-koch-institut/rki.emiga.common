@@ -1,7 +1,7 @@
-# Implementierungsleitfaden für EMIGA common
+# Implementierungsleitfaden für das EMIGA-Common-Paket
 
 <a href="https://simplifier.net/rki.emiga.common" class="btn btn-default">zu EMIGA common Projekt auf Simplifier</a>
-<a href="https://www.rki.de/DE/Content/Institut/OrgEinheiten/Abt3/FG32/EMIGA/emiga.html" class="btn btn-default">zur EMIGA-Webseite</a>
+<a href="https://www.rki.de/DE/Institut/Organisation/Abteilungen/Abteilung-3/FG32/EMIGA/emiga.html" class="btn btn-default">zur EMIGA-Webseite</a>
 
 
 
