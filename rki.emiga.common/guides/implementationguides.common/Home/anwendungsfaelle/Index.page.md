@@ -10,10 +10,11 @@ Dieser Abschnitt beschreibt die wesentlichen fachlichen Anwendungsfälle, die mi
 #### Enthaltene Anwendungsfälle:
 
 1. **Annotationen, Anhänge und zusätzliche Eigenschaften**  
-   Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen. Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen.
+    Annotationen dienen dazu, Entitäten wie z.B. Fälle, Ausbrüche oder Personen mit Notizen, Kommentaren und Anhängen zu versehen sowie allgemeine Notizen, Kommentare und Dokumente ohne Entitätsbezug zu hinterlegen. Mit den Anhang hat man die Möglichkeit, Dokumente, auch aus Anschreiben-Vorlagen, an Annotationen anzuhängen, um verschiedene Dateien strukturiert und nachvollziehbar an Entitäten oder für die Organisation zu hinterlegen. 
 
 2. **Personen und Bezugspersonen**  
-   Die betroffene Person enthält relevante Angaben zum Patienten.
+   
+   Die betroffene Person enthält relevante Angaben zum Patienten. 
 
 3. **Zusätzliche Eigenschaften**
    
