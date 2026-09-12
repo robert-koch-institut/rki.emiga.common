@@ -17,7 +17,7 @@ select
 <br>&nbsp;<br>
 
 Das Profil `AttachmentDocumentReference` basiert auf der FHIR-Ressource `DocumentReference` und dient der Abbildung von **Anhängen** als eigenständige FHIR-Ressourcen innerhalb von EMIGA.
-Hierzu zählen beispielsweise hochgeladene Dateien, Dokumente, die auf Grundlage von Anschreiben-Vorlagen erzeugt wurden.
+Hierzu zählen beispielsweise hochgeladene Dateien oder Dokumente, die auf Grundlage von Anschreiben-Vorlagen erzeugt wurden.
 
 Die `DocumentReference` enthält die fachlichen und technischen Metadaten des Anhangs. Der binäre Dateiinhalt wird nicht inline mit der Ressource übertragen, sondern separat verwaltet und über `DocumentReference.content.attachment.url` referenziert.
 
@@ -32,9 +32,8 @@ Die `DocumentReference` enthält die fachlichen und technischen Metadaten des An
 | `content.attachment.title`       | Name bzw. Betreff des Anhangs                                 |
 | `content.attachment.creation`    | Erstellungszeitpunkt des eigentlichen Dokuments               |
 
-**⚠ Bemerkung:** 
 
-Dabei ist zwischen dem Erstellungszeitpunkt des Dokuments und dem Erstellungszeitpunkt der Anhangsentität zu unterscheiden:
+Es ist zwischen dem Erstellungszeitpunkt des Dokuments und dem Erstellungszeitpunkt der Anhangsentität zu unterscheiden:
 
 - `content.attachment.creation` bezeichnet den **Erstellungszeitpunkt des referenzierten Dokuments**.
 
@@ -122,7 +121,7 @@ select
 </fql>
 <br>&nbsp;<br>
 
-# Beispie l: Anhangsdokument 4691067
+# Beispie 1: Anhangsdokument 4691067
 
 Dieses Beispiel zeigt eine `DocumentReference`-Ressource zur Verwaltung eines Datei-Anhangs innerhalb von EMIGA.
 Die Datei selbst wird nicht in der FHIR-Ressource gespeichert, sondern über `DocumentReference.content.attachment` referenziert.
@@ -238,8 +237,6 @@ der EMIGA-Benutzer referenziert, der den Anhang erstellt hat.
 Die Ressource ist mit dem Status `current` als aktuell gültige Dokumentreferenz gekennzeichnet.
 
 Über die Security Labels wird die Ressource außerdem als `transferable` gekennzeichnet und einer verantwortlichen ÖGD-Stelle zugeordnet.
-
-Das Beispiel veranschaulicht die Abbildung eines Anhangs als `DocumentReference`, die Vergabe fachlicher Identifikatoren sowie die Beschreibung der Datei über `content.attachment`. Darüber hinaus zeigt es die Angabe der erstellenden Person über `author`, die Unterscheidung zwischen dem Erstellungszeitpunkt der `DocumentReference` (`DocumentReference.date`) und dem Erstellungszeitpunkt des eigentlichen Dokuments (`Attachment.creation`) sowie die Steuerung von Sichtbarkeit und Verantwortlichkeit über `meta.security`.
 
 <tabs>
     <tab title="Übersicht">      

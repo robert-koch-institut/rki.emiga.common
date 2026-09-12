@@ -9,7 +9,7 @@ Ziel ist es, den Öffentlichen Gesundheitsdienst (ÖGD) durch moderne digitale L
 
 ## Projektziele
 Das EMIGA-Projekt verfolgt im Rahmen seiner Entwicklung insbesondere folgende Projektziele:
-
+‚
 **Effektiverer Infektionsschutz:** 
 Als moderne, webbasierte Softwarelösung für den ÖGD ermöglicht EMIGA nutzungsfreundliche und effiziente Arbeitsabläufe im Infektionsschutz. Automatisierte Prozesse tragen dazu bei, den administrativen Aufwand zu reduzieren und die tägliche Arbeit der ÖGD-Stellen zu erleichtern.
 
@@ -17,7 +17,7 @@ Als moderne, webbasierte Softwarelösung für den ÖGD ermöglicht EMIGA nutzung
 EMIGA unterstützt die Zusammenarbeit und Kommunikation innerhalb des ÖGD sowie mit weiteren beteiligten Einrichtungen. Sichere Datenübertragung und standardisierte Daten-Schnittstellen ermöglichen einen strukturierten und medienbrucharmen Informationsaustausch unter den beteiligten Stellen.
 
 **Einheitliche Datenerfassung:** 
-EMIGA unterstützt eine bundesweit einheitliche Datenerfassung durch standardisierte Datenmodelle, eine zentrale Datenhaltung und die enge Anbindung an DEMIS (*Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz*).
+EMIGA unterstützt eine bundesweit einheitliche Datenerfassung durch standardisierte Datenmodelle, eine zentrale Datenhaltung und die enge Anbindung an **DEMIS** (*Deutsches Elektronisches Melde- und Informationssystem für den Infektionsschutz*).
 
 **Interoperabilität:** 
 EMIGA setzt auf internationale Standards wie *FHIR (Fast Healthcare Interoperability Resources)* und etablierte medizinische Terminologien wie SNOMED CT. Standardisierte und öffentlich spezifizierte Schnittstellen ermöglichen einen interoperablen Datenaustausch und die Anbindung externer Fachanwendungen.

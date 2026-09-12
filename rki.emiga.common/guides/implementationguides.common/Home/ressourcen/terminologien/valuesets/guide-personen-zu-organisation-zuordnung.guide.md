@@ -1,5 +1,5 @@
 ---
-topic: Salutation
+topic: PersonToOrganizationTypeVS
 canonical: https://emiga.rki.de/fhir/ValueSet/PersonToOrganizationTypeVS
 ---
 

@@ -5,7 +5,7 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundl
 
 # {{page-title}}
 
-
+<!--
 <fql output="inline" headers="false">
 from 
     StructureDefinition
@@ -14,15 +14,16 @@ where
 select
     description
 </fql>
-
+-->
 
 Das Profil `MatchOutputBundle` basiert auf der FHIR-Ressource `Bundle` und dient der strukturierten Übertragung von Ergebnissen eines Matching-Vorgangs, beispielsweise einer Dublettenprüfung.
 
 Das Bundle wird als `searchset` verwendet. Die einzelnen Treffer werden über `Bundle.entry` übermittelt. Für jede gefundene Person enthält der Eintrag neben der Ressource selbst auch Informationen zur Bewertung des Matches.
+Hierzu gehören insbesondere der Match-Score, der die Übereinstimmung als Wert zwischen `0` und `1` abbildet, sowie der Match-Grad und zusätzliche Metadaten zur Dublettenprüfung.
 
-Hierzu gehören insbesondere der **Match-Score**, der die Übereinstimmung als Wert zwischen `0` und `1` abbildet, sowie der **Match-Grad** und zusätzliche **Metadaten zur Dublettenprüfung**.
+Bei der Personen-Dublettenprüfung werden die im Bundle enthaltenen Personen als `AffectedPerson` abgebildet. 
+Der Suchmodus der entsprechenden Einträge ist auf `match` festgelegt.
 
-Die im Bundle enthaltenen Personen werden als `AffectedPerson` abgebildet. Der Suchmodus der Einträge ist auf `match` festgelegt.
 
 ## Profil
 
@@ -108,21 +109,20 @@ select
 <br>&nbsp;<br>
 
 ## Beispiel
-Dieses Beispiel zeigt die Rückgabe einer EMIGA-$match-Operation zur Identifizierung möglicher Ressource-Dubletten (Datensatz-Dubletten) einer Person. Die Antwort wird als FHIR-Bundle vom Typ searchset gemäß dem Profil https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle zurückgegeben.
-
-Jede Bundle.entry enthält einen gefundenen Match-Kandidaten als Patient-Ressource; die zugehörigen Such- und Matching-Informationen werden über Bundle.entry.search übermittelt. Das Beispiel-Bundle enthält zwei Match-Kandidaten (Bundle.total = 2).
+Dieses Beispiel zeigt die Rückgabe einer EMIGA-$match-Operation zur Identifizierung möglicher Personressource-Dubletten (Datensatz-Dubletten). Die Antwort wird als FHIR-Bundle vom Typ searchset gemäß dem Profil https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle zurückgegeben.
+Jede Bundle.entry enthält einen gefundenen Match-Kandidaten als Patient-Ressource; die zugehörigen Such- und Matching-Informationen werden über Bundle.entry.search übermittelt. 
 
 ### Match-Kandidaten
 
+Das Beispiel-Bundle enthält zwei Match-Kandidaten (Bundle.total = 2).
 Jeder gefundene Kandidat wird mit dem Profil `https://emiga.rki.de/fhir/common/StructureDefinition/AffectedPerson` bereitgestellt.
 
 Beispielhaft enthält der erste Kandidat die Identifikatoren `EmigaID` und `EmigaFileNumber`, den Namen "Max Mustermann", das Geburtsdatum `1980-01-01` sowie eine Adresse in Berlin.
-Zusätzlich enthalten die Ressourcen Security Labels zur Beschreibung der Sichtbarkeit und Verantwortlichkeit der Daten. Im Beispiel wird die Sichtbarkeit auf die eigene ÖGD-Stelle eingeschränkt und die verantwortliche Stelle als Robert Koch-Institut angegeben.
+Im Beispiel wird die Sichtbarkeit auf die eigene ÖGD-Stelle eingeschränkt und die verantwortliche Stelle als Robert Koch-Institut angegeben.
 
 ### Match-Bewertung
 
 Die Bewertung eines Match-Kandidaten wird über das Element `Bundle.entry.search` beschrieben.
-
 Jeder Eintrag wird mit `mode = match` gekennzeichnet und enthält einen numerischen Match-Score. Zusätzlich wird der qualitative Match-Grad über die FHIR-Extension `http://hl7.org/fhir/StructureDefinition/match-grade` 
 angegeben.
 Im Beispiel werden folgende Werte verwendet:

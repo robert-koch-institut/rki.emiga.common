@@ -4,7 +4,7 @@ Dieser Implementierungsleitfaden beschreibt die FHIR-Spezifikation des EMIGA-Com
 ### Zielgruppe
 Dieser Leitfaden richtet sich an Anwendende sowie Softwareherstellende von Informationssystemen, die die Daten gemäß der EMIGA-Spezifikation an EMIGA übermitteln, aus EMIGA empfangen oder innerhalb von EMIGA verarbeiten.
 
-### Aufbau dieses Implementierungsleitfadens
+### Aufbau des Implementierungsleitfadens
 Das Kapitel **Grundlagen und Überblick** vermittelt die fachlichen und technischen Grundlagen im EMIGA-Kontext sowie die wesentlichen Konzepte, die dem FHIR-Paket `rki.emiga.common` zugrunde liegen. Unter **Anwendungsfallbeispiele** werden relevante Anwendungsszenarien für die Ressourcen dieses Pakets exemplarisch anhand von UML-Diagrammen beschrieben.
 
-Das Kapitel **Ressourcen** enthält die Beschreibung zu den im Rahmen dieses Leitfadens definierten FHIR-Ressourcen sowie zugehörige Beispielprofile. Unter **Implementierungshinweise** werden ergänzende Hinweise zur technischen Umsetzung und Verwendung der definierten Artefakte bereitgestellt. **Ergänzende Hinweise** und **Weiterführende Informationen** enthalten zusätzliche Erläuterungen sowie Verweise auf relevante weitere Dokumentationen.
+Das Kapitel **Ressourcen** enthält die Beschreibung zu den im Rahmen dieses Leitfadens definierten FHIR-Ressourcen sowie zugehörige Beispielprofile. Unter **Implementierungshinweise** werden ergänzende Hinweise zur technischen Umsetzung und Verwendung der definierten Artefakte bereitgestellt. **Ergänzende Hinweise** enthalten zusätzliche Erläuterungen sowie Verweise auf relevante weitere Dokumentationen.

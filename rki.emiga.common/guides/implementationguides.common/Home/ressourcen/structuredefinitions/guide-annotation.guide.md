@@ -41,11 +41,11 @@ Die Ressource enthält insbesondere folgende fachliche Informationen:
 
 ### Inhalt einer Annotation
 
-Der eigentliche Inhalt einer Annotation wird über `AnnotationCommunication.payload` abgebildet. Eine Annotation kann textuelle Inhalte und Anhänge enthalten.
-
+Der eigentliche Inhalt einer Annotation wird über `AnnotationCommunication.payload` abgebildet.
+Eine Annotation kann sowohl textuelle Inhalte als auch Anhänge enthalten.
+Textuelle Inhalte werden über `payload.contentString` abgebildet. 
 Über `payload.content[x]` sind ausschließlich die Datentypen `string` und `Reference(AttachmentDocumentReference)` vorgesehen.
-
-Textuelle Inhalte werden über `payload.contentString` abgebildet. Anhänge werden als eigenständige `AttachmentDocumentReference`-Ressourcen modelliert und über `payload.contentReference` referenziert.
+Anhänge werden als eigenständige `AttachmentDocumentReference`-Ressourcen modelliert und über `payload.contentReference` referenziert.
 
 Eine Annotation kann mehrere `payload`-Elemente enthalten und damit beispielsweise Textinhalte und mehrere Anhänge miteinander kombinieren.
 
@@ -60,39 +60,30 @@ Die Referenz beschreibt damit, **worauf sich die Annotation fachlich bezieht**.
 ### Betreff
 
 Der Betreff einer Annotation wird über `topic.text` angegeben.
-
 Der Betreff dient als kurze, menschenlesbare Bezeichnung des Inhalts der Annotation.
-
 Eine codierte Abbildung über `topic.coding` ist nicht vorgesehen.
 
 ### Kategorie der Annotation
 
 Über `category` wird die **Kategorie der Annotation** angegeben.
-
 Die zulässigen Kategorien werden durch das ValueSet `AnnotationCategoryVS` festgelegt und ermöglichen die fachliche Unterscheidung verschiedener Arten von Annotationen.
 
 ### Erstellende Person
 
 Über `sender` wird die Person referenziert, die die Annotation erstellt hat.
-
 Die Referenz ist auf das Profil `EmigaUserPractitioner` eingeschränkt.
 
 ### Datum und Erstellungszeitpunkt
 
 Bei den Datumsangaben einer Annotation sind unterschiedliche Bedeutungen zu unterscheiden.
-
 `sent` enthält das fachliche bzw. benutzerdefinierte Datum der Annotation.
-
 Die Extension `DateCreated` bildet dagegen den Zeitpunkt der initialen Erstellung der Annotation ab.
-
 Die beiden Zeitangaben beschreiben damit unterschiedliche Aspekte im Lebenszyklus einer Annotation.
 
 ### Bearbeitungsstatus der Annotation
 
 Bei einer Annotation sind der technische FHIR-Status und der fachliche Bearbeitungsstatus voneinander zu unterscheiden.
-
 Der FHIR-Status `Communication.status` ist im Profil fest auf `completed` gesetzt. Er beschreibt den technischen Zustand der `Communication`-Ressource und wird **nicht** zur Abbildung des fachlichen Bearbeitungsstatus verwendet.
-
 Der fachliche Bearbeitungsstatus wird stattdessen über die Extension `ProcessingStatus` abgebildet.
 
 | Element                | Bedeutung                                    | Verwendung              |
@@ -105,9 +96,7 @@ Mögliche fachliche Bearbeitungsstatus sind beispielsweise `inprogress`, `closed
 ### Identifikatoren
 
 Eine Annotation kann über `Communication.identifier` mit EMIGA-spezifischen und weiteren fachlichen Identifikatoren versehen werden.
-
 Hierdurch kann sie eindeutig identifiziert und unterschiedlichen Verarbeitungskontexten zugeordnet werden.
-
 Folgende Identifier-Systeme können beispielsweise verwendet werden:
 
 * `EmigaID`
@@ -117,16 +106,8 @@ Folgende Identifier-Systeme können beispielsweise verwendet werden:
 ### Kennzeichnung personenbezogener Daten
 
 Über `meta.tag` kann gekennzeichnet werden, dass eine Annotation personenbezogene Informationen im Sinne der DSGVO enthält.
-
 Damit kann bereits auf Ressourcenebene kenntlich gemacht werden, dass bei der Verarbeitung der Annotation personenbezogene Informationen berücksichtigt werden müssen.
-
 Die zulässigen Werte werden durch die hierfür vorgesehene EMIGA-Terminologie festgelegt.
-
-### Sichtbarkeit und Verantwortlichkeit
-
-Die Sichtbarkeit und Verantwortlichkeit einer Annotation wird über `meta.security` gekennzeichnet.
-
-Für Annotationen sind insbesondere Sichtbarkeitsangaben wie `inAgency` und `transferable` relevant. Sie geben an, ob eine Annotation innerhalb der eigenen ÖGD-Stelle verbleibt oder gemeinsam mit der zugehörigen Hauptentität, beispielsweise einem Fall oder Ausbruch, an andere Stellen übermittelt werden darf.
 
 ### Anhänge
 
@@ -136,15 +117,6 @@ Die eigentlichen Binärdaten werden nicht unmittelbar innerhalb der Annotation g
 
 Informationen wie Dateigröße, Hashwert, Titel, MIME-Type und Erstellungszeitpunkt unterstützen die Integrität und Nachvollziehbarkeit eines Anhangs.
 
-## Interoperabilitätshinweise
-
-Der fachliche Bearbeitungsstatus einer Annotation ist ausschließlich der Extension `ProcessingStatus` zu entnehmen. `Communication.status` ist im Profil fest auf `completed` gesetzt und darf nicht zur Interpretation des fachlichen Bearbeitungszustands verwendet werden.
-
-Die Sichtbarkeit und Übertragbarkeit einer Annotation wird über `meta.security` gesteuert. Clients müssen diese Angaben insbesondere bei Anzeige, Weitergabe und Übermittlung berücksichtigen.
-
-Annotationen können personenbezogene Daten enthalten. Die entsprechende Kennzeichnung über `meta.tag` sollte bei Anzeige, Übermittlung, Export und Protokollierung berücksichtigt werden.
-
-Anhänge werden über `AttachmentDocumentReference` referenziert und nicht direkt als Binärdaten innerhalb der `AnnotationCommunication` übertragen.
 
 ## Profil
 
@@ -337,18 +309,6 @@ Zusätzlich wird über `meta.tag` angegeben, dass die Ressource personenbezogene
 
 Damit wird transparent gemacht, dass bei der Verarbeitung der Annotation Datenschutzanforderungen berücksichtigt werden müssen.
 
-## Zusammenfassung
-
-Dieses Beispiel zeigt eine vollständige Annotation-Kommunikation mit:
-
-* eindeutiger Identifikation über EMIGA- und SurvNet-Identifier
-* fachlicher Klassifikation als Kommentar
-* Verarbeitungsstatus "Zur Kenntnis"
-* Erstellungsdatum
-* Referenz zu einem fachlichen Kontext
-* textuellem Kommentar
-* optionaler Dokumentreferenz
-* Security Labels zur Steuerung von Zugriff und Weitergabe
 
 <tabs>
     <tab title="Übersicht">      

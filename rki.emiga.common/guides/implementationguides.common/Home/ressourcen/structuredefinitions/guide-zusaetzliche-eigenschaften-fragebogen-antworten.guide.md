@@ -14,9 +14,8 @@ select
     description
 </fql>
 
-<br>&nbsp;<br>
 
-Das Profil `AdditionalPropertiesQuestionnaireResponse` refletiert die FHIR-Ressource `QuestionnaireResponse` und enthält die konkreten Werte zu zusätzlichen Eigenschaften.
+Das Profil `AdditionalPropertiesQuestionnaireResponse` refletiert die FHIR-Ressource `QuestionnaireResponse` und enthält die konkreten Werteangabe zu zusätzlichen Eigenschaften.
 
 ## Profil
 ### Metadaten
