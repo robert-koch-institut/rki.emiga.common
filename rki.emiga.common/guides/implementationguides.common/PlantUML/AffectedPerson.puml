@@ -8,12 +8,12 @@ class AffectedPerson{
 <b>+</b> name: HumanNameDeBasis [0..*]
 -- Meta --
 <b>+</b> meta.extension:lastModifiedBy: Reference(EmigaUserPractitioner) [0..1]
-<b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [0..*]
-<b>+</b> meta.security:responsibility: Coding [0..1]
-<b>+</b> meta.security:visibility: Coding [0..1]
+<b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [1..1]
+<b>+</b> meta.security:responsibility: Coding [1..1]
+<b>+</b> meta.security:visibility: Coding [1..1]
 -- Identifiers --
-<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [1..1]
-<b>+</b> identifier:EmigaID: IdentifierEmigaID [1..1]
+<b>+</b> identifier:EmigaFileNumber: IdentifierEmigaFileNumber [0..1]
+<b>+</b> identifier:EmigaID: IdentifierEmigaID [0..1]
 <b>+</b> identifier:SurvNetFileNumber: IdentifierSurvNetFileNumber [0..1]
 -- Personal Information --
 <b>+</b> birthDate: date [0..1]
@@ -22,14 +22,14 @@ class AffectedPerson{
 <b>+</b> extension:citizenship: Complex [0..*]
 <b>+</b> extension:landOfBirth: Coding [0..1]
 <b>+</b> extension:processingStatus: Coding [0..1]
+<b>+</b> extension:facilityAssociation: Complex [0..*]
 <b>+</b> gender: code [0..1]
 <b>+</b> gender.extension:other-amtlich: Coding [0..1]
 -- Communication --
 <b>+</b> address.city: string [0..1]
 <b>+</b> address.country: string [0..1]
 <b>+</b> address.extension:addressUse: Coding [0..*]
-<b>+</b> address.extension:facilityAssociation: Complex [0..*]
-<b>+</b> address.extension:geolocation: Complex [0..1]
+<b>+</b> address.extension:geolocation: Complex [0..*]
 <b>+</b> address.extension:regionalKey: Complex [0..1]
 <b>+</b> address.extension:Stadtteil: String [0..1]
 <b>+</b> address.line.extension:Adresszusatz: String [0..1]
@@ -43,6 +43,7 @@ class AffectedPerson{
 <b>+</b> telecom:Phone: ContactPoint [0..*]
 -- Links --
 <b>+</b> link:relatedPersonLink: Reference(RelatedPerson) [0..*]
+<b>+</b> link:patientLink: Reference(Patient) [0..*]
 }
 
 @enduml

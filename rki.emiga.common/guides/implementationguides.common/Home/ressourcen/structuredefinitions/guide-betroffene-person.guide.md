@@ -87,7 +87,7 @@ Im EMIGA-Datenmodell können natürliche Personen abhängig von ihrer fachlichen
 
 | Ressource       | EMIGA-Profil                  | Fachliche Rolle                                                             |
 | --------------- | ----------------------------- | --------------------------------------------------------------------------- |
-| `Betroffene Person`       | `AffectedPerson`        | Person, die vom fachlichen Vorgang betroffen ist (darunter Fallperson, Kontakperson)                            |
+| `Betroffene Person`       | `AffectedPerson`        | Person, die vom fachlichen Vorgang betroffen ist (darunter Fallperson, Kontaktperson)                           |
 | `RelatedPerson` | `AffectedPersonRelatedPerson` | Person, die in einer fachlichen Beziehung zu einer betroffenen Person steht |
 | `Practitioner`  | `EmigaUserPractitioner`       | EMIGA-Nutzende                                    |
 
@@ -103,15 +103,14 @@ Für unterschiedliche Namensarten werden separate `HumanName`-Einträge verwende
 | Namensart        | FHIR-Abbildung         | Bedeutung                               |
 | ---------------- | ---------------------- | --------------------------------------- |
 | offizieller Name | `name.use = #official` | aktuell verwendeter offizieller Name    |
-| Geburtsname      | `name.use = #maiden`   | Geburtsname (Familiename)der Person                  |
+| Geburtsname      | `name.use = #maiden`   | Geburtsname (Familienname) der Person                |
 | Kurzname         | `name.use = #nickname` | Kurzname bzw. weiterer informeller Name |
 
 Die Anrede wird über `name.extension[salutation]` abgebildet.
 
 ### Geschlecht
 
-Das Geschlecht wird grundsätzlich über `Patient.gender` 
-abgebildet. Bei Geschlcht der Person sind Werte male, female, other und Divers zur Wahl.
+Das Geschlecht wird grundsätzlich über `Patient.gender` abgebildet. Bei Geschlcht der Person sind Werte male, female, other und Divers zur Wahl.
 Zusätzlich kann das amtliche Geschlecht über die für den deutschen Kontext vorgesehene Extension angegeben werden.
 Dadurch können der FHIR-Basiswert und die spezifischere amtliche Geschlechtsangabe parallel übermittelt werden.
 
@@ -124,12 +123,12 @@ Damit wird das Geburtsland unabhängig von einer aktuellen oder früheren Adress
 
 ### Staatsangehörigkeit
 
-Die Staatsangehörigkeit wird über `extension[citizenship]` abgebildet uund entsprechend der im Profil festgelegten Terminologie kodiert.
-Füür eine Person können unabhängig vom Geburtsland eine oder mehrere fachlich relevante Staatsangehörigkeiten angegeben werden.
+Die Staatsangehörigkeit wird über `extension[citizenship]` abgebildet und entsprechend der im Profil festgelegten Terminologie kodiert.
+Für eine Person können unabhängig vom Geburtsland eine oder mehrere fachlich relevante Staatsangehörigkeiten angegeben werden.
 
 ### Kontaktinformationen
 
-Kontaktinformationen werden über `Patient.telecom`abgebildet.
+Kontaktinformationen werden über `Patient.telecom` abgebildet.
 Hierzu können beispielsweise Telefonnummern, E-Mail-Adressen oder Faxnummern gehören.
 Für Faxnummern ist der entsprechende Slice `telecom[Fax]` vorgesehen. Dabei ist `system = #fax` festgelegt.
 Der angegebene Wert wird durch die profilierte Validierungsregel `validFaxNumber` geprüft.
@@ -137,7 +136,7 @@ Der angegebene Wert wird durch die profilierte Validierungsregel `validFaxNumber
 ### Adressen und Aufenthaltsorte
 
 Adressen einer betroffenen Person werden über `Patient.address` abgebildet.
-Über die entsprechende `AddressUse`-Extension kann die fachliche Kontext einer Adresse genauer beschrieben werden.
+Über die entsprechende `AddressUse`-Extension kann der fachliche Kontext einer Adresse genauer beschrieben werden.
 
 Damit können beispielsweise ein **Hauptwohnsitz** und ein davon abweichender **derzeitiger Aufenthaltsort** als getrennte Adresseinträge geführt werden.
 Dies ist insbesondere relevant, wenn sich die Person vorübergehend an einem anderen Ort als ihrem Hauptwohnsitz aufhält.
@@ -182,14 +181,14 @@ Damit kann eine postalische Adresse zusätzlich einer regionalen beziehungsweise
 Eine betroffene Person kann einer Einrichtung zugeordnet sein.
 Hierfür wird die Extension `extension[facilityAssociation]` verwendet.
 
-Diese Extension befindet sich direkt unter dem `Patient`-Ressource und nicht innerhalb von `Patient.address`.
+Diese Extension befindet sich direkt an der `Patient`-Ressource und nicht innerhalb von `Patient.address`.
 
-Sie beschreibt keine weitere Adresse der Person, sondern eine fachliche Bezug der betroffenen Person zu einer Einrichtung.
+Sie beschreibt keine weitere Adresse der Person, sondern einen fachlichen Bezug der betroffenen Person zu einer Einrichtung.
 
 Neben dieser Referenz auf die Einrichtung kann die Art des Bezugs angegeben werden, beispielsweise eine Betreuung.
 
 
-### Fachlicher Bearbeitungsstatus des Person-Instanz
+### Fachlicher Bearbeitungsstatus der Personeninstanz
 
 Der fachliche Bearbeitungsstatus einer Instanz "betroffenen Person" kann über die EMIGA-Extension `extension[processingStatus]` angegeben werden.
 
@@ -202,7 +201,7 @@ Die Referenz verweist auf einen `EmigaUserPractitioner`.
 Damit kann nachvollzogen werden, welcher Benutzer die letzte Änderung an der betroffenen Person vorgenommen hat.
 
 ### Fachliche Abbildung ausgewählter Attribute
-Die folgende Übersicht fasst zentrale fachliche Attribute des Person-Ressource zusammen.
+Die folgende Übersicht fasst zentrale fachliche Attribute der Personenressource zusammen.
 
 | Attribut                                        | FHIR-Abbildung                                                                | Bemerkung                                                            |
 | ----------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -223,7 +222,7 @@ Die folgende Übersicht fasst zentrale fachliche Attribute des Person-Ressource 
 | Staatsangehörigkeit                             | `extension[citizenship]`                                                      | Abbildung über die Patient-Citizenship-Extension                     |
 | Sprachkenntnisse                                | `communication.language`                                                      | Bindung an `CommonLanguages`, `extensible`                           |
 | Fax                                             | `telecom[Fax]`                                                                | `system = #fax`; Validierung über `validFaxNumber`                   |
-| Behandelnde Person                              | `generalPractitioner`                                                         | Referenz auf behandelnde Person bzw. zugelassenen Referenztyp (derzeit nicht verwendet)       |
+| Behandelnde Person                              | `generalPractitioner`                                                         | Referenz auf eine behandelnde Person bzw. zugelassenen Referenztyp (derzeit nicht verwendet)       |
 | RelatedPerson-Repräsentation derselben Person   | `link[relatedPersonLink]`                                                     | Identitätsverknüpfung zu einer `RelatedPerson`-Repräsentation        |
 | weitere Patient-Repräsentation derselben Person | `link[patientLink]`                                                           | Identitätsverknüpfung zu einer weiteren `Patient`-Repräsentation     |
 
@@ -374,9 +373,9 @@ Dieses wird über `Patient.deceasedDateTime` angegeben und dokumentiert, dass di
 Im Beispiel: `Practitioner/EmigaUser-001`.
 
 Die verwendete Extension lautet `https://emiga.rki.de/fhir/common/Extension/LastModifiedBy`.
-Damit kann die letzte Änderung der Datensatz einem EMIGA-Nutzende zugeordnet werden.
+Damit kann die letzte Änderung des Datensatzes einer EMIGA-nutzenden Person zugeordnet werden.
 
-Das Beispiel dient insbesondere dazu, die Abbildung einer betroffene Person mit mehreren Namen und Adressen sowie zusätzlichen Angaben wie Geburtsland, Staatsangehörigkeit, amtlichem Geschlecht, Bearbeitungsstatus und einer zugeordneten Einrichtung zu veranschaulichen.
+Das Beispiel dient insbesondere dazu, die Abbildung einer betroffenen Person mit mehreren Namen und Adressen sowie zusätzlichen Angaben wie Geburtsland, Staatsangehörigkeit, amtlichem Geschlecht, Bearbeitungsstatus und einer zugeordneten Einrichtung zu veranschaulichen.
 
 
 # Beispiel 2: Affected Person with Related Person Reference
@@ -391,8 +390,8 @@ Für die Person sind ein Hauptwohnsitz, Kontaktinformationen und Deutsch als Kom
 ### Verknüpfung zu einer RelatedPerson
 
 Eine Besonderheit dieses Beispiels ist die Verwendung von `Patient.link`.
-Darüber wird die betroffene Person mit folgender Ressource `RelatedPerson/RelatedPerson4551`verknüpft. Der Link besitzt den Typ `seealso`.
-Damit wird ausgedrückt, dass die referenzierte `RelatedPerson` zusätzliche Informationen enthält, die im Zusammenhang mit der betroffenen Person relevant sind.
+Darüber wird die betroffene Person mit der Ressource `RelatedPerson/RelatedPerson4551` verknüpft. Der Link besitzt den Typ `seealso`.
+Der hierfür vorgesehene Slice dient der Identitätsverknüpfung: Beide Ressourcen repräsentieren dieselbe physische Person in unterschiedlichen Rollen.
 Die Verknüpfung wird im Beispiel wie folgt dargestellt:
 
 ```json
@@ -405,7 +404,7 @@ Die Verknüpfung wird im Beispiel wie folgt dargestellt:
 }
 ```
 
-Die konkrete fachliche Beziehung der `RelatedPerson` zur dieser betroffenen Person wird in der referenzierten `RelatedPerson`-Ressource beschrieben.
+Die konkrete fachliche Beziehung der `RelatedPerson` zu dieser betroffenen Person wird in der referenzierten `RelatedPerson`-Ressource beschrieben.
 
 Der Vollständigkeit halber sind weitere Merkmale dieses Beispiels im Folgenden dargestellt:
 
@@ -510,7 +509,7 @@ Der Datensatz beziehungsweise der damit verbundene fachliche Vorgang befindet si
 
 ### Kommunikationssprache
 
-Über `Patient.communication` wird Deutsch als Sprache angegeben: `DE – Deutsch`.
+Über `Patient.communication` wird Deutsch als Sprache angegeben: `de – Deutsch`.
 Die Kodierung erfolgt entsprechend BCP 47 über `urn:ietf:bcp:47`.
 
 ### Änderungshistorie
@@ -525,4 +524,4 @@ in `Patient.meta` wird der Nutzende angegeben, der die Ressource zuletzt geände
 
 Im Beispiel: `Practitioner/EmigaUser-001`
 
-Damit kann die letzte Änderung einer betroffenen Person einem EMIGA-Nutzende zugeordnet werden.
+Damit kann die letzte Änderung einer betroffenen Person einer EMIGA-nutzenden Person zugeordnet werden.

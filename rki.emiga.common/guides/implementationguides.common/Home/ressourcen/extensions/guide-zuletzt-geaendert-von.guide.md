@@ -1,6 +1,6 @@
 ---
-topic: FacilityAddressAffectedPerson
-canonical: https://emiga.rki.de/fhir/common/Extension/FacilityAddressAffectedPerson
+topic: LastModifiedBy
+canonical: https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
 ---
 
 # {{page-title}}

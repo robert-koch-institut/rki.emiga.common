@@ -28,7 +28,7 @@ In bestimmten fachlichen Konstellationen kann eine Person sowohl als `AffectedPe
 Dies ist beispielsweise dann relevant, wenn eine Person in einem fachlichen Kontext selbst betroffene Person ist und gleichzeitig als Bezugsperson einer weiteren betroffenen Person auftritt.
 
 In diesem Fall kann die dafür vorgesehene Slice von `AffectedPerson.link` verwendet werden, um die beiden Ressourcen miteinander zu verknüpfen. Dabei sind die beiden Arten der Verknüpfung fachlich voneinander zu unterscheiden: 
-`RelatedPerson.patient` und `RelatedPerson.relationship` beschreiben die fachliche Beziehung zwischen zwei Personen. Die Verknüpfung über `AffectedPerson.link` dient dient hingegen der Identitätsverknüpfung zweier FHIR-Ressourcen, die dieselbe physische Person repräsentieren.
+`RelatedPerson.patient` und `RelatedPerson.relationship` beschreiben die fachliche Beziehung zwischen zwei Personen. Die Verknüpfung über `AffectedPerson.link` dient hingegen der Identitätsverknüpfung zweier FHIR-Ressourcen, die dieselbe physische Person repräsentieren.
 
 
 ## Profil
@@ -133,16 +133,16 @@ Die Bezugsperson besitzt eigene EMIGA-spezifische Identifier, damit kann eine Be
 
 <tabs>
     <tab title="Übersicht">      
-        {{render:Patient-AffectedPerson-4551.json}}
+        {{render:Patient-AffectedPerson4551.json}}
     </tab>
     <tab title="XML">      
-        {{xml:Patient-AffectedPerson-4551.json}}
+        {{xml:Patient-AffectedPerson4551.json}}
     </tab>
     <tab title="JSON">
-        {{json:Patient-AffectedPerson-4551.json}}
+        {{json:Patient-AffectedPerson4551.json}}
     </tab>
     <tab title="Link">
-        {{link:Patient-AffectedPerson-4551.json}}
+        {{link:Patient-AffectedPerson4551.json}}
     </tab>
 </tabs>
 

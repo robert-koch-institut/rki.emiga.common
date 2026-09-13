@@ -31,7 +31,7 @@
 - name: Personenbezug
   filename: guide-personenbezug.guide.md
 - name: Personen-Ressourcensichtbarkeit
-  filename: guide.personen-ressourcensichtbarkeit.guide.md
+  filename: guide-personen-ressourcensichtbarkeit.guide.md
 - name: Personen-zu-Organisation-Zuordnung
   filename: guide-personen-zu-organisation-zuordnung.guide.md
 - name: Regionalschlüssel

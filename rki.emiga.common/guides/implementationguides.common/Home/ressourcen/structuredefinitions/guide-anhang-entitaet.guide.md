@@ -121,7 +121,7 @@ select
 </fql>
 <br>&nbsp;<br>
 
-# Beispie 1: Anhangsdokument 4691067
+# Beispiel 1: Anhangsdokument 4691067
 
 Dieses Beispiel zeigt eine `DocumentReference`-Ressource zur Verwaltung eines Datei-Anhangs innerhalb von EMIGA.
 Die Datei selbst wird nicht in der FHIR-Ressource gespeichert, sondern über `DocumentReference.content.attachment` referenziert.
@@ -144,9 +144,9 @@ und besitzt folgende Eigenschaften:
 
 * Dateiformat: PDF
 * Dateigröße: 16.577 Bytes
-* Erstellung der Datei: 13.01.2026 14:22:43 Uhr
+* Erstellung der Datei: 14.01.2026 14:22:43 Uhr
 
-Die Dokumentreferenz wurde am **14.01.2026 um 18:34:42 Uhr** erstellt.
+Die Dokumentreferenz wurde am **12.01.2026 um 18:34:42 Uhr (UTC)** erstellt.
 
 Die Identifikation erfolgt über eine dedizierte Attachment-ID `4b5755cd-da8f-4b34-b78c-4b3ead465b39`. 
 Damit kann die Datei unabhängig von fachlichen Vorgängen eindeutig referenziert werden.
@@ -198,7 +198,7 @@ Beispiel:
 | Dateityp   | `application/pdf`           |
 | Dateigröße | `16577` Bytes               |
 | Titel      | `test.pdf`                  |
-| Erstellung | `2026-01-13T14:22:43+00:00` |
+| Erstellung | `2026-01-14T14:22:43+00:00` |
 
 Zusätzlich wird ein Hashwert gespeichert, um die Integrität der Datei zu überprüfen.
 
@@ -210,7 +210,7 @@ Das folgende Beispiel zeigt die Abbildung eines Anhangs als eigenständige `Docu
 Sample Image
 ```
 
-Die technische Informationen wird über `DocumentReference.content.attachment` beschrieben. Neben dem MIME-Type `image/png` werden unter anderem die Dateigröße, ein Hashwert und der Erstellungszeitpunkt des Dokuments angegeben.
+Die technischen Informationen werden über `DocumentReference.content.attachment` beschrieben. Neben dem MIME-Type `image/png` werden unter anderem die Dateigröße, ein Hashwert und der Erstellungszeitpunkt des Dokuments angegeben.
 
 Der Anhang besitzt zudem mehrere Identifier zur fachlichen Zuordnung:
 
@@ -236,7 +236,7 @@ der EMIGA-Benutzer referenziert, der den Anhang erstellt hat.
 
 Die Ressource ist mit dem Status `current` als aktuell gültige Dokumentreferenz gekennzeichnet.
 
-Über die Security Labels wird die Ressource außerdem als `transferable` gekennzeichnet und einer verantwortlichen ÖGD-Stelle zugeordnet.
+Über die Security Labels wird die Ressource außerdem als für die eigene ÖGD-Stelle sichtbar (`inAgency`) gekennzeichnet und einer verantwortlichen ÖGD-Stelle zugeordnet.
 
 <tabs>
     <tab title="Übersicht">      

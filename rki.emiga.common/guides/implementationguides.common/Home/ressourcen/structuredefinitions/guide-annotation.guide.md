@@ -105,7 +105,7 @@ Folgende Identifier-Systeme können beispielsweise verwendet werden:
 
 ### Kennzeichnung personenbezogener Daten
 
-Über `meta.tag` kann gekennzeichnet werden, dass eine Annotation personenbezogene Informationen im Sinne der DSGVO enthält.
+Über `meta.tag` wird gekennzeichnet, ob eine Annotation personenbezogene Informationen im Sinne der DSGVO enthält. Der entsprechende Slice ist im Profil verpflichtend.
 Damit kann bereits auf Ressourcenebene kenntlich gemacht werden, dass bei der Verarbeitung der Annotation personenbezogene Informationen berücksichtigt werden müssen.
 Die zulässigen Werte werden durch die hierfür vorgesehene EMIGA-Terminologie festgelegt.
 
@@ -277,13 +277,13 @@ Die Kategorie wird über das CodeSystem `https://emiga.rki.de/fhir/CodeSystem/An
 
 ## Bezug zu einem Vorgang
 
-Die Annotation kann über `Communication.about` mit einem fachlichen Vorgang verknüpft werden.
+Die Annotation muss über `Communication.about` mit genau einer fachlichen Bezugsentität verknüpft werden.
 
 Im Beispiel verweist die Annotation auf `Composition/example`. Damit kann die Annotation einem bestehenden Dokument oder Fallkontext zugeordnet werden.
 
 ## Absender
 
-Die Annotation wurde von einem EMIGA-Nutzende erstellt.
+Die Annotation wurde von einer EMIGA-nutzenden Person erstellt.
 Der Absender wird über `Communication.sender` referenziert `Practitioner/EmigaUser-001`.
 
 ## Inhalt der Annotation
@@ -301,7 +301,7 @@ Diese definieren:
 * verantwortliche Organisation bzw. Zuständigkeit
 * Sichtbarkeit und Weitergabemöglichkeiten der Information
 
-Im Beispiel wird die Ressource als übertragbar (`transferable`) gekennzeichnet.
+Im Beispiel ist die Ressource für die eigene ÖGD-Stelle sichtbar (`inAgency`).
 
 Zusätzlich wird über `meta.tag` angegeben, dass die Ressource personenbezogene Informationen enthält:
 - "code": "ContainsPersonalInformation",
