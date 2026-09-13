@@ -1,6 +1,7 @@
+
 @startuml
 
-title RelatedPerson - Class Diagram
+title RelatedPerson 
 
 class AffectedPerson{
 }
@@ -19,3 +20,5 @@ AffectedPersonRelatedPerson --> Patient: Bezugsperson
 AffectedPersonRelatedPerson --> Relationship: Beziehung zur betroffenen Person
 
 @enduml
+
+

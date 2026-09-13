@@ -14,5 +14,5 @@ Usage: #example
 * content.attachment.contentType = #application/pdf
 * content.attachment.size = 16577
 * content.attachment.hash = "MzU2am9JWkQydk1jeVRlUDNTZlNuRVpvTDJKVGYvOW1ZL013VnB6REpCOD0="
-* content.attachment.title = "test.pdf,"
-* content.attachment.creation = "2026-01-13T14:22:43+00:00"
+* content.attachment.title = "test.pdf"
+* content.attachment.creation = "2026-01-14T14:22:43+00:00"

@@ -1,0 +1,64 @@
+@startuml
+
+title Dieselbe physische Person als betroffene Person und als Bezugsperson
+
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+
+skinparam ArrowColor #555555
+skinparam classBorderColor #555555
+
+hide circle
+
+' ============================================================
+' Farben kennzeichnen die physische Person:
+'   Grün = Person A
+'   Blau = Person B
+' ============================================================
+
+' ------------------------------------------------------------
+' Person A
+' ------------------------------------------------------------
+
+class "AffectedPerson\n(Person A)" as PersonA #D9EAD3 {
+  <b>Rolle:</b> betroffene Person
+}
+
+' ------------------------------------------------------------
+' Person B als betroffene Person
+' ------------------------------------------------------------
+
+class "AffectedPerson\n(Person B)" as PersonB #D9EAF7 {
+  <b>Rolle:</b> betroffene Person
+  --
+  link[relatedPersonLink]
+}
+
+' ------------------------------------------------------------
+' Dieselbe Person B als Bezugsperson von Person A
+' ------------------------------------------------------------
+
+class "AffectedPersonRelatedPerson\n(Person B)" as RelatedPersonB #D9EAF7 {
+  <b>Rolle:</b> Bezugsperson von Person A
+  --
+  patient
+  relationship
+}
+
+' ------------------------------------------------------------
+' Fachliche Beziehung zwischen zwei physischen Personen
+' ------------------------------------------------------------
+
+RelatedPersonB --> PersonA : patient\n«Bezugsperson gehört zu»
+
+' ------------------------------------------------------------
+' Identitätsverknüpfung derselben physischen Person
+' ------------------------------------------------------------
+
+PersonB --> RelatedPersonB : link[relatedPersonLink]
+
+@enduml

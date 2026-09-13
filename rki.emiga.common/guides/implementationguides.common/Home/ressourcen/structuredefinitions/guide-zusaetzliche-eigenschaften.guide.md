@@ -14,7 +14,7 @@ select
     description
 </fql>
 
-<br>&nbsp;<br>
+Das Profil `AdditionalPropertiesQuestionnaire` basiert auf der FHIR-Ressource `Questionnaire`.
 
 ## Profil
 ### Metadaten

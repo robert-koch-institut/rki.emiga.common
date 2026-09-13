@@ -67,12 +67,13 @@ select
   #rendered-codesystem td:nth-child(4), 
   #rendered-codesystem th:nth-child(4) {
       display: none;
+  }
 </style>
 <br>&nbsp;<br>
 
 ### Inhalt
 <tabs>
-<tab= title="Darstellung">{{tree, buttons}} </tab>
+<tab title="Darstellung">{{tree, buttons}} </tab>
 <tab title="XML">{{xml}}</tab>
 <tab title="JSON">{{json}}</tab>
 <tab title="Link">{{link}}</tab>
