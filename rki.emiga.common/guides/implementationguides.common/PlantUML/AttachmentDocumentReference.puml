@@ -3,7 +3,16 @@ skinparam linetype ortho
 
 title AttachmentDocumentReference (Profile of DocumentReference) 
 
-' Main Class
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam classAttributeFontName Monospaced
+
+hide circle
+
 class AttachmentDocumentReference{
 -- Meta --
 <b>+</b> meta.profile:emigaprofile: canonical(StructureDefinition) [1..1]

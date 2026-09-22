@@ -9,18 +9,14 @@ skinparam defaultFontName Arial
 skinparam defaultFontSize 11
 skinparam classAttributeFontName Monospaced
 
-skinparam ArrowColor #555555
-skinparam classBorderColor #555555
-
 hide circle
 
-
-class "TransactionBundle" as Bundle #E6E6E6 {
+class "TransactionBundle" as Bundle {
   type                  Code              1..1
   entry                 Resource          1..*
 }
 
-class "AffectedPerson" as AP #D9EAD3 {
+class "AffectedPerson" as AP {
   identifier            Identifier        0..*
   name                  HumanName         0..*
   birthDate             Date              0..1
@@ -31,14 +27,14 @@ class "AffectedPerson" as AP #D9EAD3 {
   lastModifiedBy        Reference         0..1
 }
 
-class "AffectedPersonRelatedPerson" as RP #FFF2CC {
+class "AffectedPersonRelatedPerson" as RP {
   patient               Reference         1..1
   relationship          CodeableConcept   1..*
   --
   identifier            Identifier        0..*
 }
 
-class "EmigaUserPractitioner" as Practitioner #D9EAF7 {
+class "EmigaUserPractitioner" as Practitioner {
   identifier            Identifier        0..*
   name                  HumanName         0..*
   active                Boolean           0..1
@@ -66,6 +62,6 @@ AP "0..*" --down-> "0..*" RP : related\n PersonLink
 
 AP "0..*" --down-> "0..1" Practitioner : lastModifiedBy
 
-AP "0..*" -left-> "0..*" AP : patientLink\n«gleiche Person»
+AP "0..*" -left----> "0..*" AP : patientLink
 
 @enduml

@@ -26,9 +26,16 @@ Auf diese Weise werden Bezugsperson und betroffene Person jeweils als eigenstän
 ## Unterschiedliche Repräsentationen derselben Person
 Bei dem Fall, in denen dieselbe physische Person sowohl als betroffene Person als auch als Bezugsperson einer anderen betroffenen Person auftritt, wird sie in unterschiedlichen fachlichen Kontexten durch eine `AffectedPerson`- und eine `AffectedPersonRelatedPerson`-Instanz repräsentiert.
 Die `AffectedPerson` kann über `link.relatedPersonLink` mit der entsprechenden `AffectedPersonRelatedPerson`-Instanz verknüpft werden. Der Link kennzeichnet, dass beide Ressourcen dieselbe physische Person repräsentieren.
-
 Dabei sind insbesondere zwei Arten von Referenzen bzw. Verknüpfungen zu unterscheiden:
 * `AffectedPersonRelatedPerson.patient` beschreibt die fachliche Beziehung einer Bezugsperson zu einer betroffenen Person. Über diese Referenz wird festgelegt, zu welcher betroffenen Person die jeweilige Bezugsperson gehört.
 * `AffectedPerson.link[relatedPersonLink]` bzw. `AffectedPerson.link[patientLink]` dienen dagegen der Verknüpfung unterschiedlicher FHIR-Repräsentationen derselben physischen Person.
 
-{{render:guides/implementationguides.common/PlantUML/PNGs/same-person-different-roles.png}}
+Diese Abbildung zeigt Person B in zwei unterschiedlichen fachlichen Rollen: als betroffene Person (AffectedPerson) und als Bezugsperson (AffectedPersonRelatedPerson) von Person A.
+Dabei sind zwei Arten von Verknüpfungen zu unterscheiden:
+- Identitätsverknüpfung (link[relatedPersonLink]): Verknüpft die AffectedPerson- und die AffectedPersonRelatedPerson-Instanz von Person B. Beide Instanzen repräsentieren dieselbe physische Person in unterschiedlichen Rollen.
+- Beziehungsreferenz (patient): Verknüpft die Bezugsperson Person B mit der betroffenen Person Person A und beschreibt damit, zu welcher betroffenen Person die Bezugsperson gehört.
+
+link[relatedPersonLink] verbindet somit dieselbe physische Person über unterschiedliche Repräsentationen hinweg, während patient eine fachliche Beziehung zwischen zwei unterschiedlichen physischen Personen abbildet.
+
+{{render:guides/implementationguides.common/PlantUML/PNGs/SamePersonDifferentRoles.png}}
+

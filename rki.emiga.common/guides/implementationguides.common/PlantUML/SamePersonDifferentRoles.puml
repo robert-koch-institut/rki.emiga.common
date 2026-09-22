@@ -9,22 +9,17 @@ skinparam classAttributeIconSize 0
 skinparam defaultFontName Arial
 skinparam defaultFontSize 11
 
-skinparam ArrowColor #555555
-skinparam classBorderColor #555555
+skinparam ArrowColor black
+skinparam classBorderColor black
+skinparam classFontColor black
 
 hide circle
-
-' ============================================================
-' Farben kennzeichnen die physische Person:
-'   Grün = Person A
-'   Blau = Person B
-' ============================================================
 
 ' ------------------------------------------------------------
 ' Person A
 ' ------------------------------------------------------------
 
-class "AffectedPerson\n(Person A)" as PersonA #D9EAD3 {
+class "AffectedPerson\n(Person A)" as PersonA {
   <b>Rolle:</b> betroffene Person
 }
 
@@ -32,7 +27,7 @@ class "AffectedPerson\n(Person A)" as PersonA #D9EAD3 {
 ' Person B als betroffene Person
 ' ------------------------------------------------------------
 
-class "AffectedPerson\n(Person B)" as PersonB #D9EAF7 {
+class "AffectedPerson\n(Person B)" as PersonB {
   <b>Rolle:</b> betroffene Person
   --
   link[relatedPersonLink]
@@ -42,8 +37,8 @@ class "AffectedPerson\n(Person B)" as PersonB #D9EAF7 {
 ' Dieselbe Person B als Bezugsperson von Person A
 ' ------------------------------------------------------------
 
-class "AffectedPersonRelatedPerson\n(Person B)" as RelatedPersonB #D9EAF7 {
-  <b>Rolle:</b> Bezugsperson von Person A
+class "AffectedPersonRelatedPerson\n(Person A)" as RelatedPersonB {
+  <b>Rolle:</b> Bezugsperson von Person B
   --
   patient
   relationship

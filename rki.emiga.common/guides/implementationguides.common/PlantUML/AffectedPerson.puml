@@ -3,7 +3,18 @@ skinparam linetype ortho
 
 title AffectedPerson (Profile of Patient) 
 
-' Main Class
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam ArrowColor black
+skinparam classBorderColor black
+skinparam classFontColor black
+
+hide circle
+
 class AffectedPerson{
 <b>+</b> name: HumanNameDeBasis [0..*]
 -- Meta --

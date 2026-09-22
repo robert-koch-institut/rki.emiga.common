@@ -5,9 +5,6 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaF
 
 # {{page-title}}
 
-Für fachliche Entitäten in EMIGA können verschiedene Arten von Identifikatoren abgebildet werden. Das **EMIGA-Aktenzeichen** ist ein sprechender, EMIGA-weit eindeutiger fachlicher Identifikator zur Identifikation einer fachlichen Entität.
-
-<!-->
 <fql output= "inline" headers="false">
 from 
     StructureDefinition
@@ -16,7 +13,6 @@ where
 select
     description
 </fql>
--->
 
 ## Profil
 ### Metadaten

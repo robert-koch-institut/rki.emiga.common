@@ -5,7 +5,6 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundl
 
 # {{page-title}}
 
-<!--
 <fql output="inline" headers="false">
 from 
     StructureDefinition
@@ -14,9 +13,6 @@ where
 select
     description
 </fql>
--->
-
-Das Profil `MatchOutputBundle` basiert auf der FHIR-Ressource `Bundle` und dient der strukturierten Übertragung von Ergebnissen eines Matching-Vorgangs, beispielsweise einer Dublettenprüfung.
 
 Das Bundle wird als `searchset` verwendet. Die einzelnen Treffer werden über `Bundle.entry` übermittelt. Für jede gefundene Person enthält der Eintrag neben der Ressource selbst auch Informationen zur Bewertung des Matches.
 Hierzu gehören insbesondere der Match-Score, der die Übereinstimmung als Wert zwischen `0` und `1` abbildet, sowie der Match-Grad und zusätzliche Metadaten zur Dublettenprüfung.

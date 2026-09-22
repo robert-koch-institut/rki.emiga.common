@@ -1,20 +1,41 @@
 @startuml
-skinparam linetype ortho
 
 title Create Annotation
 
-class Bundle{
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+
+skinparam ArrowColor black
+skinparam classBorderColor black
+skinparam classFontColor black
+
+hide circle
+
+class Bundle {
     <b>+</b> type: FixedValue ('transaction') [1..1]
 }
-class AnnotationCommunication{
-}
-class AttachmentDocumentReference {
-}
-class EmigaUserPractitioner {
+
+class AnnotationCommunication {
+    <b>+</b> status: completed [1..1]
+    <b>+</b> category: AnnotationCategory [0..*]
+    <b>+</b> topic.text: string [1..1]
+    <b>+</b> about: Reference [1..1]
+    <b>+</b> sent: dateTime [0..1]
+    <b>+</b> sender: Reference(EmigaUserPractitioner) [1..1]
+    <b>+</b> payload.content[x]: string | Reference(AttachmentDocumentReference) [0..*]
 }
 
-AnnotationCommunication --> EmigaUserPractitioner : author
-AnnotationCommunication --> AttachmentDocumentReference : payload
+class AttachmentDocumentReference
+class EmigaUserPractitioner
+class "Bezugsentität\n(z. B. Fall, Ausbruch, Person)" as ReferencedEntity
+
+AnnotationCommunication --> EmigaUserPractitioner : sender
+AnnotationCommunication --> AttachmentDocumentReference : payload.contentReference
+AnnotationCommunication --> ReferencedEntity : about
 
 Bundle ..> AnnotationCommunication : entry[0]
 Bundle ..> EmigaUserPractitioner : entry[1]

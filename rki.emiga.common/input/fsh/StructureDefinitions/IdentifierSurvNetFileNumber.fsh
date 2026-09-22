@@ -2,7 +2,7 @@ Profile: IdentifierSurvNetFileNumber
 Parent: Identifier
 Id: IdentifierSurvNetFileNumber
 Title: "SurvNet Aktenzeichen Identifier"
-Description: "SurvNet Aktenzeichen Identifier-Profil."
+Description: "Das SurvNet-Aktenzeichen ist, parallel zum EMIGA-Aktenzeichen, ein fachlich sprechender, jedoch nicht systemweit eindeutiger Identifikator."
 
 * ^version = "0.1.1"
 * ^date = "2026-08-18"

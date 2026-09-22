@@ -9,13 +9,9 @@ skinparam defaultFontName Arial
 skinparam defaultFontSize 11
 skinparam classAttributeFontName Monospaced
 
-skinparam ArrowColor #555555
-skinparam classBorderColor #555555
-
 hide circle
 
-
-class "AdditionalPropertiesQuestionnaire" as Questionnaire #D9EAD3 {
+class "AdditionalPropertiesQuestionnaire" as Questionnaire {
   item                  BackboneElement   0..*
   meta.security         Coding            2..*
   --
@@ -23,7 +19,7 @@ class "AdditionalPropertiesQuestionnaire" as Questionnaire #D9EAD3 {
   meta.profile          Canonical         1..*
 }
 
-class "AdditionalPropertiesQuestionnaireResponse" as Response #FFF2CC {
+class "AdditionalPropertiesQuestionnaireResponse" as Response {
   questionnaire         Canonical         1..1
   item                  BackboneElement   1..*
   meta.security         Coding            2..*
