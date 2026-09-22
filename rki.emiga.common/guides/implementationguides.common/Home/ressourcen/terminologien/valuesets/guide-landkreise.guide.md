@@ -1,6 +1,6 @@
 ---
-topic: AnnotationCategoryVS
-canonical: https://emiga.rki.de/fhir/common/ValueSet/AnnotationCategoryVS
+topic: Salutation
+canonical: https://emiga.rki.de/fhir/ValueSet/CountyVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/AnnotationCategoryVS}}
+    {{render:https://emiga.rki.de/fhir/ValueSet/CountyVS}}
 </div>
 
 <style>
@@ -62,7 +62,7 @@ select
 
 ## Inhalt
 <tabs>
-<tab title="Darstellung">{{tree, buttons}} </tab>
+<tab= title="Darstellung">{{tree, buttons}} </tab>
 <tab title="XML">{{xml}}</tab>
 <tab title="JSON">{{json}}</tab>
 <tab title="Link">{{link}}</tab>

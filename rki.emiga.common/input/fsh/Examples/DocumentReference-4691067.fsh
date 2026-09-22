@@ -9,10 +9,10 @@ Usage: #example
 * identifier.system = "https://emiga.rki.de/fhir/sid/EmigaAttachmentId"
 * identifier.value = "4b5755cd-da8f-4b34-b78c-4b3ead465b39"
 * status = #current
-* date = "2026-01-12T18:34:42.844+00:00"
+* date = "2026-01-14T18:34:42.844+00:00"
 * author[0].reference = "Practitioner/EmigaUser-001"
 * content.attachment.contentType = #application/pdf
 * content.attachment.size = 16577
 * content.attachment.hash = "MzU2am9JWkQydk1jeVRlUDNTZlNuRVpvTDJKVGYvOW1ZL013VnB6REpCOD0="
-* content.attachment.title = "test.pdf,"
-* content.attachment.creation = "2026-01-13T14:22:43+00:00"
+* content.attachment.title = "test.pdf"
+* content.attachment.creation = "2026-01-12T14:22:43+00:00"

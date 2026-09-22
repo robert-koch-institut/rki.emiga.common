@@ -4,17 +4,15 @@
   filename: guide-ueber-diesen-leitfaden.guide.md
 - name: Grundlagen und Überblick
   filename: guide-grundlagen-und-ueberblick.guide.md
-- name: Anwendungsfälle
+- name: Beispiele für Anwendungsfälle
   filename: anwendungsfaelle  
-- name: Änderungshistorie
-  filename: guide-aenderungshistorie.guide.md
-- name: Ergänzende Hinweise
-  filename: guide-ergaenzende-hinweise.guide.md
-- name: Weiterführende Informationen
-  filename: guide-weiterfuehrende-informationen.guide.md
 - name: Ressourcen
   filename: ressourcen
 - name: Implementierungshinweise
   filename: implementierungshinweise
+- name: Ergänzende Hinweise
+  filename: guide-ergaenzende-hinweise.guide.md
+- name: Änderungshistorie
+  filename: guide-aenderungshistorie.guide.md
 - name: Lizenzen
   filename: guide-lizenzen.guide.md  

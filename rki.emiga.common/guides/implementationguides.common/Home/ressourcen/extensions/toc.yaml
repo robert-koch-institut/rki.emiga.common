@@ -4,8 +4,8 @@
   filename: guide-anrede.guide.md
 - name: Bearbeitungsstatus
   filename: guide-bearbeitungsstatus.guide.md
-- name: Bearbeitungsstatus betroffene Person
-  filename: guide-bearbeitungsstatus-betroffene-person.guide.md
+- name: Dublettenprüfungsmetadaten
+  filename: guide-dublettenpruefungsmetadaten.guide.md
 - name: Einrichtungsadresse betroffene Person
   filename: guide-einrichtungsadresse-betroffene-person.guide.md
 - name: Erstellungsdatum
@@ -16,3 +16,5 @@
   filename: guide-nicht-vorhanden.guide.md
 - name: Regionalschlüssel
   filename: guide-regionalschluessel.guide.md
+- name: Zuletzt geändert von
+  filename: guide-zuletzt-geaendert-von.guide.md

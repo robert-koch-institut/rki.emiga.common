@@ -1,6 +1,16 @@
 @startuml
 
-title RelatedPerson - Class Diagram
+title RelatedPerson
+
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype spline
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam classAttributeFontName Monospaced
+
+hide circle
 
 class AffectedPerson{
 }

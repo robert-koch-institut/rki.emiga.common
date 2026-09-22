@@ -1,0 +1,33 @@
+@startuml
+title Zusätzliche Eigenschaften
+
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam classAttributeFontName Monospaced
+
+hide circle
+
+class "AdditionalPropertiesQuestionnaire" as Questionnaire {
+  item                  BackboneElement   0..*
+  meta.security         Coding            2..*
+  --
+  identifier            Identifier        0..*
+  meta.profile          Canonical         1..*
+}
+
+class "AdditionalPropertiesQuestionnaireResponse" as Response {
+  questionnaire         Canonical         1..1
+  item                  BackboneElement   1..*
+  meta.security         Coding            2..*
+  --
+  author                Reference         0..1
+  meta.profile          Canonical         1..*
+}
+
+Response "0..*" --> "1" Questionnaire : questionnaire
+
+@enduml

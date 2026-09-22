@@ -1,6 +1,9 @@
 - name: Index
   filename: Index.page.md
-- name: Annotationen
+- name: Erstellung und Bearbeitung von Annotationen
   filename: guide-annotationen.guide.md
-- name: Personen
+- name: Betroffene Person und Bezugsperson
   filename: guide-personen.guide.md
+- name: Verwendung von zusätzlichen Eigenschaften
+  filename: guide-zusaetzliche-eigenschaft.guide.md
+  

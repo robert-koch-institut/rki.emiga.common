@@ -4,7 +4,7 @@ canonical: https://emiga.rki.de/fhir/common/StructureDefinition/IdentifierEmigaF
 ---
 
 # {{page-title}}
-## Beschreibung
+
 <fql output= "inline" headers="false">
 from 
     StructureDefinition
@@ -13,8 +13,6 @@ where
 select
     description
 </fql>
-
-<br>&nbsp;<br>
 
 ## Profil
 ### Metadaten

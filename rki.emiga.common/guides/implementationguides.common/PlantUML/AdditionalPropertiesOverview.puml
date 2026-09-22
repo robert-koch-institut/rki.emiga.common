@@ -1,0 +1,62 @@
+@startuml
+
+title Definition und Erfassung zusätzlicher Eigenschaften
+
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam classAttributeFontName Monospaced
+
+hide circle
+
+
+class "AdditionalPropertiesQuestionnaire" as Questionnaire {
+  item                  BackboneElement   0..*
+}
+
+class "Questionnaire.item" as Question {
+  linkId                String            1..1
+  type                  Code              1..1
+  --
+  text                  String            0..1
+}
+
+class "AdditionalPropertiesQuestionnaireResponse" as Response {
+  questionnaire         Canonical         1..1
+  item                  BackboneElement   1..*
+}
+
+class "QuestionnaireResponse.item" as Answer {
+  linkId                String            1..1
+  answer                BackboneElement   0..*
+}
+
+
+Questionnaire "1" *-- "0..*" Question : item
+Response "0..*" --> "1" Questionnaire : questionnaire
+Response "1" *-- "1..*" Answer : item
+Question ..> Answer : linkId
+
+
+' ==================================================
+' Kompakte Legende unten rechts
+' ==================================================
+
+legend right
+        enthält
+      ◆────────
+
+     referenziert
+      ────────▶
+
+verknüpft über linkId
+      ┄┄┄┄┄┄┄▶
+endlegend
+
+skinparam legendBorderColor transparent
+skinparam legendBackgroundColor transparent
+
+@enduml

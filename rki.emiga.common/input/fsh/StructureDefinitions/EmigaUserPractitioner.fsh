@@ -2,7 +2,7 @@ Profile: EmigaUserPractitioner
 Parent: Practitioner
 Id: EmigaUserPractitioner
 Title: "Emiga Nutzende Person"
-Description: "Dieses Profil stelle eine EMIGA nutzende Person dar. Eine EMIGA nutzende Person, ist eine Person mit einem direkten Zugang zum System. Jeder Nutzer ist einer ÖGD-Stelle zugeordnet."
+Description: "Das Profil `EmigaUserPractitioner` basiert auf der FHIR-Ressource `Practitioner` und dient der Abbildung einer handelnden Person bzw. einer Person, die EMIGA nutzt. Jede Person, die EMIGA nutzt, ist dabei einer ÖGD-Stelle zugeordnet."
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/EmigaUserPractitioner"
 * ^version = "0.4.1"

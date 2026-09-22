@@ -1,20 +1,9 @@
 ---
-topic: PersonenTransactionBundle
-canonical: https://emiga.rki.de/fhir/common/StructureDefinition/PersonenTransactionBundle
+topic: LastModifiedBy
+canonical: https://emiga.rki.de/fhir/common/Extension/LastModifiedBy
 ---
 
 # {{page-title}}
-## Beschreibung
-<fql output= "inline" headers="false">
-from 
-    StructureDefinition
-where
-    url = %canonical
-select
-    description
-</fql>
-
-<br>&nbsp;<br>
 
 ## Profil
 ### Metadaten
@@ -24,7 +13,7 @@ from
 where
     url = %canonical
 select
-        CanonicalURL: url, Status: status, Version: version, Herausgeber: publisher
+        Beschreibung: description, CanonicalURL: url, Status: status, Version: version, Herausgeber: publisher
 </fql>
 <br>&nbsp;<br>
 
@@ -35,21 +24,6 @@ select
 <tab title="JSON">{{json}}</tab>
 <tab title="Link">{{link}}</tab>
 </tabs>
-<br>&nbsp;<br>
-
-### Constraints/Invarianten
-<fql headers="true">
-from 
-    StructureDefinition 
-where 
-    url = %canonical 
-for 
-    differential.element 
-    where
-        constraint.exists()
-    select 
-        Name: constraint.key, Element: id, Schweregrad: constraint.severity,Beschreibung: constraint.human, Ausdruck: constraint.expression
-</fql>
 <br>&nbsp;<br>
 
 ### Terminology-Bindings
@@ -80,4 +54,3 @@ select
 	Feldname: id, Kurzbeschreibung: short, Beschreibung: definition, Hinweise: comment
 </fql>
 <br>&nbsp;<br>
-

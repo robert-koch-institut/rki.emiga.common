@@ -1,6 +1,6 @@
 ---
-topic: AnnotationCategoryVS
-canonical: https://emiga.rki.de/fhir/common/ValueSet/AnnotationCategoryVS
+topic: PersonToOrganizationTypeVS
+canonical: https://emiga.rki.de/fhir/ValueSet/PersonToOrganizationTypeVS
 ---
 
 # {{page-title}}
@@ -16,7 +16,7 @@ select
 <br>&nbsp;<br>
 
 <div id="rendered-codesystem">
-    {{render:https://emiga.rki.de/fhir/common/ValueSet/AnnotationCategoryVS}}
+    {{render:https://emiga.rki.de/fhir/ValueSet/PersonToOrganizationTypeVS}}
 </div>
 
 <style>
