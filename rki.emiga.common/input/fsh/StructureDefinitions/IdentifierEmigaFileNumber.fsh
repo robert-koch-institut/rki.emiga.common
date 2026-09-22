@@ -1,8 +1,8 @@
 Profile: IdentifierEmigaFileNumber
 Parent: Identifier
 Id: IdentifierEmigaFileNumber
-Title: "EMIGA Aktenzeichen Identifier"
-Description: "Das EMIGA-Aktenzeichen ist ein sprechender, EMIGA-weit eindeutiger fachlicher Identifikator zur Identifikation einer fachlichen Entität."
+Title: "EMIGA-Aktenzeichen Identifier"
+Description: "Das EMIGA-Aktenzeichen ist ein sprechender und EMIGA-weit eindeutiger fachlicher Identifikator zur Identifikation einer fachlichen Entität."
 
 * ^version = "0.1.0"
 * ^date = "2025-09-26"

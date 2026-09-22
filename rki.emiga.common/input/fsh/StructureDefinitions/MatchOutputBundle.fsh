@@ -2,7 +2,7 @@ Profile: MatchOutputBundle
 Parent: Bundle
 Id: MatchOutputBundle
 Title: "Match Output Bundle"
-Description: "Das Profil `MatchOutputBundle` basiert auf der FHIR-Ressource `Bundle` und dient der strukturierten Übertragung von Ergebnissen eines Matching-Vorgangs, beispielsweise einer Dublettenprüfung."
+Description: "Das Profil `MatchOutputBundle` basiert auf der FHIR-Ressource `Bundle` und dient der strukturierten Übertragung der Ergebnisse eines Matching-Vorgangs, beispielsweise einer Dublettenprüfung."
 
 * ^url = "https://emiga.rki.de/fhir/common/StructureDefinition/MatchOutputBundle"
 * ^version = "0.1.0"
