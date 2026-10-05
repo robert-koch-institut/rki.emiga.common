@@ -1,23 +1,24 @@
-# Implementierungsleitfaden für das EMIGA-Common-Paket
+# Implementierungsleitfaden für das EMIGA Einrichtungsverzeichnis
 
-<a href="https://simplifier.net/rki.emiga.common" class="btn btn-default">zu EMIGA common Projekt auf Simplifier</a>
-<a href="https://www.rki.de/DE/Institut/Organisation/Abteilungen/Abteilung-3/FG32/EMIGA/emiga.html" class="btn btn-default">zur EMIGA-Webseite</a>
 
+<a href="https://simplifier.net/rki.emiga.vzd" class="btn btn-default">Zum EMIGA Einrichtungsverzeichnis-Projekt auf Simplifier</a>
+<a href="https://www.rki.de/DE/Institut/Organisation/Abteilungen/Abteilung-3/FG32/EMIGA/emiga.html?templateQueryString=emiga" class="btn btn-default">Zur EMIGA-Webseite</a>
 
 
 &nbsp;
 
-### Inhaltsverzeichnis
 
-{{index:children}}
+## Inhaltsverzeichnis
+
+{{index:root}}
 
 &nbsp;
 
 ---
 
-### Herausgeber
+## Herausgeber
 
-{{render:guides/implementationguides.common/images/RKI.png}}
+{{render:guides/implementationguides.vzd/images/RKI.png}}
 
 
 
@@ -31,16 +32,16 @@ Nordufer 20\
 
 ---
 
-### Kontakt
+## Kontakt
 
-{{render:guides/implementationguides.common/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
+{{render:guides/implementationguides.vzd/images/EMIGA_Wortbildmarke_UZ_Standard_RGB_72dpi.png}}
 
 Sie erreichen uns über das EMIGA-Kontaktformular.
 
 &nbsp;
 
 
-<a href="https://www.rki.de/SharedDocs/Kontaktformulare/E/EMIGA/Integrator.html" class="btn btn-default">zu EMIGA-Kontaktformular</a>
+<a href="https://www.rki.de/SharedDocs/Kontaktformulare/DE/E/EMIGA/Integrator.html" class="btn btn-default">zu EMIGA-Kontaktformular</a>
 
 
 
@@ -48,7 +49,7 @@ Sie erreichen uns über das EMIGA-Kontaktformular.
 
 ---
 
-### Disclaimer
+## Disclaimer
 
 Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses Dokuments auf FHIR Version R4 beruhen, für die Copyright HL7 International gilt. Obwohl diese Publikation mit größter Sorgfalt erstellt wurde, kann HL7 Deutschland keinerlei Haftung für direkten oder indirekten Schaden übernehmen, der durch den Inhalt dieser Spezifikation entstehen könnte.
 
@@ -56,9 +57,9 @@ Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses 
 
 ---
 
-### Copyright
+## Copyright
 
-Copyright (C) 2024 Robert Koch-Institut
+Copyright (C) 2026 Robert Koch-Institut
 
 Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw. Veröffentlichungsansprüche sind nicht beschränkt.
 
