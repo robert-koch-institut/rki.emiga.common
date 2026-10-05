@@ -4,11 +4,14 @@ title RelatedPerson
 
 skinparam shadowing false
 skinparam roundcorner 0
-skinparam linetype spline
+skinparam linetype ortho
 skinparam classAttributeIconSize 0
 skinparam defaultFontName Arial
 skinparam defaultFontSize 11
-skinparam classAttributeFontName Monospaced
+
+skinparam ArrowColor black
+skinparam classBorderColor black
+skinparam classFontColor black
 
 hide circle
 
