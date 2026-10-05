@@ -1,6 +1,6 @@
 @startuml
 
-title Create Annotation
+title Erstellung einer Annotation
 
 skinparam shadowing false
 skinparam roundcorner 0
