@@ -1,9 +1,9 @@
 {
-    "plantuml.exportFormat": "png",
+    "plantuml.exportFormat": "svg",
     "plantuml.exportSubFolder": false,
     "plantuml.commandArgs": [],
     "plantuml.diagramsRoot": "./rki.emiga.common/guides/implementationguides.common/PlantUML",
-    "plantuml.exportOutDir": "./rki.emiga.common/guides/implementationguides.common/PlantUML/PNGs",
+    "plantuml.exportOutDir": "./rki.emiga.common/guides/implementationguides.common/PlantUML/SVGs",
     "triggerTaskOnSave.tasks": {
         "generatePlantumlPng": [
             "**/*.wsd",
