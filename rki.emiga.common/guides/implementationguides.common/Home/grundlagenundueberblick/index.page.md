@@ -29,8 +29,8 @@ EMIGA soll allen Ebenen des ÖGD einen Mehrwert bieten. Um die Anforderungen der
 
 ---
 
+#TODO @konvoulg
 ### Einrichtungsverzeichnis als zentraler Bestandteil von EMIGA
-#TODO
 Ein wesentlicher Bestandteil von EMIGA ist das **Einrichtungsverzeichnis**. Es stellt Informationen zu relevanten Einrichtungen und Behörden für die Arbeit des **Öffentlichen Gesundheitsdienstes (ÖGD)** im Infektionsschutz zentral zur Verfügung.
 So können beispielsweise Kontaktinformationen schnell und unkompliziert gefunden und genutzt werden.
 Das Einrichtungsverzeichnis schafft damit eine zentrale und übersichtliche Informationsgrundlage für den Infektionsschutz. Ziel ist es, die Zusammenarbeit und Kommunikation innerhalb des ÖGD zu verbessern.

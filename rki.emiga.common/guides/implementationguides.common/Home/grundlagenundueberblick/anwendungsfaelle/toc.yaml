@@ -6,4 +6,5 @@
   filename: guide-personen.guide.md
 - name: Verwendung von zusätzlichen Eigenschaften
   filename: guide-zusaetzliche-eigenschaft.guide.md
-  
+- name: Dublettenprüfung
+  filename: guide-dublettenpruefung.guide.md
